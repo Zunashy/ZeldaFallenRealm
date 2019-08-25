@@ -1,0 +1,9 @@
+animation{
+  name = "stopped",
+  src_image = "citizens/vieux01.png",
+  frame_delay = 600,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 2, y = 1, frame_width = 17, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 2 },
+  },
+}

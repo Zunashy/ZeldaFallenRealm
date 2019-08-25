@@ -1,0 +1,12 @@
+animation{
+  name = "loading",
+  src_image = "hero/link_sword_loading.png",
+  frame_delay = 50,
+  frame_to_loop_on = 18,
+  directions = {
+    { x = 53, y = 1, frame_width = 15, frame_height = 6, origin_x = -8, origin_y = 5, num_frames = 20, num_columns = 1 },
+    { x = 37, y = 1, frame_width = 6, frame_height = 15, origin_x = 7, origin_y = 27, num_frames = 20, num_columns = 2 },
+    { x = 17, y = 1, frame_width = 15, frame_height = 6, origin_x = 19, origin_y = 5, num_frames = 20, num_columns = 1 },
+    { x = 1, y = 1, frame_width = 6, frame_height = 15, origin_x = -1, origin_y = -2, num_frames = 20, num_columns = 2 },
+  },
+}

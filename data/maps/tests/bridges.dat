@@ -1,0 +1,171 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 288,
+  height = 288,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "Grotte",
+  music = "Zelda Original/Caves",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 256,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 272,
+  width = 256,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 16,
+  width = 16,
+  height = 256,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 0,
+  width = 256,
+  height = 16,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 256,
+  height = 256,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 32,
+  width = 224,
+  height = 224,
+  pattern = "28",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 32,
+  width = 16,
+  height = 224,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 128,
+  width = 224,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 144,
+  width = 16,
+  height = 64,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 192,
+  width = 48,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 160,
+  width = 32,
+  height = 16,
+  pattern = "2",
+}
+
+destination{
+  name = "spawn",
+  layer = 0,
+  x = 152,
+  y = 245,
+  direction = 1,
+  default = true,
+}
+
+enemy{
+  layer = 0,
+  x = 80,
+  y = 141,
+  direction = 0,
+  breed = "skeleton_1",
+}
+
+enemy{
+  layer = 0,
+  x = 152,
+  y = 173,
+  direction = 0,
+  breed = "skeleton_2",
+}
+

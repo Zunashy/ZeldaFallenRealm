@@ -1,0 +1,57 @@
+animation{
+  name = "sword",
+  src_image = "hero/linksword.png",
+  frame_delay = 100,
+  directions = {
+    { x = 72, y = 0, frame_width = 32, frame_height = 32, origin_x = 8, origin_y = 30, num_frames = 3, num_columns = 1 },
+    { x = 104, y = 0, frame_width = 32, frame_height = 32, origin_x = 8, origin_y = 28, num_frames = 3, num_columns = 1 },
+    { x = 40, y = 0, frame_width = 32, frame_height = 32, origin_x = 24, origin_y = 30, num_frames = 3, num_columns = 1 },
+    { x = 8, y = 0, frame_width = 32, frame_height = 32, origin_x = 24, origin_y = 14, num_frames = 3, num_columns = 1 },
+  },
+}
+animation{
+  name = "spin_attack",
+  src_image = "hero/linksword_spin_attack.png",
+  frame_delay = 30,
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 8 },
+    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 8 },
+    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 8 },
+    { x = 0, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 8 },
+  },
+}
+animation{
+  name = "sword_loading_stopped",
+  src_image = "hero/linksword.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 152, y = 0, frame_width = 32, frame_height = 8, origin_x = 8, origin_y = 6, num_frames = 2, num_columns = 1 },
+    { x = 152, y = 16, frame_width = 8, frame_height = 32, origin_x = 8, origin_y = 28, num_frames = 2 },
+    { x = 136, y = 0, frame_width = 32, frame_height = 8, origin_x = 20, origin_y = 6, num_frames = 2, num_columns = 1 },
+    { x = 184, y = 0, frame_width = 8, frame_height = 32, origin_x = 0, origin_y = 14, num_frames = 2 },
+  },
+}
+animation{
+  name = "sword_loading_walking",
+  src_image = "hero/linksword.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 152, y = 0, frame_width = 32, frame_height = 8, origin_x = 12, origin_y = 6, num_frames = 2, num_columns = 1 },
+    { x = 152, y = 16, frame_width = 8, frame_height = 32, origin_x = 8, origin_y = 28, num_frames = 2 },
+    { x = 136, y = 0, frame_width = 32, frame_height = 8, origin_x = 20, origin_y = 6, num_frames = 2, num_columns = 1 },
+    { x = 184, y = 0, frame_width = 8, frame_height = 32, origin_x = 0, origin_y = 14, num_frames = 2 },
+  },
+}
+animation{
+  name = "sword_tapping",
+  src_image = "hero/linksword.png",
+  frame_delay = 100,
+  directions = {
+    { x = 152, y = 0, frame_width = 32, frame_height = 8, origin_x = 8, origin_y = 6 },
+    { x = 152, y = 16, frame_width = 8, frame_height = 32, origin_x = 8, origin_y = 28 },
+    { x = 136, y = 0, frame_width = 32, frame_height = 8, origin_x = 20, origin_y = 6 },
+    { x = 184, y = 0, frame_width = 8, frame_height = 32, origin_x = 0, origin_y = 14 },
+  },
+}

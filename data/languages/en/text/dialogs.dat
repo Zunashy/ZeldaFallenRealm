@@ -1,0 +1,65 @@
+dialog{
+  id = "_treasure.rock_feather.1",
+  text = [[
+Vous avez trouvé la plume de roc.
+
+BAH VAS Y SAUTE
+]],
+}
+
+dialog{
+  id = "_treasure.rupee.1",
+  text = [[
+Tu as trouvé 1 rubis !
+C'est le début
+de la fortune !
+]],
+}
+
+dialog{
+  id = "_treasure.rupee.2",
+  text = [[
+Tu as trouvé un rubis bleu !
+Il vaut 5 rubis !
+]],
+}
+
+dialog{
+  id = "_treasure.rupee.3",
+  text = [[
+Tu as trouvé un rubis rouge !
+Il vaut 20 rubis !
+]],
+}
+
+dialog{
+  id = "_treasure.rupee.4",
+  text = [[
+Tu as trouvé 50 rubis !
+Merveilleux !
+]],
+}
+
+dialog{
+  id = "_treasure.small_key.1",
+  oui = "yeet",
+  text = [[
+haha oui les mots oui ahahahah
+]],
+}
+
+dialog{
+  id = "pnj.test.snas",
+  text = [[
+ur gonna have bad tiem
+]],
+}
+
+dialog{
+  id = "pnj.village.witch",
+  text = [[
+Bonjour, je suis
+une sorcière inutile !
+]],
+}
+

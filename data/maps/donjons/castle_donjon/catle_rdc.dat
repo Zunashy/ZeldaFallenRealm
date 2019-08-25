@@ -1,0 +1,10 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 240,
+  height = 176,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "overworld/mountain_sea",
+}
+

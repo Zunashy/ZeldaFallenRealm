@@ -1,0 +1,69 @@
+animation{
+  name = "bomb",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "big_key",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+  },
+}
+animation{
+  name = "heart_falling",
+  src_image = "items/heart_falling.png",
+  frame_delay = 100,
+  frame_to_loop_on = 24,
+  directions = {
+    { x = 0, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 8, num_frames = 25, num_columns = 10 },
+  },
+}
+animation{
+  name = "heart_quarter",
+  src_image = "items/heart_quarter.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "ice_seed",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "random",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 1, frame_height = 1, origin_x = 8, origin_y = 8 },
+  },
+}
+animation{
+  name = "rock_feather",
+  src_image = "items/rock_feather.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 14, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "rupee",
+  src_image = "items/rupee.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 48, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 64, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+  },
+}
+animation{
+  name = "small_key",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
