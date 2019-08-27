@@ -56,6 +56,16 @@ ur gonna have bad tiem
 }
 
 dialog{
+  id = "pnj.village.barman",
+  text = [[
+J'ai bien cru que tu ne te lèverais jamais.
+Un peu comme mon pote à moi il y a longtemps,
+sauf que lui c'était pour une autre raison.
+Bon, t'y vas maintenant ?
+]],
+}
+
+dialog{
   id = "pnj.village.witch",
   text = [[
 Bonjour, je suis

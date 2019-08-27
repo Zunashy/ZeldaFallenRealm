@@ -5,6 +5,46 @@ properties{
   height = 176,
   min_layer = 0,
   max_layer = 2,
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 240,
+  height = 176,
+  pattern = "20",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 80,
+  width = 80,
+  height = 48,
+  pattern = "161",
   tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 80,
+  width = 80,
+  height = 48,
+  pattern = "161",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 80,
+  width = 48,
+  height = 48,
+  pattern = "23",
+  tileset = "overworld/structure",
 }
 
