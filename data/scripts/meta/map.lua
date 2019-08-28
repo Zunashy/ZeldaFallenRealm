@@ -23,3 +23,15 @@ function map_meta:get_entities_property(key, value, p1, p2)
     end  
     return iter  
 end
+
+local function parse_entities_properties(map)
+    local prop
+    local game = map:get_game()
+    for e in map:get_entities() do
+        prop = e:get_property("min_story_state") 
+        if prop and tonumber(prop) > game:get_story_state() then
+            e:set_enabled(false)
+        end
+    end
+end
+map_meta:register_event("on_started", parse_entities_properties)

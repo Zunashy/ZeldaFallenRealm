@@ -124,6 +124,7 @@ function game_menu:page_transition(new_page)
     if self.current_page.on_closes then
         self.current_page:on_closed()
     end
+    
     self.current_page = new_page
 
     self.transition_movement = sol.movement.create("straight")
@@ -141,6 +142,20 @@ end
 function game_menu:end_transition()
     self.transition_movement = nil
     self.current_page:on_page_selected()
+end
+
+function game_menu:open_page(new_page, transition, remember_origin)
+    remember_origin = (remember_origin == nil) and (not transition) or remember_origin
+
+    if remember_origin then new_page.origin_page() end
+    if transition then
+        self:page_transition(new_page)
+    else
+        self.current_page = new_page
+        if self.current_page.on_page_selected then
+            self.current_page:on_page_selected()
+        end
+    end
 end
 
 --====== MENU CALLBACKS ======
@@ -202,7 +217,7 @@ function game_menu:on_command_pressed(command)
         if self.current_page_index > table.getn(self.main_pages) then
             self.current_page_index = 1
         end
-        self:page_transition(self.main_pages[self.current_page_index])
+        self:open_page(self.main_pages[self.current_page_index], true)
     end
 
     if self.current_page.on_command_pressed then

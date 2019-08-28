@@ -24,3 +24,32 @@ end
 function string.fields(s, sep)
   return s:gmatch("[^"..sep.."]+")
 end
+
+function string.xfields(s, sep)
+  local results, i = {}, 1
+  for field in s:fields(sep) do
+    results[i] = field
+    i = i + 1
+  end
+  return unpack(results)
+end
+
+function string.rtrim(s, char)
+  char = char or " "
+  local len = s:len()
+  while s:sub(len) == char do
+    s = s:sub(1, len - 1)
+    len = len - 1
+  end
+  return s
+end
+
+function string.ltrim(s, char)
+  char = char or " "
+  local len = s:len()
+  while s:sub(1) == char do
+    s = s:sub(2)
+    len = len - 1
+  end
+  return s
+end

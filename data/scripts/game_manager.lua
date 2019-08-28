@@ -12,6 +12,7 @@ local game_manager = {}
 -- Creates a game ready to be played.
 function game_manager:create(file)
 
+
   -- Create the game (but do not start it).
   local exists = sol.game.exists(file)
   local game = sol.game.load(file)

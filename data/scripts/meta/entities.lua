@@ -14,9 +14,9 @@ function sensor_meta:is_activated()
   return self.activated
 end
 
-local sensor_meta = sol.main.get_metatable("separator")
+local sep_meta = sol.main.get_metatable("separator")
 
-function sensor_meta:on_activated()
+function sep_meta:on_activated()
   hero = self:get_map():get_hero()
   local ground = hero:get_ground_below();
   if (ground ~= "deep_water"
@@ -29,3 +29,12 @@ function sensor_meta:on_activated()
   then hero:save_solid_ground()
   end
 end
+
+local npc_meta = sol.main.get_metatable("npc")
+local function npc_interaction(npc)
+  local dialog = npc:get_property("dialog")
+  if dialog then
+    npc:get_game():start_dialog(dialog)
+  end
+end
+npc_meta:register_event("on_interaction", npc_interaction)

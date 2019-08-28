@@ -70,7 +70,6 @@ end
 
 -- Starting the menu.
 function solarus_logo_menu:on_started()
-
   -- Initialize or reinitialize the animation.
   animation_step = 0
   timer = nil

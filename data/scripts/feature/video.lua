@@ -1,7 +1,14 @@
-local scale = 2
+sol.video.default_scale = 2
+
+local scale = sol.video.default_scale
 
 function sol.video.set_scale(sc)
+  scale = sc
   sol.video.set_window_size(160 * sc, 144 * sc)
+end
+
+function sol.video.get_scale()
+  return scale
 end
 
 function sol.video.switch_scale()

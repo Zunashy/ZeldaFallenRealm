@@ -9,7 +9,7 @@
 local separator_manager = {}
 require("scripts/multi_events")
 
-function separator_manager:manage_map(map)
+function separator_manager:manage_map(map, default)
 
   local enemy_places = {}
   local destructible_places = {}
@@ -42,6 +42,7 @@ function separator_manager:manage_map(map)
           properties = enemy_place.properties
         })
         enemy:set_treasure(unpack(enemy_place.treasure))
+        enemy:set_enabled(enemy_place.is_enabled)
         enemy.on_dead = old_enemy.on_dead  -- For door_manager.
         enemy_place.enemy = enemy
       end
@@ -58,7 +59,6 @@ function separator_manager:manage_map(map)
 
   -- Function called when a separator is being taken.
   local function separator_on_activating(separator)
-
     local hero = map:get_hero()
 
     -- Destructibles.
@@ -89,7 +89,7 @@ function separator_manager:manage_map(map)
     end
   end
 
-  for separator in map:get_entities("auto_separator") do
+  for separator in map:get_entities_property("auto_separator", "1", "separator", default) do
     separator:register_event("on_activating", separator_on_activating)
     separator:register_event("on_activated", separator_on_activated)
   end
@@ -110,15 +110,16 @@ function separator_manager:manage_map(map)
       name = enemy:get_name(),
       treasure = { enemy:get_treasure() },
       enemy = enemy,
+      is_enabled = enemy:is_enabled(),
       properties = enemy:get_properties()
     }
 
     enemy:register_event("on_dead", death_callback)
 
     local hero = map:get_hero()
-    if not enemy:is_in_same_region(hero) then
-      enemy:remove()
-    end
+    --if not enemy:is_in_same_region(hero) then
+    --  enemy:remove()
+    --end
   end
 
   local function get_destructible_sprite_name(destructible)

@@ -4,7 +4,6 @@ local initial_menus = {
 }
 
 local function start_initial_menus(callback)
-
   if #initial_menus == 0 then
     return
   end
@@ -33,6 +32,7 @@ local function start_initial_menus(callback)
       end
     end
   end
+
 
   sol.menu.start(sol.main, initial_menus[1], on_top)
 

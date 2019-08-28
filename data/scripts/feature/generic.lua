@@ -36,31 +36,43 @@ end
 
 function gen.class(bClass)
   local newclass = {}
-  newclass.mt = {__index = newclass}
+  newclass.mt = {
+    __index = newclass,
+    __tostring = function () return newclass.name end
+  }
 
   function newclass:new(...)
     local inst
     if type(self.build) == "function" then
       inst = self:build(...) or {}
-    else 
+    elseif bClass then
+      inst = bClass:new(...)
+    else
       inst = {}
     end
     setmetatable(inst, self.mt)
-    if type(inst.constructor) == "function" then
+    if type(newclass.constructor) == "function" then
       if inst:constructor(...) then
         return false
       end
     end 
     return inst
   end
-      
+
+  local meta
   if bClass then
-    if type(bClass) == "table" and ClassbClass.__index then
-      setmetatable(newclass, bClass)
+    if type(bClass) == "table" and bClass.__index then
+      meta = bClass
     else
-      setmetatable(newclass, {__index = bClass})
+      meta = {__index = bClass}
     end
+  else 
+    meta = {}
   end
+  meta.__call = newclass.new
+  setmetatable(newclass, meta)
+
+  newclass.name = tostring(newclass)
 
   return newclass
 end
@@ -69,6 +81,27 @@ function gen.new(class, ...)
   if type(class.new) == "function" then
     return class:new(...)
   end
+end
+
+function table.deepcopy(orig, copies)
+  copies = copies or {}
+  local orig_type = type(orig)
+  local copy
+  if orig_type == 'table' then
+      if copies[orig] then
+          copy = copies[orig]
+      else
+          copy = {}
+          for orig_key, orig_value in next, orig, nil do
+              copy[deepcopy(orig_key, copies)] = deepcopy(orig_value, copies)
+          end
+          copies[orig] = copy
+          setmetatable(copy, deepcopy(getmetatable(orig), copies))
+      end
+  else -- number, string, boolean, etc
+      copy = orig
+  end
+  return copy
 end
 
 function gen.xor(a, b) 

@@ -12,13 +12,12 @@ local initial_game = {}
 -- Sets initial values to a new savegame file.
 function initial_game:initialize_new_savegame(game)
 
-  game:set_starting_location("testHub", "spawn")  -- Starting location.
+  game:set_starting_location("overworld/north_beach/north_beach_outdoors", "first_spawn")  -- Starting location.
 
   game:set_max_life(12)
   game:set_life(game:get_max_life())
   game:set_max_money(100)
   game:set_ability("lift", 1)
-  game:set_ability("sword", 1)
 end
 
 return initial_game

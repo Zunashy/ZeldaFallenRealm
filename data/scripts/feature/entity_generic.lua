@@ -2,7 +2,7 @@
 eg = {} 
 
 -- detects if a specified entity is in a cone starting from another entity. Can be seen as this second entity's "sight field", in a certain direction (median of the cone), with acertain angle, and to a certain distance (cone side length)
-function eg.cone_detect(detector,detected,distance,direction,angle) 
+function eg.cone_detect(detector,detected,distance,direction,angle,same_region) 
   distance = distance or math.inf --default distance is infinite, which means detection at any distance
   angle = angle or 90 --default angle is square
   direction = direction or 0  --default direction is east
@@ -17,7 +17,7 @@ function eg.cone_detect(detector,detected,distance,direction,angle)
     if angleR > angle/2 or angleR < -angle/2 then --after some calculations, we can decide if the detected entity is in the cone
       return false
     else 
-      return true    
+      return (not same_region) or detector:is_in_same_region(detected)
     end
   end
 end

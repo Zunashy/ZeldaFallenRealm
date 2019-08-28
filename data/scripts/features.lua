@@ -25,4 +25,6 @@ require("scripts/meta/map")
 require("scripts/menus/dialog_box")
 require("scripts/menus/game_menu")
 
+require("scripts/debug/utilities")
+
 return true

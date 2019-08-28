@@ -911,6 +911,7 @@ tile{
 }
 
 separator{
+  name = "separator_1",
   layer = 0,
   x = 152,
   y = 0,
@@ -924,5 +925,57 @@ separator{
   y = 0,
   width = 16,
   height = 128,
+}
+
+npc{
+  name = "zuna",
+  layer = 0,
+  x = 248,
+  y = 45,
+  direction = -1,
+  subtype = 1,
+  sprite = "pnj/nielint/10",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 240,
+  y = 117,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 232,
+  y = 112,
+  width = 16,
+  height = 16,
+  destination_map = "villages/nielint_village/nielint_outdoor",
+  destination = "bar_to_village",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 61,
+  properties = {
+    {
+      key = "target",
+      value = "zuna",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "interaction_box",
+}
+
+destination{
+  name = "bed",
+  layer = 0,
+  x = 40,
+  y = 45,
+  direction = 1,
 }
 
