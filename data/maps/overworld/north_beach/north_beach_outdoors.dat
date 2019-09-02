@@ -6485,14 +6485,6 @@ enemy{
   breed = "moblin_sword",
 }
 
-destination{
-  name = "first_spawn",
-  layer = 1,
-  x = 136,
-  y = 349,
-  direction = 1,
-}
-
 enemy{
   layer = 1,
   x = 240,
@@ -6533,5 +6525,32 @@ enemy{
   },
   direction = 0,
   breed = "moblin_sword",
+}
+
+custom_entity{
+  name = "radeau",
+  layer = 1,
+  x = -16,
+  y = 357,
+  properties = {
+    {
+      key = "max_story_state",
+      value = "0",
+    },
+  },
+  width = 64,
+  height = 64,
+  origin_x = 32,
+  origin_y = 61,
+  direction = 0,
+  sprite = "things/radeau",
+}
+
+destination{
+  name = "first_spawn",
+  layer = 1,
+  x = 8,
+  y = 333,
+  direction = 1,
 }
 

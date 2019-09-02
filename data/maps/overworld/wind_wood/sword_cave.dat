@@ -1207,3 +1207,32 @@ destination{
   direction = 1,
 }
 
+pickable{
+  name = "sword",
+  layer = 0,
+  x = 392,
+  y = 45,
+  treasure_name = "sword",
+  treasure_savegame_variable = "obtained_sword_1",
+}
+
+sensor{
+  name = "message_1",
+  layer = 0,
+  x = 392,
+  y = 69,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "message_2",
+  layer = 0,
+  x = 376,
+  y = 85,
+  enabled_at_start = false,
+  width = 48,
+  height = 16,
+}
+

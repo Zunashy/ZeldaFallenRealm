@@ -124,6 +124,7 @@ sprite{ id = "things/fall_on_hole_effect", description = "fall on hole" }
 sprite{ id = "things/grass_effect", description = "grass effect" }
 sprite{ id = "things/lava_splash_effect", description = "lava splash" }
 sprite{ id = "things/long_chair", description = "long chair witch" }
+sprite{ id = "things/radeau", description = "Radeau intro" }
 sprite{ id = "things/switch_aureole", description = "switch aureole" }
 sprite{ id = "things/water_splash_effect", description = "water splash" }
 
@@ -212,6 +213,7 @@ entity{ id = "bone", description = "Os (projectile)" }
 entity{ id = "deep_water", description = "eau profonde" }
 entity{ id = "dungeon_statue_eye" }
 entity{ id = "grass", description = "grass" }
+entity{ id = "interaction_box", description = "interaction_box" }
 entity{ id = "octorok_rock", description = "Octorok's Rock" }
 entity{ id = "platform", description = "Moving Platform" }
 entity{ id = "platform_controller", description = "Contrôleur de plateforme" }

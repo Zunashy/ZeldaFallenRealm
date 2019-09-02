@@ -21,6 +21,8 @@ function game_manager:create(file)
     initial_game:initialize_new_savegame(game)
   end
 
+  game:set_transition_style("immediate")
+  game.HUD_height = 16
   return game
 end
 

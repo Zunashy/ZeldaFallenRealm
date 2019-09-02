@@ -1,0 +1,7 @@
+animation{
+  name = "default",
+  src_image = "things/radeau.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61 },
+  },
+}

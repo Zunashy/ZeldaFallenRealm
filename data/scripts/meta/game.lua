@@ -3,7 +3,7 @@
 local function map_callback(game, map)
   local camera = map:get_camera()
   camera:set_size(160,128)
-  camera:set_position_on_screen(0, 16)
+  camera:set_position_on_screen(0, game.HUD_height)
 
   local hero = map:get_hero()
   hero:save_solid_ground()

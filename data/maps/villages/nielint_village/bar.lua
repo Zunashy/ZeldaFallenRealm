@@ -4,7 +4,7 @@ local game = map:get_game()
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started()
   local zuna = map:get_entity("zuna")
-  if (game:get_story_state() or 0) < 2 then
+  if (game:get_story_state() or 0) < 3 then
     function zuna:on_interaction()
       game:start_dialog("pnj.village.nielint.barman.awake2")
     end

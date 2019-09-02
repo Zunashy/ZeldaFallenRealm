@@ -136,6 +136,7 @@ function dialog_box:on_command_pressed(command)
   elseif command == "attack" then 
     dialog_box:skip()    
   end
+  return true
 end
 
 --====== DIALOG MENU FUNCTIONS ======

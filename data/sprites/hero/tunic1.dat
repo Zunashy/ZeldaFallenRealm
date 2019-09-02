@@ -72,6 +72,16 @@ animation{
   },
 }
 animation{
+  name = "down",
+  src_image = "hero/Link_dead.png",
+  directions = {
+    { x = 155, y = 6, frame_width = 14, frame_height = 14, origin_x = 8, origin_y = 14 },
+    { x = 155, y = 6, frame_width = 14, frame_height = 14, origin_x = 8, origin_y = 14 },
+    { x = 155, y = 6, frame_width = 14, frame_height = 14, origin_x = 8, origin_y = 14 },
+    { x = 155, y = 6, frame_width = 14, frame_height = 14, origin_x = 8, origin_y = 14 },
+  },
+}
+animation{
   name = "dying",
   src_image = "hero/Link_dead.png",
   frame_delay = 70,

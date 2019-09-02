@@ -1,8 +1,11 @@
 local map = ...
 local game = map:get_game()
+local hero = game:get_hero()
 
 map.discover = mpg.discover
 map.init_reset_separators = mpg.init_reset_separators
+
+local vfx = require("scripts/feature/visual_effects")
 
 local cases = {
   {3, 4},
@@ -19,15 +22,42 @@ local cases = {
   {5, 7}
 }
 
+local function on_started(map)
+  map:init_reset_separators(true)
+end
+map:register_event("on_started", on_started)
 
 function map:on_opening_transition_finished()
-  self:discover(cases)
-  self:init_reset_separators(true)
-
   if game:get_story_state() == 0 then
-    sol.timer.start(1000, function() --à remplacer par l'animation de link arrivant sur la plage
-      game:get_hero():teleport("villages/nielint_village/bar", "bed", "fade")
-    end)
+
+    hero:freeze()
+    hero:get_sprite():set_animation("down")
+
+    local function init_movement()
+      local m = sol.movement.create("straight")
+      m:set_speed(64)
+      m:set_angle(0)
+      m:set_max_distance(88)
+      m:set_ignore_obstacles()
+      return m
+    end
+
+    local mHero = init_movement()
+    local mRadeau = init_movement()
+
+    function mHero:on_finished()
+      eg.shake(map:get_camera(), 0, 2, 50)
+      sol.timer.start(800, function()
+        hero:teleport("villages/nielint_village/bar", "bed", "fade")
+      end)
+    end
+
+    mHero:start(hero)
+    mRadeau:start(map:get_entity("radeau"))
+
   end
 
+  vfx.fade_in(game)
+
+  self:discover(cases)
 end

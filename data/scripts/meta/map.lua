@@ -32,6 +32,10 @@ local function parse_entities_properties(map)
         if prop and tonumber(prop) > game:get_story_state() then
             e:set_enabled(false)
         end
+        prop = e:get_property("max_story_state")
+        if prop and tonumber(prop) < game:get_story_state() then
+            e:set_enabled(false)
+        end
     end
 end
 map_meta:register_event("on_started", parse_entities_properties)

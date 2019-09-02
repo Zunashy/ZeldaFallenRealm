@@ -12,9 +12,17 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started()
+  local sensor1 = self:get_entity("message_1")
+  local sensor2 = self:get_entity("message_2")
 
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
+  function sensor1:on_activated()
+    game:start_dialog("pnj.tree.message.1")
+    sensor2:set_enabled(true)
+  end
+
+  function sensor2:on_activated()
+    game:start_dialog("pnj.tree.message.2")
+  end
 end
 
 -- Event called after the opening transition effect of the map,
