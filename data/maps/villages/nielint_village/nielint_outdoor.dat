@@ -5859,6 +5859,36 @@ tile{
   tileset = "overworld/forest_plain",
 }
 
+tile{
+  layer = 0,
+  x = 112,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "87",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "86",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "86",
+  tileset = "overworld/forest_plain",
+}
+
 destructible{
   name = "Herbe_16",
   layer = 0,
@@ -8007,6 +8037,105 @@ destination{
   x = 272,
   y = 333,
   direction = 1,
+}
+
+npc{
+  layer = 0,
+  x = 344,
+  y = 221,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/14",
+}
+
+npc{
+  layer = 0,
+  x = 208,
+  y = 109,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/15",
+  behavior = "dialog#",
+}
+
+npc{
+  layer = 0,
+  x = 432,
+  y = 461,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/8",
+  behavior = "dialog#",
+}
+
+npc{
+  layer = 0,
+  x = 24,
+  y = 461,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/3",
+  behavior = "dialog#",
+}
+
+npc{
+  layer = 0,
+  x = 360,
+  y = 61,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/9",
+  behavior = "dialog#",
+}
+
+npc{
+  layer = 0,
+  x = 72,
+  y = 301,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/6",
+  behavior = "dialog#",
+}
+
+npc{
+  layer = 0,
+  x = 80,
+  y = 45,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/10",
+  behavior = "dialog#",
+}
+
+npc{
+  layer = 0,
+  x = 536,
+  y = 45,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/13",
+  behavior = "dialog#",
+}
+
+npc{
+  layer = 0,
+  x = 632,
+  y = 333,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/14",
+  behavior = "dialog#",
+}
+
+npc{
+  layer = 0,
+  x = 344,
+  y = 317,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/18",
+  behavior = "dialog#",
 }
 
 tile{
