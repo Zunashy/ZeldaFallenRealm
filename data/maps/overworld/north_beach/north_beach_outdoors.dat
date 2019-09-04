@@ -6480,6 +6480,10 @@ enemy{
       key = "min_story_state",
       value = "1",
     },
+    {
+      key = "group_loot",
+      value = "great_key#1",
+    },
   },
   direction = 0,
   breed = "moblin_sword",
@@ -6494,6 +6498,10 @@ enemy{
       key = "min_story_state",
       value = "1",
     },
+    {
+      key = "group_loot",
+      value = "great_key#1",
+    },
   },
   direction = 0,
   breed = "moblin_sword",
@@ -6507,6 +6515,10 @@ enemy{
     {
       key = "min_story_state",
       value = "1",
+    },
+    {
+      key = "group_loot",
+      value = "great_key#1",
     },
   },
   direction = 0,

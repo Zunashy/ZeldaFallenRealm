@@ -1,6 +1,7 @@
 local map_menu = {
     cx = 0,
-    cy = 0
+    cy = 0,
+    name = "Minimap Menu"
 }
 
 map_menu.bg_surface = sol.surface.create(sol.video.get_quest_size())
@@ -81,6 +82,10 @@ function map_menu:on_started()
 end
 
 function map_menu:on_finished()
+    if self.cursor_right_timer then self.cursor_right_timer:stop() end
+    if self.cursor_top_timer then self.cursor_top_timer:stop() end
+    if self.cursor_left_timer then self.cursor_left_timer:stop() end
+    if self.cursor_down_timer then self.cursor_down_timer:stop() end
     self.game:set_suspended(false)
 end
 

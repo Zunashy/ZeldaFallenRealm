@@ -75,19 +75,40 @@ local function activate_trigger_callback(entity)
   end
 end
 
+local function group_loot_callback(enemy)
+  local map = enemy:get_map()
+  local loot = enemy:get_property("group_loot")  --the item looted (and additional informations) are the value of the property "group loot"
+  local last_to_die = true   --considering by default that this enemy is the last alive
+
+  local item, variant = loot:xfields("#")
+  if variant then variant = tonumber(variant) end
+
+  if not loot then return end
+  for e in map:get_entities_by_type("enemy") do
+    local o_loot = e:get_property("group_loot")
+    if o_loot and o_loot == loot and not (e == enemy) then  --testing if there is any other enemy, alive, with this group loot
+      last_to_die = false  
+    end
+  end
+  if last_to_die then  --if no such enemy was found, launches the event
+    enemy:set_treasure(item)
+  end
+end
+
 function mpg.init_enemies_event_triggers(map)
   if not map then return end
-  
   for e in map:get_entities_by_type("enemy") do
     if e:get_property("death_trigger") then
       e:register_event("on_dead", death_trigger_callback)
+    end
+    if e:get_property("group_loot") then
+      e:register_event("on_dying", group_loot_callback)
     end
   end
 end
 
 function mpg.init_activate_triggers(map)
   if not map then return end
-  
   for e in map:get_entities() do
     if e:get_property("activate_trigger") then
       e:register_event("on_activated", activate_trigger_callback)

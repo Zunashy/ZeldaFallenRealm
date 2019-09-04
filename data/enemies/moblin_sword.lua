@@ -8,7 +8,6 @@
 -- of types, events and methods:
 -- http://www.solarus-games.org/doc/latest
 
-
 local enemy = ...
 local game = enemy:get_game()
 local map = enemy:get_map()
@@ -72,14 +71,12 @@ end
 local function movement_pos_change_callback(m)
   local dir = m:get_direction4()
   if enemy:test_obstacles(dirCoef[dir + 1].x * 8, dirCoef[dir + 1].y * 8) then
-    print("obstacle detected")
     m:stop()
     enemy:movement_cycle()
   end
 end
 
 local function movement_obstacle_callback(m)
-  print("obstacle reached")
   m:stop()
   enemy:movement_cycle()
 end

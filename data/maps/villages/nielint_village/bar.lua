@@ -8,6 +8,10 @@ function map:on_started()
     function zuna:on_interaction()
       game:start_dialog("pnj.village.nielint.barman.awake2")
     end
+  elseif game:get_story_state() < 666 and game:has_item("sword") then
+    function zuna:on_interaction()
+      game:start_dialog("pnj.village.nielint.barman.sword")
+    end
   end
 end
 
@@ -17,7 +21,6 @@ function map:on_opening_transition_finished()
   if game:get_story_state() == 0 then
     game:set_story_state(1)
     map:get_entity("separator_1").on_activated = function()
-      print("oui")
       game:start_dialog("pnj.village.nielint.barman.awake1", function() game:set_story_state(2) end)  
     end
   end

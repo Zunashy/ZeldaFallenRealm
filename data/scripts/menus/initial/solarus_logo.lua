@@ -9,7 +9,9 @@
 -- function solarus_logo:on_finished()
 --   -- Do whatever you want next (show a title screen, start a game...)
 -- end
-local solarus_logo_menu = {}
+local solarus_logo_menu = {
+  name = "Solarus Logo Intro"
+}
 
 -- Main surface of the menu.
 local surface = sol.surface.create(201, 48)

@@ -14,6 +14,7 @@ local dialog_box = {
   skipping = false,            -- Whether the player skipped the dialog.
   selected_answer = nil,       -- Selected answer (1 or 2) or nil if there is no question.
   next = nil,
+  name = "Dialog Box",
 
   -- Displaying text gradually.
   current_line = nil,             -- Next line to display or nil.

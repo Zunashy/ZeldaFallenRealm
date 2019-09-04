@@ -1,5 +1,6 @@
 local meta = sol.main.get_metatable("game")
 
+--DEBUG COMMANDS FUNCTION
 function meta:on_key_pressed(key, modifiers)
   local handled = false
   if key == "f5" then
@@ -35,6 +36,7 @@ function meta:on_key_pressed(key, modifiers)
   return handled
 end
 
+--Command effects management : why did i even do this lol
 function meta:set_custom_command_effect(command, fun)
   self.command_effect[command] = fun
 end
@@ -43,6 +45,7 @@ function meta:get_custom_command_effect(command)
   return self.command_effect[command]
 end
 
+--MAIN COMMAND MANAGER
 local start_map_menu = require("scripts/menus/map")
 function meta:on_command_pressed(command)
   if type(self.command_effect[command]) == "function" then
@@ -55,6 +58,7 @@ function meta:on_command_pressed(command)
   end
 end
 
+--Starts a "command pressed" event with a custom command
 local function fire_command_event(game, command)
   if game.on_command_pressed then
     if game:on_command_pressed(command) then
@@ -75,6 +79,7 @@ local function fire_command_event(game, command)
   end
 end
 
+--When a key is pressed, tests if it is bound with a custom command
 local function custom_command_keyboard(game, key)
   for k, v in pairs(game.custom_keyboard_binding) do
     if v == key then

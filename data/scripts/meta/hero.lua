@@ -2,13 +2,19 @@
 
 local hero_meta = sol.main.get_metatable("hero")
 
+local hero_sprite
+
 local function initialize_hero_features(game)
 
   local hero = game:get_hero()
-  
-  local hero_sprite = hero:get_sprite("tunic")
-  
   hero.get_corner_position = eg.get_corner_position
+
+
+  function hero:on_created()
+    hero_sprite = hero:get_sprite("tunic")
+  end
+
+  hero:set_walking_speed(300)
   
   --Méthodes / Callbacks
   function hero:start_hurt_oow(damage, knockback_angle, knockback_distance)

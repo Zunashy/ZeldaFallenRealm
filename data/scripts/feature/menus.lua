@@ -13,7 +13,7 @@ function sol.menu.stop(menu)
     stop_menu(menu)
     for i, v in ipairs(menus) do
         if menu == v then
-            table:remove(i)
+            table.remove(menus, i)
         end
     end
 end

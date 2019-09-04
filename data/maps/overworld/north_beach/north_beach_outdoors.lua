@@ -4,6 +4,7 @@ local hero = game:get_hero()
 
 map.discover = mpg.discover
 map.init_reset_separators = mpg.init_reset_separators
+map.init_enemies_event_triggers = mpg.init_enemies_event_triggers
 
 local vfx = require("scripts/feature/visual_effects")
 
@@ -24,6 +25,7 @@ local cases = {
 
 local function on_started(map)
   map:init_reset_separators(true)
+  map:init_enemies_event_triggers()
 end
 map:register_event("on_started", on_started)
 
@@ -54,10 +56,9 @@ function map:on_opening_transition_finished()
 
     mHero:start(hero)
     mRadeau:start(map:get_entity("radeau"))
+    vfx.fade_in(game)
 
   end
-
-  vfx.fade_in(game)
 
   self:discover(cases)
 end

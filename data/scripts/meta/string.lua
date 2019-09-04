@@ -47,7 +47,7 @@ end
 function string.ltrim(s, char)
   char = char or " "
   local len = s:len()
-  while s:sub(1) == char do
+  while s:sub(1, 1) == char do
     s = s:sub(2)
     len = len - 1
   end

@@ -6,7 +6,7 @@ local background_img = sol.surface.create("hud/item_icon.png")
 
 function item_icon_builder:new(game, config)
 
-  local item_icon = {}
+  local item_icon = {name = "HUD Item Icon"}
 
   item_icon.slot = config.slot or 1
   item_icon.surface = sol.surface.create(22, 22)

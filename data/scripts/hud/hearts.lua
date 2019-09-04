@@ -6,7 +6,7 @@ local hearts_img = sol.surface.create("hud/hearts.png")
 
 function hearts_builder:new(game, config)
 
-  local hearts = {}
+  local hearts = {name = "HUD hearts"}
 
   hearts.surface = sol.surface.create(60, 12)
   hearts.dst_x = config.x

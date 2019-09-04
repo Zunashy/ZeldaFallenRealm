@@ -22,7 +22,8 @@ local game_menu = {
     },
     info_surface_movement = nil,
     transition_movement = nil,
-    transition_movement_pos = {x = 0, y = 0}
+    transition_movement_pos = {x = 0, y = 0},
+    name = "Game Menu"
 }
 
 game_menu.surface = sol.surface.create(sol.video.get_quest_size())

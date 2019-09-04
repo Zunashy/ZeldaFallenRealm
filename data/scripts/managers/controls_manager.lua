@@ -27,7 +27,6 @@ function controls:load()
             key = key:ltrim()
             val = val:rtrim()
             val = val:ltrim()
-
             current_controls[key] = val
         end
     else

@@ -6,7 +6,7 @@ local rupee_icon_img = sol.surface.create("hud/rupee_icon.png")
 
 function rupees_builder:new(game, config)
 
-  local rupees = {}
+  local rupees = {name = "HUD Rupees"}
 
   local digits_text = sol.text_surface.create({
     font = "8_bit OOS",
