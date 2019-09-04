@@ -45,6 +45,10 @@ end
 
 function controls:save()
     local file, error = sol.file.open("controls.dat", "w")
+    if not file then
+        print(error)
+        return false
+    end
     for k, v in pairs(current_controls) do
         file:write(k .. " = "..v..'\n')
     end

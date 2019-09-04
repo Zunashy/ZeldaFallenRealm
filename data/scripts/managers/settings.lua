@@ -124,7 +124,10 @@ end
 function settings_manager:save()
     local file = sol.file.open("settings.dat", "w")
     local settings = self:get_all()
-
+    if not file then
+        print(error)
+        return false
+    end
     for k, v in pairs(settings) do
         if type(v) == "string" then v = self:write_string(v) end
         if type(v) == "boolean" then v = self:write_boolean(v) end
