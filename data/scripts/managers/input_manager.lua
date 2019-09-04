@@ -76,11 +76,32 @@ local function fire_command_event(game, command)
 end
 
 local function custom_command_keyboard(game, key)
-  if game.custom_keyboard_binding[key] then
-    fire_command_event(game, game.custom_keyboard_binding[key])
+  for k, v in pairs(game.custom_keyboard_binding) do
+    if v == key then
+      fire_command_event(game, k)
+    end
   end
 end
 meta:register_event("on_key_pressed", custom_command_keyboard)
+
+local controls = require("scripts/managers/controls_manager")
+
+local commands = {
+  action = true,
+  attack = true,
+  item_1 = true,
+  item_2 = true,
+  right = true,
+  up = true,
+  left = true,
+  down = true,
+  pause = true,
+}
+
+local custom_commands = {
+  select = true
+}
+for k, v in pairs(custom_commands) do commands[k] = v end
 
 local function start_callback(game)
   game.command_effect = {
@@ -88,24 +109,25 @@ local function start_callback(game)
   }
 
   game.custom_keyboard_binding = {
-    backspace = "select"
+    select = "backspace"
   }
 
   game.custom_joypad_bindings = {
     
   }
 
-  game:set_command_keyboard_binding("action", "space")
-  game:set_command_keyboard_binding("attack", "p")
-  game:set_command_keyboard_binding("item_1", "k")
-  game:set_command_keyboard_binding("item_2", "o")
-  game:set_command_keyboard_binding("right", "d")
-  game:set_command_keyboard_binding("up", "z")
-  game:set_command_keyboard_binding("left", "q")
-  game:set_command_keyboard_binding("down", "s")
-  game:set_command_keyboard_binding("pause", "return")
+  controls:apply(game, commands)
+end
 
-
+local set_command_keyboard_binding_old = meta.set_command_keyboard_binding
+function meta:set_command_keyboard_binding(command, key)
+  assert(commands[command], "Bad argument #1 to game:set_command_keyboard_binding : "..tostring(command).." is not a game command.")
+  assert(self.custom_keyboard_binding, "Custom commands haven't been initalized yet")
+  if custom_commands[command] then
+    self.custom_keyboard_binding[command] = key
+  else --at this point we are sure command is a built-in a command
+    set_command_keyboard_binding_old(self, command, key)
+  end
 end
 meta:register_event("on_started", start_callback)
 

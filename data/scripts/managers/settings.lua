@@ -98,21 +98,27 @@ function settings_manager:apply(settings)
 end    
 
 function settings_manager:load()
-    local file, error = sol.file.open("settings.dat", "r")
+    local chunk = sol.main.load_file("settings.dat", "r")
     local key, val
     local settings = {}
     for k, v in pairs(default_settings) do settings[k] = v end
-    if file then
-        for line in file:lines() do
+    if chunk then
+        --[[for line in file:lines() do
             key, val = line:xfields("=")
             key = key:rtrim()
             key = key:ltrim()
             val = loadstring("return " .. val)()
             settings[key] = val
-        end
+        end]]
+        local env = setmetatable({}, {__newindex = function(self, key, value)
+            print(key, value)
+            settings[key] = value
+        end})
+
+        setfenv(chunk, env)
+        chunk()
     end
     self:apply(settings)
-    file:close()
 end
 
 function settings_manager:save()

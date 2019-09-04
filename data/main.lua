@@ -7,6 +7,7 @@ require("scripts/features")
 local game_manager = require("scripts/game_manager")
 local start_initial_menus = require("scripts/menus/initial_menus_manager")
 local settings_manager = require ("scripts/managers/settings")
+local controls_manager = require("scripts/managers/controls_manager")
 --require("scripts/sinking_override")
 
 local default_save_file = "save1.dat"
@@ -23,7 +24,8 @@ end
 -- It is the real entry point of the game.
 function sol.main:on_started()
   sol.language.set_language("en")
-  --settings_manager:load()
+  settings_manager:load()
+  controls_manager:load()
   sol.audio.preload_sounds()
   -- Setting a language is useful to display text and dialogs.
   
@@ -32,5 +34,6 @@ end
 
 -- Event called when the program stops.
 function sol.main:on_finished()
-  --settings_manager:save()
+  settings_manager:save()
+  controls_manager:save()
 end

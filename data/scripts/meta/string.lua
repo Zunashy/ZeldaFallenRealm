@@ -53,3 +53,4 @@ function string.ltrim(s, char)
   end
   return s
 end
+
