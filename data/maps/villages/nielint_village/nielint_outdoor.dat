@@ -6136,11 +6136,11 @@ destructible{
 }
 
 destination{
-  name = "bar_to_viillage",
+  name = "bar_to_village",
   layer = 0,
   x = 240,
   y = 69,
-  direction = 1,
+  direction = 3,
 }
 
 separator{
@@ -8055,7 +8055,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/15",
-  behavior = "dialog#",
+  behavior = "dialog#pnj.village.nielint.N_dog",
 }
 
 npc{
@@ -8065,7 +8065,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/8",
-  behavior = "dialog#",
+  behavior = "dialog#pnj.village.nielint.SE_girl_green_dress",
 }
 
 npc{
@@ -8075,7 +8075,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/3",
-  behavior = "dialog#",
+  behavior = "dialog#pnj.village.nielint.SW_entrance_girl",
 }
 
 npc{
@@ -8085,7 +8085,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/9",
-  behavior = "dialog#",
+  behavior = "dialog#pnj.village.nielint.N_old_man",
 }
 
 npc{
@@ -8095,7 +8095,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/6",
-  behavior = "dialog#",
+  behavior = "dialog#pnj.village.nielint.W_blond_boy",
 }
 
 npc{
@@ -8105,7 +8105,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/10",
-  behavior = "dialog#",
+  behavior = "dialog#pnj.village.nielint.exit_guards",
 }
 
 npc{
@@ -8115,7 +8115,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/13",
-  behavior = "dialog#",
+  behavior = "dialog#pnj.village.nielint.exit_guards",
 }
 
 npc{
@@ -8125,7 +8125,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/14",
-  behavior = "dialog#",
+  behavior = "dialog#pnj.village.nielint.exit_guards",
 }
 
 npc{
@@ -8135,7 +8135,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/18",
-  behavior = "dialog#",
+  behavior = "dialog#pnj.village.nielint.C_boy",
 }
 
 tile{
