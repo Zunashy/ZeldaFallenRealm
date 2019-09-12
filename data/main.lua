@@ -28,7 +28,6 @@ function sol.main:on_started()
   controls_manager:load()
   sol.audio.preload_sounds()
   -- Setting a language is useful to display text and dialogs.
-  
   start_initial_menus(function() sol.main:start_game(default_save_file) end)
 end
 
