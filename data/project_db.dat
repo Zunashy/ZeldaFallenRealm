@@ -221,7 +221,7 @@ entity{ id = "platform_controller", description = "Contrôleur de plateforme" }
 entity{ id = "waterfall", description = "cascade" }
 
 language{ id = "en", description = "English" }
-language{ id = "fr", description = "Francé" }
+language{ id = "fr", description = "Francais" }
 
 font{ id = "8_bit", description = "8 bit" }
 font{ id = "8_bit OOS", description = "8_bit OOS" }

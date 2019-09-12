@@ -1,8 +1,172 @@
 dialog{
-  id = "pnj.village.nielint.barman.cinematic1",
+  id = "_treasure",
   text = [[
-Flemme d'écrire un dialogue 
+]],
+}
+
+dialog{
+  id = "_treasure.rock_feather.1",
+  text = [[
+Vous avez trouvé la plume de roc.
+
+BAH VAS Y SAUTE
+]],
+}
+
+dialog{
+  id = "_treasure.rupee.1",
+  text = [[
+Tu as trouvé 1 rubis !
+C'est le début
+de la fortune !
+]],
+}
+
+dialog{
+  id = "_treasure.rupee.2",
+  text = [[
+Tu as trouvé un rubis bleu !
+Il vaut 5 rubis !
+]],
+}
+
+dialog{
+  id = "_treasure.rupee.3",
+  text = [[
+Tu as trouvé un rubis rouge !
+Il vaut 20 rubis !
+]],
+}
+
+dialog{
+  id = "_treasure.rupee.4",
+  text = [[
+Tu as trouvé 50 rubis !
+Merveilleux !
+]],
+}
+
+dialog{
+  id = "_treasure.small_key.1",
+  text = [[
+Tu as trouvé une petite clé !
+Utilise-la pour ouvrir une 
+porte ou un bloc
+dans ce donjon.
+]],
+}
+
+dialog{
+  id = "_treasure.sword.1",
+  text = [[
+Tu as trouvé une épée!
+Utilise C pour t'en servir.
+Elle te permet de couper les
+buissons ainsi que d'autres
+choses.
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.C_boy",
+  text = [[
+Pff... Papa veut encore que
+je m'occupe de la pelouse...
+Si j'avais une épée, je
+couperais ces herbes
+vite fait bien fait !
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.N_dog",
+  text = [[
+*le chien vous renifle
+avant de remuer la queue*
+Wouf !
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.N_old_man",
+  text = [[
+Oui ?
+Tu te demandes
+pourquoi je vis dans
+une maison arbre ?
+C'est un secret...
+Mais je veux bien te le
+révéler pour 100 000 rubis.
+
+Je plaisante ! Héhéhé...
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.SE_girl_green_dress",
+  text = [[
+Salut toi ! 
+Tu te demandes ce qu'il y a
+dans cette grotte, pas vrai ?
+J'ai essayé d'y entrer
+mais ça faisait trop peur!
+Tu ne le répètes pas à ma
+maman, hein ?
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.SW_entrance_girl",
+  text = [[
+Tiens, tu es nouveau
+par ici ?
+Je n'avais encore jamais vu
+un bonnet comme le tien.
+C'est une nouvelle mode,
+c'est ça ?
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.W_blond_boy",
+  text = [[
+J'aimerais bien devenir
+un grand chevalier...
+Tu connais le prince Zuna ?
+
+Il parait qu'il maniait
+la lance comme personne !
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.barman.awake1",
+  text = [[
+yo viens me parler (flemme d'écrire un dialogue)
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.barman.awake2",
+  text = [[
+Toujours la flemme d'écrire un dialogue 
 va chercher l'épée
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.barman.sword",
+  text = [[
+plage monstres allez hop
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.exit_guards",
+  text = [[
+Interdiction de passer, cet
+endroit est trop dangereux
+pour les simples civils.
 ]],
 }
 

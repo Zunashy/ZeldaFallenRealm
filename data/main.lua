@@ -23,12 +23,11 @@ end
 -- This function is called when Solarus starts.
 -- It is the real entry point of the game.
 function sol.main:on_started()
-  sol.language.set_language("en")
+  sol.language.set_language("fr")
   settings_manager:load()
   controls_manager:load()
   sol.audio.preload_sounds()
   -- Setting a language is useful to display text and dialogs.
-  
   start_initial_menus(function() sol.main:start_game(default_save_file) end)
 end
 

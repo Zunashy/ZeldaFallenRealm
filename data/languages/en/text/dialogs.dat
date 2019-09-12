@@ -44,35 +44,21 @@ dialog{
   id = "_treasure.small_key.1",
   oui = "yeet",
   text = [[
-haha oui les mots oui ahahahah
+Tu as trouvé une petite clé !
+Utilise-la pour ouvrir une 
+porte ou un bloc
+dans ce donjon.
 ]],
 }
 
 dialog{
   id = "_treasure.sword.1",
   text = [[
-ya got the sword
-]],
-}
-
-dialog{
-  id = "pnj.test.snas",
-  text = [[
-ur gonna have bad tiem
-]],
-}
-
-dialog{
-  id = "pnj.tree.message.1",
-  text = [[
-sample text
-]],
-}
-
-dialog{
-  id = "pnj.tree.message.2",
-  text = [[
-darude sandstorm
+Tu as trouvé une épée!
+Utilise C pour t'en servir.
+Elle te permet de couper les
+buissons ainsi que d'autres
+choses.
 ]],
 }
 

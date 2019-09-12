@@ -5,7 +5,7 @@ local default_settings = {
     fullscreen = false,
     sound_volume = 100,
     music_volume = 100,
-    language = "en",
+    language = "fr",
     joypad_enabled = true,
     text_speed = 3
 }
@@ -80,6 +80,7 @@ function settings_manager:get_all()
     settings.language = sol.language.get_language()
     settings.joypad_enabled = sol.input.is_joypad_enabled()
     settings.text_speed = dialog_box:get_text_speed()
+print(settings.language)
     return settings
 end
 
