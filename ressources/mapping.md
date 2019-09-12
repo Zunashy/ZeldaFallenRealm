@@ -6,7 +6,7 @@ Dans ce guide je présenterai la méthodes à suivre pour créer et éditer des 
 
 Avant de commencer, ouvrez solarus (sans blague) et ouvrez une map en double-cliquant dessus dans l'arborescence à gauche ; ou créez en une avec clic droit sur le dossier qui la contiendra (les maps sont toujours organisées en dossiers) -> Nouvelle map.
 
-![Image indisponible](img/mapeditor1.png)
+![Image indisponible](img/mapeditor1.PNG)
 
 A droite, l'aperçu de la map ; dans la partie centale haute vous pouvez modifier certains propriétés de votre map, telles que sa taille ou la musique qui se jouera dessus.
 
@@ -18,7 +18,7 @@ Le décor d'une map est composé d'une multitude d'images carrées, de taille 8x
 
 
 **Exemple** : sur cette image, on peut voir deux tiles différentes, de 16x16 pixels  
-![Image indisponible](img/tiles1.png)  
+![Image indisponible](img/tiles1.PNG)  
 Celle de droite n'est présente qu'une fois, mais celle de droite à été répétée pour créer le motif du sol.
 
 ####Tilesets
