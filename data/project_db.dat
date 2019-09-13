@@ -209,16 +209,16 @@ enemy{ id = "skeleton_2", description = "Squelette 2" }
 enemy{ id = "skeleton_3", description = "Squelette 3" }
 enemy{ id = "slime_green", description = "Green Slime" }
 
+entity{ id = "[o]deep_water", description = "eau profonde" }
+entity{ id = "[o]grass", description = "grass" }
+entity{ id = "[o]waterfall", description = "cascade" }
 entity{ id = "arrow", description = "Arrow" }
 entity{ id = "bone", description = "Os (projectile)" }
-entity{ id = "deep_water", description = "eau profonde" }
 entity{ id = "dungeon_statue_eye" }
-entity{ id = "grass", description = "grass" }
 entity{ id = "interaction_box", description = "interaction_box" }
 entity{ id = "octorok_rock", description = "Octorok's Rock" }
 entity{ id = "platform", description = "Moving Platform" }
 entity{ id = "platform_controller", description = "Contrôleur de plateforme" }
-entity{ id = "waterfall", description = "cascade" }
 
 language{ id = "en", description = "English" }
 language{ id = "fr", description = "Francais" }
@@ -244,9 +244,9 @@ file{ path = "enemies/skeleton_1.lua", author = "TwilCynder", }
 file{ path = "enemies/skeleton_2.lua", author = "TwilCynder", }
 file{ path = "enemies/skeleton_3.lua", author = "TwilCynder", }
 file{ path = "enemies/slime_green.lua", author = "Diarandor", }
+file{ path = "entities/[o]deep_water.lua", author = "a_tom", }
 file{ path = "entities/arrow.lua", author = "a_tom, TwilCynder", }
 file{ path = "entities/bone.lua", author = "a_tom, TwilCynder", }
-file{ path = "entities/deep_water.lua", author = "a_tom", }
 file{ path = "entities/dungeon_statue_eye.lua", author = "TwilCynder", }
 file{ path = "entities/octorok_rock.lua", author = "a_tom", }
 file{ path = "entities/platform.lua", author = "TwilCynder", }
