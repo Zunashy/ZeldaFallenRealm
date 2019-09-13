@@ -7,7 +7,6 @@ Dans ce guide je présenterai la méthodes à suivre pour créer et éditer des 
 Il n'est pas nécessaire d'utiliser un autre logiciel que l'éditeur solarus pour éditer les maps.
 
 Avant de commencer, ouvrez donc l'éditeur solarus et ouvrez une map en double-cliquant dessus dans l'arborescence à gauche ; ou créez en une avec clic droit sur le dossier qui la contiendra (les maps sont toujours organisées en dossiers) -> Nouvelle map.
-
 ![Image indisponible](img/mapeditor1.PNG)
 
 A droite, l'aperçu de la map ; dans la partie centale haute vous pouvez modifier certains propriétés de votre map, telles que sa taille ou la musique qui se jouera dessus.
@@ -160,5 +159,4 @@ Pour cela, il faut regarder la partie "propriétés utilisateurs", en bas de la 
 Dans ce guide, je présenterai généralement les propriété avec le format `nom : valeur`.
 
 Outre les entités custom, il peut être utile d'affecter des propriétés custom à d'autres types d'entité pour activer certaines fonctionnalités que j'ai créés pour le jeu : cela fera l'objet de la dernière partie de ce guide (coming soon i guess).
-
 
