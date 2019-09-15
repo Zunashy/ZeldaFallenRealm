@@ -129,6 +129,8 @@ end
 
 function enemy:on_hurt(atk)
   if atk == "sword" then
-    detect_state = true
+    self:get_movement().on_finished = function(self)
+      enemy:target_hero()
+    end
   end
 end

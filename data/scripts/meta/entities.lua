@@ -38,3 +38,8 @@ local function npc_interaction(npc)
   end
 end
 npc_meta:register_event("on_interaction", npc_interaction)
+
+local enemy = sol.main.get_metatable("enemy")
+function enemy:on_hurt()
+  print("meta")
+end

@@ -93,8 +93,8 @@ local function initialize_hero_features(game)
     elseif s == "sword_tapping" then
      local m = sol.movement.create("straight")
      m:set_speed(100)
-     m:set_angle(hero_sprite:get_direction() * (math.pi / 2))
-     m:set_max_distance(2)
+     m:set_angle(hero_sprite:get_direction() * (math.pi / 2) + math.pi)
+     m:set_max_distance(3)
      m:start(self)
      --sol.audio.play_sound("sword_tapping")
     end

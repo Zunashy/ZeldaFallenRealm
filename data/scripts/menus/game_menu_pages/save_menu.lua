@@ -27,6 +27,7 @@ function save_menu:blink_cursor_cycle(callback)
         save_menu.blink_timer = sol.timer.start(self.game_menu, 100, function()
             save_menu.blink_count = self.blink_count + 1
             if save_menu.blink_count > 3 then
+                self.cursor_blinking = false
                 callback()
             else
                 save_menu.view_cursor = true
@@ -37,6 +38,7 @@ function save_menu:blink_cursor_cycle(callback)
 end
 
 function save_menu:blink_cursor(callback)
+    self.cursor_blinking = true
     self.blink_count = 0 
     self:blink_cursor_cycle(callback)
 end
@@ -71,6 +73,7 @@ function save_menu:draw(dst_surface)
 end
 
 function save_menu:on_command_pressed(command)
+    if self.cursor_blinking then return true end 
     if command == "sword" or command == "select" then
         self.game_menu.current_page = self.origin_page
     elseif command == "up" then

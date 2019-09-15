@@ -52,12 +52,16 @@ Au cours du projet, vous devrez régulièrement faire deux choses : récupérer 
 - Il faut maintenant "commit" vos modifications, c'est à dire faire en sorte que Git les prenne en compte, avec `git commit -a -m "un message expliquant vos modifs rapidement"
 - Enfin, envoyez vos modifs sur le dépôt en ligne avec `git push origin master`
 
+En cas de message d'erreur : si le message d'erreur contient `hint: Updates were rejected because the remote contains work that you do not have locally`
+récupérez les modifs (voir paragraphe suivant) puis réesayer de `push`, sinon, demandez simplement sur le serveur Discord.
+
+
 #####Récupérer les modifs des autres
 /!\ _Avant de récupérer le travail des autres, vous devez impérativement avoir `commit`, vous ne devez pas avoir modifié les fichiers sans avoir `commit` les modifs. Si vous voulez annuler vos modifs depuis le dernier commit, faites `git stash`_
 
 - `git pull` récupère les modifs apportées par les autres depuis le dépôt en ligne.
 - Git effectuera parfois un *merge* pour harmoniser deux modifications, et ouvrira un éditeur de texte en vous demandant d'écrire un message de merge. Mettez n'importe quoi (vraiment, on s'en fout, git tient à ce qu'il y ait quelque chose mais osef), sauvegardez et fermez l'éditeur.
-- Si pour une quelconque raison git refuse de terminer le `pull` après ça, vous affiche un message d'erreur ... ne perdez pas de temps à cherche à comprendre, on entre dans la partie obscure de Git, expliquez le problème à Twil.
+- Si pour une quelconque raison git refuse de terminer le `pull` après ça, vous affiche un message d'erreur ... ne perdez pas de temps à chercher à comprendre, on entre dans la partie obscure de Git, expliquez le problème à Twil.
 
 
 

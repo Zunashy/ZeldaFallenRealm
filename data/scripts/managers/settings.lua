@@ -80,7 +80,6 @@ function settings_manager:get_all()
     settings.language = sol.language.get_language()
     settings.joypad_enabled = sol.input.is_joypad_enabled()
     settings.text_speed = dialog_box:get_text_speed()
-print(settings.language)
     return settings
 end
 
@@ -112,7 +111,6 @@ function settings_manager:load()
             settings[key] = val
         end]]
         local env = setmetatable({}, {__newindex = function(self, key, value)
-            print(key, value)
             settings[key] = value
         end})
 

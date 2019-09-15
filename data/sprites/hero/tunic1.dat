@@ -246,11 +246,13 @@ animation{
 animation{
   name = "sword_loading_stopped",
   src_image = "hero/Charset_Link.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
   directions = {
-    { x = 96, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
-    { x = 112, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
-    { x = 80, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
-    { x = 128, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 96, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2, num_columns = 1 },
+    { x = 112, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2, num_columns = 1 },
+    { x = 80, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2, num_columns = 1 },
+    { x = 128, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 2, num_columns = 1 },
   },
 }
 animation{
