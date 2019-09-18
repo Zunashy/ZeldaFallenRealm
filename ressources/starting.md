@@ -49,7 +49,7 @@ Au cours du projet, vous devrez régulièrement faire deux choses : récupérer 
 
 #####Mettre vos modifs en ligne
 - Commencez par dire à git de vérifier si de nouveaux fichiers ont été ajoutés avec `git add *`
-- Il faut maintenant "commit" vos modifications, c'est à dire faire en sorte que Git les prenne en compte, avec `git commit -a -m "un message expliquant vos modifs rapidement"
+- Il faut maintenant "commit" vos modifications, c'est à dire faire en sorte que Git les prenne en compte, avec `git commit -a -m "un message expliquant vos modifs rapidement"`
 - Enfin, envoyez vos modifs sur le dépôt en ligne avec `git push origin master`
 
 En cas de message d'erreur : si le message d'erreur contient `hint: Updates were rejected because the remote contains work that you do not have locally`

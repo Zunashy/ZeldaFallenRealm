@@ -326,15 +326,17 @@ Lancez donc la console dans le dossier où vous voulez mettre les fichiers du je
 <h5>Mettre vos modifs en ligne</h5>
 <ul>
 <li>Commencez par dire à git de vérifier si de nouveaux fichiers ont été ajoutés avec <code>git add *</code></li>
-<li>Il faut maintenant &quot;commit&quot; vos modifications, c'est à dire faire en sorte que Git les prenne en compte, avec `git commit -a -m &quot;un message expliquant vos modifs rapidement&quot;</li>
+<li>Il faut maintenant &quot;commit&quot; vos modifications, c'est à dire faire en sorte que Git les prenne en compte, avec <code>git commit -a -m &quot;un message expliquant vos modifs rapidement&quot;</code></li>
 <li>Enfin, envoyez vos modifs sur le dépôt en ligne avec <code>git push origin master</code></li>
 </ul>
+<p>En cas de message d'erreur : si le message d'erreur contient <code>hint: Updates were rejected because the remote contains work that you do not have locally</code>
+récupérez les modifs (voir paragraphe suivant) puis réesayer de <code>push</code>, sinon, demandez simplement sur le serveur Discord.</p>
 <h5>Récupérer les modifs des autres</h5>
 <p>/!\ <em>Avant de récupérer le travail des autres, vous devez impérativement avoir <code>commit</code>, vous ne devez pas avoir modifié les fichiers sans avoir <code>commit</code> les modifs. Si vous voulez annuler vos modifs depuis le dernier commit, faites <code>git stash</code></em></p>
 <ul>
 <li><code>git pull</code> récupère les modifs apportées par les autres depuis le dépôt en ligne.</li>
 <li>Git effectuera parfois un <em>merge</em> pour harmoniser deux modifications, et ouvrira un éditeur de texte en vous demandant d'écrire un message de merge. Mettez n'importe quoi (vraiment, on s'en fout, git tient à ce qu'il y ait quelque chose mais osef), sauvegardez et fermez l'éditeur.</li>
-<li>Si pour une quelconque raison git refuse de terminer le <code>pull</code> après ça, vous affiche un message d'erreur ... ne perdez pas de temps à cherche à comprendre, on entre dans la partie obscure de Git, expliquez le problème à Twil.</li>
+<li>Si pour une quelconque raison git refuse de terminer le <code>pull</code> après ça, vous affiche un message d'erreur ... ne perdez pas de temps à chercher à comprendre, on entre dans la partie obscure de Git, expliquez le problème à Twil.</li>
 </ul>
 
 </body>
