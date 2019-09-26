@@ -97,7 +97,7 @@ il est possible de donner un sprite à un téléporteur mais ce n'est générale
 #### Trésor ramassable
 Un item que link obtiendra s'il le touche. Le concept d'item est très large dans Solarus, dépendant de la manière dont c'est codé ça peut désigner autant un objet de l'inventaire qu'un réceptacle de coeur ou un rubis.
 Les trésors sont en réalité rarement placés directement sur la map (+ souvent drop par des enemis ou trouvés dans un coffre).  
-Lorsque vous placez un trésor, vous devez choisir l'item dont il s'agit, mais également sa variante. La variante peut avoir de nombreuses significations (pour un rubis : sa couleur, pour l'épée, son niveau, etc). N'hésitez pas à demander à la personne ayant codé l'item à quoi correspondent ses variantes.
+Lorsque vous placez un trésor, vous devez choisir l'item dont il s'agit, mais également sa variante. La variante peut avoir de nombreuses significations (pour un rubis : sa couleur, pour l'épée, son niveau, etc). Des informations sur les différents items (dont la significations de leurs variantes) sont disponibles sur le google doc.
 
 Les items que peuvent représenter les trésors ramassables regroupent :  
 
@@ -158,5 +158,18 @@ Il est possible d'affecter des propriétés particulières aux entités, avec le
 Pour cela, il faut regarder la partie "propriétés utilisateurs", en bas de la fenêtre de configuration des entités, cliquer sur le "+" vert, et spécifier le nom de la propriété et sa valeur.  
 Dans ce guide, je présenterai généralement les propriété avec le format `nom : valeur`.
 
-Outre les entités custom, il peut être utile d'affecter des propriétés custom à d'autres types d'entité pour activer certaines fonctionnalités que j'ai créés pour le jeu : cela fera l'objet de la dernière partie de ce guide (coming soon i guess).
+Outre les entités custom, il peut être utile d'affecter des propriétés custom à d'autres types d'entité pour activer certaines fonctionnalités que j'ai créés pour le jeu, les *map features*.
+
+###Map features
+
+La plupart du temps, il s'agit d'affecter une propriété à une entité afin de modifier son comportement. Elles sont surtout utile pour "programmer" le fonctionnement des donjons, mais sont utiles dans beaucoup d'autres situation.
+
+Les maps features disponibles actuellement sont les suivantes : 
+
+- Group Loot : il est possible de faire en sorte que Link doive tuer tout un groupe d'enemi pour loot un item (le dernier enemi à mourir droppera l'item). Pour cela, ajouter la propriété `group_loot : nom_de_l'item#variante` à tous les enemis du groupe. (le `#variante` est inutile si l'item n'a pas plusieurs variantes).
+L'item spécifié ne sera drop que lorsque tous les enemis avec la propriété `group_loot` avec la même valeur auront été tués. 
+Exemple : Les 3 moblins devant le donjon 1 (sur la plage) possèdent la propriété `groop_loot : great_key`, ce qui signifie que quand le dernier est tué, il drop la grande clé.
+
+
+
 
