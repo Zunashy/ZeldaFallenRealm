@@ -54,7 +54,7 @@ sprite{ id = "enemies/bat", description = "enemies/bat" }
 sprite{ id = "enemies/blue_slime", description = "Blue Slim" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/goomba", description = "enemies/crab" }
-sprite{ id = "enemies/mini_boss/1/mr_pers", description = "enemies/mini_boss/1/mr_pers" }
+sprite{ id = "enemies/mini_boss/1/mr_pers", description = "mr_pers" }
 sprite{ id = "enemies/mini_boss/1/sword" }
 sprite{ id = "enemies/moblin", description = "enemies/moblin_sword" }
 sprite{ id = "enemies/moblin_sword", description = "enemies/moblin_sword" }

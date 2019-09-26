@@ -904,7 +904,7 @@ tile_pattern{
 
 tile_pattern{
   id = "23",
-  ground = "traversable",
+  ground = "deep_water",
   default_layer = 0,
   x = { 128, 144, 160, 176 },
   y = { 72, 72, 72, 72 },

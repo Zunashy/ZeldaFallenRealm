@@ -1,19 +1,20 @@
---global object containing all public functions created here.
-mpg = {}
+--/!\ the generic map features are no longer stored in a global module/object, they are now in the map meta
+local map = sol.main.get_metatable("map")
+mpg = map
 
 --Opens all doors that have the name format 'door_<name>*'
-function mpg.open_door(map, name)
+function map:open_door(name)
   if type(name) == "number" then name = tostring(name) end
-  if not map then return end
-  map:open_doors(name)
-  map:open_doors("door_"..name)
+  if not self then return end
+  self:open_doors(name)
+  self:open_doors("door_"..name)
 end
 
 --Enable an entity with a specified name on the specified map (or disables it, depending on state)
-function mpg.enable_entity(map, name, state)
-  map = map or sol.main.game:get_map()
+function map:enable_entity(name, state)
+  self = self or sol.main.game:get_map()
   state = state or true  --enables, by default
-  local e = map:get_entity(name)
+  local e = self:get_entity(name)
   e:set_enabled(true)
 end
 
@@ -23,17 +24,17 @@ local function trigger_event(map, event)
   local name
 
   if event:starts("door_") then  --event type : opening a door
-    mpg.open_door(map, event:sub(6))   --opening all doors having the name specified after "door_"
+    map.open_door(map, event:sub(6))   --opening all doors having the name specified after "door_"
   elseif event:starts("treasure_") then  --Event type: item spawn
     name = event:sub(10)
     if map:has_entity(name) then
-      mpg.enable_entity(map, name)   --Enabling the item with this name
+      map.enable_entity(map, name)   --Enabling the item with this name
     else 
-      mpg.enable_entity(map, event)
+      map.enable_entity(map, event)
     end
   elseif event:starts("spawn_") then
     name = event:sub(7)
-    mpg.enable_entity(map, name)
+    map.enable_entity(map, name)
   end
 end
 
@@ -95,9 +96,8 @@ local function group_loot_callback(enemy)
   end
 end
 
-function mpg.init_enemies_event_triggers(map)
-  if not map then return end
-  for e in map:get_entities_by_type("enemy") do
+function map:init_enemies_event_triggers()
+  for e in self:get_entities_by_type("enemy") do
     if e:get_property("death_trigger") then
       e:register_event("on_dead", death_trigger_callback)
     end
@@ -107,9 +107,8 @@ function mpg.init_enemies_event_triggers(map)
   end
 end
 
-function mpg.init_activate_triggers(map)
-  if not map then return end
-  for e in map:get_entities() do
+function map:init_activate_triggers()
+  for e in self:get_entities() do
     if e:get_property("activate_trigger") then
       e:register_event("on_activated", activate_trigger_callback)
     end
@@ -123,9 +122,8 @@ local function block_move_callback(block)
     end
 end
 
-function mpg.init_activatables(map)
-  if not map then return end
-  for e in map:get_entities_by_type("block") do
+function map:init_activatables()
+  for e in self:get_entities_by_type("block") do
     if e:get_property("activate_when_moved") then
       function e:is_activated()
         return self.activated
@@ -140,13 +138,12 @@ local function detect_open_callback(door)
   local name = door:get_name()
   if not name then return end
   name = name:field("_", 2)
-  mpg.open_door(map, name)
+  map.open_door(map, name)
 end
 
-function mpg.init_detect_open(map)
-  if not map then return end
+function map:init_detect_open()
     
-  for e in map:get_entities_by_type("door") do
+  for e in self:get_entities_by_type("door") do
     if e:get_property("detect_open") then
       e:register_event("on_opened", detect_open_callback)
     end
@@ -155,23 +152,23 @@ end
 
 local side_view = require("scripts/managers/map_side_view")
 
-function mpg.init_side_view(map)
-  side_view:init(map)
+function map:init_side_view()
+  side_view:init(self)
 end
 
 local separator_manager = require("scripts/managers/separator_manager")
 
-function mpg.init_reset_separators(map)
-  separator_manager:manage_map(map)
+function map:init_reset_separators(default)
+  separator_manager:manage_map(self, default)
 end
 
-function mpg.init_dungeon_features(map, ...)
+function map:init_dungeon_features()
 
-  mpg.init_enemies_event_triggers(map)
-  mpg.init_activate_triggers(map)
-  mpg.init_activatables(map)
-  mpg.init_detect_open(map)  
-  mpg.init_reset_separators(map)
+  self:init_enemies_event_triggers()
+  self:init_activate_triggers()
+  self:init_activatables()
+  self:init_detect_open()  
+  self:init_reset_separators()
 end
 
 
@@ -179,13 +176,13 @@ end
 --Map Manager
 local map_manager = require("scripts/managers/map_manager")
 
-function mpg.discover(map, cases)
+function map:discover(cases)
   local x, y
   for i, v in ipairs(cases) do
     x, y = v[1], v[2]
     map_manager.map[y][x] = 1
   end
-  map_manager:save_discovered(map:get_game())
+  map_manager:save_discovered(self:get_game())
 end
 
-return mpg
+return map

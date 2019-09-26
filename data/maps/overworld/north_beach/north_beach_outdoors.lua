@@ -2,10 +2,6 @@ local map = ...
 local game = map:get_game()
 local hero = game:get_hero()
 
-map.discover = mpg.discover
-map.init_reset_separators = mpg.init_reset_separators
-map.init_enemies_event_triggers = mpg.init_enemies_event_triggers
-
 local vfx = require("scripts/feature/visual_effects")
 
 local cases = {
@@ -23,11 +19,10 @@ local cases = {
   {5, 7}
 }
 
-local function on_started(map)
-  map:init_reset_separators(true)
-  map:init_enemies_event_triggers()
+function map:on_started_()
+  self:init_reset_separators(true)
+  self:init_enemies_event_triggers()
 end
-map:register_event("on_started", on_started)
 
 function map:on_opening_transition_finished()
   if game:get_story_state() == 0 then

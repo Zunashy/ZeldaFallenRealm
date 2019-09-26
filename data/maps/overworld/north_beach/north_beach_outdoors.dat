@@ -6566,3 +6566,10 @@ destination{
   direction = 1,
 }
 
+pickable{
+  layer = 1,
+  x = 560,
+  y = 597,
+  treasure_name = "rock_feather",
+}
+

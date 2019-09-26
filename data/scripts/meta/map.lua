@@ -38,4 +38,11 @@ local function parse_entities_properties(map)
         end
     end
 end
+
+local function call_alt_on_started(map)
+    if type(map.on_started_) == "function" then
+        map:on_started_()
+    end
+end
 map_meta:register_event("on_started", parse_entities_properties)
+map_meta:register_event("on_started", call_alt_on_started)

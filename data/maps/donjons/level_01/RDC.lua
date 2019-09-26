@@ -9,10 +9,10 @@
 
 local map = ...
 local game = map:get_game()
-gen.import(map, mpg, "init_dungeon_features")
+
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
-  map:init_dungeon_features()
+  self:init_dungeon_features()
 end
 
 -- Event called after the opening transition effect of the map,
