@@ -78,23 +78,23 @@ Lorsque vous placez une entité, une fenêtre s'affiche, vous permettant de modi
 
 Les différents types d'entités sont : 
 
-#### Hero
+##### Hero
 Le personnage jouable, c'est à dire Link dans notre jeu. Cette entité existe toujours sur la map et est entièrement gérée par le jeu, vous n'avez donc pas beosin de la créer.
 
-#### Destination
+##### Destination
 Entité n'ayant aucun effet. Elles sont cependant très utiles dans la mesure où elles permettent de "marquer" une position : lorsque Link doit être téléporté (ce qui inclut surtout le moment où il arrive sur la map) il est généralement envoyé vers une destination. Il est donc important de donner des noms explicites aux destinations.  
 Note : il est possible d'indiquer qu'une destination est la detination par défaut de la map : elle sera utilisée si on téléporte Link vers cette map sans spécifier de destination.
 
 (note : il est possible de donner un sprite à une destination mais ce n'est généralement pas nécessaire)
 
-#### Téléporteurs
+##### Téléporteurs
 Si Link se trouve sur un téléporteur, il sera envoyé vers la map et à la destination spécifiées dans les propriétés. 
 Il est également possible de spécifier dans les propriétés le type de transition (fondu, immédiat ou scrolling. Le type scrolling est complexe à utiliser et nécessitera des explications supplémentaires).
 Ils seront généralement couplés avec une destination placée à peu près au même endroit. En effet, on les utilisera généralement pour une transition entre deux maps : par exemple, pour l'entrée d'une maison, à l'extérieur on mettra une destination nommée "maison\_to\_outdoor" et un téléporteur au niveau de la porte, une destination "from\_outdoor" et un téléporteur à l'entrée de la maison ; le téléporteur de dehors envoyant donc vers la map de la maison à la destination "from\_outdoor" et vice versa.
 
 il est possible de donner un sprite à un téléporteur mais ce n'est généralement pas nécessaire)
 
-#### Trésor ramassable
+##### Trésor ramassable
 Un item que link obtiendra s'il le touche. Le concept d'item est très large dans Solarus, dépendant de la manière dont c'est codé ça peut désigner autant un objet de l'inventaire qu'un réceptacle de coeur ou un rubis.
 Les trésors sont en réalité rarement placés directement sur la map (+ souvent drop par des enemis ou trouvés dans un coffre).  
 Lorsque vous placez un trésor, vous devez choisir l'item dont il s'agit, mais également sa variante. La variante peut avoir de nombreuses significations (pour un rubis : sa couleur, pour l'épée, son niveau, etc). Des informations sur les différents items (dont la significations de leurs variantes) sont disponibles sur le google doc.
@@ -109,7 +109,7 @@ Les items que peuvent représenter les trésors ramassables regroupent :
 
 (note : on ne donne pas de sprite à un trésor, le sprite de cette entité correspondant toujours à celui associé à l'item en question)
 
-#### Destructible
+##### Destructible
 Objet pouvant être détruit par Link, comme un buisson coupable à l'épée par exemple.     
 En plus du sprite, il existe de nombreux paramètres pour les destructibles :
 
@@ -118,7 +118,7 @@ En plus du sprite, il existe de nombreux paramètres pour les destructibles :
 - S'il doit possède un type de terrain : si le destructible doit se comporter comme un terrain particulier (Voir "Tiles>Terrain). Ainsi si cette propriété est "mur", le destructible ne sera pas traversable.
 - Et évidemment, son sprite.
 
-####Coffre
+#####Coffre
 Objet contenant un trésor, spécifié dans les propriétés (avec sa variante), que Link obtiendra en l'ouvrant.  
 Il existe plusieurs modes d'ouverture : 
 
@@ -126,23 +126,26 @@ Il existe plusieurs modes d'ouverture :
 - "Par le héro, item nécessaire" : Link peut l'ouvrir s'il possède un certain item (si l'item en question gère la possession, ce qui inclut les petites clés ou les items d'inventaire mais pas les rubis ou les fragments de coeurs, qui ne sont pas réellement possédés par Link). Cocher "retirer/décrémenter l'item" enlèvera cet item à Link (pour les objets uniques comme les objets d'inventaire) ou lui en retirera un (pour les items dont Link possède une certaine quantité, comme les clés).
 - "Par le héros, variable sauvegardée nécessaire" : ouvrable seulement si une certaine "variable sauvegardée" est présente dans la sauvegarde. Les variables sauvegardées sont gérées de différents manières par le code, et peuvent représenter n'importe quel élément qui doit être sauvegardé (et qui n'est pas un item). Cette option doit donc être utilisée si Link ne peut ouvrir le coffre qu'à une condition qui n'est pas liée à un item : généralement, à voir avec les codeurs. 
 
-####Enemi
+#####Enemi
 Un enemi (no shit sherlock). Il faudra spécifier le "modèle d'enemi" (quel enemi c'est, en gros), et éventuellement la direction vers laquelle il regarde au lancement de la map.
 Les enemis sont généralement réinitialiés (et donc réapparaissent s'ils ont été tués) quand on change de map ou qu'on ferme le jeu : l'option "sauvegarder l'état" permet de ne pas les faire réapparaître, utile pour les boss surtout.
 
 (note : on ne donne pas de sprite à un enemi, son script s'occupera de créer un sprite)
 
-####PNJ
+#####PNJ
 Un personnage avec qui Link pourra généralement interagir. Outre le sprite et la direction, il faudra spécifier l'effet de l'interaction :
 
 - Le souvent, "afficher un dialogue" en indiquand le nom du dialogue (les dialogues sont indiqués dans le fichier `languages/<langue>/dialogs` dans l'arborescence à gauche de l'éditeur), pour les PNJ qui n'ont qu'un simple dialogue.
 - Appeler le script de la map lancera une fonction définie dans le script de la map. Utile pour des PNJ plus complexe ou dont le dialogue évolue souvent (il faudra évidemment voir avec les codeurs pour implémenter ce PNJ dans le script de la map)
 - Appeler le script d'un item : pas compris l'utilité, n'utilisez jamais ça
 
-####Séparateurs
-Tehniquement, les séparateurs agissent comme "un obstacke pour la caméra" (c'est à dire la zone affichée à l'écran, qui doit suivre Link. D'un point de vue plus pratique, un séparateur est une ligne que la caméra ne peut pas traverser, sauf si Link la traverse, auquel cas la caméra passera de l'autre côté avec une petite animation de scrolling.
+#####Séparateurs
+Tehniquement, les séparateurs agissent comme "un obstacle pour la caméra" (c'est à dire la zone affichée à l'écran, qui doit suivre Link=. D'un point de vue plus pratique, un séparateur est une ligne que la caméra ne peut pas traverser, sauf si Link la traverse, auquel cas la caméra passera de l'autre côté avec une petite animation de scrolling.
 
-####Entités custom
+#####Capteurs
+Un capteur est une entité qui déclenchera un évènement quand link passera dessus. Ces évènnements sont utilisables par le code de la map, mais aussi par les *map features* (voir partie dédiée)
+
+#####Entités custom
 Une entité programmable : plus précisément, elle n'a aucun effet mais peut avoir son propre script ou juste être utilisée par celui de la map. Il est possible (mais pas obligatoire) d'indiquer un sprite et surtout un script.
 
 Les scripts disponibles (et utiles pour le mapping) sont : 
@@ -162,7 +165,9 @@ Outre les entités custom, il peut être utile d'affecter des propriétés custo
 
 ###Map features
 
-La plupart du temps, il s'agit d'affecter une propriété à une entité afin de modifier son comportement. Elles sont surtout utile pour "programmer" le fonctionnement des donjons, mais sont utiles dans beaucoup d'autres situation.
+La plupart du temps, il s'agit d'affecter une propriété à une entité afin de modifier son comportement. Elles sont surtout utile pour "programmer" le fonctionnement des donjons, mais sont utiles dans beaucoup d'autres situation. 
+A noter que les map features ne sont pas activées par défaut, pour pouvoir utiliser une map feature sur une map il faudra généralement `on_started_` de son code. 
+(on accède au code d'une map en cliquant sur l'icone en haud à droite des propriétés de la map. Il suffit alors d'ajouter la ligne entre `function on_started_()` et `end`)
 
 Les maps features disponibles actuellement sont les suivantes : 
 
@@ -170,6 +175,15 @@ Les maps features disponibles actuellement sont les suivantes :
 L'item spécifié ne sera drop que lorsque tous les enemis avec la propriété `group_loot` avec la même valeur auront été tués. 
 Exemple : Les 3 moblins devant le donjon 1 (sur la plage) possèdent la propriété `groop_loot : great_key`, ce qui signifie que quand le dernier est tué, il drop la grande clé.
 
+- **Triggers** : le coeur de la gestion du fonctionnement des donjons.  
+Un trigger est un couple `propriété : valeur` qui va permettre de déclencher une action particulière quand l'entité respecte certaines conditions (généralement, quand un certain évènement concernant l'entité sera survenu). Le nom de la propriété doit être le type de conditions, la valeur l'action à réaliser.  
+Les conditions supportés pour l'instant sont : 
 
+	- `death_trigger` : est activé quand l'entité meurt (pour un enemi). S'active en ajoutant `self:init_enemies_event_triggers()` .
+	- `activate_trigger` : a placer sur un capteur ou un bouton (ou un bloc, voir plus bas), s'activera quand l'entité sera activée (quand link passe sur le capteur, active le bouton, ou déplace le bloc (voir plus bas pour les blocs). S'active en ajoutant `self:init_activate_triggers()`.  
 
+	A noter que si plusieurs entités possèdent le même trigger (c'est à dire un même type de conditions _avec la même action_), l'action ne sera déclenchée que quand les conditions seront vérifiées pour toutes les entités : si plusieurs enemis possèdent une propriété `death_trigger` avec la même valeur (donc la même action), cette action ne sera réalisée que quand tous les enemis en question auront été tués.  
+	De même, si plusieurs boutons possèdent le même `activate_trigger`, l'action ne sera réalisée que si tous les boutons sont activés (donc si l'un d'entre eux n'est plus activé, ça ne fonctionnera pas).
 
+	Les actions (qui doivent donc être la valeur de la propriété) possibles sont : 
+	- `open_door_nom` : ouvre toute porte donc le nom commence par "nom" ou "door_nom" (remplacer nom par le nom de la porte (sans blague) mais pas le door)
