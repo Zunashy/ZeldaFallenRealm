@@ -1,5 +1,11 @@
 local sensor_meta = sol.main.get_metatable("sensor")
 
+function sep_meta:on_created()
+  if self:get_property("persistent") then
+    self:persistent = true 
+  end
+end
+
 function sensor_meta:on_activated()
   self.activated = true
 end
@@ -16,6 +22,12 @@ end
 
 local sep_meta = sol.main.get_metatable("separator")
 
+function sep_meta:on_created()
+  if self:get_property("no_save") then
+    self.no_save = true
+  end
+end
+
 function sep_meta:on_activated()
   hero = self:get_map():get_hero()
   local ground = hero:get_ground_below();
@@ -25,7 +37,7 @@ function sep_meta:on_activated()
     and ground ~= "prickles"
     and ground ~= "empty"
     and hero.is_on_nonsolid_ground == false
-    and not self:get_property("no_save"))
+    and not self.no_save)
   then hero:save_solid_ground()
   end
 end

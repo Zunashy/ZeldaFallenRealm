@@ -140,10 +140,13 @@ Un personnage avec qui Link pourra généralement interagir. Outre le sprite et 
 - Appeler le script d'un item : pas compris l'utilité, n'utilisez jamais ça
 
 #####Séparateurs
-Tehniquement, les séparateurs agissent comme "un obstacle pour la caméra" (c'est à dire la zone affichée à l'écran, qui doit suivre Link=. D'un point de vue plus pratique, un séparateur est une ligne que la caméra ne peut pas traverser, sauf si Link la traverse, auquel cas la caméra passera de l'autre côté avec une petite animation de scrolling.
+Tehniquement, les séparateurs agissent comme "un obstacle pour la caméra" (c'est à dire la zone affichée à l'écran, qui doit suivre Link=. D'un point de vue plus pratique, un séparateur est une ligne que la caméra ne peut pas traverser, sauf si Link la traverse, auquel cas la caméra passera de l'autre côté avec une petite animation de scrolling.  
+
+(Lorsque Link vient de traverser un séparateur, sa position est sauvegardée en tant que "safe position" : c'est ici qu'il sera ramené s'il tombe dans un trou/lave/etc. Pour que le jeu ne change pas la "safe position" quand Link traverse un séparateur, il faut appliquer la propriété `no_save` au séparateur ; voir partie Map Features)
 
 #####Capteurs
-Un capteur est une entité qui déclenchera un évènement quand link passera dessus. Ces évènnements sont utilisables par le code de la map, mais aussi par les *map features* (voir partie dédiée)
+Un capteur est une entité qui déclenchera un évènement quand link passera dessus. Ces évènnements sont utilisables par le code de la map, mais aussi par les *map features* (voir partie dédiée).  
+Lorsque Link quitte le capteur, il n'est plus considéré comme activé : pour qu'un capteur reste activé après le départ de Link, lui appliquer la propriété "persistent" (voir partie Map Features)
 
 #####Entités custom
 Une entité programmable : plus précisément, elle n'a aucun effet mais peut avoir son propre script ou juste être utilisée par celui de la map. Il est possible (mais pas obligatoire) d'indiquer un sprite et surtout un script.
@@ -187,3 +190,12 @@ Les conditions supportés pour l'instant sont :
 
 	Les actions (qui doivent donc être la valeur de la propriété) possibles sont : 
 	- `open_door_nom` : ouvre toute porte donc le nom commence par "nom" ou "door_nom" (remplacer nom par le nom de la porte (sans blague) mais pas le door)
+	- `spawn_nom` : fait apparaître l'entité nommée "nom". L'entité doit être déjà présente sur la map mais désactivée (pour cela, quand vous la placez sur la map, décochez la case "actif au démarrage" : quand une entité est désactivée c'est comme si elle n'existait pas).
+	- `treasure_nom` : comme pour `spawn_`, fait apparaître le trésor ramassable nommé "nom" ou "treasure_nom". (cela dit vous pouvez toujours utiliser `spawn_` pour les trésors, comme vous voulez)
+
+	Quelques exemples : 
+	- si 3 enemis possèdent la propriété `death_trigger : treasure_key_1`, et qu'il existe sur la map une clé (désactivée) nommée "key_1", elle apparaîtra quand les 3 enemis auront été tués.
+
+- Séparateurs
+
+	
