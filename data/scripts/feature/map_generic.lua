@@ -128,6 +128,12 @@ function map:init_activatables()
       function e:is_activated()
         return self.activated
       end
+
+      e.old_reset = sol.main.get_metatable("block").reset 
+      function e:reset()
+        self.activated = false
+        self:old_reset()
+      end
       e:register_event("on_moved", block_move_callback) 
     end
   end
