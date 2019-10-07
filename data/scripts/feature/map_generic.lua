@@ -59,6 +59,7 @@ local function death_trigger_callback(enemy)
 end
 
 local function activate_trigger_callback(entity)
+  print("oui")
   local map = entity:get_map()
   local event = entity:get_property("activate_trigger")
   local all_activated = true
