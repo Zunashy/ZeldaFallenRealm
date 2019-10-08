@@ -145,8 +145,15 @@ Tehniquement, les séparateurs agissent comme "un obstacle pour la caméra" (c'e
 (Lorsque Link vient de traverser un séparateur, sa position est sauvegardée en tant que "safe position" : c'est ici qu'il sera ramené s'il tombe dans un trou/lave/etc. Pour que le jeu ne change pas la "safe position" quand Link traverse un séparateur, il faut appliquer la propriété `no_save` au séparateur ; voir partie Map Features)
 
 #####Capteurs
-Un capteur est une entité qui déclenchera un évènement quand link passera dessus. Ces évènnements sont utilisables par le code de la map, mais aussi par les *map features* (voir partie dédiée).  
+Un capteur est une entité qui s'activera quand link passera dessus. L'activation n'a pas d'effet direct par défaut, mais est utilisable par le script de la map, ou par les *map features* (voir partie dédiée).  
 Lorsque Link quitte le capteur, il n'est plus considéré comme activé : pour qu'un capteur reste activé après le départ de Link, lui appliquer la propriété "persistent" (voir partie Map Features)
+
+#####Blocs
+Les blocs sont des entités immobiles, considérés comme des murs, et que Link peut pousser ou tirer (il est possible de spécifier si Link peut tirer ou pousser dans les propriétés de l'entité). Les blocs poussables présents dans tous les Zelda 2D, en gros.
+
+#####Interrupteurs 
+Entité qu'il est possible d'activer. Par défaut elle s'active si Link marche dessus, mais il est possible d'indiquer dans les propriétés que l'interrupteur ne s'active que si un bloc est posé dessus).  
+De même que pour les capteurs, l'activation n'a pas d'effet direct par défaut, mais est utilisable par le script de la map, ou par les *map features* (voir partie dédiée).  
 
 #####Entités custom
 Une entité programmable : plus précisément, elle n'a aucun effet mais peut avoir son propre script ou juste être utilisée par celui de la map. Il est possible (mais pas obligatoire) d'indiquer un sprite et surtout un script.
@@ -194,8 +201,22 @@ Les conditions supportés pour l'instant sont :
 	- `treasure_nom` : comme pour `spawn_`, fait apparaître le trésor ramassable nommé "nom" ou "treasure_nom". (cela dit vous pouvez toujours utiliser `spawn_` pour les trésors, comme vous voulez)
 
 	Quelques exemples : 
-	- si 3 enemis possèdent la propriété `death_trigger : treasure_key_1`, et qu'il existe sur la map une clé (désactivée) nommée "key_1", elle apparaîtra quand les 3 enemis auront été tués.
+	- si 3 enemis possèdent la propriété `death_trigger : treasure_key_1`, et qu'il existe sur la map une clé (c'est à dire un trésor ramassable de l'item clé, désactivé) nommée "key_1", elle apparaîtra quand les 3 enemis auront été tués.
+	- si un interrupteur s'activant avec un bloc et 3 capteurs persistants (voir map features liées aux capteurs) possèdent la propriété `activate_trigger : door_1`, et qu'il existe deux portes nommés "door\_1-1" et "door\_1-2",  si Link passe sur les 3 capteurs et qu'un bloc se trouve actuellement sur l'interrupteur, les portes s'ouvriront.
 
-- Séparateurs
+- Séparateurs : il existe deux map features concernant les Séparateurs : 
+	- `no_save` : si un séparateur possède la propriété `no_save : 1` il ne sauvegardera pas la position de Link quand celui-ci le traversera (voir partie Séparateurs).
+	- dungeon style scrollings :  cette Map feature ne nécessite pas de propriété, juste d'ajouter `self:init_reset_separators(true)` au script. Si cette ligne est présente dans la fonction `on_started_`, passer un séparateur réinitialisera complètement les enemis et blocs présents sur la map.  
+	Par exemple, dans la plupart des Zelda 2D, quand Link sort d'une salle et y retourne, les enemis sont de nouveau là (sauf les boss). Ici c'est la même idée, si dans un donjon on met des séparateurs entre chaque salle, le donjon ne comportera comme un donjon de Zelda 1.  
+	Il existe deux propriété permettant de modifier ce fonctionnement : 
+	- donner la propriété `auto_separator : 1` à un séparateur désactivera ce fonctionnement pour ce séparateur. Si dans la ligne d'activation on ne met pas `true` entre parenthèses, ce sera la contraire : seuls les séparateurs avec cette propriété auront ce fonctionnement.
+	- donner la propriété `no_reset : 1` à un ennemi/bloc l'excluera de la réinitalisation, il ne sera jamais réinitialisé.
+
+- Capteurs persistents : donner la propriété `persistent : 1` à un capteur fera qu'il sera toujours considéré comme activé même si Link n'est plus dessus.
+- Blocs activables : donner la propriété `activate_when_moved : 1` à un bloc fera qu'il sera considéré comme activé quand Link le déplacera. Il restera alors toujours activé, sauf s'il est réinitialisé (par un séparateur par exemple, voir plus haut)
+
+- Entités liées au scénario : dans Fallen Realm, l'avancement de la quête est représenté par une valeur numérique appelée story state (je ferai un document qui explique en détail le déroulement de la quête prochainement, la valeur correspondant à chaque étape sera expliqué).  
+La propriété `min_story_state : n` fera qu'une entité n'apparaît que si le story state est de n au moins.  
+La propriété `max_story_state : n` fera qu'une entité n'apparaît que si le story state est de n au plus.  
 
 	

@@ -8017,9 +8017,14 @@ block{
   properties = {
     {
       key = "activate_when_moved",
-      value = "",
+      value = "1",
+    },
+    {
+      key = "activate_trigger",
+      value = "door_1",
     },
   },
+  direction = 0,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -8059,9 +8064,11 @@ block{
 }
 
 chest{
+  name = "chest_feather",
   layer = 0,
   x = 1320,
   y = 205,
+  enabled_at_start = false,
   treasure_name = "rock_feather",
   sprite = "entities/chest",
 }
@@ -8216,6 +8223,12 @@ enemy{
   layer = 0,
   x = 1032,
   y = 605,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_rupee_1",
+    },
+  },
   direction = 0,
   breed = "octorok",
 }
@@ -8224,6 +8237,12 @@ enemy{
   layer = 0,
   x = 1064,
   y = 637,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_rupee_1",
+    },
+  },
   direction = 0,
   breed = "octorok",
 }
@@ -8232,6 +8251,12 @@ enemy{
   layer = 0,
   x = 1080,
   y = 605,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_rupee_1",
+    },
+  },
   direction = 0,
   breed = "octorok",
 }
@@ -8240,14 +8265,26 @@ enemy{
   layer = 0,
   x = 1112,
   y = 589,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_rupee_1",
+    },
+  },
   direction = 0,
   breed = "octorok",
 }
 
 enemy{
   layer = 0,
-  x = 1312,
+  x = 1320,
   y = 621,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_3",
+    },
+  },
   direction = 0,
   breed = "blue_slime",
 }
@@ -8256,14 +8293,12 @@ enemy{
   layer = 0,
   x = 1320,
   y = 589,
-  direction = 0,
-  breed = "blue_slime",
-}
-
-enemy{
-  layer = 0,
-  x = 1352,
-  y = 565,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_3",
+    },
+  },
   direction = 0,
   breed = "blue_slime",
 }
@@ -8272,6 +8307,12 @@ enemy{
   layer = 0,
   x = 776,
   y = 973,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_key_1",
+    },
+  },
   direction = 0,
   breed = "octorok",
 }
@@ -8280,6 +8321,12 @@ enemy{
   layer = 0,
   x = 792,
   y = 1005,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_key_1",
+    },
+  },
   direction = 0,
   breed = "octorok",
 }
@@ -8288,6 +8335,12 @@ enemy{
   layer = 0,
   x = 808,
   y = 941,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_key_1",
+    },
+  },
   direction = 0,
   breed = "octorok",
 }
@@ -8296,6 +8349,12 @@ enemy{
   layer = 0,
   x = 880,
   y = 989,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_key_1",
+    },
+  },
   direction = 0,
   breed = "octorok",
 }
@@ -8304,6 +8363,12 @@ enemy{
   layer = 0,
   x = 888,
   y = 941,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_key_1",
+    },
+  },
   direction = 0,
   breed = "octorok",
 }
@@ -8400,6 +8465,12 @@ switch{
   layer = 0,
   x = 592,
   y = 1344,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "door_2",
+    },
+  },
   subtype = "walkable",
   sprite = "entities/switch",
   needs_block = false,
@@ -8543,16 +8614,13 @@ separator{
 }
 
 chest{
+  name = "chest_rupee_1",
   layer = 0,
   x = 1080,
   y = 589,
-  sprite = "entities/chest",
-}
-
-chest{
-  layer = 0,
-  x = 1384,
-  y = 621,
+  enabled_at_start = false,
+  treasure_name = "rupee",
+  treasure_variant = 3,
   sprite = "entities/chest",
 }
 
@@ -8567,13 +8635,6 @@ chest{
   layer = 0,
   x = 888,
   y = 413,
-  sprite = "entities/chest",
-}
-
-chest{
-  layer = 0,
-  x = 600,
-  y = 765,
   sprite = "entities/chest",
 }
 
@@ -8896,16 +8957,10 @@ enemy{
 }
 
 door{
-  name = "door_<lapuerta>_a",
+  name = "door_1",
   layer = 0,
   x = 832,
   y = 1056,
-  properties = {
-    {
-      key = "activate_when_moved",
-      value = "",
-    },
-  },
   direction = 3,
   sprite = "entities/door",
 }
@@ -9015,7 +9070,7 @@ separator{
 }
 
 door{
-  name = "door_<lapuerta>_a_2",
+  name = "door_2",
   layer = 0,
   x = 592,
   y = 1056,
@@ -9027,6 +9082,7 @@ door{
   },
   direction = 3,
   sprite = "entities/door",
+  savegame_variable = "dungeon_1_door_2",
 }
 
 door{
@@ -9045,18 +9101,13 @@ door{
 }
 
 door{
-  name = "door_<lapuerta>_a_4",
+  name = "door_3",
   layer = 0,
   x = 1312,
   y = 528,
-  properties = {
-    {
-      key = "activate_when_moved",
-      value = "",
-    },
-  },
   direction = 3,
   sprite = "entities/door",
+  savegame_variable = "dungeon_1_door_3",
 }
 
 door{
@@ -9087,5 +9138,68 @@ door{
   },
   direction = 3,
   sprite = "entities/door",
+}
+
+door{
+  name = "door_key_1",
+  layer = 0,
+  x = 720,
+  y = 1136,
+  direction = 0,
+  sprite = "entities/door_key",
+  savegame_variable = "dungeon_1_door_key_1",
+  opening_method = "interaction_if_item",
+  opening_condition = "small_key",
+  opening_condition_consumed = true,
+}
+
+chest{
+  name = "chest_key_1",
+  layer = 0,
+  x = 840,
+  y = 973,
+  enabled_at_start = false,
+  treasure_name = "small_key",
+  treasure_savegame_variable = "dungeon_1_chest_key_1",
+  sprite = "entities/chest",
+}
+
+dynamic_tile{
+  name = "miniboss_hole",
+  layer = 0,
+  x = 1312,
+  y = 336,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "27",
+}
+
+sensor{
+  layer = 0,
+  x = 1320,
+  y = 333,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "spawn_miniboss_hole",
+    },
+  },
+  width = 16,
+  height = 16,
+}
+
+enemy{
+  layer = 0,
+  x = 1320,
+  y = 261,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_feather",
+    },
+  },
+  direction = 0,
+  breed = "mini_boss/mr_pers",
 }
 

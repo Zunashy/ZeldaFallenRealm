@@ -1,8 +1,8 @@
 local sensor_meta = sol.main.get_metatable("sensor")
 
-function sep_meta:on_created()
+function sensor_meta:on_created()
   if self:get_property("persistent") then
-    self:persistent = true 
+    self.persistent = true 
   end
 end
 

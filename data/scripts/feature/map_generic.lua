@@ -59,6 +59,7 @@ local function death_trigger_callback(enemy)
 end
 
 local function activate_trigger_callback(entity)
+  print("oui")
   local map = entity:get_map()
   local event = entity:get_property("activate_trigger")
   local all_activated = true
@@ -127,6 +128,12 @@ function map:init_activatables()
     if e:get_property("activate_when_moved") then
       function e:is_activated()
         return self.activated
+      end
+
+      e.old_reset = sol.main.get_metatable("block").reset 
+      function e:reset()
+        self.activated = false
+        self:old_reset()
       end
       e:register_event("on_moved", block_move_callback) 
     end

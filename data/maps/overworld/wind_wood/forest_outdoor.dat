@@ -5644,6 +5644,16 @@ tile{
   pattern = "93",
 }
 
+tile{
+  layer = 0,
+  x = 384,
+  y = 80,
+  width = 32,
+  height = 32,
+  pattern = "61",
+  tileset = "overworld/forest_plain",
+}
+
 separator{
   layer = 0,
   x = 0,
@@ -5786,18 +5796,8 @@ destructible{
   sprite = "entities/arbuste",
 }
 
-tile{
-  layer = 1,
-  x = 384,
-  y = 80,
-  width = 32,
-  height = 32,
-  pattern = "61",
-  tileset = "overworld/forest_plain",
-}
-
 destructible{
-  layer = 1,
+  layer = 0,
   x = 280,
   y = 205,
   sprite = "entities/grass",
@@ -5805,7 +5805,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 280,
   y = 237,
   sprite = "entities/grass",
@@ -5813,7 +5813,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 248,
   y = 205,
   sprite = "entities/grass",
@@ -5821,7 +5821,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 200,
   y = 189,
   sprite = "entities/grass",
@@ -5829,7 +5829,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 200,
   y = 237,
   sprite = "entities/grass",
@@ -5837,7 +5837,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 216,
   y = 221,
   sprite = "entities/grass",
@@ -5845,7 +5845,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 344,
   y = 173,
   sprite = "entities/grass",
@@ -5853,7 +5853,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 360,
   y = 237,
   sprite = "entities/grass",
@@ -5861,7 +5861,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 440,
   y = 237,
   sprite = "entities/grass",
@@ -5869,7 +5869,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 456,
   y = 189,
   sprite = "entities/grass",
@@ -5877,7 +5877,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 520,
   y = 173,
   sprite = "entities/grass",
@@ -5885,7 +5885,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 584,
   y = 221,
   sprite = "entities/grass",
@@ -5893,7 +5893,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 600,
   y = 237,
   sprite = "entities/grass",
@@ -5901,7 +5901,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 536,
   y = 237,
   sprite = "entities/grass",
@@ -5909,7 +5909,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 504,
   y = 237,
   sprite = "entities/grass",
@@ -5917,7 +5917,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 568,
   y = 285,
   sprite = "entities/grass",
@@ -5925,7 +5925,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 552,
   y = 285,
   sprite = "entities/grass",
@@ -5933,7 +5933,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 536,
   y = 301,
   sprite = "entities/grass",
@@ -5941,7 +5941,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 584,
   y = 301,
   sprite = "entities/grass",
@@ -5949,7 +5949,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 504,
   y = 301,
   sprite = "entities/grass",
@@ -5957,7 +5957,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 440,
   y = 301,
   sprite = "entities/grass",
@@ -5965,7 +5965,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 360,
   y = 285,
   sprite = "entities/grass",
@@ -5973,7 +5973,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 344,
   y = 301,
   sprite = "entities/grass",
@@ -5981,7 +5981,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 264,
   y = 285,
   sprite = "entities/grass",
@@ -5989,7 +5989,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 376,
   y = 285,
   sprite = "entities/grass",
@@ -5997,7 +5997,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 600,
   y = 365,
   sprite = "entities/grass",
@@ -6005,7 +6005,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 568,
   y = 349,
   sprite = "entities/grass",
@@ -6013,7 +6013,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 440,
   y = 365,
   sprite = "entities/grass",
@@ -6021,7 +6021,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 424,
   y = 349,
   sprite = "entities/grass",
@@ -6029,7 +6029,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 344,
   y = 349,
   sprite = "entities/grass",
@@ -6037,7 +6037,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 392,
   y = 349,
   sprite = "entities/grass",
@@ -6045,7 +6045,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 232,
   y = 349,
   sprite = "entities/grass",
@@ -6053,7 +6053,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 200,
   y = 333,
   sprite = "entities/grass",
@@ -6061,7 +6061,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 264,
   y = 365,
   sprite = "entities/grass",
@@ -6069,7 +6069,7 @@ destructible{
 }
 
 destructible{
-  layer = 1,
+  layer = 0,
   x = 200,
   y = 349,
   sprite = "entities/grass",
