@@ -6331,7 +6331,7 @@ destination{
   name = "keep1",
   layer = 1,
   x = 240,
-  y = 205,
+  y = 493,
   direction = 1,
 }
 
@@ -6570,6 +6570,7 @@ door{
   y = 288,
   direction = 3,
   sprite = "entities/door_key",
+  savegame_variable = "north_beach_door",
   opening_method = "interaction_if_item",
   opening_condition = "great_key",
   opening_condition_consumed = true,
