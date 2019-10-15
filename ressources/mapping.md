@@ -133,10 +133,10 @@ Les enemis sont généralement réinitialiés (et donc réapparaissent s'ils ont
 (note : on ne donne pas de sprite à un enemi, son script s'occupera de créer un sprite)
 
 #####PNJ
-Un personnage avec qui Link pourra généralement interagir. Outre le sprite et la direction, il faudra spécifier l'effet de l'interaction :
+Un personnage avec qui Link pourra généralement interagir. Outre le sprite et la direction, il faudra spécifier l'effet de l'interaction, parmi 3 options :
 
 - Le souvent, "afficher un dialogue" en indiquand le nom du dialogue (les dialogues sont indiqués dans le fichier `languages/<langue>/dialogs` dans l'arborescence à gauche de l'éditeur), pour les PNJ qui n'ont qu'un simple dialogue.
-- Appeler le script de la map lancera une fonction définie dans le script de la map. Utile pour des PNJ plus complexe ou dont le dialogue évolue souvent (il faudra évidemment voir avec les codeurs pour implémenter ce PNJ dans le script de la map)
+- "Appeler le script de la map" lancera une fonction définie dans le script de la map. Utile pour des PNJ plus complexe ou dont le dialogue évolue souvent (il faudra évidemment voir avec les codeurs pour implémenter ce PNJ dans le script de la map)
 - Appeler le script d'un item : pas compris l'utilité, n'utilisez jamais ça
 
 #####Séparateurs
@@ -181,8 +181,8 @@ A noter que les map features ne sont pas activées par défaut, pour pouvoir uti
 
 Les maps features disponibles actuellement sont les suivantes : 
 
-- Group Loot : il est possible de faire en sorte que Link doive tuer tout un groupe d'enemi pour loot un item (le dernier enemi à mourir droppera l'item). Pour cela, ajouter la propriété `group_loot : nom_de_l'item#variante` à tous les enemis du groupe. (le `#variante` est inutile si l'item n'a pas plusieurs variantes).
-L'item spécifié ne sera drop que lorsque tous les enemis avec la propriété `group_loot` avec la même valeur auront été tués. 
+- Group Loot : il est possible de faire en sorte que Link doive tuer tout un groupe d'enemi pour loot un item (le dernier enemi à mourir droppera l'item). Pour cela, ajouter la propriété `group_loot : nom_de_l'item#variante` à tous les enemis du groupe. (le `#variante` est inutile si l'item n'a pas plusieurs variantes). Pour que 
+L'item spécifié ne sera drop que lorsque tous les enemis avec la propriété `group_loot` avec la même valeur auront été tués. Par la même valeur j'entends bien le **même texte** comme valeur de la propriété, pas juste le même item : un enemi avec `group_loot : rupee#1` et un autre avec `group_loot : rupee#3` ne fonctionneront pas entre eux.  
 Exemple : Les 3 moblins devant le donjon 1 (sur la plage) possèdent la propriété `groop_loot : great_key`, ce qui signifie que quand le dernier est tué, il drop la grande clé.
 
 - **Triggers** : le coeur de la gestion du fonctionnement des donjons.  

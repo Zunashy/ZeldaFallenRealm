@@ -932,9 +932,9 @@ npc{
   layer = 0,
   x = 248,
   y = 45,
-  direction = -1,
+  direction = 3,
   subtype = 1,
-  sprite = "pnj/nielint/10",
+  sprite = "pnj/nielint/5",
 }
 
 destination{
