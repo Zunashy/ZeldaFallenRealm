@@ -215,3 +215,21 @@ tile{
   pattern = "41",
 }
 
+teletransporter{
+  layer = 0,
+  x = 72,
+  y = 112,
+  width = 16,
+  height = 16,
+  destination_map = "overworld/north_beach/north_beach_outdoors",
+  destination = "hut_01_to_beach",
+}
+
+destination{
+  name = "beach_to_hut01",
+  layer = 0,
+  x = 80,
+  y = 117,
+  direction = 1,
+}
+

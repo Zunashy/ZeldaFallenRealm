@@ -825,7 +825,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "overworld/north_beach/north_beach_outdoors",
-  destination = "cave_01_to_beach",
+  destination = "cave_02_to_beach",
 }
 
 destination{

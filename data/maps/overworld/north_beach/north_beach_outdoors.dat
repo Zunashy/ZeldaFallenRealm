@@ -972,7 +972,7 @@ tile{
   layer = 0,
   x = 96,
   y = 48,
-  width = 208,
+  width = 224,
   height = 16,
   pattern = "115",
   tileset = "overworld/mountain_sea",
@@ -1124,6 +1124,26 @@ tile{
   y = 544,
   width = 16,
   height = 32,
+  pattern = "115",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 544,
+  width = 32,
+  height = 32,
+  pattern = "115",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 576,
+  width = 16,
+  height = 16,
   pattern = "115",
   tileset = "overworld/mountain_sea",
 }
@@ -1514,9 +1534,9 @@ tile{
 tile{
   layer = 1,
   x = 576,
-  y = 48,
+  y = 80,
   width = 16,
-  height = 48,
+  height = 16,
   pattern = "81",
 }
 
@@ -6490,7 +6510,7 @@ destructible{
 destination{
   name = "keep1",
   layer = 1,
-  x = 240,
+  x = 192,
   y = 493,
   direction = 1,
 }
@@ -6581,7 +6601,7 @@ teletransporter{
 }
 
 destination{
-  name = "house_02_to_beach",
+  name = "hut_01_to_beach",
   layer = 1,
   x = 48,
   y = 581,
@@ -6594,7 +6614,8 @@ teletransporter{
   y = 560,
   width = 16,
   height = 16,
-  destination_map = "overworld/north_beach/north_beach_outdoors",
+  destination_map = "overworld/north_beach/hut_01",
+  destination = "beach_to_hut01",
 }
 
 destination{
@@ -6734,5 +6755,42 @@ door{
   opening_method = "interaction_if_item",
   opening_condition = "great_key",
   opening_condition_consumed = true,
+}
+
+teletransporter{
+  name = "beach_to_hut02",
+  layer = 1,
+  x = 232,
+  y = 456,
+  width = 16,
+  height = 16,
+  destination_map = "overworld/north_beach/hut_02",
+  destination = "north_beach_to_hut_02",
+}
+
+destination{
+  name = "hut_02_to_beach",
+  layer = 1,
+  x = 240,
+  y = 477,
+  direction = 1,
+}
+
+destination{
+  name = "tree_house_to_beach",
+  layer = 1,
+  x = 400,
+  y = 37,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 1,
+  x = 392,
+  y = 16,
+  width = 16,
+  height = 16,
+  destination_map = "overworld/north_beach/tree_house",
+  destination = "Beach_to_tree_house",
 }
 

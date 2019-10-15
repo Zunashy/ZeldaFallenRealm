@@ -4,11 +4,13 @@ map{ id = "donjons/level_01/RDC", description = "Trident Dungeon" }
 map{ id = "donjons/level_01/RDC_old" }
 map{ id = "overworld/deku_tree", description = "arbre mojo" }
 map{ id = "overworld/north_beach/hut_01", description = "overworld/north_beach/hut_01" }
+map{ id = "overworld/north_beach/hut_02" }
 map{ id = "overworld/north_beach/north_beach_cave_01", description = "North Beach Cave 01" }
 map{ id = "overworld/north_beach/north_beach_cave_02_rdc", description = "North Beach Cave 02 RDC" }
 map{ id = "overworld/north_beach/north_beach_cave_02_ss1", description = "North Beach Cave 01 SS1" }
 map{ id = "overworld/north_beach/north_beach_outdoors", description = "North Beach Outdoors" }
 map{ id = "overworld/north_beach/test", description = "test" }
+map{ id = "overworld/north_beach/tree_house" }
 map{ id = "overworld/plain/outdoors_1" }
 map{ id = "overworld/plain/outdoors_2", description = "outdoors" }
 map{ id = "overworld/wind_wood/forest_cave", description = "Cave Wind Wood 1" }
@@ -25,6 +27,7 @@ map{ id = "villages/nielint_village/nielint_house_1", description = "Nielint Vil
 map{ id = "villages/nielint_village/nielint_house_2", description = "Nielint Village House 02" }
 map{ id = "villages/nielint_village/nielint_house_3", description = "Nielint Village House 03" }
 map{ id = "villages/nielint_village/nielint_house_4", description = "villages/nielint_village/nielint_house_4" }
+map{ id = "villages/nielint_village/nielint_house_5" }
 map{ id = "villages/nielint_village/nielint_mairie_etage", description = "Nielint Village Mairie Etage" }
 map{ id = "villages/nielint_village/nielint_mairie_rdc", description = "Nielint Village Mairie RDC" }
 map{ id = "villages/nielint_village/nielint_outdoor", description = "Village Nielint Outdoors" }

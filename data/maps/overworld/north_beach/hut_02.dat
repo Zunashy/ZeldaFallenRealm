@@ -1,0 +1,308 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 160,
+  height = 128,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 128,
+  height = 96,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 0,
+  width = 128,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 16,
+  width = 16,
+  height = 96,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 96,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 112,
+  width = 128,
+  height = 16,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "36",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 112,
+  width = 8,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 112,
+  width = 8,
+  height = 16,
+  pattern = "34",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 8,
+  width = 16,
+  height = 16,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 8,
+  width = 16,
+  height = 8,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 0,
+  width = 16,
+  height = 8,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 16,
+  width = 16,
+  height = 8,
+  pattern = "31",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 8,
+  width = 16,
+  height = 8,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 0,
+  width = 16,
+  height = 8,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 16,
+  width = 16,
+  height = 8,
+  pattern = "31",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 16,
+  width = 8,
+  height = 16,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "40",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 16,
+  width = 8,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 32,
+  width = 32,
+  height = 16,
+  pattern = "74",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 96,
+  width = 48,
+  height = 16,
+  pattern = "60",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "60",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 64,
+  width = 16,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "48",
+}
+
+teletransporter{
+  name = "hut_02_to_beach",
+  layer = 0,
+  x = 72,
+  y = 112,
+  width = 16,
+  height = 16,
+  destination_map = "overworld/north_beach/north_beach_outdoors",
+  destination = "hut_02_to_beach",
+}
+
+destination{
+  name = "north_beach_to_hut_02",
+  layer = 0,
+  x = 80,
+  y = 117,
+  direction = 1,
+}
+
