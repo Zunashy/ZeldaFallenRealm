@@ -117,6 +117,7 @@ tile_pattern{
   y = 0,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -227,6 +228,7 @@ tile_pattern{
   y = 0,
   width = 16,
   height = 16,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
@@ -307,6 +309,7 @@ tile_pattern{
   y = { 112, 112, 112 },
   width = 16,
   height = 16,
+  frame_delay = 250,
 }
 
 tile_pattern{
@@ -337,6 +340,7 @@ tile_pattern{
   y = 0,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -447,6 +451,7 @@ tile_pattern{
   y = 16,
   width = 16,
   height = 16,
+  repeat_mode = "vertical",
 }
 
 tile_pattern{
@@ -557,6 +562,7 @@ tile_pattern{
   y = 16,
   width = 16,
   height = 16,
+  repeat_mode = "vertical",
 }
 
 tile_pattern{
@@ -617,6 +623,7 @@ tile_pattern{
   y = 16,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -627,6 +634,7 @@ tile_pattern{
   y = 32,
   width = 16,
   height = 16,
+  repeat_mode = "vertical",
 }
 
 tile_pattern{
@@ -637,6 +645,7 @@ tile_pattern{
   y = 48,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -647,6 +656,7 @@ tile_pattern{
   y = 48,
   width = 16,
   height = 16,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
@@ -657,6 +667,7 @@ tile_pattern{
   y = 48,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -667,6 +678,7 @@ tile_pattern{
   y = 32,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -677,6 +689,7 @@ tile_pattern{
   y = 32,
   width = 16,
   height = 16,
+  repeat_mode = "vertical",
 }
 
 tile_pattern{
@@ -687,6 +700,7 @@ tile_pattern{
   y = 16,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -697,6 +711,7 @@ tile_pattern{
   y = 16,
   width = 16,
   height = 16,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
@@ -737,6 +752,7 @@ tile_pattern{
   y = 32,
   width = 16,
   height = 16,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
@@ -747,5 +763,6 @@ tile_pattern{
   y = 32,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
