@@ -59,7 +59,6 @@ local function death_trigger_callback(enemy)
 end
 
 local function activate_trigger_callback(entity)
-  print("oui")
   local map = entity:get_map()
   local event = entity:get_property("activate_trigger")
   local all_activated = true
@@ -73,6 +72,7 @@ local function activate_trigger_callback(entity)
     end
   end
   if all_activated then
+    print(event)
     trigger_event(map, event)
   end
 end
@@ -82,8 +82,11 @@ local function group_loot_callback(enemy)
   local loot = enemy:get_property("group_loot")  --the item looted (and additional informations) are the value of the property "group loot"
   local last_to_die = true   --considering by default that this enemy is the last alive
 
-  local item, variant = loot:xfields("#")
-  if variant then variant = tonumber(variant) end
+  local item, variant, save_var
+
+  item, save_var = loot:xfields("$") -- the name of the save var is after the "$", if any
+  item, variant = item:xfields("#") -- the variant of the item is after the "#", if any
+  variant = variant and tonumber(variant) or 1
 
   if not loot then return end
   for e in map:get_entities_by_type("enemy") do
@@ -93,7 +96,7 @@ local function group_loot_callback(enemy)
     end
   end
   if last_to_die then  --if no such enemy was found, launches the event
-    enemy:set_treasure(item)
+    enemy:set_treasure(item, variant, save_var)
   end
 end
 

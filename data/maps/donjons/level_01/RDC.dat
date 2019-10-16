@@ -10,6 +10,34 @@ properties{
 
 tile{
   layer = 0,
+  x = 1200,
+  y = 176,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 1328,
+  y = 312,
+  width = 16,
+  height = 32,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 1296,
+  y = 312,
+  width = 16,
+  height = 32,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
   x = 944,
   y = 1232,
   width = 16,
@@ -2085,16 +2113,6 @@ tile{
   width = 96,
   height = 16,
   pattern = "9",
-}
-
-tile{
-  layer = 0,
-  x = 1200,
-  y = 176,
-  width = 240,
-  height = 176,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
 }
 
 tile{
@@ -8010,6 +8028,24 @@ tile{
   pattern = "3",
 }
 
+tile{
+  layer = 0,
+  x = 1296,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1328,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
 block{
   layer = 0,
   x = 792,
@@ -8119,14 +8155,6 @@ teletransporter{
   height = 16,
   destination_map = "overworld/north_beach/north_beach_outdoors",
   destination = "keep1",
-}
-
-destination{
-  name = "to_keep_1",
-  layer = 0,
-  x = 840,
-  y = 1397,
-  direction = 1,
 }
 
 enemy{
@@ -9168,7 +9196,7 @@ dynamic_tile{
   name = "miniboss_hole",
   layer = 0,
   x = 1312,
-  y = 336,
+  y = 320,
   enabled_at_start = false,
   width = 16,
   height = 16,
@@ -9178,7 +9206,7 @@ dynamic_tile{
 sensor{
   layer = 0,
   x = 1320,
-  y = 333,
+  y = 309,
   properties = {
     {
       key = "activate_trigger",
@@ -9201,5 +9229,14 @@ enemy{
   },
   direction = 0,
   breed = "mini_boss/mr_pers",
+  savegame_variable = "dungeon_1_miniboss",
+}
+
+destination{
+  name = "to_keep_1",
+  layer = 0,
+  x = 1320,
+  y = 397,
+  direction = 1,
 }
 

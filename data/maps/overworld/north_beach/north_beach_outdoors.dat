@@ -6510,8 +6510,8 @@ destructible{
 destination{
   name = "keep1",
   layer = 1,
-  x = 192,
-  y = 493,
+  x = 200,
+  y = 405,
   direction = 1,
 }
 
@@ -6654,7 +6654,7 @@ enemy{
     },
     {
       key = "group_loot",
-      value = "great_key#1",
+      value = "great_key#1$beach_great_key",
     },
   },
   direction = 0,
@@ -6672,7 +6672,7 @@ enemy{
     },
     {
       key = "group_loot",
-      value = "great_key#1",
+      value = "great_key#1$beach_great_key",
     },
   },
   direction = 0,
@@ -6690,7 +6690,7 @@ enemy{
     },
     {
       key = "group_loot",
-      value = "great_key#1",
+      value = "great_key#1$beach_great_key",
     },
   },
   direction = 0,
