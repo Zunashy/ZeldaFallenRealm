@@ -2,7 +2,7 @@
 local map = sol.main.get_metatable("map")
 mpg = map
 
---Opens all doors that have the name format 'door_<name>*'
+--Opens or closes all doors that have the name format 'door_<name>*'
 function map:open_door(name)
   if type(name) == "number" then name = tostring(name) end
   if not self then return end
@@ -10,21 +10,32 @@ function map:open_door(name)
   self:open_doors("door_"..name)
 end
 
+function map:close_door(name)
+  if type(name) == "number" then name = tostring(name) end
+  if not self then return end
+  self:close_doors(name)
+  self:close_doors("door_"..name)
+end
+
 --Enable an entity with a specified name on the specified map (or disables it, depending on state)
 function map:enable_entity(name, state)
   self = self or sol.main.game:get_map()
   state = state or true  --enables, by default
   local e = self:get_entity(name)
+  assert(e, "can't find entity "..name)
   e:set_enabled(true)
 end
 
---Launches an event described by the event strin (ex : 'door_<name> to open all doors with this name)
+--Launches an event described by the event string (ex : 'door_<name> to open all doors with this name)
+
 local function trigger_event(map, event)
   if not type(event) == "string" then return end
   local name
-
+	
   if event:starts("door_") then  --event type : opening a door
-    map.open_door(map, event:sub(6))   --opening all doors having the name specified after "door_"
+    map:open_door(event:sub(6))   --opening all doors having the name specified after "door_"
+  elseif event:starts("close_door") then
+    map:close_door(event:sub(11))
   elseif event:starts("treasure_") then  --Event type: item spawn
     name = event:sub(10)
     if map:has_entity(name) then
@@ -35,9 +46,19 @@ local function trigger_event(map, event)
   elseif event:starts("spawn_") then
     name = event:sub(7)
     map.enable_entity(map, name)
+  elseif event:starts("function_") then
+    name = event:sub(10)
+	if type(map[name]) == "function" then
+	  map[name](map)
+	end
   end
 end
 
+local function parse_event_string(map, s)
+  for event in s:fields(";") do
+	trigger_event(map, event)
+  end
+end
 
 --Callback for the trigger 'death' : added tothe on_dead event callback of enemies linked to a death_trigger. (checks if other enemies linked with this trigger are still alive, if not launches the linked event)
 local function death_trigger_callback(enemy)
@@ -54,7 +75,7 @@ local function death_trigger_callback(enemy)
     end
   end
   if last_to_die then  --if no such enemy was found, launches the event
-    trigger_event(map, event)
+    parse_event_string(map, event)
   end
 end
 
@@ -73,7 +94,7 @@ local function activate_trigger_callback(entity)
   end
   if all_activated then
     print(event)
-    trigger_event(map, event)
+    parse_event_string(map, event)
   end
 end
 

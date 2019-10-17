@@ -249,7 +249,9 @@ local function start_callback(game)
     game_menu:bind_to_game(game)
 
     for k, v in pairs(game_menu.pages) do
-        if v.on_started then v:on_started(game) end
+        if v.on_started and not v.initalized then 
+			v:on_started(game) 
+		end
     end            
 end
 

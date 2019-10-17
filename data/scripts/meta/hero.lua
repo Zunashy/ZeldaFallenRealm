@@ -14,7 +14,7 @@ local function initialize_hero_features(game)
     hero_sprite = hero:get_sprite("tunic")
   end
 
-  hero:set_walking_speed(60)
+  hero:set_walking_speed(180)
   
   --Méthodes / Callbacks
   function hero:start_hurt_oow(damage, knockback_angle, knockback_distance)

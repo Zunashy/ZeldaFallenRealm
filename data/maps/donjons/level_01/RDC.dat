@@ -20,24 +20,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1328,
-  y = 312,
-  width = 16,
-  height = 32,
-  pattern = "20",
-}
-
-tile{
-  layer = 0,
-  x = 1296,
-  y = 312,
-  width = 16,
-  height = 32,
-  pattern = "19",
-}
-
-tile{
-  layer = 0,
   x = 944,
   y = 1232,
   width = 16,
@@ -9192,25 +9174,14 @@ chest{
   sprite = "entities/chest",
 }
 
-dynamic_tile{
-  name = "miniboss_hole",
-  layer = 0,
-  x = 1312,
-  y = 320,
-  enabled_at_start = false,
-  width = 16,
-  height = 16,
-  pattern = "27",
-}
-
 sensor{
   layer = 0,
   x = 1320,
-  y = 309,
+  y = 333,
   properties = {
     {
       key = "activate_trigger",
-      value = "spawn_miniboss_hole",
+      value = "spawn_door_miniboss",
     },
   },
   width = 16,
@@ -9224,7 +9195,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_chest_feather",
+      value = "spawn_chest_feather;door_miniboss",
     },
   },
   direction = 0,
@@ -9238,5 +9209,15 @@ destination{
   x = 1320,
   y = 397,
   direction = 1,
+}
+
+door{
+  name = "door_miniboss",
+  layer = 0,
+  x = 1312,
+  y = 336,
+  enabled_at_start = false,
+  direction = 1,
+  sprite = "entities/door",
 }
 
