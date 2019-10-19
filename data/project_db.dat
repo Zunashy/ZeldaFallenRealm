@@ -45,6 +45,7 @@ tileset{ id = "overworld/forest_plain", description = "overworld/forest_plain" }
 tileset{ id = "overworld/jungle", description = "jungle" }
 tileset{ id = "overworld/mountain_sea", description = "mountain sea" }
 tileset{ id = "overworld/structure", description = "structures" }
+tileset{ id = "war_world/overworld", description = "Exterieur du monde guerre" }
 
 sprite{ id = "citizens/old_man", description = "Old man" }
 sprite{ id = "citizens/old_woman", description = "Old Woman" }
