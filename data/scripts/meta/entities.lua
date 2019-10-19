@@ -49,4 +49,5 @@ local function npc_interaction(npc)
     npc:get_game():start_dialog(dialog)
   end
 end
+
 npc_meta:register_event("on_interaction", npc_interaction)

@@ -3,13 +3,19 @@ local start_menu = sol.menu.start
 local stop_menu = sol.menu.stop
 
 function sol.menu.start(context, menu, on_top)
-    start_menu(context, menu, on_top)
+	if not menu.name then menu.name = "unnamed" end
+	print("Start : ".. menu.name)
+    
+	if menus[menu] then return end
+	
+	start_menu(context, menu, on_top)
     
     local n = table.getn(menus)
     menus[n + 1] = menu
 end
 
 function sol.menu.stop(menu)
+	print("Stop : ".. menu.name)
     stop_menu(menu)
     for i, v in ipairs(menus) do
         if menu == v then

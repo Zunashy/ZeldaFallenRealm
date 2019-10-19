@@ -35,3 +35,10 @@ function typeof(var)
   end
 end
   
+
+-- code from this point is absolute bullshit
+-- please don't look
+
+getmetatable("").__call = function(self)
+  print(self)
+end

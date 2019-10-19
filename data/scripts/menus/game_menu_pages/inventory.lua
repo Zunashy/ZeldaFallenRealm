@@ -131,6 +131,7 @@ function inventory_menu:on_started(game)
     for k, v in ipairs(inventory_menu.items) do
         inventory_menu.items[k] = game:get_item(v)
     end
+	self.initalized = true
 end
 
 return inventory_menu

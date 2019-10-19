@@ -17,6 +17,8 @@ local sword_sprite
 local m
 local dash
 
+local detect_range = 64
+
 function enemy:on_created()
   -- Initialize the properties of your enemy here,
   -- like the sprite, the life and the damage.
@@ -37,9 +39,19 @@ function enemy:on_created()
   dash.on_finished = self.sword
 end
 
--- Event called when the enemy should start or restart its movements.
--- This is called for example after the enemy is created or after
--- it was hurt or immobilized.
+function enemy:check_hero()
+  return self:get_distance(hero) < detect_range
+end  
+
+function enemy:start_checking()
+  sol.timer.start(self, 10, function ()
+    if enemy:check_hero() then
+	  enemy:start_movement_cycle()
+	else
+	  return true
+	end
+  end)
+end
 
 function enemy:start_movement_cycle()
   self.attack_timer = sol.timer.start(enemy, 2000, function()
@@ -91,9 +103,9 @@ function enemy:sword()
 end
 
 function enemy:on_restarted()
-  self:start_movement_cycle()
+  self:start_checking()
 end
 
 function enemy:on_started()
-  self:start_movement_cycle()
+  self:start_checking()
 end
