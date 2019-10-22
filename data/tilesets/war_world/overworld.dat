@@ -79,6 +79,7 @@ tile_pattern{
   y = 16,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -154,6 +155,7 @@ tile_pattern{
   y = 48,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -283,6 +285,7 @@ tile_pattern{
   y = 80,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
