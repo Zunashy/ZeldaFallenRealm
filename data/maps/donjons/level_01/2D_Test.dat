@@ -1483,8 +1483,8 @@ teletransporter{
 destination{
   name = "in_a",
   layer = 0,
-  x = 416,
-  y = 61,
+  x = 456,
+  y = 21,
   direction = 1,
 }
 
