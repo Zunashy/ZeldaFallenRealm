@@ -34,6 +34,7 @@ map{ id = "villages/nielint_village/nielint_outdoor", description = "Village Nie
 map{ id = "villages/nielint_village/nielint_shop", description = "Village Nielint Shop" }
 map{ id = "villages/nielint_village/tree_house", description = "villages/nielint_village/tree_house" }
 map{ id = "war_version/villages/out" }
+map{ id = "war_version/villages/out2" }
 
 tileset{ id = "Grotte", description = "Grotte" }
 tileset{ id = "House", description = "House" }
@@ -46,8 +47,11 @@ tileset{ id = "overworld/forest_plain", description = "overworld/forest_plain" }
 tileset{ id = "overworld/jungle", description = "jungle" }
 tileset{ id = "overworld/mountain_sea", description = "mountain sea" }
 tileset{ id = "overworld/structure", description = "structures" }
+tileset{ id = "war_world/Structure" }
 tileset{ id = "war_world/autumn_dark", description = "war_world/autumn_dark" }
+tileset{ id = "war_world/mountain_sea" }
 tileset{ id = "war_world/overworld", description = "Exterieur du monde guerre" }
+tileset{ id = "war_world/overworld_war" }
 
 sprite{ id = "citizens/old_man", description = "Old man" }
 sprite{ id = "citizens/old_woman", description = "Old Woman" }

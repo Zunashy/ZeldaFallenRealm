@@ -5,7 +5,7 @@ properties{
   height = 512,
   min_layer = 0,
   max_layer = 2,
-  tileset = "Tileset1",
+  tileset = "war_world/overworld_war",
 }
 
 tile{
@@ -149,93 +149,117 @@ tile{
 }
 
 tile{
-  layer = 1,
-  x = 200,
-  y = 64,
-  width = 8,
-  height = 8,
-  pattern = "1",
-  tileset = "war_world/overworld",
-}
-
-tile{
-  layer = 1,
-  x = 200,
-  y = 200,
-  width = 8,
-  height = 8,
-  pattern = "7",
-  tileset = "war_world/overworld",
-}
-
-tile{
-  layer = 1,
-  x = 208,
-  y = 64,
-  width = 64,
-  height = 8,
-  pattern = "2",
-  tileset = "war_world/overworld",
-}
-
-tile{
-  layer = 1,
-  x = 272,
-  y = 200,
-  width = 8,
-  height = 8,
+  layer = 0,
+  x = 624,
+  y = 0,
+  width = 16,
+  height = 16,
   pattern = "5",
+  tileset = "war_world/overworld_war",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "5",
+  tileset = "war_world/overworld_war",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 568,
+  width = 16,
+  height = 16,
+  pattern = "5",
+  tileset = "war_world/overworld_war",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 344,
+  width = 16,
+  height = 16,
+  pattern = "20",
   tileset = "war_world/overworld",
 }
 
 tile{
-  layer = 1,
-  x = 272,
-  y = 72,
-  width = 8,
-  height = 128,
-  pattern = "4",
+  layer = 0,
+  x = 112,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "43",
   tileset = "war_world/overworld",
 }
 
 tile{
-  layer = 1,
-  x = 272,
-  y = 64,
-  width = 8,
-  height = 8,
-  pattern = "3",
-  tileset = "war_world/overworld",
+  layer = 0,
+  x = 160,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "57",
 }
 
 tile{
-  layer = 1,
-  x = 208,
-  y = 72,
-  width = 64,
-  height = 128,
-  pattern = "9",
-  tileset = "war_world/overworld",
+  layer = 0,
+  x = 184,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "5",
+  tileset = "war_world/overworld_war",
 }
 
 tile{
-  layer = 1,
-  x = 200,
-  y = 72,
-  width = 8,
-  height = 128,
-  pattern = "8",
-  tileset = "war_world/overworld",
+  layer = 0,
+  x = 136,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "5",
 }
 
 tile{
-  layer = 1,
-  x = 208,
-  y = 200,
-  width = 64,
-  height = 8,
-  pattern = "6",
-  tileset = "war_world/overworld",
+  layer = 0,
+  x = 136,
+  y = 600,
+  width = 16,
+  height = 16,
+  pattern = "15_6",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 584,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = -40,
+  width = 16,
+  height = 16,
+  pattern = "5",
 }
 
 tile{
@@ -2414,42 +2438,6 @@ tile{
   y = 288,
   width = 16,
   height = 32,
-  pattern = "205",
-}
-
-tile{
-  layer = 1,
-  x = 232,
-  y = 144,
-  width = 32,
-  height = 16,
-  pattern = "205",
-}
-
-tile{
-  layer = 1,
-  x = 232,
-  y = 112,
-  width = 32,
-  height = 16,
-  pattern = "205",
-}
-
-tile{
-  layer = 1,
-  x = 216,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "205",
-}
-
-tile{
-  layer = 1,
-  x = 232,
-  y = 80,
-  width = 16,
-  height = 16,
   pattern = "205",
 }
 
@@ -4998,46 +4986,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 200,
-  y = 160,
-  width = 16,
-  height = 16,
-  pattern = "82",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 1,
-  x = 264,
-  y = 160,
-  width = 16,
-  height = 16,
-  pattern = "83",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 1,
-  x = 200,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = "82",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 1,
-  x = 264,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = "81",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 1,
   x = 360,
   y = 432,
   width = 16,
@@ -5338,62 +5286,11 @@ tile{
 
 tile{
   layer = 1,
-  x = 232,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = "83",
-  tileset = "war_world/overworld",
-}
-
-tile{
-  layer = 1,
-  x = 216,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "83",
-  tileset = "war_world/overworld",
-}
-
-tile{
-  layer = 1,
-  x = 232,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "83",
-  tileset = "war_world/overworld",
-}
-
-tile{
-  layer = 1,
-  x = 248,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "83",
-  tileset = "war_world/overworld",
-}
-
-tile{
-  layer = 1,
-  x = 232,
-  y = 144,
-  width = 16,
-  height = 16,
-  pattern = "83",
-  tileset = "war_world/overworld",
-}
-
-tile{
-  layer = 1,
-  x = 248,
-  y = 144,
-  width = 16,
-  height = 16,
-  pattern = "83",
-  tileset = "war_world/overworld",
+  x = 520,
+  y = 16,
+  width = 112,
+  height = 96,
+  pattern = "5",
 }
 
 destructible{
@@ -7596,6 +7493,26 @@ teletransporter{
 
 tile{
   layer = 2,
+  x = 208,
+  y = 200,
+  width = 64,
+  height = 8,
+  pattern = "6",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 208,
+  y = 72,
+  width = 64,
+  height = 128,
+  pattern = "9",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
   x = 176,
   y = 272,
   width = 48,
@@ -7742,16 +7659,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "260",
-}
-
-tile{
-  layer = 2,
-  x = 208,
-  y = 192,
-  width = 16,
-  height = 16,
-  pattern = "306",
-  tileset = "war_world/overworld",
 }
 
 tile{
@@ -8031,6 +7938,606 @@ tile{
   width = 8,
   height = 8,
   pattern = "56",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 272,
+  y = 72,
+  width = 8,
+  height = 128,
+  pattern = "4",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 272,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "5",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 200,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "7",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 208,
+  y = 64,
+  width = 64,
+  height = 8,
+  pattern = "2",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 200,
+  y = 72,
+  width = 8,
+  height = 128,
+  pattern = "8",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 200,
+  y = 64,
+  width = 8,
+  height = 8,
+  pattern = "1",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 272,
+  y = 64,
+  width = 8,
+  height = 8,
+  pattern = "3",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 232,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "83",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 200,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "83",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 216,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "83",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 248,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "83",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 200,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "83",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 248,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "83",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 264,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "592",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 200,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "592",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 200,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "592",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 264,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "592",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 544,
+  y = -8,
+  width = 8,
+  height = 40,
+  pattern = "192",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 528,
+  y = -8,
+  width = 16,
+  height = 16,
+  pattern = "193",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 528,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "194",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 520,
+  y = -8,
+  width = 8,
+  height = 40,
+  pattern = "191",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 312,
+  y = 24,
+  width = 8,
+  height = 176,
+  pattern = "57",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 160,
+  y = 0,
+  width = 160,
+  height = 16,
+  pattern = "112",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 144,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "111",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 320,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "113",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 328,
+  y = 0,
+  width = 8,
+  height = 208,
+  pattern = "138",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 144,
+  y = 0,
+  width = 8,
+  height = 208,
+  pattern = "134",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 272,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "111",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 192,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "113",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 160,
+  y = 208,
+  width = 32,
+  height = 16,
+  pattern = "112",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 288,
+  y = 208,
+  width = 32,
+  height = 16,
+  pattern = "112",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 320,
+  y = 0,
+  width = 8,
+  height = 208,
+  pattern = "474",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 152,
+  y = 0,
+  width = 8,
+  height = 208,
+  pattern = "474",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 152,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "468",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 320,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "469",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 160,
+  y = 208,
+  width = 40,
+  height = 8,
+  pattern = "475",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 280,
+  y = 208,
+  width = 40,
+  height = 8,
+  pattern = "475",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 200,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "471",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 272,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "472",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 176,
+  y = -8,
+  width = 16,
+  height = 24,
+  pattern = "311",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 264,
+  y = -8,
+  width = 16,
+  height = 24,
+  pattern = "311",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 216,
+  y = -8,
+  width = 16,
+  height = 24,
+  pattern = "311",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 296,
+  y = -16,
+  width = 16,
+  height = 24,
+  pattern = "311",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 200,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "129",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 264,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "129",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 264,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "88",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 232,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "88",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 232,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "88",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 200,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "88",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 264,
+  y = 24,
+  width = 8,
+  height = 32,
+  pattern = "60",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 264,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "61",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 208,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "58",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 208,
+  y = 24,
+  width = 8,
+  height = 32,
+  pattern = "57",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 208,
+  y = 16,
+  width = 8,
+  height = 8,
+  pattern = "56",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 264,
+  y = 16,
+  width = 8,
+  height = 8,
+  pattern = "54",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 216,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "81",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 216,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "84",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 256,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "84",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 232,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "84",
+  tileset = "war_world/overworld",
+}
+
+tile{
+  layer = 2,
+  x = 208,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "306",
   tileset = "war_world/overworld",
 }
 
