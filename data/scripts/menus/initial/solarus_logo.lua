@@ -13,6 +13,8 @@ local solarus_logo_menu = {
   name = "Solarus Logo Intro"
 }
 
+local game_manager = require("scripts/game_manager")
+
 -- Main surface of the menu.
 local surface = sol.surface.create(201, 48)
 -- Solarus title sprite.
@@ -203,9 +205,16 @@ function solarus_logo_menu:on_key_pressed(key)
       -- Start step 2.
       solarus_logo_menu:step2()
     end
+    return false
+  end
+end
 
-    -- Return true to indicate that the keyboard event was handled.
-    return true
+function solarus_logo_menu:on_command_pressed(command) --if start is pressed during the logo, completely cancels the initial menus and loads+start the game file save1.dat
+  if command == "pause" then
+    local game = game_manager:load("save1.dat")
+    self.on_finished = nil
+    sol.menu.stop(self)
+    game_manager:start_game(game)
   end
 end
 

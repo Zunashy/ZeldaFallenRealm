@@ -1,6 +1,7 @@
 local initial_menus = {
   "scripts/menus/initial/solarus_logo",
-  "scripts/menus/title_screen"
+  "scripts/menus/initial/title_screen",
+  "scripts/menus/initial/save_select"
 --  "scripts/menus/initial/zunashy",
 }
 

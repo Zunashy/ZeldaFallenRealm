@@ -2,6 +2,13 @@
 -- You will probably make a title screen and then start a game.
 -- See the Lua API! http://www.solarus-games.org/doc/latest
 
+local loading_surface = sol.surface.create("menus/loading.png")
+local loading_menu = {
+  on_draw = function(self, dst_surface)
+    loading_surface:draw(dst_surface)
+  end
+}
+sol.menu.start(sol.main, loading_menu)
 require("scripts/features")
 
 local game_manager = require("scripts/game_manager")
@@ -12,14 +19,6 @@ local controls_manager = require("scripts/managers/controls_manager")
 
 local default_save_file = "save1.dat"
 
--- Starts a game.
-function sol.main:start_game(file)
-  local game = game_manager:create(file)
-
-  sol.main.game = game
-  game:start()
-end
-
 -- This function is called when Solarus starts.
 -- It is the real entry point of the game.
 function sol.main:on_started()
@@ -27,7 +26,8 @@ function sol.main:on_started()
   controls_manager:load()
   sol.audio.preload_sounds()
   -- Setting a language is useful to display text and dialogs.
-  start_initial_menus(function() sol.main:start_game(default_save_file) end)
+  sol.menu.stop(loading_menu)
+  start_initial_menus()
 end
 
 -- Event called when the program stops.

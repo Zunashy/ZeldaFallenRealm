@@ -18,7 +18,16 @@ function game_meta:set_story_state(state)
   return self:set_value("story_state", state)
 end
 
+function game_meta:on_started()
+  sol.main.game = self
+end
+
+function game_meta:on_finished()
+  sol.main.game = nil
+end
+
 require("scripts/managers/input_manager")
 
 --The following scripts also modify the game metatable :
 -- - menus/dialog_box
+-- - managers/input_manager

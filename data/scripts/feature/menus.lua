@@ -4,7 +4,7 @@ local stop_menu = sol.menu.stop
 
 function sol.menu.start(context, menu, on_top)
 	if not menu.name then menu.name = "unnamed" end
-	print("Start : ".. menu.name)
+	--print("Start : ".. menu.name)
     
 	if menus[menu] then return end
 	
@@ -15,7 +15,7 @@ function sol.menu.start(context, menu, on_top)
 end
 
 function sol.menu.stop(menu)
-	print("Stop : ".. menu.name)
+	--print("Stop : ".. menu.name)
     stop_menu(menu)
     for i, v in ipairs(menus) do
         if menu == v then

@@ -3,7 +3,7 @@ local meta = {}          --the metatable of char surface objects
 
 --===== CHAR SURFACES METATABLE (METHODS and METAMETHODS) ======
 function meta:set_font(font, load)
-  assert(type(font) == "string", "Bad argumennt #1 to set_font : font must be a font name (string)")
+  assert(type(font) == "string", "Bad argument #1 to set_font : font must be a font name (string)")
   self.font = font
 
   self.font_surf = nil
@@ -50,6 +50,12 @@ function meta:add_char(char, font)
 
   font_surf:draw_region(origin_x, origin_y, char_w, char_h, self.surface, dst_x, 0)
   self.x = dst_x + char_w
+end
+
+function meta:write(text, font)
+  for c in text:gmatch"." do
+    self:add_char(c, font)
+  end  
 end
 
 function meta:clear()
