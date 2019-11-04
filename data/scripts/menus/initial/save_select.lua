@@ -34,7 +34,7 @@ local hearts_pos = {
 
 local game_manager = require("scripts/game_manager")
 
-local lang = require("scripts/managers/language_manager")
+local lang = require("scripts/api/language_manager")
 save_select.background_surface = lang:load_image("menus/save_select")
 save_select.cursor_surface = sol.surface.create("menus/save_select_cursor.png")
 

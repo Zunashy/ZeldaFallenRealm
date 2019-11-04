@@ -13,8 +13,8 @@ require("scripts/features")
 
 local game_manager = require("scripts/game_manager")
 local start_initial_menus = require("scripts/menus/initial_menus_manager")
-local settings_manager = require ("scripts/managers/settings")
-local controls_manager = require("scripts/managers/controls_manager")
+local settings_manager = require ("scripts/api/settings")
+local controls_manager = require("scripts/api/controls_manager")
 --require("scripts/sinking_override")
 
 local default_save_file = "save1.dat"

@@ -1,5 +1,5 @@
 -- Fonction appelée à l'évènement on_position_changed du héros
-function detect_safe_spot(hero, x, y, layer)
+local function detect_safe_spot(hero, x, y, layer)
   -- On est en contact d'eau profonde ?
   local touch_deep_water = false
   for entity in hero:get_map():get_entities_in_rectangle(x-32, y-32, 64, 64) do
@@ -24,7 +24,7 @@ end
 
 
 -- Fonction appelée lors du changement d'état du héros
-function detect_sinking(hero, state)
+local function detect_sinking(hero, state)
   -- On se base sur le nouvel état et sur l'ancien pour savoir si on coule
   -- Si le moteur essaie de nous remettre sur le sol après avoir couler
   if hero.last_state == "plunging" and state == "back to solid ground" then
@@ -36,7 +36,7 @@ end
 
 
 -- Fonction appelée lorsqu'un mouvement commence sur le héros
-function place_in_safe_spot(hero, movement)
+local function place_in_safe_spot(hero, movement)
   -- Si le héros commence alors qu'on coule et qu'il s'agit d'un mouvement ciblé
   -- On part du principe qu'il s'agit du mouvement que le moteur enclenche pour nous sortir de l'eau
   if hero.is_sinking and sol.main.get_type(movement) == "target_movement" then

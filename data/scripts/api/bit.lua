@@ -30,19 +30,6 @@ function bit.b_or(a, b)
     return r
 end
 
-function bit.b_and(a, b)
-    local r, x, y, e = 0, 0, 0, 1
-    repeat
-        x = a % 2
-        y = b % 2
-        r = r + ((x + y) == 1 and 1 or 0) * e
-        a = (a - x) / 2
-        b = (b - y) / 2
-        e = e * 2
-    until a == 0 and b == 0
-    return r
-end
-
 function bit.get_bit(n, p)
     for i = 2, p do
         n = (n - (n % 2)) / 2

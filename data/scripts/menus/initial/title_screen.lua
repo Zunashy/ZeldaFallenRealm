@@ -6,7 +6,7 @@ local title_screen = {
     view_start = false,
 }
 
-local vfx = require("scripts/feature/visual_effects")
+local vfx = require("scripts/api/visual_effects")
 
 title_screen.background_surf = sol.surface.create("menus/title_screen.png")
 title_screen.start_surface = sol.surface.create("menus/title_screen_start.png")

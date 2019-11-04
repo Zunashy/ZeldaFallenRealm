@@ -24,7 +24,7 @@ local map_pos = {
 }
 
 --Map manager
-local map_manager = require("scripts/managers/map_manager")
+local map_manager = require("scripts/api/map_manager")
 
 --Methods
 

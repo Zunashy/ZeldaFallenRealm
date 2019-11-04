@@ -2,7 +2,7 @@ local map = ...
 local game = map:get_game()
 local hero = game:get_hero()
 
-local vfx = require("scripts/feature/visual_effects")
+local vfx = require("scripts/api/visual_effects")
 
 local cases = {
   {3, 4},

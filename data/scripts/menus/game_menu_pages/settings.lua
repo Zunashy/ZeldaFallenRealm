@@ -1,4 +1,4 @@
-local settings = require("scripts/managers/settings")
+local settings = require("scripts/api/settings")
 
 local settings_menu = {
     bg_surface = nil,

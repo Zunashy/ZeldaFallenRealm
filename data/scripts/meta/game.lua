@@ -26,8 +26,6 @@ function game_meta:on_finished()
   sol.main.game = nil
 end
 
-require("scripts/managers/input_manager")
-
 --The following scripts also modify the game metatable :
 -- - menus/dialog_box
 -- - managers/input_manager

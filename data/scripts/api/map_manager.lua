@@ -9,7 +9,7 @@ for i = 1, 15 do
 end
 
 --external modules
-local bit = require("scripts/feature/bit")
+local bit = require("scripts/api/bit")
 
 function manager:load_discovered(game)
     local mapstring = game:get_value("map_discovery")
@@ -45,7 +45,12 @@ local function start_callback(game)
     manager:load_discovered(game)
 end
 
+local function finish_callback(game)
+    manager:save_discovered(game)
+end
+
 local game_meta = sol.main.get_metatable("game")
 game_meta:register_event("on_started", start_callback)
+game_meta:register_event("on_finished", finish_callback)
 
 return manager

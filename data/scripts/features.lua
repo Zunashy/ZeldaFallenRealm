@@ -18,6 +18,8 @@ require("scripts/meta/hero")
 require("scripts/meta/entities")
 require("scripts/meta/map")
 
+require("scripts/feature/input_manager")
+
 require("scripts/hud/hud")
 
 require("scripts/menus/dialog_box")

@@ -329,8 +329,6 @@ file{ path = "scripts/hud/hud_config.lua", author = "Christopho", }
 file{ path = "scripts/hud/item.lua", author = "Christopho", }
 file{ path = "scripts/hud/rupees.lua", author = "Christopho", }
 file{ path = "scripts/initial_game.lua", author = "Christopho", }
-file{ path = "scripts/managers/input_manager.lua", author = "TwilCynder", }
-file{ path = "scripts/managers/map_side_view.lua", author = "TwilCynder", }
 file{ path = "scripts/menus/dialog_box.lua", author = "TwilCynder, Christopho", }
 file{ path = "scripts/menus/initial/solarus_logo.lua", author = "Christopho", }
 file{ path = "scripts/menus/initial/zunashy.lua", author = "TwilCynder", }

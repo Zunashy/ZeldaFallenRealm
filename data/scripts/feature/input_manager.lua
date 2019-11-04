@@ -1,4 +1,4 @@
-local controls = require("scripts/managers/controls_manager") --API des commandes
+local controls = require("scripts/api/controls_manager") --API des commandes
 
 --== INPUT MANAGEMENT CALLBACKS ==--
 

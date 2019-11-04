@@ -181,13 +181,13 @@ function map:init_detect_open()
   end
 end
 
-local side_view = require("scripts/managers/map_side_view")
+local side_view = require("scripts/api/map_side_view")
 
 function map:init_side_view()
   side_view:init(self)
 end
 
-local separator_manager = require("scripts/managers/separator_manager")
+local separator_manager = require("scripts/api/separator_manager")
 
 function map:init_reset_separators(default)
   separator_manager:manage_map(self, default)
@@ -205,7 +205,7 @@ end
 
 
 --Map Manager
-local map_manager = require("scripts/managers/map_manager")
+local map_manager = require("scripts/api/map_manager")
 
 function map:discover(cases)
   local x, y

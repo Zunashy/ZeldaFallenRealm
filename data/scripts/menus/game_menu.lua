@@ -58,7 +58,7 @@ for k, v in ipairs(game_menu.side_pages) do
 end
 
 --LOADING EXTERNAL MODULES
-game_menu.lang = require("scripts/managers/language_manager")
+game_menu.lang = require("scripts/api/language_manager")
 
 --MENU METHODS AND UTILITY FUNCTIONS
 function game_menu:init_info_surface(name, desc)
