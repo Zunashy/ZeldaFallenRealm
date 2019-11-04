@@ -13,8 +13,6 @@ local solarus_logo_menu = {
   name = "Solarus Logo Intro"
 }
 
-local game_manager = require("scripts/game_manager")
-
 -- Main surface of the menu.
 local surface = sol.surface.create(201, 48)
 -- Solarus title sprite.
@@ -220,4 +218,3 @@ end
 
 -- Return the menu to the caller.
 return solarus_logo_menu
-

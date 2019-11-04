@@ -2,8 +2,6 @@
 
 -- Usage: require("scripts/features")
 
-sol.features = {}
-
 require("scripts/multi_events")
 
 require("scripts/feature/generic")
