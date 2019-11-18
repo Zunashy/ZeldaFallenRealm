@@ -60,7 +60,7 @@ end
 
 --SUBMENU METHODS
 
-function save_menu:init()
+function save_menu:on_started()
     self.view_cursor = true
 end
 
@@ -92,7 +92,7 @@ function save_menu:on_closed()
     if self.blink_timer then self.blink_timer:stop() end
 end
 
-function save_menu:on_started()
+function save_menu:preload()
     self.bg_surface = self.game_menu.lang:load_image("menus/save_menu")
 end
 

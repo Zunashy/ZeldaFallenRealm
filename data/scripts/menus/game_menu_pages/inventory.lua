@@ -61,7 +61,7 @@ function inventory_menu:on_selection_changed(game_menu)
 end
 
 --SUBMENU METHODS : will be called by the game_menu methods
-function inventory_menu:init(game_menu)
+function inventory_menu:on_started(game_menu)
     for i, item in ipairs(self.items) do 
         if item:get_variant() ~= 0 and not (self.items_sprites[item] and 
           self.items_sprites[item]:get_direction() == item:get_variant() - 1) then 
@@ -127,7 +127,7 @@ function inventory_menu:on_command_pressed(command)
 end
 
 --Replacing the items names by the items objects when the game starts
-function inventory_menu:on_started(game)
+function inventory_menu:preload(game)
     for k, v in ipairs(inventory_menu.items) do
         inventory_menu.items[k] = game:get_item(v)
     end

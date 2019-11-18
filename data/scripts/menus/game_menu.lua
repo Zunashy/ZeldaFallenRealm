@@ -23,7 +23,8 @@ local game_menu = {
     info_surface_movement = nil,
     transition_movement = nil,
     transition_movement_pos = {x = 0, y = 0},
-    name = "Game Menu"
+    name = "Game Menu",
+    running = false,
 }
 
 game_menu.surface = sol.surface.create(sol.video.get_quest_size())
@@ -148,7 +149,7 @@ end
 function game_menu:open_page(new_page, transition, remember_origin)
     remember_origin = (remember_origin == nil) and (not transition) or remember_origin
 
-    if remember_origin then new_page.origin_page() end
+    if remember_origin then new_page.origin_page = self.current_page end
     if transition then
         self:page_transition(new_page)
     else
@@ -161,10 +162,12 @@ end
 
 --====== MENU CALLBACKS ======
 function game_menu:on_started()
+    self.running = true
+
     self.current_page = self.main_pages[self.current_page_index]
 
     for k, v in pairs(self.pages) do
-        if v.init then v:init(self) end
+        if v.on_started then v:on_started(self) end
     end
     self.current_page:on_page_selected(self)
 end
@@ -206,6 +209,8 @@ function game_menu:on_finished()
     if self.info_surface_movement then
         self.info_surface_movement:stop()
     end
+
+    self.running = false
 end
 
 function game_menu:on_command_pressed(command)
@@ -249,9 +254,9 @@ local function start_callback(game)
     game_menu:bind_to_game(game)
 
     for k, v in pairs(game_menu.pages) do
-        if v.on_started and not v.initalized then 
-			v:on_started(game) 
-		end
+        if v.preload and not v.initalized then 
+		v:preload(game)
+	end
     end            
 end
 
@@ -260,3 +265,20 @@ local game_meta = sol.main.get_metatable("game")
 game_meta:register_event("on_started", start_callback)
 game_meta:register_event("on_paused", pause_callback)
 game_meta:register_event("on_unpaused", unpause_callback)
+
+
+--[[
+
+Evenements : 
+- preload : n'importe quand avant la première utilisation du menu
+- on_game_started : la game est lancée   -> LES MENUS UTILISES HORS GAME NE DOIVENT PAS EN AVOIR BESOIN (settings)
+- on_started : lancement du game_menu
+- on_page_started : ouverture de ce sous-menu
+
+AU FINAL je retire le on_game_started et le remplace par preload qui aura donc deux signification différentes, 
+selon si le menu doit être utilisé avant le lancement d'une game ou après.
+/!\ Si un menu doit être utilisé avant mais doit réagir au lancement de la game cela ne fonctionnera plus
+
+]]--
+
+

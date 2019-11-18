@@ -143,6 +143,18 @@ end
 function settings_menu:on_command_pressed(command)
     if command == "action" or command == "left" or command == "right" then
         self.buttons[self.cursor].effect(command, self.buttons[self.cursor])
+    elseif command == "sword" or command == "select" then
+        if sol.menu.is_started(self) then
+            sol.menu.stop(self)
+	end
+	
+	if self.origin_page then
+	    if self.origin_page.game_menu and sol.menu.is_started(self.origin_page.game_menu) then
+	        self.game_menu.current_page = self.origin_page
+	    else 
+	        sol.menu.start(self.origin_page)
+	    end
+	end	     
     elseif command == "up" then
         local cursor_relative = self.cursor - self.scrolling
         if cursor_relative == 1 then
@@ -175,11 +187,11 @@ function settings_menu:on_command_pressed(command)
 
 end
 
-function settings_menu:init()
+function settings_menu:on_started()
     self:rebuild_surface()
 end
 
-function settings_menu:on_started(game)
+function settings_menu:preload()
     local title_surface = self.game_menu.lang:load_image("menus/settings_title")
     local x, y = title_pos.x, title_pos.y
     title_surface:draw(self.bg_surface, x, y)
@@ -193,6 +205,8 @@ function settings_menu:on_started(game)
         end
     end
     self.nButtons = table.getn(self.buttons)
+
+    self.initialized = true
 end
 
 

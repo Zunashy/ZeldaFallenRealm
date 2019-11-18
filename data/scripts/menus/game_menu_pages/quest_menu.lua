@@ -81,7 +81,7 @@ end
 
 --SUBMENU METHODS : will be called by the game_menu methods--
 
-function quest_menu:init()
+function quest_menu:on_started()
     self.bg_image:draw(self.bg_surface)
     local qhearts = self.game_menu:get_game():get_item("heart_quarter"):get_amount()
     if qhearts > 0 then
@@ -122,7 +122,7 @@ end
 
 --Loading the correct button images, depending on the language
 
-function quest_menu:on_started(game)
+function quest_menu:preload()
     local save_surface = self.game_menu.lang:load_image("menus/save")
     local x, y = save_position.x, save_position.y
     save_surface:draw(self.bg_image, x, y)
@@ -130,6 +130,7 @@ function quest_menu:on_started(game)
     local settings_surface = self.game_menu.lang:load_image("menus/settings")
     x, y = settings_position.x, settings_position.y
     settings_surface:draw(self.bg_image, x, y)
+
 end
 
 return quest_menu
