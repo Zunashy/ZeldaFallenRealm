@@ -33,6 +33,7 @@ local hearts_pos = {
 }
 
 local game_manager = require("scripts/game_manager")
+local enter_name_menu = require("scripts/menus/enter_name")
 
 local lang = require("scripts/api/language_manager")
 save_select.background_surface = lang:load_image("menus/save_select")
@@ -141,15 +142,34 @@ function save_select:on_command_pressed(command)
     elseif command == "action" or command == "pause" then
         local game = self.saves[self.cursor]
         sol.menu.stop(self)
-        game_manager:start_game(game)
+
+        if game.initialized then
+            game_manager:start_game(game)
+        else 
+            sol.menu.start(sol.main, enter_name_menu, nil, {
+                game = game,
+                game_manager = game_manager,
+                prev_menu = self
+            })
+        end
     end
+end
+
+function save_select:load_saves()
+    for i = 1, 3 do
+        self.saves[i] = game_manager:load("save"..i..".dat")
+    end
+    self.saves_loaded = true
 end
 
 function save_select:on_started()
     local exists, game, name, name_surface, y
     y = save_name_pos.y
+
+    if not self.saves_loaded then self:load_saves() end
+
     for i = 1, 3 do
-        game = game_manager:load("save"..i..".dat")
+        game = self.saves[i]
 
         if game.initialized then
             name = game:get_value("name")
@@ -158,7 +178,6 @@ function save_select:on_started()
             name_surface:draw(self.background_surface, save_name_pos.x, y)
         end
         y = y + save_name_pos.offset
-        self.saves[i] = game
     end
 
     game = self.saves[self.cursor]

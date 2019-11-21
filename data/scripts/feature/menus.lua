@@ -2,7 +2,7 @@ local menus = {}
 local start_menu = sol.menu.start
 local stop_menu = sol.menu.stop
 
-function sol.menu.start(context, menu, on_top)
+function sol.menu.start(context, menu, on_top, ...)
 	if not menu.name then menu.name = "unnamed" end
 	--print("Start : ".. menu.name)
     
@@ -12,6 +12,11 @@ function sol.menu.start(context, menu, on_top)
     
     local n = table.getn(menus)
     menus[n + 1] = menu
+
+    menu.arguments = {...}
+    if type(menu.arguments[1]) == "table" then
+        menu.arguments = menu.arguments[1]
+    end
 end
 
 function sol.menu.stop(menu)
