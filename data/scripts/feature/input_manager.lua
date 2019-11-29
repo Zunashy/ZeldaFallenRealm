@@ -34,6 +34,10 @@ function sol.main:on_key_pressed(key) --manages commands if no game is started (
   end
 end
 
+function sol.main:on_joypad_button_pressed(button)
+  print(type(button), button)
+end
+
 local meta = sol.main.get_metatable("game") --what comes after this line is about the input management during a game
 
 --DEBUG COMMANDS FUNCTION

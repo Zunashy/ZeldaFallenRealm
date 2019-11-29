@@ -119,4 +119,13 @@ function math.sign(x)
   end
 end
 
+function gen.splitColor(code)
+  local r, g, b
+  b = code % 256
+  code = (code - b) / 256
+  g = code % 256
+  r = (code - g) / 256
+  return r, g, b
+end
+
 return gen

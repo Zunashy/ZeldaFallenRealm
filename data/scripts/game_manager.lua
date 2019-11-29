@@ -27,7 +27,7 @@ game_manager.initialize_new_savegame = initial_game.initialize_new_savegame
 
 function game_manager:start_game(game)
   if not game.initialized then
-    game_manager:initialize_new_savegame(game, "test")
+    game_manager:initialize_new_savegame(game)
   end
   game:start()
 end
