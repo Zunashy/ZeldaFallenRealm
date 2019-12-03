@@ -6,12 +6,15 @@ function sol.menu.start(context, menu, on_top, ...)
 	if not menu.name then menu.name = "unnamed" end
 	--print("Start : ".. menu.name)
     
+    context = context or menu.context
+
 	if menus[menu] then return end
 	
 	start_menu(context, menu, on_top)
     
     local n = table.getn(menus)
     menus[n + 1] = menu
+    menu.context = context
 
     menu.arguments = {...}
     if type(menu.arguments[1]) == "table" then

@@ -64,7 +64,7 @@ function save_menu:on_started()
     self.view_cursor = true
 end
 
-function save_menu:draw(dst_surface)
+function save_menu:on_draw(dst_surface)
     self.bg_surface:draw(dst_surface)
     if self.view_cursor then
         local x, y = cursor_pos.x, cursor_pos.y + cursor_pos.offset * (self.cursor - 1)

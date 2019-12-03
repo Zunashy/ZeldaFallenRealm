@@ -121,7 +121,7 @@ function settings_manager:load()
 end
 
 function settings_manager:save()
-    local file = sol.file.open("settings.dat", "w")
+    local file, error = sol.file.open("settings.dat", "w+")
     local settings = self:get_all()
     if not file then
         print(error)

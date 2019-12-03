@@ -96,7 +96,7 @@ function quest_menu:on_page_selected()
     self.game_menu:init_info_surface("menus.quest.save.name", "menus.quest.save.description")
 end
 
-function quest_menu:draw(dst_surface)
+function quest_menu:on_draw(dst_surface)
     self.bg_surface:draw(dst_surface)
     if self.current_cursor then
         local x, y = self.current_cursor.x, self.current_cursor.y

@@ -122,7 +122,7 @@ function game_menu:get_game()
 end
 
 function game_menu:page_transition(new_page)
-    self.current_page:draw(self.transition_surface)
+    self.current_page:on_draw(self.transition_surface)
     if self.current_page.on_closes then
         self.current_page:on_closed()
     end
@@ -175,7 +175,7 @@ end
 function game_menu:draw(dst_surface, x, y)
     local surf = self.surface
     surf:clear()
-    self.current_page:draw(surf, self)
+    self.current_page:on_draw(surf, self)
 
     local info_x, info_y = self.info_surface_pos.x, self.info_surface_pos.y
     if self.current_page.enable_info_text and self.info_pre_surface then

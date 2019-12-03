@@ -43,7 +43,7 @@ function controls:apply(game, commands)
 end
 
 function controls:save()
-    local file, error = sol.file.open("controls.dat", "w")
+    local file, error = sol.file.open("controls.dat", "w+")
     if not file then
         print(error)
         return false

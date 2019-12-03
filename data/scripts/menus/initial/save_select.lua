@@ -13,7 +13,8 @@ local save_select = {
 local cursor_pos = {
     {x = 8, y = 53},
     {x = 8, y = 77},
-    {x = 8, y = 101}
+    {x = 8, y = 101},
+    {x = 37, y = 121}
 }
 
 local save_name_pos = {
@@ -34,6 +35,7 @@ local hearts_pos = {
 
 local game_manager = require("scripts/game_manager")
 local enter_name_menu = require("scripts/menus/enter_name")
+local settings_menu = require("scripts/menus/game_menu_pages/settings")
 
 local lang = require("scripts/api/language_manager")
 save_select.background_surface = lang:load_image("menus/save_select")
@@ -108,7 +110,7 @@ function save_select:on_draw(dst_surface)
     self.background_surface:draw(dst_surface)
     self.cursor_surface:draw(dst_surface, cursor_pos[self.cursor].x, cursor_pos[self.cursor].y)
 
-    if self.saves[self.cursor].initialized then
+    if self.cursor < 4 and self.saves[self.cursor].initialized then
         self.link_sprite:draw(dst_surface, link_pos.x, link_pos.y)
         self.hearts_surface:draw(dst_surface, hearts_pos.x, hearts_pos.y)
     end
@@ -117,40 +119,47 @@ end
 function save_select:on_command_pressed(command)
     if command == "up" then
         if self.cursor == 1 then
-            self.cursor = 3
+            self.cursor = 4
         else
             self.cursor = self.cursor - 1
         end
         local game = self.saves[self.cursor]
-        if game.initialized then
+        if game and game.initialized then
             local life = game:get_life()
             local max_life = game:get_max_life()
             self:draw_hearts(life, max_life)
         end
     elseif command == "down" then
-        if self.cursor == 3 then
+        if self.cursor == 4 then
             self.cursor = 1
         else
             self.cursor = self.cursor + 1
         end
         local game = self.saves[self.cursor]
-        if game.initialized then
+        if game and game.initialized then
             local life = game:get_life()
             local max_life = game:get_max_life()
             self:draw_hearts(life, max_life)
         end
     elseif command == "action" or command == "pause" then
-        local game = self.saves[self.cursor]
-        sol.menu.stop(self)
 
-        if game.initialized then
-            game_manager:start_game(game)
+        if self.cursor < 4 then
+            local game = self.saves[self.cursor]
+            sol.menu.stop(self)
+
+            if game.initialized then
+                game_manager:start_game(game)
+            else 
+                sol.menu.start(sol.main, enter_name_menu, nil, {
+                    game = game,
+                    game_manager = game_manager,
+                    prev_menu = self
+                })
+            end
         else 
-            sol.menu.start(sol.main, enter_name_menu, nil, {
-                game = game,
-                game_manager = game_manager,
-                prev_menu = self
-            })
+            sol.menu.stop(self)
+            sol.menu.start(sol.main, settings_menu)
+            settings_menu.origin_page = self
         end
     end
 end
@@ -181,7 +190,7 @@ function save_select:on_started()
     end
 
     game = self.saves[self.cursor]
-    if game.initialized then
+    if game and game.initialized then
         local life = game:get_life()
         local max_life = game:get_max_life()
         self:draw_hearts(life, max_life)

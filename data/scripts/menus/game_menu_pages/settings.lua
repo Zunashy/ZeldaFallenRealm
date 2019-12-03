@@ -132,7 +132,7 @@ end
 
 --SUBMENU METHODS
 
-function settings_menu:draw(dst_surface)
+function settings_menu:on_draw(dst_surface)
     self.surface:draw(dst_surface)
 end
 
@@ -152,7 +152,7 @@ function settings_menu:on_command_pressed(command)
 	    if self.origin_page.game_menu and sol.menu.is_started(self.origin_page.game_menu) then
 	        self.game_menu.current_page = self.origin_page
 	    else 
-	        sol.menu.start(self.origin_page)
+	        sol.menu.start(self.context or self.origin_page.context, self.origin_page)
 	    end
 	end	     
     elseif command == "up" then
@@ -188,10 +188,16 @@ function settings_menu:on_command_pressed(command)
 end
 
 function settings_menu:on_started()
+    self:preload()
     self:rebuild_surface()
+    self.origin_page = nil 
+    if self.arguments then
+        self.origin_page = self.arguments.origin_page
+    end
 end
 
 function settings_menu:preload()
+    if self.initialized then return end
     local title_surface = self.game_menu.lang:load_image("menus/settings_title")
     local x, y = title_pos.x, title_pos.y
     title_surface:draw(self.bg_surface, x, y)

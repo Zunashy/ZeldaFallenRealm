@@ -77,7 +77,7 @@ function inventory_menu:on_page_selected()  --appelée quand cette page est sél
     self:on_selection_changed()
 end
 
-function inventory_menu:draw(dst_surface, game_menu)
+function inventory_menu:on_draw(dst_surface, game_menu)
     self.bg_surface:draw(dst_surface)
     local cx, cy = slot_index_to_coords(self.cursor)
     local x, y = cursor_pos.tl_offset.x + (cx * cursor_pos.h_offset), cursor_pos.tl_offset.y + (cy * cursor_pos.v_offset)
