@@ -6,15 +6,21 @@ local save_select = {
     cursor = 1,
     saves = {},
     link_sprite = nil,
-    hearts_surface = nil,
     hearts_img = nil,
+    mode = 1, -- 1 : sélection normale (save ou bouton settings) ; 2 : options de save, boutons du bas (erase)
+    selected_save = 0,
+    draw_link = false
 }
 
 local cursor_pos = {
     {x = 8, y = 53},
     {x = 8, y = 77},
     {x = 8, y = 101},
-    {x = 37, y = 121}
+    {x = 37, y = 121},
+    footer = {
+        {x = 34, y = 122},
+        {x = 90, y = 122}
+    }
 }
 
 local save_name_pos = {
@@ -33,13 +39,19 @@ local hearts_pos = {
     y = 81
 }
 
+local footer_y = 120
+
 local game_manager = require("scripts/game_manager")
 local enter_name_menu = require("scripts/menus/enter_name")
 local settings_menu = require("scripts/menus/game_menu_pages/settings")
-
 local lang = require("scripts/api/language_manager")
+
+save_select.surface = sol.surface.create(sol.video.get_quest_size())
+
 save_select.background_surface = lang:load_image("menus/save_select")
 save_select.cursor_surface = sol.surface.create("menus/save_select_cursor.png")
+save_select.cursor_bw_surface = sol.surface.create("menus/save_select_cursor_bw.png")
+save_select.alt_footer_surface = lang:load_image("menus/save_select_footer")
 
 save_select.link_sprite = sol.sprite.create("hero/tunic1")
 save_select.link_sprite:set_animation("walking")
@@ -48,7 +60,7 @@ save_select.link_sprite:set_direction(3)
 save_select.hearts_surface = sol.surface.create(60, 12)
 save_select.hearts_img = sol.surface.create("hud/hearts.png")
 
-function save_select:draw_hearts(life, max_life)
+function save_select:draw_hearts(life, max_life, ox, oy)
 
     self.hearts_surface:clear()
 
@@ -63,9 +75,9 @@ function save_select:draw_hearts(life, max_life)
                 y = 8
             end
             if life >= j then
-                self.hearts_img:draw_region(0, 0, 8, 8, self.hearts_surface, x, y)
+                self.hearts_img:draw_region(0, 0, 8, 8, self.surface, ox + x, oy + y)
             else
-                self.hearts_img:draw_region(32, 0, 8, 8, self.hearts_surface, x, y)
+                self.hearts_img:draw_region(32, 0, 8, 8, self.surface, ox + x, oy + y)
             end
         end
     end
@@ -78,7 +90,7 @@ function save_select:draw_hearts(life, max_life)
             x = 2 * (life - 23)
             y = 8
         end
-        self.hearts_img:draw_region(8, 0, 8, 8, self.hearts_surface, x, y)
+        self.hearts_img:draw_region(8, 0, 8, 8, self.surface, ox + x, oy + y)
     end
 
     if life % 4 == 2 then
@@ -90,7 +102,7 @@ function save_select:draw_hearts(life, max_life)
             x = 2 * (life - 22)
             y = 8
         end
-        self.hearts_img:draw_region(16, 0, 8, 8, self.hearts_surface, x, y)
+        self.hearts_img:draw_region(16, 0, 8, 8, self.surface, ox + x, oy + y)
     end
 
     if life % 4 == 1 then
@@ -102,64 +114,92 @@ function save_select:draw_hearts(life, max_life)
             x = 2 * (life - 21)
             y = 8
         end
-        self.hearts_img:draw_region(24, 0, 8, 8, self.hearts_surface, x, y)
+        self.hearts_img:draw_region(24, 0, 8, 8, self.surface, ox + x, oy + y)
     end
 end
 
-function save_select:on_draw(dst_surface)
-    self.background_surface:draw(dst_surface)
-    self.cursor_surface:draw(dst_surface, cursor_pos[self.cursor].x, cursor_pos[self.cursor].y)
+function save_select:rebuild_surface()
+    self.background_surface:draw(self.surface)
+    local game = self.mode == 1 and self.saves[self.cursor] or self.saves[self.selected_save]
+    if self.mode > 1 or (self.cursor < 4 and self.saves[self.cursor].initialized) then
+        self.draw_link = true
+        if game and game.initialized then
+            local life = game:get_life()
+            local max_life = game:get_max_life()
+            self:draw_hearts(life, max_life, hearts_pos.x, hearts_pos.y)
+        end
+    else
+        self.draw_link = false
+    end
+    if self.mode > 1 then
+        self.alt_footer_surface:draw(self.surface, 0, footer_y)
+        self.cursor_bw_surface:draw(self.surface, cursor_pos[self.selected_save].x, cursor_pos[self.selected_save].y)
+    end
 
-    if self.cursor < 4 and self.saves[self.cursor].initialized then
+    local cursor_pos_array = self.mode == 1 and cursor_pos or cursor_pos.footer
+    self.cursor_surface:draw(self.surface, cursor_pos_array[self.cursor].x, cursor_pos_array[self.cursor].y)
+end
+
+function save_select:on_draw(dst_surface)
+    self.surface:draw(dst_surface)
+    if self.draw_link then
         self.link_sprite:draw(dst_surface, link_pos.x, link_pos.y)
-        self.hearts_surface:draw(dst_surface, hearts_pos.x, hearts_pos.y)
     end
 end
 
 function save_select:on_command_pressed(command)
-    if command == "up" then
+    if command == "up" and self.mode == 1 then
         if self.cursor == 1 then
             self.cursor = 4
         else
             self.cursor = self.cursor - 1
         end
-        local game = self.saves[self.cursor]
-        if game and game.initialized then
-            local life = game:get_life()
-            local max_life = game:get_max_life()
-            self:draw_hearts(life, max_life)
-        end
-    elseif command == "down" then
+        self:rebuild_surface()
+    elseif command == "down" and self.mode == 1 then
         if self.cursor == 4 then
             self.cursor = 1
         else
             self.cursor = self.cursor + 1
         end
-        local game = self.saves[self.cursor]
-        if game and game.initialized then
-            local life = game:get_life()
-            local max_life = game:get_max_life()
-            self:draw_hearts(life, max_life)
-        end
+        self:rebuild_surface()
+    elseif (command == "left" or command == "right") and self.mode == 2 then
+        self.cursor = 3 - self.cursor
+        self:rebuild_surface()
     elseif command == "action" or command == "pause" then
+        if self.mode == 1 then
+            if self.cursor < 4 then
+                local game = self.saves[self.cursor]
+                sol.menu.stop(self)
 
-        if self.cursor < 4 then
-            local game = self.saves[self.cursor]
-            sol.menu.stop(self)
-
-            if game.initialized then
-                game_manager:start_game(game)
+                if game.initialized then
+                    game_manager:start_game(game)
+                else 
+                    sol.menu.start(sol.main, enter_name_menu, nil, {
+                        game = game,
+                        game_manager = game_manager,
+                        prev_menu = self
+                    })
+                end
             else 
-                sol.menu.start(sol.main, enter_name_menu, nil, {
-                    game = game,
-                    game_manager = game_manager,
-                    prev_menu = self
-                })
+                sol.menu.stop(self)
+                sol.menu.start(sol.main, settings_menu)
+                settings_menu.origin_page = self
             end
-        else 
-            sol.menu.stop(self)
-            sol.menu.start(sol.main, settings_menu)
-            settings_menu.origin_page = self
+        else
+            sol.file.remove("save"..self.selected_save..".dat")
+            self.saves[self.selected_save] = sol.game.load("save"..self.selected_save..".dat")
+            self.background_surface:fill_color({0, 0, 0}, 
+                save_name_pos.x, save_name_pos.y + (save_name_pos.offset * (self.selected_save - 1)), 49, 11)
+            self.mode = 1
+            self.cursor = self.selected_save
+            self:rebuild_surface()
+        end
+    elseif command == "select" then
+        if self.mode == 1 and self.saves[self.cursor] and self.saves[self.cursor].initialized then
+            self.selected_save = self.cursor
+            self.cursor = 1
+            self.mode = 2
+            self:rebuild_surface()
         end
     end
 end
@@ -189,12 +229,7 @@ function save_select:on_started()
         y = y + save_name_pos.offset
     end
 
-    game = self.saves[self.cursor]
-    if game and game.initialized then
-        local life = game:get_life()
-        local max_life = game:get_max_life()
-        self:draw_hearts(life, max_life)
-    end
+    self:rebuild_surface()
 
 end
 

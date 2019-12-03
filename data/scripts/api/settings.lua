@@ -5,7 +5,7 @@ local default_settings = {
     fullscreen = false,
     sound_volume = 100,
     music_volume = 100,
-    language = "fr",
+    language = "en",
     joypad_enabled = true,
     text_speed = 3
 }
