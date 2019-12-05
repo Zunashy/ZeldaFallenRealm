@@ -6,13 +6,16 @@
 -- And the following entities are destroyed:
 -- - Bombs.
 
-local separator_manager = {}
+local separator_manager = {
+	destroy_on_activate = {} --array des entités qui seront détruites au changement de région
+}
 require("scripts/multi_events")
 
 function separator_manager:manage_map(map, default)
 
   local enemy_places = {}
   local destructible_places = {}
+  local entities_place = {}
   local game = map:get_game()
 
   -- Function called when a separator was just taken.
@@ -88,6 +91,10 @@ function separator_manager:manage_map(map, default)
         end
       end
     end
+	
+	for _, e in ipairs(separator_manager.destroy_on_activate) do
+		e:remove()
+	end
   end
 
   for separator in map:get_entities_property("auto_separator", "1", "separator", default) do
@@ -150,5 +157,15 @@ function separator_manager:manage_map(map, default)
   end
 
 end
+
+function separator_manager:destroy_on_separator(e)
+	local t = self.destroy_on_activate
+	t[#t + 1] = e
+end
+
+local function map_change_callback()
+	separator_manager.destroy_on_activate = {}
+end
+sol.main.get_metatable("game"):register_event("on_map_changed", map_change_callback)
 
 return separator_manager

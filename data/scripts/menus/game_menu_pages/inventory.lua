@@ -4,7 +4,7 @@ local inventory_menu = {
     bg_surface = nil,
     items = {
         "rock_feather",
-        "rock_feather"
+        "ice_seed"
     },
     items_sprites = {},
     enable_info_text = true
@@ -99,6 +99,11 @@ function inventory_menu:on_command_pressed(command)
         if item and item:get_variant() ~= 0 then
             item:get_game():set_item_assigned(1, item)
         end
+	elseif command == "item_2" then
+		local item = self:get_selected_item()
+		if item and item:get_variant() ~= 0 then
+			item:get_game():set_item_assigned(2, item)
+		end
     elseif command == "right" then
         cx, cy = slot_index_to_coords(self.cursor)
         cx = cx + 1

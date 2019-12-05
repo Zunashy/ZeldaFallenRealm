@@ -11,20 +11,20 @@
 local item = ...
 local game = item:get_game()
 
+local floor = math.floor
+
+local range1 = 8
+local range2 = 16 
+ 
 -- Event called when the game is initialized.
 function item:on_started()
-  self:set_savegame_variable("ice_seed")
+  self:set_savegame_variable("ice_seed_possession")
+  self:set_amount_savegame_variable("ice_seed_amount")
   self:set_assignable(true)
 end
 
 function item:on_obtaining()
-  -- Automatically assign the item to a command slot
-  -- if nothing is assigned.
-  if game:get_item_assigned(1) == nil then
-    game:set_item_assigned(1, self)
-  elseif game:get_item_assigned(2) == nil then
-    game:set_item_assigned(2, self)
-  end
+
 end
 
 -- Event called when the hero is using this item.
@@ -33,18 +33,8 @@ function item:on_using()
   local hero = self:get_map():get_entity("hero")
   local x, y, layer = hero:get_position()
   local direction = hero:get_direction()
-  if direction == 0 then
-    x = x + 16
-  elseif direction == 1 then
-    y = y - 16
-  elseif direction == 2 then
-    x = x - 16
-  elseif direction == 3 then
-    y = y + 16
-  end
-
   -- On regarde toutes les entitées dans un petit rectangle autour de ces coordonnées
-  for entity in self:get_map():get_entities_in_rectangle(x-2, y-2, 5, 5) do
+  --[[for entity in self:get_map():get_entities_in_rectangle(x-2, y-2, 5, 5) do
     -- S'il s'agit d'une entité custom d'eau profonde
     if entity:get_type() == "custom_entity" and entity.is_deep_water and not entity.is_frozen then
       -- On met en premier plan le sprite de glace, on met un terran traversable et on indique que ce n'est plus de l'eau
@@ -58,8 +48,26 @@ function item:on_using()
         entity:set_modified_ground("deep_water")
         entity.is_frozen = false
       end)
-    end
-  end
+    end]]
+	
+	x, y = gen.shift_direction4(x, y, direction, range)
+	x = floor(x / 16) * 16 + 8; y = floor(y / 16) * 16 + 13	
+	
+	local map = game:get_map()
+	if map:get_ground(x, y, layer) == "deep_water" or map:get_ground(x, y, layer) == "shallow_water" then
+		map:create_custom_entity({
+			model = "ice_tile",
+			direction = 0,
+			layer = layer,
+			x = x,
+			y = y,
+			width = 16,
+			height = 16
+		})
+	end
+	
+	
+	
 
   item:set_finished()
 end

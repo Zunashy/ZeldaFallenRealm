@@ -37,9 +37,9 @@ animation{
 }
 animation{
   name = "ice_seed",
-  src_image = "entities/items.png",
+  src_image = "items/ice_seed.png",
   directions = {
-    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{

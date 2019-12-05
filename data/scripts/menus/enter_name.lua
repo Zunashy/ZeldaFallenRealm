@@ -1,5 +1,3 @@
---WIP
-
 local name_menu  = {
   name = "Save name prompt", 
 

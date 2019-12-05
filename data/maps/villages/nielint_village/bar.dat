@@ -979,3 +979,17 @@ destination{
   direction = 1,
 }
 
+pickable{
+  layer = 0,
+  x = 64,
+  y = 85,
+  treasure_name = "ice_seed",
+}
+
+pickable{
+  layer = 0,
+  x = 72,
+  y = 61,
+  treasure_name = "rock_feather",
+}
+
