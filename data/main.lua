@@ -22,6 +22,9 @@ local default_save_file = "save1.dat"
 -- This function is called when Solarus starts.
 -- It is the real entry point of the game.
 function sol.main:on_started()
+
+  sol.video.set_shader(sol.shader.create("default"))
+
   settings_manager:load()
   controls_manager:load()
   sol.audio.preload_sounds()

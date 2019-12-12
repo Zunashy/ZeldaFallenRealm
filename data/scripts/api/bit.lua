@@ -37,11 +37,13 @@ function bit.get_bit(n, p)
     return n % 2
 end
 
-function bit.get_bits(n)
+function bit.get_bits(n, ml)
+    local ml = ml or 0
     return function()
-        if n == 0 then return nil end 
+        if n == 0 and ml < 1 then return nil end 
         local x = n % 2
         n = (n - (n % 2)) / 2
+        ml = ml - 1
         return x
     end
 end

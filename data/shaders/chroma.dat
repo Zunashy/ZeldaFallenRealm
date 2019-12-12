@@ -1,0 +1,4 @@
+shader{
+  fragment_file = "chroma.frag.glsl",
+  scaling_factor = 9.33678e-312,
+}

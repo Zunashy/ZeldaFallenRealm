@@ -13,9 +13,15 @@ local game = item:get_game()
 
 local floor = math.floor
 
-local range1 = 8
-local range2 = 16 
+local range = 8
  
+local stc = {
+  {-4, -8},
+  {4, -8},
+  {-4, 0},
+  {4, 0}
+}
+
 -- Event called when the game is initialized.
 function item:on_started()
   self:set_savegame_variable("ice_seed_possession")
@@ -25,6 +31,47 @@ end
 
 function item:on_obtaining()
 
+end
+
+local function check_ground(map, x, y, layer)
+  return map:get_ground(x, y, layer) == "deep_water" or map:get_ground(x, y, layer) == "shallow_water"
+end
+
+local function create_big_tile(map, x, y, layer)
+  map:create_custom_entity({
+    model = "ice_floor",
+    direction = 0,
+    layer = layer,
+    x = x,
+    y = y,
+    width = 16,
+    height = 16
+  })
+end
+
+local function create_small_tile(map, x, y, layer, position)
+  local e = map:create_custom_entity({
+    model = "ice_floor",
+    direction = 0,
+    layer = layer,
+    x = x,
+    y = y,
+    width = 8,
+    height = 8
+  })
+  e:get_sprite():set_animation("ice_floor_" .. position)
+end
+
+local bit = require("scripts/api/bit")
+local function create_small_tiles(map, x, y, layer, control)
+  local n = 1
+  for i in bit.get_bits(control, 4) do
+    if i==1 then
+      print(n)
+      create_small_tile(map, x + stc[n][1], y + stc[n][2], layer, n)
+    end
+    n = n + 1
+  end
 end
 
 -- Event called when the hero is using this item.
@@ -54,20 +101,19 @@ function item:on_using()
 	x = floor(x / 16) * 16 + 8; y = floor(y / 16) * 16 + 13	
 	
 	local map = game:get_map()
-	if map:get_ground(x, y, layer) == "deep_water" or map:get_ground(x, y, layer) == "shallow_water" then
-		map:create_custom_entity({
-			model = "ice_tile",
-			direction = 0,
-			layer = layer,
-			x = x,
-			y = y,
-			width = 16,
-			height = 16
-		})
-	end
-	
-	
-	
+  
+  local control = 0
+  for i = 1, 4 do
+    if check_ground(map, x + stc[i][1], y + stc[i][2], layer) then
+      control = control + (i - 1)^2
+    end
+  end
+
+  if control == 15 then
+    create_big_tile(map, x, y, layer)
+  else
+    create_small_tiles(map, x, y, layer, control)
+  end
 
   item:set_finished()
 end

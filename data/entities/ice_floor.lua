@@ -16,9 +16,9 @@ local separator_manager = require("scripts/api/separator_manager")
 -- Event called when the custom entity is initialized.
 
 function entity:on_created()
- self:create_sprite("entities/ice_tile")
- separator_manager:destroy_on_separator()
- self:set_modified_ground("traversable")
- self:set_can_traverse_ground("deep_water", true)
- self:set_can_traverse_ground("shallow_water", true)
+    self:create_sprite("entities/ice_floor")
+    separator_manager:destroy_on_separator()
+    self:set_modified_ground("traversable")
+    self:set_can_traverse_ground("deep_water", true)
+    self:set_can_traverse_ground("shallow_water", true)
 end
