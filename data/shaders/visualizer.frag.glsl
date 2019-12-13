@@ -16,24 +16,27 @@ precision mediump float;
 #endif
 
 uniform sampler2D sol_texture;
-uniform vec2 sol_output_size;
 uniform bool sol_vcolor_only;
 uniform bool sol_alpha_mult;
 COMPAT_VARYING vec2 sol_vtex_coord;
 COMPAT_VARYING vec4 sol_vcolor;
 
+uniform vec4 visu_box;
+
 void main() {
     if(!sol_vcolor_only) {
-      float amount = 0.01;
-      vec2 uv = sol_vtex_coord;
-      vec3 col;
-      col.r = COMPAT_TEXTURE( sol_texture, vec2(uv.x - amount, uv.y) ).r;
-      col.g = COMPAT_TEXTURE( sol_texture, uv ).g;
-      col.b = COMPAT_TEXTURE( sol_texture, vec2(uv.x + amount, uv.y) ).b;      
-      FragColor = vec4(col, 1.0);
+      vec4 tex_color = COMPAT_TEXTURE(sol_texture, sol_vtex_coord);
 
+      vec4 col;
+      if (sol_vtex_coord.x > visu_box.x && sol_vtex_coord.x < visu_box.x + visu_box.z && sol_vtex_coord.y > visu_box.y && sol_vtex_coord.y < visu_box.y + visu_box.w){
+        col = vec4(1.0, 0.0, 0.0, 1.0);
+      } else {
+        col = tex_color;
+      }
+
+      FragColor = col;
+      
     } else {
       FragColor = sol_vcolor;
     }
 }
-

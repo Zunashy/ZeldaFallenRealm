@@ -247,6 +247,7 @@ font{ id = "oracle_like", description = "oracle_like" }
 
 shader{ id = "chroma" }
 shader{ id = "default", description = "default effectless shader" }
+shader{ id = "visualizer", description = "Visualisation d'hitbox" }
 
 file{ path = "enemies/bat.lua", author = "TwilCynder", }
 file{ path = "enemies/blue_slime.lua", author = "TwilCynder", }

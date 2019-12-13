@@ -25,6 +25,9 @@ require("scripts/hud/hud")
 require("scripts/menus/dialog_box")
 require("scripts/menus/game_menu")
 
-require("scripts/debug/utilities")
+if DEBUG then
+    require("scripts/debug/utilities")
+    require("scripts/debug/visualizer")
+end
 
 return true

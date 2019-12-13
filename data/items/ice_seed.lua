@@ -38,7 +38,7 @@ local function check_ground(map, x, y, layer)
 end
 
 local function create_big_tile(map, x, y, layer)
-  map:create_custom_entity({
+  local e = map:create_custom_entity({
     model = "ice_floor",
     direction = 0,
     layer = layer,
@@ -57,9 +57,10 @@ local function create_small_tile(map, x, y, layer, position)
     x = x,
     y = y,
     width = 8,
-    height = 8
+    height = 8,
   })
   e:get_sprite():set_animation("ice_floor_" .. position)
+  e:set_origin(4, 5)
 end
 
 local bit = require("scripts/api/bit")
@@ -67,7 +68,6 @@ local function create_small_tiles(map, x, y, layer, control)
   local n = 1
   for i in bit.get_bits(control, 4) do
     if i==1 then
-      print(n)
       create_small_tile(map, x + stc[n][1], y + stc[n][2], layer, n)
     end
     n = n + 1
@@ -105,7 +105,7 @@ function item:on_using()
   local control = 0
   for i = 1, 4 do
     if check_ground(map, x + stc[i][1], y + stc[i][2], layer) then
-      control = control + (i - 1)^2
+      control = control + 2^(i-1)
     end
   end
 

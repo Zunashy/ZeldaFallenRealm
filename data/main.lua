@@ -2,6 +2,8 @@
 -- You will probably make a title screen and then start a game.
 -- See the Lua API! http://www.solarus-games.org/doc/latest
 
+DEBUG = true
+
 local loading_surface = sol.surface.create("menus/loading.png")
 local loading_menu = {
   on_draw = function(self, dst_surface)
@@ -23,7 +25,7 @@ local default_save_file = "save1.dat"
 -- It is the real entry point of the game.
 function sol.main:on_started()
 
-  sol.video.set_shader(sol.shader.create("default"))
+  sol.video.set_shader(sol.shader.create("chroma"))
 
   settings_manager:load()
   controls_manager:load()
