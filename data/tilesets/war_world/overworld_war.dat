@@ -2372,6 +2372,86 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "76",
+  ground = "wall",
+  default_layer = 0,
+  x = 240,
+  y = 208,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "76_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 240,
+  y = 240,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "77",
+  ground = "wall",
+  default_layer = 0,
+  x = 240,
+  y = 192,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "77_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 240,
+  y = 224,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "78",
+  ground = "wall",
+  default_layer = 0,
+  x = 256,
+  y = 192,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "78_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 256,
+  y = 224,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "79",
+  ground = "wall",
+  default_layer = 0,
+  x = 272,
+  y = 192,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "79_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 272,
+  y = 224,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "7_2",
   ground = "traversable",
   default_layer = 0,
@@ -2407,6 +2487,66 @@ tile_pattern{
   default_layer = 0,
   x = 16,
   y = 32,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "80",
+  ground = "wall",
+  default_layer = 0,
+  x = 272,
+  y = 208,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "80_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 272,
+  y = 240,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "81",
+  ground = "traversable",
+  default_layer = 0,
+  x = 256,
+  y = 208,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "81_2",
+  ground = "traversable",
+  default_layer = 0,
+  x = 256,
+  y = 240,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "82",
+  ground = "wall",
+  default_layer = 0,
+  x = 288,
+  y = 208,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "83",
+  ground = "wall",
+  default_layer = 0,
+  x = 288,
+  y = 240,
   width = 16,
   height = 16,
 }
