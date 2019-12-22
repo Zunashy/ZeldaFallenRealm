@@ -10276,6 +10276,9 @@ door{
   direction = 3,
   sprite = "entities/door_key",
   savegame_variable = "dungeon_1_door_key_2",
+  opening_method = "interaction_if_item",
+  opening_condition = "small_key",
+  opening_condition_consumed = true,
 }
 
 teletransporter{
@@ -10302,5 +10305,16 @@ destination{
   x = 840,
   y = 453,
   direction = 1,
+}
+
+door{
+  layer = 0,
+  x = 832,
+  y = 352,
+  direction = 0,
+  sprite = "entities/boss_door",
+  opening_method = "interaction_if_item",
+  opening_condition = "great_key",
+  opening_condition_consumed = true,
 }
 
