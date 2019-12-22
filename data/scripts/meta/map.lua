@@ -24,6 +24,18 @@ function map_meta:get_entities_property(key, value, p1, p2)
     return iter  
 end
 
+function map_meta:set_obscurity(level)
+    local game = self:get_game()
+    local camera = self:get_camera()
+    if level > 0 then
+        camera:get_surface():set_shader(game.obscurity_shader)
+        game.obscurity_shader:set_uniform("obs_level", 1 / level)
+    else
+        camera:get_surface():set_shader(nil)
+    end
+
+end
+
 local function parse_entities_properties(map)
     local prop
     local game = map:get_game()

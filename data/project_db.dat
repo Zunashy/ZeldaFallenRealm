@@ -230,6 +230,7 @@ entity{ id = "bone", description = "Os (projectile)" }
 entity{ id = "dungeon_statue_eye" }
 entity{ id = "ice_floor", description = "Ice Tile (Ice seeds)" }
 entity{ id = "interaction_box", description = "interaction_box" }
+entity{ id = "light", description = "Source de lumière" }
 entity{ id = "octorok_rock", description = "Octorok's Rock" }
 entity{ id = "platform", description = "Moving Platform" }
 entity{ id = "platform_controller", description = "Contrôleur de plateforme" }
@@ -247,6 +248,8 @@ font{ id = "oracle_like", description = "oracle_like" }
 
 shader{ id = "chroma" }
 shader{ id = "default", description = "default effectless shader" }
+shader{ id = "map_shader", description = "Map Shader" }
+shader{ id = "obscurity", description = "Obscurité (et lumières)" }
 shader{ id = "visualizer", description = "Visualisation d'hitbox" }
 
 file{ path = "enemies/bat.lua", author = "TwilCynder", }

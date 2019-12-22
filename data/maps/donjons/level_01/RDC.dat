@@ -9213,14 +9213,6 @@ enemy{
   savegame_variable = "dungeon_1_miniboss",
 }
 
-destination{
-  name = "to_keep_1",
-  layer = 0,
-  x = 1320,
-  y = 397,
-  direction = 1,
-}
-
 door{
   name = "door_miniboss",
   layer = 0,
@@ -9256,5 +9248,13 @@ door{
   y = 352,
   direction = 3,
   sprite = "entities/door",
+}
+
+destination{
+  name = "to_keep_1",
+  layer = 0,
+  x = 840,
+  y = 1397,
+  direction = 1,
 }
 

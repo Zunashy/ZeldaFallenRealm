@@ -24,7 +24,7 @@ COMPAT_VARYING vec4 sol_vcolor;
 
 void main() {
     if(!sol_vcolor_only) {
-      float amount = 0.01;
+      float amount = 0.02;
       vec2 uv = sol_vtex_coord;
       vec3 col;
       col.r = COMPAT_TEXTURE( sol_texture, vec2(uv.x - amount, uv.y) ).r;
