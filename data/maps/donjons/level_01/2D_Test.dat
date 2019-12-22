@@ -1512,18 +1512,37 @@ enemy{
   breed = "bat",
 }
 
-pickable{
-  layer = 0,
-  x = 392,
-  y = 93,
-  treasure_name = "rock_feather",
-}
-
 separator{
   layer = 0,
   x = 0,
   y = 168,
   width = 720,
   height = 16,
+}
+
+destination{
+  name = "in_c",
+  layer = 0,
+  x = 40,
+  y = 205,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 32,
+  y = 184,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_01/RDC",
+  destination = "out_c",
+}
+
+pickable{
+  layer = 0,
+  x = 696,
+  y = 269,
+  treasure_name = "great_key",
+  treasure_savegame_variable = "dungeon_1_great_key",
 }
 

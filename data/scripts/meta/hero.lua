@@ -70,7 +70,6 @@ local function initialize_hero_features(game)
     if not self.pObject or not self.pObject.on_ground then return false end
 
     self.pObject.speed = -4
-    print(self.pObject.on_ground)
   end
 
   function hero:on_state_changed(s)

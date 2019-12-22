@@ -49,6 +49,7 @@ tileset{ id = "overworld/mountain_sea", description = "mountain sea" }
 tileset{ id = "overworld/structure", description = "structures" }
 tileset{ id = "war_world/Structure" }
 tileset{ id = "war_world/autumn_dark", description = "war_world/autumn_dark" }
+tileset{ id = "war_world/autumn_dark.old", description = "war_world/autumn_dark.old" }
 tileset{ id = "war_world/mountain_sea" }
 tileset{ id = "war_world/overworld", description = "Exterieur du monde guerre" }
 tileset{ id = "war_world/overworld_war" }
@@ -83,6 +84,7 @@ sprite{ id = "entities/arbuste", description = "entities/arbuste" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/block", description = "Block" }
 sprite{ id = "entities/bone", description = "entities/bone" }
+sprite{ id = "entities/boss_door", description = "Porte du boss" }
 sprite{ id = "entities/chest", description = "Chest" }
 sprite{ id = "entities/coconut_left", description = "noix de coco" }
 sprite{ id = "entities/coconut_right", description = "entities/coconut_right" }
@@ -97,6 +99,7 @@ sprite{ id = "entities/ice_floor", description = "Sol de glace" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/octorok_rock", description = "Octorok's Rock" }
 sprite{ id = "entities/platform", description = "Moving PLatform" }
+sprite{ id = "entities/platform_old", description = "Platform old" }
 sprite{ id = "entities/pot", description = "Pot" }
 sprite{ id = "entities/rock", description = "rocher" }
 sprite{ id = "entities/shadow", description = "Shadow" }

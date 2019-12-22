@@ -10,8 +10,18 @@ properties{
 
 tile{
   layer = 0,
-  x = 1200,
+  x = 0,
   y = 176,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 0,
   width = 240,
   height = 176,
   pattern = "1",
@@ -1653,8 +1663,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 848,
-  y = 528,
+  x = 872,
+  y = 536,
   width = 96,
   height = 16,
   pattern = "10",
@@ -2000,9 +2010,9 @@ tile{
 tile{
   layer = 0,
   x = 1200,
-  y = 352,
-  width = 240,
-  height = 176,
+  y = 176,
+  width = 224,
+  height = 352,
   pattern = "1",
   tileset = "Tileset_Donjon_1",
 }
@@ -2100,7 +2110,7 @@ tile{
 tile{
   layer = 0,
   x = 1424,
-  y = 192,
+  y = 16,
   width = 16,
   height = 144,
   pattern = "19",
@@ -2109,7 +2119,7 @@ tile{
 tile{
   layer = 0,
   x = 1200,
-  y = 192,
+  y = 16,
   width = 16,
   height = 144,
   pattern = "20",
@@ -2118,7 +2128,7 @@ tile{
 tile{
   layer = 0,
   x = 1200,
-  y = 176,
+  y = 0,
   width = 16,
   height = 16,
   pattern = "14",
@@ -2127,7 +2137,7 @@ tile{
 tile{
   layer = 0,
   x = 1424,
-  y = 176,
+  y = 0,
   width = 16,
   height = 16,
   pattern = "13",
@@ -2136,7 +2146,7 @@ tile{
 tile{
   layer = 0,
   x = 1216,
-  y = 336,
+  y = 160,
   width = 96,
   height = 16,
   pattern = "9",
@@ -2145,7 +2155,7 @@ tile{
 tile{
   layer = 0,
   x = 1424,
-  y = 336,
+  y = 160,
   width = 16,
   height = 16,
   pattern = "11",
@@ -2154,7 +2164,7 @@ tile{
 tile{
   layer = 0,
   x = 1200,
-  y = 336,
+  y = 160,
   width = 16,
   height = 16,
   pattern = "12",
@@ -2163,7 +2173,7 @@ tile{
 tile{
   layer = 0,
   x = 1216,
-  y = 176,
+  y = 0,
   width = 208,
   height = 16,
   pattern = "10",
@@ -2172,7 +2182,7 @@ tile{
 tile{
   layer = 0,
   x = 1328,
-  y = 336,
+  y = 160,
   width = 96,
   height = 16,
   pattern = "9",
@@ -2281,7 +2291,7 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 176,
+  y = 0,
   width = 240,
   height = 176,
   pattern = "1",
@@ -2291,7 +2301,7 @@ tile{
 tile{
   layer = 0,
   x = 224,
-  y = 192,
+  y = 16,
   width = 16,
   height = 144,
   pattern = "19",
@@ -2300,7 +2310,7 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 192,
+  y = 16,
   width = 16,
   height = 144,
   pattern = "20",
@@ -2309,7 +2319,7 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 176,
+  y = 0,
   width = 16,
   height = 16,
   pattern = "14",
@@ -2318,7 +2328,7 @@ tile{
 tile{
   layer = 0,
   x = 224,
-  y = 176,
+  y = 0,
   width = 16,
   height = 16,
   pattern = "13",
@@ -2327,7 +2337,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = 336,
+  y = 160,
   width = 96,
   height = 16,
   pattern = "9",
@@ -2336,7 +2346,7 @@ tile{
 tile{
   layer = 0,
   x = 224,
-  y = 336,
+  y = 160,
   width = 16,
   height = 16,
   pattern = "11",
@@ -2345,7 +2355,7 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 336,
+  y = 160,
   width = 16,
   height = 16,
   pattern = "12",
@@ -2354,7 +2364,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = 176,
+  y = 0,
   width = 208,
   height = 16,
   pattern = "10",
@@ -2363,7 +2373,7 @@ tile{
 tile{
   layer = 0,
   x = 128,
-  y = 336,
+  y = 160,
   width = 96,
   height = 16,
   pattern = "9",
@@ -3284,7 +3294,7 @@ tile{
 tile{
   layer = 0,
   x = 1216,
-  y = 320,
+  y = 144,
   width = 16,
   height = 16,
   pattern = "45",
@@ -3293,7 +3303,7 @@ tile{
 tile{
   layer = 0,
   x = 1392,
-  y = 208,
+  y = 32,
   width = 16,
   height = 16,
   pattern = "45",
@@ -3302,7 +3312,7 @@ tile{
 tile{
   layer = 0,
   x = 1344,
-  y = 320,
+  y = 144,
   width = 16,
   height = 16,
   pattern = "45",
@@ -3311,7 +3321,7 @@ tile{
 tile{
   layer = 0,
   x = 1408,
-  y = 288,
+  y = 112,
   width = 16,
   height = 16,
   pattern = "45",
@@ -3320,7 +3330,7 @@ tile{
 tile{
   layer = 0,
   x = 1264,
-  y = 272,
+  y = 96,
   width = 16,
   height = 16,
   pattern = "45",
@@ -3329,7 +3339,7 @@ tile{
 tile{
   layer = 0,
   x = 1248,
-  y = 224,
+  y = 48,
   width = 16,
   height = 16,
   pattern = "45",
@@ -3338,7 +3348,7 @@ tile{
 tile{
   layer = 0,
   x = 1248,
-  y = 272,
+  y = 96,
   width = 16,
   height = 16,
   pattern = "41",
@@ -3347,7 +3357,7 @@ tile{
 tile{
   layer = 0,
   x = 1264,
-  y = 224,
+  y = 48,
   width = 16,
   height = 16,
   pattern = "41",
@@ -3356,7 +3366,7 @@ tile{
 tile{
   layer = 0,
   x = 1376,
-  y = 240,
+  y = 64,
   width = 16,
   height = 16,
   pattern = "41",
@@ -3365,7 +3375,7 @@ tile{
 tile{
   layer = 0,
   x = 1408,
-  y = 320,
+  y = 144,
   width = 16,
   height = 16,
   pattern = "41",
@@ -3374,7 +3384,7 @@ tile{
 tile{
   layer = 0,
   x = 1392,
-  y = 192,
+  y = 16,
   width = 16,
   height = 16,
   pattern = "41",
@@ -3383,7 +3393,7 @@ tile{
 tile{
   layer = 0,
   x = 1216,
-  y = 192,
+  y = 16,
   width = 16,
   height = 16,
   pattern = "41",
@@ -3392,7 +3402,7 @@ tile{
 tile{
   layer = 0,
   x = 1232,
-  y = 320,
+  y = 144,
   width = 16,
   height = 16,
   pattern = "41",
@@ -3401,7 +3411,7 @@ tile{
 tile{
   layer = 0,
   x = 1312,
-  y = 272,
+  y = 96,
   width = 16,
   height = 16,
   pattern = "41",
@@ -3410,7 +3420,7 @@ tile{
 tile{
   layer = 0,
   x = 1216,
-  y = 192,
+  y = 16,
   width = 16,
   height = 16,
   pattern = "45",
@@ -3419,7 +3429,7 @@ tile{
 tile{
   layer = 0,
   x = 96,
-  y = 192,
+  y = 16,
   width = 48,
   height = 48,
   pattern = "2",
@@ -4156,33 +4166,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 16,
-  y = 416,
-  width = 208,
-  height = 16,
-  pattern = "29",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 384,
-  width = 208,
-  height = 16,
-  pattern = "28",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 400,
-  width = 208,
-  height = 16,
-  pattern = "35",
-}
-
-tile{
-  layer = 0,
   x = 352,
   y = 576,
   width = 16,
@@ -4553,7 +4536,7 @@ tile{
 tile{
   layer = 0,
   x = 96,
-  y = 192,
+  y = 16,
   width = 16,
   height = 16,
   pattern = "46",
@@ -4562,7 +4545,7 @@ tile{
 tile{
   layer = 0,
   x = 128,
-  y = 192,
+  y = 16,
   width = 16,
   height = 16,
   pattern = "46",
@@ -4620,24 +4603,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "46",
-}
-
-tile{
-  layer = 0,
-  x = 1296,
-  y = 368,
-  width = 16,
-  height = 16,
-  pattern = "36",
-}
-
-tile{
-  layer = 0,
-  x = 1328,
-  y = 368,
-  width = 16,
-  height = 16,
-  pattern = "36",
 }
 
 tile{
@@ -5006,16 +4971,16 @@ tile{
 tile{
   layer = 0,
   x = 1312,
-  y = 368,
+  y = 240,
   width = 16,
-  height = 240,
+  height = 368,
   pattern = "3",
 }
 
 tile{
   layer = 0,
   x = 1296,
-  y = 192,
+  y = 16,
   width = 48,
   height = 48,
   pattern = "2",
@@ -5024,7 +4989,7 @@ tile{
 tile{
   layer = 0,
   x = 1296,
-  y = 192,
+  y = 16,
   width = 16,
   height = 16,
   pattern = "46",
@@ -5033,7 +4998,7 @@ tile{
 tile{
   layer = 0,
   x = 1328,
-  y = 192,
+  y = 16,
   width = 16,
   height = 16,
   pattern = "46",
@@ -5042,7 +5007,7 @@ tile{
 tile{
   layer = 0,
   x = 1360,
-  y = 304,
+  y = 128,
   width = 16,
   height = 16,
   pattern = "41",
@@ -8013,7 +7978,7 @@ tile{
 tile{
   layer = 0,
   x = 1296,
-  y = 336,
+  y = 160,
   width = 16,
   height = 16,
   pattern = "11",
@@ -8022,10 +7987,712 @@ tile{
 tile{
   layer = 0,
   x = 1328,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 384,
+  width = 208,
+  height = 48,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 192,
+  width = 16,
+  height = 144,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 192,
+  width = 16,
+  height = 144,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 176,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 336,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 176,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 336,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 0,
   y = 336,
   width = 16,
   height = 16,
   pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 272,
+  width = 16,
+  height = 32,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 272,
+  width = 16,
+  height = 32,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 272,
+  width = 16,
+  height = 32,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 256,
+  width = 16,
+  height = 80,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 256,
+  width = 16,
+  height = 80,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 304,
+  width = 32,
+  height = 32,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 224,
+  width = 16,
+  height = 80,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 256,
+  width = 64,
+  height = 80,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 240,
+  width = 16,
+  height = 48,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 320,
+  width = 32,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 240,
+  width = 16,
+  height = 64,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 240,
+  width = 48,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 288,
+  width = 32,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 224,
+  width = 16,
+  height = 64,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 208,
+  width = 16,
+  height = 32,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 208,
+  width = 64,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 192,
+  width = 16,
+  height = 32,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 208,
+  width = 48,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 224,
+  width = 16,
+  height = 32,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 240,
+  width = 32,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 192,
+  width = 16,
+  height = 48,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 224,
+  width = 80,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 192,
+  width = 96,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 192,
+  width = 64,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 208,
+  width = 16,
+  height = 48,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 272,
+  width = 48,
+  height = 48,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 1424,
+  y = 192,
+  width = 16,
+  height = 144,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 192,
+  width = 16,
+  height = 144,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 1424,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 1328,
+  y = 176,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 336,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 1424,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 176,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 1328,
+  y = 336,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 1296,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "36",
+}
+
+tile{
+  layer = 0,
+  x = 1328,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "36",
+}
+
+tile{
+  layer = 0,
+  x = 1280,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 1296,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "36",
+}
+
+tile{
+  layer = 0,
+  x = 1328,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "36",
+}
+
+tile{
+  layer = 0,
+  x = 1296,
+  y = 224,
+  width = 48,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 1344,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 1344,
+  y = 240,
+  width = 16,
+  height = 64,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 1280,
+  y = 240,
+  width = 16,
+  height = 64,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 1280,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 1344,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 1296,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 1328,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 1296,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "27",
+}
+
+tile{
+  layer = 0,
+  x = 1328,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "27",
 }
 
 block{
@@ -8055,7 +8722,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "door_4;door_5;door_6",
+      value = "door_7",
     },
   },
   subtype = "walkable",
@@ -8065,9 +8732,13 @@ switch{
 }
 
 chest{
+  name = "chest_key_2",
   layer = 0,
   x = 120,
-  y = 221,
+  y = 45,
+  enabled_at_start = false,
+  treasure_name = "small_key",
+  treasure_savegame_variable = "dungeon_1_chest_key_2",
   sprite = "entities/chest",
 }
 
@@ -8075,6 +8746,8 @@ chest{
   layer = 0,
   x = 360,
   y = 557,
+  treasure_name = "heart_quarter",
+  treasure_savegame_variable = "dungeon_1_chest_compass",
   sprite = "entities/chest",
 }
 
@@ -8091,9 +8764,10 @@ chest{
   name = "chest_feather",
   layer = 0,
   x = 1320,
-  y = 205,
+  y = 29,
   enabled_at_start = false,
   treasure_name = "rock_feather",
+  treasure_savegame_variable = "dungeon_1_chest_feather",
   sprite = "entities/chest",
 }
 
@@ -8117,14 +8791,6 @@ teletransporter{
   height = 16,
   destination_map = "donjons/level_01/2D_Test",
   destination = "in_b",
-}
-
-destination{
-  name = "out_b_2",
-  layer = 0,
-  x = 840,
-  y = 437,
-  direction = 1,
 }
 
 destination{
@@ -8298,7 +8964,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_3",
+      value = "door_4",
     },
   },
   direction = 0,
@@ -8312,7 +8978,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_3",
+      value = "door_4",
     },
   },
   direction = 0,
@@ -8392,47 +9058,27 @@ enemy{
 enemy{
   layer = 0,
   x = 48,
-  y = 237,
+  y = 61,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_key_2",
+    },
+  },
   direction = 0,
   breed = "skeleton_1",
-}
-
-enemy{
-  layer = 0,
-  x = 136,
-  y = 301,
-  direction = 0,
-  breed = "skeleton_1",
-}
-
-enemy{
-  layer = 0,
-  x = 168,
-  y = 253,
-  direction = 0,
-  breed = "skeleton_1",
-}
-
-enemy{
-  layer = 0,
-  x = 64,
-  y = 317,
-  direction = 0,
-  breed = "skeleton_1",
-}
-
-enemy{
-  layer = 0,
-  x = 152,
-  y = 221,
-  direction = 0,
-  breed = "octorok",
 }
 
 enemy{
   layer = 0,
   x = 48,
-  y = 301,
+  y = 125,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_key_2",
+    },
+  },
   direction = 0,
   breed = "octorok",
 }
@@ -8440,15 +9086,13 @@ enemy{
 enemy{
   layer = 0,
   x = 184,
-  y = 317,
-  direction = 0,
-  breed = "octorok",
-}
-
-enemy{
-  layer = 0,
-  x = 184,
-  y = 269,
+  y = 93,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_key_2",
+    },
+  },
   direction = 0,
   breed = "moblin_sword",
 }
@@ -8457,6 +9101,12 @@ enemy{
   layer = 0,
   x = 40,
   y = 597,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_6",
+    },
+  },
   direction = 0,
   breed = "moblin_sword",
 }
@@ -8465,16 +9115,14 @@ enemy{
   layer = 0,
   x = 64,
   y = 637,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_6",
+    },
+  },
   direction = 0,
   breed = "octorok",
-}
-
-enemy{
-  layer = 0,
-  x = 88,
-  y = 669,
-  direction = 0,
-  breed = "moblin_sword",
 }
 
 switch{
@@ -8484,7 +9132,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "door_2",
+      value = "door_3",
     },
   },
   subtype = "walkable",
@@ -8647,7 +9295,7 @@ chest{
   y = 477,
   treasure_name = "rupee",
   treasure_variant = 3,
-  treasure_savegame_variable = "dungeon_1_chest_rupee_1",
+  treasure_savegame_variable = "dungeon_1_chest_rupee_2",
   sprite = "entities/chest",
 }
 
@@ -8655,6 +9303,9 @@ chest{
   layer = 0,
   x = 888,
   y = 413,
+  treasure_name = "rupee",
+  treasure_variant = 3,
+  treasure_savegame_variable = "dungeon_1_chest_rupee_3",
   sprite = "entities/chest",
 }
 
@@ -8814,6 +9465,12 @@ switch{
   layer = 0,
   x = 592,
   y = 432,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "door_8",
+    },
+  },
   subtype = "walkable",
   sprite = "entities/switch",
   needs_block = false,
@@ -9044,39 +9701,39 @@ separator{
 separator{
   layer = 0,
   x = 1432,
-  y = 168,
+  y = -8,
   width = 16,
-  height = 544,
+  height = 720,
 }
 
 separator{
   layer = 0,
   x = 1192,
-  y = 168,
+  y = -8,
   width = 16,
-  height = 544,
+  height = 720,
 }
 
 separator{
   layer = 0,
   x = 232,
-  y = 168,
+  y = -8,
   width = 16,
-  height = 544,
+  height = 720,
 }
 
 separator{
   layer = 0,
   x = -8,
-  y = 168,
+  y = -8,
   width = 16,
-  height = 544,
+  height = 720,
 }
 
 separator{
   layer = 0,
   x = -8,
-  y = 168,
+  y = -8,
   width = 256,
   height = 16,
 }
@@ -9084,13 +9741,13 @@ separator{
 separator{
   layer = 0,
   x = 1192,
-  y = 168,
+  y = -8,
   width = 256,
   height = 16,
 }
 
 door{
-  name = "door_2",
+  name = "door_3",
   layer = 0,
   x = 592,
   y = 1056,
@@ -9106,7 +9763,7 @@ door{
 }
 
 door{
-  name = "door_<lapuerta>_a_3",
+  name = "door_8",
   layer = 0,
   x = 592,
   y = 352,
@@ -9118,10 +9775,11 @@ door{
   },
   direction = 3,
   sprite = "entities/door",
+  savegame_variable = "dungeon_1_door_8",
 }
 
 door{
-  name = "door_3",
+  name = "door_4",
   layer = 0,
   x = 1312,
   y = 528,
@@ -9131,25 +9789,10 @@ door{
 }
 
 door{
-  name = "door_<lapuerta>_a_5",
+  name = "door_6",
   layer = 0,
   x = 112,
   y = 528,
-  properties = {
-    {
-      key = "activate_when_moved",
-      value = "",
-    },
-  },
-  direction = 3,
-  sprite = "entities/door",
-}
-
-door{
-  name = "door_<lapuerta>_a_6",
-  layer = 0,
-  x = 592,
-  y = 176,
   properties = {
     {
       key = "activate_when_moved",
@@ -9187,7 +9830,7 @@ chest{
 sensor{
   layer = 0,
   x = 1320,
-  y = 333,
+  y = 157,
   properties = {
     {
       key = "activate_trigger",
@@ -9201,7 +9844,7 @@ sensor{
 enemy{
   layer = 0,
   x = 1320,
-  y = 261,
+  y = 85,
   properties = {
     {
       key = "death_trigger",
@@ -9217,44 +9860,447 @@ door{
   name = "door_miniboss",
   layer = 0,
   x = 1312,
-  y = 336,
+  y = 160,
   enabled_at_start = false,
   direction = 1,
   sprite = "entities/door",
 }
 
-door{
-  name = "door_4",
+separator{
   layer = 0,
-  x = 832,
-  y = 512,
-  direction = 1,
-  sprite = "entities/door",
+  x = -8,
+  y = 168,
+  width = 256,
+  height = 16,
+}
+
+chest{
+  layer = 0,
+  x = 184,
+  y = 317,
+  treasure_name = "rupee",
+  treasure_variant = 3,
+  treasure_savegame_variable = "dungeon_1_chest_rupee_4",
+  sprite = "entities/chest",
+}
+
+chest{
+  layer = 0,
+  x = 72,
+  y = 237,
+  treasure_name = "heart_quarter",
+  treasure_savegame_variable = "dungeon_1_chest_heart",
+  sprite = "entities/chest",
+}
+
+enemy{
+  layer = 0,
+  x = 120,
+  y = 285,
+  direction = 0,
+  breed = "skeleton_1",
+}
+
+enemy{
+  layer = 0,
+  x = 168,
+  y = 333,
+  direction = 0,
+  breed = "skeleton_1",
+}
+
+enemy{
+  layer = 0,
+  x = 200,
+  y = 237,
+  direction = 0,
+  breed = "skeleton_1",
+}
+
+enemy{
+  layer = 0,
+  x = 56,
+  y = 253,
+  direction = 0,
+  breed = "skeleton_1",
+}
+
+enemy{
+  layer = 0,
+  x = 104,
+  y = 221,
+  direction = 0,
+  breed = "skeleton_1",
+}
+
+separator{
+  layer = 0,
+  x = 1192,
+  y = 168,
+  width = 256,
+  height = 16,
+}
+
+enemy{
+  layer = 0,
+  x = 1248,
+  y = 293,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_5",
+    },
+  },
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 1320,
+  y = 285,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_5",
+    },
+  },
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 1400,
+  y = 261,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_5",
+    },
+  },
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 1256,
+  y = 229,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_5",
+    },
+  },
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 1400,
+  y = 301,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_5",
+    },
+  },
+  direction = 0,
+  breed = "blue_slime",
+}
+
+enemy{
+  layer = 0,
+  x = 1232,
+  y = 269,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_5",
+    },
+  },
+  direction = 0,
+  breed = "skeleton_1",
 }
 
 door{
   name = "door_5",
   layer = 0,
+  x = 1312,
+  y = 176,
+  direction = 3,
+  sprite = "entities/door",
+  savegame_variable = "dungeon_1_door_5",
+}
+
+jumper{
+  layer = 0,
+  x = 1288,
+  y = 256,
+  width = 8,
+  height = 48,
+  direction = 4,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 1344,
+  y = 256,
+  width = 8,
+  height = 48,
+  direction = 0,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 1304,
+  y = 232,
+  width = 32,
+  height = 8,
+  direction = 2,
+  jump_length = 40,
+}
+
+enemy{
+  layer = 0,
+  x = 1384,
+  y = 229,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_5",
+    },
+  },
+  direction = 0,
+  breed = "skeleton_1",
+}
+
+enemy{
+  layer = 0,
+  x = 1376,
+  y = 325,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_5",
+    },
+  },
+  direction = 0,
+  breed = "skeleton_1",
+}
+
+door{
+  name = "door_7",
+  layer = 0,
+  x = 832,
+  y = 512,
+  direction = 1,
+  sprite = "entities/door",
+  savegame_variable = "dungeon_1_door_7",
+}
+
+door{
+  name = "door_7_2",
+  layer = 0,
   x = 832,
   y = 528,
   direction = 3,
   sprite = "entities/door",
+  savegame_variable = "dungeon_1_door_7",
 }
 
 door{
-  name = "door_6",
+  name = "door_7_3",
   layer = 0,
-  x = 832,
-  y = 352,
-  direction = 3,
+  x = 720,
+  y = 608,
+  direction = 0,
   sprite = "entities/door",
+  savegame_variable = "dungeon_1_door_7",
+}
+
+enemy{
+  layer = 0,
+  x = 88,
+  y = 669,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_6",
+    },
+  },
+  direction = 0,
+  breed = "moblin_sword",
+}
+
+custom_entity{
+  layer = 0,
+  x = 116,
+  y = 389,
+  properties = {
+    {
+      key = "direction",
+      value = "3",
+    },
+  },
+  width = 24,
+  height = 24,
+  direction = 0,
+  model = "platform_controller",
 }
 
 destination{
-  name = "to_keep_1",
+  name = "destination",
   layer = 0,
   x = 840,
   y = 1397,
+  direction = 1,
+  default = true,
+}
+
+custom_entity{
+  layer = 0,
+  x = 120,
+  y = 429,
+  properties = {
+    {
+      key = "direction",
+      value = "1",
+    },
+    {
+      key = "speed",
+      value = "24",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/platform",
+  model = "platform",
+}
+
+custom_entity{
+  layer = 0,
+  x = 116,
+  y = 429,
+  properties = {
+    {
+      key = "direction",
+      value = "1",
+    },
+  },
+  width = 24,
+  height = 24,
+  direction = 0,
+  model = "platform_controller",
+}
+
+enemy{
+  layer = 0,
+  x = 64,
+  y = 149,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_key_2",
+    },
+  },
+  direction = 0,
+  breed = "skeleton_1",
+}
+
+enemy{
+  layer = 0,
+  x = 120,
+  y = 133,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_key_2",
+    },
+  },
+  direction = 0,
+  breed = "skeleton_1",
+}
+
+enemy{
+  layer = 0,
+  x = 152,
+  y = 77,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_key_2",
+    },
+  },
+  direction = 0,
+  breed = "skeleton_1",
+}
+
+enemy{
+  layer = 0,
+  x = 152,
+  y = 45,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_key_2",
+    },
+  },
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 184,
+  y = 141,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_key_2",
+    },
+  },
+  direction = 0,
+  breed = "octorok",
+}
+
+door{
+  layer = 0,
+  x = 592,
+  y = 528,
+  direction = 3,
+  sprite = "entities/door_key",
+  savegame_variable = "dungeon_1_door_key_2",
+}
+
+teletransporter{
+  layer = 0,
+  x = 592,
+  y = 16,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_01/2D_Test",
+  destination = "in_c",
+}
+
+destination{
+  name = "out_c",
+  layer = 0,
+  x = 600,
+  y = 37,
+  direction = 1,
+}
+
+destination{
+  name = "out_b_2",
+  layer = 0,
+  x = 840,
+  y = 453,
   direction = 1,
 }
 

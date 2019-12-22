@@ -119,6 +119,28 @@ function math.sign(x)
   end
 end
 
+local directions = {
+  [-1] = {
+    [-1] = 5,
+    [0]  = 4,
+    [1]  = 3
+  },
+  [1] = {
+    [-1] = 7,
+    [0]  = 0,
+    [1]  = 1
+  },
+  [0] = {
+    [-1] = 6,
+    [0]  = nil,
+    [1]  = 2
+  }
+}
+
+function gen.vector8_direction(x, y)
+  return directions[x][y]
+end
+
 function gen.splitColor(code)
   local r, g, b
   b = code % 256

@@ -56,7 +56,7 @@ end
 
 local function parse_event_string(map, s)
   for event in s:fields(";") do
-	trigger_event(map, event)
+	  trigger_event(map, event)
   end
 end
 
@@ -93,7 +93,6 @@ local function activate_trigger_callback(entity)
     end
   end
   if all_activated then
-    print(event)
     parse_event_string(map, event)
   end
 end

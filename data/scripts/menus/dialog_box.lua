@@ -444,6 +444,7 @@ end
 local function dialog_start_callback(game, dialog, info)
   dialog_box.dialog = dialog
   dialog_box.info = info
+  if sol.menu.is_started(dialog_box) then sol.menu.stop(dialog_box) end
   sol.menu.start(game, dialog_box)
 end
 
