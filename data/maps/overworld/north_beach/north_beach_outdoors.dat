@@ -6510,8 +6510,8 @@ destructible{
 destination{
   name = "keep1",
   layer = 1,
-  x = 200,
-  y = 405,
+  x = 240,
+  y = 205,
   direction = 1,
 }
 
@@ -6522,7 +6522,6 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "donjons/level_01/RDC",
-  destination = "to_keep_1",
 }
 
 teletransporter{

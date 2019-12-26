@@ -84,6 +84,7 @@ sprite{ id = "entities/arbuste", description = "entities/arbuste" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/block", description = "Block" }
 sprite{ id = "entities/bone", description = "entities/bone" }
+sprite{ id = "entities/boss_door", description = "Porte du boss" }
 sprite{ id = "entities/chest", description = "Chest" }
 sprite{ id = "entities/coconut_left", description = "noix de coco" }
 sprite{ id = "entities/coconut_right", description = "entities/coconut_right" }
@@ -98,6 +99,7 @@ sprite{ id = "entities/ice_floor", description = "Sol de glace" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/octorok_rock", description = "Octorok's Rock" }
 sprite{ id = "entities/platform", description = "Moving PLatform" }
+sprite{ id = "entities/platform_old", description = "Platform old" }
 sprite{ id = "entities/pot", description = "Pot" }
 sprite{ id = "entities/rock", description = "rocher" }
 sprite{ id = "entities/shadow", description = "Shadow" }
@@ -231,6 +233,7 @@ entity{ id = "bone", description = "Os (projectile)" }
 entity{ id = "dungeon_statue_eye" }
 entity{ id = "ice_floor", description = "Ice Tile (Ice seeds)" }
 entity{ id = "interaction_box", description = "interaction_box" }
+entity{ id = "light", description = "Source de lumière" }
 entity{ id = "octorok_rock", description = "Octorok's Rock" }
 entity{ id = "platform", description = "Moving Platform" }
 entity{ id = "platform_controller", description = "Contrôleur de plateforme" }
@@ -248,6 +251,8 @@ font{ id = "oracle_like", description = "oracle_like" }
 
 shader{ id = "chroma" }
 shader{ id = "default", description = "default effectless shader" }
+shader{ id = "map_shader", description = "Map Shader" }
+shader{ id = "obscurity", description = "Obscurité (et lumières)" }
 shader{ id = "visualizer", description = "Visualisation d'hitbox" }
 
 file{ path = "enemies/bat.lua", author = "TwilCynder", }

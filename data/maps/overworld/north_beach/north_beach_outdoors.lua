@@ -19,6 +19,8 @@ local cases = {
   {5, 7}
 }
 
+map.obscurity = 0.8
+
 function map:on_started_()
   self:init_reset_separators(true)
   self:init_enemies_event_triggers()

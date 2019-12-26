@@ -101,7 +101,7 @@ end
 
 function enemy:check_hero()
   if self.detect_state == false then
-    if enemy:cone_detect(hero,detect_distance,sprite:get_direction(),detect_angle) then
+    if enemy:cone_detect(hero, detect_distance, sprite:get_direction(), detect_angle, true) then
        enemy:target_hero()
     end
   end

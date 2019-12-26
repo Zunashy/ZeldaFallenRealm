@@ -20,7 +20,15 @@ end
 -- Event called when the hero is using this item.
 function item:on_using()
   local hero = item:get_map():get_entity("hero")
-  hero:start_jumping_oow(hero:get_direction()*2,32)
+
+  local x, y, dir = 0, 0, 0
+  if game:is_command_pressed("right") then x = 1 end
+  if game:is_command_pressed("up") then y = 1 end
+  if game:is_command_pressed("left") then x = -1 end
+  if game:is_command_pressed("down") then y = -1 end
+
+  dir = gen.vector8_direction(x, y)
+  hero:start_jumping_oow(dir,32)
   item:set_finished()
 end
 

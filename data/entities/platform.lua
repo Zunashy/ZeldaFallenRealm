@@ -13,31 +13,35 @@ local game = entity:get_game()
 local map = entity:get_map()
 local hero = map:get_hero()
 local px, py, x, y, dx, dy, hx, hy = 0, 0, 0, 0, 0, 0
-local speed, dir
 
 -- Event called when the custom entity is initialized.
 function entity:on_created()
-  local w, h = entity:get_sprite():get_size()
+  local sprite = entity:get_sprite()
+  local w, h = sprite:get_size()
+  local x, y = sprite:get_origin()
   entity:set_size(w,h)
-  entity:set_origin(w/2,h-3)
+  entity:set_origin(x,y)
   entity:set_modified_ground("traversable")
   self:set_can_traverse_ground("hole", true)
   self:set_can_traverse_ground("deep_water", true)
   self:set_can_traverse_ground("traversable", false)
-  self:set_can_traverse_ground("shallow_water", false)
+  self:set_can_traverse_ground("shallow_water", true)
   self:set_can_traverse_ground("wall", false)
 
-  speed = self:get_property("speed") or 16
-  dir = self:get_property("direction") or entity:get_sprite():get_direction() or 16
+  self.speed = self:get_property("speed") and tonumber(self:get_property("speed")) or 16
+  self.dir = self:get_property("direction") and tonumber(self:get_property("direction")) or entity:get_sprite():get_direction() or 1
 
   local m = sol.movement.create("straight")
-  m:set_speed(speed)
-  m:set_angle(dir)
-  m:start(entity)
+  m:set_speed(self.speed)
+  m:set_angle((math.pi / 2) * self.dir)
+  m:start(self)
   
   entity:add_collision_test("overlapping", entity.collision_callback)
   entity.on_position_changed = entity.movement_callback
   px, py = entity:get_position()
+
+  self.is_moving_platform = true
+  self.initial_movement = true
 end
 
 function entity:collision_callback(other)
