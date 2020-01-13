@@ -1313,6 +1313,36 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "216",
+  ground = "traversable",
+  default_layer = 0,
+  x = 144,
+  y = 96,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "217",
+  ground = "wall",
+  default_layer = 0,
+  x = 160,
+  y = 96,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "218",
+  ground = "wall",
+  default_layer = 0,
+  x = 160,
+  y = 104,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "22",
   ground = "traversable",
   default_layer = 0,
