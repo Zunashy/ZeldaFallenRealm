@@ -2,6 +2,8 @@ map{ id = "donjons/castle_donjon/catle_rdc", description = "rdc" }
 map{ id = "donjons/level_01/2D_Test", description = "2D" }
 map{ id = "donjons/level_01/RDC", description = "Trident Dungeon" }
 map{ id = "donjons/level_01/RDC_old" }
+map{ id = "overworld/deep_forest/outdoors" }
+map{ id = "overworld/deep_forest/outdoors_2" }
 map{ id = "overworld/deku_tree", description = "arbre mojo" }
 map{ id = "overworld/north_beach/hut_01", description = "overworld/north_beach/hut_01" }
 map{ id = "overworld/north_beach/hut_02" }
@@ -13,7 +15,6 @@ map{ id = "overworld/north_beach/test", description = "test" }
 map{ id = "overworld/north_beach/tree_house" }
 map{ id = "overworld/plain/outdoors_1" }
 map{ id = "overworld/plain/outdoors_2", description = "outdoors" }
-map{ id = "overworld/rain_wood_forest/outdoors" }
 map{ id = "overworld/wind_wood/forest_cave", description = "Cave Wind Wood 1" }
 map{ id = "overworld/wind_wood/forest_outdoor", description = "Wind Wood Forest" }
 map{ id = "overworld/wind_wood/house_forest", description = "Wind Wood House" }
