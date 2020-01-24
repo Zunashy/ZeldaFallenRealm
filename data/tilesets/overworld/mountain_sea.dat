@@ -1453,6 +1453,186 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "229",
+  ground = "wall",
+  default_layer = 0,
+  x = 256,
+  y = 0,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "229_10",
+  ground = "wall",
+  default_layer = 0,
+  x = 288,
+  y = 48,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "229_11",
+  ground = "wall",
+  default_layer = 0,
+  x = 256,
+  y = 48,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "229_12",
+  ground = "wall",
+  default_layer = 0,
+  x = 272,
+  y = 48,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "229_13",
+  ground = "wall",
+  default_layer = 0,
+  x = 288,
+  y = 64,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "229_14",
+  ground = "wall",
+  default_layer = 0,
+  x = 256,
+  y = 64,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "229_15",
+  ground = "wall",
+  default_layer = 0,
+  x = 272,
+  y = 64,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "229_16",
+  ground = "wall",
+  default_layer = 0,
+  x = 288,
+  y = 80,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "229_17",
+  ground = "wall",
+  default_layer = 0,
+  x = 256,
+  y = 80,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "229_18",
+  ground = "wall",
+  default_layer = 0,
+  x = 272,
+  y = 80,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "229_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 272,
+  y = 0,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "229_3",
+  ground = "wall",
+  default_layer = 0,
+  x = 288,
+  y = 0,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "229_4",
+  ground = "wall",
+  default_layer = 0,
+  x = 288,
+  y = 16,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "229_5",
+  ground = "wall",
+  default_layer = 0,
+  x = 256,
+  y = 16,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "229_6",
+  ground = "wall",
+  default_layer = 0,
+  x = 272,
+  y = 16,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "229_7",
+  ground = "wall",
+  default_layer = 0,
+  x = 288,
+  y = 32,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "229_8",
+  ground = "wall",
+  default_layer = 0,
+  x = 256,
+  y = 32,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "229_9",
+  ground = "wall",
+  default_layer = 0,
+  x = 272,
+  y = 32,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "23",
   ground = "deep_water",
   default_layer = 0,
