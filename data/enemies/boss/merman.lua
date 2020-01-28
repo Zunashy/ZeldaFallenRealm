@@ -54,6 +54,7 @@ end
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
+  trident_sprite = enemy:create_sprite("enemies/boss/merman_trident")
   enemy:set_life(1)
   enemy:set_damage(1)
   wave_period = wave_period / math.pi

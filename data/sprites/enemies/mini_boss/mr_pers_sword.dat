@@ -11,7 +11,7 @@ animation{
 }
 animation{
   name = "idle",
-  src_image = "enemies/mini_boss/1/sword.png",
+  src_image = "enemies/mini_boss/mr_pers_sword.png",
   frame_delay = 1000,
   frame_to_loop_on = 0,
   directions = {
