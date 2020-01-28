@@ -1,0 +1,10 @@
+animation{
+  name = "default",
+  src_image = "enemies/boss/merman_trident.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 48, origin_x = 8, origin_y = 45 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 48, origin_x = 8, origin_y = 45 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 48, origin_x = 8, origin_y = 45 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 48, origin_x = 8, origin_y = 45 },
+  },
+}

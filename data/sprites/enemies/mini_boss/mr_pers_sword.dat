@@ -1,6 +1,6 @@
 animation{
   name = "sword",
-  src_image = "enemies/mini_boss/1/sword.png",
+  src_image = "enemies/mini_boss/mr_pers_sword.png",
   frame_delay = 100,
   directions = {
     { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 3, num_columns = 1 },
