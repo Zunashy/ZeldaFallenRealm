@@ -3478,6 +3478,26 @@ tile{
   tileset = "overworld/forest_plain",
 }
 
+tile{
+  layer = 0,
+  x = 368,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "4_2",
+  tileset = "overworld/structure2",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "4_2",
+  tileset = "overworld/structure2",
+}
+
 destructible{
   name = "Herbe_144",
   layer = 0,
