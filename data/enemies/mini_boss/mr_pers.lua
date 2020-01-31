@@ -22,8 +22,8 @@ local detect_range = 64
 function enemy:on_created()
   -- Initialize the properties of your enemy here,
   -- like the sprite, the life and the damage.
-  sprite = enemy:create_sprite("enemies/mini_boss/1/mr_pers")
-  sword_sprite = enemy:create_sprite("enemies/mini_boss/1/sword")
+  sprite = enemy:create_sprite("enemies/mini_boss/mr_pers")
+  sword_sprite = enemy:create_sprite("enemies/mini_boss/mr_pers_sword")
 
   m = sol.movement.create("straight")
   dash = sol.movement.create("target")

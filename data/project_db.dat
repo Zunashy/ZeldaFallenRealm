@@ -69,10 +69,16 @@ sprite{ id = "citizens/vieux07", description = "citizens/vieux07" }
 sprite{ id = "citizens/witch", description = "witch" }
 sprite{ id = "enemies/bat", description = "enemies/bat" }
 sprite{ id = "enemies/blue_slime", description = "Blue Slim" }
+sprite{ id = "enemies/boss/1/merman", description = "Boss 1 (Merman)" }
+sprite{ id = "enemies/boss/1/trident", description = "Trident (Merman)" }
+sprite{ id = "enemies/boss/merman", description = "Boss 1 (Merman)" }
+sprite{ id = "enemies/boss/merman_trident", description = "Merman Trident" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/goomba", description = "enemies/crab" }
 sprite{ id = "enemies/mini_boss/1/mr_pers", description = "mr_pers" }
 sprite{ id = "enemies/mini_boss/1/sword" }
+sprite{ id = "enemies/mini_boss/mr_pers", description = "Miniboss 1 (Mr. Pers)" }
+sprite{ id = "enemies/mini_boss/mr_pers_sword", description = "Mr. Pers's Sword" }
 sprite{ id = "enemies/moblin", description = "enemies/moblin_sword" }
 sprite{ id = "enemies/moblin_sword", description = "enemies/moblin_sword" }
 sprite{ id = "enemies/octorok", description = "Octorok" }
@@ -216,6 +222,7 @@ item{ id = "sword", description = "sword" }
 
 enemy{ id = "bat", description = "bat" }
 enemy{ id = "blue_slime", description = "Blue Slime" }
+enemy{ id = "boss/merman", description = "Boss 1 (Merman)" }
 enemy{ id = "crab", description = "crab" }
 enemy{ id = "mini_boss/mr_pers", description = "Miniboss 1" }
 enemy{ id = "moblin_bow", description = "Moblin Archer" }

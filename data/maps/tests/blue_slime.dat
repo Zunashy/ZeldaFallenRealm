@@ -107,11 +107,29 @@ tile{
   pattern = "28",
 }
 
+tile{
+  layer = 1,
+  x = 160,
+  y = 136,
+  width = 16,
+  height = 48,
+  pattern = "7",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 136,
+  width = 16,
+  height = 48,
+  pattern = "9",
+}
+
 destination{
   name = "spawn",
   layer = 1,
-  x = 88,
-  y = 229,
+  x = 200,
+  y = 221,
   direction = 1,
   default = true,
 }
@@ -139,7 +157,15 @@ custom_entity{
 enemy{
   layer = 1,
   x = 208,
-  y = 197,
+  y = 165,
+  direction = 0,
+  breed = "boss/merman",
+}
+
+enemy{
+  layer = 1,
+  x = 240,
+  y = 205,
   direction = 0,
   breed = "mini_boss/mr_pers",
 }

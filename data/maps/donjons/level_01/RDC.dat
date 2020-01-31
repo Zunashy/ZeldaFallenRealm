@@ -10153,15 +10153,6 @@ custom_entity{
   model = "platform_controller",
 }
 
-destination{
-  name = "destination",
-  layer = 0,
-  x = 840,
-  y = 1397,
-  direction = 1,
-  default = true,
-}
-
 custom_entity{
   layer = 0,
   x = 120,
@@ -10316,5 +10307,14 @@ door{
   opening_method = "interaction_if_item",
   opening_condition = "great_key",
   opening_condition_consumed = true,
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 80,
+  y = 445,
+  direction = 1,
+  default = true,
 }
 
