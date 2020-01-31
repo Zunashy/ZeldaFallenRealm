@@ -2,8 +2,6 @@ map{ id = "donjons/castle_donjon/catle_rdc", description = "rdc" }
 map{ id = "donjons/level_01/2D_Test", description = "2D" }
 map{ id = "donjons/level_01/RDC", description = "Trident Dungeon" }
 map{ id = "donjons/level_01/RDC_old" }
-map{ id = "overworld/deep_forest/outdoors" }
-map{ id = "overworld/deep_forest/outdoors_2" }
 map{ id = "overworld/deku_tree", description = "arbre mojo" }
 map{ id = "overworld/north_beach/hut_01", description = "overworld/north_beach/hut_01" }
 map{ id = "overworld/north_beach/hut_02" }
@@ -49,7 +47,6 @@ tileset{ id = "overworld/forest_plain", description = "overworld/forest_plain" }
 tileset{ id = "overworld/jungle", description = "jungle" }
 tileset{ id = "overworld/mountain_sea", description = "mountain sea" }
 tileset{ id = "overworld/structure", description = "structures" }
-tileset{ id = "overworld/structure2" }
 tileset{ id = "war_world/Structure" }
 tileset{ id = "war_world/autumn_dark", description = "war_world/autumn_dark" }
 tileset{ id = "war_world/autumn_dark.old", description = "war_world/autumn_dark.old" }

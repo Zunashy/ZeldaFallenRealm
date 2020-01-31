@@ -162,11 +162,3 @@ enemy{
   breed = "boss/merman",
 }
 
-enemy{
-  layer = 1,
-  x = 240,
-  y = 205,
-  direction = 0,
-  breed = "mini_boss/mr_pers",
-}
-

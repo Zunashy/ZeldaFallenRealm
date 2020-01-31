@@ -4,6 +4,22 @@ animation{
   frame_delay = 400,
   frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 0, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 2 },
+    { x = 0, y = 48, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 2 },
+  },
+}
+animation{
+  name = "swing",
+  src_image = "enemies/boss/merman.png",
+  frame_delay = 100,
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 5, num_columns = 2 },
+  },
+}
+animation{
+  name = "swing_load",
+  src_image = "enemies/boss/merman.png",
+  frame_delay = 1000,
+  directions = {
+    { x = 32, y = 96, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
   },
 }

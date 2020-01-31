@@ -1,10 +1,25 @@
 animation{
   name = "walking",
   src_image = "enemies/boss/merman_trident.png",
+  frame_delay = 400,
+  frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 0, frame_width = 16, frame_height = 48, origin_x = 24, origin_y = 45 },
-    { x = 0, y = 0, frame_width = 16, frame_height = 48, origin_x = 8, origin_y = 45 },
-    { x = 0, y = 0, frame_width = 16, frame_height = 48, origin_x = 8, origin_y = 45 },
-    { x = 0, y = 0, frame_width = 16, frame_height = 48, origin_x = 8, origin_y = 45 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 48, origin_x = 20, origin_y = 45, num_frames = 2, num_columns = 1 },
+  },
+}
+animation{
+  name = "swing",
+  src_image = "enemies/boss/merman_trident.png",
+  frame_delay = 100,
+  directions = {
+    { x = 32, y = 0, frame_width = 88, frame_height = 72, origin_x = 48, origin_y = 53, num_frames = 5, num_columns = 1 },
+  },
+}
+animation{
+  name = "swing_load",
+  src_image = "enemies/boss/merman_trident.png",
+  frame_delay = 1000,
+  directions = {
+    { x = 16, y = 0, frame_width = 16, frame_height = 48, origin_x = 3, origin_y = 60 },
   },
 }
