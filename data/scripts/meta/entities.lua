@@ -51,3 +51,14 @@ local function npc_interaction(npc)
 end
 
 npc_meta:register_event("on_interaction", npc_interaction)
+
+local enemy_meta = sol.main.get_metatable("enemy")
+function enemy_meta:set_attacks_consequence(consequence)
+  self:set_attack_consequence("sword", consequence)
+  self:set_attack_consequence("thrown_item", consequence)
+  self:set_attack_consequence("explosion", consequence)
+  self:set_attack_consequence("arrow", consequence)
+  self:set_attack_consequence("hookshot", consequence)
+  self:set_attack_consequence("boomerang", consequence)
+  self:set_attack_consequence("fire", consequence)
+end

@@ -18,7 +18,7 @@ animation{
 animation{
   name = "swing_load",
   src_image = "enemies/boss/merman_trident.png",
-  frame_delay = 1000,
+  frame_delay = 500,
   directions = {
     { x = 16, y = 0, frame_width = 16, frame_height = 48, origin_x = 3, origin_y = 60 },
   },

@@ -22,6 +22,10 @@ function eg.cone_detect(detector,detected,distance,direction,angle,same_region)
   end
 end
 
+function eg.zone_detect(detector, detected, distance, same_region)
+  return detector:get_distance(detected) < distance and (not same_region or detector:is_in_same_region(detected))
+end
+
 --list of grounds considered as dangerous (e.g. will usually deal damages do living entities, and make the hero reappear elsewhere)
 local dangerous_grounds = {
   hole = true,
@@ -73,4 +77,31 @@ function eg.shake(entity, dir, amplitude, delay, duration)
       entity:set_position(x, y)
     end)
   end
+end
+
+local function blink_cycle(entity, hperiod)
+  entity:set_visible(false)
+  entity.blink_timer = sol.timer.start(entity, hperiod, function()
+    entity:set_visible(true)
+    entity.blink_timer = sol.timer.start(entity, hperiod, function()
+      blink_cycle(entity, hperiod)
+    end)
+  end)
+end
+
+function eg.stop_blinking(entity)
+  if entity.blink_timer then
+    entity.blink_timer:stop()
+    entity.blink_timer = nil
+  end
+end
+
+function eg.blink(entity, hperiod, duration, callback)
+  blink_cycle(entity, hperiod)
+  sol.timer.start(entity, duration, function()
+    eg.stop_blinking(entity)
+    entity:set_visible(true)
+    print("ye")
+    if callback then callback() end
+  end)
 end

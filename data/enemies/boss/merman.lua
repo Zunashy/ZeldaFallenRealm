@@ -17,8 +17,13 @@ local movement
 
 local mov_speed = 64
 local wave_amp, wave_period = 16, 32
+local swing_detect_distance = 48
 
-local base_y, travel, last_x, m_direction = 0, 0, 0
+local base_y, travel, last_x, m_direction = 0, 0, 0, -1
+local wave_r, wave_l
+
+enemy.blink = eg.blink
+enemy.zone_detect = eg.zone_detect
 
 local function base_movement_obstacle_cb(mov)
   mov:stop()
@@ -36,28 +41,29 @@ local function wave()
   last_x = x
 end
 
-function enemy:start_movement(direction, bounce)
+function enemy:start_movement(direction)
   --note : direction is 0 (right) or 1 (left)
+
+  if m_direction == -1 then
+    local _, y = self:get_position()
+    base_y = y
+    travel = 0
+  end
+
   local m = sol.movement.create("straight")
   m:set_speed(mov_speed)
   m:set_angle(math.pi * direction)
   m_direction = direction
   m.on_obstacle_reached = base_movement_obstacle_cb
   m.on_position_changed = wave
-  if not bounce then
-    local _, y = self:get_position()
-    base_y = y
-    travel = 0
-  end
   m:start(self)
 end
 
-function enemy:on_created()
-  sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
-  trident_sprite = enemy:create_sprite("enemies/boss/merman_trident")
-  enemy:set_life(1)
-  enemy:set_damage(1)
-  wave_period = wave_period / math.pi
+local function hurt_cb()
+  enemy:set_invincible()
+  enemy:blink(100, 500, function()
+    enemy:set_attacks_consequence(hurt_cb)
+  end)
 end
 
 function enemy:swing()
@@ -65,18 +71,62 @@ function enemy:swing()
   if m then
     m:stop()
   end
+  self:set_attacks_consequence("protected")
   sprite:set_animation("swing_load", function()
+    trident_sprite:set_animation("swing")
+    self:set_attacks_consequence(hurt_cb)
     sprite:set_animation("swing", function()
       sprite:set_animation("walking")
+      trident_sprite:set_animation("walking")
       enemy:start_movement(m_direction, true)
+      sol.timer.start(enemy, 500, function () enemy:start_swing_detect() end)
     end)
   end)
-  trident_sprite:set_animation("swing_load", "swing")
+  trident_sprite:set_animation("swing_load")
+end
+
+function enemy:wave()
+  self:set_attacks_consequence("protected")
+
+end
+
+function enemy:check_hero()
+  return self:zone_detect(hero, swing_detect_distance, false)
+end
+
+function enemy:start_swing_detect()
+  self.swing_detect_timer = sol.timer.start(self,4,function()
+    if enemy:check_hero() then
+      enemy:swing()
+      self.swing_detect_timer = nil
+      return false
+    end
+    return true
+  end)
+end
+
+function enemy:reset_state()
+  if self.swing_detect_timer then
+    self.swing_detect_timer:stop()
+    self.swing_detect_timer = nil
+  end
+end
+
+function enemy:on_created()
+  sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
+  trident_sprite = enemy:create_sprite("enemies/boss/merman_trident")
+  enemy:set_life(12)
+  enemy:set_damage(1)
+  enemy:set_pushed_back_when_hurt(false)
+  enemy:set_attacks_consequence(hurt_cb)
+  wave_period = wave_period / math.pi
+
+  wave_r = map:get_entity("wave_r")
+  wave_l = map:get_entity("wave_l")
 end
 
 function enemy:on_restarted()
+  self:set_visible(true)
   self:start_movement(0)
-  sol.timer.start(self, 1000, function()
-    enemy:swing()
-  end)
+  self:start_swing_detect()
 end

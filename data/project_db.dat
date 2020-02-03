@@ -70,6 +70,8 @@ sprite{ id = "enemies/boss/1/merman", description = "Boss 1 (Merman)" }
 sprite{ id = "enemies/boss/1/trident", description = "Trident (Merman)" }
 sprite{ id = "enemies/boss/merman", description = "Boss 1 (Merman)" }
 sprite{ id = "enemies/boss/merman_trident", description = "Merman Trident" }
+sprite{ id = "enemies/boss/merman_wave_left" }
+sprite{ id = "enemies/boss/merman_wave_right" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/goomba", description = "enemies/crab" }
 sprite{ id = "enemies/mini_boss/1/mr_pers", description = "mr_pers" }
@@ -241,6 +243,7 @@ entity{ id = "dungeon_statue_eye" }
 entity{ id = "ice_floor", description = "Ice Tile (Ice seeds)" }
 entity{ id = "interaction_box", description = "interaction_box" }
 entity{ id = "light", description = "Source de lumière" }
+entity{ id = "merman_mave" }
 entity{ id = "octorok_rock", description = "Octorok's Rock" }
 entity{ id = "platform", description = "Moving Platform" }
 entity{ id = "platform_controller", description = "Contrôleur de plateforme" }
