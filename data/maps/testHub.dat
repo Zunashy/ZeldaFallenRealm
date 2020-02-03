@@ -153,6 +153,16 @@ tile{
   pattern = "1",
 }
 
+tile{
+  layer = 0,
+  x = 16,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "75",
+  tileset = "overworld/forest_plain",
+}
+
 teletransporter{
   name = "BlueSlime",
   layer = 0,
@@ -231,5 +241,15 @@ teletransporter{
   transition = "scrolling",
   destination_map = "tests/dungeon",
   destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 16,
+  y = 80,
+  width = 16,
+  height = 16,
+  destination_map = "tests/mapglobale",
+  destination = "verifmap",
 }
 
