@@ -22,7 +22,9 @@ map{ id = "overworld/wind_wood/sword_cave", description = "sword_cave" }
 map{ id = "testHub", description = "Lobby des maps test" }
 map{ id = "tests/blue_slime", description = "tests/testHub" }
 map{ id = "tests/bridges", description = "Bridges" }
+map{ id = "tests/change" }
 map{ id = "tests/dungeon", description = "Map de donjon" }
+map{ id = "tests/mapglobale" }
 map{ id = "tests/platform", description = "Plateforme mouvante" }
 map{ id = "villages/nielint_village/bar", description = "bar" }
 map{ id = "villages/nielint_village/nielint_house_1", description = "Nielint Village House 01" }

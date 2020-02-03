@@ -29,16 +29,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 640,
-  y = -16,
-  width = 32,
-  height = 32,
-  pattern = "68",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 0,
   x = 320,
   y = 256,
   width = 640,
@@ -91,46 +81,6 @@ tile{
   height = 16,
   pattern = "80",
   tileset = "overworld/mountain_sea",
-}
-
-tile{
-  layer = 0,
-  x = 608,
-  y = -16,
-  width = 32,
-  height = 32,
-  pattern = "66",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 0,
-  x = 624,
-  y = 0,
-  width = 32,
-  height = 32,
-  pattern = "66",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 0,
-  x = 608,
-  y = 8,
-  width = 32,
-  height = 32,
-  pattern = "66",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 0,
-  x = 624,
-  y = 24,
-  width = 32,
-  height = 32,
-  pattern = "66",
-  tileset = "overworld/forest_plain",
 }
 
 tile{
@@ -10859,6 +10809,16 @@ destructible{
 
 tile{
   layer = 1,
+  x = 624,
+  y = -16,
+  width = 32,
+  height = 32,
+  pattern = "66",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
   x = 552,
   y = 496,
   width = 16,
@@ -12161,5 +12121,25 @@ tile{
   height = 8,
   pattern = "88",
   tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 0,
+  width = 64,
+  height = 32,
+  pattern = "66",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 16,
+  width = 32,
+  height = 32,
+  pattern = "66",
+  tileset = "overworld/forest_plain",
 }
 
