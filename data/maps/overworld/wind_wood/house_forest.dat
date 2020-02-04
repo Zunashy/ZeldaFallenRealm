@@ -2,7 +2,7 @@ properties{
   x = 0,
   y = 0,
   width = 160,
-  height = 144,
+  height = 128,
   min_layer = 0,
   max_layer = 2,
   tileset = "House",
@@ -457,5 +457,14 @@ teletransporter{
   height = 16,
   destination_map = "overworld/wind_wood/forest_outdoor",
   destination = "forest_house_to_forest",
+}
+
+npc{
+  layer = 0,
+  x = 80,
+  y = 61,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/9",
 }
 
