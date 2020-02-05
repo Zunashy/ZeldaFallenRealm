@@ -7399,7 +7399,7 @@ destination{
   name = "cave_02_to_beach",
   layer = 1,
   x = 280,
-  y = 101,
+  y = 69,
   direction = 1,
 }
 
@@ -7426,7 +7426,7 @@ teletransporter{
   name = "beachtocave2",
   layer = 1,
   x = 272,
-  y = 80,
+  y = 48,
   width = 16,
   height = 16,
   destination_map = "overworld/north_beach/north_beach_cave_02_rdc",

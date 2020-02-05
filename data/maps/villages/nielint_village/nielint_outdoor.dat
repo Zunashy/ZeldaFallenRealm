@@ -6332,6 +6332,16 @@ tile{
   tileset = "overworld/forest_plain",
 }
 
+tile{
+  layer = 1,
+  x = 200,
+  y = 312,
+  width = 32,
+  height = 8,
+  pattern = "19",
+  tileset = "overworld/structure2",
+}
+
 teletransporter{
   layer = 1,
   x = 64,
@@ -7269,14 +7279,6 @@ destination{
 }
 
 destination{
-  name = "old_to_village_2",
-  layer = 1,
-  x = 200,
-  y = 341,
-  direction = 1,
-}
-
-destination{
   name = "shop_to_village_2",
   layer = 1,
   x = 40,
@@ -7310,15 +7312,6 @@ teletransporter{
   height = 16,
   destination_map = "villages/nielint_village/nielint_mairie_rdc",
   destination = "destination",
-}
-
-teletransporter{
-  layer = 1,
-  x = 192,
-  y = 320,
-  width = 16,
-  height = 16,
-  destination_map = "villages/nielint_village/nielint_shop",
 }
 
 teletransporter{
@@ -8191,7 +8184,7 @@ destination{
 destination{
   name = "old_to_village",
   layer = 1,
-  x = 200,
+  x = 216,
   y = 341,
   direction = 1,
 }
@@ -8242,7 +8235,7 @@ teletransporter{
 
 teletransporter{
   layer = 1,
-  x = 192,
+  x = 208,
   y = 320,
   width = 16,
   height = 16,
