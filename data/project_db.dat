@@ -29,7 +29,6 @@ map{ id = "normal_version/village/nielint/indoors/mairie_rdc", description = "Ni
 map{ id = "normal_version/village/nielint/indoors/shop", description = "Village Nielint Shop" }
 map{ id = "normal_version/village/nielint/indoors/tree_house", description = "villages/nielint_village/tree_house" }
 map{ id = "normal_version/village/nielint/outdoors", description = "Village Nielint Outdoors" }
-map{ id = "overworld/north_beach/test", description = "test" }
 map{ id = "testHub", description = "Lobby des maps test" }
 map{ id = "tests/blue_slime", description = "tests/testHub" }
 map{ id = "tests/bridges", description = "Bridges" }
@@ -37,6 +36,7 @@ map{ id = "tests/change" }
 map{ id = "tests/dungeon", description = "Map de donjon" }
 map{ id = "tests/mapglobale" }
 map{ id = "tests/platform", description = "Plateforme mouvante" }
+map{ id = "tests/test", description = "test" }
 map{ id = "war_version/village/out" }
 map{ id = "war_version/village/out2" }
 
