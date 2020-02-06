@@ -8807,8 +8807,8 @@ teletransporter{
   y = 1392,
   width = 16,
   height = 16,
-  destination_map = "overworld/north_beach/north_beach_outdoors",
-  destination = "keep1",
+  destination_map = "normal_version/overworld/north_beach/outdoors",
+  destination = "trident_dungeon",
 }
 
 enemy{

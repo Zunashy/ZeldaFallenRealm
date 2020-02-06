@@ -1,0 +1,995 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 480,
+  height = 128,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "Grotte",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  enabled_at_start = false,
+  width = 320,
+  height = 128,
+  pattern = "45",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 48,
+  width = 8,
+  height = 16,
+  pattern = "38",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 48,
+  width = 64,
+  height = 16,
+  pattern = "40",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "4",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 80,
+  width = 16,
+  height = 32,
+  pattern = "5",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "2",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 0,
+  width = 128,
+  height = 16,
+  pattern = "3",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 80,
+  width = 16,
+  height = 32,
+  pattern = "6",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "9",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "7",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 112,
+  width = 128,
+  height = 16,
+  pattern = "8",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 112,
+  width = 8,
+  height = 16,
+  pattern = "35",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 112,
+  width = 8,
+  height = 16,
+  pattern = "34",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "57",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 8,
+  width = 16,
+  height = 8,
+  pattern = "59",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 16,
+  width = 16,
+  height = 8,
+  pattern = "58",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "57",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 8,
+  width = 16,
+  height = 8,
+  pattern = "59",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 16,
+  width = 16,
+  height = 8,
+  pattern = "58",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "57",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 8,
+  width = 16,
+  height = 8,
+  pattern = "59",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 16,
+  width = 16,
+  height = 8,
+  pattern = "58",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "75",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 16,
+  width = 16,
+  height = 48,
+  pattern = "6",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 16,
+  width = 16,
+  height = 48,
+  pattern = "5",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 0,
+  enabled_at_start = false,
+  width = 160,
+  height = 128,
+  pattern = "45",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 16,
+  width = 16,
+  height = 48,
+  pattern = "6",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 80,
+  width = 16,
+  height = 32,
+  pattern = "6",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 16,
+  width = 16,
+  height = 96,
+  pattern = "6",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 80,
+  width = 16,
+  height = 32,
+  pattern = "5",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 16,
+  width = 16,
+  height = 48,
+  pattern = "5",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 96,
+  pattern = "5",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "2",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "2",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "4",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "4",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "9",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "9",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "7",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "7",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 0,
+  width = 128,
+  height = 16,
+  pattern = "3",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 112,
+  width = 128,
+  height = 16,
+  pattern = "8",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 0,
+  width = 128,
+  height = 16,
+  pattern = "3",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 112,
+  width = 128,
+  height = 16,
+  pattern = "8",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 64,
+  width = 48,
+  height = 48,
+  pattern = "21",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 96,
+  height = 64,
+  pattern = "21",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 16,
+  height = 32,
+  pattern = "53",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 32,
+  width = 64,
+  height = 16,
+  pattern = "60",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 16,
+  width = 16,
+  height = 32,
+  pattern = "53",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 16,
+  width = 16,
+  height = 32,
+  pattern = "53",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "46",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "48",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "48",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "74",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "74",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 16,
+  width = 16,
+  height = 8,
+  pattern = "25",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 8,
+  width = 16,
+  height = 8,
+  pattern = "26",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "24",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 16,
+  width = 16,
+  height = 8,
+  pattern = "25",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 8,
+  width = 16,
+  height = 8,
+  pattern = "26",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "24",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 32,
+  width = 80,
+  height = 80,
+  pattern = "60",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "47",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "47",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "50",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "47",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "47",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "50",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "47",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "47",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "50",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 16,
+  width = 16,
+  height = 8,
+  pattern = "31",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 0,
+  width = 16,
+  height = 8,
+  pattern = "33",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 8,
+  width = 16,
+  height = 8,
+  pattern = "32",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 16,
+  width = 16,
+  height = 8,
+  pattern = "31",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 0,
+  width = 16,
+  height = 8,
+  pattern = "33",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 8,
+  width = 16,
+  height = 8,
+  pattern = "32",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 8,
+  width = 16,
+  height = 16,
+  pattern = "49",
+  tileset = "House",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "73",
+  tileset = "House",
+}
+
+separator{
+  name = "separator_1",
+  layer = 0,
+  x = 152,
+  y = 0,
+  width = 16,
+  height = 128,
+}
+
+separator{
+  layer = 0,
+  x = 312,
+  y = 0,
+  width = 16,
+  height = 128,
+}
+
+npc{
+  name = "zuna",
+  layer = 0,
+  x = 248,
+  y = 45,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/5",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 240,
+  y = 117,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 232,
+  y = 112,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/village/nielint/outdoors",
+  destination = "bar_to_village",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 61,
+  properties = {
+    {
+      key = "target",
+      value = "zuna",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "interaction_box",
+}
+
+destination{
+  name = "bed",
+  layer = 0,
+  x = 40,
+  y = 45,
+  direction = 1,
+}
+
+pickable{
+  layer = 0,
+  x = 64,
+  y = 85,
+  treasure_name = "ice_seed",
+}
+
+pickable{
+  layer = 0,
+  x = 72,
+  y = 61,
+  treasure_name = "rock_feather",
+}
+

@@ -218,7 +218,7 @@ teletransporter{
   y = 112,
   width = 16,
   height = 16,
-  destination_map = "overworld/north_beach/north_beach_outdoors",
+  destination_map = "normal_version/overworld/north_beach/outdoors",
   destination = "test_eau",
 }
 
@@ -249,7 +249,7 @@ teletransporter{
   y = 80,
   width = 16,
   height = 16,
-  destination_map = "tests/mapglobale",
-  destination = "verifmap",
+  destination_map = "normal_version/village/nielint/outdoors",
+  destination = "bar_to_village_2",
 }
 

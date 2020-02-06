@@ -2,21 +2,34 @@ map{ id = "donjons/castle_donjon/catle_rdc", description = "rdc" }
 map{ id = "donjons/level_01/2D_Test", description = "2D" }
 map{ id = "donjons/level_01/RDC", description = "Trident Dungeon" }
 map{ id = "donjons/level_01/RDC_old" }
-map{ id = "overworld/deku_tree", description = "arbre mojo" }
-map{ id = "overworld/north_beach/hut_01", description = "overworld/north_beach/hut_01" }
-map{ id = "overworld/north_beach/hut_02" }
-map{ id = "overworld/north_beach/north_beach_cave_01", description = "North Beach Cave 01" }
-map{ id = "overworld/north_beach/north_beach_cave_02_rdc", description = "North Beach Cave 02 RDC" }
-map{ id = "overworld/north_beach/north_beach_cave_02_ss1", description = "North Beach Cave 01 SS1" }
-map{ id = "overworld/north_beach/north_beach_outdoors", description = "North Beach Outdoors" }
+map{ id = "normal_version/overworld/deep_forest/outdoors", description = "overworld/deep_forest/outdoors" }
+map{ id = "normal_version/overworld/deep_forest/outdoors_2", description = "overworld/deep_forest/outdoors_2" }
+map{ id = "normal_version/overworld/north_beach/deku_tree", description = "arbre mojo" }
+map{ id = "normal_version/overworld/north_beach/indoors/cave_01", description = "North Beach Cave 01" }
+map{ id = "normal_version/overworld/north_beach/indoors/cave_02_rdc", description = "North Beach Cave 02 RDC" }
+map{ id = "normal_version/overworld/north_beach/indoors/cave_02_ss1", description = "North Beach Cave 02 SS1" }
+map{ id = "normal_version/overworld/north_beach/indoors/house", description = "overworld/north_beach/beach_house" }
+map{ id = "normal_version/overworld/north_beach/indoors/hut_01", description = "overworld/north_beach/hut_01" }
+map{ id = "normal_version/overworld/north_beach/indoors/hut_02" }
+map{ id = "normal_version/overworld/north_beach/indoors/tree_house" }
+map{ id = "normal_version/overworld/north_beach/outdoors", description = "North Beach Outdoors" }
+map{ id = "normal_version/overworld/plain/outdoors_1" }
+map{ id = "normal_version/overworld/plain/outdoors_2", description = "outdoors" }
+map{ id = "normal_version/overworld/wind_wood/forest_outdoor", description = "Wind Wood Forest" }
+map{ id = "normal_version/overworld/wind_wood/indoors/forest_cave", description = "Cave Wind Wood 1" }
+map{ id = "normal_version/overworld/wind_wood/indoors/house", description = "Wind Wood House" }
+map{ id = "normal_version/overworld/wind_wood/indoors/sword_cave", description = "sword_cave" }
+map{ id = "normal_version/village/nielint/indoors/bar", description = "bar" }
+map{ id = "normal_version/village/nielint/indoors/house_01", description = "Nielint Village House 01" }
+map{ id = "normal_version/village/nielint/indoors/house_02", description = "Nielint Village House 02" }
+map{ id = "normal_version/village/nielint/indoors/house_03", description = "Nielint Village House 03" }
+map{ id = "normal_version/village/nielint/indoors/house_04", description = "villages/nielint_village/nielint_house_4" }
+map{ id = "normal_version/village/nielint/indoors/mairie_etage", description = "Nielint Village Mairie Etage" }
+map{ id = "normal_version/village/nielint/indoors/mairie_rdc", description = "Nielint Village Mairie RDC" }
+map{ id = "normal_version/village/nielint/indoors/shop", description = "Village Nielint Shop" }
+map{ id = "normal_version/village/nielint/indoors/tree_house", description = "villages/nielint_village/tree_house" }
+map{ id = "normal_version/village/nielint/outdoors", description = "Village Nielint Outdoors" }
 map{ id = "overworld/north_beach/test", description = "test" }
-map{ id = "overworld/north_beach/tree_house" }
-map{ id = "overworld/plain/outdoors_1" }
-map{ id = "overworld/plain/outdoors_2", description = "outdoors" }
-map{ id = "overworld/wind_wood/forest_cave", description = "Cave Wind Wood 1" }
-map{ id = "overworld/wind_wood/forest_outdoor", description = "Wind Wood Forest" }
-map{ id = "overworld/wind_wood/house_forest", description = "Wind Wood House" }
-map{ id = "overworld/wind_wood/sword_cave", description = "sword_cave" }
 map{ id = "testHub", description = "Lobby des maps test" }
 map{ id = "tests/blue_slime", description = "tests/testHub" }
 map{ id = "tests/bridges", description = "Bridges" }
@@ -24,19 +37,8 @@ map{ id = "tests/change" }
 map{ id = "tests/dungeon", description = "Map de donjon" }
 map{ id = "tests/mapglobale" }
 map{ id = "tests/platform", description = "Plateforme mouvante" }
-map{ id = "villages/nielint_village/bar", description = "bar" }
-map{ id = "villages/nielint_village/nielint_house_1", description = "Nielint Village House 01" }
-map{ id = "villages/nielint_village/nielint_house_2", description = "Nielint Village House 02" }
-map{ id = "villages/nielint_village/nielint_house_3", description = "Nielint Village House 03" }
-map{ id = "villages/nielint_village/nielint_house_4", description = "villages/nielint_village/nielint_house_4" }
-map{ id = "villages/nielint_village/nielint_house_5" }
-map{ id = "villages/nielint_village/nielint_mairie_etage", description = "Nielint Village Mairie Etage" }
-map{ id = "villages/nielint_village/nielint_mairie_rdc", description = "Nielint Village Mairie RDC" }
-map{ id = "villages/nielint_village/nielint_outdoor", description = "Village Nielint Outdoors" }
-map{ id = "villages/nielint_village/nielint_shop", description = "Village Nielint Shop" }
-map{ id = "villages/nielint_village/tree_house", description = "villages/nielint_village/tree_house" }
-map{ id = "war_version/villages/out" }
-map{ id = "war_version/villages/out2" }
+map{ id = "war_version/village/out" }
+map{ id = "war_version/village/out2" }
 
 tileset{ id = "Grotte", description = "Grotte" }
 tileset{ id = "House", description = "House" }
@@ -300,24 +302,24 @@ file{ path = "main.lua", author = "TwilCynder, Christopho", }
 file{ path = "maps/donjons/level_01/RDC.dat", author = "Benoit", }
 file{ path = "maps/donjons/level_01/RDC_old.dat", author = "ElCondor", }
 file{ path = "maps/donjons/level_01/RDC_old.lua", author = "TwilCynder", }
-file{ path = "maps/overworld/north_beach/north_beach_cave_01.dat", author = "Zunashy", }
-file{ path = "maps/overworld/north_beach/north_beach_cave_02_rdc.dat", author = "Zunashy", }
-file{ path = "maps/overworld/north_beach/north_beach_cave_02_ss1.dat", author = "Zunashy", }
-file{ path = "maps/overworld/north_beach/north_beach_outdoors.dat", author = "Zunashy", }
-file{ path = "maps/overworld/wind_wood/forest_cave.dat", author = "Zunashy", }
-file{ path = "maps/overworld/wind_wood/forest_outdoor.dat", author = "Zunashy", }
-file{ path = "maps/overworld/wind_wood/house_forest.dat", author = "Zunashy", }
+file{ path = "maps/normal_version/overworld/north_beach/indoors/cave_01.dat", author = "Zunashy", }
+file{ path = "maps/normal_version/overworld/north_beach/indoors/cave_02_rdc.dat", author = "Zunashy", }
+file{ path = "maps/normal_version/overworld/north_beach/indoors/cave_02_ss1.dat", author = "Zunashy", }
+file{ path = "maps/normal_version/overworld/north_beach/outdoors.dat", author = "Zunashy", }
+file{ path = "maps/normal_version/overworld/wind_wood/forest_outdoor.dat", author = "Zunashy", }
+file{ path = "maps/normal_version/overworld/wind_wood/indoors/forest_cave.dat", author = "Zunashy", }
+file{ path = "maps/normal_version/overworld/wind_wood/indoors/house.dat", author = "Zunashy", }
+file{ path = "maps/normal_version/village/nielint/indoors/house_01.dat", author = "Zunashy", }
+file{ path = "maps/normal_version/village/nielint/indoors/house_02.dat", author = "Zunashy", }
+file{ path = "maps/normal_version/village/nielint/indoors/house_03.dat", author = "Zunashy", }
+file{ path = "maps/normal_version/village/nielint/indoors/mairie_etage.dat", author = "Zunashy", }
+file{ path = "maps/normal_version/village/nielint/indoors/mairie_rdc.dat", author = "Zunashy", }
+file{ path = "maps/normal_version/village/nielint/indoors/shop.dat", author = "Zunashy", }
+file{ path = "maps/normal_version/village/nielint/outdoors.dat", author = "Zunashy", }
 file{ path = "maps/testHub.dat", author = "TwilCynder", }
 file{ path = "maps/tests/blue_slime.dat", author = "TwilCynder", }
 file{ path = "maps/tests/bridges.dat", author = "TwilCynder", }
 file{ path = "maps/tests/platform.dat", author = "TwilCynder", }
-file{ path = "maps/villages/nielint_village/nielint_house_1.dat", author = "Zunashy", }
-file{ path = "maps/villages/nielint_village/nielint_house_2.dat", author = "Zunashy", }
-file{ path = "maps/villages/nielint_village/nielint_house_3.dat", author = "Zunashy", }
-file{ path = "maps/villages/nielint_village/nielint_mairie_etage.dat", author = "Zunashy", }
-file{ path = "maps/villages/nielint_village/nielint_mairie_rdc.dat", author = "Zunashy", }
-file{ path = "maps/villages/nielint_village/nielint_outdoor.dat", author = "Zunashy", }
-file{ path = "maps/villages/nielint_village/nielint_shop.dat", author = "Zunashy", }
 file{ path = "musics/eduardo", author = "Eduardo Dueñas", }
 file{ path = "musics/eduardo/Scatman_John_-_pi_pa_pa_para_po_Original_Video_.ogg", author = "Scatman", }
 file{ path = "musics/eduardo/boss.ogg", author = "Eduardo Dueñas", }
