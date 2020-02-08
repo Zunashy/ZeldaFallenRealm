@@ -494,6 +494,33 @@ destination{
   direction = 1,
 }
 
+npc{
+  layer = 0,
+  x = 56,
+  y = 61,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/4",
+}
+
+npc{
+  layer = 0,
+  x = 232,
+  y = 45,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/7",
+}
+
+npc{
+  layer = 0,
+  x = 168,
+  y = 29,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/14",
+}
+
 tile{
   layer = 1,
   x = 256,

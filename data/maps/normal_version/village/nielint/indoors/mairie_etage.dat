@@ -410,17 +410,35 @@ destination{
   name = "destination",
   layer = 0,
   x = 120,
-  y = 29,
+  y = 21,
   direction = 1,
 }
 
 teletransporter{
   layer = 0,
   x = 112,
-  y = 8,
+  y = 0,
   width = 16,
   height = 16,
   destination_map = "normal_version/village/nielint/indoors/mairie_rdc",
   destination = "etage",
+}
+
+npc{
+  layer = 0,
+  x = 88,
+  y = 53,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/15",
+}
+
+npc{
+  layer = 0,
+  x = 216,
+  y = 101,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/17",
 }
 

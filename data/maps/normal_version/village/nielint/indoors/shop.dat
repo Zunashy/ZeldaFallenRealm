@@ -198,3 +198,12 @@ teletransporter{
   destination = "shop",
 }
 
+npc{
+  layer = 0,
+  x = 24,
+  y = 93,
+  direction = 3,
+  subtype = 1,
+  sprite = "citizens/old_woman",
+}
+

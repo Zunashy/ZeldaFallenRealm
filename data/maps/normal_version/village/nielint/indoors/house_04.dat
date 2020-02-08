@@ -305,3 +305,12 @@ teletransporter{
   destination = "house_04",
 }
 
+npc{
+  layer = 0,
+  x = 104,
+  y = 85,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/13",
+}
+

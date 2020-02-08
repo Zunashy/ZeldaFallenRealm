@@ -306,3 +306,12 @@ destination{
   direction = 1,
 }
 
+npc{
+  layer = 0,
+  x = 40,
+  y = 45,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/14",
+}
+
