@@ -9850,6 +9850,10 @@ enemy{
       key = "death_trigger",
       value = "spawn_chest_feather;door_miniboss",
     },
+    {
+      key = "no_reset",
+      value = "1",
+    },
   },
   direction = 0,
   breed = "mini_boss/mr_pers",
@@ -10296,11 +10300,12 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_4",
+      value = "spawn_chest_feather;door_miniboss",
     },
   },
   direction = 0,
   breed = "blue_slime",
+  savegame_variable = "test",
 }
 
 sensor{
@@ -10343,7 +10348,7 @@ destination{
   name = "destination",
   layer = 0,
   x = 840,
-  y = 621,
+  y = 1397,
   direction = 1,
   default = true,
 }

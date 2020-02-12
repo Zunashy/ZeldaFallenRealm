@@ -46,7 +46,7 @@ function separator_manager:manage_map(map, default)
         })
         enemy:set_treasure(unpack(enemy_place.treasure))
         enemy:set_enabled(enemy_place.is_enabled)
-        enemy.on_dead = old_enemy.on_dead  -- For door_manager.
+        enemy.on_dead = old_enemy.on_dead
         enemy.on_dying = old_enemy.on_dying
         enemy_place.enemy = enemy
       end
@@ -121,7 +121,6 @@ function separator_manager:manage_map(map, default)
       is_enabled = enemy:is_enabled(),
       properties = enemy:get_properties()
     }
-
 
     enemy:register_event("on_dead", death_callback)
 
