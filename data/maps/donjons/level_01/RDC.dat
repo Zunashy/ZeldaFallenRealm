@@ -10334,33 +10334,3 @@ enemy{
   breed = "boss/merman",
 }
 
-custom_entity{
-  name = "wave_r",
-  layer = 0,
-  x = 960,
-  y = 192,
-  enabled_at_start = false,
-  width = 208,
-  height = 144,
-  origin_x = 0,
-  origin_y = 0,
-  direction = 0,
-  sprite = "enemies/boss/merman_wave_right",
-  model = "merman_mave",
-}
-
-custom_entity{
-  name = "wave_l",
-  layer = 0,
-  x = 504,
-  y = 192,
-  enabled_at_start = false,
-  width = 208,
-  height = 144,
-  origin_x = 0,
-  origin_y = 0,
-  direction = 0,
-  sprite = "enemies/boss/merman_wave_left",
-  model = "merman_mave",
-}
-

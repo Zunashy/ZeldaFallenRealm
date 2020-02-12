@@ -67,7 +67,7 @@ function map_menu:on_started()
     self.game:set_suspended(true)
 
     local x, y = map_pos.x, map_pos.y
-    self.map_surface:draw(self.bg_surface, 20, 12)
+    self.map_surface:draw(self.bg_surface, map_pos.x + 1, map_pos.y + 1)
     for i = 1, 15 do
         x = map_pos.x
         for j = 1, 15 do

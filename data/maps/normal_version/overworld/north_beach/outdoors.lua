@@ -47,7 +47,7 @@ function map:on_opening_transition_finished()
     function mHero:on_finished()
       eg.shake(map:get_camera(), 0, 2, 50)
       sol.timer.start(800, function()
-        hero:teleport("villages/nielint_village/bar", "bed", "fade")
+        hero:teleport("normal_version/village/nielint/indoors/bar", "bed", "fade")
       end)
     end
 
