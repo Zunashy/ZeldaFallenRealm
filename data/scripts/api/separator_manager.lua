@@ -122,6 +122,7 @@ function separator_manager:manage_map(map, default)
       properties = enemy:get_properties()
     }
 
+
     enemy:register_event("on_dead", death_callback)
 
     local hero = map:get_hero()
