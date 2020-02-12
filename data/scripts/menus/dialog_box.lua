@@ -109,7 +109,9 @@ end
 function dialog_box:on_finished()
   self.arrow_timer = nil
   game:set_custom_command_effect("action", nil)
-  game:stop_dialog()
+  if game:is_dialog_enabled() then 
+    game:stop_dialog()
+  end
 end
 
 function dialog_box:on_draw(dst_surface)

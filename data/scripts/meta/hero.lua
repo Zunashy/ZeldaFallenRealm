@@ -1,5 +1,7 @@
 -- Initialize hero behavior specific to this quest.
 
+local hero_speed = 64
+
 local hero_meta = sol.main.get_metatable("hero")
 
 local hero_sprite
@@ -14,7 +16,9 @@ local function initialize_hero_features(game)
     hero_sprite = hero:get_sprite("tunic")
   end
 
-  hero:set_walking_speed(60)
+  function hero:reset_walking_speed()
+    hero:set_walking_speed(hero_speed)
+  end
   
   --Méthodes / Callbacks
   function hero:start_hurt_oow(damage, knockback_angle, knockback_distance)
@@ -55,9 +59,8 @@ local function initialize_hero_features(game)
     hero.is_on_nonsolid_ground = false
   end
 
-
   function hero:start_jumping_oow(dir, dist)
-    dir = dir % 8
+    dir = (dir or 0) % 8
     if not hero:get_map().is_side_view then
       hero:start_jumping(dir, dist)
       return true

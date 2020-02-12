@@ -41,11 +41,18 @@ local function dash_hit_callback()
   m:set_max_distance(400)
   function m:on_obstacle_reached()
     m:stop()
+    if m.freeze_cancel_timer:get_remaining_time() > 0 then
+      m.freeze_cancel_timer:stop()
+    end
     hero:unfreeze()
     hero:start_hurt(enemy:get_damage())
   end
-  hero:set_invincible(true)
-  hero:set_blinking(true)
+
+  m.freeze_cancel_timer = sol.timer.start(hero, 600, function()
+    hero:unfreeze()
+    m:start(hero)
+  end)
+
   hero:freeze()
   m:start(hero)
   dash:dEnd()
@@ -121,8 +128,9 @@ function enemy:on_restarted()
   enemy:set_attacks_state(1) 
   enemy.on_attacking_hero = nil
   sol.timer.start(enemy, 100, function()
+    local back = (enemy:get_sprite():get_direction() + 2) % 4
     for i = 0,3 do
-      if enemy:cone_detect(hero, detect_distance, i, detect_angle) then
+      if enemy:cone_detect(hero, detect_distance, i, detect_angle) and not (i == back) then
         enemy:dash(i)
         return false
       end   

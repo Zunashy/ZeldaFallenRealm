@@ -7229,7 +7229,7 @@ npc{
 }
 
 destination{
-  name = "bar_to_village_2",
+  name = "bar_to_village",
   layer = 1,
   x = 240,
   y = 69,

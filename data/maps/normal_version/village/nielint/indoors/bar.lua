@@ -18,6 +18,7 @@ end
 -- Event called after the opening transition effect of the map,
 -- that is, when the player takes control of the hero.
 function map:on_opening_transition_finished()
+  print(game:get_story_state())
   if game:get_story_state() == 0 then
     game:set_story_state(1)
     map:get_entity("separator_1").on_activated = function()

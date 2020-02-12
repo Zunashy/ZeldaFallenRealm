@@ -11,6 +11,7 @@ local function map_callback(game, map)
 
   local hero = map:get_hero()
   hero:save_solid_ground()
+  hero:reset_walking_speed()
 end  
 game_meta:register_event("on_map_changed", map_callback)
 

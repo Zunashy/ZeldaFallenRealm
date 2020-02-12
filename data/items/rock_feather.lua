@@ -27,7 +27,7 @@ function item:on_using()
   if game:is_command_pressed("left") then x = -1 end
   if game:is_command_pressed("down") then y = -1 end
 
-  dir = gen.vector8_direction(x, y)
+  dir = gen.vector8_direction(x, y) or (hero:get_sprite():get_direction() * 2)
   hero:start_jumping_oow(dir,32)
   item:set_finished()
 end

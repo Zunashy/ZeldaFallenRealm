@@ -20,7 +20,7 @@ local wave_amp, wave_period = 16, 32
 local swing_detect_distance = 48
 
 local base_y, travel, last_x, m_direction = 0, 0, 0, -1
-local wave_r, wave_l
+local hit_count = 0
 
 enemy.blink = eg.blink
 enemy.zone_detect = eg.zone_detect
@@ -66,6 +66,21 @@ local function hurt_cb()
   end)
 end
 
+local function swing_frame_cb(s, frame)
+  if frame == 3 then
+    local properties = {}
+    properties.model = "merman_wave"
+    properties.x, properties.y, properties.layer = enemy:get_position()
+    properties.y = properties.y + 32
+    properties.width = 16
+    properties.height = 16
+    properties.direction = 0
+    local arrow = map:create_custom_entity(properties)
+    enemy.arrow_cooldown = true
+    sol.timer.start(enemy,3000, function() enemy.arrow_cooldown = false end)
+  end
+end
+
 function enemy:swing()
   local m = self:get_movement()
   if m then
@@ -75,6 +90,13 @@ function enemy:swing()
   sprite:set_animation("swing_load", function()
     trident_sprite:set_animation("swing")
     self:set_attacks_consequence(hurt_cb)
+    hit_count = hit_count + 1
+    if hit_count > 2 then
+      sprite.on_frame_changed = frame_cb
+      hit_count = 0
+    else
+      sprite.on_frame_changed = nil
+    end
     sprite:set_animation("swing", function()
       sprite:set_animation("walking")
       trident_sprite:set_animation("walking")
@@ -83,11 +105,6 @@ function enemy:swing()
     end)
   end)
   trident_sprite:set_animation("swing_load")
-end
-
-function enemy:wave()
-  self:set_attacks_consequence("protected")
-
 end
 
 function enemy:check_hero()
@@ -121,8 +138,6 @@ function enemy:on_created()
   enemy:set_attacks_consequence(hurt_cb)
   wave_period = wave_period / math.pi
 
-  wave_r = map:get_entity("wave_r")
-  wave_l = map:get_entity("wave_l")
 end
 
 function enemy:on_restarted()
