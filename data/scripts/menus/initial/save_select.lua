@@ -134,11 +134,32 @@ function save_select:rebuild_surface()
     if self.mode > 1 then
         self.alt_footer_surface:draw(self.surface, 0, footer_y)
         self.cursor_bw_surface:draw(self.surface, cursor_pos[self.selected_save].x, cursor_pos[self.selected_save].y)
+        if self.mode == 3 then 
+            self.cursor_bw_surface:draw(self.surface, cursor_pos.footer[1].x, cursor_pos.footer[1].y)
+        end
     end
 
-    local cursor_pos_array = self.mode == 1 and cursor_pos or cursor_pos.footer
+    local cursor_pos_array = self.mode == 2 and cursor_pos.footer or cursor_pos
     self.cursor_surface:draw(self.surface, cursor_pos_array[self.cursor].x, cursor_pos_array[self.cursor].y)
 end
+
+function save_select:true_rebuild_surface()
+    local y = save_name_pos.y
+    for i = 1, 3 do
+        game = self.saves[i]
+
+        if game.initialized then
+            name = game:get_value("name")
+            name_surface = gen.char_surface.create(49, 11, "oracle")
+            name_surface:write(name)
+            name_surface:draw(self.background_surface, save_name_pos.x, y)
+        end
+        y = y + save_name_pos.offset
+    end
+
+    self:rebuild_surface()
+end
+
 
 function save_select:on_draw(dst_surface)
     self.surface:draw(dst_surface)
@@ -148,18 +169,26 @@ function save_select:on_draw(dst_surface)
 end
 
 function save_select:on_command_pressed(command)
-    if command == "up" and self.mode == 1 then
-        if self.cursor == 1 then
-            self.cursor = 4
-        else
-            self.cursor = self.cursor - 1
+    if command == "up" then
+        if self.mode == 1 then
+            if self.cursor == 1 then
+                self.cursor = 4
+            else
+                self.cursor = self.cursor - 1
+            end
+        elseif self.mode == 3 then
+            self.cursor = 6 - self.cursor - self.selected_save
         end
         self:rebuild_surface()
-    elseif command == "down" and self.mode == 1 then
-        if self.cursor == 4 then
-            self.cursor = 1
-        else
-            self.cursor = self.cursor + 1
+    elseif command == "down" then
+        if self.mode == 1 then
+            if self.cursor == 4 then
+                self.cursor = 1
+            else
+                self.cursor = self.cursor + 1
+            end
+        elseif self.mode == 3 then
+            self.cursor = 6 - self.cursor - self.selected_save
         end
         self:rebuild_surface()
     elseif (command == "left" or command == "right") and self.mode == 2 then
@@ -185,20 +214,37 @@ function save_select:on_command_pressed(command)
                 sol.menu.start(sol.main, settings_menu)
                 settings_menu.origin_page = self
             end
+        elseif self.mode == 2 then
+            if self.cursor == 2 then
+                sol.file.remove("save"..self.selected_save..".dat")
+                self.saves[self.selected_save] = sol.game.load("save"..self.selected_save..".dat")
+                self.background_surface:fill_color({0, 0, 0}, 
+                    save_name_pos.x, save_name_pos.y + (save_name_pos.offset * (self.selected_save - 1)), 49, 11)
+                self.mode = 1
+                self.cursor = self.selected_save
+                self:rebuild_surface()
+            else 
+                self.mode = 3
+                self.cursor = (self.selected_save + 1) % 3
+                self:rebuild_surface() 
+            end
         else
-            sol.file.remove("save"..self.selected_save..".dat")
-            self.saves[self.selected_save] = sol.game.load("save"..self.selected_save..".dat")
-            self.background_surface:fill_color({0, 0, 0}, 
-                save_name_pos.x, save_name_pos.y + (save_name_pos.offset * (self.selected_save - 1)), 49, 11)
+            --self.saves[self.cursor] = self.saves[self.selected_save]
             self.mode = 1
-            self.cursor = self.selected_save
-            self:rebuild_surface()
+            --print("save"..self.selected_save..".dat")
+            --gen.copyFile("save"..self.selected_save..".dat", "save"..self.cursor..".dat")
+            --self.saves[self.cursor] = game_manager:load("save"..self.cursor..".dat")
+            self:true_rebuild_surface()
         end
     elseif command == "select" then
         if self.mode == 1 and self.saves[self.cursor] and self.saves[self.cursor].initialized then
             self.selected_save = self.cursor
             self.cursor = 1
             self.mode = 2
+            self:rebuild_surface()
+        elseif self.mode == 3 then
+            self.mode = 1
+            self.cursor = self.selected_save
             self:rebuild_surface()
         end
     end
@@ -212,24 +258,11 @@ function save_select:load_saves()
 end
 
 function save_select:on_started()
-    local exists, game, name, name_surface, y
-    y = save_name_pos.y
+    local exists, game, name, name_surface
 
     if not self.saves_loaded then self:load_saves() end
 
-    for i = 1, 3 do
-        game = self.saves[i]
-
-        if game.initialized then
-            name = game:get_value("name")
-            name_surface = gen.char_surface.create(49, 11, "oracle")
-            name_surface:write(name)
-            name_surface:draw(self.background_surface, save_name_pos.x, y)
-        end
-        y = y + save_name_pos.offset
-    end
-
-    self:rebuild_surface()
+    self:true_rebuild_surface()
 
 end
 

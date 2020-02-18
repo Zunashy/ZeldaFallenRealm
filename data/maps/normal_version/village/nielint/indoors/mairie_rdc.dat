@@ -501,6 +501,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/4",
+  behavior = "dialog#pnj.village.nielint.indoors.woman_cityhall",
 }
 
 npc{
@@ -510,6 +511,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/7",
+  behavior = "dialog#pnj.village.nielint.indoors.young_man_cityhall",
 }
 
 npc{
@@ -519,6 +521,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/14",
+  behavior = "dialog#pnj.village.nielint.indoors.old_man_cityhall",
 }
 
 tile{

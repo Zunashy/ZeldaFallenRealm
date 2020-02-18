@@ -431,6 +431,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/15",
+  behavior = "dialog#pnj.village.nielint.indoors.dog",
 }
 
 npc{
@@ -440,5 +441,6 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/17",
+  behavior = "dialog#pnj.village.nielint.indoors.girl",
 }
 

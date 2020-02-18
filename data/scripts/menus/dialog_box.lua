@@ -98,7 +98,7 @@ function dialog_box:on_started()
   local hero = map:get_entity("hero")
   if hero:is_enabled() and hero:is_visible() then
     local _, hero_y = hero:get_position()
-    if hero_y - camera_y > camera_height - 56 then
+    if hero_y - camera_y > camera_height - 56 and not self.dialog.position == "1" then
       self.box_position:set(8, 24)
     end
   end
@@ -445,7 +445,7 @@ end
 
 local function dialog_start_callback(game, dialog, info)
   dialog_box.dialog = dialog
-  dialog_box.info = info
+  dialog_box.info = (dialog.use_preset_info) and dialog_box.info or info
   if sol.menu.is_started(dialog_box) then sol.menu.stop(dialog_box) end
   sol.menu.start(game, dialog_box)
 end
@@ -460,6 +460,7 @@ local function bind_to_game(game_)
   game.get_dialog_box = get_dialog_box
 end
 
+print("ue ue")
 
 --When the game starts, binds everything to it.
 local game_meta = sol.main.get_metatable("game")

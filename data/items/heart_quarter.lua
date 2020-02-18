@@ -18,6 +18,10 @@ function item:on_started()
   self:set_brandish_when_picked(true)
 end
 
+function item:on_obtaining()
+  game:get_dialog_box().info = 4 - self:get_amount() - 1
+end
+
 function item:on_obtained()
   self:add_amount(1)
   if self:get_amount() > 3 then

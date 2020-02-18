@@ -7449,23 +7449,6 @@ teletransporter{
 }
 
 destination{
-  name = "house_01_to_beach",
-  layer = 1,
-  x = 392,
-  y = 101,
-  direction = 1,
-}
-
-teletransporter{
-  layer = 1,
-  x = 384,
-  y = 80,
-  width = 16,
-  height = 16,
-  destination_map = "normal_version/overworld/north_beach/outdoors",
-}
-
-destination{
   name = "test_eau",
   layer = 1,
   x = 560,
@@ -7630,6 +7613,22 @@ destination{
   x = 376,
   y = 453,
   direction = 1,
+}
+
+npc{
+  layer = 1,
+  x = 344,
+  y = 237,
+  properties = {
+    {
+      key = "max_story_state",
+      value = "2",
+    },
+  },
+  direction = 1,
+  subtype = 1,
+  sprite = "pnj/nielint/1",
+  behavior = "dialog#",
 }
 
 tile{

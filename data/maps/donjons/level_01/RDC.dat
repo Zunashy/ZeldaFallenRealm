@@ -9868,6 +9868,7 @@ door{
   enabled_at_start = false,
   direction = 1,
   sprite = "entities/door",
+  savegame_variable = "dungeon_1_door_miniboss",
 }
 
 separator{

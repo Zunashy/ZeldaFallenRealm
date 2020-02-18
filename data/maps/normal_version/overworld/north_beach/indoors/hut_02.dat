@@ -313,5 +313,6 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/14",
+  behavior = "dialog#pnj.overworld.north_beach.indoors.old_man_map",
 }
 

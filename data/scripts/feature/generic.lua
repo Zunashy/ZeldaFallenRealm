@@ -150,4 +150,10 @@ function gen.splitColor(code)
   return r, g, b
 end
 
+function gen.copyFile(src, dest)
+  if not sol.file.exists(src) then return false end
+  print("cp "..src.." "..dest)
+  os.execute("cp "..src.." "..dest)
+end
+
 return gen
