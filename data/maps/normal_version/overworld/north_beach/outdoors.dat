@@ -7445,6 +7445,26 @@ tile{
   tileset = "overworld/mountain_sea",
 }
 
+tile{
+  layer = 1,
+  x = 312,
+  y = 624,
+  width = 8,
+  height = 16,
+  pattern = "99",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 624,
+  width = 8,
+  height = 16,
+  pattern = "99",
+  tileset = "overworld/mountain_sea",
+}
+
 separator{
   layer = 1,
   x = 0,
