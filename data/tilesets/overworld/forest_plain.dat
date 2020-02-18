@@ -683,6 +683,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "159",
+  ground = "traversable",
+  default_layer = 0,
+  x = 160,
+  y = 56,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "16",
   ground = "traversable",
   default_layer = 0,
@@ -690,6 +700,36 @@ tile_pattern{
   y = 64,
   width = 16,
   height = 16,
+}
+
+tile_pattern{
+  id = "160",
+  ground = "traversable",
+  default_layer = 0,
+  x = 176,
+  y = 56,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "161",
+  ground = "traversable",
+  default_layer = 0,
+  x = 160,
+  y = 72,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "162",
+  ground = "traversable",
+  default_layer = 0,
+  x = 176,
+  y = 72,
+  width = 8,
+  height = 8,
 }
 
 tile_pattern{
@@ -1605,5 +1645,45 @@ tile_pattern{
   width = 8,
   height = 16,
   repeat_mode = "none",
+}
+
+border_set{
+  id = "contour décoratif",
+  pattern_0 = "124",
+  pattern_1 = "127",
+  pattern_2 = "126",
+  pattern_3 = "125",
+  pattern_8 = "161",
+  pattern_9 = "162",
+  pattern_10 = "160",
+  pattern_11 = "159",
+}
+
+border_set{
+  id = "décoratif",
+  pattern_0 = "126",
+  pattern_1 = "125",
+  pattern_2 = "124",
+  pattern_3 = "127",
+  pattern_4 = "160",
+  pattern_5 = "159",
+  pattern_6 = "161",
+  pattern_7 = "162",
+  pattern_8 = "160",
+  pattern_9 = "159",
+  pattern_10 = "161",
+  pattern_11 = "162",
+}
+
+border_set{
+  id = "test",
+  pattern_0 = "31",
+  pattern_1 = "33",
+  pattern_2 = "37",
+  pattern_3 = "35",
+  pattern_4 = "32",
+  pattern_5 = "36",
+  pattern_6 = "38",
+  pattern_7 = "30",
 }
 
