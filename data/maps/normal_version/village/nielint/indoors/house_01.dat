@@ -321,5 +321,6 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/12",
+  behavior = "dialog#pnj.village.nielint.indoors.postman",
 }
 

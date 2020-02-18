@@ -5,36 +5,72 @@ dialog{
 }
 
 dialog{
+  id = "_treasure.heart",
+  text = [[
+]],
+}
+
+dialog{
+  id = "_treasure.heart.1",
+  text = [[
+Vous obtenez un cœur ! Votre santé remonte !
+]],
+}
+
+dialog{
+  id = "_treasure.heart_container.1",
+  text = [[
+Vous obtenez un réceptacle de cœur ! Cet objet très précieux ajoute un cœur supplémentaire à votre barre de vie.
+]],
+}
+
+dialog{
+  id = "_treasure.heart_quarter.1",
+  use_preset_info = "1",
+  text = [[
+Vous obtenez un quart de coeur ! Trouvez en 4 pour ajouter un coeur à votre barre de vie. Encore $v !
+]],
+}
+
+dialog{
+  id = "_treasure.ice_seed.1",
+  text = [[
+Vous avez trouvé des graines de glace ! Utilisez-les sur une surface appropriée pour qu’elle gèle immédiatement.
+]],
+}
+
+dialog{
+  id = "_treasure.ice_seed.2",
+  text = [[
+Vous avez trouvé des graines de glace supplémentaires ! Rangez-les dans votre sac pour ne pas les perdre.
+]],
+}
+
+dialog{
   id = "_treasure.rock_feather.1",
   text = [[
-Vous avez trouvé la plume de roc.
-
-BAH VAS Y SAUTE
+Vous avez trouvé la plume de roc ! Cet objet vous servira à sauter par-dessus les obstacles et certaines enemis.
 ]],
 }
 
 dialog{
   id = "_treasure.rupee.1",
   text = [[
-Tu as trouvé 1 rubis !
-C'est le début
-de la fortune !
+Vous obtenez un rubis vert, le début de la forthune !
 ]],
 }
 
 dialog{
   id = "_treasure.rupee.2",
   text = [[
-Tu as trouvé un rubis bleu !
-Il vaut 5 rubis !
+Vous obtenez un rubis bleu, il vaut cinq rubis ! Quelques économies qui font plaisir !
 ]],
 }
 
 dialog{
   id = "_treasure.rupee.3",
   text = [[
-Tu as trouvé un rubis rouge !
-Il vaut 20 rubis !
+Vous obtenez un rubis rouge, il vaut vingt rubis! Ne dépensez pas tout d’un coup !
 ]],
 }
 
@@ -58,12 +94,74 @@ dans ce donjon.
 
 dialog{
   id = "_treasure.sword.1",
+  use_preset_info = "1",
   text = [[
-Tu as trouvé une épée!
-Utilise C pour t'en servir.
-Elle te permet de couper les
-buissons ainsi que d'autres
-choses.
+Vous avez trouvé l'épée ! Utilisez la en appuyant sur $v 
+et taillez en pièces tout ce qui vous tombe sous la main !
+]],
+}
+
+dialog{
+  id = "pnj.overworld.north_beach.deku_tree",
+  text = [[
+Link, je t'attendais. C'est ma voix que tu as suivis depuis la mer et te voilà enfin. Un sorcier menace d'anéantir cet endroit et un héros doit l'arrêter. Ce héros, c'est toi. Pour l'heure, dirige toi vers le temple du Trident, à l'ouest. Il vient d'être corrompu et c'est cela qui a causé la tempête.
+]],
+}
+
+dialog{
+  id = "pnj.overworld.north_beach.guard",
+  text = [[
+Halte ! La plage est infestée de monstre depuis tout à l'heure, même avec ton épée tu ne fais pas le poids. Les monstres vont et viennent ici, essaie de revenir plus tard.
+]],
+}
+
+dialog{
+  id = "pnj.overworld.north_beach.indoors.old_man_map",
+  text = [[
+Salut p'tit gars ! Tu n'aurais pas trouvé une carte en te baladant sur la plage par hasard ? 
+Quel genre de carte ? Une carte aux trésors bien sûr ! Si jamais tu en trouves une, n'hésites pas à me la rapporter.
+]],
+}
+
+dialog{
+  id = "pnj.overworld.north_beach.indoors.woman_black",
+  text = [[
+Parfois, les gens veulent nous empêcher d'être ce que nous sommes. Il ne faut jamais les écouter. 
+Un jour, je serai la meilleure combattante que la terre ait connu ! YAAAH !
+]],
+}
+
+dialog{
+  id = "pnj.overworld.north_beach.indoors.woman_blue",
+  text = [[
+C'est quoi ton animal préféré ? Moi c'est le loup ! 
+Il sont tellement beaux et intelligents. C'est drôle, je trouve que tu as un peu le même regard qu'eux.
+]],
+}
+
+dialog{
+  id = "pnj.overworld.north_beach.indoors.woman_pink",
+  text = [[
+C'est à cette heure là que tu rentres ?! 
+Le dîner est presque prêt et tu n'as toujours pas mis la table ! 
+... Oh... Pardonnez-moi je vous ai confondu avec mon fils. 
+Il est toujours en train de trainer dehors avec ses copains, je ne sais plus quoi faire pour qu'il rentre à l'heure.
+]],
+}
+
+dialog{
+  id = "pnj.overworld.wind_wood.senile_man",
+  text = [[
+Tiens, cela faisait longtemps que je n'avais pas eu de visiteurs... 
+De nos jours, cette forêt est aussi déserte que le sommet de mon crâne. 
+Héhé. Je suis bien content d'avoir un peu de compagnie... 
+Cet endroit était autrefois paisible et débordant de vie, mais les choses ont bien changées depuis la guerre qui a eu lieu il y'a bien longtemps. 
+Tous les ossements qui jonchent le sol de la forêt sont les vestiges d'une terrible bataille... 
+J'y ai perdu de nombreux êtres chers qui veillaient sur moi lorsque j'étais enfant. 
+Depuis, c'est moi qui veille sur eux. 
+Excuse-moi si je m'égare... 
+Je te remercie de m'avoir écouté jusqu'au bout, mon petit ! 
+Tu peux te reposer ici autant que tu veux.
 ]],
 }
 
@@ -141,16 +239,17 @@ la lance comme personne !
 
 dialog{
   id = "pnj.village.nielint.barman.awake1",
+  position = "1",
   text = [[
-yo viens me parler (flemme d'écrire un dialogue)
+Ah, t'es enfin réveillé, d'habitude, les gens ne mettent qu'une nuit pour ça. Quoi, tu ne sais pas où t'es ? Bah on est pas sorti de l'auberge, enfin, surtout moi. Tu es dans le village de Nielint, dans Elrint.
+... Mh ? La tempête n'était pas naturelle ? C'est probable, un sorcier a jugé bon de semer le chaos un peu partout, et comme pour ajouter au chaos, un royaume a déclaré la guerre aux autres. La guerre est terminée mais le sorcier lui n'a pas décidé de s'arrêter. Tu veux y faire quelque chose ? Tu devrais voir l'arbre Jojo, au nord-ouest d'ici, mais le chemin est bloqué par des buissons, trouve de quoi débroussailler dans la forêt au sud d'ici, nous n'avons ni le temps ni les moyens de faire quoi que ce soit.
 ]],
 }
 
 dialog{
   id = "pnj.village.nielint.barman.awake2",
   text = [[
-Toujours la flemme d'écrire un dialogue 
-va chercher l'épée
+Allez, l'épée ne va pas aller se chercher toute seule.
 ]],
 }
 
@@ -167,6 +266,87 @@ dialog{
 Interdiction de passer, cet
 endroit est trop dangereux
 pour les simples civils.
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.indoors.boy",
+  text = [[
+Hé, tu sais quoi ? Mon papa il est dans l'armée ! Il est trop fort mon papa.
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.indoors.dog",
+  text = [[
+Woufe.
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.indoors.girl",
+  text = [[
+Mon papa c'est le meilleur guerrier du monde, et ma maman, elle sait faire de la magie ! 
+Mais ma maman ne peut pas s'occuper de moi en ce moment... 
+Papa dit qu'elle à des choses à faire et que c'est trop dangereux pour moi de rester avec elle, alors c'est lui qui prends soin de moi en attendant.
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.indoors.lone_man",
+  text = [[
+Dis, tu connais le royaume des Zunas ? Il y'a des années, ils ont essayé d'annexer tous les autres peuples par la force. 
+Il parait qu'ils voulaient dominer le monde ! C'est fou non ?
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.indoors.mother",
+  text = [[
+Je n'arrêtais pas de me plaindre de mon mari quand il était à la maison, 
+mais depuis qu'il s'est engagé dans l'armée, j'avoue qu'il me manque un peu...
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.indoors.old_man_cityhall",
+  text = [[
+Ca fait 35 ans que j'attends mes nouveaux papiers... 
+Il parait qu'ils ont égaré mon dossier... Ah, l'administration !
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.indoors.postman",
+  text = [[
+Je livre le courrier depuis des années, mais il y'a une vieille maison au fond du village qui ne reçoit jamais rien... 
+A chaque fois que je passe devant, j'entends du bruit à l'intérieur. Je me demande ce qui se passe là dedans.
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.indoors.tenko",
+  text = [[
+Aaaaah, la vie c'est nul. Et les hommes, c'est encore plus nul. 
+J'aimerais avoir un chat et vivre toute seule avec lui.
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.indoors.woman_cityhall",
+  text = [[
+Les bibliothèques de la mairie sont pleines de livres intéressants ! 
+Il y en a même certains qui parlent de l'ancienne guerre. 
+Tu savais que tous les peuples s'étaient unifiés contre l'envahisseur ? 
+Comme quoi tout le monde peut mettre ses différents de coté lorsque c'est nécessaire.
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.indoors.young_man_cityhall",
+  text = [[
+Bienvenue à la mairie ! Je suis désolé mais nous allons bientôt fermer, 
+veuillez repasser demain je vous prie.
 ]],
 }
 

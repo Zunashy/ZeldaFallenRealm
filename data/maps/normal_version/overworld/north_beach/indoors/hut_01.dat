@@ -430,6 +430,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/1",
+  behavior = "dialog#pnj.overworld.north_beach.indoors.woman_blue",
 }
 
 npc{
@@ -439,6 +440,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/4",
+  behavior = "dialog#pnj.overworld.north_beach.indoors.woman_pink",
 }
 
 npc{
@@ -448,5 +450,6 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/16",
+  behavior = "dialog#pnj.overworld.north_beach.indoors.woman_black",
 }
 

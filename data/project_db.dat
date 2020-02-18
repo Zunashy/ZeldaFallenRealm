@@ -212,6 +212,7 @@ sound{ id = "walk_on_water", description = "walk_on_water" }
 item{ id = "bomb", description = "bomb" }
 item{ id = "great_key", description = "Grande Clé" }
 item{ id = "heart", description = "heart" }
+item{ id = "heart_container", description = "Réceptacle de Coeur" }
 item{ id = "heart_quarter", description = "Quart de Coeur" }
 item{ id = "ice_seed", description = "Graine de glace" }
 item{ id = "map", description = "carte du donjon" }
