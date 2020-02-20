@@ -209,10 +209,7 @@ end
 
 function solarus_logo_menu:on_command_pressed(command) --if start is pressed during the logo, completely cancels the initial menus and loads+start the game file save1.dat
   if command == "pause" then
-    local game = game_manager:load("save1.dat")
-    self.on_finished = nil
-    sol.menu.stop(self)
-    game_manager:start_game(game)
+    sol.menu.start(require("scripts/menus/initial/save_select"))
   end
 end
 
