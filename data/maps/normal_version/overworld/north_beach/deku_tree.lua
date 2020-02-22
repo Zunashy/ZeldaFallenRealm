@@ -12,7 +12,7 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started()
-  local deku = self:get_entity("deku")
+  local deku = self:get_entity("deku_tree")
   function deku:on_interaction()
     game:start_dialog("pnj.overworld.north_beach.deku_tree", function() game:set_story_state(3) end)  
   end

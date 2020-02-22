@@ -460,8 +460,6 @@ local function bind_to_game(game_)
   game.get_dialog_box = get_dialog_box
 end
 
-print("ue ue")
-
 --When the game starts, binds everything to it.
 local game_meta = sol.main.get_metatable("game")
 game_meta:register_event("on_started", bind_to_game)

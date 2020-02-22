@@ -43,7 +43,7 @@ function gen.class(bClass)
   }
 
   function newclass:new(...)
-    local inst
+    local inst, info
     if type(self.build) == "function" then
       inst = self:build(...) or {}
     elseif bClass then

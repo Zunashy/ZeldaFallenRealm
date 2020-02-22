@@ -8,6 +8,31 @@ properties{
   tileset = "overworld/forest_plain",
 }
 
+npc{
+  name = "deku_2",
+  layer = 0,
+  x = 80,
+  y = 45,
+  direction = 3,
+  subtype = 1,
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 61,
+  properties = {
+    {
+      key = "target",
+      value = "deku",
+    },
+  },
+  width = 32,
+  height = 32,
+  direction = 0,
+  model = "interaction_box",
+}
+
 tile{
   layer = 1,
   x = 16,
@@ -398,27 +423,46 @@ tile{
   pattern = "85",
 }
 
-npc{
-  name = "deku_2",
-  layer = 0,
+teletransporter{
+  layer = 1,
+  x = 48,
+  y = 112,
+  width = 64,
+  height = 16,
+  destination_map = "normal_version/overworld/north_beach/outdoors",
+  destination = "from_deku_true",
+}
+
+destination{
+  name = "destination",
+  layer = 1,
   x = 80,
-  y = 45,
+  y = 117,
+  direction = 1,
+}
+
+npc{
+  name = "deku_tree",
+  layer = 1,
+  x = 80,
+  y = 13,
   direction = 3,
   subtype = 1,
+  behavior = "dialog#pnj.overworld.north_beach.guard",
 }
 
 custom_entity{
-  layer = 0,
+  layer = 1,
   x = 72,
-  y = 61,
+  y = 77,
   properties = {
     {
       key = "target",
-      value = "deku",
+      value = "deku_tree",
     },
   },
   width = 32,
-  height = 32,
+  height = 16,
   direction = 0,
   model = "interaction_box",
 }

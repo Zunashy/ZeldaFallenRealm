@@ -7701,7 +7701,7 @@ teletransporter{
 }
 
 destination{
-  name = "hut_01",
+  name = "hut_02",
   layer = 1,
   x = 48,
   y = 581,
@@ -7843,7 +7843,7 @@ teletransporter{
 }
 
 destination{
-  name = "hut_02",
+  name = "hut_1",
   layer = 1,
   x = 240,
   y = 485,
@@ -7897,7 +7897,24 @@ npc{
   direction = 1,
   subtype = 1,
   sprite = "pnj/nielint/1",
-  behavior = "dialog#",
+  behavior = "dialog#pnj.overworld.north_beach.guard",
+}
+
+teletransporter{
+  layer = 1,
+  x = 528,
+  y = 0,
+  width = 64,
+  height = 16,
+  destination_map = "normal_version/overworld/north_beach/deku_tree",
+}
+
+destination{
+  name = "from_deku_true",
+  layer = 1,
+  x = 560,
+  y = 21,
+  direction = 1,
 }
 
 tile{

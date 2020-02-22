@@ -24,8 +24,7 @@ local function start_initial_menus(callback)
   local on_top = false  -- To keep the debug menu on top.
   for i, menu in ipairs(initial_menus) do
     function menu:on_finished()
-      if sol.main.get_game() ~= nil then
-        -- A game is already running (probably quick start with a debug key).
+      if sol.main.get_game() ~= nil or self.abort_inital_menus then
         return
       end
       local next_menu = initial_menus[i + 1]

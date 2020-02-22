@@ -209,7 +209,10 @@ end
 
 function solarus_logo_menu:on_command_pressed(command) --if start is pressed during the logo, completely cancels the initial menus and loads+start the game file save1.dat
   if command == "pause" then
-    sol.menu.start(require("scripts/menus/initial/save_select"))
+    self.abort_inital_menus = true
+    sol.menu.stop(self)
+    sol.menu.start(sol.main, require("scripts/menus/initial/save_select"))
+    return true
   end
 end
 

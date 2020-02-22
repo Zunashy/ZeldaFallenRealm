@@ -18,6 +18,7 @@ local movement
 local mov_speed = 64
 local wave_amp, wave_period = 16, 32
 local swing_detect_distance = 48
+local swing_cooldown = 800
 
 local base_y, travel, last_x, m_direction = 0, 0, 0, -1
 local hit_count = 0
@@ -64,6 +65,7 @@ local function hurt_cb()
   enemy:blink(100, 500, function()
     enemy:set_attacks_consequence(hurt_cb)
   end)
+  enemy:remove_life(1)
 end
 
 local function swing_frame_cb(s, frame)
@@ -76,8 +78,6 @@ local function swing_frame_cb(s, frame)
     properties.height = 16
     properties.direction = 0
     local arrow = map:create_custom_entity(properties)
-    enemy.arrow_cooldown = true
-    sol.timer.start(enemy,3000, function() enemy.arrow_cooldown = false end)
   end
 end
 
@@ -101,7 +101,7 @@ function enemy:swing()
       sprite:set_animation("walking")
       trident_sprite:set_animation("walking")
       enemy:start_movement(m_direction, true)
-      sol.timer.start(enemy, 500, function () enemy:start_swing_detect() end)
+      sol.timer.start(enemy, swing_cooldown, function () enemy:start_swing_detect() end)
     end)
   end)
   trident_sprite:set_animation("swing_load")
@@ -132,7 +132,7 @@ end
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   trident_sprite = enemy:create_sprite("enemies/boss/merman_trident")
-  enemy:set_life(12)
+  enemy:set_life(6)
   enemy:set_damage(1)
   enemy:set_pushed_back_when_hurt(false)
   enemy:set_attacks_consequence(hurt_cb)

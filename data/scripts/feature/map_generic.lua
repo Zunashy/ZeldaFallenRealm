@@ -22,7 +22,12 @@ function map:enable_entity(name, state)
   self = self or sol.main.game:get_map()
   state = state or true  --enables, by default
   local e = self:get_entity(name)
-  assert(e, "can't find entity "..name)
+  if not e then
+    for e in self:get_entities(name) do
+      e:set_enabled(true)
+    end
+    return
+  end
   e:set_enabled(true)
 end
 

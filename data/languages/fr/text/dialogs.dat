@@ -5,6 +5,13 @@ dialog{
 }
 
 dialog{
+  id = "_treasure.great_key.1",
+  text = [[
+Vous avez trouvé la grande clé ! Elle permet d'ouvrir la porte du boss.
+]],
+}
+
+dialog{
   id = "_treasure.heart",
   text = [[
 ]],
@@ -70,7 +77,7 @@ Vous obtenez un rubis bleu, il vaut cinq rubis ! Quelques économies qui font pl
 dialog{
   id = "_treasure.rupee.3",
   text = [[
-Vous obtenez un rubis rouge, il vaut vingt rubis! Ne dépensez pas tout d’un coup !
+Vous obtenez un rubis rouge, il vaut vingt rubis! Ne dépensez pas tout d'un coup !
 ]],
 }
 
@@ -98,6 +105,13 @@ dialog{
   text = [[
 Vous avez trouvé l'épée ! Utilisez la en appuyant sur $v 
 et taillez en pièces tout ce qui vous tombe sous la main !
+]],
+}
+
+dialog{
+  id = "pnj.end",
+  text = [[
+Merci à toi d'avoir joué jusuqu'ici ! C'est ici que s'achève la partie terminée, ce qui suit est encore en développement.
 ]],
 }
 

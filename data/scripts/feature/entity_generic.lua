@@ -101,7 +101,6 @@ function eg.blink(entity, hperiod, duration, callback)
   sol.timer.start(entity, duration, function()
     eg.stop_blinking(entity)
     entity:set_visible(true)
-    print("ye")
     if callback then callback() end
   end)
 end

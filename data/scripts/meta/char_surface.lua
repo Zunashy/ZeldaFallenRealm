@@ -10,9 +10,9 @@ function meta:set_font(font, load)
 
   self.font_obj = nil
   self.loaded_font = ""
-  
-  if load and not self.loaded_font == font then
-    self.font_obj = fonts:new(font)
+
+  if load ~= false and self.loaded_font ~= font then
+    self.font_obj = fonts:new(font, load ~= true)
     assert(self.font_obj, "set_font : Can't find the specified font")
     self.loaded_font = font
   end
@@ -75,19 +75,18 @@ end
 char_surface.mt = meta
 
 --The creation function
-function char_surface.create(w, h, font)
+function char_surface.create(w, h, font, load_font)
   local surf = {}
   surf.surface = sol.surface.create(w, h) --Initializes the actual surface as a property of the char surface objects
-  surf.font = font
   surf.x = 0
   surf.w = w
   surf.h = h
-  surf.font_obj = nil
-  surf.loaded_font = ""
   surf.is_char_surface = true
-  setmetatable(surf, meta)  --Sets meta (aka char_surface.mt) as the metatable for the new object
 
+  setmetatable(surf, meta)  --Sets meta (aka char_surface.mt) as the metatable for the new object
+  surf:set_font(font, load_font)
   return surf
 end
+
 
 gen.char_surface = char_surface

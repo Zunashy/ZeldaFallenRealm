@@ -24,7 +24,7 @@ local function fire_command_event(game, command)
 end
 
 function sol.main:on_key_pressed(key) --manages commands if no game is started (solarus only manages them if a game is started)
-  if not sol.main.game then
+  if not sol.main.get_game() then
     local commands = controls:get_keyboard_bindings()
     for k, v in pairs(commands) do
       if v == key then

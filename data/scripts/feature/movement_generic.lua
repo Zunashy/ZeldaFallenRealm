@@ -113,7 +113,7 @@ function mg.choose_random_direction(entity,callback)
     end
   end
 
-  math.randomseed(os.time())  
+  math.randomseed(os.time())
   local dir = math.random(1,i)
   return dirs[dir]
 end

@@ -243,6 +243,7 @@ function game_menu:bind_to_game(game)
 end
 
 local function pause_callback(game)
+    if game.disable_pause_menu then return end
     sol.menu.start(game, game_menu)
 end
 

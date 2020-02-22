@@ -9299,16 +9299,6 @@ chest{
   sprite = "entities/chest",
 }
 
-chest{
-  layer = 0,
-  x = 888,
-  y = 413,
-  treasure_name = "rupee",
-  treasure_variant = 3,
-  treasure_savegame_variable = "dungeon_1_chest_rupee_3",
-  sprite = "entities/chest",
-}
-
 enemy{
   layer = 0,
   x = 616,
@@ -10267,6 +10257,7 @@ door{
   y = 352,
   direction = 0,
   sprite = "entities/boss_door",
+  savegame_variable = "dungeon_1_great_door",
   opening_method = "interaction_if_item",
   opening_condition = "great_key",
   opening_condition_consumed = true,
@@ -10292,6 +10283,7 @@ enemy{
   },
   direction = 0,
   breed = "boss/merman",
+  savegame_variable = "dungeon_1_boss",
 }
 
 enemy{
@@ -10352,5 +10344,31 @@ destination{
   y = 1397,
   direction = 1,
   default = true,
+}
+
+npc{
+  name = "zuna",
+  layer = 0,
+  x = 840,
+  y = 37,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/5",
+}
+
+custom_entity{
+  layer = 0,
+  x = 840,
+  y = 349,
+  properties = {
+    {
+      key = "find_solid_ground",
+      value = "1",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "nonsolid_ground",
 }
 

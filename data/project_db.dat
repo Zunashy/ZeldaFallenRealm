@@ -248,6 +248,7 @@ entity{ id = "ice_floor", description = "Ice Tile (Ice seeds)" }
 entity{ id = "interaction_box", description = "interaction_box" }
 entity{ id = "light", description = "Source de lumière" }
 entity{ id = "merman_wave", description = "Merman's wave" }
+entity{ id = "nonsolid_ground" }
 entity{ id = "octorok_rock", description = "Octorok's Rock" }
 entity{ id = "platform", description = "Moving Platform" }
 entity{ id = "platform_controller", description = "Contrôleur de plateforme" }
