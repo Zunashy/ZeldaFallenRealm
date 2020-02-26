@@ -4,7 +4,7 @@ local hero_speed = 64
 
 local hero_meta = sol.main.get_metatable("hero")
 
-local hero_sprite
+local hero_sprite, sword_sprite
 
 local function initialize_hero_features(game)
 
@@ -14,6 +14,12 @@ local function initialize_hero_features(game)
 
   function hero:on_created()
     hero_sprite = hero:get_sprite("tunic")
+    sword_sprite = hero:get_sprite("sword")
+    
+
+    function sword_sprite:on_animation_changed(animation) 
+      
+    end
   end
 
   function hero:reset_walking_speed()
@@ -115,6 +121,7 @@ local function initialize_hero_features(game)
     end
 
   end
+      
 
 end
 
