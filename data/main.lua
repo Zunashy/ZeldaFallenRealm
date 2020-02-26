@@ -30,6 +30,7 @@ function sol.main:on_started()
   settings_manager:load()
   controls_manager:load()
   sol.audio.preload_sounds()
+  sol.audio.set_sound_volume(30)
   -- Setting a language is useful to display text and dialogs.
   sol.menu.stop(loading_menu)
   start_initial_menus()

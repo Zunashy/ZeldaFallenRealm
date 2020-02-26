@@ -217,7 +217,7 @@ function save_select:on_command_pressed(command)
         elseif self.mode == 2 then
             if self.cursor == 2 then
                 sol.file.remove("save"..self.selected_save..".dat")
-                self.saves[self.selected_save] = sol.game.load("save"..self.selected_save..".dat")
+                self.saves[self.selected_save] = game_manager:load("save"..self.selected_save..".dat")
                 self.background_surface:fill_color({0, 0, 0}, 
                     save_name_pos.x, save_name_pos.y + (save_name_pos.offset * (self.selected_save - 1)), 49, 11)
                 self.mode = 1

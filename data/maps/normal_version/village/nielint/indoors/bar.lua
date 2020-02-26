@@ -3,14 +3,21 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started()
-  local zuna = map:get_entity("zuna")
-  if (game:get_story_state() or 0) < 3 then
-    function zuna:on_interaction()
-      game:start_dialog("pnj.village.nielint.barman.awake2")
+  map:get_entity("separator_1").on_activated = function()
+    if game:get_story_state() < 2 then
+      game:start_dialog("pnj.village.nielint.barman.awake1", function() game:set_story_state(2) end)  
     end
-  elseif game:get_story_state() < 666 and game:has_item("sword") then
+  end
+
+  local story_state = game:get_story_state() or 0
+  local zuna = map:get_entity("zuna")
+  if story_state < 666 and game:has_item("sword") then
     function zuna:on_interaction()
       game:start_dialog("pnj.village.nielint.barman.sword")
+    end
+  elseif story_state < 3 then
+    function zuna:on_interaction()
+      game:start_dialog("pnj.village.nielint.barman.awake2")
     end
   end
 end
@@ -19,10 +26,7 @@ end
 -- that is, when the player takes control of the hero.
 function map:on_opening_transition_finished()
   print(game:get_story_state())
-  if game:get_story_state() == 0 then
+  if game:get_story_state() < 2 then
     game:set_story_state(1)
-    map:get_entity("separator_1").on_activated = function()
-      game:start_dialog("pnj.village.nielint.barman.awake1", function() game:set_story_state(2) end)  
-    end
   end
 end
