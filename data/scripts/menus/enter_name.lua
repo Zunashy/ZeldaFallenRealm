@@ -159,6 +159,7 @@ function name_menu:on_command_pressed(command)
   elseif command == "action" then
     local char_code = self:get_keyboard_selection()
     if char_code == -1 then
+      if self.current_text[1] == nil then return end
       self.arguments.game:set_value("name", self:make_name_string())
       sol.menu.stop(self)
       self.arguments.game_manager:start_game(self.arguments.game)
