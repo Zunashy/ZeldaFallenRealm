@@ -15,11 +15,6 @@ local function initialize_hero_features(game)
   function hero:on_created()
     hero_sprite = hero:get_sprite("tunic")
     sword_sprite = hero:get_sprite("sword")
-    
-
-    function sword_sprite:on_animation_changed(animation) 
-      
-    end
   end
 
   function hero:reset_walking_speed()
