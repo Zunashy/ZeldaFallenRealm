@@ -92,7 +92,7 @@ end
 
 function enemy:sword()
   sprite:set_animation("sword", "sword_end")
-  sol.audio.play_sound("enemies/mr_pers/sword")
+  sol.audio.play_sound("sword1")
   sword_sprite:set_animation("sword", function() 
     sword_sprite:set_animation("idle")
     sol.timer.start(enemy, 1000, function()

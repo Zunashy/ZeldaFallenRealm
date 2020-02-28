@@ -84,7 +84,7 @@ animation{
 animation{
   name = "dying",
   src_image = "hero/Link_dead.png",
-  frame_delay = 70,
+  frame_delay = 60,
   directions = {
     { x = 4, y = 4, frame_width = 15, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 11 },
     { x = 4, y = 4, frame_width = 15, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 11 },
@@ -127,7 +127,7 @@ animation{
     { x = 112, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
     { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
     { x = 80, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
-    { x = 96, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14 },
   },
 }
 animation{
