@@ -23,7 +23,7 @@ function game_meta:set_story_state(state)
   return self:set_value("story_state", state)
 end
 
-function game_meta:on_draw()
+function game_meta:on_draw(dst_surf)
   local map = self:get_map()
   local camera = map:get_camera()
   if camera:get_surface():get_shader() == self.obscurity_shader and map.lights then
@@ -40,6 +40,11 @@ function game_meta:on_draw()
     self.obscurity_shader:set_uniform("lights", lights_pos[1])
     self.obscurity_shader:set_uniform("lights_n", 1)
   end
+
+  if self.game_over_link_sprite then
+    self.game_over_link_sprite:draw(dst_surf, self.game_over_link_position.x, self.game_over_link_position.y)
+  end
+
 end
 
 function game_meta:on_started()
@@ -50,6 +55,18 @@ end
 
 function game_meta:on_finished()
   sol.main.game = nil
+end
+
+function game_meta:on_game_over_started()
+  local hero = self:get_hero()
+  self.game_over_link_sprite = sol.sprite.create("hero/tunic1")
+  local x, y = hero:get_position()
+  local cmx, cmy = self:get_map():get_camera():get_position()
+  x = x - cmx
+  y = y - cmy + self.HUD_height
+  self.game_over_link_position = {x = x, y = y}
+  hero:remove()
+  self.game_over_link_sprite:set_animation("dying", "dead")
 end
 
 --The following scripts also modify the game metatable :
