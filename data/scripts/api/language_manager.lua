@@ -13,7 +13,9 @@ end
 
 function language_manager:load_image(path)
     local path = self:file_path(path, ".png")
-    return sol.surface.create(path)
+    local img = sol.surface.create(path)
+    if not img then error("Can't find image "..path) end
+    return img
 end
 
 return language_manager
