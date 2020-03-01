@@ -395,7 +395,7 @@ function dialog_box:show_next_char()
     csurface:add_char(code)
 
     if self.need_letter_sound then
-      sol.audio.play_sound("voices/snas")
+      --sol.audio.play_sound("voices/snas")
       self.need_letter_sound = false
       sol.timer.start(self, letter_sound_delay, function()
         self.need_letter_sound = true

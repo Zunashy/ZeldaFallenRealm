@@ -2,6 +2,7 @@
 local map = sol.main.get_metatable("map")
 mpg = map
 
+
 --Opens or closes all doors that have the name format 'door_<name>*'
 function map:open_door(name)
   if type(name) == "number" then name = tostring(name) end
@@ -15,24 +16,6 @@ function map:close_door(name)
   if not self then return end
   self:close_doors(name)
   self:close_doors("door_"..name)
-end
-
---Enable an entity with a specified name on the specified map (or disables it, depending on state)
-function map:enable_entity(name)
-  self = self or sol.main.game:get_map()
-  local e = self:get_entity(name)
-  if not e then
-    for e in self:get_entities(name) do
-      e:set_enabled(true)
-    end
-    return
-  end
-  e:set_enabled(true)
-
-  local prop = e:get_property("spawn_savegame_variable")
-  if prop then
-    self:get_game():set_value(prop, 1)
-  end
 end
 
 --Launches an event described by the event string (ex : 'door_<name> to open all doors with this name)
@@ -57,15 +40,36 @@ local function trigger_event(map, event)
     map.enable_entity(map, name)
   elseif event:starts("function_") then
     name = event:sub(10)
-	if type(map[name]) == "function" then
-	  map[name](map)
-	end
+    if type(map[name]) == "function" then
+      map[name](map)
+    end
+  elseif event:starts("music_") then
+    name = event:sub(7)
+    sol.audio.play_music(name)
   end
 end
 
 local function parse_event_string(map, s)
   for event in s:fields(";") do
 	  trigger_event(map, event)
+  end
+end
+
+--Enable an entity with a specified name on the specified map (or disables it, depending on state)
+function map:enable_entity(name)
+  self = self or sol.main.game:get_map()
+  local prop
+  for e in self:get_entities(name) do
+    e:set_enabled(true)
+    prop = e:get_property("spawn_savegame_variable")
+    if prop then
+      self:get_game():set_value(prop, 1)
+    end
+  
+    prop = e:get_property("spawn_trigger")
+    if prop and not (e:get_type() == "door" and not e:is_closed()) then 
+      parse_event_string(self, prop) 
+    end
   end
 end
 
@@ -209,8 +213,6 @@ function map:init_dungeon_features()
   self:init_detect_open()  
   self:init_reset_separators()
 end
-
-
 
 --Map Manager
 local map_manager = require("scripts/api/map_manager")

@@ -6,6 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "Tileset_Donjon_1",
+  music = "dungeon1",
 }
 
 tile{
@@ -9810,7 +9811,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_chest_feather;door_miniboss",
+      value = "spawn_chest_feather;door_miniboss;music_dungeon1",
     },
     {
       key = "no_reset",
@@ -9828,6 +9829,12 @@ door{
   x = 1312,
   y = 160,
   enabled_at_start = false,
+  properties = {
+    {
+      key = "spawn_trigger",
+      value = "music_miniboss",
+    },
+  },
   direction = 1,
   sprite = "entities/door",
   savegame_variable = "dungeon_1_door_miniboss",
@@ -10215,14 +10222,6 @@ destination{
   direction = 1,
 }
 
-destination{
-  name = "out_b_2",
-  layer = 0,
-  x = 840,
-  y = 453,
-  direction = 1,
-}
-
 door{
   layer = 0,
   x = 832,
@@ -10235,14 +10234,6 @@ door{
   opening_condition_consumed = true,
 }
 
-destination{
-  name = "test",
-  layer = 0,
-  x = 840,
-  y = 309,
-  direction = 1,
-}
-
 enemy{
   layer = 0,
   x = 840,
@@ -10250,7 +10241,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_boss",
+      value = "door_boss;music_dungeon1",
     },
     {
       key = "no_reset",
@@ -10308,6 +10299,12 @@ door{
   x = 832,
   y = 336,
   enabled_at_start = false,
+  properties = {
+    {
+      key = "spawn_trigger",
+      value = "music_boss",
+    },
+  },
   direction = 1,
   sprite = "entities/door",
   savegame_variable = "dungeon_1_door_boss",
@@ -10346,5 +10343,13 @@ destination{
   y = 1397,
   direction = 1,
   default = true,
+}
+
+destination{
+  name = "out_b_2",
+  layer = 0,
+  x = 840,
+  y = 453,
+  direction = 1,
 }
 

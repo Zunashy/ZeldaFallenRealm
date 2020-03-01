@@ -36,7 +36,7 @@ function map_meta:set_obscurity(level)
 
 end
 
-local function parse_entities_properties(map)
+local function generic_start_callback(map)
     local prop
     local game = map:get_game()
     for e in map:get_entities() do
@@ -53,6 +53,7 @@ local function parse_entities_properties(map)
             e:set_enabled(true)
         end
     end
+    sol.audio.set_music_volume(sol.audio.default_music_volume)
 end
 
 local function call_alt_on_started(map)
@@ -60,5 +61,8 @@ local function call_alt_on_started(map)
         map:on_started_()
     end
 end
-map_meta:register_event("on_started", parse_entities_properties)
+
+
+
+map_meta:register_event("on_started", generic_start_callback)
 map_meta:register_event("on_started", call_alt_on_started)

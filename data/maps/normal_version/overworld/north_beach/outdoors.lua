@@ -24,6 +24,7 @@ local cases = {
 function map:on_started_()
   self:init_reset_separators(true)
   self:init_enemies_event_triggers()
+  if game:get_story_state() == 0 then sol.audio.disable_music() end
 end
 
 function map:on_opening_transition_finished()

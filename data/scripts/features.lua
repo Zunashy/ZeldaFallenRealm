@@ -10,6 +10,7 @@ require("scripts/feature/entity_generic")
 require("scripts/feature/map_generic")
 require("scripts/feature/video")
 require("scripts/feature/menus")
+require("scripts/feature/audio")
 
 require("scripts/meta/game")
 require("scripts/meta/char_surface")

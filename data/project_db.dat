@@ -154,11 +154,18 @@ sprite{ id = "things/radeau", description = "Radeau intro" }
 sprite{ id = "things/switch_aureole", description = "switch aureole" }
 sprite{ id = "things/water_splash_effect", description = "water splash" }
 
+music{ id = "Caves", description = "Caves" }
+music{ id = "Horon Village", description = "Horon Village" }
+music{ id = "Houses", description = "Houses" }
+music{ id = "Mysterious Forest", description = "Mysterious Forest" }
+music{ id = "Overworld", description = "Overworld" }
 music{ id = "Zelda Original/Caves", description = "Caves" }
 music{ id = "Zelda Original/Horon Village", description = "Horon Village" }
 music{ id = "Zelda Original/Houses", description = "Houses" }
 music{ id = "Zelda Original/Mysterious Forest", description = "Mysterious Forest" }
 music{ id = "Zelda Original/Overworld", description = "Overworld" }
+music{ id = "boss", description = "boss" }
+music{ id = "dungeon1", description = "dungeon1" }
 music{ id = "eduardo/Scatman_John_-_pi_pa_pa_para_po_Original_Video_", description = "eduardo/Scatman" }
 music{ id = "eduardo/boss", description = "Boss" }
 music{ id = "eduardo/cave", description = "Cave" }
@@ -176,6 +183,7 @@ music{ id = "eduardo/sword_fanfare", description = "Sword fanfare" }
 music{ id = "eduardo/title_screen", description = "Title screen" }
 music{ id = "eduardo/village", description = "Village" }
 music{ id = "eduardo/witch_hut", description = "Witch" }
+music{ id = "miniboss", description = "miniboss" }
 
 sound{ id = "chest_appears", description = "chest_appears" }
 sound{ id = "chest_open", description = "chest_open" }
