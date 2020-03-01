@@ -360,7 +360,6 @@ function dialog_box:show_next_char()
   local csurface = self.line_surfaces[self.line_index]
   local code = current_char:byte()
 
-  print(current_char)
 
   if current_char == "$" then
     special = true
@@ -442,7 +441,6 @@ end
 --====== BINDING THE DIALOG TO THE GAME ======
 
 local function dialog_start_callback(game, dialog, info)
-  print("start")
   dialog_box.dialog = dialog
   dialog_box.info = (dialog.use_preset_info) and dialog_box.info or info
   if sol.menu.is_started(dialog_box) then 

@@ -2,7 +2,7 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
+function map:on_started_()
   map:get_entity("separator_1").on_activated = function()
     if game:get_story_state() < 2 then
       game:start_dialog("pnj.village.nielint.barman.awake1", function() game:set_story_state(2) end)  

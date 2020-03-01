@@ -53,6 +53,7 @@ local function generic_start_callback(map)
             e:set_enabled(true)
         end
     end
+    print("volume : "..sol.audio.default_music_volume)
     sol.audio.set_music_volume(sol.audio.default_music_volume)
 end
 
