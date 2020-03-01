@@ -57,8 +57,10 @@ function game_meta:on_finished()
   sol.main.game = nil
 end
 
+local game_over_menu = require("scripts/menus/game_over")
 function game_meta:on_game_over_started()
   local hero = self:get_hero()
+  local game = self
   self.game_over_link_sprite = sol.sprite.create("hero/tunic1")
   local x, y = hero:get_position()
   local cmx, cmy = self:get_map():get_camera():get_position()
@@ -66,7 +68,11 @@ function game_meta:on_game_over_started()
   y = y - cmy + self.HUD_height
   self.game_over_link_position = {x = x, y = y}
   hero:remove()
-  self.game_over_link_sprite:set_animation("dying", "dead")
+  self.game_over_link_sprite:set_animation("dying", function ()
+    game.game_over_link_sprite:set_animation("dead", function ()
+      sol.menu.start(game, game_over_menu)
+    end)
+  end)
 end
 
 --The following scripts also modify the game metatable :

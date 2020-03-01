@@ -117,6 +117,9 @@ local function initialize_hero_features(game)
 
   end
       
+  function hero:on_taking_damage(dmg)
+    game:remove_life(dmg)
+  end
 
 end
 
