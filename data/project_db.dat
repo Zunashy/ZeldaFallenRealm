@@ -50,6 +50,7 @@ tileset{ id = "overworld/forest_plain", description = "overworld/forest_plain" }
 tileset{ id = "overworld/jungle", description = "jungle" }
 tileset{ id = "overworld/mountain_sea", description = "mountain sea" }
 tileset{ id = "overworld/structure", description = "structures" }
+tileset{ id = "overworld/structure2", description = "overworld/structure2" }
 tileset{ id = "war_world/Structure" }
 tileset{ id = "war_world/autumn_dark", description = "war_world/autumn_dark" }
 tileset{ id = "war_world/autumn_dark.old", description = "war_world/autumn_dark.old" }
