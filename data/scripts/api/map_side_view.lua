@@ -6,7 +6,7 @@ sv = {}
 
 sv.pObject = gen.class()
 
-sv.gravity = 0.25
+sv.gravity = 0.16
 
 function sv.pObject:constructor(entity)
   self.entity = entity
@@ -260,6 +260,7 @@ function sv:init(map)
   self.init_physics(hero)
 
   map.physics_timer = sol.timer.start(map, 10, function() 
+    if hero:get_state() == "back to solid ground" then return true end
     hero.pObject:apply_physics()
     self.update_hero(hero)
     return true

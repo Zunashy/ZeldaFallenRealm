@@ -5,7 +5,7 @@ function print(...)
 end
 
 function tprint (tbl, indent, max_recursion, recursion_level)
-  recursion_level = recursion_level or 1
+  recursion_level = recursion_level or 0
   if not indent then indent = 0 end
   for k, v in pairs(tbl) do
     formatting = string.rep("--", indent) .. k .. ": "

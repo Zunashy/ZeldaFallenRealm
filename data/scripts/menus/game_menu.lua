@@ -263,7 +263,7 @@ end
 
 --When the game starts, binds everything to it.
 local game_meta = sol.main.get_metatable("game")
-game_meta:register_event("on_started", start_callback)
+game_meta:register_event("on_init", start_callback)
 game_meta:register_event("on_paused", pause_callback)
 game_meta:register_event("on_unpaused", unpause_callback)
 

@@ -11,12 +11,11 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+function map:on_started_()
   self:init_dungeon_features()
   local zuna = map:get_entity("zuna")
   function zuna:on_interaction()
     local menu = require("scripts/menus/credits")
-    print(menu)
     game:start_dialog("pnj.end", function() sol.menu.start(game, menu) end)
   end
 end

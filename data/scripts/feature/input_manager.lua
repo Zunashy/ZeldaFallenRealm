@@ -139,7 +139,6 @@ local function start_callback(game) --initializes the command bindings lists and
   game.custom_joypad_bindings = {
     
   }
-
   controls:apply(game, commands)
 end
 meta:register_event("on_started", start_callback)

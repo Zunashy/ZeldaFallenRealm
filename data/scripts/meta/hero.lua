@@ -7,6 +7,7 @@ local hero_meta = sol.main.get_metatable("hero")
 local hero_sprite, sword_sprite
 
 local function initialize_hero_features(game)
+  print("hero")
 
   local hero = game:get_hero()
   hero.get_corner_position = eg.get_corner_position
@@ -86,7 +87,7 @@ local function initialize_hero_features(game)
 
     if not self.pObject or not self.pObject.on_ground then return false end
 
-    self.pObject.speed = -4
+    self.pObject.speed = -3.2
   end
 
   function hero:on_state_changed(s)

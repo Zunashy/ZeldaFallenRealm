@@ -18,9 +18,8 @@ function map:close_door(name)
 end
 
 --Enable an entity with a specified name on the specified map (or disables it, depending on state)
-function map:enable_entity(name, state)
+function map:enable_entity(name)
   self = self or sol.main.game:get_map()
-  state = state or true  --enables, by default
   local e = self:get_entity(name)
   if not e then
     for e in self:get_entities(name) do
@@ -29,6 +28,11 @@ function map:enable_entity(name, state)
     return
   end
   e:set_enabled(true)
+
+  local prop = e:get_property("spawn_savegame_variable")
+  if prop then
+    self:get_game():set_value(prop, 1)
+  end
 end
 
 --Launches an event described by the event string (ex : 'door_<name> to open all doors with this name)
@@ -44,9 +48,9 @@ local function trigger_event(map, event)
   elseif event:starts("treasure_") then  --Event type: item spawn
     name = event:sub(10)
     if map:has_entity(name) then
-      map.enable_entity(map, name)   --Enabling the item with this name
+      map:enable_entity(name)   --Enabling the item with this name
     else 
-      map.enable_entity(map, event)
+      map:enable_entity(event)
     end
   elseif event:starts("spawn_") then
     name = event:sub(7)

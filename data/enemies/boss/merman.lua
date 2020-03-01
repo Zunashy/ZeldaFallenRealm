@@ -132,6 +132,7 @@ end
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   trident_sprite = enemy:create_sprite("enemies/boss/merman_trident")
+  enemy:set_invincible_sprite(trident_sprite)
   enemy:set_life(6)
   enemy:set_damage(1)
   enemy:set_pushed_back_when_hurt(false)

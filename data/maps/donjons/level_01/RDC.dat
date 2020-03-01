@@ -8766,6 +8766,12 @@ chest{
   x = 1320,
   y = 29,
   enabled_at_start = false,
+  properties = {
+    {
+      key = "spawn_savegame_variable",
+      value = "dungeon_1_chest_feather_",
+    },
+  },
   treasure_name = "rock_feather",
   treasure_savegame_variable = "dungeon_1_chest_feather",
   sprite = "entities/chest",
@@ -9151,22 +9157,6 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 648,
-  y = 61,
-  direction = 0,
-  breed = "skeleton_1",
-}
-
-enemy{
-  layer = 0,
-  x = 600,
-  y = 61,
-  direction = 0,
-  breed = "skeleton_1",
-}
-
-enemy{
-  layer = 0,
   x = 568,
   y = 77,
   direction = 0,
@@ -9325,24 +9315,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 504,
-  y = 381,
-  direction = 0,
-  breed = "skeleton_1",
-}
-
-enemy{
-  layer = 0,
   x = 696,
   y = 381,
-  direction = 0,
-  breed = "skeleton_1",
-}
-
-enemy{
-  layer = 0,
-  x = 696,
-  y = 509,
   direction = 0,
   breed = "skeleton_1",
 }
@@ -9409,14 +9383,6 @@ enemy{
   },
   direction = 0,
   breed = "octorok",
-}
-
-enemy{
-  layer = 0,
-  x = 584,
-  y = 509,
-  direction = 0,
-  breed = "bat",
 }
 
 enemy{
@@ -9812,6 +9778,12 @@ chest{
   x = 840,
   y = 973,
   enabled_at_start = false,
+  properties = {
+    {
+      key = "spawn_savegame_variable",
+      value = "dungeon_1_chest_key_1_",
+    },
+  },
   treasure_name = "small_key",
   treasure_savegame_variable = "dungeon_1_chest_key_1",
   sprite = "entities/chest",
@@ -10280,6 +10252,10 @@ enemy{
       key = "death_trigger",
       value = "door_boss",
     },
+    {
+      key = "no_reset",
+      value = "1",
+    },
   },
   direction = 0,
   breed = "boss/merman",
@@ -10337,15 +10313,6 @@ door{
   savegame_variable = "dungeon_1_door_boss",
 }
 
-destination{
-  name = "destination",
-  layer = 0,
-  x = 840,
-  y = 1397,
-  direction = 1,
-  default = true,
-}
-
 npc{
   name = "zuna",
   layer = 0,
@@ -10370,5 +10337,14 @@ custom_entity{
   height = 16,
   direction = 0,
   model = "nonsolid_ground",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 840,
+  y = 1397,
+  direction = 1,
+  default = true,
 }
 

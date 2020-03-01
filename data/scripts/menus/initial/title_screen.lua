@@ -1,4 +1,5 @@
 local title_screen = {
+    name = "Title Screen",
     background_surf = nil,
     surface = nil,
     start_surface = nil,

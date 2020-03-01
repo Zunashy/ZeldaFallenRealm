@@ -1,4 +1,5 @@
 local game_over = {
+    name = "Game Over",
     bg_surface = nil,
     cursor = 1,
     origin_menu = nil,
@@ -39,6 +40,11 @@ function game_over:blink_cursor_cycle(callback)
     end)
 end
 
+local function restart_game(game)
+    game:set_life(game:get_max_life())
+    game:start()
+end
+
 function game_over:blink_cursor(callback)
     self.cursor_blinking = true
     self.blink_count = 0 
@@ -47,19 +53,20 @@ end
 
 --button effects
 function game_over:button_continue()
-    game:set_life(game:get_max_life())
-    game:start()
+    restart_game(game)
+    sol.menu.stop(self)
 end
 
 function game_over:button_save()
     game:save()
-    game:set_life(game:get_max_life())
-    game:start()
+    restart_game(game)
+    sol.menu.stop(self)
 end
 
 function game_over:button_save_quit()
     game:save()
     sol.main.exit()
+    sol.menu.stop(self)
 end
 
 --SUBMENU METHODS
@@ -78,9 +85,7 @@ end
 
 function game_over:on_command_pressed(command)
     if self.cursor_blinking then return true end 
-    if command == "sword" or command == "select" then
-        self.game_menu.current_page = self.origin_page
-    elseif command == "up" then
+    if command == "up" then
         self.cursor = self.cursor - 1
         if self.cursor < 1 then self.cursor = 3 end
     elseif command == "down" then

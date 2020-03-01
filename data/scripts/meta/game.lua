@@ -50,6 +50,11 @@ end
 function game_meta:on_started()
   sol.main.game = self
 
+  if self.on_init and not self.started then
+    self:on_init()
+    self.started = true
+  end
+
   self.obscurity_shader = sol.shader.create("obscurity")
 end
 
@@ -73,6 +78,10 @@ function game_meta:on_game_over_started()
       sol.menu.start(game, game_over_menu)
     end)
   end)
+end
+
+function game_meta:__tostring()
+  return "Game"
 end
 
 --The following scripts also modify the game metatable :

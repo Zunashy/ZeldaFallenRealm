@@ -48,6 +48,10 @@ local function parse_entities_properties(map)
         if prop and tonumber(prop) < game:get_story_state() then
             e:set_enabled(false)
         end
+        prop = e:get_property("spawn_savegame_variable")
+        if prop and game:get_value(prop) then
+            e:set_enabled(true)
+        end
     end
 end
 

@@ -310,10 +310,6 @@ function dialog_box:start_next_line()
   self.new_lines = self.new_lines + 1
 
   self.line_surfaces[self.line_index]:set_font(self.current_font, true)
-  
-  if self.skipping then
-    self:show_next_char()
-  end
 
   self.char_index = 0
   self:show_next_char()
@@ -363,6 +359,8 @@ function dialog_box:show_next_char()
   local current_char = self.current_line:sub(self.char_index, self.char_index)
   local csurface = self.line_surfaces[self.line_index]
   local code = current_char:byte()
+
+  print(current_char)
 
   if current_char == "$" then
     special = true
@@ -444,9 +442,13 @@ end
 --====== BINDING THE DIALOG TO THE GAME ======
 
 local function dialog_start_callback(game, dialog, info)
+  print("start")
   dialog_box.dialog = dialog
   dialog_box.info = (dialog.use_preset_info) and dialog_box.info or info
-  if sol.menu.is_started(dialog_box) then sol.menu.stop(dialog_box) end
+  if sol.menu.is_started(dialog_box) then 
+    print("already started")
+    sol.menu.stop(dialog_box) 
+  end
   sol.menu.start(game, dialog_box)
 end
 
@@ -462,6 +464,6 @@ end
 
 --When the game starts, binds everything to it.
 local game_meta = sol.main.get_metatable("game")
-game_meta:register_event("on_started", bind_to_game)
+game_meta:register_event("on_init", bind_to_game)
 
 return dialog_box
