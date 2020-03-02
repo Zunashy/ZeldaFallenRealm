@@ -1148,37 +1148,10 @@ tile{
 
 destructible{
   layer = 0,
-  x = 24,
-  y = 53,
-  sprite = "entities/grass",
-}
-
-destructible{
-  layer = 0,
-  x = 40,
-  y = 29,
-  sprite = "entities/grass",
-}
-
-destructible{
-  layer = 0,
   x = 136,
   y = 29,
   sprite = "entities/grass",
-}
-
-destructible{
-  layer = 0,
-  x = 24,
-  y = 85,
-  sprite = "entities/grass",
-}
-
-destructible{
-  layer = 0,
-  x = 40,
-  y = 109,
-  sprite = "entities/grass",
+  can_be_cut = true,
 }
 
 separator{
@@ -1214,5 +1187,37 @@ pickable{
   y = 45,
   treasure_name = "sword",
   treasure_savegame_variable = "obtained_sword_1",
+}
+
+destructible{
+  layer = 0,
+  x = 40,
+  y = 29,
+  sprite = "entities/grass",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 24,
+  y = 53,
+  sprite = "entities/grass",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 24,
+  y = 85,
+  sprite = "entities/grass",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 40,
+  y = 109,
+  sprite = "entities/grass",
+  can_be_cut = true,
 }
 

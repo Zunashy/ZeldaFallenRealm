@@ -46,6 +46,12 @@ local function trigger_event(map, event)
   elseif event:starts("music_") then
     name = event:sub(7)
     sol.audio.play_music(name)
+  elseif event:starts("setrespawn_") then
+    name = event:sub(12)
+    local e = map:get_entity(name)
+    if e and e:get_type() == "destination" then
+      map:get_game():set_starting_location(map:get_id(), name)
+    end
   end
 end
 

@@ -5,7 +5,7 @@ local item = ...
 
 -- Probability of each item between 0 and 1000.
 local probabilities = {
-  [{ "rupee", 1 }]       =300,    -- 1 bomb.
+  [{ "rupee", 1 }]       =700,    -- 1 bomb.
   [{ "heart", 1 }]       =300
  
 }

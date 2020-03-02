@@ -8920,6 +8920,7 @@ enemy{
   },
   direction = 0,
   breed = "octorok",
+  treasure_name = "random",
 }
 
 enemy{
@@ -8934,6 +8935,7 @@ enemy{
   },
   direction = 0,
   breed = "octorok",
+  treasure_name = "random",
 }
 
 enemy{
@@ -8948,6 +8950,7 @@ enemy{
   },
   direction = 0,
   breed = "octorok",
+  treasure_name = "random",
 }
 
 enemy{
@@ -10350,6 +10353,28 @@ destination{
   layer = 0,
   x = 840,
   y = 453,
+  direction = 1,
+}
+
+sensor{
+  layer = 0,
+  x = 840,
+  y = 693,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "setrespawn_checkpoint",
+    },
+  },
+  width = 16,
+  height = 16,
+}
+
+destination{
+  name = "checkpoint",
+  layer = 0,
+  x = 840,
+  y = 757,
   direction = 1,
 }
 

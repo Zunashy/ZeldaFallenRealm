@@ -7710,6 +7710,7 @@ destination{
 }
 
 teletransporter{
+  name = "beach_to_hut2",
   layer = 1,
   x = 40,
   y = 560,
@@ -7834,7 +7835,7 @@ door{
 }
 
 teletransporter{
-  name = "beach_to_hut02",
+  name = "beach_to_hut01",
   layer = 1,
   x = 232,
   y = 464,
@@ -7844,7 +7845,7 @@ teletransporter{
 }
 
 destination{
-  name = "hut_1",
+  name = "hut_01",
   layer = 1,
   x = 240,
   y = 485,

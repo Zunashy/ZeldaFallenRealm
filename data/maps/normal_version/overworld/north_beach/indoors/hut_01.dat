@@ -413,7 +413,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "normal_version/overworld/north_beach/outdoors",
-  destination = "hut_02",
+  destination = "hut_01",
 }
 
 destination{

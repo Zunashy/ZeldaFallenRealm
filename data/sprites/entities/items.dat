@@ -20,6 +20,13 @@ animation{
   },
 }
 animation{
+  name = "heart",
+  src_image = "items/heart_falling.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+  },
+}
+animation{
   name = "heart_container",
   src_image = "items/heart_quarter.png",
   directions = {
