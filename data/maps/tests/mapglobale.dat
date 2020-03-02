@@ -17367,11 +17367,924 @@ destructible{
 
 tile{
   layer = 1,
-  x = 1752,
+  x = 1760,
   y = 320,
-  width = 432,
-  height = 128,
+  width = 640,
+  height = 192,
   pattern = "29",
+}
+
+tile{
+  layer = 1,
+  x = 2112,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 2128,
+  y = 352,
+  width = 16,
+  height = 32,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 2144,
+  y = 384,
+  width = 32,
+  height = 16,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 2128,
+  y = 400,
+  width = 32,
+  height = 16,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 2176,
+  y = 416,
+  width = 32,
+  height = 16,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 2080,
+  y = 416,
+  width = 48,
+  height = 16,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 2176,
+  y = 352,
+  width = 16,
+  height = 32,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 2192,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 2208,
+  y = 400,
+  width = 32,
+  height = 16,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 2296,
+  y = 400,
+  width = 32,
+  height = 16,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 2312,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 2328,
+  y = 416,
+  width = 32,
+  height = 16,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 2264,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 2032,
+  y = 400,
+  width = 32,
+  height = 16,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 2000,
+  y = 416,
+  width = 32,
+  height = 16,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 2000,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 1968,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 2112,
+  y = 328,
+  width = 16,
+  height = 8,
+  pattern = "127",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2104,
+  y = 336,
+  width = 8,
+  height = 16,
+  pattern = "126",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2128,
+  y = 336,
+  width = 8,
+  height = 8,
+  pattern = "124",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2136,
+  y = 344,
+  width = 8,
+  height = 8,
+  pattern = "127",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2176,
+  y = 344,
+  width = 16,
+  height = 8,
+  pattern = "127",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2112,
+  y = 352,
+  width = 8,
+  height = 8,
+  pattern = "125",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2144,
+  y = 352,
+  width = 8,
+  height = 24,
+  pattern = "124",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2168,
+  y = 352,
+  width = 8,
+  height = 24,
+  pattern = "126",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2192,
+  y = 352,
+  width = 8,
+  height = 8,
+  pattern = "124",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2120,
+  y = 360,
+  width = 8,
+  height = 24,
+  pattern = "126",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2200,
+  y = 360,
+  width = 8,
+  height = 8,
+  pattern = "127",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2208,
+  y = 368,
+  width = 8,
+  height = 16,
+  pattern = "124",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2152,
+  y = 376,
+  width = 16,
+  height = 8,
+  pattern = "127",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2128,
+  y = 384,
+  width = 8,
+  height = 8,
+  pattern = "125",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2184,
+  y = 384,
+  width = 24,
+  height = 8,
+  pattern = "125",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2000,
+  y = 392,
+  width = 16,
+  height = 8,
+  pattern = "127",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2032,
+  y = 392,
+  width = 32,
+  height = 8,
+  pattern = "127",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2128,
+  y = 392,
+  width = 8,
+  height = 8,
+  pattern = "127",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2176,
+  y = 392,
+  width = 8,
+  height = 8,
+  pattern = "124",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2208,
+  y = 392,
+  width = 32,
+  height = 8,
+  pattern = "127",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2296,
+  y = 392,
+  width = 32,
+  height = 8,
+  pattern = "127",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 1992,
+  y = 400,
+  width = 8,
+  height = 32,
+  pattern = "126",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2016,
+  y = 400,
+  width = 8,
+  height = 8,
+  pattern = "124",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2024,
+  y = 400,
+  width = 8,
+  height = 8,
+  pattern = "126",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2064,
+  y = 400,
+  width = 8,
+  height = 16,
+  pattern = "124",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2120,
+  y = 400,
+  width = 8,
+  height = 8,
+  pattern = "126",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2168,
+  y = 400,
+  width = 8,
+  height = 8,
+  pattern = "125",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2200,
+  y = 400,
+  width = 8,
+  height = 8,
+  pattern = "126",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2240,
+  y = 400,
+  width = 8,
+  height = 16,
+  pattern = "124",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2288,
+  y = 400,
+  width = 8,
+  height = 16,
+  pattern = "126",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2328,
+  y = 400,
+  width = 8,
+  height = 8,
+  pattern = "124",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 1968,
+  y = 408,
+  width = 16,
+  height = 8,
+  pattern = "127",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2080,
+  y = 408,
+  width = 40,
+  height = 8,
+  pattern = "127",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2160,
+  y = 408,
+  width = 8,
+  height = 8,
+  pattern = "124",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2176,
+  y = 408,
+  width = 24,
+  height = 8,
+  pattern = "127",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2264,
+  y = 408,
+  width = 16,
+  height = 8,
+  pattern = "127",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2336,
+  y = 408,
+  width = 24,
+  height = 8,
+  pattern = "127",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 1960,
+  y = 416,
+  width = 8,
+  height = 16,
+  pattern = "126",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 1984,
+  y = 416,
+  width = 8,
+  height = 16,
+  pattern = "124",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2040,
+  y = 416,
+  width = 24,
+  height = 8,
+  pattern = "125",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2072,
+  y = 416,
+  width = 8,
+  height = 16,
+  pattern = "126",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2136,
+  y = 416,
+  width = 24,
+  height = 8,
+  pattern = "125",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2168,
+  y = 416,
+  width = 8,
+  height = 16,
+  pattern = "126",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2216,
+  y = 416,
+  width = 24,
+  height = 8,
+  pattern = "125",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2256,
+  y = 416,
+  width = 8,
+  height = 16,
+  pattern = "126",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2280,
+  y = 416,
+  width = 8,
+  height = 16,
+  pattern = "124",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2296,
+  y = 416,
+  width = 8,
+  height = 8,
+  pattern = "125",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2360,
+  y = 416,
+  width = 8,
+  height = 16,
+  pattern = "124",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2032,
+  y = 424,
+  width = 8,
+  height = 8,
+  pattern = "124",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2128,
+  y = 424,
+  width = 8,
+  height = 8,
+  pattern = "124",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2208,
+  y = 424,
+  width = 8,
+  height = 8,
+  pattern = "124",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2304,
+  y = 424,
+  width = 8,
+  height = 8,
+  pattern = "126",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 1968,
+  y = 432,
+  width = 16,
+  height = 8,
+  pattern = "125",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2000,
+  y = 432,
+  width = 32,
+  height = 8,
+  pattern = "125",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2080,
+  y = 432,
+  width = 48,
+  height = 8,
+  pattern = "125",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2176,
+  y = 432,
+  width = 32,
+  height = 8,
+  pattern = "125",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2264,
+  y = 432,
+  width = 16,
+  height = 8,
+  pattern = "125",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2312,
+  y = 432,
+  width = 48,
+  height = 8,
+  pattern = "125",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2128,
+  y = 344,
+  width = 8,
+  height = 8,
+  pattern = "161",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2120,
+  y = 352,
+  width = 8,
+  height = 8,
+  pattern = "160",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2192,
+  y = 360,
+  width = 8,
+  height = 8,
+  pattern = "161",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2144,
+  y = 376,
+  width = 8,
+  height = 8,
+  pattern = "161",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2168,
+  y = 376,
+  width = 8,
+  height = 8,
+  pattern = "162",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2136,
+  y = 384,
+  width = 8,
+  height = 8,
+  pattern = "160",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2176,
+  y = 384,
+  width = 8,
+  height = 8,
+  pattern = "159",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2136,
+  y = 392,
+  width = 8,
+  height = 8,
+  pattern = "162",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2160,
+  y = 400,
+  width = 8,
+  height = 8,
+  pattern = "159",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2016,
+  y = 408,
+  width = 8,
+  height = 8,
+  pattern = "161",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2024,
+  y = 408,
+  width = 8,
+  height = 8,
+  pattern = "162",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2120,
+  y = 408,
+  width = 8,
+  height = 8,
+  pattern = "162",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2200,
+  y = 408,
+  width = 8,
+  height = 8,
+  pattern = "162",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2328,
+  y = 408,
+  width = 8,
+  height = 8,
+  pattern = "161",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2032,
+  y = 416,
+  width = 8,
+  height = 8,
+  pattern = "159",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2128,
+  y = 416,
+  width = 8,
+  height = 8,
+  pattern = "159",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2208,
+  y = 416,
+  width = 8,
+  height = 8,
+  pattern = "159",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 2304,
+  y = 416,
+  width = 8,
+  height = 8,
+  pattern = "160",
+  tileset = "overworld/forest_plain",
 }
 
 tile{
@@ -45998,6 +46911,284 @@ tile{
   width = 8,
   height = 16,
   pattern = "99",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 2384,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "80",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 2240,
+  y = 384,
+  width = 144,
+  height = 16,
+  pattern = "79",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 2224,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "78",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 2384,
+  y = 352,
+  width = 16,
+  height = 32,
+  pattern = "81",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 2224,
+  y = 352,
+  width = 16,
+  height = 32,
+  pattern = "83",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 2240,
+  y = 352,
+  width = 144,
+  height = 32,
+  pattern = "82",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 2312,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "49",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 2368,
+  y = 400,
+  width = 32,
+  height = 32,
+  pattern = "66",
+}
+
+tile{
+  layer = 1,
+  x = 2080,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "80",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 1888,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "78",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 2080,
+  y = 352,
+  width = 16,
+  height = 32,
+  pattern = "81",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 1888,
+  y = 352,
+  width = 16,
+  height = 32,
+  pattern = "83",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 1904,
+  y = 400,
+  width = 32,
+  height = 32,
+  pattern = "66",
+}
+
+tile{
+  layer = 1,
+  x = 1904,
+  y = 384,
+  width = 176,
+  height = 16,
+  pattern = "79",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 1904,
+  y = 352,
+  width = 176,
+  height = 32,
+  pattern = "82",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 2240,
+  y = 336,
+  width = 144,
+  height = 16,
+  pattern = "229_6",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 2240,
+  y = 320,
+  width = 144,
+  height = 16,
+  pattern = "229_2",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 2224,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "229_5",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 2224,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "229",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 2384,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "229_3",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 2384,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "229_4",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 1904,
+  y = 336,
+  width = 176,
+  height = 16,
+  pattern = "229_6",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 1904,
+  y = 320,
+  width = 176,
+  height = 16,
+  pattern = "229_2",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 1888,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "229_5",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 1888,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "229",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 2080,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "229_3",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 2080,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "229_4",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
+  x = 1936,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "53",
   tileset = "overworld/mountain_sea",
 }
 
