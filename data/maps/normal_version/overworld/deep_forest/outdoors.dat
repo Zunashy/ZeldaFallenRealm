@@ -2306,6 +2306,30 @@ tile{
 separator{
   layer = 0,
   x = 0,
+  y = 120,
+  width = 160,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 248,
+  width = 160,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 376,
+  width = 160,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 0,
   y = 504,
   width = 160,
   height = 16,

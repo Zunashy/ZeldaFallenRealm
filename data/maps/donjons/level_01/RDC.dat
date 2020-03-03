@@ -11,6 +11,16 @@ properties{
 
 tile{
   layer = 0,
+  x = 480,
+  y = 344,
+  width = 240,
+  height = 192,
+  pattern = "1",
+  tileset = "Tileset_Donjon_1",
+}
+
+tile{
+  layer = 0,
   x = 0,
   y = 176,
   width = 240,
@@ -5508,16 +5518,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 480,
-  y = 344,
-  width = 240,
-  height = 176,
-  pattern = "1",
-  tileset = "Tileset_Donjon_1",
-}
-
-tile{
-  layer = 0,
   x = 704,
   y = 368,
   width = 16,
@@ -6482,9 +6482,9 @@ tile{
 tile{
   layer = 0,
   x = 624,
-  y = 64,
+  y = 56,
   width = 8,
-  height = 56,
+  height = 64,
   pattern = "7",
 }
 
@@ -8828,20 +8828,6 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 616,
-  y = 829,
-  properties = {
-    {
-      key = "oui",
-      value = "yeet",
-    },
-  },
-  direction = 0,
-  breed = "octorok",
-}
-
-enemy{
-  layer = 0,
   x = 656,
   y = 797,
   properties = {
@@ -8940,21 +8926,6 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 1080,
-  y = 605,
-  properties = {
-    {
-      key = "death_trigger",
-      value = "spawn_chest_rupee_1",
-    },
-  },
-  direction = 0,
-  breed = "octorok",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
   x = 1112,
   y = 589,
   properties = {
@@ -8999,34 +8970,6 @@ enemy{
   layer = 0,
   x = 776,
   y = 973,
-  properties = {
-    {
-      key = "death_trigger",
-      value = "spawn_chest_key_1",
-    },
-  },
-  direction = 0,
-  breed = "octorok",
-}
-
-enemy{
-  layer = 0,
-  x = 792,
-  y = 1005,
-  properties = {
-    {
-      key = "death_trigger",
-      value = "spawn_chest_key_1",
-    },
-  },
-  direction = 0,
-  breed = "octorok",
-}
-
-enemy{
-  layer = 0,
-  x = 808,
-  y = 941,
   properties = {
     {
       key = "death_trigger",
@@ -9109,20 +9052,6 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 40,
-  y = 597,
-  properties = {
-    {
-      key = "death_trigger",
-      value = "door_6",
-    },
-  },
-  direction = 0,
-  breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
   x = 64,
   y = 637,
   properties = {
@@ -9153,30 +9082,6 @@ switch{
 
 enemy{
   layer = 0,
-  x = 632,
-  y = 93,
-  direction = 0,
-  breed = "skeleton_1",
-}
-
-enemy{
-  layer = 0,
-  x = 568,
-  y = 77,
-  direction = 0,
-  breed = "skeleton_1",
-}
-
-enemy{
-  layer = 0,
-  x = 568,
-  y = 109,
-  direction = 0,
-  breed = "skeleton_1",
-}
-
-enemy{
-  layer = 0,
   x = 648,
   y = 125,
   direction = 0,
@@ -9201,26 +9106,10 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 568,
-  y = 1309,
-  direction = 0,
-  breed = "bat",
-}
-
-enemy{
-  layer = 0,
   x = 520,
   y = 1341,
   direction = 0,
   breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
-  x = 648,
-  y = 1357,
-  direction = 0,
-  breed = "octorok",
 }
 
 enemy{
@@ -9295,14 +9184,6 @@ chest{
 
 enemy{
   layer = 0,
-  x = 616,
-  y = 1133,
-  direction = 0,
-  breed = "skeleton_1",
-}
-
-enemy{
-  layer = 0,
   x = 568,
   y = 1165,
   direction = 0,
@@ -9336,20 +9217,6 @@ enemy{
 enemy{
   layer = 0,
   x = 536,
-  y = 509,
-  properties = {
-    {
-      key = "oui",
-      value = "non",
-    },
-  },
-  direction = 0,
-  breed = "octorok",
-}
-
-enemy{
-  layer = 0,
-  x = 536,
   y = 445,
   properties = {
     {
@@ -9377,20 +9244,6 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 664,
-  y = 445,
-  properties = {
-    {
-      key = "oui",
-      value = "non",
-    },
-  },
-  direction = 0,
-  breed = "octorok",
-}
-
-enemy{
-  layer = 0,
   x = 680,
   y = 493,
   direction = 0,
@@ -9399,24 +9252,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 696,
-  y = 429,
-  direction = 0,
-  breed = "bat",
-}
-
-enemy{
-  layer = 0,
   x = 520,
   y = 429,
-  direction = 0,
-  breed = "bat",
-}
-
-enemy{
-  layer = 0,
-  x = 520,
-  y = 493,
   direction = 0,
   breed = "bat",
 }
@@ -9435,14 +9272,6 @@ switch{
   sprite = "entities/switch",
   needs_block = false,
   inactivate_when_leaving = false,
-}
-
-enemy{
-  layer = 0,
-  x = 568,
-  y = 429,
-  direction = 0,
-  breed = "skeleton_1",
 }
 
 enemy{
@@ -9880,32 +9709,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 168,
-  y = 333,
-  direction = 0,
-  breed = "skeleton_1",
-}
-
-enemy{
-  layer = 0,
   x = 200,
   y = 237,
-  direction = 0,
-  breed = "skeleton_1",
-}
-
-enemy{
-  layer = 0,
-  x = 56,
-  y = 253,
-  direction = 0,
-  breed = "skeleton_1",
-}
-
-enemy{
-  layer = 0,
-  x = 104,
-  y = 221,
   direction = 0,
   breed = "skeleton_1",
 }
@@ -9920,36 +9725,8 @@ separator{
 
 enemy{
   layer = 0,
-  x = 1248,
-  y = 293,
-  properties = {
-    {
-      key = "death_trigger",
-      value = "door_5",
-    },
-  },
-  direction = 0,
-  breed = "octorok",
-}
-
-enemy{
-  layer = 0,
   x = 1320,
   y = 285,
-  properties = {
-    {
-      key = "death_trigger",
-      value = "door_5",
-    },
-  },
-  direction = 0,
-  breed = "octorok",
-}
-
-enemy{
-  layer = 0,
-  x = 1400,
-  y = 261,
   properties = {
     {
       key = "death_trigger",
@@ -9972,20 +9749,6 @@ enemy{
   },
   direction = 0,
   breed = "octorok",
-}
-
-enemy{
-  layer = 0,
-  x = 1400,
-  y = 301,
-  properties = {
-    {
-      key = "death_trigger",
-      value = "door_5",
-    },
-  },
-  direction = 0,
-  breed = "blue_slime",
 }
 
 enemy{
@@ -10046,20 +9809,6 @@ enemy{
   layer = 0,
   x = 1384,
   y = 229,
-  properties = {
-    {
-      key = "death_trigger",
-      value = "door_5",
-    },
-  },
-  direction = 0,
-  breed = "skeleton_1",
-}
-
-enemy{
-  layer = 0,
-  x = 1376,
-  y = 325,
   properties = {
     {
       key = "death_trigger",
@@ -10165,34 +9914,6 @@ custom_entity{
   height = 24,
   direction = 0,
   model = "platform_controller",
-}
-
-enemy{
-  layer = 0,
-  x = 64,
-  y = 149,
-  properties = {
-    {
-      key = "death_trigger",
-      value = "spawn_chest_key_2",
-    },
-  },
-  direction = 0,
-  breed = "skeleton_1",
-}
-
-enemy{
-  layer = 0,
-  x = 152,
-  y = 45,
-  properties = {
-    {
-      key = "death_trigger",
-      value = "spawn_chest_key_2",
-    },
-  },
-  direction = 0,
-  breed = "octorok",
 }
 
 door{
