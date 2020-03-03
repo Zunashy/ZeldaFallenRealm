@@ -83,6 +83,7 @@ sprite{ id = "enemies/mini_boss/mr_pers", description = "Miniboss 1 (Mr. Pers)" 
 sprite{ id = "enemies/mini_boss/mr_pers_sword", description = "Mr. Pers's Sword" }
 sprite{ id = "enemies/moblin", description = "enemies/moblin_sword" }
 sprite{ id = "enemies/moblin_sword", description = "enemies/moblin_sword" }
+sprite{ id = "enemies/moblin_sword_word", description = "enemies/moblin_sword_word" }
 sprite{ id = "enemies/octorok", description = "Octorok" }
 sprite{ id = "enemies/oursin", description = "enemies/oursin" }
 sprite{ id = "enemies/pool", description = "Flaque" }
@@ -184,7 +185,10 @@ music{ id = "eduardo/sword_fanfare", description = "Sword fanfare" }
 music{ id = "eduardo/title_screen", description = "Title screen" }
 music{ id = "eduardo/village", description = "Village" }
 music{ id = "eduardo/witch_hut", description = "Witch" }
+music{ id = "maku_trees", description = "maku_trees" }
 music{ id = "miniboss", description = "miniboss" }
+music{ id = "save_select", description = "save_select" }
+music{ id = "title", description = "title" }
 
 sound{ id = "chest_appears", description = "chest_appears" }
 sound{ id = "chest_open", description = "chest_open" }

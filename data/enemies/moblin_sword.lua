@@ -12,7 +12,7 @@ local enemy = ...
 local game = enemy:get_game()
 local map = enemy:get_map()
 local hero = map:get_hero()
-local sprite
+local sprite, sword_sprite
 
 local movement
 local movement_distance = 32
@@ -38,9 +38,12 @@ function enemy:on_created()
   -- like the sprite, the life and the damage.
   --sprite = enemy:create_sprite("enemies/moblin")
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
+  sword_sprite = enemy:create_sprite("enemies/moblin_sword_word")
   sprite:set_direction(math.random(0,3))
-  enemy:set_life(4)
+  sword_sprite:set_direction(sprite:get_direction())
+  enemy:set_life(3)
   enemy:set_damage(2)
+  enemy:set_attack_consequence_sprite(sprite, "sword", 2)
   enemy.detect_state = false
 end
 
@@ -62,6 +65,7 @@ end
 
 function enemy:movement_cycle()
   sprite:set_animation("idle")
+  sword_sprite:set_animation("idle")
   sol.timer.start(enemy,1000,function()
     enemy:move(movement_speed, movement_distance)
     return false
@@ -93,6 +97,8 @@ function enemy:move(speed, distance)
 
   sprite:set_animation("walking")
   sprite:set_direction(mdir)
+  sword_sprite:set_animation("walking")
+  sword_sprite:set_direction(mdir)
 
   movement.on_position_changed = movement_pos_change_callback
   movement.on_obstacle_reached = movement_obstacle_callback
@@ -109,6 +115,7 @@ end
 
 local function target_move_pos_callback(m)
   sprite:set_direction(dir_from_angle(enemy:get_angle(hero)))
+  sword_sprite:set_direction(sprite:get_direction())
 end
 
 function enemy:target_hero()
@@ -123,7 +130,7 @@ function enemy:target_hero()
   m.on_position_changed = target_move_pos_callback
 
   sprite:set_animation("walking")
-
+  sword_sprite:set_animation("walking")
   m:start(enemy)
 end
 

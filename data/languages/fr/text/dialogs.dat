@@ -12,6 +12,13 @@ Vous avez trouvé la grande clé ! Elle permet d'ouvrir la porte du boss.
 }
 
 dialog{
+  id = "_treasure.great_key.2",
+  text = [[
+Vous avez trouvé la Clé du Donjon ! Elle permet d'ouvrir la porte du donjon.
+]],
+}
+
+dialog{
   id = "_treasure.heart",
   text = [[
 ]],
@@ -119,6 +126,13 @@ dialog{
   id = "pnj.overworld.north_beach.deku_tree",
   text = [[
 Link, je t'attendais. C'est ma voix que tu as suivis depuis la mer et te voilà enfin. Un sorcier menace d'anéantir cet endroit et un héros doit l'arrêter. Ce héros, c'est toi. Pour l'heure, dirige toi vers le temple du Trident, à l'ouest. Il vient d'être corrompu et c'est cela qui a causé la tempête.
+]],
+}
+
+dialog{
+  id = "pnj.overworld.north_beach.deku_tree.alt",
+  text = [[
+Allez ! Le temps presse, le temple ne vas pas se restaurer tout seul !
 ]],
 }
 
@@ -270,7 +284,7 @@ Allez, l'épée ne va pas aller se chercher toute seule.
 dialog{
   id = "pnj.village.nielint.barman.sword",
   text = [[
-plage monstres allez hop
+Tu as récupéreé l'épée ? Parfait. L'arbre Jojo se trouve au nord ouest du village, c'est là que tu devrais aller.
 ]],
 }
 

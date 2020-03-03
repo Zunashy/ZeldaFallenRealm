@@ -14,7 +14,11 @@ local game = map:get_game()
 function map:on_started_()
   local deku = self:get_entity("deku_tree")
   function deku:on_interaction()
-    game:start_dialog("pnj.overworld.north_beach.deku_tree", function() game:set_story_state(3) end)  
+    if game:get_story_state() < 3 then
+      game:start_dialog("pnj.overworld.north_beach.deku_tree", function() game:set_story_state(3) end) 
+    else
+      game:start_dialog("pnj.overworld.north_beach.deku_tree.alt")
+    end
   end
 end
 
