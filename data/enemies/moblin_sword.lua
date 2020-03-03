@@ -44,6 +44,7 @@ function enemy:on_created()
   enemy:set_life(3)
   enemy:set_damage(2)
   enemy:set_attack_consequence_sprite(sprite, "sword", 2)
+  enemy:set_attack_consequence_sprite(sword_sprite, "sword", 1)
   enemy.detect_state = false
 end
 
