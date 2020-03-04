@@ -31,7 +31,7 @@ function sol.main:on_started()
   settings_manager:load()
   controls_manager:load()
   sol.audio.preload_sounds()
-  sol.audio.set_sound_volume(20)
+  sol.audio.set_sound_volume(50)
   sol.audio.set_music_volume(10)
   sol.audio.default_music_volume = 10
 

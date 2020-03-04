@@ -5,8 +5,8 @@ local item = ...
 
 -- Probability of each item between 0 and 1000.
 local probabilities = {
-  [{ "rupee", 1 }]       =500,    -- 1 bomb.
-  [{ "heart", 1 }]       =200
+  [{ "heart", 1 }]       =200,    -- 1 bomb.
+  [{ "rupee", 1 }]       =500
  
 }
 
@@ -32,7 +32,7 @@ function item:choose_random_item()
 
   local random = math.random(1000)
   local sum = 0
-
+  print(random)
   for key, probability in pairs(probabilities) do
     sum = sum + probability
     if random < sum then

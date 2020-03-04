@@ -29,6 +29,7 @@ function item:on_using()
 
   dir = gen.vector8_direction(x, y) or (hero:get_sprite():get_direction() * 2)
   hero:start_jumping_oow(dir,32)
+  sol.audio.play_sound("jump")
   item:set_finished()
 end
 

@@ -73,6 +73,7 @@ end
 
 function game_over:on_started()
     self.view_cursor = true
+    sol.audio.play_music("game_over")
 end
 
 function game_over:on_draw(dst_surface)
