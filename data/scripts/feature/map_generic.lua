@@ -64,18 +64,30 @@ end
 --Enable an entity with a specified name on the specified map (or disables it, depending on state)
 function map:enable_entity(name)
   self = self or sol.main.game:get_map()
-  local prop
-  for e in self:get_entities(name) do
-    e:set_enabled(true)
-    prop = e:get_property("spawn_savegame_variable")
-    if prop then
-      self:get_game():set_value(prop, 1)
-    end
+  local prop, force
   
-    prop = e:get_property("spawn_trigger")
-    if prop and not (e:get_type() == "door" and not e:is_closed()) then 
-      parse_event_string(self, prop) 
-    end
+  for e in self:get_entities(name) do
+  
+	force = e:get_property("force_spawn")
+  
+	if force or not (
+	(e:get_type() == "door" and not e:is_closed()) or 
+	(e:get_type() == "enemy" and not  e:exists()) or 
+	(e:get_type() == "chest" and e:is_open())) then
+			
+		
+		
+		e:set_enabled(true)
+		prop = e:get_property("spawn_savegame_variable")
+		if prop then
+		  self:get_game():set_value(prop, 1)
+		end
+	  
+		prop = e:get_property("spawn_trigger")
+		if prop and not (e:get_type() == "door" and not e:is_closed()) then 
+		  parse_event_string(self, prop) 
+		end
+	end
   end
 end
 
@@ -116,7 +128,22 @@ local function activate_trigger_callback(entity)
   end
 end
 
+local function spawn_loot(enemy, item, variant, save_var)
+	if enemy:get_game():get_value(save_var) then return end
+	local x, y, layer = enemy:get_position()
+	
+	enemy:get_map():create_pickable({
+		layer = layer,
+		x = x,
+		y = y,
+		treasure_name = item,
+		treasure_variant = variant,
+		trasure_savegame_variable = save_var,
+	})
+end
+
 local function group_loot_callback(enemy)
+	enemy.dead = true
   local map = enemy:get_map()
   local loot = enemy:get_property("group_loot")  --the item looted (and additional informations) are the value of the property "group loot"
   local last_to_die = true   --considering by default that this enemy is the last alive
@@ -130,12 +157,14 @@ local function group_loot_callback(enemy)
   if not loot then return end
   for e in map:get_entities_by_type("enemy") do
     local o_loot = e:get_property("group_loot")
-    if o_loot and o_loot == loot and not (e == enemy) then  --testing if there is any other enemy, alive, with this group loot
+    if o_loot and o_loot == loot and not (e == enemy) and not e.dead then  --testing if there is any other enemy, alive, with this group loot
       last_to_die = false  
     end
   end
+  
   if last_to_die then  --if no such enemy was found, launches the event
-    enemy:set_treasure(item, variant, save_var)
+    --enemy:register_event("on_dead", function(e)  spawn_loot(e, item, variant, save_var)end)
+	spawn_loot(enemy, item, variant, save_var)
   end
 end
 
@@ -145,7 +174,7 @@ function map:init_enemies_event_triggers()
       e:register_event("on_dead", death_trigger_callback)
     end
     if e:get_property("group_loot") then
-      e:register_event("on_dying", group_loot_callback)
+      e:register_event("on_dead", group_loot_callback)
     end
   end
 end

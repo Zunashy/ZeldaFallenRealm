@@ -855,3 +855,20 @@ destination{
   direction = 1,
 }
 
+enemy{
+  layer = 0,
+  x = 120,
+  y = 37,
+  direction = 0,
+  breed = "bat",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 72,
+  y = 77,
+  direction = 0,
+  breed = "bat",
+}
+

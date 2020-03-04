@@ -11,7 +11,15 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
+function map:on_started_()
+	self:init_activate_triggers()
+	local sensor = map:get_entity("sensor_octo")
+	function sensor:on_activated()
+		if game:has_item("sword") then
+			map:enable_entity("octo")
+		end
+	end
+	
 end
 
 -- Event called after the opening transition effect of the map,

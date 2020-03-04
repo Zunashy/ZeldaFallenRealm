@@ -1221,3 +1221,23 @@ destructible{
   can_be_cut = true,
 }
 
+enemy{
+  name = "octo",
+  layer = 0,
+  x = 48,
+  y = 69,
+  enabled_at_start = false,
+  direction = 0,
+  breed = "octorok",
+  savegame_variable = "wind_wood_octorock",
+}
+
+sensor{
+  name = "sensor_octo",
+  layer = 0,
+  x = 168,
+  y = 69,
+  width = 16,
+  height = 16,
+}
+

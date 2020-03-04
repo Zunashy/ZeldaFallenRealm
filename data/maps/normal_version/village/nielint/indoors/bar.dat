@@ -7,6 +7,7 @@ properties{
   max_layer = 2,
   world = "indoors",
   tileset = "Grotte",
+  music = "bar",
 }
 
 tile{
@@ -257,16 +258,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "37",
-  tileset = "House",
-}
-
-tile{
-  layer = 0,
-  x = 200,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "75",
   tileset = "House",
 }
 

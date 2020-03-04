@@ -464,6 +464,7 @@ chest{
   x = 264,
   y = 29,
   treasure_name = "heart_quarter",
+  treasure_savegame_variable = "north_beach_chest_heart_1",
   sprite = "entities/chest",
 }
 

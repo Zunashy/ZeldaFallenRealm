@@ -118,7 +118,7 @@ et taillez en pièces tout ce qui vous tombe sous la main !
 dialog{
   id = "pnj.end",
   text = [[
-Merci à toi d'avoir joué jusuqu'ici ! C'est ici que s'achève la partie terminée, ce qui suit est encore en développement.
+Merci à toi d'avoir joué jusqu'ici ! C'est ici que s'achève la partie terminée, ce qui suit est encore en développement.
 ]],
 }
 
@@ -139,7 +139,7 @@ Allez ! Le temps presse, le temple ne vas pas se restaurer tout seul !
 dialog{
   id = "pnj.overworld.north_beach.guard",
   text = [[
-Halte ! La plage est infestée de monstre depuis tout à l'heure, même avec ton épée tu ne fais pas le poids. Les monstres vont et viennent ici, essaie de revenir plus tard.
+Halte ! La plage est infestée de monstres depuis tout à l'heure, même avec ton épée tu ne fais pas le poids. Les monstres vont et viennent ici, essaie de revenir plus tard.
 ]],
 }
 
@@ -201,6 +201,13 @@ je m'occupe de la pelouse...
 Si j'avais une épée, je
 couperais ces herbes
 vite fait bien fait !
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.C_man",
+  text = [[
+...
 ]],
 }
 
@@ -349,6 +356,13 @@ dialog{
   text = [[
 Je livre le courrier depuis des années, mais il y'a une vieille maison au fond du village qui ne reçoit jamais rien... 
 A chaque fois que je passe devant, j'entends du bruit à l'intérieur. Je me demande ce qui se passe là dedans.
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.indoors.shop_clerk",
+  text = [[
+Bonjour, voyageur ! Malheureusement nous n'avons rien à vendre pour le moment. Peut être dans une prochaine version !
 ]],
 }
 

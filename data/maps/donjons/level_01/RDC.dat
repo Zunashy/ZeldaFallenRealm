@@ -8824,6 +8824,7 @@ enemy{
   y = 749,
   direction = 0,
   breed = "octorok",
+  treasure_name = "random",
 }
 
 enemy{
@@ -8838,6 +8839,7 @@ enemy{
   },
   direction = 0,
   breed = "octorok",
+  treasure_name = "random",
 }
 
 enemy{
@@ -8852,6 +8854,7 @@ enemy{
   },
   direction = 0,
   breed = "octorok",
+  treasure_name = "random",
 }
 
 enemy{
@@ -8868,30 +8871,7 @@ enemy{
   y = 957,
   direction = 0,
   breed = "bat",
-}
-
-enemy{
-  layer = 0,
-  x = 616,
-  y = 957,
-  direction = 0,
-  breed = "bat",
-}
-
-enemy{
-  layer = 0,
-  x = 616,
-  y = 989,
-  direction = 0,
-  breed = "bat",
-}
-
-enemy{
-  layer = 0,
-  x = 584,
-  y = 989,
-  direction = 0,
-  breed = "bat",
+  treasure_name = "random",
 }
 
 enemy{
@@ -8950,6 +8930,7 @@ enemy{
   },
   direction = 0,
   breed = "blue_slime",
+  treasure_name = "random",
 }
 
 enemy{
@@ -8964,6 +8945,7 @@ enemy{
   },
   direction = 0,
   breed = "blue_slime",
+  treasure_name = "random",
 }
 
 enemy{
@@ -8978,34 +8960,7 @@ enemy{
   },
   direction = 0,
   breed = "octorok",
-}
-
-enemy{
-  layer = 0,
-  x = 880,
-  y = 989,
-  properties = {
-    {
-      key = "death_trigger",
-      value = "spawn_chest_key_1",
-    },
-  },
-  direction = 0,
-  breed = "octorok",
-}
-
-enemy{
-  layer = 0,
-  x = 888,
-  y = 941,
-  properties = {
-    {
-      key = "death_trigger",
-      value = "spawn_chest_key_1",
-    },
-  },
-  direction = 0,
-  breed = "octorok",
+  treasure_name = "random",
 }
 
 enemy{
@@ -9020,6 +8975,7 @@ enemy{
   },
   direction = 0,
   breed = "skeleton_1",
+  treasure_name = "random",
 }
 
 enemy{
@@ -9034,6 +8990,7 @@ enemy{
   },
   direction = 0,
   breed = "octorok",
+  treasure_name = "random",
 }
 
 enemy{
@@ -9048,6 +9005,7 @@ enemy{
   },
   direction = 0,
   breed = "moblin_sword",
+  treasure_name = "random",
 }
 
 enemy{
@@ -9062,6 +9020,7 @@ enemy{
   },
   direction = 0,
   breed = "octorok",
+  treasure_name = "random",
 }
 
 switch{
@@ -9086,6 +9045,7 @@ enemy{
   y = 125,
   direction = 0,
   breed = "skeleton_1",
+  treasure_name = "random",
 }
 
 enemy{
@@ -9094,6 +9054,7 @@ enemy{
   y = 125,
   direction = 0,
   breed = "skeleton_1",
+  treasure_name = "random",
 }
 
 enemy{
@@ -9102,6 +9063,7 @@ enemy{
   y = 1309,
   direction = 0,
   breed = "bat",
+  treasure_name = "random",
 }
 
 enemy{
@@ -9110,6 +9072,7 @@ enemy{
   y = 1341,
   direction = 0,
   breed = "moblin_sword",
+  treasure_name = "random",
 }
 
 enemy{
@@ -9118,6 +9081,7 @@ enemy{
   y = 1261,
   direction = 0,
   breed = "octorok",
+  treasure_name = "random",
 }
 
 separator{
@@ -9188,6 +9152,7 @@ enemy{
   y = 1165,
   direction = 0,
   breed = "skeleton_1",
+  treasure_name = "random",
 }
 
 enemy{
@@ -9196,6 +9161,7 @@ enemy{
   y = 1117,
   direction = 0,
   breed = "skeleton_1",
+  treasure_name = "random",
 }
 
 enemy{
@@ -9204,6 +9170,7 @@ enemy{
   y = 381,
   direction = 0,
   breed = "skeleton_1",
+  treasure_name = "random",
 }
 
 enemy{
@@ -9212,6 +9179,7 @@ enemy{
   y = 509,
   direction = 0,
   breed = "skeleton_1",
+  treasure_name = "random",
 }
 
 enemy{
@@ -9226,6 +9194,7 @@ enemy{
   },
   direction = 0,
   breed = "octorok",
+  treasure_name = "random",
 }
 
 enemy{
@@ -9240,6 +9209,7 @@ enemy{
   },
   direction = 0,
   breed = "octorok",
+  treasure_name = "random",
 }
 
 enemy{
@@ -9248,6 +9218,7 @@ enemy{
   y = 493,
   direction = 0,
   breed = "bat",
+  treasure_name = "random",
 }
 
 enemy{
@@ -9256,6 +9227,7 @@ enemy{
   y = 429,
   direction = 0,
   breed = "bat",
+  treasure_name = "random",
 }
 
 switch{
@@ -9279,7 +9251,8 @@ enemy{
   x = 632,
   y = 429,
   direction = 0,
-  breed = "skeleton_1",
+  breed = "bat",
+  treasure_name = "random",
 }
 
 enemy{
@@ -9705,6 +9678,7 @@ enemy{
   y = 285,
   direction = 0,
   breed = "skeleton_1",
+  treasure_name = "random",
 }
 
 enemy{
@@ -9713,6 +9687,7 @@ enemy{
   y = 237,
   direction = 0,
   breed = "skeleton_1",
+  treasure_name = "random",
 }
 
 separator{
@@ -9735,6 +9710,7 @@ enemy{
   },
   direction = 0,
   breed = "octorok",
+  treasure_name = "random",
 }
 
 enemy{
@@ -9749,6 +9725,7 @@ enemy{
   },
   direction = 0,
   breed = "octorok",
+  treasure_name = "random",
 }
 
 enemy{
@@ -9763,6 +9740,7 @@ enemy{
   },
   direction = 0,
   breed = "skeleton_1",
+  treasure_name = "random",
 }
 
 door{
@@ -9817,6 +9795,7 @@ enemy{
   },
   direction = 0,
   breed = "skeleton_1",
+  treasure_name = "random",
 }
 
 door{
@@ -9861,6 +9840,7 @@ enemy{
   },
   direction = 0,
   breed = "moblin_sword",
+  treasure_name = "random",
 }
 
 custom_entity{
@@ -10061,15 +10041,6 @@ custom_entity{
 }
 
 destination{
-  name = "destination",
-  layer = 0,
-  x = 840,
-  y = 1397,
-  direction = 1,
-  default = true,
-}
-
-destination{
   name = "out_b_2",
   layer = 0,
   x = 840,
@@ -10097,5 +10068,124 @@ destination{
   x = 840,
   y = 757,
   direction = 1,
+}
+
+jumper{
+  layer = 0,
+  x = 568,
+  y = 1344,
+  width = 8,
+  height = 16,
+  direction = 4,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 624,
+  y = 1344,
+  width = 8,
+  height = 16,
+  direction = 0,
+  jump_length = 40,
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 840,
+  y = 1397,
+  direction = 1,
+  default = true,
+}
+
+enemy{
+  layer = 0,
+  x = 880,
+  y = 997,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_key_1",
+    },
+  },
+  direction = 0,
+  breed = "octorok",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 888,
+  y = 949,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_key_1",
+    },
+  },
+  direction = 0,
+  breed = "octorok",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 640,
+  y = 1261,
+  direction = 2,
+  breed = "octorok",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 584,
+  y = 989,
+  direction = 0,
+  breed = "bat",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 616,
+  y = 957,
+  direction = 0,
+  breed = "bat",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 616,
+  y = 989,
+  direction = 0,
+  breed = "bat",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 48,
+  y = 605,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_6",
+    },
+  },
+  direction = 0,
+  breed = "moblin_sword",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 600,
+  y = 93,
+  direction = 0,
+  breed = "skeleton_1",
+  treasure_name = "random",
 }
 

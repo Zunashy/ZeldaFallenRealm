@@ -6534,6 +6534,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/14",
+  behavior = "dialog#pnj.village.nielint.C_man",
 }
 
 destructible{
@@ -7381,7 +7382,7 @@ destination{
   layer = 1,
   x = 216,
   y = 341,
-  direction = 1,
+  direction = 3,
 }
 
 destination{

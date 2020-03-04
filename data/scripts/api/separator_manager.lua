@@ -18,6 +18,10 @@ function separator_manager:manage_map(map, default)
   local entities_place = {}
   local game = map:get_game()
 
+  function map:get_stored_enemies()
+	return enemy_places
+  end
+
   -- Function called when a separator was just taken.
   local function separator_on_activated(separator)
 

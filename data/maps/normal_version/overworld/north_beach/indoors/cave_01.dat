@@ -330,6 +330,16 @@ chest{
   y = 29,
   treasure_name = "rupee",
   treasure_variant = 2,
+  treasure_savegame_variable = "north_beach_chest_rupee_1",
   sprite = "entities/chest",
+}
+
+enemy{
+  layer = 0,
+  x = 80,
+  y = 61,
+  direction = 0,
+  breed = "bat",
+  treasure_name = "random",
 }
 

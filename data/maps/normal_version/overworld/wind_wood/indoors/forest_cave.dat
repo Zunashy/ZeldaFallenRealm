@@ -438,6 +438,7 @@ chest{
   y = 29,
   treasure_name = "rupee",
   treasure_variant = 3,
+  treasure_savegame_variable = "wind_wood_chest_rupee_1",
   sprite = "entities/chest",
 }
 
