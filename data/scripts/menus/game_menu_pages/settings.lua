@@ -92,10 +92,6 @@ settings_menu.buttons = {
                 button.menu.assets:draw_region((view - 1) * 10, 0, 10, 13, button.surface, pos + 7, 0)
             end
         end
-    },
-    {
-        name = "jsp",
-        effect = function() end,
     }
 }
 

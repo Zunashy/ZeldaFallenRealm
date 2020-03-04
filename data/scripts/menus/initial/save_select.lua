@@ -263,7 +263,7 @@ function save_select:on_started()
     if not self.saves_loaded then self:load_saves() end
 
     self:true_rebuild_surface()
-
+    sol.audio.play_music("save_select")
 end
 
 return save_select

@@ -24,6 +24,7 @@ function title_screen:on_started()
         title_screen.view_cursor = not title_screen.view_cursor
         return true
     end)
+    sol.audio.play_music("title")
 end
 
 function title_screen:on_draw(dst_surf)
