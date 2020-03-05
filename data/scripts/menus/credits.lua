@@ -17,6 +17,10 @@ local credits_menu = {
         "    Phoenix",
         "    Nillan",
         "    TwilCynder",
+        "Special Thanks",
+        "    Anarith",
+        "    Pure Zelda-",
+        "    Classic",
         "Realise avec le ",
         "moteur Solarus"
     }, 

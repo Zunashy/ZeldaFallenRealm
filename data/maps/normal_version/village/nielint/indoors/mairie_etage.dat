@@ -6,8 +6,8 @@ properties{
   min_layer = 0,
   max_layer = 2,
   floor = 1,
-  tileset = "House",
-  music = "Zelda Original/Houses",
+  tileset = "house",
+  music = "houses",
 }
 
 tile{

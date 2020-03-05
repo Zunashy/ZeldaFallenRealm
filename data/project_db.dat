@@ -186,6 +186,8 @@ music{ id = "eduardo/sword_fanfare", description = "Sword fanfare" }
 music{ id = "eduardo/title_screen", description = "Title screen" }
 music{ id = "eduardo/village", description = "Village" }
 music{ id = "eduardo/witch_hut", description = "Witch" }
+music{ id = "game_over", description = "game_over" }
+music{ id = "houses", description = "houses" }
 music{ id = "maku_trees", description = "maku_trees" }
 music{ id = "miniboss", description = "miniboss" }
 music{ id = "save_select", description = "save_select" }
