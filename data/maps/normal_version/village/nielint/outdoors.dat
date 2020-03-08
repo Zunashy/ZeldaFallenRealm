@@ -6433,16 +6433,6 @@ npc{
 
 npc{
   layer = 1,
-  x = 632,
-  y = 333,
-  direction = 3,
-  subtype = 1,
-  sprite = "pnj/nielint/14",
-  behavior = "dialog#pnj.village.nielint.exit_guards",
-}
-
-npc{
-  layer = 1,
   x = 24,
   y = 461,
   direction = 3,
@@ -7846,6 +7836,16 @@ destructible{
   y = 301,
   sprite = "entities/grass",
   can_be_cut = true,
+}
+
+npc{
+  layer = 1,
+  x = 632,
+  y = 333,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/14",
+  behavior = "dialog#pnj.village.nielint.exit_guards",
 }
 
 tile{
