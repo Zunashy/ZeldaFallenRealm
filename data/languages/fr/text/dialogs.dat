@@ -125,7 +125,7 @@ Merci à toi d'avoir joué jusqu'ici ! C'est ici que s'achève la partie termin�
 dialog{
   id = "pnj.overworld.north_beach.deku_tree",
   text = [[
-Link, je t'attendais. C'est ma voix que tu as suivis depuis la mer et te voilà enfin. Un sorcier menace d'anéantir cet endroit et un héros doit l'arrêter. Ce héros, c'est toi. Pour l'heure, dirige toi vers le temple du Trident, à l'ouest. Il vient d'être corrompu et c'est cela qui a causé la tempête.
+Link, je t'attendais. C'est ma voix que tu as suivi depuis la mer, et te voilà enfin. Un sorcier menace d'anéantir cet endroit et un héros doit l'arrêter. Ce héros, c'est toi. Pour l'heure, dirige-toi vers le temple du Trident, à l'ouest. Il vient d'être corrompu et c'est cela qui a causé la tempête.
 ]],
 }
 
@@ -147,7 +147,7 @@ dialog{
   id = "pnj.overworld.north_beach.indoors.old_man_map",
   text = [[
 Salut p'tit gars ! Tu n'aurais pas trouvé une carte en te baladant sur la plage par hasard ? 
-Quel genre de carte ? Une carte aux trésors bien sûr ! Si jamais tu en trouves une, n'hésites pas à me la rapporter.
+Quel genre de carte ? Une carte au trésor bien sur ! Si jamais tu en trouves une, n'hésite pas à me la rapporter.
 ]],
 }
 
@@ -183,7 +183,7 @@ dialog{
 Tiens, cela faisait longtemps que je n'avais pas eu de visiteurs... 
 De nos jours, cette forêt est aussi déserte que le sommet de mon crâne. 
 Héhé. Je suis bien content d'avoir un peu de compagnie... 
-Cet endroit était autrefois paisible et débordant de vie, mais les choses ont bien changées depuis la guerre qui a eu lieu il y'a bien longtemps. 
+Cet endroit était autrefois paisible et débordant de vie, mais les choses ont bien changé depuis la guerre qui a eu lieu il y a bien longtemps. 
 Tous les ossements qui jonchent le sol de la forêt sont les vestiges d'une terrible bataille... 
 J'y ai perdu de nombreux êtres chers qui veillaient sur moi lorsque j'étais enfant. 
 Depuis, c'est moi qui veille sur eux. 
@@ -276,8 +276,8 @@ dialog{
   id = "pnj.village.nielint.barman.awake1",
   position = "1",
   text = [[
-Ah, t'es enfin réveillé, d'habitude, les gens ne mettent qu'une nuit pour ça. Quoi, tu ne sais pas où t'es ? Bah on est pas sorti de l'auberge, enfin, surtout moi. Tu es dans le village de Nielint, dans Elrint.
-... Mh ? La tempête n'était pas naturelle ? C'est probable, un sorcier a jugé bon de semer le chaos un peu partout, et comme pour ajouter au chaos, un royaume a déclaré la guerre aux autres. La guerre est terminée mais le sorcier lui n'a pas décidé de s'arrêter. Tu veux y faire quelque chose ? Tu devrais voir l'arbre Jojo, au nord-ouest d'ici, mais le chemin est bloqué par des buissons, trouve de quoi débroussailler dans la forêt au sud d'ici, nous n'avons ni le temps ni les moyens de faire quoi que ce soit.
+Ah, t'es enfin réveillé, d'habitude les gens ne mettent qu'une nuit pour ça. Quoi, tu ne sais pas où t'es ? Bah on est pas sorti de l'auberge, enfin, surtout moi. Tu es dans le village de Nielint, dans Elrint.
+... Mh ? La tempête n'était pas naturelle ? C'est probable, un sorcier a jugé bon de semer le chaos un peu partout, et comme pour ajouter au désordre, un royaume a déclaré la guerre aux autres. La guerre est terminée mais le sorcier lui n'a pas décidé de s'arrêter. Tu veux y faire quelque chose ? Tu devrais voir l'arbre Jojo, au nord-ouest d'ici, mais le chemin est bloqué par des buissons, trouve de quoi débroussailler dans la forêt au sud d'ici, nous n'avons ni le temps ni les moyens de faire quoi que ce soit.
 ]],
 }
 
@@ -323,14 +323,14 @@ dialog{
   text = [[
 Mon papa c'est le meilleur guerrier du monde, et ma maman, elle sait faire de la magie ! 
 Mais ma maman ne peut pas s'occuper de moi en ce moment... 
-Papa dit qu'elle à des choses à faire et que c'est trop dangereux pour moi de rester avec elle, alors c'est lui qui prends soin de moi en attendant.
+Papa dit qu'elle a des choses à faire et que c'est trop dangereux pour moi de rester avec elle, alors c'est lui qui prends soin de moi en attendant.
 ]],
 }
 
 dialog{
   id = "pnj.village.nielint.indoors.lone_man",
   text = [[
-Dis, tu connais le royaume des Zunas ? Il y'a des années, ils ont essayé d'annexer tous les autres peuples par la force. 
+Dis, tu connais le royaume des Zunas ? Il y a des années, ils ont essayé d'annexer tous les autres peuples par la force. 
 Il parait qu'ils voulaient dominer le monde ! C'est fou non ?
 ]],
 }
@@ -354,7 +354,7 @@ Il parait qu'ils ont égaré mon dossier... Ah, l'administration !
 dialog{
   id = "pnj.village.nielint.indoors.postman",
   text = [[
-Je livre le courrier depuis des années, mais il y'a une vieille maison au fond du village qui ne reçoit jamais rien... 
+Je livre le courrier depuis des années, mais il y a une vieille maison au fond du village qui ne reçoit jamais rien... 
 A chaque fois que je passe devant, j'entends du bruit à l'intérieur. Je me demande ce qui se passe là dedans.
 ]],
 }
