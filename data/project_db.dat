@@ -13,8 +13,8 @@ map{ id = "normal_version/overworld/north_beach/indoors/hut_01", description = "
 map{ id = "normal_version/overworld/north_beach/indoors/hut_02" }
 map{ id = "normal_version/overworld/north_beach/indoors/tree_house" }
 map{ id = "normal_version/overworld/north_beach/outdoors", description = "North Beach Outdoors" }
-map{ id = "normal_version/overworld/plain/outdoors_1" }
-map{ id = "normal_version/overworld/plain/outdoors_2", description = "outdoors" }
+map{ id = "normal_version/overworld/plain/outdoors_1", description = "plain 1" }
+map{ id = "normal_version/overworld/plain/outdoors_2", description = "plain 2" }
 map{ id = "normal_version/overworld/wind_wood/forest_outdoor", description = "Wind Wood Forest" }
 map{ id = "normal_version/overworld/wind_wood/indoors/forest_cave", description = "Cave Wind Wood 1" }
 map{ id = "normal_version/overworld/wind_wood/indoors/house", description = "Wind Wood House" }

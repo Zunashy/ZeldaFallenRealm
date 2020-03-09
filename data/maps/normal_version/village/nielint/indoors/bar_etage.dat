@@ -6,6 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "House",
+  music = "bar",
 }
 
 tile{
@@ -837,5 +838,21 @@ teletransporter{
   height = 16,
   destination_map = "normal_version/village/nielint/indoors/bar",
   destination = "Rdc",
+}
+
+separator{
+  layer = 0,
+  x = 312,
+  y = 0,
+  width = 16,
+  height = 128,
+}
+
+separator{
+  layer = 0,
+  x = 152,
+  y = 0,
+  width = 16,
+  height = 128,
 }
 
