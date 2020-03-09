@@ -13,16 +13,17 @@ map{ id = "normal_version/overworld/north_beach/indoors/hut_01", description = "
 map{ id = "normal_version/overworld/north_beach/indoors/hut_02" }
 map{ id = "normal_version/overworld/north_beach/indoors/tree_house" }
 map{ id = "normal_version/overworld/north_beach/outdoors", description = "North Beach Outdoors" }
-map{ id = "normal_version/overworld/plain/outdoors_1" }
-map{ id = "normal_version/overworld/plain/outdoors_2", description = "outdoors" }
+map{ id = "normal_version/overworld/plain/outdoors_1", description = "plain 1" }
+map{ id = "normal_version/overworld/plain/outdoors_2", description = "plain 2" }
 map{ id = "normal_version/overworld/wind_wood/forest_outdoor", description = "Wind Wood Forest" }
 map{ id = "normal_version/overworld/wind_wood/indoors/forest_cave", description = "cave Wind Wood 1" }
 map{ id = "normal_version/overworld/wind_wood/indoors/house", description = "Wind Wood house" }
 map{ id = "normal_version/overworld/wind_wood/indoors/sword_cave", description = "sword_cave" }
 map{ id = "normal_version/village/nielint/indoors/bar", description = "bar" }
-map{ id = "normal_version/village/nielint/indoors/house_01", description = "Nielint Village house 01" }
-map{ id = "normal_version/village/nielint/indoors/house_02", description = "Nielint Village house 02" }
-map{ id = "normal_version/village/nielint/indoors/house_03", description = "Nielint Village house 03" }
+map{ id = "normal_version/village/nielint/indoors/bar_etage", description = "bar_etage" }
+map{ id = "normal_version/village/nielint/indoors/house_01", description = "Nielint Village House 01" }
+map{ id = "normal_version/village/nielint/indoors/house_02", description = "Nielint Village House 02" }
+map{ id = "normal_version/village/nielint/indoors/house_03", description = "Nielint Village House 03" }
 map{ id = "normal_version/village/nielint/indoors/house_04", description = "villages/nielint_village/nielint_house_4" }
 map{ id = "normal_version/village/nielint/indoors/mairie_etage", description = "Nielint Village Mairie Etage" }
 map{ id = "normal_version/village/nielint/indoors/mairie_rdc", description = "Nielint Village Mairie RDC" }

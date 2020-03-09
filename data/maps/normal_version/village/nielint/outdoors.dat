@@ -150,6 +150,24 @@ tile{
 }
 
 tile{
+  layer = 0,
+  x = 640,
+  y = 320,
+  width = 16,
+  height = 64,
+  pattern = "88",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 256,
+  width = 16,
+  height = 64,
+  pattern = "88",
+}
+
+tile{
   layer = 1,
   x = 0,
   y = 208,

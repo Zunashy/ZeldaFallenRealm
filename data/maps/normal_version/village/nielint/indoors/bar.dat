@@ -902,6 +902,16 @@ tile{
   tileset = "house",
 }
 
+tile{
+  layer = 0,
+  x = 200,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "76",
+  tileset = "House",
+}
+
 separator{
   name = "separator_1",
   layer = 0,
@@ -969,5 +979,23 @@ destination{
   x = 40,
   y = 45,
   direction = 1,
+}
+
+destination{
+  name = "Rdc",
+  layer = 0,
+  x = 208,
+  y = 21,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 200,
+  y = 0,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/village/nielint/indoors/bar_etage",
+  destination = "etage",
 }
 
