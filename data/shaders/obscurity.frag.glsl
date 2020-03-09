@@ -18,7 +18,7 @@ precision mediump float;
 uniform sampler2D sol_texture;
 uniform bool sol_vcolor_only;
 uniform bool sol_alpha_mult;
-COMPAT_VARYING vec2 sol_vtex_coord;
+COMPAT_VARYING vec2 sol_vtex_coord[32];
 COMPAT_VARYING vec4 sol_vcolor;
 
 uniform vec3 lights;
@@ -33,12 +33,17 @@ void main()
     
     vec3 col = tex_color.xyz;
 
-    if (lights_n > 0) {
-      vec2 d = gl_FragCoord.xy - lights.xy;
-      float dist = sqrt(d.x * d.x + d.y * d.y);
-      if (dist < lights.z) {
-        level += (lights.z - dist) / 10.0;
+    for (int i = 0; j < lights_n; ++i)
+          vec2 d = gl_FragCoord.xy - lights.xy;
+          float dist = sqrt(d.x * d.x + d.y * d.y);
+          if (dist < lights.z) {
+          level += (lights.z - dist) / 10.0;
       }
+    }
+
+
+    if (lights_n > 0) {
+
     }
 
     col -= col / level;

@@ -36,11 +36,11 @@ function game_meta:on_draw(dst_surf)
       x, y = x - cx, y - cy
       
       if x > 0 and x < cw and y > 0 and y < ch then
-        lights_pos[#lights_pos + 1] = {x, y, light.power or 50}
+        lights_pos[#lights_pos + 1] = {x, y, light.power or 30}
       end
     end
-    self.obscurity_shader:set_uniform("lights", lights_pos[1])
-    self.obscurity_shader:set_uniform("lights_n", 1)
+    self.obscurity_shader:set_uniform("lights", lights_pos)
+    self.obscurity_shader:set_uniform("lights_n", #lights_pos)
   end
 
   if self.game_over_link_sprite then
@@ -57,7 +57,7 @@ function game_meta:on_started()
     self.started = true
   end
 
-  self.obscurity_shader = sol.shader.create("obscurity")
+  self.obscurity_shader = sol.shader.create("chroma")
 end
 
 function game_meta:on_finished()
