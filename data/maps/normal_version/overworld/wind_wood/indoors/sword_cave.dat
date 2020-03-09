@@ -11,11 +11,21 @@ properties{
 
 tile{
   layer = 0,
-  x = 0,
+  x = 16,
   y = 16,
-  width = 464,
-  height = 112,
+  width = 144,
+  height = 96,
   pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 16,
+  width = 304,
+  height = 96,
+  pattern = "29",
+  tileset = "overworld/forest_plain",
 }
 
 tile{
@@ -24,7 +34,7 @@ tile{
   y = 56,
   width = 16,
   height = 16,
-  pattern = "26",
+  pattern = "31",
 }
 
 tile{
@@ -110,7 +120,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 32,
+  x = 128,
   y = 80,
   width = 16,
   height = 16,
@@ -254,7 +264,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 128,
+  x = 56,
   y = 96,
   width = 16,
   height = 16,
@@ -263,7 +273,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 64,
+  x = 16,
   y = 16,
   width = 16,
   height = 16,
@@ -272,7 +282,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 80,
+  x = 16,
   y = 96,
   width = 16,
   height = 16,
@@ -281,40 +291,20 @@ tile{
 
 tile{
   layer = 0,
-  x = 112,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = "17",
-}
-
-tile{
-  layer = 0,
-  x = 112,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "17",
-}
-
-tile{
-  layer = 0,
-  x = 64,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "13",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 0,
-  x = 96,
+  x = 128,
   y = 16,
   width = 16,
   height = 16,
-  pattern = "13",
-  tileset = "overworld/forest_plain",
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "17",
 }
 
 tile{
@@ -538,71 +528,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 256,
-  y = 16,
-  width = 96,
-  height = 96,
-  pattern = "29",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 0,
-  x = 320,
-  y = 56,
-  width = 16,
-  height = 16,
-  pattern = "29",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 0,
-  x = 304,
-  y = 96,
-  width = 160,
-  height = 16,
-  pattern = "29",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 0,
-  x = 320,
-  y = 80,
-  width = 144,
-  height = 16,
-  pattern = "29",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 0,
-  x = 336,
-  y = 48,
-  width = 16,
-  height = 32,
-  pattern = "29",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 0,
-  x = 432,
-  y = 16,
-  width = 32,
-  height = 64,
-  pattern = "29",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 0,
   x = 432,
   y = 16,
   width = 32,
   height = 32,
-  pattern = "72",
+  pattern = "141",
   tileset = "overworld/forest_plain",
 }
 
@@ -612,7 +542,7 @@ tile{
   y = 16,
   width = 32,
   height = 32,
-  pattern = "72",
+  pattern = "141",
   tileset = "overworld/forest_plain",
 }
 
@@ -848,51 +778,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 200,
-  y = 72,
-  width = 32,
-  height = 32,
-  pattern = "73",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 0,
-  x = 184,
-  y = 80,
-  width = 32,
-  height = 32,
-  pattern = "72",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 0,
-  x = 216,
-  y = 80,
-  width = 32,
-  height = 32,
-  pattern = "74",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 0,
   x = 184,
   y = 32,
   width = 64,
   height = 16,
   pattern = "42",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 0,
-  x = 200,
-  y = 16,
-  width = 32,
-  height = 32,
-  pattern = "73",
   tileset = "overworld/forest_plain",
 }
 
@@ -918,26 +808,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 184,
-  y = 24,
-  width = 32,
-  height = 32,
-  pattern = "72",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 0,
-  x = 216,
-  y = 24,
-  width = 32,
-  height = 32,
-  pattern = "74",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 0,
   x = 192,
   y = 40,
   width = 48,
@@ -1003,46 +873,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "47",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 0,
-  x = 256,
-  y = 88,
-  width = 16,
-  height = 16,
-  pattern = "36",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 0,
-  x = 272,
-  y = 40,
-  width = 16,
-  height = 16,
-  pattern = "38",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 0,
-  x = 288,
-  y = 56,
-  width = 16,
-  height = 16,
-  pattern = "37",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 0,
-  x = 256,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "29",
   tileset = "overworld/forest_plain",
 }
 
@@ -1128,27 +958,101 @@ tile{
 
 tile{
   layer = 0,
-  x = 272,
-  y = 72,
-  width = 16,
-  height = 16,
-  pattern = "36",
+  x = 184,
+  y = 16,
+  width = 32,
+  height = 32,
+  pattern = "151",
   tileset = "overworld/forest_plain",
 }
 
 tile{
   layer = 0,
-  x = 256,
-  y = 24,
+  x = 216,
+  y = 16,
+  width = 32,
+  height = 32,
+  pattern = "151",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 72,
+  width = 32,
+  height = 32,
+  pattern = "151",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 72,
+  width = 32,
+  height = 32,
+  pattern = "151",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 72,
   width = 16,
   height = 16,
-  pattern = "38",
-  tileset = "overworld/forest_plain",
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "19",
 }
 
 destructible{
   layer = 0,
-  x = 136,
+  x = 120,
   y = 29,
   sprite = "entities/grass",
   can_be_cut = true,
@@ -1199,16 +1103,16 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 24,
-  y = 53,
+  x = 88,
+  y = 61,
   sprite = "entities/grass",
   can_be_cut = true,
 }
 
 destructible{
   layer = 0,
-  x = 24,
-  y = 85,
+  x = 88,
+  y = 109,
   sprite = "entities/grass",
   can_be_cut = true,
 }
@@ -1224,7 +1128,7 @@ destructible{
 enemy{
   name = "octo",
   layer = 0,
-  x = 48,
+  x = 40,
   y = 69,
   enabled_at_start = false,
   direction = 0,
