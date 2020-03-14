@@ -21,12 +21,15 @@ map{ id = "normal_version/overworld/wind_wood/indoors/house", description = "Win
 map{ id = "normal_version/overworld/wind_wood/indoors/sword_cave", description = "sword_cave" }
 map{ id = "normal_version/village/nielint/indoors/bar", description = "bar" }
 map{ id = "normal_version/village/nielint/indoors/bar_etage", description = "bar_etage" }
+map{ id = "normal_version/village/nielint/indoors/fairy_cave", description = "normal_version/village/nielint/indoors/fairy_cave" }
 map{ id = "normal_version/village/nielint/indoors/house_01", description = "Nielint Village House 01" }
 map{ id = "normal_version/village/nielint/indoors/house_02", description = "Nielint Village House 02" }
 map{ id = "normal_version/village/nielint/indoors/house_03", description = "Nielint Village House 03" }
 map{ id = "normal_version/village/nielint/indoors/house_04", description = "villages/nielint_village/nielint_house_4" }
 map{ id = "normal_version/village/nielint/indoors/mairie_etage", description = "Nielint Village Mairie Etage" }
 map{ id = "normal_version/village/nielint/indoors/mairie_rdc", description = "Nielint Village Mairie RDC" }
+map{ id = "normal_version/village/nielint/indoors/octorok_cave_01", description = "normal_version/village/nielint/indoors/octorok_cave_01" }
+map{ id = "normal_version/village/nielint/indoors/octorok_cave_02", description = "normal_version/village/nielint/indoors/octorok_cave_02" }
 map{ id = "normal_version/village/nielint/indoors/shop", description = "Village Nielint Shop" }
 map{ id = "normal_version/village/nielint/indoors/tree_house", description = "villages/nielint_village/tree_house" }
 map{ id = "normal_version/village/nielint/outdoors", description = "Village Nielint Outdoors" }
@@ -39,6 +42,8 @@ map{ id = "tests/obscurity", description = "tests/obscurity" }
 map{ id = "tests/platform", description = "Plateforme mouvante" }
 map{ id = "war_version/village/out2" }
 
+tileset{ id = "House", description = "House" }
+tileset{ id = "Zunatest/tiletest", description = "Zunatest/tiletest" }
 tileset{ id = "caves/cave_side", description = "cave_sides" }
 tileset{ id = "forest_cave", description = "forest_cave" }
 tileset{ id = "grotte", description = "grotte" }
@@ -50,6 +55,7 @@ tileset{ id = "overworld/structure", description = "structures" }
 tileset{ id = "overworld/structure2", description = "overworld/structure2" }
 tileset{ id = "tileset1", description = "First tileset" }
 tileset{ id = "tileset_donjon_1", description = "tileset Donjon 1" }
+tileset{ id = "war_world/Structure", description = "war_world/Structure" }
 tileset{ id = "war_world/autumn_dark", description = "war_world/autumn_dark" }
 tileset{ id = "war_world/autumn_dark.old", description = "war_world/autumn_dark.old" }
 tileset{ id = "war_world/mountain_sea" }
@@ -395,10 +401,6 @@ file{ path = "tilesets/grotte.dat", author = "Zunashy", }
 file{ path = "tilesets/grotte.entities.png", author = "Zunashy", }
 file{ path = "tilesets/grotte.tiles.png", author = "Zunashy", }
 file{ path = "tilesets/house.tiles.png", author = "Zunashy", }
-file{ path = "tilesets/overworld/Forest_plain.tiles.png", author = "Zunashy", }
-file{ path = "tilesets/overworld/Jungle.tiles.png", author = "Zunashy", }
-file{ path = "tilesets/overworld/Mountain_sea.tiles.png", author = "Zunashy", }
-file{ path = "tilesets/overworld/Structure.tiles.png", author = "Zunashy", }
 file{ path = "tilesets/overworld/forest_plain.dat", author = "Zunashy", }
 file{ path = "tilesets/tileset1.dat", author = "Zunashy", }
 file{ path = "tilesets/tileset1.entities.png", author = "Zunashy", }
