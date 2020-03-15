@@ -239,15 +239,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 72,
-  y = 224,
-  width = 16,
-  height = 16,
-  pattern = "32",
-}
-
-tile{
-  layer = 0,
   x = 56,
   y = 144,
   width = 16,
@@ -606,6 +597,15 @@ tile{
   pattern = "19",
 }
 
+tile{
+  layer = 0,
+  x = 72,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
 enemy{
   layer = 0,
   x = 80,
@@ -667,14 +667,14 @@ enemy{
   x = 80,
   y = 69,
   direction = 0,
-  breed = "octorok",
+  breed = "blue_octorok",
 }
 
 destination{
   name = "destination",
   layer = 0,
   x = 80,
-  y = 237,
+  y = 229,
   direction = 1,
 }
 
