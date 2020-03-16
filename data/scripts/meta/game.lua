@@ -25,22 +25,24 @@ function game_meta:set_story_state(state)
   return self:set_value("story_state", state)
 end
 
+local obs_uniform_names = {"light1", "light2", "light3", "light4"}
+
+--NOTE : s'il s'avène qu'on n'utilise l'obscurité que sur des maps à séparateurs, retirer le test de position
 function game_meta:on_draw(dst_surf)
   local map = self:get_map()
   local camera = map:get_camera()
+  local i = 1
   if camera:get_surface():get_shader() == self.obscurity_shader and map.lights then
-    local lights_pos = {}
     local cx, cy, cw, ch = camera:get_bounding_box()
-    for i, light in ipairs(map.lights) do
-      local x, y = light:get_position()
-      x, y = x - cx, y - cy
-      
-      if x > 0 and x < cw and y > 0 and y < ch then
-        lights_pos[#lights_pos + 1] = {x, y, light.power or 30}
+    for i, light in ipairs(map.active_lights) do
+      local power, x, y = (light.light_power or 30), light:get_position()
+      x, y = x - cx, y - cy + 8
+      if x > -power and x < cw + power * 2 and y > -power and y < ch + power * 2 then
+        self.obscurity_shader:set_uniform(obs_uniform_names[i], {x, y, power})
+        i = i + 1
       end
     end
-    self.obscurity_shader:set_uniform("lights", lights_pos)
-    self.obscurity_shader:set_uniform("lights_n", #lights_pos)
+    --print(map.active_lights)
   end
 
   if self.game_over_link_sprite then
@@ -57,7 +59,7 @@ function game_meta:on_started()
     self.started = true
   end
 
-  self.obscurity_shader = sol.shader.create("chroma")
+  self.obscurity_shader = sol.shader.create("obscurity")
 end
 
 function game_meta:on_finished()

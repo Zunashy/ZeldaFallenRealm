@@ -18,11 +18,14 @@ precision mediump float;
 uniform sampler2D sol_texture;
 uniform bool sol_vcolor_only;
 uniform bool sol_alpha_mult;
-COMPAT_VARYING vec2 sol_vtex_coord[32];
+COMPAT_VARYING vec2 sol_vtex_coord;
 COMPAT_VARYING vec4 sol_vcolor;
 
-uniform vec3 lights;
-uniform float lights_n;
+uniform vec3 light1;
+uniform vec3 light2;
+uniform vec3 light3;
+uniform vec3 light4;
+uniform float n_lights;
 uniform float obs_level;
 
 void main()
@@ -33,19 +36,34 @@ void main()
     
     vec3 col = tex_color.xyz;
 
-    for (int i = 0; j < lights_n; ++i)
-          vec2 d = gl_FragCoord.xy - lights.xy;
-          float dist = sqrt(d.x * d.x + d.y * d.y);
-          if (dist < lights.z) {
-          level += (lights.z - dist) / 10.0;
-      }
+    if (n_lights > 0){
+        vec2 d = gl_FragCoord.xy - light1.xy;
+        float dist = sqrt(d.x * d.x + d.y * d.y);
+        if (dist < light1.z) {
+            level += (light1.z - dist) / 10.0;
+        }
     }
-
-
-    if (lights_n > 0) {
-
-    }
-
+    if (n_lights > 1){
+        vec2 d = gl_FragCoord.xy - light2.xy;
+        float dist = sqrt(d.x * d.x + d.y * d.y);
+        if (dist < light2.z) {
+            level += (light2.z - dist) / 10.0;
+        }
+    } 
+    if (n_lights > 2){
+        vec2 d = gl_FragCoord.xy - light3.xy;
+        float dist = sqrt(d.x * d.x + d.y * d.y);
+        if (dist < light3.z) {
+            level += (light3.z - dist) / 10.0;
+        }
+    } 
+    if (n_lights > 3){
+        vec2 d = gl_FragCoord.xy - light4.xy;
+        float dist = sqrt(d.x * d.x + d.y * d.y);
+        if (dist < light4.z) {
+            level += (light4.z - dist) / 10.0;
+        }
+    } 
     col -= col / level;
 
     FragColor = vec4(col, 1.0);
