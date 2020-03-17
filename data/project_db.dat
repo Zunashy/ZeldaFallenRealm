@@ -37,6 +37,8 @@ map{ id = "tests/dungeon", description = "Map de donjon" }
 map{ id = "tests/mapglobale" }
 map{ id = "tests/platform", description = "Plateforme mouvante" }
 map{ id = "tests/test", description = "test" }
+map{ id = "war_version/forest", description = "forêt monde guerre" }
+map{ id = "war_version/overworld/north beach", description = "plage monde guerre" }
 map{ id = "war_version/village/out2" }
 
 tileset{ id = "Grotte", description = "Grotte" }
