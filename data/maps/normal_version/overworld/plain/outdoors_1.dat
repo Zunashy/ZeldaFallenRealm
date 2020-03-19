@@ -3922,3 +3922,11 @@ destructible{
   ground = "grass",
 }
 
+destination{
+  name = "plain_cave_01",
+  layer = 1,
+  x = 392,
+  y = 53,
+  direction = 1,
+}
+

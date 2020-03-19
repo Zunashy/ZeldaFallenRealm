@@ -662,14 +662,6 @@ enemy{
   breed = "octorok",
 }
 
-enemy{
-  layer = 0,
-  x = 80,
-  y = 69,
-  direction = 0,
-  breed = "blue_octorok",
-}
-
 destination{
   name = "destination",
   layer = 0,

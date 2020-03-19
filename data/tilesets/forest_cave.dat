@@ -771,3 +771,19 @@ tile_pattern{
   height = 16,
 }
 
+border_set{
+  id = "forest_cave_side",
+  pattern_0 = "8",
+  pattern_1 = "6",
+  pattern_2 = "5",
+  pattern_3 = "7",
+  pattern_4 = "10",
+  pattern_5 = "9",
+  pattern_6 = "11",
+  pattern_7 = "12",
+  pattern_8 = "15",
+  pattern_9 = "16",
+  pattern_10 = "14",
+  pattern_11 = "13",
+}
+
