@@ -4,7 +4,7 @@ function print(...)
   io.stdout:flush()
 end
 
-function tprint (tbl, indent, max_recursion, recursion_level)
+function tprint (tbl, max_recursion, recursion_level, indent)
   recursion_level = recursion_level or 0
   if not indent then indent = 0 end
   for k, v in pairs(tbl) do
@@ -14,7 +14,7 @@ function tprint (tbl, indent, max_recursion, recursion_level)
       if recursion_level == max_recursion then
         print(v)
       else
-        tprint(v, indent+1, max_recursion, recursion_level + 1)
+        tprint(v, max_recursion, recursion_level + 1, indent+1)
       end
     else
       print(formatting .. tostring(v))

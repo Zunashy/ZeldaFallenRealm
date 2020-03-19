@@ -14,7 +14,7 @@ map.obscurity = 0.8
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started_()
-
+    eg.add_light_entity(game:get_hero(), 30)
 end
 -- Event called after the opening transition effect of the map,
 -- that is, when the player takes control of the hero.
