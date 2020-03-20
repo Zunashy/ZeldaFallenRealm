@@ -20,6 +20,25 @@ tile{
 
 tile{
   layer = 1,
+  x = 0,
+  y = 0,
+  width = 960,
+  height = 256,
+  pattern = "29",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "178",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
   x = 320,
   y = 256,
   width = 640,
@@ -29,9 +48,19 @@ tile{
 
 tile{
   layer = 1,
+  x = 320,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "229_5",
+  tileset = "overworld/mountain_sea",
+}
+
+tile{
+  layer = 1,
   x = 336,
   y = 272,
-  width = 48,
+  width = 32,
   height = 352,
   pattern = "229_13",
   tileset = "overworld/mountain_sea",
@@ -84,15 +113,6 @@ tile{
   width = 32,
   height = 8,
   pattern = "125",
-}
-
-tile{
-  layer = 1,
-  x = 0,
-  y = 0,
-  width = 960,
-  height = 256,
-  pattern = "29",
 }
 
 tile{
@@ -3528,9 +3548,9 @@ tile{
 
 tile{
   layer = 1,
-  x = 384,
+  x = 400,
   y = 288,
-  width = 128,
+  width = 112,
   height = 32,
   pattern = "160",
   tileset = "overworld/mountain_sea",
@@ -10700,25 +10720,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 320,
-  y = 264,
-  width = 16,
-  height = 16,
-  pattern = "45",
-}
-
-tile{
-  layer = 1,
-  x = 320,
-  y = 248,
-  width = 16,
-  height = 16,
-  pattern = "44",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 1,
   x = 480,
   y = 552,
   width = 16,
@@ -11309,66 +11310,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "152",
-}
-
-tile{
-  layer = 1,
-  x = 304,
-  y = 256,
-  width = 32,
-  height = 32,
-  pattern = "71",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 1,
-  x = 304,
-  y = 272,
-  width = 32,
-  height = 32,
-  pattern = "69",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 1,
-  x = 304,
-  y = 288,
-  width = 32,
-  height = 32,
-  pattern = "67",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 1,
-  x = 304,
-  y = 304,
-  width = 32,
-  height = 32,
-  pattern = "67",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 1,
-  x = 304,
-  y = 320,
-  width = 32,
-  height = 32,
-  pattern = "71",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 1,
-  x = 304,
-  y = 336,
-  width = 32,
-  height = 32,
-  pattern = "69",
-  tileset = "overworld/forest_plain",
 }
 
 tile{
@@ -13001,31 +12942,11 @@ tile{
 
 tile{
   layer = 1,
-  x = 320,
-  y = 256,
-  width = 16,
-  height = 16,
-  pattern = "229_5",
-  tileset = "overworld/mountain_sea",
-}
-
-tile{
-  layer = 1,
   x = 336,
   y = 272,
   width = 8,
   height = 16,
   pattern = "111",
-  tileset = "overworld/mountain_sea",
-}
-
-tile{
-  layer = 1,
-  x = 320,
-  y = 272,
-  width = 16,
-  height = 16,
-  pattern = "178",
   tileset = "overworld/mountain_sea",
 }
 
@@ -13405,6 +13326,66 @@ tile{
   width = 16,
   height = 16,
   pattern = "45",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 256,
+  width = 32,
+  height = 32,
+  pattern = "71",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 272,
+  width = 32,
+  height = 32,
+  pattern = "69",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 288,
+  width = 32,
+  height = 32,
+  pattern = "67",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 304,
+  width = 32,
+  height = 32,
+  pattern = "67",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 320,
+  width = 32,
+  height = 32,
+  pattern = "71",
+  tileset = "overworld/forest_plain",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 336,
+  width = 32,
+  height = 32,
+  pattern = "69",
+  tileset = "overworld/forest_plain",
 }
 
 destination{
@@ -13995,7 +13976,36 @@ destination{
   name = "plain_cave_04",
   layer = 1,
   x = 504,
-  y = 437,
+  y = 421,
   direction = 1,
+}
+
+teletransporter{
+  layer = 1,
+  x = 240,
+  y = 32,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/overworld/plain/indoors/cave_02",
+  destination = "destination",
+}
+
+teletransporter{
+  layer = 1,
+  x = 496,
+  y = 400,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/overworld/plain/indoors/cave_03",
+}
+
+teletransporter{
+  layer = 1,
+  x = 336,
+  y = 720,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/overworld/plain/indoors/cave_04",
+  destination = "destination",
 }
 
