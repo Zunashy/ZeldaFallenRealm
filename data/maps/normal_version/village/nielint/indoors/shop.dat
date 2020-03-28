@@ -5,8 +5,8 @@ properties{
   height = 128,
   min_layer = 0,
   max_layer = 2,
-  tileset = "House",
-  music = "Zelda Original/Houses",
+  tileset = "house",
+  music = "houses",
 }
 
 tile{
@@ -201,10 +201,10 @@ teletransporter{
 npc{
   layer = 0,
   x = 24,
-  y = 77,
+  y = 93,
   direction = 3,
   subtype = 1,
-  sprite = "citizens/old_woman",
+  sprite = "pnj/nielint/11",
   behavior = "dialog#pnj.village.nielint.indoors.shop_clerk",
 }
 

@@ -2,63 +2,79 @@ map{ id = "donjons/castle_donjon/catle_rdc", description = "rdc" }
 map{ id = "donjons/level_01/2D_Test", description = "2D" }
 map{ id = "donjons/level_01/RDC", description = "Trident Dungeon" }
 map{ id = "donjons/level_01/RDC_old" }
+map{ id = "donjons/level_02/rdc" }
+map{ id = "donjons/level_02/ss1" }
 map{ id = "normal_version/overworld/deep_forest/outdoors", description = "overworld/deep_forest/outdoors" }
 map{ id = "normal_version/overworld/deep_forest/outdoors_2", description = "overworld/deep_forest/outdoors_2" }
 map{ id = "normal_version/overworld/north_beach/deku_tree", description = "arbre mojo" }
-map{ id = "normal_version/overworld/north_beach/indoors/cave_01", description = "North Beach Cave 01" }
-map{ id = "normal_version/overworld/north_beach/indoors/cave_02_rdc", description = "North Beach Cave 02 RDC" }
-map{ id = "normal_version/overworld/north_beach/indoors/cave_02_ss1", description = "North Beach Cave 02 SS1" }
+map{ id = "normal_version/overworld/north_beach/indoors/cave_01", description = "North Beach cave 01" }
+map{ id = "normal_version/overworld/north_beach/indoors/cave_02_rdc", description = "North Beach cave 02 RDC" }
+map{ id = "normal_version/overworld/north_beach/indoors/cave_02_ss1", description = "North Beach cave 02 SS1" }
 map{ id = "normal_version/overworld/north_beach/indoors/house", description = "overworld/north_beach/beach_house" }
 map{ id = "normal_version/overworld/north_beach/indoors/hut_01", description = "overworld/north_beach/hut_01" }
 map{ id = "normal_version/overworld/north_beach/indoors/hut_02" }
 map{ id = "normal_version/overworld/north_beach/indoors/tree_house" }
 map{ id = "normal_version/overworld/north_beach/outdoors", description = "North Beach Outdoors" }
-map{ id = "normal_version/overworld/plain/outdoors_1" }
-map{ id = "normal_version/overworld/plain/outdoors_2", description = "outdoors" }
+map{ id = "normal_version/overworld/plain/indoors/cave_01" }
+map{ id = "normal_version/overworld/plain/indoors/cave_02" }
+map{ id = "normal_version/overworld/plain/indoors/cave_03" }
+map{ id = "normal_version/overworld/plain/indoors/cave_04" }
+map{ id = "normal_version/overworld/plain/outdoors_1", description = "plain 1" }
+map{ id = "normal_version/overworld/plain/outdoors_2", description = "plain 2" }
 map{ id = "normal_version/overworld/wind_wood/forest_outdoor", description = "Wind Wood Forest" }
-map{ id = "normal_version/overworld/wind_wood/indoors/forest_cave", description = "Cave Wind Wood 1" }
-map{ id = "normal_version/overworld/wind_wood/indoors/house", description = "Wind Wood House" }
+map{ id = "normal_version/overworld/wind_wood/indoors/forest_cave", description = "cave Wind Wood 1" }
+map{ id = "normal_version/overworld/wind_wood/indoors/house", description = "Wind Wood house" }
 map{ id = "normal_version/overworld/wind_wood/indoors/sword_cave", description = "sword_cave" }
 map{ id = "normal_version/village/nielint/indoors/bar", description = "bar" }
+map{ id = "normal_version/village/nielint/indoors/bar_etage", description = "bar_etage" }
+map{ id = "normal_version/village/nielint/indoors/fairy_cave", description = "normal_version/village/nielint/indoors/fairy_cave" }
 map{ id = "normal_version/village/nielint/indoors/house_01", description = "Nielint Village House 01" }
 map{ id = "normal_version/village/nielint/indoors/house_02", description = "Nielint Village House 02" }
 map{ id = "normal_version/village/nielint/indoors/house_03", description = "Nielint Village House 03" }
 map{ id = "normal_version/village/nielint/indoors/house_04", description = "villages/nielint_village/nielint_house_4" }
 map{ id = "normal_version/village/nielint/indoors/mairie_etage", description = "Nielint Village Mairie Etage" }
 map{ id = "normal_version/village/nielint/indoors/mairie_rdc", description = "Nielint Village Mairie RDC" }
+map{ id = "normal_version/village/nielint/indoors/octorok_cave_01", description = "normal_version/village/nielint/indoors/octorok_cave_01" }
+map{ id = "normal_version/village/nielint/indoors/octorok_cave_02", description = "normal_version/village/nielint/indoors/octorok_cave_02" }
 map{ id = "normal_version/village/nielint/indoors/shop", description = "Village Nielint Shop" }
 map{ id = "normal_version/village/nielint/indoors/tree_house", description = "villages/nielint_village/tree_house" }
 map{ id = "normal_version/village/nielint/outdoors", description = "Village Nielint Outdoors" }
 map{ id = "testHub", description = "Lobby des maps test" }
 map{ id = "tests/blue_slime", description = "tests/testHub" }
 map{ id = "tests/bridges", description = "Bridges" }
-map{ id = "tests/change" }
 map{ id = "tests/dungeon", description = "Map de donjon" }
 map{ id = "tests/mapglobale" }
+map{ id = "tests/obscurity", description = "tests/obscurity" }
 map{ id = "tests/platform", description = "Plateforme mouvante" }
+<<<<<<< HEAD
 map{ id = "tests/test", description = "test" }
 map{ id = "war_version/forest", description = "forêt monde guerre" }
 map{ id = "war_version/overworld/north beach", description = "plage monde guerre" }
+=======
+>>>>>>> 204be42e7b767e2da59c547f05ec502bffd27c38
 map{ id = "war_version/village/out2" }
 
-tileset{ id = "Grotte", description = "Grotte" }
 tileset{ id = "House", description = "House" }
-tileset{ id = "Tileset1", description = "First Tileset" }
-tileset{ id = "Tileset_Donjon_1", description = "Tileset Donjon 1" }
 tileset{ id = "Zunatest/tiletest", description = "Zunatest/tiletest" }
-tileset{ id = "caves/Cave_side", description = "cave_sides" }
+tileset{ id = "caves/cave_side", description = "cave_sides" }
 tileset{ id = "forest_cave", description = "forest_cave" }
+tileset{ id = "grotte", description = "grotte" }
+tileset{ id = "house", description = "House" }
 tileset{ id = "overworld/forest_plain", description = "overworld/forest_plain" }
 tileset{ id = "overworld/jungle", description = "jungle" }
 tileset{ id = "overworld/mountain_sea", description = "mountain sea" }
 tileset{ id = "overworld/structure", description = "structures" }
 tileset{ id = "overworld/structure2", description = "overworld/structure2" }
-tileset{ id = "war_world/Structure" }
+tileset{ id = "tileset1", description = "First tileset" }
+tileset{ id = "tileset_donjon_1", description = "tileset Donjon 1" }
+tileset{ id = "war_world/Structure", description = "war_world/Structure" }
 tileset{ id = "war_world/autumn_dark", description = "war_world/autumn_dark" }
 tileset{ id = "war_world/autumn_dark.old", description = "war_world/autumn_dark.old" }
 tileset{ id = "war_world/mountain_sea" }
 tileset{ id = "war_world/overworld", description = "Exterieur du monde guerre" }
 tileset{ id = "war_world/overworld_war" }
+tileset{ id = "war_world/structure" }
+tileset{ id = "zunatest/tiletest", description = "zunatest/tiletest" }
 
 sprite{ id = "citizens/old_man", description = "Old man" }
 sprite{ id = "citizens/old_woman", description = "Old Woman" }
@@ -158,22 +174,18 @@ sprite{ id = "things/radeau", description = "Radeau intro" }
 sprite{ id = "things/switch_aureole", description = "switch aureole" }
 sprite{ id = "things/water_splash_effect", description = "water splash" }
 
-music{ id = "Caves", description = "Caves" }
-music{ id = "Horon Village", description = "Horon Village" }
-music{ id = "Houses", description = "Houses" }
-music{ id = "Mysterious Forest", description = "Mysterious Forest" }
-music{ id = "Overworld", description = "Overworld" }
-music{ id = "Zelda Original/Caves", description = "Caves" }
 music{ id = "Zelda Original/Horon Village", description = "Horon Village" }
 music{ id = "Zelda Original/Houses", description = "Houses" }
 music{ id = "Zelda Original/Mysterious Forest", description = "Mysterious Forest" }
 music{ id = "Zelda Original/Overworld", description = "Overworld" }
+music{ id = "Zelda Original/caves", description = "caves" }
 music{ id = "bar", description = "bar" }
 music{ id = "boss", description = "boss" }
+music{ id = "caves", description = "caves" }
 music{ id = "dungeon1", description = "dungeon1" }
 music{ id = "eduardo/Scatman_John_-_pi_pa_pa_para_po_Original_Video_", description = "eduardo/Scatman" }
 music{ id = "eduardo/boss", description = "Boss" }
-music{ id = "eduardo/cave", description = "Cave" }
+music{ id = "eduardo/cave", description = "cave" }
 music{ id = "eduardo/dungeon_finished", description = "Dungeon finished" }
 music{ id = "eduardo/fairy", description = "Fairy" }
 music{ id = "eduardo/fanfare", description = "Fanfare" }
@@ -188,8 +200,13 @@ music{ id = "eduardo/sword_fanfare", description = "Sword fanfare" }
 music{ id = "eduardo/title_screen", description = "Title screen" }
 music{ id = "eduardo/village", description = "Village" }
 music{ id = "eduardo/witch_hut", description = "Witch" }
+music{ id = "game_over", description = "game_over" }
+music{ id = "horon village", description = "Horon Village" }
+music{ id = "houses", description = "houses" }
 music{ id = "maku_trees", description = "maku_trees" }
 music{ id = "miniboss", description = "miniboss" }
+music{ id = "mysterious Forest", description = "mysterious Forest" }
+music{ id = "overworld", description = "Overworld" }
 music{ id = "save_select", description = "save_select" }
 music{ id = "title", description = "title" }
 
@@ -259,7 +276,7 @@ entity{ id = "[o]waterfall", description = "cascade" }
 entity{ id = "arrow", description = "Arrow" }
 entity{ id = "bone", description = "Os (projectile)" }
 entity{ id = "dungeon_statue_eye" }
-entity{ id = "ice_floor", description = "Ice Tile (Ice seeds)" }
+entity{ id = "ice_floor", description = "Ice tile (Ice seeds)" }
 entity{ id = "interaction_box", description = "interaction_box" }
 entity{ id = "light", description = "Source de lumière" }
 entity{ id = "merman_wave", description = "Merman's wave" }
@@ -390,21 +407,16 @@ file{ path = "sprites/pnj/nielint/5.dat", author = "Phoenix", }
 file{ path = "sprites/pnj/nielint/6.dat", author = "Phoenix", }
 file{ path = "sprites/pnj/nielint/7.dat", author = "Phoenix", }
 file{ path = "sprites/pnj/nielint/citizens.png", author = "Phoenix", }
-file{ path = "tilesets/Grotte.dat", author = "Zunashy", }
-file{ path = "tilesets/Grotte.entities.png", author = "Zunashy", }
-file{ path = "tilesets/Grotte.tiles.png", author = "Zunashy", }
-file{ path = "tilesets/House.dat", author = "Zunashy", }
-file{ path = "tilesets/House.tiles.png", author = "Zunashy", }
-file{ path = "tilesets/Tileset1.dat", author = "Zunashy", }
-file{ path = "tilesets/Tileset1.entities.png", author = "Zunashy", }
-file{ path = "tilesets/Tileset1.tiles.png", author = "Zunashy", }
-file{ path = "tilesets/Tileset_Donjon_1.dat", author = "Zunashy", }
-file{ path = "tilesets/Tileset_Donjon_1.tiles.png", author = "Zunashy", }
 file{ path = "tilesets/forest_cave.dat", author = "Zunashy", }
 file{ path = "tilesets/forest_cave.tiles.png", author = "Zunashy", }
-file{ path = "tilesets/overworld/Forest_plain.tiles.png", author = "Zunashy", }
-file{ path = "tilesets/overworld/Jungle.tiles.png", author = "Zunashy", }
-file{ path = "tilesets/overworld/Mountain_sea.tiles.png", author = "Zunashy", }
-file{ path = "tilesets/overworld/Structure.tiles.png", author = "Zunashy", }
+file{ path = "tilesets/grotte.dat", author = "Zunashy", }
+file{ path = "tilesets/grotte.entities.png", author = "Zunashy", }
+file{ path = "tilesets/grotte.tiles.png", author = "Zunashy", }
+file{ path = "tilesets/house.tiles.png", author = "Zunashy", }
 file{ path = "tilesets/overworld/forest_plain.dat", author = "Zunashy", }
+file{ path = "tilesets/tileset1.dat", author = "Zunashy", }
+file{ path = "tilesets/tileset1.entities.png", author = "Zunashy", }
+file{ path = "tilesets/tileset1.tiles.png", author = "Zunashy", }
+file{ path = "tilesets/tileset_Donjon_1.dat", author = "Zunashy", }
+file{ path = "tilesets/tileset_Donjon_1.tiles.png", author = "Zunashy", }
 file{ path = "tilesets/tileset_donjon_1.entities.png", author = "Zunashy", }

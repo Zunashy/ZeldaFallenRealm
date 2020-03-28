@@ -5,8 +5,8 @@ properties{
   height = 240,
   min_layer = 0,
   max_layer = 2,
-  tileset = "Grotte",
-  music = "Caves",
+  tileset = "grotte",
+  music = "caves",
 }
 
 tile{

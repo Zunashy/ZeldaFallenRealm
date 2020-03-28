@@ -5,7 +5,7 @@ properties{
   height = 352,
   min_layer = 0,
   max_layer = 2,
-  tileset = "Grotte",
+  tileset = "grotte",
   music = "dungeon1",
 }
 
@@ -16,7 +16,7 @@ tile{
   width = 720,
   height = 352,
   pattern = "10",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -26,7 +26,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "14",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -36,7 +36,7 @@ tile{
   width = 160,
   height = 16,
   pattern = "29",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -46,7 +46,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "28",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -56,7 +56,7 @@ tile{
   width = 80,
   height = 32,
   pattern = "22",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -66,7 +66,7 @@ tile{
   width = 96,
   height = 16,
   pattern = "29",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -76,7 +76,7 @@ tile{
   width = 16,
   height = 96,
   pattern = "4",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -86,7 +86,7 @@ tile{
   width = 160,
   height = 48,
   pattern = "22",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -96,7 +96,7 @@ tile{
   width = 16,
   height = 32,
   pattern = "22",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -106,7 +106,7 @@ tile{
   width = 16,
   height = 128,
   pattern = "4",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -116,7 +116,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "2",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -126,7 +126,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "2",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -136,7 +136,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "2",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -146,7 +146,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "2",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -156,7 +156,7 @@ tile{
   width = 160,
   height = 32,
   pattern = "34",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -166,7 +166,7 @@ tile{
   width = 160,
   height = 16,
   pattern = "26",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -176,7 +176,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "33",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -186,7 +186,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "33",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -196,7 +196,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "32",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -206,7 +206,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "32",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -216,7 +216,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "33",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -226,7 +226,7 @@ tile{
   width = 64,
   height = 16,
   pattern = "29",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -236,7 +236,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "23",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -246,7 +246,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "23",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -256,7 +256,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "23",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -266,7 +266,7 @@ tile{
   width = 48,
   height = 16,
   pattern = "29",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -276,7 +276,7 @@ tile{
   width = 208,
   height = 16,
   pattern = "31",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -286,7 +286,7 @@ tile{
   width = 16,
   height = 160,
   pattern = "19",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -296,7 +296,7 @@ tile{
   width = 208,
   height = 16,
   pattern = "34",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -306,7 +306,7 @@ tile{
   width = 16,
   height = 48,
   pattern = "18",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -316,7 +316,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "26",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -326,7 +326,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "27",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -336,7 +336,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "25",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -346,7 +346,7 @@ tile{
   width = 48,
   height = 48,
   pattern = "11",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -356,7 +356,7 @@ tile{
   width = 48,
   height = 48,
   pattern = "11",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -366,7 +366,7 @@ tile{
   width = 48,
   height = 48,
   pattern = "11",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -376,7 +376,7 @@ tile{
   width = 48,
   height = 48,
   pattern = "11",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -386,7 +386,7 @@ tile{
   width = 48,
   height = 48,
   pattern = "11",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -396,7 +396,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "13",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -406,7 +406,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "24",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -416,7 +416,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "24",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -426,7 +426,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "24",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -436,7 +436,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "24",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -446,7 +446,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "24",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -456,7 +456,7 @@ tile{
   width = 128,
   height = 48,
   pattern = "23",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -466,7 +466,7 @@ tile{
   width = 96,
   height = 16,
   pattern = "5",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -476,7 +476,7 @@ tile{
   width = 144,
   height = 32,
   pattern = "23",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -486,7 +486,7 @@ tile{
   width = 32,
   height = 16,
   pattern = "23",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -496,7 +496,7 @@ tile{
   width = 16,
   height = 64,
   pattern = "22",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -506,7 +506,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "33",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -516,7 +516,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "32",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -526,7 +526,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "30",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -536,7 +536,7 @@ tile{
   width = 16,
   height = 176,
   pattern = "18",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -546,7 +546,7 @@ tile{
   width = 32,
   height = 16,
   pattern = "24",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -556,7 +556,7 @@ tile{
   width = 32,
   height = 16,
   pattern = "24",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -566,7 +566,7 @@ tile{
   width = 32,
   height = 16,
   pattern = "24",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -576,7 +576,7 @@ tile{
   width = 32,
   height = 16,
   pattern = "24",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -586,7 +586,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "22",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -596,7 +596,7 @@ tile{
   width = 32,
   height = 16,
   pattern = "22",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -606,7 +606,7 @@ tile{
   width = 64,
   height = 16,
   pattern = "22",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -616,7 +616,7 @@ tile{
   width = 96,
   height = 16,
   pattern = "22",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -626,7 +626,7 @@ tile{
   width = 144,
   height = 32,
   pattern = "22",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -636,7 +636,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "23",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -646,7 +646,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "23",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -656,7 +656,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "23",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -666,7 +666,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "23",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -676,7 +676,7 @@ tile{
   width = 16,
   height = 32,
   pattern = "23",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -686,7 +686,7 @@ tile{
   width = 48,
   height = 16,
   pattern = "23",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -696,7 +696,7 @@ tile{
   width = 32,
   height = 16,
   pattern = "23",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -706,7 +706,7 @@ tile{
   width = 128,
   height = 16,
   pattern = "23",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -716,7 +716,7 @@ tile{
   width = 48,
   height = 16,
   pattern = "5",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -726,7 +726,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "5",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -736,7 +736,7 @@ tile{
   width = 48,
   height = 48,
   pattern = "11",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -746,7 +746,7 @@ tile{
   width = 48,
   height = 48,
   pattern = "11",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -756,7 +756,7 @@ tile{
   width = 48,
   height = 48,
   pattern = "11",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -766,7 +766,7 @@ tile{
   width = 16,
   height = 48,
   pattern = "18",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -776,7 +776,7 @@ tile{
   width = 16,
   height = 48,
   pattern = "19",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -786,7 +786,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "15",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -796,7 +796,7 @@ tile{
   width = 32,
   height = 16,
   pattern = "23",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -806,7 +806,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "21",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -816,7 +816,7 @@ tile{
   width = 208,
   height = 16,
   pattern = "29",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -826,7 +826,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "20",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -836,7 +836,7 @@ tile{
   width = 16,
   height = 160,
   pattern = "4",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -846,7 +846,7 @@ tile{
   width = 16,
   height = 160,
   pattern = "19",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -856,7 +856,7 @@ tile{
   width = 288,
   height = 48,
   pattern = "23",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -866,7 +866,7 @@ tile{
   width = 16,
   height = 48,
   pattern = "3",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -876,7 +876,7 @@ tile{
   width = 80,
   height = 16,
   pattern = "3",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -886,7 +886,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "3",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -896,7 +896,7 @@ tile{
   width = 16,
   height = 32,
   pattern = "3",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -906,7 +906,7 @@ tile{
   width = 32,
   height = 16,
   pattern = "23",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -916,7 +916,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "23",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -926,7 +926,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "27",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -936,7 +936,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "29",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -946,7 +946,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "25",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -956,7 +956,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "26",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -966,7 +966,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "30",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -976,7 +976,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "28",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -986,7 +986,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "3",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -996,7 +996,7 @@ tile{
   width = 16,
   height = 32,
   pattern = "3",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1006,7 +1006,7 @@ tile{
   width = 288,
   height = 16,
   pattern = "3",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1016,7 +1016,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "3",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1026,7 +1026,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "3",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1036,7 +1036,7 @@ tile{
   width = 16,
   height = 32,
   pattern = "23",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1046,7 +1046,7 @@ tile{
   width = 288,
   height = 16,
   pattern = "5",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1056,7 +1056,7 @@ tile{
   width = 256,
   height = 16,
   pattern = "5",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1066,7 +1066,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "12",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1076,7 +1076,7 @@ tile{
   width = 48,
   height = 16,
   pattern = "22",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1086,7 +1086,7 @@ tile{
   width = 288,
   height = 16,
   pattern = "22",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1096,7 +1096,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "18",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1106,7 +1106,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "19",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1116,7 +1116,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "12",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1126,7 +1126,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "29",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1136,7 +1136,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "30",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1146,7 +1146,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "28",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1156,7 +1156,7 @@ tile{
   width = 48,
   height = 16,
   pattern = "22",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1166,7 +1166,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "18",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1176,7 +1176,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "19",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1186,7 +1186,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "29",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1196,7 +1196,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "30",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1206,7 +1206,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "28",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1216,7 +1216,7 @@ tile{
   width = 48,
   height = 16,
   pattern = "22",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1226,7 +1226,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "18",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1236,7 +1236,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "19",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1246,7 +1246,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "12",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1256,7 +1256,7 @@ tile{
   width = 32,
   height = 16,
   pattern = "29",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1266,7 +1266,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "28",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1276,7 +1276,7 @@ tile{
   width = 48,
   height = 16,
   pattern = "22",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1286,7 +1286,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "18",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1296,7 +1296,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "19",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1306,7 +1306,7 @@ tile{
   width = 16,
   height = 176,
   pattern = "18",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1316,7 +1316,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "29",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1326,7 +1326,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "29",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1336,7 +1336,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "28",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1346,7 +1346,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "28",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1356,7 +1356,7 @@ tile{
   width = 48,
   height = 16,
   pattern = "22",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1366,7 +1366,7 @@ tile{
   width = 32,
   height = 16,
   pattern = "22",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1376,7 +1376,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "22",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1386,7 +1386,7 @@ tile{
   width = 48,
   height = 48,
   pattern = "11",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1396,7 +1396,7 @@ tile{
   width = 48,
   height = 48,
   pattern = "11",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1406,7 +1406,7 @@ tile{
   width = 48,
   height = 48,
   pattern = "11",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1416,7 +1416,7 @@ tile{
   width = 48,
   height = 48,
   pattern = "11",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1426,7 +1426,7 @@ tile{
   width = 48,
   height = 48,
   pattern = "11",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1436,7 +1436,7 @@ tile{
   width = 48,
   height = 48,
   pattern = "11",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1446,7 +1446,7 @@ tile{
   width = 48,
   height = 48,
   pattern = "11",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 tile{
@@ -1456,7 +1456,7 @@ tile{
   width = 48,
   height = 48,
   pattern = "11",
-  tileset = "caves/Cave_side",
+  tileset = "caves/cave_side",
 }
 
 teletransporter{

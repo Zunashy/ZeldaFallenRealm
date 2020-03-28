@@ -6,8 +6,8 @@ properties{
   min_layer = 0,
   max_layer = 2,
   floor = 1,
-  tileset = "House",
-  music = "Zelda Original/Houses",
+  tileset = "house",
+  music = "houses",
 }
 
 tile{
@@ -98,15 +98,6 @@ tile{
   width = 16,
   height = 96,
   pattern = "6",
-}
-
-tile{
-  layer = 0,
-  x = 112,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "75",
 }
 
 tile{
@@ -404,6 +395,15 @@ tile{
   width = 16,
   height = 16,
   pattern = "60",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "77",
 }
 
 destination{

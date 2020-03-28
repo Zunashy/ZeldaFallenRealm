@@ -42,6 +42,9 @@ function sep_meta:on_activated()
   then 
     hero:save_solid_ground()
   end
+  if map.obscurity then
+    map:update_active_lights()
+  end
 end
 
 local npc_meta = sol.main.get_metatable("npc")

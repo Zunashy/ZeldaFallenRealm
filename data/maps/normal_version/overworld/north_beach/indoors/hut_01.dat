@@ -1,12 +1,12 @@
 properties{
   x = 0,
   y = 0,
-  width = 160,
+  width = 224,
   height = 128,
   min_layer = 0,
   max_layer = 2,
-  tileset = "House",
-  music = "Houses",
+  tileset = "house",
+  music = "houses",
 }
 
 tile{
@@ -21,7 +21,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = -16,
+  y = 0,
   width = 208,
   height = 16,
   pattern = "3",
@@ -39,7 +39,7 @@ tile{
 tile{
   layer = 0,
   x = 208,
-  y = 0,
+  y = 8,
   width = 16,
   height = 112,
   pattern = "6",
@@ -102,7 +102,7 @@ tile{
 tile{
   layer = 0,
   x = 208,
-  y = -16,
+  y = 0,
   width = 16,
   height = 16,
   pattern = "4",
@@ -111,7 +111,7 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = -16,
+  y = 0,
   width = 16,
   height = 16,
   pattern = "2",
@@ -129,7 +129,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = 16,
+  y = 32,
   width = 32,
   height = 32,
   pattern = "46",
@@ -138,7 +138,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = -8,
+  y = 8,
   width = 16,
   height = 8,
   pattern = "59",
@@ -147,7 +147,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = 0,
+  y = 16,
   width = 16,
   height = 8,
   pattern = "58",
@@ -156,7 +156,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = 8,
+  y = 24,
   width = 16,
   height = 8,
   pattern = "57",
@@ -165,7 +165,7 @@ tile{
 tile{
   layer = 0,
   x = 32,
-  y = -8,
+  y = 8,
   width = 16,
   height = 8,
   pattern = "56",
@@ -174,7 +174,7 @@ tile{
 tile{
   layer = 0,
   x = 32,
-  y = 0,
+  y = 16,
   width = 16,
   height = 8,
   pattern = "55",
@@ -183,7 +183,7 @@ tile{
 tile{
   layer = 0,
   x = 32,
-  y = 8,
+  y = 24,
   width = 16,
   height = 8,
   pattern = "55",
@@ -201,7 +201,7 @@ tile{
 tile{
   layer = 0,
   x = 120,
-  y = -16,
+  y = 0,
   width = 16,
   height = 16,
   pattern = "48",
@@ -237,7 +237,7 @@ tile{
 tile{
   layer = 0,
   x = 128,
-  y = 0,
+  y = 16,
   width = 16,
   height = 16,
   pattern = "71",
@@ -246,7 +246,7 @@ tile{
 tile{
   layer = 0,
   x = 64,
-  y = 0,
+  y = 16,
   width = 64,
   height = 16,
   pattern = "72",
@@ -273,7 +273,7 @@ tile{
 tile{
   layer = 0,
   x = 48,
-  y = 0,
+  y = 16,
   width = 16,
   height = 16,
   pattern = "65",
@@ -286,69 +286,6 @@ tile{
   width = 64,
   height = 16,
   pattern = "68",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = -16,
-  width = 16,
-  height = 16,
-  pattern = "49",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 0,
-  width = 16,
-  height = 8,
-  pattern = "31",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = -16,
-  width = 16,
-  height = 8,
-  pattern = "33",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = -8,
-  width = 16,
-  height = 8,
-  pattern = "32",
-}
-
-tile{
-  layer = 0,
-  x = 176,
-  y = 0,
-  width = 16,
-  height = 8,
-  pattern = "31",
-}
-
-tile{
-  layer = 0,
-  x = 176,
-  y = -16,
-  width = 16,
-  height = 8,
-  pattern = "33",
-}
-
-tile{
-  layer = 0,
-  x = 176,
-  y = -8,
-  width = 16,
-  height = 8,
-  pattern = "32",
 }
 
 tile{
@@ -391,7 +328,7 @@ tile{
 tile{
   layer = 0,
   x = 144,
-  y = 8,
+  y = 16,
   width = 64,
   height = 48,
   pattern = "60",
@@ -400,10 +337,73 @@ tile{
 tile{
   layer = 0,
   x = 192,
-  y = 0,
+  y = 24,
   width = 16,
   height = 32,
   pattern = "53",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 16,
+  width = 16,
+  height = 8,
+  pattern = "31",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 0,
+  width = 16,
+  height = 8,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 8,
+  width = 16,
+  height = 8,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 16,
+  width = 16,
+  height = 8,
+  pattern = "31",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 0,
+  width = 16,
+  height = 8,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 8,
+  width = 16,
+  height = 8,
+  pattern = "32",
 }
 
 teletransporter{
@@ -427,7 +427,7 @@ destination{
 npc{
   layer = 0,
   x = 80,
-  y = 29,
+  y = 45,
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/1",
@@ -437,7 +437,7 @@ npc{
 npc{
   layer = 0,
   x = 112,
-  y = 29,
+  y = 45,
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/4",
@@ -447,7 +447,7 @@ npc{
 npc{
   layer = 0,
   x = 168,
-  y = 21,
+  y = 29,
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/16",

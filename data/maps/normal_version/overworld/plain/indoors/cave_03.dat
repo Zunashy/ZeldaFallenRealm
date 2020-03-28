@@ -1,0 +1,335 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 320,
+  height = 128,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 288,
+  height = 96,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 0,
+  width = 128,
+  height = 16,
+  pattern = "6",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 0,
+  width = 128,
+  height = 16,
+  pattern = "6",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 96,
+  pattern = "5",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 16,
+  width = 16,
+  height = 96,
+  pattern = "8",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 112,
+  width = 128,
+  height = 16,
+  pattern = "7",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 112,
+  width = 128,
+  height = 16,
+  pattern = "7",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "9",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "10",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "9",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "10",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "15",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "13",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "14",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "15",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "13",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "14",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "12",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "12",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 64,
+  width = 128,
+  height = 16,
+  pattern = "6",
+  tileset = "forest_cave",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 48,
+  width = 128,
+  height = 16,
+  pattern = "7",
+  tileset = "forest_cave",
+}
+
+chest{
+  layer = 0,
+  x = 80,
+  y = 29,
+  sprite = "entities/chest",
+}
+
+enemy{
+  layer = 0,
+  x = 240,
+  y = 37,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 272,
+  y = 77,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 216,
+  y = 69,
+  direction = 0,
+  breed = "moblin_sword",
+}
+
+teletransporter{
+  layer = 0,
+  x = 72,
+  y = 112,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/overworld/plain/outdoors_2",
+  destination = "plain_cave_03",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 80,
+  y = 117,
+  direction = 1,
+}
+

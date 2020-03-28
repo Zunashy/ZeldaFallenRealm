@@ -125,7 +125,11 @@ Merci à toi d'avoir joué jusqu'ici ! C'est ici que s'achève la partie termin�
 dialog{
   id = "pnj.overworld.north_beach.deku_tree",
   text = [[
+<<<<<<< HEAD
+Link, je t'attendais. C'est ma voix que tu as suivi depuis la mer et te voilà enfin. Un sorcier menace d'anéantir cet endroit et un héros doit l'arrêter. Ce héros, c'est toi. Pour l'heure, dirige toi vers le temple du Trident, à l'ouest. Il vient d'être corrompu et c'est cela qui a causé la tempête.
+=======
 Link, je t'attendais. C'est ma voix que tu as suivi depuis la mer, et te voilà enfin. Un sorcier menace d'anéantir cet endroit et un héros doit l'arrêter. Ce héros, c'est toi. Pour l'heure, dirige-toi vers le temple du Trident, à l'ouest. Il vient d'être corrompu et c'est cela qui a causé la tempête.
+>>>>>>> 57f2268b8116b972ab1a4ade3d0fb92cade9bcf4
 ]],
 }
 

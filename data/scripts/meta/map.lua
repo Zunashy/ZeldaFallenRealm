@@ -36,6 +36,30 @@ function map_meta:set_obscurity(level)
 
 end
 
+function map_meta:update_active_lights()
+    local game = self:get_game()
+    local hero = game:get_hero()
+    local i = 0
+    self.active_lights = {}
+    for _, light in pairs(self.lights) do
+        if light:is_in_same_region(hero) and not light.light_disabled then
+            i = i + 1
+            self.active_lights[i] = light
+        end
+    end
+    game.obscurity_shader:set_uniform("n_lights", i)
+end
+
+function map_meta:add_active_light(light)
+    local game = self:get_game()
+    local hero = game:get_hero()
+    if light:is_in_same_region(hero) and not light.light_disabled then
+        local i = (#self.active_lights) + 1
+        self.active_lights[i] = light
+        game.obscurity_shader:set_uniform("n_lights", i)
+    end
+end
+
 local function generic_start_callback(map)
     local prop
     local game = map:get_game()
@@ -55,6 +79,8 @@ local function generic_start_callback(map)
     end
     print("volume : "..sol.audio.default_music_volume)
     sol.audio.set_music_volume(sol.audio.default_music_volume)
+    print("map")
+    map:update_active_lights()
 end
 
 local function call_alt_on_started(map)

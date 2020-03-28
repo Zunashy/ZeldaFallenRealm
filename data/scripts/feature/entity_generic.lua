@@ -104,3 +104,10 @@ function eg.blink(entity, hperiod, duration, callback)
     if callback then callback() end
   end)
 end
+
+function eg.add_light_entity(entity, power)
+  local lights = entity:get_map().lights
+  lights[#lights + 1] = entity
+  entity.light_power = power
+  entity:get_map():add_active_light(entity)
+end

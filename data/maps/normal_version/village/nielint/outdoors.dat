@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "overworld/forest_plain",
-  music = "Horon Village",
+  music = "horon village",
 }
 
 tile{
@@ -5379,16 +5379,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 392,
-  y = 464,
-  width = 16,
-  height = 16,
-  pattern = "137",
-  tileset = "overworld/forest_plain",
-}
-
-tile{
-  layer = 1,
   x = 128,
   y = 400,
   width = 16,
@@ -6433,16 +6423,6 @@ npc{
 
 npc{
   layer = 1,
-  x = 632,
-  y = 333,
-  direction = 3,
-  subtype = 1,
-  sprite = "pnj/nielint/14",
-  behavior = "dialog#pnj.village.nielint.exit_guards",
-}
-
-npc{
-  layer = 1,
   x = 24,
   y = 461,
   direction = 3,
@@ -6965,16 +6945,6 @@ destination{
 
 npc{
   layer = 1,
-  x = 536,
-  y = 45,
-  direction = 3,
-  subtype = 1,
-  sprite = "pnj/nielint/13",
-  behavior = "dialog#pnj.village.nielint.exit_guards",
-}
-
-npc{
-  layer = 1,
   x = 360,
   y = 61,
   direction = 3,
@@ -7458,206 +7428,6 @@ teletransporter{
 
 destructible{
   layer = 1,
-  x = 232,
-  y = 477,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 248,
-  y = 477,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 264,
-  y = 477,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 280,
-  y = 477,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 296,
-  y = 477,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 296,
-  y = 461,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 280,
-  y = 461,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 264,
-  y = 461,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 248,
-  y = 461,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 232,
-  y = 461,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 232,
-  y = 445,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 248,
-  y = 445,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 264,
-  y = 445,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 280,
-  y = 445,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 296,
-  y = 445,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 296,
-  y = 429,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 296,
-  y = 413,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 280,
-  y = 413,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 264,
-  y = 413,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 264,
-  y = 429,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 280,
-  y = 429,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 248,
-  y = 429,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 232,
-  y = 429,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 232,
-  y = 413,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 248,
-  y = 413,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
   x = 24,
   y = 413,
   sprite = "entities/grass",
@@ -7846,6 +7616,249 @@ destructible{
   y = 301,
   sprite = "entities/grass",
   can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 232,
+  y = 413,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 248,
+  y = 413,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 264,
+  y = 413,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 280,
+  y = 413,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 296,
+  y = 413,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 296,
+  y = 429,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 280,
+  y = 429,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 264,
+  y = 429,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 248,
+  y = 429,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 232,
+  y = 429,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 232,
+  y = 445,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 248,
+  y = 445,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 264,
+  y = 445,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 280,
+  y = 445,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 296,
+  y = 445,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 296,
+  y = 461,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 280,
+  y = 461,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 264,
+  y = 461,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 248,
+  y = 461,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 232,
+  y = 461,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 232,
+  y = 477,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 248,
+  y = 477,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 264,
+  y = 477,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 280,
+  y = 477,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 296,
+  y = 477,
+  sprite = "entities/grass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destination{
+  name = "ocotrok",
+  layer = 1,
+  x = 400,
+  y = 477,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 1,
+  x = 392,
+  y = 432,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/village/nielint/indoors/octorok_cave_01",
+  destination = "entrance",
 }
 
 tile{

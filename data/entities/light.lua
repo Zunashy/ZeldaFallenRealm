@@ -19,5 +19,5 @@ function entity:on_created()
   else
     map.lights[#map.lights + 1] = self
   end
-  self.power = tonumber(self:get_property("power"))
+  self.light_power = tonumber(self:get_property("power"))
 end
