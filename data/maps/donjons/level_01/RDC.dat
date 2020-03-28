@@ -5,7 +5,7 @@ properties{
   height = 1408,
   min_layer = 0,
   max_layer = 2,
-  tileset = "tileset_donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
   music = "dungeon1",
 }
 
@@ -9845,22 +9845,6 @@ enemy{
 
 custom_entity{
   layer = 0,
-  x = 116,
-  y = 389,
-  properties = {
-    {
-      key = "direction",
-      value = "3",
-    },
-  },
-  width = 24,
-  height = 24,
-  direction = 0,
-  model = "platform_controller",
-}
-
-custom_entity{
-  layer = 0,
   x = 120,
   y = 429,
   properties = {
@@ -9878,22 +9862,6 @@ custom_entity{
   direction = 0,
   sprite = "entities/platform",
   model = "platform",
-}
-
-custom_entity{
-  layer = 0,
-  x = 116,
-  y = 429,
-  properties = {
-    {
-      key = "direction",
-      value = "1",
-    },
-  },
-  width = 24,
-  height = 24,
-  direction = 0,
-  model = "platform_controller",
 }
 
 door{
@@ -10022,22 +9990,6 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/5",
-}
-
-custom_entity{
-  layer = 0,
-  x = 840,
-  y = 349,
-  properties = {
-    {
-      key = "find_solid_ground",
-      value = "1",
-    },
-  },
-  width = 16,
-  height = 16,
-  direction = 0,
-  model = "nonsolid_ground",
 }
 
 destination{

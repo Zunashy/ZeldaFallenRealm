@@ -7,7 +7,6 @@ map{ id = "donjons/level_02/ss1", description = "donjons/level_02/ss1" }
 map{ id = "testHub", description = "testHub" }
 map{ id = "war_version/forest", description = "war_version/forest" }
 
-tileset{ id = "Tileset_Donjon_1", description = "Tileset_Donjon_1" }
 tileset{ id = "Zunatest/tiletest", description = "Zunatest/tiletest" }
 tileset{ id = "caves/cave_side", description = "caves/cave_side" }
 tileset{ id = "dungeon/tileset_donjon_1", description = "dungeon/tileset_donjon_1" }
@@ -130,5 +129,7 @@ sprite{ id = "things/water_splash_effect", description = "things/water_splash_ef
 
 
 
+font{ id = "minecraftia", description = "minecraftia" }
+font{ id = "oracle_like", description = "oracle_like" }
 
 
