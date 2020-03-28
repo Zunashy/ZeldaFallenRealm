@@ -46,6 +46,12 @@ map{ id = "tests/dungeon", description = "Map de donjon" }
 map{ id = "tests/mapglobale" }
 map{ id = "tests/obscurity", description = "tests/obscurity" }
 map{ id = "tests/platform", description = "Plateforme mouvante" }
+<<<<<<< HEAD
+map{ id = "tests/test", description = "test" }
+map{ id = "war_version/forest", description = "forêt monde guerre" }
+map{ id = "war_version/overworld/north beach", description = "plage monde guerre" }
+=======
+>>>>>>> 204be42e7b767e2da59c547f05ec502bffd27c38
 map{ id = "war_version/village/out2" }
 
 tileset{ id = "House", description = "House" }
