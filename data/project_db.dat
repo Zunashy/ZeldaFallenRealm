@@ -51,9 +51,13 @@ map{ id = "war_version/village/out2" }
 tileset{ id = "House", description = "House" }
 tileset{ id = "Zunatest/tiletest", description = "Zunatest/tiletest" }
 tileset{ id = "caves/cave_side", description = "cave_sides" }
+tileset{ id = "dungeon/tileset_donjon_1", description = "dungeon/tileset_donjon_1" }
+tileset{ id = "dungeon/tileset_donjon_2", description = "dungeon/tileset_donjon_2" }
+tileset{ id = "dungeon/tileset_donjon_6", description = "dungeon/tileset_donjon_6" }
 tileset{ id = "forest_cave", description = "forest_cave" }
 tileset{ id = "grotte", description = "grotte" }
 tileset{ id = "house", description = "House" }
+tileset{ id = "normal_world" }
 tileset{ id = "overworld/forest_plain", description = "overworld/forest_plain" }
 tileset{ id = "overworld/jungle", description = "jungle" }
 tileset{ id = "overworld/mountain_sea", description = "mountain sea" }

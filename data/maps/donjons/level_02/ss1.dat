@@ -14,7 +14,7 @@ tile{
   y = 16,
   width = 464,
   height = 144,
-  pattern = "1_2",
+  pattern = "26_2",
 }
 
 tile{
@@ -411,33 +411,6 @@ tile{
   width = 16,
   height = 48,
   pattern = "20_2",
-}
-
-tile{
-  layer = 0,
-  x = 352,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "4_2",
-}
-
-tile{
-  layer = 0,
-  x = 336,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "4_2",
-}
-
-tile{
-  layer = 0,
-  x = 368,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "4_2",
 }
 
 tile{
