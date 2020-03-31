@@ -492,7 +492,7 @@ tile{
   y = 32,
   width = 128,
   height = 160,
-  pattern = "6",
+  pattern = "160",
   tileset = "overworld/mountain_sea",
 }
 

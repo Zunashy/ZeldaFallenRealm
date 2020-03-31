@@ -165,10 +165,33 @@ sprite{ id = "things/radeau", description = "things/radeau" }
 sprite{ id = "things/switch_aureole", description = "things/switch_aureole" }
 sprite{ id = "things/water_splash_effect", description = "things/water_splash_effect" }
 
+music{ id = "Zelda Original/caves", description = "Zelda Original/caves" }
+music{ id = "Zelda Original/horon village", description = "Zelda Original/horon village" }
+music{ id = "Zelda Original/houses", description = "Zelda Original/houses" }
+music{ id = "Zelda Original/mysterious forest", description = "Zelda Original/mysterious forest" }
+music{ id = "Zelda Original/overworld", description = "Zelda Original/overworld" }
 music{ id = "bar", description = "bar" }
 music{ id = "boss", description = "boss" }
 music{ id = "caves", description = "caves" }
 music{ id = "dungeon1", description = "dungeon1" }
+music{ id = "eduardo/Scatman_John_-_pi_pa_pa_para_po_Original_Video_", description = "eduardo/Scatman_John_-_pi_pa_pa_para_po_Original_Video_" }
+music{ id = "eduardo/Story_1_-_Forest_of_Resurrection_-_Fire_Emblem_Gai", description = "eduardo/Story_1_-_Forest_of_Resurrection_-_Fire_Emblem_Gai" }
+music{ id = "eduardo/boss", description = "eduardo/boss" }
+music{ id = "eduardo/cave", description = "eduardo/cave" }
+music{ id = "eduardo/dungeon_finished", description = "eduardo/dungeon_finished" }
+music{ id = "eduardo/fairy", description = "eduardo/fairy" }
+music{ id = "eduardo/fanfare", description = "eduardo/fanfare" }
+music{ id = "eduardo/game_over", description = "eduardo/game_over" }
+music{ id = "eduardo/lunarius", description = "eduardo/lunarius" }
+music{ id = "eduardo/mini_game", description = "eduardo/mini_game" }
+music{ id = "eduardo/mountains", description = "eduardo/mountains" }
+music{ id = "eduardo/neptune_battle", description = "eduardo/neptune_battle" }
+music{ id = "eduardo/overworld", description = "eduardo/overworld" }
+music{ id = "eduardo/soldiers", description = "eduardo/soldiers" }
+music{ id = "eduardo/sword_fanfare", description = "eduardo/sword_fanfare" }
+music{ id = "eduardo/title_screen", description = "eduardo/title_screen" }
+music{ id = "eduardo/village", description = "eduardo/village" }
+music{ id = "eduardo/witch_hut", description = "eduardo/witch_hut" }
 music{ id = "game_over", description = "game_over" }
 music{ id = "horon village", description = "horon village" }
 music{ id = "maku_trees", description = "maku_trees" }
