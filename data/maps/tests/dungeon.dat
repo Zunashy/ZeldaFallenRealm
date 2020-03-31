@@ -5,7 +5,7 @@ properties{
   height = 144,
   min_layer = 0,
   max_layer = 2,
-  tileset = "Tileset_Donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{

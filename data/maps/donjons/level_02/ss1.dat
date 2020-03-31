@@ -5,7 +5,7 @@ properties{
   height = 176,
   min_layer = 0,
   max_layer = 2,
-  tileset = "tileset_donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{
@@ -24,7 +24,7 @@ tile{
   width = 208,
   height = 16,
   pattern = "10_2",
-  tileset = "tileset_donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{
@@ -34,7 +34,7 @@ tile{
   width = 16,
   height = 144,
   pattern = "20_2",
-  tileset = "tileset_donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{
@@ -44,7 +44,7 @@ tile{
   width = 16,
   height = 64,
   pattern = "19_2",
-  tileset = "tileset_donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{
@@ -54,7 +54,7 @@ tile{
   width = 208,
   height = 16,
   pattern = "9_2",
-  tileset = "tileset_donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{
@@ -64,7 +64,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "14_2",
-  tileset = "tileset_donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{
@@ -74,7 +74,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "13_2",
-  tileset = "tileset_donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{
@@ -84,7 +84,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "12_2",
-  tileset = "tileset_donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{
@@ -94,7 +94,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "11_2",
-  tileset = "tileset_donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{
@@ -113,7 +113,7 @@ tile{
   width = 16,
   height = 64,
   pattern = "19_2",
-  tileset = "tileset_donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{
@@ -276,7 +276,7 @@ tile{
   width = 208,
   height = 16,
   pattern = "10_2",
-  tileset = "tileset_donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{
@@ -286,7 +286,7 @@ tile{
   width = 16,
   height = 64,
   pattern = "20_2",
-  tileset = "tileset_donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{
@@ -296,7 +296,7 @@ tile{
   width = 16,
   height = 144,
   pattern = "19_2",
-  tileset = "tileset_donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{
@@ -306,7 +306,7 @@ tile{
   width = 208,
   height = 16,
   pattern = "9_2",
-  tileset = "tileset_donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{
@@ -316,7 +316,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "14_2",
-  tileset = "tileset_donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{
@@ -326,7 +326,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "13_2",
-  tileset = "tileset_donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{
@@ -336,7 +336,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "12_2",
-  tileset = "tileset_donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{
@@ -346,7 +346,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "11_2",
-  tileset = "tileset_donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{
@@ -356,7 +356,7 @@ tile{
   width = 16,
   height = 64,
   pattern = "20_2",
-  tileset = "tileset_donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{
@@ -1298,7 +1298,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "13_2",
-  tileset = "tileset_donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{
@@ -1308,7 +1308,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "14_2",
-  tileset = "tileset_donjon_1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{

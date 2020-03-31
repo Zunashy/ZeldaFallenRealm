@@ -4,8 +4,51 @@ map{ id = "donjons/level_01/RDC", description = "donjons/level_01/RDC" }
 map{ id = "donjons/level_01/RDC_old", description = "donjons/level_01/RDC_old" }
 map{ id = "donjons/level_02/rdc", description = "donjons/level_02/rdc" }
 map{ id = "donjons/level_02/ss1", description = "donjons/level_02/ss1" }
+map{ id = "normal_version/overworld/deep_forest/outdoors", description = "normal_version/overworld/deep_forest/outdoors" }
+map{ id = "normal_version/overworld/deep_forest/outdoors_2", description = "normal_version/overworld/deep_forest/outdoors_2" }
+map{ id = "normal_version/overworld/north_beach/deku_tree", description = "normal_version/overworld/north_beach/deku_tree" }
+map{ id = "normal_version/overworld/north_beach/indoors/cave_01", description = "normal_version/overworld/north_beach/indoors/cave_01" }
+map{ id = "normal_version/overworld/north_beach/indoors/cave_02_rdc", description = "normal_version/overworld/north_beach/indoors/cave_02_rdc" }
+map{ id = "normal_version/overworld/north_beach/indoors/cave_02_ss1", description = "normal_version/overworld/north_beach/indoors/cave_02_ss1" }
+map{ id = "normal_version/overworld/north_beach/indoors/house", description = "normal_version/overworld/north_beach/indoors/house" }
+map{ id = "normal_version/overworld/north_beach/indoors/hut_01", description = "normal_version/overworld/north_beach/indoors/hut_01" }
+map{ id = "normal_version/overworld/north_beach/indoors/hut_02", description = "normal_version/overworld/north_beach/indoors/hut_02" }
+map{ id = "normal_version/overworld/north_beach/indoors/tree_house", description = "normal_version/overworld/north_beach/indoors/tree_house" }
+map{ id = "normal_version/overworld/north_beach/outdoors", description = "normal_version/overworld/north_beach/outdoors" }
+map{ id = "normal_version/overworld/plain/indoors/cave_01", description = "normal_version/overworld/plain/indoors/cave_01" }
+map{ id = "normal_version/overworld/plain/indoors/cave_02", description = "normal_version/overworld/plain/indoors/cave_02" }
+map{ id = "normal_version/overworld/plain/indoors/cave_03", description = "normal_version/overworld/plain/indoors/cave_03" }
+map{ id = "normal_version/overworld/plain/indoors/cave_04", description = "normal_version/overworld/plain/indoors/cave_04" }
+map{ id = "normal_version/overworld/plain/outdoors_1", description = "normal_version/overworld/plain/outdoors_1" }
+map{ id = "normal_version/overworld/plain/outdoors_2", description = "normal_version/overworld/plain/outdoors_2" }
+map{ id = "normal_version/overworld/wind_wood/forest_outdoor", description = "normal_version/overworld/wind_wood/forest_outdoor" }
+map{ id = "normal_version/overworld/wind_wood/indoors/forest_cave", description = "normal_version/overworld/wind_wood/indoors/forest_cave" }
+map{ id = "normal_version/overworld/wind_wood/indoors/house", description = "normal_version/overworld/wind_wood/indoors/house" }
+map{ id = "normal_version/overworld/wind_wood/indoors/sword_cave", description = "normal_version/overworld/wind_wood/indoors/sword_cave" }
+map{ id = "normal_version/village/nielint/indoors/bar", description = "normal_version/village/nielint/indoors/bar" }
+map{ id = "normal_version/village/nielint/indoors/bar_etage", description = "normal_version/village/nielint/indoors/bar_etage" }
+map{ id = "normal_version/village/nielint/indoors/fairy_cave", description = "normal_version/village/nielint/indoors/fairy_cave" }
+map{ id = "normal_version/village/nielint/indoors/house_01", description = "normal_version/village/nielint/indoors/house_01" }
+map{ id = "normal_version/village/nielint/indoors/house_02", description = "normal_version/village/nielint/indoors/house_02" }
+map{ id = "normal_version/village/nielint/indoors/house_03", description = "normal_version/village/nielint/indoors/house_03" }
+map{ id = "normal_version/village/nielint/indoors/house_04", description = "normal_version/village/nielint/indoors/house_04" }
+map{ id = "normal_version/village/nielint/indoors/mairie_etage", description = "normal_version/village/nielint/indoors/mairie_etage" }
+map{ id = "normal_version/village/nielint/indoors/mairie_rdc", description = "normal_version/village/nielint/indoors/mairie_rdc" }
+map{ id = "normal_version/village/nielint/indoors/octorok_cave_01", description = "normal_version/village/nielint/indoors/octorok_cave_01" }
+map{ id = "normal_version/village/nielint/indoors/octorok_cave_02", description = "normal_version/village/nielint/indoors/octorok_cave_02" }
+map{ id = "normal_version/village/nielint/indoors/shop", description = "normal_version/village/nielint/indoors/shop" }
+map{ id = "normal_version/village/nielint/indoors/tree_house", description = "normal_version/village/nielint/indoors/tree_house" }
+map{ id = "normal_version/village/nielint/outdoors", description = "normal_version/village/nielint/outdoors" }
 map{ id = "testHub", description = "testHub" }
+map{ id = "tests/blue_slime", description = "tests/blue_slime" }
+map{ id = "tests/bridges", description = "tests/bridges" }
+map{ id = "tests/dungeon", description = "tests/dungeon" }
+map{ id = "tests/mapglobale", description = "tests/mapglobale" }
+map{ id = "tests/obscurity", description = "tests/obscurity" }
+map{ id = "tests/platform", description = "tests/platform" }
 map{ id = "war_version/forest", description = "war_version/forest" }
+map{ id = "war_version/overworld/north beach", description = "war_version/overworld/north beach" }
+map{ id = "war_version/village/out2", description = "war_version/village/out2" }
 
 tileset{ id = "caves/cave_side", description = "caves/cave_side" }
 tileset{ id = "dungeon/tileset_donjon_1", description = "dungeon/tileset_donjon_1" }
@@ -122,13 +165,107 @@ sprite{ id = "things/radeau", description = "things/radeau" }
 sprite{ id = "things/switch_aureole", description = "things/switch_aureole" }
 sprite{ id = "things/water_splash_effect", description = "things/water_splash_effect" }
 
+music{ id = "bar", description = "bar" }
+music{ id = "boss", description = "boss" }
+music{ id = "caves", description = "caves" }
+music{ id = "dungeon1", description = "dungeon1" }
+music{ id = "game_over", description = "game_over" }
+music{ id = "horon village", description = "horon village" }
+music{ id = "maku_trees", description = "maku_trees" }
+music{ id = "miniboss", description = "miniboss" }
+music{ id = "mysterious forest", description = "mysterious forest" }
+music{ id = "overworld", description = "overworld" }
+music{ id = "save_select", description = "save_select" }
+music{ id = "title", description = "title" }
 
+sound{ id = "chest_appears", description = "chest_appears" }
+sound{ id = "chest_open", description = "chest_open" }
+sound{ id = "door_closed", description = "door_closed" }
+sound{ id = "door_open", description = "door_open" }
+sound{ id = "door_unlocked", description = "door_unlocked" }
+sound{ id = "enemy_hurt", description = "enemy_hurt" }
+sound{ id = "enemy_killed", description = "enemy_killed" }
+sound{ id = "heart", description = "heart" }
+sound{ id = "hero_falls", description = "hero_falls" }
+sound{ id = "hero_hurt", description = "hero_hurt" }
+sound{ id = "hero_lands", description = "hero_lands" }
+sound{ id = "hero_pushes", description = "hero_pushes" }
+sound{ id = "hero_seen", description = "hero_seen" }
+sound{ id = "jump", description = "jump" }
+sound{ id = "picked_item", description = "picked_item" }
+sound{ id = "picked_money", description = "picked_money" }
+sound{ id = "picked_small_key", description = "picked_small_key" }
+sound{ id = "splash", description = "splash" }
+sound{ id = "swim", description = "swim" }
+sound{ id = "switch", description = "switch" }
+sound{ id = "sword1", description = "sword1" }
+sound{ id = "sword2", description = "sword2" }
+sound{ id = "sword3", description = "sword3" }
+sound{ id = "sword4", description = "sword4" }
+sound{ id = "sword_spin_attack_load", description = "sword_spin_attack_load" }
+sound{ id = "sword_spin_attack_release", description = "sword_spin_attack_release" }
+sound{ id = "sword_tapping", description = "sword_tapping" }
+sound{ id = "sword_tapping_weak_wall", description = "sword_tapping_weak_wall" }
+sound{ id = "text", description = "text" }
+sound{ id = "treasure", description = "treasure" }
+sound{ id = "walk_on_grass", description = "walk_on_grass" }
+sound{ id = "walk_on_water", description = "walk_on_water" }
 
+item{ id = "bomb", description = "Bombe" }
+item{ id = "great_key", description = "great_key" }
+item{ id = "heart", description = "heart" }
+item{ id = "heart_container", description = "heart_container" }
+item{ id = "heart_quarter", description = "heart_quarter" }
+item{ id = "ice_seed", description = "ice_seed" }
+item{ id = "map", description = "map" }
+item{ id = "random", description = "random" }
+item{ id = "rock_feather", description = "rock_feather" }
+item{ id = "rupee", description = "rupee" }
+item{ id = "shield", description = "shield" }
+item{ id = "small_key", description = "small_key" }
+item{ id = "sword", description = "sword" }
 
+enemy{ id = "bat", description = "Bat" }
+enemy{ id = "blue_slime", description = "Slime Bleu" }
+enemy{ id = "boss/merman", description = "Boss donjon 1" }
+enemy{ id = "crab", description = "crab" }
+enemy{ id = "mini_boss/mr_pers", description = "Miniboss Donjon 1" }
+enemy{ id = "moblin_bow", description = "Moblin (arc)" }
+enemy{ id = "moblin_sword", description = "Moblin (Épée)" }
+enemy{ id = "octorok", description = "Octorock" }
+enemy{ id = "oursin", description = "Oursin" }
+enemy{ id = "pool_dasher", description = "pool_dasher" }
+enemy{ id = "skeleton_1", description = "skeleton_1" }
+enemy{ id = "skeleton_2", description = "skeleton_2" }
+enemy{ id = "skeleton_3", description = "skeleton_3" }
+enemy{ id = "slime_green", description = "slime_green" }
 
+entity{ id = "arrow", description = "Flèche" }
+entity{ id = "bone", description = "Os (projectile)" }
+entity{ id = "dungeon_statue_eye", description = "Oeil de statue" }
+entity{ id = "ice_floor", description = "Sol de glace" }
+entity{ id = "interaction_box", description = "Interaction Box" }
+entity{ id = "light", description = "Source de lumière" }
+entity{ id = "merman_wave", description = "Projectile Boss donjon 1" }
+entity{ id = "nonsolid_ground", description = "Indicateur de sol instable" }
+entity{ id = "octorok_rock", description = "Projecitle Octorick" }
+entity{ id = "platform", description = "Plateforme mouvante" }
+entity{ id = "platform_controller", description = "Contrôleur de plateforme" }
 
+language{ id = "en", description = "en" }
+language{ id = "fr", description = "fr" }
 
+font{ id = "8_bit", description = "8_bit" }
+font{ id = "8_bit OOS", description = "8_bit OOS" }
 font{ id = "minecraftia", description = "minecraftia" }
+font{ id = "oracle", description = "oracle" }
+font{ id = "oracle_black", description = "oracle_black" }
+font{ id = "oracle_blue", description = "oracle_blue" }
 font{ id = "oracle_like", description = "oracle_like" }
 
+shader{ id = "chroma", description = "chroma" }
+shader{ id = "default", description = "default" }
+shader{ id = "map_shader", description = "map_shader" }
+shader{ id = "obscurity", description = "obscurity" }
+shader{ id = "visualizer", description = "visualizer" }
 

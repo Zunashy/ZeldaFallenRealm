@@ -493,7 +493,7 @@ tile{
   width = 128,
   height = 160,
   pattern = "6",
-  tileset = "Zunatest/tiletest",
+  tileset = "overworld/mountain_sea",
 }
 
 tile{
