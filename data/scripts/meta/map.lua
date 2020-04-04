@@ -77,10 +77,8 @@ local function generic_start_callback(map)
             e:set_enabled(true)
         end
     end
-    print("volume : "..sol.audio.default_music_volume)
     sol.audio.set_music_volume(sol.audio.default_music_volume)
-    print("map")
-    map:update_active_lights()
+    if map.obscurity then map:update_active_lights() end
 end
 
 local function call_alt_on_started(map)

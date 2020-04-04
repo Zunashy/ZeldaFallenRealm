@@ -7353,6 +7353,7 @@ destination{
   x = 216,
   y = 341,
   direction = 3,
+  default = true,
 }
 
 destination{
