@@ -203,6 +203,7 @@ music{ id = "title", description = "title" }
 
 sound{ id = "chest_appears", description = "chest_appears" }
 sound{ id = "chest_open", description = "chest_open" }
+sound{ id = "danger", description = "danger" }
 sound{ id = "door_closed", description = "door_closed" }
 sound{ id = "door_open", description = "door_open" }
 sound{ id = "door_unlocked", description = "door_unlocked" }
@@ -274,6 +275,7 @@ entity{ id = "nonsolid_ground", description = "Indicateur de sol instable" }
 entity{ id = "octorok_rock", description = "Projecitle Octorick" }
 entity{ id = "platform", description = "Plateforme mouvante" }
 entity{ id = "platform_controller", description = "Contrôleur de plateforme" }
+entity{ id = "shop_item", description = "Item du Shop" }
 
 language{ id = "en", description = "en" }
 language{ id = "fr", description = "fr" }

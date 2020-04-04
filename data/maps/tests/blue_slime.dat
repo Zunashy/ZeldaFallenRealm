@@ -107,29 +107,11 @@ tile{
   pattern = "28",
 }
 
-tile{
-  layer = 1,
-  x = 160,
-  y = 136,
-  width = 16,
-  height = 48,
-  pattern = "7",
-}
-
-tile{
-  layer = 1,
-  x = 248,
-  y = 136,
-  width = 16,
-  height = 48,
-  pattern = "9",
-}
-
 destination{
   name = "spawn",
   layer = 1,
-  x = 200,
-  y = 221,
+  x = 232,
+  y = 237,
   direction = 1,
   default = true,
 }
@@ -154,11 +136,43 @@ custom_entity{
   model = "platform",
 }
 
-enemy{
+pickable{
   layer = 1,
   x = 208,
+  y = 205,
+  treasure_name = "rupee",
+  treasure_variant = 3,
+}
+
+custom_entity{
+  layer = 1,
+  x = 224,
   y = 165,
+  properties = {
+    {
+      key = "item",
+      value = "heart_quarter",
+    },
+    {
+      key = "price",
+      value = "20",
+    },
+    {
+      key = "variant",
+      value = "0",
+    },
+  },
+  width = 32,
+  height = 32,
   direction = 0,
-  breed = "boss/merman",
+  model = "shop_item",
+}
+
+pickable{
+  layer = 1,
+  x = 224,
+  y = 205,
+  treasure_name = "rupee",
+  treasure_variant = 3,
 }
 

@@ -76,8 +76,8 @@ animation{
   src_image = "items/rupee.png",
   directions = {
     { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
-    { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 48, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
     { x = 64, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
   },

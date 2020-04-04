@@ -18,8 +18,12 @@ function meta:set_font(font, load)
   end
 end
 
-function meta:get_font()
+function meta:get_font_name()
   return self.font
+end
+
+function meta:get_font()
+  return self.font_obj
 end
 
 function meta:get_surface()
@@ -87,6 +91,4 @@ function char_surface.create(w, h, font, load_font)
   surf:set_font(font, load_font)
   return surf
 end
-
-
 gen.char_surface = char_surface

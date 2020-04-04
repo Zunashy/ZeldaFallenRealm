@@ -64,9 +64,7 @@ function meta:on_key_pressed(key, modifiers) --manages inputs upstream of the co
     sol.main.exit()
     handled = true
   elseif key == "f1" then
-    sol.main.game:get_hero():teleport("Map1")
-  elseif key == "f2" then
-    sol.main.game:get_hero():teleport("donjon_rc")
+    sol.main.game:get_hero():teleport("testHub")
   elseif key == "f3" then
     sol.main.game:set_life(12)  
   elseif key == "f7" then
