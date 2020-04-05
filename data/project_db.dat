@@ -82,6 +82,7 @@ sprite{ id = "citizens/vieux06", description = "citizens/vieux06" }
 sprite{ id = "citizens/vieux07", description = "citizens/vieux07" }
 sprite{ id = "citizens/witch", description = "citizens/witch" }
 sprite{ id = "enemies/bat", description = "enemies/bat" }
+sprite{ id = "enemies/blue_octorock", description = "enemies/blue_octorock" }
 sprite{ id = "enemies/blue_slime", description = "enemies/blue_slime" }
 sprite{ id = "enemies/boss/merman", description = "enemies/boss/merman" }
 sprite{ id = "enemies/boss/merman_trident", description = "enemies/boss/merman_trident" }
@@ -250,6 +251,7 @@ item{ id = "small_key", description = "small_key" }
 item{ id = "sword", description = "sword" }
 
 enemy{ id = "bat", description = "Bat" }
+enemy{ id = "blue_octorock", description = "Octorock Bleu" }
 enemy{ id = "blue_slime", description = "Slime Bleu" }
 enemy{ id = "boss/merman", description = "Boss donjon 1" }
 enemy{ id = "crab", description = "crab" }
