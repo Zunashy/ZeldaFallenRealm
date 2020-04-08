@@ -102,6 +102,7 @@ sprite{ id = "enemies/skeleton_1", description = "enemies/skeleton_1" }
 sprite{ id = "enemies/skeleton_2", description = "enemies/skeleton_2" }
 sprite{ id = "enemies/skeleton_3", description = "enemies/skeleton_3" }
 sprite{ id = "enemies/slime_green", description = "enemies/slime_green" }
+sprite{ id = "enemies/tektite_blue", description = "enemies/tektite_blue" }
 sprite{ id = "enemies/tektite_red", description = "Tektite Red" }
 sprite{ id = "enemies/tektite_shadow", description = "Ombre de tektite" }
 sprite{ id = "entities/arbuste", description = "entities/arbuste" }
@@ -267,7 +268,8 @@ enemy{ id = "skeleton_1", description = "skeleton_1" }
 enemy{ id = "skeleton_2", description = "skeleton_2" }
 enemy{ id = "skeleton_3", description = "skeleton_3" }
 enemy{ id = "slime_green", description = "slime_green" }
-enemy{ id = "tektite_red", description = "Tektite Red" }
+enemy{ id = "tektite_blue", description = "Tektite Bleu" }
+enemy{ id = "tektite_red", description = "Tektite Rouge" }
 
 entity{ id = "arrow", description = "Flèche" }
 entity{ id = "bone", description = "Os (projectile)" }

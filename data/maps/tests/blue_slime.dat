@@ -138,9 +138,9 @@ custom_entity{
 
 enemy{
   layer = 1,
-  x = 224,
-  y = 189,
+  x = 232,
+  y = 197,
   direction = 0,
-  breed = "tektite_red",
+  breed = "tektite_blue",
 }
 

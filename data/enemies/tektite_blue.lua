@@ -15,8 +15,8 @@ local sprite
 local movement
 local display_h = 0
 
-local idle_time = 800
-local movement_speed = 60
+local idle_time = 600
+local movement_speed = 75
 local movement_distance = 64
 
 -- Event called when the enemy is initialized.
@@ -27,8 +27,8 @@ function enemy:on_created()
   sprite = sol.sprite.create("enemies/" .. enemy:get_breed())
   self:create_sprite("enemies/tektite_shadow")
   self:set_size(16, 16)
-  self:set_life(1)
-  self:set_damage(2)
+  self:set_life(2)
+  self:set_damage(3)
 end
 
 local function parabola(x)
