@@ -136,43 +136,11 @@ custom_entity{
   model = "platform",
 }
 
-pickable{
-  layer = 1,
-  x = 208,
-  y = 205,
-  treasure_name = "rupee",
-  treasure_variant = 3,
-}
-
-custom_entity{
+enemy{
   layer = 1,
   x = 224,
-  y = 165,
-  properties = {
-    {
-      key = "item",
-      value = "heart_quarter",
-    },
-    {
-      key = "price",
-      value = "20",
-    },
-    {
-      key = "variant",
-      value = "0",
-    },
-  },
-  width = 32,
-  height = 32,
+  y = 189,
   direction = 0,
-  model = "shop_item",
-}
-
-pickable{
-  layer = 1,
-  x = 224,
-  y = 205,
-  treasure_name = "rupee",
-  treasure_variant = 3,
+  breed = "tektite_red",
 }
 
