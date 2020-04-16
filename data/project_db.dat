@@ -43,6 +43,7 @@ map{ id = "testHub", description = "testHub" }
 map{ id = "tests/blue_slime", description = "tests/blue_slime" }
 map{ id = "tests/bridges", description = "tests/bridges" }
 map{ id = "tests/dungeon", description = "tests/dungeon" }
+map{ id = "tests/live", description = "tests/live" }
 map{ id = "tests/mapglobale", description = "tests/mapglobale" }
 map{ id = "tests/obscurity", description = "tests/obscurity" }
 map{ id = "tests/platform", description = "tests/platform" }
