@@ -44,6 +44,7 @@ map{ id = "tests/blue_slime", description = "tests/blue_slime" }
 map{ id = "tests/bridges", description = "tests/bridges" }
 map{ id = "tests/dungeon", description = "tests/dungeon" }
 map{ id = "tests/live", description = "tests/live" }
+map{ id = "tests/live world" }
 map{ id = "tests/mapglobale", description = "tests/mapglobale" }
 map{ id = "tests/obscurity", description = "tests/obscurity" }
 map{ id = "tests/platform", description = "tests/platform" }
@@ -51,6 +52,7 @@ map{ id = "war_version/forest", description = "war_version/forest" }
 map{ id = "war_version/overworld/north beach", description = "war_version/overworld/north beach" }
 map{ id = "war_version/village/out2", description = "war_version/village/out2" }
 
+tileset{ id = "House", description = "House" }
 tileset{ id = "caves/cave_side", description = "caves/cave_side" }
 tileset{ id = "dungeon/tileset_donjon_1", description = "dungeon/tileset_donjon_1" }
 tileset{ id = "dungeon/tileset_donjon_2", description = "dungeon/tileset_donjon_2" }
@@ -65,6 +67,7 @@ tileset{ id = "overworld/mountain_sea", description = "overworld/mountain_sea" }
 tileset{ id = "overworld/structure", description = "overworld/structure" }
 tileset{ id = "overworld/structure2", description = "overworld/structure2" }
 tileset{ id = "tileset1", description = "tileset1" }
+tileset{ id = "war_world", description = "war_world" }
 tileset{ id = "war_world/autumn_dark", description = "war_world/autumn_dark" }
 tileset{ id = "war_world/autumn_dark.old", description = "war_world/autumn_dark.old" }
 tileset{ id = "war_world/mountain_sea", description = "war_world/mountain_sea" }
