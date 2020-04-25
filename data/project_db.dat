@@ -49,6 +49,7 @@ map{ id = "tests/mapglobale", description = "tests/mapglobale" }
 map{ id = "tests/obscurity", description = "tests/obscurity" }
 map{ id = "tests/platform", description = "tests/platform" }
 map{ id = "war_version/forest", description = "war_version/forest" }
+map{ id = "war_version/overworld/forest", description = "forêt version guerre" }
 map{ id = "war_version/overworld/north beach", description = "war_version/overworld/north beach" }
 map{ id = "war_version/village/out2", description = "war_version/village/out2" }
 

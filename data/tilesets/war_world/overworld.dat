@@ -5929,7 +5929,7 @@ tile_pattern{
 
 tile_pattern{
   id = "595",
-  ground = "traversable",
+  ground = "grass",
   default_layer = 0,
   x = 0,
   y = 448,
