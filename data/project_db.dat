@@ -48,6 +48,7 @@ map{ id = "tests/live world" }
 map{ id = "tests/mapglobale", description = "tests/mapglobale" }
 map{ id = "tests/obscurity", description = "tests/obscurity" }
 map{ id = "tests/platform", description = "tests/platform" }
+map{ id = "tests/tttteteessst", description = "oui" }
 map{ id = "war_version/forest", description = "war_version/forest" }
 map{ id = "war_version/overworld/north beach", description = "war_version/overworld/north beach" }
 map{ id = "war_version/village/out2", description = "war_version/village/out2" }
@@ -134,6 +135,7 @@ sprite{ id = "entities/pot", description = "entities/pot" }
 sprite{ id = "entities/rock", description = "entities/rock" }
 sprite{ id = "entities/shadow", description = "entities/shadow" }
 sprite{ id = "entities/switch", description = "entities/switch" }
+sprite{ id = "entities/tree", description = "Arbre" }
 sprite{ id = "hero/ground1", description = "hero/ground1" }
 sprite{ id = "hero/ground2", description = "hero/ground2" }
 sprite{ id = "hero/sword1", description = "hero/sword1" }
