@@ -26,7 +26,23 @@ function eg.zone_detect(detector, detected, distance, same_region)
   return detector:get_distance(detected) < distance and (not same_region or detector:is_in_same_region(detected))
 end
 
---list of grounds considered as dangerous (e.g. will usually deal damages do living entities, and make the hero reappear elsewhere)
+function eg.lines_detect(detector, detected, distance, same_region)
+  local x1, y1 = detector:get_position()
+  local x2, y2, w, h = detected:get_bounding_box()
+  if (y1 > y2 and y1 < y2 + h) and x1 < x2 and not (distance and detector:get_distance(detected) > distance) and (not same_region or detector:is_in_same_region(detected)) then
+    return 0
+  elseif (x1 > x2 and x1 < x2 + w) and y1 > y2 and not (distance and detector:get_distance(detected) > distance) and (not same_region or detector:is_in_same_region(detected)) then
+    return 1
+  elseif (y1 > y2 and y1 < y2 + h) and x1 > x2 and not (distance and detector:get_distance(detected) > distance) and (not same_region or detector:is_in_same_region(detected)) then
+    return 2
+  elseif (x1 > x2 and x1 < x2 + w) and y1 < y2 and not (distance and detector:get_distance(detected) > distance) and (not same_region or detector:is_in_same_region(detected)) then
+    return 3
+  else
+    return nil
+  end
+end
+
+    --list of grounds considered as dangerous (e.g. will usually deal damages do living entities, and make the hero reappear elsewhere)
 local dangerous_grounds = {
   hole = true,
   lava = true
@@ -54,7 +70,7 @@ end
 --returns the position of the left top corner of the bounding box of an entity
 function eg.get_corner_position(entity)
   local x, y = entity:get_position()
-  ox, oy = entity:get_origin()  
+  ox, oy = entity:get_origin()
   return x - ox, y - oy
 end
 
