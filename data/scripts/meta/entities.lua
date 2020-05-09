@@ -67,3 +67,9 @@ function enemy_meta:set_attacks_consequence(consequence)
   self:set_attack_consequence("boomerang", consequence)
   self:set_attack_consequence("fire", consequence)
 end
+
+local dest_meta = sol.main.get_metatable("destructible")
+function dest_meta:is_flammable()
+  local sprite_name = self:get_sprite():get_animation_set()
+  return name == "tree" or name == "grass"
+end

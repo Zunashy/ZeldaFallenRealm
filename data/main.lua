@@ -34,6 +34,7 @@ function sol.main:on_started()
   sol.audio.set_sound_volume(50)
   sol.audio.set_music_volume(10)
   sol.audio.default_music_volume = 10
+  gen.randomseed(os.time())
 
   -- Setting a language is useful to display text and dialogs.
   sol.menu.stop(loading_menu)

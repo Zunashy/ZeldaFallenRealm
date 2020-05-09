@@ -11,8 +11,7 @@ local function initialize_hero_features(game)
 
   local hero = game:get_hero()
   hero.get_corner_position = eg.get_corner_position
-
-
+  
   function hero:on_created()
     hero_sprite = hero:get_sprite("tunic")
     sword_sprite = hero:get_sprite("sword")

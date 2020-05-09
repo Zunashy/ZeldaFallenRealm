@@ -136,11 +136,10 @@ custom_entity{
   model = "platform",
 }
 
-enemy{
+pickable{
   layer = 1,
-  x = 224,
-  y = 189,
-  direction = 0,
-  breed = "rope",
+  x = 208,
+  y = 205,
+  treasure_name = "fire_seed",
 }
 

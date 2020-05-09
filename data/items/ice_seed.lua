@@ -77,7 +77,7 @@ end
 -- Event called when the hero is using this item.
 function item:on_using()
   -- On récupère les coordonnées du héros +16 (une tile) dans la direction où il regarde
-  local hero = self:get_map():get_entity("hero")
+  local hero = game:get_hero()
   local x, y, layer = hero:get_position()
   local direction = hero:get_direction()
   -- On regarde toutes les entitées dans un petit rectangle autour de ces coordonnées

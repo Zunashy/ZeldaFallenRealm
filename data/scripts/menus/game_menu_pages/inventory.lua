@@ -4,7 +4,8 @@ local inventory_menu = {
     bg_surface = nil,
     items = {
         "rock_feather",
-        "ice_seed"
+        "ice_seed",
+        "fire_seed"
     },
     items_sprites = {},
     enable_info_text = true

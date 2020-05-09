@@ -124,6 +124,7 @@ sprite{ id = "entities/deep_water", description = "entities/deep_water" }
 sprite{ id = "entities/door", description = "entities/door" }
 sprite{ id = "entities/door_key", description = "entities/door_key" }
 sprite{ id = "entities/dungeon_statue_eye", description = "entities/dungeon_statue_eye" }
+sprite{ id = "entities/flame", description = "Flamme (graine)" }
 sprite{ id = "entities/flowers", description = "entities/flowers" }
 sprite{ id = "entities/grass", description = "entities/grass" }
 sprite{ id = "entities/grass_dark", description = "entities/grass_dark" }
@@ -248,6 +249,7 @@ sound{ id = "walk_on_grass", description = "walk_on_grass" }
 sound{ id = "walk_on_water", description = "walk_on_water" }
 
 item{ id = "bomb", description = "Bombe" }
+item{ id = "fire_seed", description = "Graine de feu" }
 item{ id = "great_key", description = "great_key" }
 item{ id = "heart", description = "heart" }
 item{ id = "heart_container", description = "heart_container" }
@@ -283,6 +285,7 @@ enemy{ id = "tektite_red", description = "Tektite Rouge" }
 entity{ id = "arrow", description = "Flèche" }
 entity{ id = "bone", description = "Os (projectile)" }
 entity{ id = "dungeon_statue_eye", description = "Oeil de statue" }
+entity{ id = "flame", description = "Flamme (graine)" }
 entity{ id = "ice_floor", description = "Sol de glace" }
 entity{ id = "interaction_box", description = "Interaction Box" }
 entity{ id = "light", description = "Source de lumière" }
