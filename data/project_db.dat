@@ -48,6 +48,7 @@ map{ id = "tests/live world" }
 map{ id = "tests/mapglobale", description = "tests/mapglobale" }
 map{ id = "tests/obscurity", description = "tests/obscurity" }
 map{ id = "tests/platform", description = "tests/platform" }
+map{ id = "tests/tttteteessst", description = "oui" }
 map{ id = "war_version/forest", description = "war_version/forest" }
 map{ id = "war_version/overworld/forest", description = "forêt version guerre" }
 map{ id = "war_version/overworld/north beach", description = "war_version/overworld/north beach" }
@@ -123,6 +124,7 @@ sprite{ id = "entities/deep_water", description = "entities/deep_water" }
 sprite{ id = "entities/door", description = "entities/door" }
 sprite{ id = "entities/door_key", description = "entities/door_key" }
 sprite{ id = "entities/dungeon_statue_eye", description = "entities/dungeon_statue_eye" }
+sprite{ id = "entities/flame", description = "Flamme (graine)" }
 sprite{ id = "entities/flowers", description = "entities/flowers" }
 sprite{ id = "entities/grass", description = "entities/grass" }
 sprite{ id = "entities/grass_dark", description = "entities/grass_dark" }
@@ -135,6 +137,7 @@ sprite{ id = "entities/pot", description = "entities/pot" }
 sprite{ id = "entities/rock", description = "entities/rock" }
 sprite{ id = "entities/shadow", description = "entities/shadow" }
 sprite{ id = "entities/switch", description = "entities/switch" }
+sprite{ id = "entities/tree", description = "Arbre" }
 sprite{ id = "hero/ground1", description = "hero/ground1" }
 sprite{ id = "hero/ground2", description = "hero/ground2" }
 sprite{ id = "hero/sword1", description = "hero/sword1" }
@@ -246,6 +249,7 @@ sound{ id = "walk_on_grass", description = "walk_on_grass" }
 sound{ id = "walk_on_water", description = "walk_on_water" }
 
 item{ id = "bomb", description = "Bombe" }
+item{ id = "fire_seed", description = "Graine de feu" }
 item{ id = "great_key", description = "great_key" }
 item{ id = "heart", description = "heart" }
 item{ id = "heart_container", description = "heart_container" }
@@ -270,6 +274,7 @@ enemy{ id = "moblin_sword", description = "Moblin (Épée)" }
 enemy{ id = "octorok", description = "Octorock" }
 enemy{ id = "oursin", description = "Oursin" }
 enemy{ id = "pool_dasher", description = "pool_dasher" }
+enemy{ id = "rope", description = "Rope (Serpent)" }
 enemy{ id = "skeleton_1", description = "skeleton_1" }
 enemy{ id = "skeleton_2", description = "skeleton_2" }
 enemy{ id = "skeleton_3", description = "skeleton_3" }
@@ -280,6 +285,7 @@ enemy{ id = "tektite_red", description = "Tektite Rouge" }
 entity{ id = "arrow", description = "Flèche" }
 entity{ id = "bone", description = "Os (projectile)" }
 entity{ id = "dungeon_statue_eye", description = "Oeil de statue" }
+entity{ id = "flame", description = "Flamme (graine)" }
 entity{ id = "ice_floor", description = "Sol de glace" }
 entity{ id = "interaction_box", description = "Interaction Box" }
 entity{ id = "light", description = "Source de lumière" }

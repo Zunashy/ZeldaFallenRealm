@@ -1,6 +1,6 @@
 animation{
-  name = "on_ground",
-  src_image = "tileset",
+  name = "default",
+  src_image = "entities/flame.png",
   directions = {
     { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },

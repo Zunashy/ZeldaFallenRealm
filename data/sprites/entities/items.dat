@@ -13,6 +13,13 @@ animation{
   },
 }
 animation{
+  name = "fire_seed",
+  src_image = "items/inventory_items.png",
+  directions = {
+    { x = 0, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "great_key",
   src_image = "entities/great_keys.png",
   directions = {

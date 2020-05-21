@@ -156,4 +156,23 @@ function gen.copyFile(src, dest)
   os.execute("cp "..src.." "..dest)
 end
 
+local seed = 1
+local mod = require("scripts/api/bit").pow2(32)
+
+function gen.randomseed(seed_)
+  seed = seed_ % mod
+end
+
+function gen.random(bound, upper)
+  seed = ((seed * 214013) + 2531011) % mod
+  local res = seed / mod
+  if bound then
+    if upper then
+      bound = upper - bound
+    end
+    res = math.floor(res * bound)
+  end
+  return res 
+end
+
 return gen
