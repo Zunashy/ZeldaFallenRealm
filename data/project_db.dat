@@ -76,6 +76,7 @@ tileset{ id = "war_world/mountain_sea", description = "war_world/mountain_sea" }
 tileset{ id = "war_world/overworld", description = "war_world/overworld" }
 tileset{ id = "war_world/overworld_war", description = "war_world/overworld_war" }
 tileset{ id = "war_world/structure", description = "war_world/structure" }
+tileset{ id = "war_world_annexe" }
 
 sprite{ id = "citizens/old_man", description = "citizens/old_man" }
 sprite{ id = "citizens/old_woman", description = "citizens/old_woman" }
