@@ -8727,7 +8727,7 @@ switch{
     },
   },
   subtype = "walkable",
-  sprite = "entities/switch",
+  sprite = "entities/dungeon_elements/switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
@@ -8749,14 +8749,14 @@ chest{
   y = 557,
   treasure_name = "heart_quarter",
   treasure_savegame_variable = "dungeon_1_chest_compass",
-  sprite = "entities/chest",
+  sprite = "entities/chests/chest",
 }
 
 block{
   layer = 0,
   x = 1160,
   y = 621,
-  sprite = "entities/block",
+  sprite = "entities/block/block",
   pushable = true,
   pullable = false,
 }
@@ -8775,7 +8775,7 @@ chest{
   },
   treasure_name = "rock_feather",
   treasure_savegame_variable = "dungeon_1_chest_feather",
-  sprite = "entities/chest",
+  sprite = "entities/chests/chest",
 }
 
 teletransporter{
@@ -9034,7 +9034,7 @@ switch{
     },
   },
   subtype = "walkable",
-  sprite = "entities/switch",
+  sprite = "entities/dungeon_elements/switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
@@ -9133,7 +9133,7 @@ chest{
   treasure_name = "rupee",
   treasure_variant = 3,
   treasure_savegame_variable = "dungeon_1_chest_rupee_1",
-  sprite = "entities/chest",
+  sprite = "entities/chests/chest",
 }
 
 chest{
@@ -9143,7 +9143,7 @@ chest{
   treasure_name = "rupee",
   treasure_variant = 3,
   treasure_savegame_variable = "dungeon_1_chest_rupee_2",
-  sprite = "entities/chest",
+  sprite = "entities/chests/chest",
 }
 
 enemy{
@@ -9401,7 +9401,7 @@ door{
   x = 832,
   y = 1056,
   direction = 3,
-  sprite = "entities/door",
+  sprite = "entities/door/door",
 }
 
 separator{
@@ -9520,8 +9520,10 @@ door{
     },
   },
   direction = 3,
-  sprite = "entities/door",
+  sprite = "entities/door/door",
   savegame_variable = "dungeon_1_door_2",
+  opening_method = "interaction_if_item",
+  opening_condition = "bomb",
 }
 
 door{
@@ -9536,7 +9538,7 @@ door{
     },
   },
   direction = 3,
-  sprite = "entities/door",
+  sprite = "entities/door/door",
   savegame_variable = "dungeon_1_door_8",
 }
 
@@ -9546,7 +9548,7 @@ door{
   x = 1312,
   y = 528,
   direction = 3,
-  sprite = "entities/door",
+  sprite = "entities/door/door",
   savegame_variable = "dungeon_1_door_3",
 }
 
@@ -9562,7 +9564,7 @@ door{
     },
   },
   direction = 3,
-  sprite = "entities/door",
+  sprite = "entities/door/door",
 }
 
 door{
@@ -9571,7 +9573,7 @@ door{
   x = 720,
   y = 1136,
   direction = 0,
-  sprite = "entities/door_key",
+  sprite = "entities/door/door",
   savegame_variable = "dungeon_1_door_key_1",
   opening_method = "interaction_if_item",
   opening_condition = "small_key",
@@ -9592,7 +9594,7 @@ chest{
   },
   treasure_name = "small_key",
   treasure_savegame_variable = "dungeon_1_chest_key_1",
-  sprite = "entities/chest",
+  sprite = "entities/chests/chest",
 }
 
 sensor{
@@ -9641,7 +9643,7 @@ door{
     },
   },
   direction = 1,
-  sprite = "entities/door",
+  sprite = "entities/door/door",
   savegame_variable = "dungeon_1_door_miniboss",
 }
 
@@ -9749,7 +9751,7 @@ door{
   x = 1312,
   y = 176,
   direction = 3,
-  sprite = "entities/door",
+  sprite = "entities/door/door",
   savegame_variable = "dungeon_1_door_5",
 }
 
@@ -9804,7 +9806,7 @@ door{
   x = 832,
   y = 512,
   direction = 1,
-  sprite = "entities/door",
+  sprite = "entities/door/door",
   savegame_variable = "dungeon_1_door_7",
 }
 
@@ -9814,7 +9816,7 @@ door{
   x = 832,
   y = 528,
   direction = 3,
-  sprite = "entities/door",
+  sprite = "entities/door/door",
   savegame_variable = "dungeon_1_door_7",
 }
 
@@ -9824,7 +9826,7 @@ door{
   x = 720,
   y = 608,
   direction = 0,
-  sprite = "entities/door",
+  sprite = "entities/door/door",
   savegame_variable = "dungeon_1_door_7",
 }
 
@@ -9869,7 +9871,7 @@ door{
   x = 592,
   y = 528,
   direction = 3,
-  sprite = "entities/door_key",
+  sprite = "entities/door/door_key",
   savegame_variable = "dungeon_1_door_key_2",
   opening_method = "interaction_if_item",
   opening_condition = "small_key",
@@ -9899,7 +9901,7 @@ door{
   x = 832,
   y = 352,
   direction = 0,
-  sprite = "entities/boss_door",
+  sprite = "entities/door/boss_door",
   savegame_variable = "dungeon_1_great_door",
   opening_method = "interaction_if_item",
   opening_condition = "great_key",
@@ -9961,7 +9963,7 @@ door{
   y = 176,
   enabled_at_start = false,
   direction = 3,
-  sprite = "entities/door",
+  sprite = "entities/door/door",
   savegame_variable = "dungeon_1_door_boss",
 }
 
@@ -9978,7 +9980,7 @@ door{
     },
   },
   direction = 1,
-  sprite = "entities/door",
+  sprite = "entities/door/door",
   savegame_variable = "dungeon_1_door_boss",
 }
 

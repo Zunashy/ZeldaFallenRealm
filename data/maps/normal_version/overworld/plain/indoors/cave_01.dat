@@ -1112,7 +1112,7 @@ chest{
   layer = 0,
   x = 400,
   y = 29,
-  sprite = "entities/chest",
+  sprite = "entities/chests/chest",
 }
 
 enemy{
@@ -1150,16 +1150,10 @@ teletransporter{
 }
 
 destructible{
-  name = "Herbe_167",
   layer = 1,
   x = 400,
   y = 77,
-  treasure_name = "random",
-  sprite = "entities/grass",
-  destruction_sound = "bush",
-  weight = -1,
+  sprite = "entities/vegetation/grass/grass",
   can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
 }
 

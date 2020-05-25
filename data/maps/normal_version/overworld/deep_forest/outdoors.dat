@@ -2337,62 +2337,12 @@ separator{
 
 custom_entity{
   layer = 0,
-  x = 72,
-  y = 493,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/arbuste",
-}
-
-custom_entity{
-  layer = 0,
-  x = 88,
-  y = 493,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/arbuste",
-}
-
-custom_entity{
-  layer = 0,
-  x = 120,
-  y = 189,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/flowers",
-}
-
-custom_entity{
-  layer = 0,
   x = 40,
   y = 189,
   width = 16,
   height = 16,
   direction = 0,
-  sprite = "entities/flowers",
-}
-
-custom_entity{
-  layer = 0,
-  x = 40,
-  y = 237,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/flowers",
-}
-
-custom_entity{
-  layer = 0,
-  x = 120,
-  y = 237,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/flowers",
+  sprite = "entities/vegetation/flowers",
 }
 
 custom_entity{
@@ -2402,6 +2352,50 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 0,
-  sprite = "entities/grass",
+  sprite = "entities/vegetation/grass/grass",
+}
+
+custom_entity{
+  layer = 0,
+  x = 120,
+  y = 189,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/vegetation/flowers",
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 237,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/vegetation/flowers",
+}
+
+custom_entity{
+  layer = 0,
+  x = 120,
+  y = 237,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/vegetation/flowers",
+}
+
+destructible{
+  layer = 0,
+  x = 72,
+  y = 493,
+  sprite = "entities/vegetation/arbuste",
+}
+
+destructible{
+  layer = 0,
+  x = 88,
+  y = 493,
+  sprite = "entities/vegetation/arbuste",
 }
 

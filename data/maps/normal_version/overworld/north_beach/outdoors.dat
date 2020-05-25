@@ -7488,15 +7488,7 @@ destructible{
   layer = 1,
   x = 552,
   y = 285,
-  sprite = "entities/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 552,
-  y = 285,
-  sprite = "entities/grass",
+  sprite = "entities/vegetation/grass/grass",
   can_be_cut = true,
 }
 
@@ -7504,7 +7496,7 @@ destructible{
   layer = 1,
   x = 536,
   y = 301,
-  sprite = "entities/grass",
+  sprite = "entities/vegetation/grass/grass",
   can_be_cut = true,
 }
 
@@ -7512,7 +7504,7 @@ destructible{
   layer = 1,
   x = 584,
   y = 301,
-  sprite = "entities/grass",
+  sprite = "entities/vegetation/grass/grass",
   can_be_cut = true,
 }
 
@@ -7520,7 +7512,7 @@ destructible{
   layer = 1,
   x = 568,
   y = 285,
-  sprite = "entities/grass",
+  sprite = "entities/vegetation/grass/grass",
   can_be_cut = true,
 }
 
@@ -7528,7 +7520,7 @@ destructible{
   layer = 1,
   x = 552,
   y = 477,
-  sprite = "entities/grass",
+  sprite = "entities/vegetation/grass/grass",
   can_be_cut = true,
 }
 
@@ -7536,7 +7528,7 @@ destructible{
   layer = 1,
   x = 520,
   y = 461,
-  sprite = "entities/grass",
+  sprite = "entities/vegetation/grass/grass",
   can_be_cut = true,
 }
 
@@ -7544,7 +7536,7 @@ destructible{
   layer = 1,
   x = 600,
   y = 461,
-  sprite = "entities/grass",
+  sprite = "entities/vegetation/grass/grass",
   can_be_cut = true,
 }
 
@@ -7552,7 +7544,7 @@ destructible{
   layer = 1,
   x = 536,
   y = 413,
-  sprite = "entities/grass",
+  sprite = "entities/vegetation/grass/grass",
   can_be_cut = true,
 }
 
@@ -7560,7 +7552,7 @@ destructible{
   layer = 1,
   x = 616,
   y = 493,
-  sprite = "entities/grass",
+  sprite = "entities/vegetation/grass/grass",
   can_be_cut = true,
 }
 
@@ -7568,7 +7560,7 @@ destructible{
   layer = 1,
   x = 392,
   y = 237,
-  sprite = "entities/grass",
+  sprite = "entities/vegetation/grass/grass",
   can_be_cut = true,
 }
 
@@ -7767,7 +7759,7 @@ door{
   x = 232,
   y = 288,
   direction = 3,
-  sprite = "entities/door_key",
+  sprite = "entities/door/door_key",
   savegame_variable = "north_beach_door",
   opening_method = "interaction_if_item",
   opening_condition = "great_key",

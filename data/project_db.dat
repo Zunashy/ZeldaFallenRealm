@@ -113,32 +113,31 @@ sprite{ id = "enemies/slime_green", description = "enemies/slime_green" }
 sprite{ id = "enemies/tektite_blue", description = "enemies/tektite_blue" }
 sprite{ id = "enemies/tektite_red", description = "Tektite Red" }
 sprite{ id = "enemies/tektite_shadow", description = "Ombre de tektite" }
-sprite{ id = "entities/arbuste", description = "entities/arbuste" }
-sprite{ id = "entities/arrow", description = "entities/arrow" }
-sprite{ id = "entities/block", description = "entities/block" }
-sprite{ id = "entities/bone", description = "entities/bone" }
-sprite{ id = "entities/boss_door", description = "entities/boss_door" }
-sprite{ id = "entities/chest", description = "entities/chest" }
-sprite{ id = "entities/coconut_left", description = "entities/coconut_left" }
-sprite{ id = "entities/coconut_right", description = "entities/coconut_right" }
-sprite{ id = "entities/deep_water", description = "entities/deep_water" }
-sprite{ id = "entities/door", description = "entities/door" }
-sprite{ id = "entities/door_key", description = "entities/door_key" }
+sprite{ id = "entities/block/block", description = "Bloc" }
+sprite{ id = "entities/chests/chest", description = "Coffre" }
+sprite{ id = "entities/door/boss_door", description = "Porte de boss" }
+sprite{ id = "entities/door/door", description = "Porte" }
+sprite{ id = "entities/door/door_key", description = "Porte à serrure" }
+sprite{ id = "entities/dungeon_elements/platform", description = "Plateforme mouvante" }
+sprite{ id = "entities/dungeon_elements/platform_old", description = "Plateforme mouvante (ancien sprite)" }
+sprite{ id = "entities/dungeon_elements/switch", description = "Bouton poussoir" }
 sprite{ id = "entities/dungeon_statue_eye", description = "entities/dungeon_statue_eye" }
-sprite{ id = "entities/flame", description = "Flamme (graine)" }
-sprite{ id = "entities/flowers", description = "entities/flowers" }
-sprite{ id = "entities/grass", description = "entities/grass" }
-sprite{ id = "entities/grass_dark", description = "entities/grass_dark" }
-sprite{ id = "entities/ice_floor", description = "entities/ice_floor" }
 sprite{ id = "entities/items", description = "entities/items" }
-sprite{ id = "entities/octorok_rock", description = "entities/octorok_rock" }
-sprite{ id = "entities/platform", description = "entities/platform" }
-sprite{ id = "entities/platform_old", description = "entities/platform_old" }
+sprite{ id = "entities/items_effects/flame", description = "Flamme graine" }
+sprite{ id = "entities/items_effects/ice_floor", description = "Sol de glace" }
 sprite{ id = "entities/pot", description = "entities/pot" }
-sprite{ id = "entities/rock", description = "entities/rock" }
+sprite{ id = "entities/projectile/arrow", description = "Flèche" }
+sprite{ id = "entities/projectile/bone", description = "Os" }
+sprite{ id = "entities/projectile/coconut_left", description = "Coco ←" }
+sprite{ id = "entities/projectile/coconut_right", description = "Coco →" }
+sprite{ id = "entities/projectile/octorok_rock", description = "Rocher Octorock" }
+sprite{ id = "entities/projectile/rock", description = "Rocher" }
 sprite{ id = "entities/shadow", description = "entities/shadow" }
-sprite{ id = "entities/switch", description = "entities/switch" }
-sprite{ id = "entities/tree", description = "Arbre" }
+sprite{ id = "entities/vegetation/arbuste", description = "Arbuste" }
+sprite{ id = "entities/vegetation/flowers", description = "Fleurs" }
+sprite{ id = "entities/vegetation/grass/grass", description = "Buisson (bloquant)" }
+sprite{ id = "entities/vegetation/grass/grass_dark", description = "entities/vegetation/grass/Hautes herbes" }
+sprite{ id = "entities/water/deep_water", description = "Eau Profonde" }
 sprite{ id = "hero/ground1", description = "hero/ground1" }
 sprite{ id = "hero/ground2", description = "hero/ground2" }
 sprite{ id = "hero/sword1", description = "hero/sword1" }

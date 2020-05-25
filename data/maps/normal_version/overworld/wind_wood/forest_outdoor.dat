@@ -119,6 +119,14 @@ tile{
   tileset = "overworld/mountain_sea",
 }
 
+destructible{
+  layer = 0,
+  x = 200,
+  y = 221,
+  sprite = "entities/vegetation/grass/grass",
+  can_be_cut = true,
+}
+
 tile{
   layer = 1,
   x = 160,

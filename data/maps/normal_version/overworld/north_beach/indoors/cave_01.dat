@@ -331,7 +331,7 @@ chest{
   treasure_name = "rupee",
   treasure_variant = 2,
   treasure_savegame_variable = "north_beach_chest_rupee_1",
-  sprite = "entities/chest",
+  sprite = "entities/chests/chest",
 }
 
 enemy{

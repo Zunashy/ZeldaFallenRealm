@@ -3349,7 +3349,7 @@ chest{
   layer = 0,
   x = 840,
   y = 205,
-  sprite = "entities/chest",
+  sprite = "entities/chests/chest",
 }
 
 separator{
@@ -3371,7 +3371,7 @@ switch{
     },
   },
   subtype = "walkable",
-  sprite = "entities/switch",
+  sprite = "entities/dungeon_elements/switch",
   needs_block = false,
   inactivate_when_leaving = false,
 }
@@ -3381,7 +3381,7 @@ door{
   x = 112,
   y = 176,
   direction = 3,
-  sprite = "entities/door",
+  sprite = "entities/door/door",
   savegame_variable = "dungeon_1_door_key_2",
   opening_method = "interaction_if_item",
   opening_condition = "small_key",
@@ -3440,7 +3440,7 @@ chest{
   layer = 0,
   x = 360,
   y = 45,
-  sprite = "entities/chest",
+  sprite = "entities/chests/chest",
 }
 
 enemy{
@@ -3469,62 +3469,12 @@ enemy{
 
 custom_entity{
   layer = 1,
-  x = 616,
-  y = 221,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/rock",
-}
-
-custom_entity{
-  layer = 1,
-  x = 584,
-  y = 221,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/rock",
-}
-
-custom_entity{
-  layer = 1,
-  x = 136,
-  y = 253,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/rock",
-}
-
-custom_entity{
-  layer = 1,
-  x = 184,
+  x = 56,
   y = 93,
   width = 16,
   height = 16,
   direction = 0,
-  sprite = "entities/rock",
-}
-
-custom_entity{
-  layer = 1,
-  x = 152,
-  y = 93,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/rock",
-}
-
-custom_entity{
-  layer = 1,
-  x = 120,
-  y = 93,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/rock",
+  sprite = "entities/projectile/rock",
 }
 
 custom_entity{
@@ -3534,16 +3484,66 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 0,
-  sprite = "entities/rock",
+  sprite = "entities/projectile/rock",
 }
 
 custom_entity{
   layer = 1,
-  x = 56,
+  x = 120,
   y = 93,
   width = 16,
   height = 16,
   direction = 0,
-  sprite = "entities/rock",
+  sprite = "entities/projectile/rock",
+}
+
+custom_entity{
+  layer = 1,
+  x = 152,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/projectile/rock",
+}
+
+custom_entity{
+  layer = 1,
+  x = 184,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/projectile/rock",
+}
+
+custom_entity{
+  layer = 1,
+  x = 136,
+  y = 253,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/projectile/rock",
+}
+
+custom_entity{
+  layer = 1,
+  x = 584,
+  y = 221,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/projectile/rock",
+}
+
+custom_entity{
+  layer = 1,
+  x = 616,
+  y = 221,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/projectile/rock",
 }
 

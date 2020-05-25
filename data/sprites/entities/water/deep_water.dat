@@ -1,6 +1,6 @@
 animation{
   name = "eau",
-  src_image = "entities/deep_water.png",
+  src_image = "entities/water/deep_water.png",
   frame_delay = 200,
   frame_to_loop_on = 0,
   directions = {

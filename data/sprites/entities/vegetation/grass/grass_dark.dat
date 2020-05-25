@@ -1,6 +1,6 @@
 animation{
-  name = "on_ground",
-  src_image = "entities/flowers.png",
+  name = "herbe",
+  src_image = "entities/vegetation/grass/grass_dark.png",
   directions = {
     { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },

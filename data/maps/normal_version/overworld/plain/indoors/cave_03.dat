@@ -288,7 +288,7 @@ chest{
   layer = 0,
   x = 80,
   y = 29,
-  sprite = "entities/chest",
+  sprite = "entities/chests/chest",
 }
 
 enemy{
