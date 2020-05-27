@@ -49,10 +49,13 @@ map{ id = "tests/mapglobale", description = "tests/mapglobale" }
 map{ id = "tests/obscurity", description = "tests/obscurity" }
 map{ id = "tests/platform", description = "tests/platform" }
 map{ id = "tests/tttteteessst", description = "oui" }
-map{ id = "war_version/forest", description = "war_version/forest" }
 map{ id = "war_version/overworld/forest", description = "forêt version guerre" }
-map{ id = "war_version/overworld/north beach", description = "war_version/overworld/north beach" }
+map{ id = "war_version/overworld/jojo_tree", description = "arbre jojo version guerre" }
+map{ id = "war_version/overworld/north beach", description = "plage guerre" }
+map{ id = "war_version/overworld/sword_cave", description = "grotte épée guerre" }
+map{ id = "war_version/village/destroyed_house", description = "maison abandonnée" }
 map{ id = "war_version/village/out2", description = "war_version/village/out2" }
+map{ id = "war_version/village/outdoors", description = "nielint version guerre" }
 
 tileset{ id = "House", description = "House" }
 tileset{ id = "caves/cave_side", description = "caves/cave_side" }

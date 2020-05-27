@@ -275,6 +275,66 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "114",
+  ground = "wall",
+  default_layer = 0,
+  x = 240,
+  y = 152,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "115",
+  ground = "wall",
+  default_layer = 0,
+  x = 248,
+  y = 144,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "116",
+  ground = "wall",
+  default_layer = 0,
+  x = 240,
+  y = 176,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "117",
+  ground = "wall",
+  default_layer = 0,
+  x = 248,
+  y = 184,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "118",
+  ground = "wall",
+  default_layer = 0,
+  x = 208,
+  y = 184,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "119",
+  ground = "wall",
+  default_layer = 0,
+  x = 216,
+  y = 176,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "11_2",
   ground = "traversable",
   default_layer = 0,
@@ -305,6 +365,26 @@ tile_pattern{
   width = 8,
   height = 8,
   repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "120",
+  ground = "wall",
+  default_layer = 0,
+  x = 216,
+  y = 152,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "121",
+  ground = "wall",
+  default_layer = 0,
+  x = 208,
+  y = 144,
+  width = 8,
+  height = 8,
 }
 
 tile_pattern{
@@ -8998,39 +9078,6 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "86_10",
-  ground = "wall",
-  default_layer = 0,
-  x = 240,
-  y = 144,
-  width = 16,
-  height = 16,
-  repeat_mode = "none",
-}
-
-tile_pattern{
-  id = "86_11",
-  ground = "wall",
-  default_layer = 0,
-  x = 240,
-  y = 176,
-  width = 16,
-  height = 16,
-  repeat_mode = "none",
-}
-
-tile_pattern{
-  id = "86_12",
-  ground = "wall",
-  default_layer = 0,
-  x = 208,
-  y = 144,
-  width = 16,
-  height = 16,
-  repeat_mode = "none",
-}
-
-tile_pattern{
   id = "86_13",
   ground = "wall",
   default_layer = 0,
@@ -9146,17 +9193,6 @@ tile_pattern{
   default_layer = 0,
   x = 160,
   y = 144,
-  width = 16,
-  height = 16,
-  repeat_mode = "none",
-}
-
-tile_pattern{
-  id = "86_9",
-  ground = "wall",
-  default_layer = 0,
-  x = 208,
-  y = 176,
   width = 16,
   height = 16,
   repeat_mode = "none",
