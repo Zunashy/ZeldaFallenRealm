@@ -5323,6 +5323,15 @@ tile{
   pattern = "17_4",
 }
 
+tile{
+  layer = 1,
+  x = 224,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "167_3",
+}
+
 teletransporter{
   layer = 1,
   x = 512,
