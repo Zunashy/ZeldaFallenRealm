@@ -57,6 +57,7 @@ map{ id = "war_version/village/destroyed_house", description = "maison abandonn√
 map{ id = "war_version/village/out2", description = "war_version/village/out2" }
 map{ id = "war_version/village/outdoors", description = "nielint version guerre" }
 
+tileset{ id = "model", description = "Mod√®le pour les tileset entites " }
 tileset{ id = "House", description = "House" }
 tileset{ id = "caves/cave_side", description = "caves/cave_side" }
 tileset{ id = "dungeon/tileset_donjon_1", description = "dungeon/tileset_donjon_1" }
@@ -316,3 +317,6 @@ shader{ id = "map_shader", description = "map_shader" }
 shader{ id = "obscurity", description = "obscurity" }
 shader{ id = "visualizer", description = "visualizer" }
 
+file{ path = "tilesets/model.dat", author = "TwilCynder", }
+file{ path = "tilesets/model.entities.png", author = "TwilCynder", }
+file{ path = "tilesets/model.tiles.png", author = "TwilCynder", }
