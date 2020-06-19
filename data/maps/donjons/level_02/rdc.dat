@@ -5389,6 +5389,21 @@ switch{
   inactivate_when_leaving = false,
 }
 
+destination{
+  name = "destination_2",
+  layer = 0,
+  x = 360,
+  y = 629,
+  direction = 1,
+}
+
+pickable{
+  layer = 0,
+  x = 352,
+  y = 597,
+  treasure_name = "sword",
+}
+
 custom_entity{
   layer = 1,
   x = 120,

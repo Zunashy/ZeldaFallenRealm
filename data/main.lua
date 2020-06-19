@@ -1,7 +1,7 @@
 -- This is the main Lua script of your project.
 -- You will probably make a title screen and then start a game.
 -- See the Lua API! http://www.solarus-games.org/doc/latest
---C:\Users\Téo\.solarus\Fallen Realm
+--C:\Users\twilc\.solarus\Fallen Realm
 
 DEBUG = true
 

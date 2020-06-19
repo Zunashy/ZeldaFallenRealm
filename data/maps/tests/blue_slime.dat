@@ -5,7 +5,7 @@ properties{
   height = 400,
   min_layer = 0,
   max_layer = 2,
-  tileset = "Grotte",
+  tileset = "war_world",
 }
 
 tile{
@@ -116,30 +116,31 @@ destination{
   default = true,
 }
 
-chest{
-  layer = 1,
-  x = 80,
-  y = 205,
-  treasure_name = "rock_feather",
-  sprite = "entities/chest",
-}
-
-custom_entity{
-  name = "platform",
-  layer = 1,
-  x = 48,
-  y = 237,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/platform",
-  model = "platform",
-}
-
 pickable{
   layer = 1,
   x = 208,
   y = 205,
   treasure_name = "fire_seed",
+}
+
+destructible{
+  layer = 1,
+  x = 192,
+  y = 237,
+  sprite = "entities/vegetation/grass/grass",
+}
+
+destructible{
+  layer = 1,
+  x = 200,
+  y = 261,
+  sprite = "entities/vegetation/arbuste",
+}
+
+destructible{
+  layer = 1,
+  x = 232,
+  y = 269,
+  sprite = "entities/vegetation/grass/grass_dark",
 }
 
