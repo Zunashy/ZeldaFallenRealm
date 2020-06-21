@@ -1,0 +1,10 @@
+animation{
+  name = "fissured",
+  src_image = "tileset",
+  directions = {
+    { x = 80, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 32, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 48, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 64, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}

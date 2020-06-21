@@ -953,3 +953,49 @@ tile{
   pattern = "60",
 }
 
+destructible{
+  layer = 0,
+  x = 80,
+  y = 77,
+  sprite = "entities/vegetation/grass_door",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destination{
+  name = "transit_out",
+  layer = 0,
+  x = 80,
+  y = 85,
+  direction = 1,
+}
+
+destination{
+  name = "transit_in",
+  layer = 0,
+  x = 80,
+  y = 245,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 72,
+  y = 240,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/overworld/north_beach/outdoors",
+  destination = "trident_dungeon",
+}
+
+teletransporter{
+  layer = 0,
+  x = 72,
+  y = 64,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_01/RDC",
+  destination = "entrance",
+}
+

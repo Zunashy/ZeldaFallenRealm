@@ -119,6 +119,8 @@ sprite{ id = "enemies/tektite_blue", description = "enemies/tektite_blue" }
 sprite{ id = "enemies/tektite_red", description = "Tektite Red" }
 sprite{ id = "enemies/tektite_shadow", description = "Ombre de tektite" }
 sprite{ id = "entities/block/block", description = "Bloc" }
+sprite{ id = "entities/block/fissured_block" }
+sprite{ id = "entities/block/key_block" }
 sprite{ id = "entities/chests/chest", description = "Coffre" }
 sprite{ id = "entities/door/boss_door", description = "Porte de boss" }
 sprite{ id = "entities/door/door", description = "Porte" }
@@ -126,6 +128,7 @@ sprite{ id = "entities/door/door_key", description = "Porte à serrure" }
 sprite{ id = "entities/dungeon_elements/platform", description = "Plateforme mouvante" }
 sprite{ id = "entities/dungeon_elements/platform_old", description = "Plateforme mouvante (ancien sprite)" }
 sprite{ id = "entities/dungeon_elements/switch", description = "Bouton poussoir" }
+sprite{ id = "entities/dungeon_elements/teleport" }
 sprite{ id = "entities/dungeon_statue_eye", description = "entities/dungeon_statue_eye" }
 sprite{ id = "entities/items", description = "entities/items" }
 sprite{ id = "entities/items_effects/flame", description = "Flamme graine" }
@@ -142,6 +145,9 @@ sprite{ id = "entities/vegetation/arbuste", description = "Arbuste" }
 sprite{ id = "entities/vegetation/flowers", description = "Fleurs" }
 sprite{ id = "entities/vegetation/grass/grass", description = "Buisson (bloquant)" }
 sprite{ id = "entities/vegetation/grass/grass_dark", description = "entities/vegetation/grass/Hautes herbes" }
+sprite{ id = "entities/vegetation/grass_door" }
+sprite{ id = "entities/wall/fissured_wall" }
+sprite{ id = "entities/wall/fissured_wall_2" }
 sprite{ id = "entities/water/deep_water", description = "Eau Profonde" }
 sprite{ id = "hero/ground1", description = "hero/ground1" }
 sprite{ id = "hero/ground2", description = "hero/ground2" }
