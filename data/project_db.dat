@@ -16,6 +16,7 @@ map{ id = "normal_version/overworld/north_beach/indoors/hut_01", description = "
 map{ id = "normal_version/overworld/north_beach/indoors/hut_02", description = "normal_version/overworld/north_beach/indoors/hut_02" }
 map{ id = "normal_version/overworld/north_beach/indoors/tree_house", description = "normal_version/overworld/north_beach/indoors/tree_house" }
 map{ id = "normal_version/overworld/north_beach/outdoors", description = "normal_version/overworld/north_beach/outdoors" }
+map{ id = "normal_version/overworld/north_beach/outdoors2" }
 map{ id = "normal_version/overworld/plain/indoors/cave_01", description = "normal_version/overworld/plain/indoors/cave_01" }
 map{ id = "normal_version/overworld/plain/indoors/cave_02", description = "normal_version/overworld/plain/indoors/cave_02" }
 map{ id = "normal_version/overworld/plain/indoors/cave_03", description = "normal_version/overworld/plain/indoors/cave_03" }
@@ -68,6 +69,7 @@ tileset{ id = "grotte", description = "grotte" }
 tileset{ id = "house", description = "house" }
 tileset{ id = "model", description = "Modèle pour les tileset entites " }
 tileset{ id = "normal_world", description = "normal_world" }
+tileset{ id = "normal_world_annexe", description = "normal_world_annexe" }
 tileset{ id = "overworld/forest_plain", description = "overworld/forest_plain" }
 tileset{ id = "overworld/jungle", description = "overworld/jungle" }
 tileset{ id = "overworld/mountain_sea", description = "overworld/mountain_sea" }
