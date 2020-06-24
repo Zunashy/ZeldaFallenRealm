@@ -12,7 +12,7 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
-
+    self:enable_colored_blocks()
 end
 -- Event called after the opening transition effect of the map,
 -- that is, when the player takes control of the hero.

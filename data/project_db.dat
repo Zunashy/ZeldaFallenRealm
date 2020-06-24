@@ -125,6 +125,8 @@ sprite{ id = "entities/chests/chest", description = "Coffre" }
 sprite{ id = "entities/door/boss_door", description = "Porte de boss" }
 sprite{ id = "entities/door/door", description = "Porte" }
 sprite{ id = "entities/door/door_key", description = "Porte à serrure" }
+sprite{ id = "entities/dungeon_elements/color_cube", description = "Cube coloré" }
+sprite{ id = "entities/dungeon_elements/colored_flame", description = "Flamme Colorée" }
 sprite{ id = "entities/dungeon_elements/platform", description = "Plateforme mouvante" }
 sprite{ id = "entities/dungeon_elements/platform_old", description = "Plateforme mouvante (ancien sprite)" }
 sprite{ id = "entities/dungeon_elements/switch", description = "Bouton poussoir" }
@@ -295,6 +297,7 @@ enemy{ id = "tektite_red", description = "Tektite Rouge" }
 
 entity{ id = "arrow", description = "Flèche" }
 entity{ id = "bone", description = "Os (projectile)" }
+entity{ id = "colored_block_destination", description = "Destination bloc coloré" }
 entity{ id = "dungeon_statue_eye", description = "Oeil de statue" }
 entity{ id = "flame", description = "Flamme (graine)" }
 entity{ id = "ice_floor", description = "Sol de glace" }
@@ -324,6 +327,8 @@ shader{ id = "map_shader", description = "map_shader" }
 shader{ id = "obscurity", description = "obscurity" }
 shader{ id = "visualizer", description = "visualizer" }
 
+file{ path = "sprites/entities/dungeon_elements/color_cube.dat", author = "Zunashy", }
+file{ path = "sprites/entities/dungeon_elements/colored_flame.dat", author = "Zunashy", }
 file{ path = "tilesets/model.dat", author = "TwilCynder", }
 file{ path = "tilesets/model.entities.png", author = "TwilCynder", }
 file{ path = "tilesets/model.tiles.png", author = "TwilCynder", }

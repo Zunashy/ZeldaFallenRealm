@@ -5339,8 +5339,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 600,
-  y = 221,
+  x = 608,
+  y = 245,
   direction = 0,
   breed = "mini_boss/mr_pers",
 }
