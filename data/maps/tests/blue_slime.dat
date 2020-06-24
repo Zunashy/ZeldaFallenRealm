@@ -5,7 +5,7 @@ properties{
   height = 400,
   min_layer = 0,
   max_layer = 2,
-  tileset = "war_world",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{
@@ -107,6 +107,15 @@ tile{
   pattern = "28",
 }
 
+tile{
+  layer = 1,
+  x = 264,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "50",
+}
+
 destination{
   name = "spawn",
   layer = 1,
@@ -140,7 +149,59 @@ destructible{
 destructible{
   layer = 1,
   x = 232,
-  y = 269,
+  y = 277,
   sprite = "entities/vegetation/grass/grass_dark",
+  ground = "grass",
+}
+
+block{
+  name = "colored_block",
+  layer = 1,
+  x = 256,
+  y = 205,
+  sprite = "entities/dungeon_elements/color_cube",
+  pushable = true,
+  pullable = false,
+}
+
+custom_entity{
+  layer = 1,
+  x = 256,
+  y = 173,
+  properties = {
+    {
+      key = "red_trigger",
+      value = "spawn_chest_1",
+    },
+    {
+      key = "torchs",
+      value = "torch",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "colored_block_destination",
+}
+
+chest{
+  name = "chest_1",
+  layer = 1,
+  x = 232,
+  y = 173,
+  enabled_at_start = false,
+  sprite = "entities/chests/chest",
+}
+
+custom_entity{
+  name = "torch",
+  layer = 1,
+  x = 272,
+  y = 165,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/colored_flame",
 }
 

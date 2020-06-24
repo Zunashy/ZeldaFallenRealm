@@ -249,6 +249,14 @@ function map:init_dungeon_features()
   self:init_reset_separators()
 end
 
+local colored_block_manager = require("entities/colored_block")
+function map:enable_colored_blocks()
+  for block in self:get_entities("colored_block") do
+    colored_block_manager.parse_event_string = parse_event_string
+    colored_block_manager.init(block)
+  end
+end
+
 --Map Manager
 local map_manager = require("scripts/api/map_manager")
 
