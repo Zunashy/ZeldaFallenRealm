@@ -1,0 +1,27 @@
+animation{
+  name = "red",
+  src_image = "entities/dungeon_elements/color_cube.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 80, y = 80, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 13, num_frames = 4 },
+  },
+}
+animation{
+  name = "blue",
+  src_image = "entities/dungeon_elements/color_cube.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 16, y = 80, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 13, num_frames = 4 },
+  },
+}
+animation{
+  name = "yellow",
+  src_image = "entities/dungeon_elements/color_cube.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 48, y = 80, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 13, num_frames = 4 },
+  },
+}
