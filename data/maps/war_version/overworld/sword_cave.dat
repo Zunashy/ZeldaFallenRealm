@@ -1647,6 +1647,230 @@ tile{
   tileset = "war_world",
 }
 
+tile{
+  layer = 0,
+  x = 80,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "21",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "21",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "21",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "131",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "131",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "131",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "132_4",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "132_4",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "132_4",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "132_4",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "132_4",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "132_4",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "132_4",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "131",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "131",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "132_5",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "132_5",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "132_5",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "132_5",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "132_5",
+  tileset = "war_world",
+}
+
 teletransporter{
   layer = 0,
   x = 16,
@@ -1656,20 +1880,19 @@ teletransporter{
   destination_map = "war_version/overworld/forest",
 }
 
-enemy{
-  layer = 0,
-  x = 40,
-  y = 69,
-  direction = 0,
-  breed = "blue_octorock",
-  treasure_name = "heart",
-}
-
 separator{
   layer = 0,
   x = 152,
   y = -8,
   width = 16,
   height = 144,
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 24,
+  y = 69,
+  direction = 1,
 }
 
