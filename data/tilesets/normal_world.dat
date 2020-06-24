@@ -192,6 +192,17 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "109",
+  ground = "traversable",
+  default_layer = 0,
+  x = 0,
+  y = 88,
+  width = 8,
+  height = 8,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
   id = "10_2",
   ground = "traversable",
   default_layer = 0,
@@ -7468,6 +7479,17 @@ tile_pattern{
   width = 8,
   height = 8,
   repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "70",
+  ground = "traversable",
+  default_layer = 0,
+  x = 8,
+  y = 88,
+  width = 8,
+  height = 8,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
