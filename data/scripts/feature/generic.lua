@@ -110,13 +110,7 @@ function gen.xor(a, b)
 end
 
 function math.sign(x)
-  if x<0 then
-    return -1
-  elseif x>0 then
-    return 1
-  else
-    return 0
-  end
+  return x > 0 and 1 or (x == 0 and 0 or -1)
 end
 
 local directions = {

@@ -26,6 +26,17 @@ function eg.zone_detect(detector, detected, distance, same_region)
   return detector:get_distance(detected) < distance and (not same_region or detector:is_in_same_region(detected))
 end
 
+function eg.line_detect(detector, detected, direction, distance, same_region)
+  local x1, y1 = detector:get_center_position()
+  local x2, y2, w, h = detected:get_bounding_box() 
+  if direction % 2 == 1 then --don't read this code please i beg you
+    h = w
+    x1, y1 = y1, x1
+    x2, y2 = y2, x2
+  end
+   return (y1 > y2 and y1 < y2 + h) and (mg.dir_from_angle(detector:get_angle(detected)) == direction) and not (distance and detector:get_distance(detected) > distance) and (not same_region or detector:is_in_same_region(detected))
+end
+
 function eg.lines_detect(detector, detected, distance, same_region)
   local x1, y1 = detector:get_position()
   local x2, y2, w, h = detected:get_bounding_box()
