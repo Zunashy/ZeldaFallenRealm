@@ -5249,15 +5249,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 512,
-  y = 128,
-  width = 32,
-  height = 32,
-  pattern = "15_3",
-}
-
-tile{
-  layer = 1,
   x = 576,
   y = 128,
   width = 32,
@@ -5271,31 +5262,22 @@ tile{
   y = 144,
   width = 32,
   height = 32,
-  pattern = "15_2",
+  pattern = "15",
 }
 
 tile{
   layer = 1,
-  x = 576,
-  y = 160,
+  x = 512,
+  y = 128,
   width = 32,
   height = 32,
-  pattern = "15",
+  pattern = "15_2",
 }
 
 tile{
   layer = 1,
   x = 520,
   y = 144,
-  width = 32,
-  height = 32,
-  pattern = "15_2",
-}
-
-tile{
-  layer = 1,
-  x = 512,
-  y = 160,
   width = 32,
   height = 32,
   pattern = "15",
@@ -5433,8 +5415,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 544,
-  y = 288,
+  x = 552,
+  y = 296,
   width = 16,
   height = 16,
   pattern = "131",
@@ -6979,6 +6961,42 @@ tile{
   width = 16,
   height = 16,
   pattern = "167_4",
+}
+
+tile{
+  layer = 1,
+  x = 552,
+  y = 144,
+  width = 16,
+  height = 32,
+  pattern = "236",
+}
+
+tile{
+  layer = 1,
+  x = 552,
+  y = 176,
+  width = 16,
+  height = 8,
+  pattern = "6",
+}
+
+tile{
+  layer = 1,
+  x = 568,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 1,
+  x = 512,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "2",
 }
 
 separator{
