@@ -128,20 +128,20 @@ destination{
 pickable{
   layer = 1,
   x = 208,
-  y = 205,
+  y = 213,
   treasure_name = "fire_seed",
 }
 
 destructible{
   layer = 1,
-  x = 192,
+  x = 200,
   y = 237,
   sprite = "entities/vegetation/grass/grass",
 }
 
 destructible{
   layer = 1,
-  x = 200,
+  x = 208,
   y = 261,
   sprite = "entities/vegetation/arbuste",
 }
@@ -149,7 +149,7 @@ destructible{
 destructible{
   layer = 1,
   x = 232,
-  y = 277,
+  y = 269,
   sprite = "entities/vegetation/grass/grass_dark",
   ground = "grass",
 }
@@ -181,6 +181,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 0,
+  sprite = "entities/dungeon_elements/color_cube_destination",
   model = "colored_block_destination",
 }
 
@@ -203,5 +204,26 @@ custom_entity{
   height = 16,
   direction = 0,
   sprite = "entities/dungeon_elements/colored_flame",
+}
+
+pickable{
+  layer = 1,
+  x = 232,
+  y = 205,
+  treasure_name = "rock_feather",
+}
+
+enemy{
+  layer = 1,
+  x = 288,
+  y = 221,
+  properties = {
+    {
+      key = "distance",
+      value = "160",
+    },
+  },
+  direction = 3,
+  breed = "blade_trap",
 }
 
