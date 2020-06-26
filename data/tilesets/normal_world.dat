@@ -2967,6 +2967,28 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "187",
+  ground = "wall",
+  default_layer = 0,
+  x = 152,
+  y = 72,
+  width = 8,
+  height = 8,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "188",
+  ground = "wall",
+  default_layer = 0,
+  x = 112,
+  y = 72,
+  width = 8,
+  height = 8,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
   id = "19",
   ground = "wall",
   default_layer = 0,
