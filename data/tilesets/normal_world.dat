@@ -2944,6 +2944,29 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "185",
+  ground = "wall",
+  default_layer = 0,
+  x = { 0, 16, 32, 48 },
+  y = { 496, 496, 496, 496 },
+  width = 16,
+  height = 16,
+  frame_delay = 250,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "186",
+  ground = "wall",
+  default_layer = 0,
+  x = 64,
+  y = 496,
+  width = 16,
+  height = 16,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
   id = "19",
   ground = "wall",
   default_layer = 0,

@@ -20,6 +20,7 @@ map{ id = "normal_version/overworld/plain/indoors/cave_01", description = "norma
 map{ id = "normal_version/overworld/plain/indoors/cave_02", description = "normal_version/overworld/plain/indoors/cave_02" }
 map{ id = "normal_version/overworld/plain/indoors/cave_03", description = "normal_version/overworld/plain/indoors/cave_03" }
 map{ id = "normal_version/overworld/plain/indoors/cave_04", description = "normal_version/overworld/plain/indoors/cave_04" }
+map{ id = "normal_version/overworld/plain/new" }
 map{ id = "normal_version/overworld/plain/outdoors_1", description = "normal_version/overworld/plain/outdoors_1" }
 map{ id = "normal_version/overworld/plain/outdoors_2", description = "normal_version/overworld/plain/outdoors_2" }
 map{ id = "normal_version/overworld/wind_wood/forest_outdoor", description = "normal_version/overworld/wind_wood/forest_outdoor" }
@@ -64,6 +65,7 @@ tileset{ id = "dungeon/tileset_donjon_6", description = "dungeon/tileset_donjon_
 tileset{ id = "forest_cave", description = "forest_cave" }
 tileset{ id = "grotte", description = "grotte" }
 tileset{ id = "house", description = "house" }
+tileset{ id = "model", description = "model" }
 tileset{ id = "normal_world", description = "normal_world" }
 tileset{ id = "normal_world_annexe", description = "normal_world_annexe" }
 tileset{ id = "overworld/forest_plain", description = "overworld/forest_plain" }
@@ -166,6 +168,9 @@ sprite{ id = "entities/tree", description = "Arbre" }
 sprite{ id = "entities/vegetation/arbuste", description = "entities/vegetation/arbuste" }
 sprite{ id = "entities/vegetation/flowers", description = "entities/vegetation/flowers" }
 sprite{ id = "entities/vegetation/grass/grass", description = "entities/vegetation/grass/grass" }
+sprite{ id = "entities/vegetation/grass/grass_2" }
+sprite{ id = "entities/vegetation/grass/grass_3" }
+sprite{ id = "entities/vegetation/grass/grass_4" }
 sprite{ id = "entities/vegetation/grass/grass_dark", description = "entities/vegetation/grass/grass_dark" }
 sprite{ id = "entities/vegetation/grass_door", description = "entities/vegetation/grass_door" }
 sprite{ id = "hero/ground1", description = "hero/ground1" }
