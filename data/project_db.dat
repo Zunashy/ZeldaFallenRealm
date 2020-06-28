@@ -20,7 +20,6 @@ map{ id = "normal_version/overworld/plain/indoors/cave_01", description = "norma
 map{ id = "normal_version/overworld/plain/indoors/cave_02", description = "normal_version/overworld/plain/indoors/cave_02" }
 map{ id = "normal_version/overworld/plain/indoors/cave_03", description = "normal_version/overworld/plain/indoors/cave_03" }
 map{ id = "normal_version/overworld/plain/indoors/cave_04", description = "normal_version/overworld/plain/indoors/cave_04" }
-map{ id = "normal_version/overworld/plain/new" }
 map{ id = "normal_version/overworld/plain/outdoors_1", description = "normal_version/overworld/plain/outdoors_1" }
 map{ id = "normal_version/overworld/plain/outdoors_2", description = "normal_version/overworld/plain/outdoors_2" }
 map{ id = "normal_version/overworld/wind_wood/forest_outdoor", description = "normal_version/overworld/wind_wood/forest_outdoor" }
@@ -40,6 +39,7 @@ map{ id = "normal_version/village/nielint/indoors/octorok_cave_01", description 
 map{ id = "normal_version/village/nielint/indoors/octorok_cave_02", description = "normal_version/village/nielint/indoors/octorok_cave_02" }
 map{ id = "normal_version/village/nielint/indoors/shop", description = "normal_version/village/nielint/indoors/shop" }
 map{ id = "normal_version/village/nielint/indoors/tree_house", description = "normal_version/village/nielint/indoors/tree_house" }
+map{ id = "normal_version/village/nielint/new" }
 map{ id = "normal_version/village/nielint/outdoors", description = "normal_version/village/nielint/outdoors" }
 map{ id = "testHub", description = "testHub" }
 map{ id = "tests/blue_slime", description = "tests/blue_slime" }
