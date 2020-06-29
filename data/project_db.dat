@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 map{ id = "donjons/castle_donjon/catle_rdc", description = "donjons/castle_donjon/catle_rdc" }
 map{ id = "donjons/level_01/2D_Test", description = "donjons/level_01/2D_Test" }
 map{ id = "donjons/level_01/RDC", description = "donjons/level_01/RDC" }
@@ -55,31 +56,10 @@ map{ id = "war_version/overworld/forest", description = "forêt version guerre" 
 map{ id = "war_version/overworld/jojo_tree", description = "war_version/overworld/jojo_tree" }
 map{ id = "war_version/overworld/north beach", description = "war_version/overworld/north beach" }
 map{ id = "war_version/village/out2", description = "war_version/village/out2" }
-
-tileset{ id = "House", description = "House" }
-tileset{ id = "caves/cave_side", description = "caves/cave_side" }
-tileset{ id = "dungeon/tileset_donjon_1", description = "dungeon/tileset_donjon_1" }
-tileset{ id = "dungeon/tileset_donjon_2", description = "dungeon/tileset_donjon_2" }
-tileset{ id = "dungeon/tileset_donjon_6", description = "dungeon/tileset_donjon_6" }
-tileset{ id = "forest_cave", description = "forest_cave" }
-tileset{ id = "grotte", description = "grotte" }
-tileset{ id = "house", description = "house" }
-tileset{ id = "model", description = "model" }
-tileset{ id = "normal_world", description = "normal_world" }
-tileset{ id = "normal_world_annexe", description = "normal_world_annexe" }
-tileset{ id = "overworld/forest_plain", description = "overworld/forest_plain" }
-tileset{ id = "overworld/jungle", description = "overworld/jungle" }
-tileset{ id = "overworld/mountain_sea", description = "overworld/mountain_sea" }
-tileset{ id = "overworld/structure", description = "overworld/structure" }
-tileset{ id = "overworld/structure2", description = "overworld/structure2" }
-tileset{ id = "war_world", description = "war_world" }
-tileset{ id = "war_world/autumn_dark", description = "war_world/autumn_dark" }
-tileset{ id = "war_world/autumn_dark.old", description = "war_world/autumn_dark.old" }
-tileset{ id = "war_world/mountain_sea", description = "war_world/mountain_sea" }
-tileset{ id = "war_world/overworld", description = "war_world/overworld" }
-tileset{ id = "war_world/overworld_war", description = "war_world/overworld_war" }
-tileset{ id = "war_world/structure", description = "war_world/structure" }
-tileset{ id = "war_world_annexe" }
+=======
+map{ id = "war_version/overworld/forest", description = "war_version/overworld/forest" }
+map{ id = "war_version/village/destroyed_house", description = "war_version/village/destroyed_house" }
+map{ id = "war_version/village/outdoors", description = "war_version/village/outdoors" }
 
 sprite{ id = "citizens/old_man", description = "citizens/old_man" }
 sprite{ id = "citizens/old_woman", description = "citizens/old_woman" }
@@ -221,225 +201,13 @@ sprite{ id = "things/long_chair", description = "things/long_chair" }
 sprite{ id = "things/radeau", description = "things/radeau" }
 sprite{ id = "things/switch_aureole", description = "things/switch_aureole" }
 sprite{ id = "things/water_splash_effect", description = "things/water_splash_effect" }
+=======
+>>>>>>> 
 
-music{ id = "Zelda Original/caves", description = "Zelda Original/caves" }
-music{ id = "Zelda Original/horon village", description = "Zelda Original/horon village" }
-music{ id = "Zelda Original/houses", description = "Zelda Original/houses" }
-music{ id = "Zelda Original/mysterious forest", description = "Zelda Original/mysterious forest" }
-music{ id = "Zelda Original/overworld", description = "Zelda Original/overworld" }
-music{ id = "bar", description = "bar" }
-music{ id = "boss", description = "boss" }
-music{ id = "caves", description = "caves" }
-music{ id = "dungeon1", description = "dungeon1" }
-music{ id = "eduardo/Scatman_John_-_pi_pa_pa_para_po_Original_Video_", description = "eduardo/Scatman_John_-_pi_pa_pa_para_po_Original_Video_" }
-music{ id = "eduardo/Story_1_-_Forest_of_Resurrection_-_Fire_Emblem_Gai", description = "eduardo/Story_1_-_Forest_of_Resurrection_-_Fire_Emblem_Gai" }
-music{ id = "eduardo/boss", description = "eduardo/boss" }
-music{ id = "eduardo/cave", description = "eduardo/cave" }
-music{ id = "eduardo/dungeon_finished", description = "eduardo/dungeon_finished" }
-music{ id = "eduardo/fairy", description = "eduardo/fairy" }
-music{ id = "eduardo/fanfare", description = "eduardo/fanfare" }
-music{ id = "eduardo/game_over", description = "eduardo/game_over" }
-music{ id = "eduardo/lunarius", description = "eduardo/lunarius" }
-music{ id = "eduardo/mini_game", description = "eduardo/mini_game" }
-music{ id = "eduardo/mountains", description = "eduardo/mountains" }
-music{ id = "eduardo/neptune_battle", description = "eduardo/neptune_battle" }
-music{ id = "eduardo/overworld", description = "eduardo/overworld" }
-music{ id = "eduardo/soldiers", description = "eduardo/soldiers" }
-music{ id = "eduardo/sword_fanfare", description = "eduardo/sword_fanfare" }
-music{ id = "eduardo/title_screen", description = "eduardo/title_screen" }
-music{ id = "eduardo/village", description = "eduardo/village" }
-music{ id = "eduardo/witch_hut", description = "eduardo/witch_hut" }
-music{ id = "game_over", description = "game_over" }
-music{ id = "horon village", description = "horon village" }
-music{ id = "maku_trees", description = "maku_trees" }
-music{ id = "miniboss", description = "miniboss" }
-music{ id = "mysterious forest", description = "mysterious forest" }
-music{ id = "overworld", description = "overworld" }
-music{ id = "save_select", description = "save_select" }
-music{ id = "title", description = "title" }
 
-sound{ id = "chest_appears", description = "chest_appears" }
-sound{ id = "chest_open", description = "chest_open" }
-sound{ id = "danger", description = "danger" }
-sound{ id = "door_closed", description = "door_closed" }
-sound{ id = "door_open", description = "door_open" }
-sound{ id = "door_unlocked", description = "door_unlocked" }
-sound{ id = "enemy_hurt", description = "enemy_hurt" }
-sound{ id = "enemy_killed", description = "enemy_killed" }
-sound{ id = "heart", description = "heart" }
-sound{ id = "hero_falls", description = "hero_falls" }
-sound{ id = "hero_hurt", description = "hero_hurt" }
-sound{ id = "hero_lands", description = "hero_lands" }
-sound{ id = "hero_pushes", description = "hero_pushes" }
-sound{ id = "hero_seen", description = "hero_seen" }
-sound{ id = "jump", description = "jump" }
-sound{ id = "picked_item", description = "picked_item" }
-sound{ id = "picked_money", description = "picked_money" }
-sound{ id = "picked_small_key", description = "picked_small_key" }
-sound{ id = "splash", description = "splash" }
-sound{ id = "swim", description = "swim" }
-sound{ id = "switch", description = "switch" }
-sound{ id = "sword1", description = "sword1" }
-sound{ id = "sword2", description = "sword2" }
-sound{ id = "sword3", description = "sword3" }
-sound{ id = "sword4", description = "sword4" }
-sound{ id = "sword_spin_attack_load", description = "sword_spin_attack_load" }
-sound{ id = "sword_spin_attack_release", description = "sword_spin_attack_release" }
-sound{ id = "sword_tapping", description = "sword_tapping" }
-sound{ id = "sword_tapping_weak_wall", description = "sword_tapping_weak_wall" }
-sound{ id = "text", description = "text" }
-sound{ id = "treasure", description = "treasure" }
-sound{ id = "walk_on_grass", description = "walk_on_grass" }
-sound{ id = "walk_on_water", description = "walk_on_water" }
 
-item{ id = "bomb", description = "Bombe" }
-item{ id = "fire_seed", description = "Graine de feu" }
-item{ id = "great_key", description = "great_key" }
-item{ id = "heart", description = "heart" }
-item{ id = "heart_container", description = "heart_container" }
-item{ id = "heart_quarter", description = "heart_quarter" }
-item{ id = "ice_seed", description = "ice_seed" }
-item{ id = "map", description = "map" }
-item{ id = "random", description = "random" }
-item{ id = "rock_feather", description = "rock_feather" }
-item{ id = "rupee", description = "rupee" }
-item{ id = "shield", description = "shield" }
-item{ id = "small_key", description = "small_key" }
-item{ id = "sword", description = "sword" }
 
-enemy{ id = "bat", description = "Bat" }
-enemy{ id = "blade_trap", description = "Blade Trap" }
-enemy{ id = "blue_octorock", description = "Octorock Bleu" }
-enemy{ id = "blue_slime", description = "Slime Bleu" }
-enemy{ id = "boss/merman", description = "Boss donjon 1" }
-enemy{ id = "crab", description = "crab" }
-enemy{ id = "mini_boss/mr_pers", description = "Miniboss Donjon 1" }
-enemy{ id = "moblin_bow", description = "Moblin (arc)" }
-enemy{ id = "moblin_sword", description = "Moblin (Épée)" }
-enemy{ id = "octorok", description = "Octorock" }
-enemy{ id = "oursin", description = "Oursin" }
-enemy{ id = "pool_dasher", description = "pool_dasher" }
-enemy{ id = "rope", description = "Rope (Serpent)" }
-enemy{ id = "skeleton_1", description = "skeleton_1" }
-enemy{ id = "skeleton_2", description = "skeleton_2" }
-enemy{ id = "skeleton_3", description = "skeleton_3" }
-enemy{ id = "slime_green", description = "slime_green" }
-enemy{ id = "tektite_blue", description = "Tektite Bleu" }
-enemy{ id = "tektite_red", description = "Tektite Rouge" }
 
-entity{ id = "arrow", description = "Flèche" }
-entity{ id = "bone", description = "Os (projectile)" }
-entity{ id = "colored_block_destination", description = "Destination bloc coloré" }
-entity{ id = "dungeon_statue_eye", description = "Oeil de statue" }
-entity{ id = "flame", description = "Flamme (graine)" }
-entity{ id = "ice_floor", description = "Sol de glace" }
-entity{ id = "interaction_box", description = "Interaction Box" }
-entity{ id = "light", description = "Source de lumière" }
-entity{ id = "merman_wave", description = "Projectile Boss donjon 1" }
-entity{ id = "nonsolid_ground", description = "Indicateur de sol instable" }
-entity{ id = "octorok_rock", description = "Projecitle Octorick" }
-entity{ id = "platform", description = "Plateforme mouvante" }
-entity{ id = "platform_controller", description = "Contrôleur de plateforme" }
-entity{ id = "shop_item", description = "Item du Shop" }
 
-language{ id = "en", description = "en" }
-language{ id = "fr", description = "fr" }
 
-font{ id = "8_bit", description = "8_bit" }
-font{ id = "8_bit OOS", description = "8_bit OOS" }
-font{ id = "minecraftia", description = "minecraftia" }
-font{ id = "oracle", description = "oracle" }
-font{ id = "oracle_black", description = "oracle_black" }
-font{ id = "oracle_blue", description = "oracle_blue" }
-font{ id = "oracle_like", description = "oracle_like" }
 
-shader{ id = "chroma", description = "chroma" }
-shader{ id = "default", description = "default" }
-shader{ id = "map_shader", description = "map_shader" }
-shader{ id = "obscurity", description = "obscurity" }
-shader{ id = "visualizer", description = "visualizer" }
-
-file{ path = "enemies/bat.lua", author = "TwilCynder", }
-file{ path = "enemies/blade_trap.lua", author = "TwilCynder", }
-file{ path = "enemies/blue_octorock.lua", author = "a_tom;TwilCynder", }
-file{ path = "enemies/blue_slime.lua", author = "TwilCynder", }
-file{ path = "enemies/boss/merman.lua", author = "TwilCynder", }
-file{ path = "enemies/crab.lua", author = "TwilCynder", }
-file{ path = "enemies/mini_boss/mr_pers.lua", author = "TwilCynder", }
-file{ path = "enemies/moblin_bow.lua", author = "TwilCynder", }
-file{ path = "enemies/moblin_sword.lua", author = "TwilCynder", }
-file{ path = "enemies/octorok.lua", author = "a_tom;TwilCynder", }
-file{ path = "enemies/oursin.lua", author = "TwilCynder", }
-file{ path = "enemies/pool_dasher.lua", author = "TwilCynder", }
-file{ path = "enemies/rope.lua", author = "TwilCynder", }
-file{ path = "enemies/skeleton_1.lua", author = "TwilCynder", }
-file{ path = "enemies/skeleton_2.lua", author = "TwilCynder", }
-file{ path = "enemies/skeleton_3.lua", author = "TwilCynder", }
-file{ path = "enemies/tektite_blue.lua", author = "TwilCynder", }
-file{ path = "enemies/tektite_red.lua", author = "TwilCynder", }
-file{ path = "entities/arrow.lua", author = "TwilCynder", }
-file{ path = "entities/bone.lua", author = "TwilCynder", }
-file{ path = "entities/colored_block.lua", author = "TwilCynder", }
-file{ path = "entities/colored_block_destination.lua", author = "TwilCynder", }
-file{ path = "entities/dungeon_statue_eye.lua", author = "TwilCynder", }
-file{ path = "entities/flame.lua", author = "TwilCynder", }
-file{ path = "entities/ice_floor.lua", author = "TwilCynder", }
-file{ path = "entities/interaction_box.lua", author = "TwilCynder", }
-file{ path = "entities/light.lua", author = "TwilCynder", }
-file{ path = "entities/merman_wave.lua", author = "TwilCynder", }
-file{ path = "entities/nonsolid_ground.lua", author = "TwilCynder", }
-file{ path = "entities/octorok_rock.lua", author = "TwilCynder", }
-file{ path = "entities/platform.lua", author = "TwilCynder", }
-file{ path = "entities/platform_controller.lua", author = "TwilCynder", }
-file{ path = "entities/shop_item.lua", author = "TwilCynder", }
-file{ path = "items/fire_seed.lua", author = "TwilCynder", }
-file{ path = "items/great_key.lua", author = "TwilCynder", }
-file{ path = "items/heart.lua", author = "TwilCynder", }
-file{ path = "items/heart_container.lua", author = "TwilCynder", }
-file{ path = "items/heart_quarter.lua", author = "TwilCynder", }
-file{ path = "items/ice_seed.lua", author = "TwilCynder", }
-file{ path = "items/random.lua", author = "Benoit", }
-file{ path = "items/rock_feather.lua", author = "TwilCynder", }
-file{ path = "items/rupee.lua", author = "TwilCynder", }
-file{ path = "items/small_key.lua", author = "TwilCynder", }
-file{ path = "items/sword.lua", author = "TwilCynder", }
-file{ path = "languages/fr", author = "Phoenix;Zunashy", }
-file{ path = "maps/donjons/castle_donjon/catle_rdc.dat", author = "Zunashy", }
-file{ path = "maps/donjons/level_01/2D_Test.dat", author = "Zunashy", }
-file{ path = "maps/donjons/level_01/RDC.dat", author = "Zunashy", }
-file{ path = "maps/donjons/level_01/RDC_old.dat", author = "Zunashy", }
-file{ path = "maps/donjons/level_01/transit.dat", author = "Zunashy", }
-file{ path = "maps/donjons/level_02/rdc.dat", author = "Zunashy", }
-file{ path = "maps/donjons/level_02/ss1.dat", author = "Zunashy", }
-file{ path = "maps/normal_version", author = "Zunashy", }
-file{ path = "maps/tests/mapglobale.dat", author = "Zunashy", }
-file{ path = "maps/war_version", author = "Nillan", }
-file{ path = "scripts/api/bit.lua", author = "TwilCynder", }
-file{ path = "scripts/api/controls_manager.lua", author = "TwilCynder", }
-file{ path = "scripts/api/image_fonts.lua", author = "TwilCynder", }
-file{ path = "scripts/api/item_mixer.lua", author = "TwilCynder", }
-file{ path = "scripts/api/language_manager.lua", author = "TwilCynder", }
-file{ path = "scripts/api/map_manager.lua", author = "TwilCynder", }
-file{ path = "scripts/api/map_side_view.lua", author = "TwilCynder", }
-file{ path = "scripts/api/separator_manager.lua", author = "Solarus Team", }
-file{ path = "scripts/api/settings.lua", author = "TwilCynder", }
-file{ path = "scripts/api/visual_effects.lua", author = "TwilCynder", }
-file{ path = "scripts/debug/utilities.lua", author = "a_tom;TwilCynder", }
-file{ path = "scripts/debug/visualizer.lua", author = "TwilCynder", }
-file{ path = "scripts/feature/audio.lua", author = "TwilCynder", }
-file{ path = "scripts/feature/entity_generic.lua", author = "TwilCynder", }
-file{ path = "scripts/feature/generic.lua", author = "TwilCynder", }
-file{ path = "scripts/feature/input_manager.lua", author = "TwilCynder", }
-file{ path = "scripts/feature/map_generic.lua", author = "TwilCynder", }
-file{ path = "scripts/feature/menus.lua", author = "TwilCynder", }
-file{ path = "scripts/feature/movement_generic.lua", author = "TwilCynder", }
-file{ path = "scripts/feature/sinking_override.lua", author = "a_tom", }
-file{ path = "scripts/feature/video.lua", author = "TwilCynder", }
-file{ path = "scripts/hud/background.lua", author = "TwilCynder", }
-file{ path = "scripts/hud/hearts.lua", author = "TwilCynder", }
-file{ path = "scripts/hud/hud.lua", author = "TwilCynder", }
-file{ path = "scripts/hud/hud_config.lua", author = "TwilCynder", }
-file{ path = "scripts/hud/item.lua", author = "TwilCynder", }
-file{ path = "scripts/hud/rupees.lua", author = "TwilCynder", }
-file{ path = "sprites/enemies/blade_trap.dat", author = "Nintendo", }
-file{ path = "sprites/entities/dungeon_elements/color_cube_destination.dat", author = "Zunashy", }
