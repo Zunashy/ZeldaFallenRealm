@@ -1,9 +1,0 @@
-animation{
-  name = "stopped",
-  src_image = "citizens/vieux05.png",
-  frame_delay = 600,
-  frame_to_loop_on = 0,
-  directions = {
-    { x = 4, y = 5, frame_width = 15, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 2 },
-  },
-}

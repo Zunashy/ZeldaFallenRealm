@@ -3419,7 +3419,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "52",
-  tileset = "overworld/structure2",
+  tileset = "normal_world",
 }
 
 tile{
@@ -3429,7 +3429,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "51",
-  tileset = "overworld/structure2",
+  tileset = "normal_world",
 }
 
 tile{
@@ -3439,7 +3439,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "50",
-  tileset = "overworld/structure2",
+  tileset = "normal_world",
 }
 
 tile{
@@ -3449,7 +3449,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "53",
-  tileset = "overworld/structure2",
+  tileset = "normal_world",
 }
 
 tile{
@@ -3459,7 +3459,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "55",
-  tileset = "overworld/structure2",
+  tileset = "normal_world",
 }
 
 tile{
@@ -3469,7 +3469,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "54",
-  tileset = "overworld/structure2",
+  tileset = "normal_world",
 }
 
 tile{
@@ -3479,7 +3479,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "56",
-  tileset = "overworld/structure2",
+  tileset = "normal_world",
 }
 
 tile{
@@ -3489,7 +3489,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "57",
-  tileset = "overworld/structure2",
+  tileset = "normal_world",
 }
 
 tile{
@@ -3499,7 +3499,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "40",
-  tileset = "overworld/structure2",
+  tileset = "normal_world",
 }
 
 tile{
@@ -3509,7 +3509,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "2",
-  tileset = "overworld/structure2",
+  tileset = "normal_world",
 }
 
 tile{
@@ -3519,7 +3519,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "40",
-  tileset = "overworld/structure2",
+  tileset = "normal_world",
 }
 
 tile{
@@ -3529,7 +3529,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "48",
-  tileset = "overworld/structure2",
+  tileset = "normal_world",
 }
 
 tile{
@@ -3539,7 +3539,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "49",
-  tileset = "overworld/structure2",
+  tileset = "normal_world",
 }
 
 tile{
@@ -3549,7 +3549,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "46",
-  tileset = "overworld/structure2",
+  tileset = "normal_world",
 }
 
 tile{
@@ -3559,7 +3559,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "47",
-  tileset = "overworld/structure2",
+  tileset = "normal_world",
 }
 
 tile{
@@ -3569,7 +3569,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "38",
-  tileset = "overworld/structure2",
+  tileset = "normal_world",
 }
 
 tile{
@@ -3579,7 +3579,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "18",
-  tileset = "overworld/structure",
+  tileset = "normal_world",
 }
 
 tile{

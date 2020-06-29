@@ -317,16 +317,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 104,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = "44",
-  tileset = "overworld/mountain_sea",
-}
-
-tile{
-  layer = 0,
   x = 144,
   y = 16,
   width = 64,
@@ -404,6 +394,15 @@ tile{
   width = 16,
   height = 8,
   pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "75",
 }
 
 teletransporter{

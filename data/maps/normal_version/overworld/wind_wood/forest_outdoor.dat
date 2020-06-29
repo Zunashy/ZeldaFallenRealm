@@ -1078,7 +1078,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "78",
-  tileset = "overworld/mountain_sea",
+  tileset = "normal_world",
 }
 
 tile{
@@ -1088,7 +1088,7 @@ tile{
   width = 8,
   height = 64,
   pattern = "89",
-  tileset = "overworld/mountain_sea",
+  tileset = "normal_world",
 }
 
 tile{
@@ -1098,7 +1098,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "109",
-  tileset = "overworld/mountain_sea",
+  tileset = "normal_world",
 }
 
 tile{
@@ -1343,8 +1343,8 @@ tile{
   y = 312,
   width = 16,
   height = 32,
-  pattern = "88",
-  tileset = "overworld/forest_plain",
+  pattern = "236",
+  tileset = "normal_world",
 }
 
 tile{
@@ -1353,8 +1353,8 @@ tile{
   y = 336,
   width = 16,
   height = 16,
-  pattern = "53",
-  tileset = "overworld/mountain_sea",
+  pattern = "257",
+  tileset = "normal_world",
 }
 
 tile{
@@ -1948,8 +1948,8 @@ tile{
   y = 320,
   width = 16,
   height = 16,
-  pattern = "128",
-  tileset = "overworld/forest_plain",
+  pattern = "237_3",
+  tileset = "normal_world",
 }
 
 tile{
@@ -1958,8 +1958,8 @@ tile{
   y = 336,
   width = 16,
   height = 16,
-  pattern = "128",
-  tileset = "overworld/forest_plain",
+  pattern = "237_3",
+  tileset = "normal_world",
 }
 
 tile{
@@ -1968,8 +1968,8 @@ tile{
   y = 288,
   width = 16,
   height = 16,
-  pattern = "128",
-  tileset = "overworld/forest_plain",
+  pattern = "237_3",
+  tileset = "normal_world",
 }
 
 tile{
@@ -1978,8 +1978,8 @@ tile{
   y = 304,
   width = 16,
   height = 16,
-  pattern = "128",
-  tileset = "overworld/forest_plain",
+  pattern = "237_3",
+  tileset = "normal_world",
 }
 
 tile{
@@ -1988,8 +1988,8 @@ tile{
   y = 184,
   width = 16,
   height = 16,
-  pattern = "128",
-  tileset = "overworld/forest_plain",
+  pattern = "237_3",
+  tileset = "normal_world",
 }
 
 tile{
@@ -1998,8 +1998,8 @@ tile{
   y = 184,
   width = 16,
   height = 16,
-  pattern = "128",
-  tileset = "overworld/forest_plain",
+  pattern = "237_3",
+  tileset = "normal_world",
 }
 
 tile{
@@ -2008,8 +2008,8 @@ tile{
   y = 184,
   width = 16,
   height = 16,
-  pattern = "128",
-  tileset = "overworld/forest_plain",
+  pattern = "237_3",
+  tileset = "normal_world",
 }
 
 tile{
@@ -2018,8 +2018,8 @@ tile{
   y = 184,
   width = 16,
   height = 16,
-  pattern = "128",
-  tileset = "overworld/forest_plain",
+  pattern = "237_3",
+  tileset = "normal_world",
 }
 
 tile{
@@ -2028,8 +2028,8 @@ tile{
   y = 216,
   width = 16,
   height = 16,
-  pattern = "128",
-  tileset = "overworld/forest_plain",
+  pattern = "237_3",
+  tileset = "normal_world",
 }
 
 tile{
@@ -2038,8 +2038,8 @@ tile{
   y = 216,
   width = 16,
   height = 16,
-  pattern = "128",
-  tileset = "overworld/forest_plain",
+  pattern = "237_3",
+  tileset = "normal_world",
 }
 
 tile{
@@ -2048,8 +2048,8 @@ tile{
   y = 208,
   width = 16,
   height = 16,
-  pattern = "128",
-  tileset = "overworld/forest_plain",
+  pattern = "237_3",
+  tileset = "normal_world",
 }
 
 tile{
@@ -2058,8 +2058,8 @@ tile{
   y = 176,
   width = 16,
   height = 16,
-  pattern = "128",
-  tileset = "overworld/forest_plain",
+  pattern = "237_3",
+  tileset = "normal_world",
 }
 
 tile{
@@ -2068,8 +2068,8 @@ tile{
   y = 336,
   width = 16,
   height = 16,
-  pattern = "128",
-  tileset = "overworld/forest_plain",
+  pattern = "237_3",
+  tileset = "normal_world",
 }
 
 tile{
@@ -2087,8 +2087,8 @@ tile{
   y = 216,
   width = 16,
   height = 16,
-  pattern = "86",
-  tileset = "overworld/forest_plain",
+  pattern = "17",
+  tileset = "normal_world",
 }
 
 tile{

@@ -149,8 +149,8 @@ tile{
   y = 240,
   width = 16,
   height = 16,
-  pattern = "11",
-  tileset = "forest_cave",
+  pattern = "196_10",
+  tileset = "normal_world",
 }
 
 tile{
@@ -159,8 +159,8 @@ tile{
   y = 240,
   width = 16,
   height = 16,
-  pattern = "12",
-  tileset = "forest_cave",
+  pattern = "196_11",
+  tileset = "normal_world",
 }
 
 tile{
@@ -178,8 +178,8 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "11",
-  tileset = "forest_cave",
+  pattern = "196_10",
+  tileset = "normal_world",
 }
 
 tile{
@@ -188,18 +188,8 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "12",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 128,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "forest_cave",
+  pattern = "196_11",
+  tileset = "normal_world",
 }
 
 tile{
@@ -208,8 +198,8 @@ tile{
   y = 128,
   width = 16,
   height = 16,
-  pattern = "10",
-  tileset = "forest_cave",
+  pattern = "196_9",
+  tileset = "normal_world",
 }
 
 tile{
@@ -218,8 +208,8 @@ tile{
   y = 240,
   width = 16,
   height = 16,
-  pattern = "12",
-  tileset = "forest_cave",
+  pattern = "196_11",
+  tileset = "normal_world",
 }
 
 tile{
@@ -228,8 +218,8 @@ tile{
   y = 240,
   width = 16,
   height = 16,
-  pattern = "11",
-  tileset = "forest_cave",
+  pattern = "196_10",
+  tileset = "normal_world",
 }
 
 tile{
@@ -238,8 +228,8 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "13",
-  tileset = "forest_cave",
+  pattern = "196_14",
+  tileset = "normal_world",
 }
 
 tile{
@@ -248,8 +238,8 @@ tile{
   y = 128,
   width = 16,
   height = 16,
-  pattern = "15",
-  tileset = "forest_cave",
+  pattern = "196_12",
+  tileset = "normal_world",
 }
 
 tile{
@@ -258,8 +248,8 @@ tile{
   y = 128,
   width = 16,
   height = 16,
-  pattern = "16",
-  tileset = "forest_cave",
+  pattern = "196_13",
+  tileset = "normal_world",
 }
 
 tile{
@@ -268,8 +258,8 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "14",
-  tileset = "forest_cave",
+  pattern = "196_15",
+  tileset = "normal_world",
 }
 
 tile{
@@ -1565,8 +1555,8 @@ tile{
   y = 240,
   width = 16,
   height = 16,
-  pattern = "11",
-  tileset = "forest_cave",
+  pattern = "196_10",
+  tileset = "normal_world",
 }
 
 tile{
@@ -1575,8 +1565,17 @@ tile{
   y = 240,
   width = 16,
   height = 16,
-  pattern = "12",
-  tileset = "forest_cave",
+  pattern = "196_11",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "196_8",
 }
 
 chest{

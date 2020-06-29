@@ -1,9 +1,0 @@
-animation{
-  name = "stopped",
-  src_image = "citizens/witch.png",
-  frame_delay = 1000,
-  frame_to_loop_on = 0,
-  directions = {
-    { x = 4, y = 6, frame_width = 16, frame_height = 30, origin_x = 12, origin_y = 29, num_frames = 4 },
-  },
-}

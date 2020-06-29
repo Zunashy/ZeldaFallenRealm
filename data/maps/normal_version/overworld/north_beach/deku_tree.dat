@@ -5,7 +5,7 @@ properties{
   height = 128,
   min_layer = 0,
   max_layer = 2,
-  tileset = "overworld/forest_plain",
+  tileset = "normal_world",
   music = "maku_trees",
 }
 
@@ -50,7 +50,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "105",
-  tileset = "overworld/mountain_sea",
+  tileset = "normal_world",
 }
 
 tile{
@@ -60,7 +60,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "103",
-  tileset = "overworld/mountain_sea",
+  tileset = "normal_world",
 }
 
 tile{
@@ -70,7 +70,7 @@ tile{
   width = 128,
   height = 8,
   pattern = "91",
-  tileset = "overworld/mountain_sea",
+  tileset = "normal_world",
 }
 
 tile{
@@ -80,7 +80,7 @@ tile{
   width = 128,
   height = 8,
   pattern = "97",
-  tileset = "overworld/mountain_sea",
+  tileset = "normal_world",
 }
 
 tile{
@@ -90,7 +90,7 @@ tile{
   width = 8,
   height = 112,
   pattern = "99",
-  tileset = "overworld/mountain_sea",
+  tileset = "normal_world",
 }
 
 tile{
@@ -100,7 +100,7 @@ tile{
   width = 8,
   height = 112,
   pattern = "99",
-  tileset = "overworld/mountain_sea",
+  tileset = "normal_world",
 }
 
 tile{
@@ -110,7 +110,7 @@ tile{
   width = 8,
   height = 112,
   pattern = "86",
-  tileset = "overworld/mountain_sea",
+  tileset = "normal_world",
 }
 
 tile{
@@ -120,7 +120,7 @@ tile{
   width = 8,
   height = 112,
   pattern = "89",
-  tileset = "overworld/mountain_sea",
+  tileset = "normal_world",
 }
 
 tile{
@@ -139,7 +139,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "35",
-  tileset = "overworld/mountain_sea",
+  tileset = "normal_world",
 }
 
 tile{
@@ -149,7 +149,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "35",
-  tileset = "overworld/mountain_sea",
+  tileset = "normal_world",
 }
 
 tile{
@@ -159,7 +159,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "29",
-  tileset = "overworld/mountain_sea",
+  tileset = "normal_world",
 }
 
 tile{
@@ -169,7 +169,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "29",
-  tileset = "overworld/mountain_sea",
+  tileset = "normal_world",
 }
 
 tile{

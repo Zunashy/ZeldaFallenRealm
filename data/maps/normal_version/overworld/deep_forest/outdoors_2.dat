@@ -4932,10 +4932,10 @@ tile{
   layer = 1,
   x = 240,
   y = 288,
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  pattern = "53",
-  tileset = "overworld/mountain_sea",
+  pattern = "73",
 }
 
 tile{

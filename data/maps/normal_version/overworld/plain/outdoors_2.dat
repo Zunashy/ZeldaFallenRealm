@@ -9713,17 +9713,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "110",
-  tileset = "overworld/mountain_sea",
-}
-
-tile{
-  layer = 1,
-  x = 928,
-  y = 424,
-  width = 16,
-  height = 8,
-  pattern = "127",
-  tileset = "overworld/forest_plain",
+  tileset = "normal_world",
 }
 
 tile{
@@ -10210,7 +10200,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "127",
-  tileset = "overworld/forest_plain",
+  tileset = "normal_world",
 }
 
 tile{
@@ -10220,7 +10210,7 @@ tile{
   width = 64,
   height = 8,
   pattern = "127",
-  tileset = "overworld/forest_plain",
+  tileset = "normal_world",
 }
 
 tile{
@@ -10229,8 +10219,8 @@ tile{
   y = 32,
   width = 16,
   height = 16,
-  pattern = "80",
-  tileset = "overworld/mountain_sea",
+  pattern = "76_3",
+  tileset = "normal_world",
 }
 
 tile{
@@ -10239,8 +10229,8 @@ tile{
   y = 32,
   width = 592,
   height = 16,
-  pattern = "79",
-  tileset = "overworld/mountain_sea",
+  pattern = "75_3",
+  tileset = "normal_world",
 }
 
 tile{
@@ -10249,8 +10239,8 @@ tile{
   y = 0,
   width = 592,
   height = 32,
-  pattern = "82",
-  tileset = "overworld/mountain_sea",
+  pattern = "73_3",
+  tileset = "normal_world",
 }
 
 tile{
@@ -10259,18 +10249,8 @@ tile{
   y = 0,
   width = 16,
   height = 32,
-  pattern = "81",
-  tileset = "overworld/mountain_sea",
-}
-
-tile{
-  layer = 1,
-  x = 528,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "48",
-  tileset = "overworld/mountain_sea",
+  pattern = "74_3",
+  tileset = "normal_world",
 }
 
 tile{
@@ -11517,52 +11497,12 @@ tile{
 
 tile{
   layer = 1,
-  x = 512,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "38",
-  tileset = "overworld/mountain_sea",
-}
-
-tile{
-  layer = 1,
-  x = 544,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "38",
-  tileset = "overworld/mountain_sea",
-}
-
-tile{
-  layer = 1,
-  x = 512,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "39",
-  tileset = "overworld/mountain_sea",
-}
-
-tile{
-  layer = 1,
-  x = 544,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "39",
-  tileset = "overworld/mountain_sea",
-}
-
-tile{
-  layer = 1,
   x = 192,
   y = 16,
   width = 16,
   height = 16,
-  pattern = "187",
-  tileset = "overworld/mountain_sea",
+  pattern = "73_4",
+  tileset = "normal_world",
 }
 
 tile{
@@ -11571,8 +11511,8 @@ tile{
   y = 0,
   width = 16,
   height = 16,
-  pattern = "187",
-  tileset = "overworld/mountain_sea",
+  pattern = "73_4",
+  tileset = "normal_world",
 }
 
 tile{
@@ -11581,8 +11521,8 @@ tile{
   y = 16,
   width = 16,
   height = 16,
-  pattern = "187",
-  tileset = "overworld/mountain_sea",
+  pattern = "73_4",
+  tileset = "normal_world",
 }
 
 tile{
@@ -11591,8 +11531,8 @@ tile{
   y = 32,
   width = 16,
   height = 16,
-  pattern = "190",
-  tileset = "overworld/mountain_sea",
+  pattern = "75_4",
+  tileset = "normal_world",
 }
 
 tile{
@@ -11601,8 +11541,8 @@ tile{
   y = 32,
   width = 16,
   height = 16,
-  pattern = "190",
-  tileset = "overworld/mountain_sea",
+  pattern = "75_4",
+  tileset = "normal_world",
 }
 
 tile{
@@ -11611,8 +11551,8 @@ tile{
   y = 32,
   width = 16,
   height = 16,
-  pattern = "190",
-  tileset = "overworld/mountain_sea",
+  pattern = "75_4",
+  tileset = "normal_world",
 }
 
 tile{
@@ -11621,8 +11561,8 @@ tile{
   y = 32,
   width = 16,
   height = 16,
-  pattern = "190",
-  tileset = "overworld/mountain_sea",
+  pattern = "75_4",
+  tileset = "normal_world",
 }
 
 tile{
@@ -11631,8 +11571,8 @@ tile{
   y = 32,
   width = 16,
   height = 16,
-  pattern = "190",
-  tileset = "overworld/mountain_sea",
+  pattern = "75_4",
+  tileset = "normal_world",
 }
 
 tile{
@@ -11641,8 +11581,8 @@ tile{
   y = 32,
   width = 16,
   height = 16,
-  pattern = "190",
-  tileset = "overworld/mountain_sea",
+  pattern = "75_4",
+  tileset = "normal_world",
 }
 
 tile{
@@ -11651,8 +11591,8 @@ tile{
   y = 0,
   width = 16,
   height = 16,
-  pattern = "187",
-  tileset = "overworld/mountain_sea",
+  pattern = "73_4",
+  tileset = "normal_world",
 }
 
 tile{
@@ -11661,8 +11601,8 @@ tile{
   y = 0,
   width = 16,
   height = 16,
-  pattern = "187",
-  tileset = "overworld/mountain_sea",
+  pattern = "73_4",
+  tileset = "normal_world",
 }
 
 tile{
@@ -11671,8 +11611,8 @@ tile{
   y = 16,
   width = 16,
   height = 16,
-  pattern = "187",
-  tileset = "overworld/mountain_sea",
+  pattern = "73_4",
+  tileset = "normal_world",
 }
 
 tile{
@@ -11681,8 +11621,8 @@ tile{
   y = 16,
   width = 16,
   height = 16,
-  pattern = "187",
-  tileset = "overworld/mountain_sea",
+  pattern = "73_4",
+  tileset = "normal_world",
 }
 
 tile{
@@ -11691,8 +11631,8 @@ tile{
   y = 0,
   width = 16,
   height = 16,
-  pattern = "187",
-  tileset = "overworld/mountain_sea",
+  pattern = "73_4",
+  tileset = "normal_world",
 }
 
 tile{
@@ -11701,8 +11641,8 @@ tile{
   y = 0,
   width = 16,
   height = 16,
-  pattern = "187",
-  tileset = "overworld/mountain_sea",
+  pattern = "73_4",
+  tileset = "normal_world",
 }
 
 tile{
@@ -11711,8 +11651,8 @@ tile{
   y = 16,
   width = 16,
   height = 16,
-  pattern = "187",
-  tileset = "overworld/mountain_sea",
+  pattern = "73_4",
+  tileset = "normal_world",
 }
 
 tile{
@@ -11721,8 +11661,8 @@ tile{
   y = 16,
   width = 16,
   height = 16,
-  pattern = "187",
-  tileset = "overworld/mountain_sea",
+  pattern = "73_4",
+  tileset = "normal_world",
 }
 
 tile{
@@ -11731,8 +11671,8 @@ tile{
   y = 0,
   width = 16,
   height = 16,
-  pattern = "187",
-  tileset = "overworld/mountain_sea",
+  pattern = "73_4",
+  tileset = "normal_world",
 }
 
 tile{
@@ -11741,8 +11681,8 @@ tile{
   y = 0,
   width = 16,
   height = 16,
-  pattern = "187",
-  tileset = "overworld/mountain_sea",
+  pattern = "73_4",
+  tileset = "normal_world",
 }
 
 tile{
@@ -11751,18 +11691,8 @@ tile{
   y = 16,
   width = 16,
   height = 16,
-  pattern = "187",
-  tileset = "overworld/mountain_sea",
-}
-
-tile{
-  layer = 1,
-  x = 592,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "188",
-  tileset = "overworld/mountain_sea",
+  pattern = "73_4",
+  tileset = "normal_world",
 }
 
 tile{
@@ -11771,8 +11701,8 @@ tile{
   y = 32,
   width = 16,
   height = 16,
-  pattern = "49",
-  tileset = "overworld/mountain_sea",
+  pattern = "202_5",
+  tileset = "normal_world",
 }
 
 tile{
@@ -12286,7 +12216,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "178",
-  tileset = "overworld/mountain_sea",
+  tileset = "normal_world",
 }
 
 tile{
@@ -12296,7 +12226,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "229_5",
-  tileset = "overworld/mountain_sea",
+  tileset = "normal_world",
 }
 
 tile{
@@ -15681,6 +15611,36 @@ tile{
   width = 8,
   height = 8,
   pattern = "5",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 528,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "256",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 544,
+  y = 24,
+  width = 16,
+  height = 32,
+  pattern = "178",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 512,
+  y = 24,
+  width = 16,
+  height = 32,
+  pattern = "178",
   tileset = "normal_world",
 }
 
