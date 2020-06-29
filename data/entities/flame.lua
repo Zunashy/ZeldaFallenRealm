@@ -21,15 +21,27 @@ end
 
 local function collision_callback(e, other)
   if other:get_type() == "enemy" then
-    other:hurt(1)
-    local kb = sol.movement.create("straight")
-    kb:set_speed(128)
-    kb:set_max_distance(16)
-    kb:set_angle(e:get_angle(other))
-    kb:start(other)
+    local cons = other:get_attack_consequence("fire")
+    if type(cons) == "function" then
+      cons(other)
+    elseif type(cons) == "number" then
+      other:hurt(cons)
+      local kb = sol.movement.create("straight")
+      kb:set_speed(160)
+      kb:set_max_distance(16)
+      kb:set_angle(e:get_angle(other))
+      kb:start(other)
+    end
   elseif other:get_type() == "hero" then 
     local state = other:get_state()
-    if state == "jumping" or state == "hurt" then
+    if state == "hurt" then
+      return
+    elseif state == "jumping" then
+      local m = sol.movement.create("straight")
+      m:set_speed(128)
+      m:set_max_distance(80)
+      m:set_angle(math.pi * other:get_direction() / 2)
+      m:start(other)
       return
     end
     other:start_hurt(e.x, e.y, 1)

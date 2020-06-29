@@ -1,4 +1,4 @@
--- Lua script of map normal_version/overworld/north_beach/outdoors2.
+-- Lua script of map normal_version/village/nielint/new.
 -- This script is executed every time the hero enters this map.
 
 -- Feel free to modify the code below.
