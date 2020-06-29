@@ -5,7 +5,7 @@ properties{
   height = 128,
   min_layer = 0,
   max_layer = 2,
-  tileset = "forest_cave",
+  tileset = "normal_world",
 }
 
 tile{
@@ -14,236 +14,7 @@ tile{
   y = 16,
   width = 288,
   height = 96,
-  pattern = "20",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 0,
-  width = 128,
-  height = 16,
-  pattern = "6",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 176,
-  y = 0,
-  width = 128,
-  height = 16,
-  pattern = "6",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 16,
-  width = 16,
-  height = 96,
-  pattern = "5",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 304,
-  y = 16,
-  width = 16,
-  height = 96,
-  pattern = "8",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 112,
-  width = 128,
-  height = 16,
-  pattern = "7",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 176,
-  y = 112,
-  width = 128,
-  height = 16,
-  pattern = "7",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 304,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "15",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "16",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 48,
-  width = 16,
-  height = 16,
-  pattern = "13",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 48,
-  width = 16,
-  height = 16,
-  pattern = "14",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = "15",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = "16",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "13",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "14",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "11",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "12",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "11",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 304,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "12",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 56,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "1",
+  pattern = "210",
 }
 
 tile{
@@ -252,7 +23,16 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "3",
+  pattern = "196_2",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "196",
 }
 
 tile{
@@ -261,17 +41,88 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "2",
+  pattern = "196_3",
 }
 
 tile{
   layer = 0,
-  x = 32,
-  y = 64,
-  width = 128,
+  x = 96,
+  y = 112,
+  width = 48,
   height = 16,
-  pattern = "6",
-  tileset = "forest_cave",
+  pattern = "196_7",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 112,
+  width = 48,
+  height = 16,
+  pattern = "196_7",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "196_10",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "196_8",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 96,
+  pattern = "196_4",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "196_12",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "196_14",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "196_15",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "196_13",
 }
 
 tile{
@@ -280,8 +131,142 @@ tile{
   y = 48,
   width = 128,
   height = 16,
-  pattern = "7",
-  tileset = "forest_cave",
+  pattern = "196_7",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 64,
+  width = 128,
+  height = 16,
+  pattern = "196_6",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "196_14",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "196_15",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "196_13",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "196_12",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "196_11",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "196_10",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "196_8",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "196_9",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 0,
+  width = 128,
+  height = 16,
+  pattern = "196_6",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 0,
+  width = 128,
+  height = 16,
+  pattern = "196_6",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 112,
+  width = 128,
+  height = 16,
+  pattern = "196_7",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "196_11",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "196_9",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 16,
+  width = 16,
+  height = 96,
+  pattern = "196_5",
 }
 
 chest{

@@ -39,7 +39,6 @@ map{ id = "normal_version/village/nielint/indoors/octorok_cave_01", description 
 map{ id = "normal_version/village/nielint/indoors/octorok_cave_02", description = "normal_version/village/nielint/indoors/octorok_cave_02" }
 map{ id = "normal_version/village/nielint/indoors/shop", description = "normal_version/village/nielint/indoors/shop" }
 map{ id = "normal_version/village/nielint/indoors/tree_house", description = "normal_version/village/nielint/indoors/tree_house" }
-map{ id = "normal_version/village/nielint/new" }
 map{ id = "normal_version/village/nielint/outdoors", description = "normal_version/village/nielint/outdoors" }
 map{ id = "testHub", description = "testHub" }
 map{ id = "tests/blue_slime", description = "tests/blue_slime" }
@@ -195,6 +194,9 @@ sprite{ id = "pnj/nielint/17", description = "pnj/nielint/17" }
 sprite{ id = "pnj/nielint/18", description = "pnj/nielint/18" }
 sprite{ id = "pnj/nielint/19", description = "pnj/nielint/19" }
 sprite{ id = "pnj/nielint/2", description = "pnj/nielint/2" }
+sprite{ id = "pnj/nielint/20" }
+sprite{ id = "pnj/nielint/21" }
+sprite{ id = "pnj/nielint/22" }
 sprite{ id = "pnj/nielint/3", description = "pnj/nielint/3" }
 sprite{ id = "pnj/nielint/4", description = "pnj/nielint/4" }
 sprite{ id = "pnj/nielint/5", description = "pnj/nielint/5" }
@@ -202,6 +204,12 @@ sprite{ id = "pnj/nielint/6", description = "pnj/nielint/6" }
 sprite{ id = "pnj/nielint/7", description = "pnj/nielint/7" }
 sprite{ id = "pnj/nielint/8", description = "pnj/nielint/8" }
 sprite{ id = "pnj/nielint/9", description = "pnj/nielint/9" }
+sprite{ id = "pnj/overworld/1" }
+sprite{ id = "pnj/overworld/2" }
+sprite{ id = "pnj/overworld/3" }
+sprite{ id = "pnj/overworld/4" }
+sprite{ id = "pnj/overworld/5" }
+sprite{ id = "pnj/overworld/6" }
 sprite{ id = "shadows/shadow_big", description = "shadows/shadow_big" }
 sprite{ id = "shadows/shadow_big_dynamic", description = "shadows/shadow_big_dynamic" }
 sprite{ id = "shadows/shadow_small", description = "shadows/shadow_small" }

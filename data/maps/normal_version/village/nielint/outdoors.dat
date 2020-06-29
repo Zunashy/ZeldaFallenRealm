@@ -7238,7 +7238,7 @@ npc{
 separator{
   layer = 1,
   x = -16,
-  y = 80,
+  y = 120,
   width = 656,
   height = 16,
 }
@@ -7895,6 +7895,43 @@ destructible{
   sprite = "entities/vegetation/grass/grass_3",
   weight = 1,
   can_be_cut = true,
+}
+
+npc{
+  layer = 1,
+  x = 512,
+  y = 437,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/22",
+}
+
+npc{
+  layer = 1,
+  x = 576,
+  y = 437,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/21",
+}
+
+npc{
+  layer = 1,
+  x = 544,
+  y = 469,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/20",
+}
+
+npc{
+  layer = 1,
+  x = 536,
+  y = 45,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/10",
+  behavior = "dialog#pnj.village.nielint.exit_guards",
 }
 
 tile{

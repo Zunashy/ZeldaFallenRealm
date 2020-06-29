@@ -5,36 +5,7 @@ properties{
   height = 128,
   min_layer = 0,
   max_layer = 2,
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 16,
-  width = 128,
-  height = 96,
-  pattern = "20",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 0,
-  width = 128,
-  height = 16,
-  pattern = "6",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 16,
-  width = 16,
-  height = 96,
-  pattern = "5",
-  tileset = "forest_cave",
+  tileset = "normal_world",
 }
 
 tile{
@@ -43,58 +14,34 @@ tile{
   y = 16,
   width = 16,
   height = 96,
-  pattern = "8",
-  tileset = "forest_cave",
+  pattern = "196_5",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 96,
+  pattern = "196_4",
 }
 
 tile{
   layer = 0,
   x = 16,
-  y = 112,
+  y = 0,
   width = 128,
   height = 16,
-  pattern = "7",
-  tileset = "forest_cave",
+  pattern = "196_6",
 }
 
 tile{
   layer = 0,
-  x = 0,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "9",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "10",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 0,
+  x = 72,
   y = 112,
   width = 16,
   height = 16,
-  pattern = "11",
-  tileset = "forest_cave",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "12",
-  tileset = "forest_cave",
+  pattern = "196_3",
 }
 
 tile{
@@ -103,16 +50,7 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "3",
-}
-
-tile{
-  layer = 0,
-  x = 72,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "2",
+  pattern = "196_2",
 }
 
 tile{
@@ -121,7 +59,34 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "1",
+  pattern = "196",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 112,
+  width = 48,
+  height = 16,
+  pattern = "196_7",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 112,
+  width = 48,
+  height = 16,
+  pattern = "196_7",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 128,
+  height = 96,
+  pattern = "210",
 }
 
 tile{
@@ -130,7 +95,7 @@ tile{
   y = 0,
   width = 16,
   height = 16,
-  pattern = "34",
+  pattern = "244_14",
 }
 
 tile{
@@ -139,7 +104,7 @@ tile{
   y = 0,
   width = 16,
   height = 16,
-  pattern = "34",
+  pattern = "244_14",
 }
 
 tile{
@@ -148,7 +113,7 @@ tile{
   y = 0,
   width = 16,
   height = 16,
-  pattern = "34",
+  pattern = "244_14",
 }
 
 tile{
@@ -157,7 +122,7 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "34_2",
+  pattern = "244",
 }
 
 tile{
@@ -166,7 +131,7 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "34_2",
+  pattern = "244",
 }
 
 tile{
@@ -175,7 +140,7 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "34_2",
+  pattern = "244",
 }
 
 tile{
@@ -184,7 +149,7 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "34_2",
+  pattern = "244",
 }
 
 tile{
@@ -193,7 +158,7 @@ tile{
   y = 88,
   width = 16,
   height = 16,
-  pattern = "34_3",
+  pattern = "244_27",
 }
 
 tile{
@@ -202,7 +167,7 @@ tile{
   y = 16,
   width = 16,
   height = 16,
-  pattern = "34_3",
+  pattern = "244_27",
 }
 
 tile{
@@ -211,7 +176,7 @@ tile{
   y = 48,
   width = 16,
   height = 16,
-  pattern = "34_3",
+  pattern = "244_27",
 }
 
 tile{
@@ -220,7 +185,7 @@ tile{
   y = 88,
   width = 16,
   height = 16,
-  pattern = "34_4",
+  pattern = "244_19",
 }
 
 tile{
@@ -229,7 +194,7 @@ tile{
   y = 24,
   width = 16,
   height = 16,
-  pattern = "34_4",
+  pattern = "244_19",
 }
 
 tile{
@@ -238,7 +203,43 @@ tile{
   y = 56,
   width = 16,
   height = 16,
-  pattern = "34_4",
+  pattern = "244_19",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "196_11",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "196_10",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "196_8",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "196_9",
 }
 
 npc{

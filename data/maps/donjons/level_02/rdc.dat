@@ -13,7 +13,7 @@ tile{
   x = 496,
   y = 16,
   width = 208,
-  height = 144,
+  height = 176,
   pattern = "26",
 }
 
@@ -5347,8 +5347,8 @@ enemy{
 
 switch{
   layer = 0,
-  x = 592,
-  y = 176,
+  x = 600,
+  y = 208,
   properties = {
     {
       key = "activate_trigger",
@@ -5364,12 +5364,12 @@ switch{
 door{
   layer = 0,
   x = 592,
-  y = 160,
+  y = 176,
   direction = 1,
-  sprite = "entities/door/door",
+  sprite = "entities/door/boss_door",
   savegame_variable = "dungeon_1_door_key_2",
   opening_method = "interaction_if_item",
-  opening_condition = "small_key",
+  opening_condition = "great_key",
   opening_condition_consumed = true,
 }
 
