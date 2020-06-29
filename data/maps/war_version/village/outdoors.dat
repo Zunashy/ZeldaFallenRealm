@@ -245,33 +245,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 80,
-  y = 416,
-  width = 16,
-  height = 16,
-  pattern = "202_7",
-}
-
-tile{
-  layer = 0,
-  x = 64,
-  y = 416,
-  width = 16,
-  height = 16,
-  pattern = "203",
-}
-
-tile{
-  layer = 0,
-  x = 96,
-  y = 416,
-  width = 16,
-  height = 16,
-  pattern = "203_3",
-}
-
-tile{
-  layer = 0,
   x = 64,
   y = 384,
   width = 48,
@@ -697,15 +670,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 32,
-  y = 304,
-  width = 16,
-  height = 16,
-  pattern = "202_6",
-}
-
-tile{
-  layer = 0,
   x = 16,
   y = 304,
   width = 16,
@@ -729,24 +693,6 @@ tile{
   width = 48,
   height = 32,
   pattern = "232_2",
-}
-
-tile{
-  layer = 0,
-  x = 192,
-  y = 304,
-  width = 16,
-  height = 16,
-  pattern = "203_11",
-}
-
-tile{
-  layer = 0,
-  x = 224,
-  y = 304,
-  width = 16,
-  height = 16,
-  pattern = "203_13",
 }
 
 tile{
@@ -1478,7 +1424,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 352,
+  x = 336,
   y = 304,
   width = 16,
   height = 16,
@@ -1559,15 +1505,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 384,
-  y = 176,
-  width = 16,
-  height = 16,
-  pattern = "203_12",
-}
-
-tile{
-  layer = 0,
   x = 400,
   y = 144,
   width = 16,
@@ -1636,15 +1573,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "203_5",
-}
-
-tile{
-  layer = 0,
-  x = 528,
-  y = 192,
-  width = 16,
-  height = 16,
-  pattern = "202_7",
 }
 
 tile{
@@ -3625,15 +3553,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 480,
-  y = 256,
-  width = 16,
-  height = 16,
-  pattern = "237_3",
-}
-
-tile{
-  layer = 0,
   x = 464,
   y = 256,
   width = 16,
@@ -3643,8 +3562,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 560,
-  y = 240,
+  x = 544,
+  y = 256,
   width = 16,
   height = 16,
   pattern = "18",
@@ -3723,51 +3642,15 @@ tile{
 tile{
   layer = 0,
   x = 528,
-  y = 368,
-  width = 16,
-  height = 16,
-  pattern = "17_3",
-}
-
-tile{
-  layer = 0,
-  x = 544,
-  y = 400,
-  width = 16,
-  height = 16,
-  pattern = "17_3",
-}
-
-tile{
-  layer = 0,
-  x = 520,
-  y = 384,
-  width = 16,
-  height = 16,
-  pattern = "17",
-}
-
-tile{
-  layer = 0,
-  x = 520,
   y = 352,
   width = 16,
   height = 16,
-  pattern = "17",
+  pattern = "17_3",
 }
 
 tile{
   layer = 0,
-  x = 544,
-  y = 368,
-  width = 16,
-  height = 16,
-  pattern = "17",
-}
-
-tile{
-  layer = 0,
-  x = 552,
+  x = 528,
   y = 384,
   width = 16,
   height = 16,
@@ -3776,7 +3659,16 @@ tile{
 
 tile{
   layer = 0,
-  x = 520,
+  x = 536,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 528,
   y = 344,
   width = 16,
   height = 8,
@@ -3786,7 +3678,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 512,
+  x = 520,
   y = 352,
   width = 8,
   height = 16,
@@ -3796,8 +3688,78 @@ tile{
 
 tile{
   layer = 0,
-  x = 536,
+  x = 544,
   y = 352,
+  width = 8,
+  height = 8,
+  pattern = "12_2",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 360,
+  width = 16,
+  height = 8,
+  pattern = "10_2",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 368,
+  width = 8,
+  height = 8,
+  pattern = "12_2",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 384,
+  width = 8,
+  height = 16,
+  pattern = "8_2",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 384,
+  width = 8,
+  height = 16,
+  pattern = "12_2",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 400,
+  width = 16,
+  height = 8,
+  pattern = "6_2",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 408,
+  width = 8,
+  height = 8,
+  pattern = "8_2",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 408,
   width = 8,
   height = 8,
   pattern = "12_2",
@@ -3808,76 +3770,6 @@ tile{
   layer = 0,
   x = 544,
   y = 360,
-  width = 16,
-  height = 8,
-  pattern = "10_2",
-  tileset = "war_world",
-}
-
-tile{
-  layer = 0,
-  x = 560,
-  y = 368,
-  width = 8,
-  height = 8,
-  pattern = "12_2",
-  tileset = "war_world",
-}
-
-tile{
-  layer = 0,
-  x = 512,
-  y = 384,
-  width = 8,
-  height = 16,
-  pattern = "8_2",
-  tileset = "war_world",
-}
-
-tile{
-  layer = 0,
-  x = 568,
-  y = 384,
-  width = 8,
-  height = 16,
-  pattern = "12_2",
-  tileset = "war_world",
-}
-
-tile{
-  layer = 0,
-  x = 520,
-  y = 400,
-  width = 16,
-  height = 8,
-  pattern = "6_2",
-  tileset = "war_world",
-}
-
-tile{
-  layer = 0,
-  x = 536,
-  y = 408,
-  width = 8,
-  height = 8,
-  pattern = "8_2",
-  tileset = "war_world",
-}
-
-tile{
-  layer = 0,
-  x = 560,
-  y = 408,
-  width = 8,
-  height = 8,
-  pattern = "12_2",
-  tileset = "war_world",
-}
-
-tile{
-  layer = 0,
-  x = 536,
-  y = 360,
   width = 8,
   height = 8,
   pattern = "11_2",
@@ -3886,7 +3778,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 520,
+  x = 528,
   y = 368,
   width = 8,
   height = 8,
@@ -3896,7 +3788,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 520,
+  x = 528,
   y = 376,
   width = 8,
   height = 8,
@@ -3906,7 +3798,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 560,
+  x = 568,
   y = 376,
   width = 8,
   height = 8,
@@ -3916,7 +3808,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 536,
+  x = 544,
   y = 400,
   width = 8,
   height = 8,
@@ -3926,7 +3818,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 560,
+  x = 568,
   y = 400,
   width = 8,
   height = 8,
@@ -3936,7 +3828,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 536,
+  x = 544,
   y = 384,
   width = 16,
   height = 16,
@@ -3999,15 +3891,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 560,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = "237_3",
-}
-
-tile{
-  layer = 0,
   x = 568,
   y = 80,
   width = 16,
@@ -4040,36 +3923,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "237_3",
-}
-
-tile{
-  layer = 0,
-  x = 560,
-  y = 56,
-  width = 16,
-  height = 8,
-  pattern = "10_2",
-  tileset = "war_world",
-}
-
-tile{
-  layer = 0,
-  x = 552,
-  y = 64,
-  width = 8,
-  height = 16,
-  pattern = "8_2",
-  tileset = "war_world",
-}
-
-tile{
-  layer = 0,
-  x = 576,
-  y = 64,
-  width = 8,
-  height = 8,
-  pattern = "12_2",
-  tileset = "war_world",
 }
 
 tile{
@@ -4129,26 +3982,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "6_2",
-  tileset = "war_world",
-}
-
-tile{
-  layer = 0,
-  x = 576,
-  y = 72,
-  width = 8,
-  height = 8,
-  pattern = "11_2",
-  tileset = "war_world",
-}
-
-tile{
-  layer = 0,
-  x = 560,
-  y = 80,
-  width = 8,
-  height = 8,
-  pattern = "7_2",
   tileset = "war_world",
 }
 
@@ -4437,29 +4270,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 496,
-  y = 448,
-  width = 16,
-  height = 16,
-  pattern = "237",
-}
-
-tile{
-  layer = 0,
   x = 480,
   y = 432,
   width = 16,
   height = 16,
   pattern = "17",
-}
-
-tile{
-  layer = 0,
-  x = 496,
-  y = 416,
-  width = 16,
-  height = 16,
-  pattern = "17_3",
 }
 
 tile{
@@ -4648,7 +4463,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 560,
+  x = 576,
   y = 416,
   width = 16,
   height = 16,
@@ -4668,15 +4483,6 @@ tile{
   layer = 0,
   x = 520,
   y = 408,
-  width = 16,
-  height = 16,
-  pattern = "2",
-}
-
-tile{
-  layer = 0,
-  x = 568,
-  y = 360,
   width = 16,
   height = 16,
   pattern = "2",
@@ -5132,7 +4938,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 496,
+  x = 512,
   y = 272,
   width = 16,
   height = 16,
@@ -5568,7 +5374,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 544,
+  x = 552,
   y = 416,
   width = 16,
   height = 8,
@@ -5587,25 +5393,7 @@ tile{
 tile{
   layer = 0,
   x = 560,
-  y = 256,
-  width = 16,
-  height = 16,
-  pattern = "237",
-}
-
-tile{
-  layer = 0,
-  x = 480,
   y = 240,
-  width = 16,
-  height = 16,
-  pattern = "237",
-}
-
-tile{
-  layer = 0,
-  x = 544,
-  y = 256,
   width = 16,
   height = 16,
   pattern = "17",
@@ -6122,26 +5910,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 216,
-  y = 144,
-  width = 16,
-  height = 16,
-  pattern = "129",
-}
-
-tile{
-  layer = 0,
   x = 272,
   y = 256,
-  width = 16,
-  height = 16,
-  pattern = "129",
-}
-
-tile{
-  layer = 0,
-  x = 288,
-  y = 240,
   width = 16,
   height = 16,
   pattern = "129",
@@ -6869,7 +6639,7 @@ tile{
 tile{
   layer = 0,
   x = 552,
-  y = 384,
+  y = 368,
   width = 16,
   height = 16,
   pattern = "130",
@@ -6891,15 +6661,6 @@ tile{
   width = 48,
   height = 16,
   pattern = "233",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 416,
-  width = 16,
-  height = 16,
-  pattern = "129",
 }
 
 tile{
@@ -7016,8 +6777,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 152,
-  y = 424,
+  x = 112,
+  y = 472,
   width = 16,
   height = 16,
   pattern = "74",
@@ -7030,15 +6791,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "131",
-}
-
-tile{
-  layer = 0,
-  x = 336,
-  y = 304,
-  width = 16,
-  height = 16,
-  pattern = "237_2",
 }
 
 tile{
@@ -7093,6 +6845,396 @@ tile{
   width = 16,
   height = 16,
   pattern = "53",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 184,
+  width = 16,
+  height = 8,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 184,
+  width = 16,
+  height = 8,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 312,
+  width = 16,
+  height = 8,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "202_3",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "202_6",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "203_7",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "203_9",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "202_8",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "203_7",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "203_9",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "202_8",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 80,
+  width = 8,
+  height = 8,
+  pattern = "8_2",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 72,
+  width = 16,
+  height = 8,
+  pattern = "10_2",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "131",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "130",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "237_3",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "17_3",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "129",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "17_3",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 312,
+  width = 16,
+  height = 8,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 312,
+  width = 16,
+  height = 8,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 312,
+  width = 16,
+  height = 8,
+  pattern = "134",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "203_9",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 208,
+  width = 8,
+  height = 16,
+  pattern = "8",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 224,
+  width = 16,
+  height = 8,
+  pattern = "6",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 208,
+  width = 8,
+  height = 16,
+  pattern = "12",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "237_2",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "131",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "131",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "130",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "237_3",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "129",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 384,
+  width = 8,
+  height = 24,
+  pattern = "194",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 408,
+  width = 32,
+  height = 8,
+  pattern = "148",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 400,
+  width = 16,
+  height = 8,
+  pattern = "92",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 384,
+  width = 8,
+  height = 24,
+  pattern = "195",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "192",
 }
 
 teletransporter{
@@ -7252,5 +7394,993 @@ destination{
   x = 536,
   y = 205,
   direction = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 104,
+  y = 269,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 120,
+  y = 285,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 381,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 232,
+  y = 397,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 397,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 413,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 429,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 445,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 461,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 477,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 232,
+  y = 477,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 232,
+  y = 461,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 232,
+  y = 381,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 397,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 381,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 232,
+  y = 413,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 232,
+  y = 429,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 232,
+  y = 445,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 445,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 461,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 477,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 264,
+  y = 477,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 264,
+  y = 461,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 264,
+  y = 445,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 429,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 413,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 264,
+  y = 413,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 264,
+  y = 429,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 264,
+  y = 381,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 264,
+  y = 397,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 280,
+  y = 397,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 397,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 312,
+  y = 397,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 312,
+  y = 381,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 381,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 280,
+  y = 381,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 280,
+  y = 413,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 413,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 312,
+  y = 413,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 312,
+  y = 429,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 312,
+  y = 445,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 312,
+  y = 461,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 312,
+  y = 477,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 477,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 280,
+  y = 461,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 280,
+  y = 477,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 461,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 445,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 280,
+  y = 445,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 280,
+  y = 429,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 429,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 344,
+  y = 221,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 93,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 232,
+  y = 109,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 93,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 264,
+  y = 109,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 504,
+  y = 109,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 552,
+  y = 109,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 568,
+  y = 109,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 576,
+  y = 93,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 560,
+  y = 125,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 568,
+  y = 157,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 584,
+  y = 157,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 568,
+  y = 173,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 584,
+  y = 173,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 584,
+  y = 189,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 584,
+  y = 205,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 568,
+  y = 205,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 568,
+  y = 189,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 552,
+  y = 397,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 440,
+  y = 157,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 456,
+  y = 173,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 472,
+  y = 173,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 488,
+  y = 157,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 24,
+  y = 397,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 40,
+  y = 397,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 56,
+  y = 397,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 152,
+  y = 253,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+teletransporter{
+  layer = 0,
+  x = 352,
+  y = 32,
+  width = 16,
+  height = 16,
+  destination_map = "war_version/village/outdoors",
+}
+
+destination{
+  name = "destination_7",
+  layer = 0,
+  x = 360,
+  y = 45,
+  direction = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 224,
+  y = 173,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 504,
+  y = 461,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 560,
+  y = 413,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
 }
 
