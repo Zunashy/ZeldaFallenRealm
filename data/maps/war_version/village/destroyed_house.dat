@@ -458,3 +458,20 @@ tile{
   pattern = "78_2",
 }
 
+teletransporter{
+  layer = 0,
+  x = 72,
+  y = 112,
+  width = 16,
+  height = 16,
+  destination_map = "war_version/village/outdoors",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 80,
+  y = 117,
+  direction = 1,
+}
+

@@ -793,7 +793,7 @@ tile_pattern{
 
 tile_pattern{
   id = "133",
-  ground = "wall",
+  ground = "ladder",
   default_layer = 0,
   x = 128,
   y = 464,

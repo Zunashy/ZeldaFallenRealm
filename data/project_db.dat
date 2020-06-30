@@ -51,6 +51,7 @@ map{ id = "war_version/overworld/forest", description = "forêt version guerre" 
 map{ id = "war_version/overworld/jojo_tree", description = "war_version/overworld/jojo_tree" }
 map{ id = "war_version/overworld/north beach", description = "war_version/overworld/north beach" }
 map{ id = "war_version/overworld/sword_cave", description = "war_version/overworld/sword_cave" }
+map{ id = "war_version/village/destroyed_house", description = "war_version/village/destroyed_house" }
 map{ id = "war_version/village/outdoors", description = "war_version/village/outdoors" }
 
 tileset{ id = "House", description = "House" }
