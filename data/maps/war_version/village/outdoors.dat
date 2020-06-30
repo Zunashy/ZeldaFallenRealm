@@ -6,6 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "war_world",
+  music = "horon village",
 }
 
 tile{
@@ -7943,7 +7944,7 @@ separator{
 
 teletransporter{
   layer = 0,
-  x = -8,
+  x = 0,
   y = 448,
   width = 16,
   height = 48,
@@ -8018,5 +8019,34 @@ destination{
   x = 400,
   y = 437,
   direction = 1,
+}
+
+teletransporter{
+  name = "test_war_2",
+  layer = 0,
+  x = 72,
+  y = 72,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/village/nielint/outdoors",
+  destination = "test_war",
+}
+
+destination{
+  name = "test_war",
+  layer = 0,
+  x = 80,
+  y = 101,
+  direction = 1,
+}
+
+custom_entity{
+  layer = 0,
+  x = 80,
+  y = 85,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/teleport",
 }
 
