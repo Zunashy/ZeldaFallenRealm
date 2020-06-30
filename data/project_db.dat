@@ -54,6 +54,7 @@ map{ id = "war_version/overworld/sword_cave", description = "war_version/overwor
 map{ id = "war_version/village/destroyed_house", description = "war_version/village/destroyed_house" }
 map{ id = "war_version/village/octorock_cave", description = "octorock cave war" }
 map{ id = "war_version/village/outdoors", description = "war_version/village/outdoors" }
+map{ id = "war_version/village/outdoors 2", description = "outdoors 2" }
 
 tileset{ id = "House", description = "House" }
 tileset{ id = "caves/cave_side", description = "caves/cave_side" }
