@@ -11,6 +11,33 @@ properties{
 
 tile{
   layer = 0,
+  x = 16,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "237_3",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "237_3",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "237_3",
+}
+
+tile{
+  layer = 0,
   x = 480,
   y = 144,
   width = 160,
@@ -146,15 +173,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 368,
-  y = 400,
-  width = 16,
-  height = 16,
-  pattern = "17",
-}
-
-tile{
-  layer = 0,
   x = 0,
   y = 288,
   width = 160,
@@ -241,15 +259,6 @@ tile{
   width = 8,
   height = 432,
   pattern = "93_6",
-}
-
-tile{
-  layer = 0,
-  x = 64,
-  y = 384,
-  width = 48,
-  height = 32,
-  pattern = "232_4",
 }
 
 tile{
@@ -347,7 +356,7 @@ tile{
 tile{
   layer = 0,
   x = 32,
-  y = 336,
+  y = 344,
   width = 32,
   height = 32,
   pattern = "13_4",
@@ -356,7 +365,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = 352,
+  y = 360,
   width = 32,
   height = 32,
   pattern = "13",
@@ -365,7 +374,7 @@ tile{
 tile{
   layer = 0,
   x = 64,
-  y = 336,
+  y = 344,
   width = 32,
   height = 32,
   pattern = "13",
@@ -374,16 +383,7 @@ tile{
 tile{
   layer = 0,
   x = 96,
-  y = 336,
-  width = 32,
-  height = 32,
-  pattern = "13",
-}
-
-tile{
-  layer = 0,
-  x = 112,
-  y = 352,
+  y = 344,
   width = 32,
   height = 32,
   pattern = "13",
@@ -392,7 +392,7 @@ tile{
 tile{
   layer = 0,
   x = 48,
-  y = 352,
+  y = 360,
   width = 32,
   height = 32,
   pattern = "13_4",
@@ -401,7 +401,7 @@ tile{
 tile{
   layer = 0,
   x = 80,
-  y = 352,
+  y = 360,
   width = 32,
   height = 32,
   pattern = "13_4",
@@ -419,34 +419,7 @@ tile{
 tile{
   layer = 0,
   x = 16,
-  y = 384,
-  width = 16,
-  height = 16,
-  pattern = "237_3",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 384,
-  width = 16,
-  height = 16,
-  pattern = "237_3",
-}
-
-tile{
-  layer = 0,
-  x = 48,
-  y = 384,
-  width = 16,
-  height = 16,
-  pattern = "237_3",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 400,
+  y = 408,
   width = 48,
   height = 8,
   pattern = "6_2",
@@ -1187,15 +1160,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 440,
-  y = 440,
-  width = 8,
-  height = 8,
-  pattern = "9",
-}
-
-tile{
-  layer = 0,
   x = 328,
   y = 360,
   width = 8,
@@ -1246,15 +1210,6 @@ tile{
   width = 8,
   height = 80,
   pattern = "12",
-}
-
-tile{
-  layer = 0,
-  x = 360,
-  y = 440,
-  width = 80,
-  height = 8,
-  pattern = "10",
 }
 
 tile{
@@ -1829,168 +1784,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 376,
-  y = 440,
-  width = 8,
-  height = 8,
-  pattern = "70",
-}
-
-tile{
-  layer = 0,
-  x = 392,
-  y = 432,
-  width = 16,
-  height = 16,
-  pattern = "262",
-}
-
-tile{
-  layer = 0,
-  x = 392,
-  y = 416,
-  width = 16,
-  height = 16,
-  pattern = "256",
-}
-
-tile{
-  layer = 0,
-  x = 376,
-  y = 408,
-  width = 8,
-  height = 8,
-  pattern = "214_7",
-}
-
-tile{
-  layer = 0,
-  x = 376,
-  y = 392,
-  width = 8,
-  height = 16,
-  pattern = "218_15",
-}
-
-tile{
-  layer = 0,
-  x = 384,
-  y = 408,
-  width = 32,
-  height = 8,
-  pattern = "216_7",
-}
-
-tile{
-  layer = 0,
-  x = 416,
-  y = 408,
-  width = 8,
-  height = 8,
-  pattern = "215_8",
-}
-
-tile{
-  layer = 0,
-  x = 376,
-  y = 384,
-  width = 8,
-  height = 8,
-  pattern = "212_7",
-}
-
-tile{
-  layer = 0,
-  x = 384,
-  y = 384,
-  width = 32,
-  height = 8,
-  pattern = "217_7",
-}
-
-tile{
-  layer = 0,
-  x = 416,
-  y = 384,
-  width = 8,
-  height = 8,
-  pattern = "213_8",
-}
-
-tile{
-  layer = 0,
-  x = 416,
-  y = 392,
-  width = 8,
-  height = 16,
-  pattern = "218_14",
-}
-
-tile{
-  layer = 0,
-  x = 408,
-  y = 400,
-  width = 8,
-  height = 8,
-  pattern = "82_4",
-}
-
-tile{
-  layer = 0,
-  x = 384,
-  y = 392,
-  width = 8,
-  height = 8,
-  pattern = "83_4",
-}
-
-tile{
-  layer = 0,
-  x = 384,
-  y = 400,
-  width = 8,
-  height = 8,
-  pattern = "81_4",
-}
-
-tile{
-  layer = 0,
-  x = 408,
-  y = 392,
-  width = 8,
-  height = 8,
-  pattern = "84_4",
-}
-
-tile{
-  layer = 0,
-  x = 392,
-  y = 392,
-  width = 16,
-  height = 8,
-  pattern = "217_7",
-}
-
-tile{
-  layer = 0,
-  x = 392,
-  y = 400,
-  width = 16,
-  height = 8,
-  pattern = "216_7",
-}
-
-tile{
-  layer = 0,
-  x = 416,
-  y = 384,
-  width = 8,
-  height = 8,
-  pattern = "59_4",
-}
-
-tile{
-  layer = 0,
   x = 480,
   y = 336,
   width = 16,
@@ -2070,16 +1863,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 368,
-  y = 384,
-  width = 16,
-  height = 8,
-  pattern = "6_2",
-  tileset = "war_world",
-}
-
-tile{
-  layer = 0,
   x = 480,
   y = 328,
   width = 16,
@@ -2116,15 +1899,6 @@ tile{
   height = 8,
   pattern = "6_2",
   tileset = "war_world",
-}
-
-tile{
-  layer = 0,
-  x = 376,
-  y = 384,
-  width = 8,
-  height = 8,
-  pattern = "56_4",
 }
 
 tile{
@@ -2206,33 +1980,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "52",
-}
-
-tile{
-  layer = 0,
-  x = 368,
-  y = 392,
-  width = 8,
-  height = 8,
-  pattern = "10",
-}
-
-tile{
-  layer = 0,
-  x = 368,
-  y = 416,
-  width = 8,
-  height = 8,
-  pattern = "6",
-}
-
-tile{
-  layer = 0,
-  x = 360,
-  y = 400,
-  width = 8,
-  height = 16,
-  pattern = "8",
 }
 
 tile{
@@ -4382,24 +4129,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 512,
-  y = 128,
-  width = 80,
-  height = 16,
-  pattern = "29",
-}
-
-tile{
-  layer = 0,
-  x = 560,
-  y = 144,
-  width = 32,
-  height = 64,
-  pattern = "237_3",
-}
-
-tile{
-  layer = 0,
   x = 560,
   y = 208,
   width = 32,
@@ -5172,24 +4901,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "2",
-}
-
-tile{
-  layer = 0,
-  x = 416,
-  y = 480,
-  width = 16,
-  height = 16,
-  pattern = "2",
-}
-
-tile{
-  layer = 0,
-  x = 400,
-  y = 472,
-  width = 16,
-  height = 16,
-  pattern = "1_2",
 }
 
 tile{
@@ -6184,26 +5895,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 552,
-  y = 144,
-  width = 8,
-  height = 16,
-  pattern = "8",
-}
-
-tile{
-  layer = 0,
-  x = 512,
-  y = 144,
-  width = 48,
-  height = 16,
-  pattern = "233",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 408,
+  x = 96,
+  y = 472,
   width = 16,
   height = 8,
   pattern = "10_2",
@@ -6212,8 +5905,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 24,
-  y = 416,
+  x = 88,
+  y = 480,
   width = 8,
   height = 16,
   pattern = "8_2",
@@ -6222,21 +5915,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 48,
-  y = 416,
+  x = 112,
+  y = 480,
   width = 8,
   height = 16,
   pattern = "12_2",
-  tileset = "war_world",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 432,
-  width = 16,
-  height = 8,
-  pattern = "6_2",
   tileset = "war_world",
 }
 
@@ -6314,20 +5997,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 112,
-  y = 480,
+  x = 32,
+  y = 416,
   width = 16,
   height = 16,
   pattern = "74",
-}
-
-tile{
-  layer = 0,
-  x = 424,
-  y = 384,
-  width = 16,
-  height = 16,
-  pattern = "131",
 }
 
 tile{
@@ -6359,8 +6033,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 32,
-  y = 416,
+  x = 96,
+  y = 480,
   width = 16,
   height = 16,
   pattern = "154",
@@ -6709,42 +6383,6 @@ tile{
   width = 32,
   height = 8,
   pattern = "148",
-}
-
-tile{
-  layer = 0,
-  x = 376,
-  y = 432,
-  width = 16,
-  height = 16,
-  pattern = "152_3",
-}
-
-tile{
-  layer = 0,
-  x = 376,
-  y = 416,
-  width = 16,
-  height = 16,
-  pattern = "153_3",
-}
-
-tile{
-  layer = 0,
-  x = 408,
-  y = 432,
-  width = 16,
-  height = 16,
-  pattern = "152_3",
-}
-
-tile{
-  layer = 0,
-  x = 408,
-  y = 416,
-  width = 16,
-  height = 16,
-  pattern = "153_3",
 }
 
 tile{
@@ -7157,13 +6795,437 @@ tile{
   pattern = "130",
 }
 
-teletransporter{
+tile{
+  layer = 0,
+  x = 368,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 440,
+  width = 8,
+  height = 8,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 440,
+  width = 80,
+  height = 8,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 440,
+  width = 8,
+  height = 8,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "262",
+}
+
+tile{
   layer = 0,
   x = 392,
   y = 416,
   width = 16,
   height = 16,
-  destination_map = "war_version/village/outdoors",
+  pattern = "256",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 408,
+  width = 8,
+  height = 8,
+  pattern = "214_7",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 408,
+  width = 32,
+  height = 8,
+  pattern = "216_7",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 408,
+  width = 8,
+  height = 8,
+  pattern = "215_8",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 384,
+  width = 8,
+  height = 8,
+  pattern = "212_7",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 368,
+  width = 32,
+  height = 8,
+  pattern = "217_7",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 376,
+  width = 8,
+  height = 8,
+  pattern = "83_4",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 376,
+  width = 8,
+  height = 8,
+  pattern = "84_4",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 376,
+  width = 16,
+  height = 8,
+  pattern = "217_7",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 400,
+  width = 16,
+  height = 8,
+  pattern = "216_7",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 368,
+  width = 8,
+  height = 8,
+  pattern = "59_4",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 384,
+  width = 16,
+  height = 8,
+  pattern = "6_2",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 392,
+  width = 8,
+  height = 8,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 416,
+  width = 8,
+  height = 8,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 400,
+  width = 8,
+  height = 16,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 472,
+  width = 16,
+  height = 16,
+  pattern = "1_2",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "131",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "152_3",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "153_3",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "152_3",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "153_3",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 368,
+  width = 8,
+  height = 8,
+  pattern = "56_4",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 384,
+  width = 8,
+  height = 16,
+  pattern = "78_7",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 384,
+  width = 8,
+  height = 16,
+  pattern = "78_8",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 400,
+  width = 8,
+  height = 8,
+  pattern = "81_4",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 400,
+  width = 8,
+  height = 8,
+  pattern = "82_4",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 376,
+  width = 8,
+  height = 32,
+  pattern = "63_4",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 376,
+  width = 8,
+  height = 32,
+  pattern = "61_4",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 384,
+  width = 8,
+  height = 8,
+  pattern = "83_4",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 392,
+  width = 8,
+  height = 8,
+  pattern = "82_4",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 392,
+  width = 8,
+  height = 8,
+  pattern = "81_4",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 384,
+  width = 8,
+  height = 8,
+  pattern = "84_4",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 144,
+  width = 80,
+  height = 16,
+  pattern = "29",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 144,
+  width = 48,
+  height = 16,
+  pattern = "233",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 160,
+  width = 32,
+  height = 48,
+  pattern = "237_3",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 360,
+  width = 32,
+  height = 32,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 384,
+  width = 48,
+  height = 32,
+  pattern = "232_4",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 392,
+  width = 48,
+  height = 16,
+  pattern = "237_3",
+}
+
+destructible{
+  layer = 0,
+  x = 24,
+  y = 405,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 40,
+  y = 405,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 56,
+  y = 405,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
 }
 
 teletransporter{
@@ -7271,14 +7333,6 @@ destination{
   name = "destination_3",
   layer = 0,
   x = 88,
-  y = 437,
-  direction = 1,
-}
-
-destination{
-  name = "destination_4",
-  layer = 0,
-  x = 400,
   y = 437,
   direction = 1,
 }
@@ -7722,30 +7776,6 @@ destructible{
 destructible{
   layer = 0,
   x = 568,
-  y = 157,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 584,
-  y = 157,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 568,
   y = 173,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
@@ -7831,42 +7861,6 @@ destructible{
   layer = 0,
   x = 456,
   y = 173,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 24,
-  y = 397,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 40,
-  y = 397,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 56,
-  y = 397,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -8008,5 +8002,22 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
+}
+
+teletransporter{
+  layer = 0,
+  x = 392,
+  y = 416,
+  width = 16,
+  height = 16,
+  destination_map = "war_version/village/octorock_cave",
+}
+
+destination{
+  name = "destination_4",
+  layer = 0,
+  x = 400,
+  y = 437,
+  direction = 1,
 }
 
