@@ -805,36 +805,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 208,
-  y = 360,
-  width = 112,
-  height = 8,
-  pattern = "10",
-  tileset = "war_world",
-}
-
-tile{
-  layer = 0,
-  x = 200,
-  y = 368,
-  width = 8,
-  height = 112,
-  pattern = "8",
-  tileset = "war_world",
-}
-
-tile{
-  layer = 0,
-  x = 320,
-  y = 368,
-  width = 8,
-  height = 112,
-  pattern = "12",
-  tileset = "war_world",
-}
-
-tile{
-  layer = 0,
   x = 8,
   y = 0,
   width = 8,
@@ -3035,15 +3005,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 208,
-  y = 368,
-  width = 112,
-  height = 112,
-  pattern = "237_3",
-}
-
-tile{
-  layer = 0,
   x = 160,
   y = 0,
   width = 32,
@@ -3757,7 +3718,7 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 496,
+  y = 504,
   width = 592,
   height = 16,
   pattern = "73_3",
@@ -4131,15 +4092,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "74_3",
-}
-
-tile{
-  layer = 0,
-  x = 208,
-  y = 480,
-  width = 112,
-  height = 8,
-  pattern = "6",
 }
 
 tile{
@@ -4732,7 +4684,7 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 488,
+  y = 496,
   width = 592,
   height = 8,
   pattern = "94_6",
@@ -4741,7 +4693,7 @@ tile{
 tile{
   layer = 0,
   x = 592,
-  y = 488,
+  y = 496,
   width = 8,
   height = 8,
   pattern = "94_6",
@@ -4750,7 +4702,7 @@ tile{
 tile{
   layer = 0,
   x = 592,
-  y = 496,
+  y = 504,
   width = 16,
   height = 16,
   pattern = "122",
@@ -5267,7 +5219,7 @@ tile{
 tile{
   layer = 0,
   x = 600,
-  y = 488,
+  y = 496,
   width = 8,
   height = 8,
   pattern = "85_78",
@@ -5468,7 +5420,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 448,
+  x = 440,
   y = 472,
   width = 16,
   height = 16,
@@ -5478,7 +5430,7 @@ tile{
 tile{
   layer = 0,
   x = 416,
-  y = 472,
+  y = 480,
   width = 16,
   height = 16,
   pattern = "2",
@@ -5487,24 +5439,6 @@ tile{
 tile{
   layer = 0,
   x = 400,
-  y = 472,
-  width = 16,
-  height = 16,
-  pattern = "1_2",
-}
-
-tile{
-  layer = 0,
-  x = 368,
-  y = 472,
-  width = 16,
-  height = 16,
-  pattern = "1_2",
-}
-
-tile{
-  layer = 0,
-  x = 384,
   y = 472,
   width = 16,
   height = 16,
@@ -6679,7 +6613,7 @@ tile{
 tile{
   layer = 0,
   x = 112,
-  y = 472,
+  y = 480,
   width = 16,
   height = 16,
   pattern = "74",
@@ -6872,15 +6806,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "10_2",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 416,
-  width = 16,
-  height = 16,
-  pattern = "18",
 }
 
 tile{
@@ -7174,6 +7099,64 @@ tile{
   pattern = "153_3",
 }
 
+tile{
+  layer = 0,
+  x = 504,
+  y = 408,
+  width = 32,
+  height = 8,
+  pattern = "193",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 392,
+  width = 96,
+  height = 96,
+  pattern = "237_3",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 384,
+  width = 96,
+  height = 8,
+  pattern = "10",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 392,
+  width = 8,
+  height = 96,
+  pattern = "8",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 392,
+  width = 8,
+  height = 96,
+  pattern = "12",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 488,
+  width = 96,
+  height = 8,
+  pattern = "6",
+  tileset = "war_world",
+}
+
 teletransporter{
   layer = 0,
   x = 392,
@@ -7359,20 +7342,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 216,
-  y = 381,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
   x = 232,
-  y = 397,
+  y = 405,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7384,7 +7355,7 @@ destructible{
 destructible{
   layer = 0,
   x = 216,
-  y = 397,
+  y = 405,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7396,7 +7367,7 @@ destructible{
 destructible{
   layer = 0,
   x = 216,
-  y = 413,
+  y = 421,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7408,7 +7379,7 @@ destructible{
 destructible{
   layer = 0,
   x = 216,
-  y = 429,
+  y = 437,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7420,7 +7391,7 @@ destructible{
 destructible{
   layer = 0,
   x = 216,
-  y = 445,
+  y = 453,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7432,7 +7403,7 @@ destructible{
 destructible{
   layer = 0,
   x = 216,
-  y = 461,
+  y = 469,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7444,7 +7415,7 @@ destructible{
 destructible{
   layer = 0,
   x = 216,
-  y = 477,
+  y = 485,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7456,7 +7427,7 @@ destructible{
 destructible{
   layer = 0,
   x = 232,
-  y = 477,
+  y = 485,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7468,7 +7439,19 @@ destructible{
 destructible{
   layer = 0,
   x = 232,
-  y = 461,
+  y = 469,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 405,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7480,31 +7463,7 @@ destructible{
 destructible{
   layer = 0,
   x = 232,
-  y = 381,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 248,
-  y = 397,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 248,
-  y = 381,
+  y = 421,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7516,7 +7475,7 @@ destructible{
 destructible{
   layer = 0,
   x = 232,
-  y = 413,
+  y = 437,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7528,19 +7487,7 @@ destructible{
 destructible{
   layer = 0,
   x = 232,
-  y = 429,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 232,
-  y = 445,
+  y = 453,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7552,7 +7499,7 @@ destructible{
 destructible{
   layer = 0,
   x = 248,
-  y = 445,
+  y = 453,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7564,7 +7511,7 @@ destructible{
 destructible{
   layer = 0,
   x = 248,
-  y = 461,
+  y = 469,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7576,7 +7523,7 @@ destructible{
 destructible{
   layer = 0,
   x = 248,
-  y = 477,
+  y = 485,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7588,7 +7535,7 @@ destructible{
 destructible{
   layer = 0,
   x = 264,
-  y = 477,
+  y = 485,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7600,7 +7547,7 @@ destructible{
 destructible{
   layer = 0,
   x = 264,
-  y = 461,
+  y = 469,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7612,7 +7559,7 @@ destructible{
 destructible{
   layer = 0,
   x = 264,
-  y = 445,
+  y = 453,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7624,7 +7571,7 @@ destructible{
 destructible{
   layer = 0,
   x = 248,
-  y = 429,
+  y = 437,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7636,7 +7583,7 @@ destructible{
 destructible{
   layer = 0,
   x = 248,
-  y = 413,
+  y = 421,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7648,7 +7595,7 @@ destructible{
 destructible{
   layer = 0,
   x = 264,
-  y = 413,
+  y = 421,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7660,7 +7607,7 @@ destructible{
 destructible{
   layer = 0,
   x = 264,
-  y = 429,
+  y = 437,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7672,19 +7619,7 @@ destructible{
 destructible{
   layer = 0,
   x = 264,
-  y = 381,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 264,
-  y = 397,
+  y = 405,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7696,7 +7631,7 @@ destructible{
 destructible{
   layer = 0,
   x = 280,
-  y = 397,
+  y = 405,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7708,43 +7643,7 @@ destructible{
 destructible{
   layer = 0,
   x = 296,
-  y = 397,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 312,
-  y = 397,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 312,
-  y = 381,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 296,
-  y = 381,
+  y = 405,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7756,19 +7655,7 @@ destructible{
 destructible{
   layer = 0,
   x = 280,
-  y = 381,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 280,
-  y = 413,
+  y = 421,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7780,67 +7667,7 @@ destructible{
 destructible{
   layer = 0,
   x = 296,
-  y = 413,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 312,
-  y = 413,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 312,
-  y = 429,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 312,
-  y = 445,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 312,
-  y = 461,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 312,
-  y = 477,
+  y = 421,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7852,7 +7679,7 @@ destructible{
 destructible{
   layer = 0,
   x = 296,
-  y = 477,
+  y = 485,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7864,7 +7691,7 @@ destructible{
 destructible{
   layer = 0,
   x = 280,
-  y = 461,
+  y = 469,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7876,7 +7703,7 @@ destructible{
 destructible{
   layer = 0,
   x = 280,
-  y = 477,
+  y = 485,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7888,7 +7715,7 @@ destructible{
 destructible{
   layer = 0,
   x = 296,
-  y = 461,
+  y = 469,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7900,7 +7727,7 @@ destructible{
 destructible{
   layer = 0,
   x = 296,
-  y = 445,
+  y = 453,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7912,7 +7739,7 @@ destructible{
 destructible{
   layer = 0,
   x = 280,
-  y = 445,
+  y = 453,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7924,7 +7751,7 @@ destructible{
 destructible{
   layer = 0,
   x = 280,
-  y = 429,
+  y = 437,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -7936,7 +7763,7 @@ destructible{
 destructible{
   layer = 0,
   x = 296,
-  y = 429,
+  y = 437,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
@@ -8251,17 +8078,6 @@ destructible{
   y = 397,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 152,
-  y = 253,
-  sprite = "entities/vegetation/grass/grass_dark",
   destruction_sound = "walk_on_grass",
   weight = -1,
   can_be_cut = true,
