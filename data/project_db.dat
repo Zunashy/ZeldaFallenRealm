@@ -50,6 +50,7 @@ map{ id = "tests/tttteteessst", description = "oui" }
 map{ id = "war_version/overworld/forest", description = "forêt version guerre" }
 map{ id = "war_version/overworld/jojo_tree", description = "war_version/overworld/jojo_tree" }
 map{ id = "war_version/overworld/north beach", description = "war_version/overworld/north beach" }
+map{ id = "war_version/overworld/sword_cave", description = "Sword Cave" }
 map{ id = "war_version/village/out2", description = "war_version/village/out2" }
 
 tileset{ id = "House", description = "House" }
@@ -389,7 +390,6 @@ file{ path = "maps/donjons/level_01/transit.dat", author = "Zunashy", }
 file{ path = "maps/donjons/level_02/rdc.dat", author = "Zunashy", }
 file{ path = "maps/donjons/level_02/ss1.dat", author = "Zunashy", }
 file{ path = "maps/normal_version", author = "Zunashy", }
-file{ path = "maps/tests/mapglobale.dat", author = "Zunashy", }
 file{ path = "maps/war_version", author = "Nillan", }
 file{ path = "scripts/api/bit.lua", author = "TwilCynder", }
 file{ path = "scripts/api/controls_manager.lua", author = "TwilCynder", }

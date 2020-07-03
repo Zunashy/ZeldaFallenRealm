@@ -6920,7 +6920,7 @@ destination{
   name = "destination",
   layer = 0,
   x = 240,
-  y = 13,
+  y = 21,
   direction = 1,
 }
 
@@ -6968,7 +6968,6 @@ destructible{
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
-  weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
 }
