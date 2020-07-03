@@ -1,4 +1,3 @@
-map{ id = "donjons/castle_donjon/catle_rdc", description = "donjons/castle_donjon/catle_rdc" }
 map{ id = "donjons/level_01/2D_Test", description = "donjons/level_01/2D_Test" }
 map{ id = "donjons/level_01/RDC", description = "donjons/level_01/RDC" }
 map{ id = "donjons/level_01/RDC_old", description = "donjons/level_01/RDC_old" }
@@ -384,7 +383,6 @@ file{ path = "items/rupee.lua", author = "TwilCynder", }
 file{ path = "items/small_key.lua", author = "TwilCynder", }
 file{ path = "items/sword.lua", author = "TwilCynder", }
 file{ path = "languages/fr", author = "Phoenix;Zunashy", }
-file{ path = "maps/donjons/castle_donjon/catle_rdc.dat", author = "Zunashy", }
 file{ path = "maps/donjons/level_01/2D_Test.dat", author = "Zunashy", }
 file{ path = "maps/donjons/level_01/RDC.dat", author = "Zunashy", }
 file{ path = "maps/donjons/level_01/RDC_old.dat", author = "Zunashy", }
