@@ -20,6 +20,24 @@ tile{
 
 tile{
   layer = 0,
+  x = 192,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "237_2",
+}
+
+tile{
+  layer = 0,
   x = 144,
   y = 176,
   width = 496,
@@ -79,15 +97,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "2",
-}
-
-tile{
-  layer = 0,
-  x = 192,
-  y = 352,
-  width = 48,
-  height = 16,
-  pattern = "237_2",
 }
 
 tile{
@@ -1343,7 +1352,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 224,
+  x = 240,
   y = 16,
   width = 16,
   height = 16,
@@ -1361,8 +1370,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 240,
-  y = 32,
+  x = 224,
+  y = 48,
   width = 16,
   height = 16,
   pattern = "2",
@@ -1739,7 +1748,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 384,
+  x = 400,
   y = 48,
   width = 16,
   height = 16,
@@ -3854,8 +3863,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 48,
-  y = 256,
+  x = 64,
+  y = 304,
   width = 16,
   height = 16,
   pattern = "17_4",
@@ -4098,17 +4107,8 @@ tile{
 tile{
   layer = 0,
   x = 48,
-  y = 288,
+  y = 272,
   width = 16,
-  height = 16,
-  pattern = "237_2",
-}
-
-tile{
-  layer = 0,
-  x = 48,
-  y = 304,
-  width = 32,
   height = 16,
   pattern = "237_2",
 }
@@ -5375,15 +5375,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 496,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "237_2",
-}
-
-tile{
-  layer = 0,
   x = 360,
   y = 336,
   width = 8,
@@ -5960,17 +5951,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 528,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = "237_2",
-}
-
-tile{
-  layer = 0,
-  x = 576,
-  y = 96,
+  x = 496,
+  y = 32,
   width = 16,
   height = 16,
   pattern = "237_2",
@@ -6113,15 +6095,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 224,
-  y = 48,
-  width = 16,
-  height = 16,
-  pattern = "1_3",
-}
-
-tile{
-  layer = 0,
   x = 272,
   y = 64,
   width = 16,
@@ -6212,15 +6185,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "1_3",
-}
-
-tile{
-  layer = 0,
-  x = 288,
-  y = 400,
-  width = 16,
-  height = 16,
-  pattern = "237_2",
 }
 
 tile{
@@ -6525,15 +6489,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 368,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "132_3",
-}
-
-tile{
-  layer = 0,
   x = 384,
   y = 32,
   width = 16,
@@ -6615,29 +6570,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 240,
+  x = 288,
   y = 64,
   width = 16,
   height = 16,
   pattern = "132_3",
-}
-
-tile{
-  layer = 0,
-  x = 272,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = "132_3",
-}
-
-tile{
-  layer = 0,
-  x = 256,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = "132_2",
 }
 
 tile{
@@ -6851,6 +6788,15 @@ tile{
   pattern = "85_12",
 }
 
+tile{
+  layer = 0,
+  x = 576,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "131",
+}
+
 separator{
   layer = 0,
   x = -16,
@@ -6861,7 +6807,7 @@ separator{
 
 separator{
   layer = 0,
-  x = 0,
+  x = -8,
   y = 248,
   width = 688,
   height = 16,
@@ -6885,22 +6831,6 @@ separator{
 
 separator{
   layer = 0,
-  x = 312,
-  y = -40,
-  width = 16,
-  height = 592,
-}
-
-separator{
-  layer = 0,
-  x = 472,
-  y = -32,
-  width = 16,
-  height = 576,
-}
-
-separator{
-  layer = 0,
   x = -16,
   y = 520,
   width = 688,
@@ -6913,7 +6843,7 @@ teletransporter{
   y = 0,
   width = 32,
   height = 16,
-  destination_map = "war_version/overworld/forest",
+  destination_map = "war_version/overworld/north beach",
 }
 
 destination{
@@ -6945,7 +6875,7 @@ destination{
   name = "destination_2",
   layer = 0,
   x = 592,
-  y = 341,
+  y = 333,
   direction = 1,
 }
 
@@ -7213,347 +7143,6 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 200,
-  y = 173,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 216,
-  y = 173,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 216,
-  y = 189,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 200,
-  y = 189,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 200,
-  y = 205,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 200,
-  y = 221,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 216,
-  y = 221,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 216,
-  y = 205,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 232,
-  y = 189,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 232,
-  y = 173,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 248,
-  y = 173,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 248,
-  y = 189,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 264,
-  y = 189,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 296,
-  y = 205,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 280,
-  y = 189,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 264,
-  y = 173,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 280,
-  y = 173,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 296,
-  y = 173,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 296,
-  y = 189,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 312,
-  y = 189,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 312,
-  y = 205,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 328,
-  y = 205,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 328,
-  y = 189,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 328,
-  y = 173,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 312,
-  y = 173,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 344,
-  y = 173,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 360,
-  y = 189,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 360,
-  y = 205,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 344,
-  y = 205,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 344,
-  y = 189,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 360,
-  y = 173,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
   x = 376,
   y = 173,
   sprite = "entities/vegetation/grass/grass_dark",
@@ -7561,6 +7150,379 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 200,
+  y = 173,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 189,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 200,
+  y = 189,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 200,
+  y = 221,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 205,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 200,
+  y = 205,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 221,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 173,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 232,
+  y = 173,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 232,
+  y = 189,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 189,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 173,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 264,
+  y = 173,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 264,
+  y = 189,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 280,
+  y = 173,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 280,
+  y = 189,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 205,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 189,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 173,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 312,
+  y = 173,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 312,
+  y = 189,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 312,
+  y = 205,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 328,
+  y = 205,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 344,
+  y = 189,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 328,
+  y = 173,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 328,
+  y = 189,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 344,
+  y = 173,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 360,
+  y = 173,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 360,
+  y = 189,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 360,
+  y = 205,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 344,
+  y = 205,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
 }
 
 destructible{
@@ -7572,17 +7534,7 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 408,
-  y = 189,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
+  ground = "grass",
 }
 
 destructible{
@@ -7594,6 +7546,31 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 408,
+  y = 189,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 440,
+  y = 205,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
 }
 
 destructible{
@@ -7605,61 +7582,7 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 440,
-  y = 205,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 456,
-  y = 205,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 472,
-  y = 205,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 488,
-  y = 205,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 488,
-  y = 189,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
+  ground = "grass",
 }
 
 destructible{
@@ -7671,6 +7594,7 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
+  ground = "grass",
 }
 
 destructible{
@@ -7682,6 +7606,7 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
+  ground = "grass",
 }
 
 destructible{
@@ -7693,6 +7618,7 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
+  ground = "grass",
 }
 
 destructible{
@@ -7704,6 +7630,31 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 488,
+  y = 205,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 456,
+  y = 205,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
 }
 
 destructible{
@@ -7715,6 +7666,31 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 472,
+  y = 205,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 456,
+  y = 173,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
 }
 
 destructible{
@@ -7726,6 +7702,19 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 488,
+  y = 189,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
 }
 
 destructible{
@@ -7737,17 +7726,7 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 456,
-  y = 173,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
+  ground = "grass",
 }
 
 destructible{
@@ -7759,6 +7738,7 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
+  ground = "grass",
 }
 
 destructible{
@@ -7770,6 +7750,43 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 232,
+  y = 477,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 232,
+  y = 493,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 493,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
 }
 
 destructible{
@@ -7781,17 +7798,7 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 264,
-  y = 461,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
+  ground = "grass",
 }
 
 destructible{
@@ -7803,28 +7810,43 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
+  ground = "grass",
 }
 
 destructible{
   layer = 0,
-  x = 280,
-  y = 461,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 280,
+  x = 248,
   y = 477,
   sprite = "entities/vegetation/grass/grass_dark",
   destruction_sound = "walk_on_grass",
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 493,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 264,
+  y = 493,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
 }
 
 destructible{
@@ -7836,6 +7858,7 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
+  ground = "grass",
 }
 
 destructible{
@@ -7847,6 +7870,7 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
+  ground = "grass",
 }
 
 destructible{
@@ -7858,6 +7882,7 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
+  ground = "grass",
 }
 
 destructible{
@@ -7869,6 +7894,31 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 264,
+  y = 461,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 280,
+  y = 477,
+  sprite = "entities/vegetation/grass/grass_dark",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
 }
 
 destructible{
@@ -7880,71 +7930,34 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
+  ground = "grass",
 }
 
 destructible{
   layer = 0,
-  x = 216,
-  y = 493,
+  x = 280,
+  y = 461,
   sprite = "entities/vegetation/grass/grass_dark",
   destruction_sound = "walk_on_grass",
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
+  ground = "grass",
 }
 
-destructible{
+separator{
   layer = 0,
-  x = 232,
-  y = 493,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
+  x = 472,
+  y = -32,
+  width = 16,
+  height = 576,
 }
 
-destructible{
+separator{
   layer = 0,
-  x = 232,
-  y = 477,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 248,
-  y = 477,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 248,
-  y = 493,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 264,
-  y = 493,
-  sprite = "entities/vegetation/grass/grass_dark",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
+  x = 312,
+  y = -40,
+  width = 16,
+  height = 592,
 }
 
