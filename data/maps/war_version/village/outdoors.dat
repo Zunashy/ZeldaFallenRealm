@@ -8027,6 +8027,23 @@ destination{
   direction = 1,
 }
 
+teletransporter{
+  layer = 0,
+  x = 624,
+  y = 304,
+  width = 16,
+  height = 16,
+  destination_map = "war_version/overworld/plain/outdoors_1",
+}
+
+destination{
+  name = "destination_10",
+  layer = 0,
+  x = 624,
+  y = 317,
+  direction = 1,
+}
+
 tile{
   layer = 1,
   x = 336,
