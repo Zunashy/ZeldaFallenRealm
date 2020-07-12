@@ -6,6 +6,7 @@ map{ id = "donjons/level_02/rdc", description = "donjons/level_02/rdc" }
 map{ id = "donjons/level_02/ss1", description = "donjons/level_02/ss1" }
 map{ id = "normal_version/overworld/deep_forest/outdoors", description = "normal_version/overworld/deep_forest/outdoors" }
 map{ id = "normal_version/overworld/deep_forest/outdoors_2", description = "normal_version/overworld/deep_forest/outdoors_2" }
+map{ id = "normal_version/overworld/marais/outdoors" }
 map{ id = "normal_version/overworld/north_beach/deku_tree", description = "normal_version/overworld/north_beach/deku_tree" }
 map{ id = "normal_version/overworld/north_beach/indoors/cave_01", description = "normal_version/overworld/north_beach/indoors/cave_01" }
 map{ id = "normal_version/overworld/north_beach/indoors/cave_02_rdc", description = "normal_version/overworld/north_beach/indoors/cave_02_rdc" }
@@ -43,6 +44,7 @@ map{ id = "testHub", description = "testHub" }
 map{ id = "tests/blue_slime", description = "tests/blue_slime" }
 map{ id = "tests/bridges", description = "tests/bridges" }
 map{ id = "tests/dungeon", description = "tests/dungeon" }
+map{ id = "tests/global" }
 map{ id = "tests/obscurity", description = "tests/obscurity" }
 map{ id = "tests/platform", description = "tests/platform" }
 map{ id = "tests/tttteteessst", description = "oui" }

@@ -6999,6 +6999,78 @@ tile{
   pattern = "2",
 }
 
+tile{
+  layer = 1,
+  x = 496,
+  y = 616,
+  width = 32,
+  height = 32,
+  pattern = "13_2",
+}
+
+tile{
+  layer = 1,
+  x = 480,
+  y = 624,
+  width = 32,
+  height = 32,
+  pattern = "13",
+}
+
+tile{
+  layer = 1,
+  x = 512,
+  y = 624,
+  width = 32,
+  height = 32,
+  pattern = "13_2",
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 632,
+  width = 32,
+  height = 32,
+  pattern = "13_4",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 616,
+  width = 32,
+  height = 32,
+  pattern = "13_3",
+}
+
+tile{
+  layer = 1,
+  x = 576,
+  y = 624,
+  width = 32,
+  height = 32,
+  pattern = "13_2",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 624,
+  width = 32,
+  height = 32,
+  pattern = "13",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 632,
+  width = 32,
+  height = 32,
+  pattern = "13_4",
+}
+
 separator{
   layer = 1,
   x = 0,
@@ -7059,14 +7131,14 @@ destination{
   name = "trident_dungeon",
   layer = 1,
   x = 240,
-  y = 205,
+  y = 213,
   direction = 1,
 }
 
 teletransporter{
   layer = 1,
   x = 232,
-  y = 184,
+  y = 192,
   width = 16,
   height = 16,
   destination_map = "donjons/level_01/RDC",
@@ -7335,6 +7407,8 @@ destructible{
   x = 240,
   y = 205,
   sprite = "entities/vegetation/grass_door",
+  weight = -1,
+  can_be_cut = true,
 }
 
 destructible{
