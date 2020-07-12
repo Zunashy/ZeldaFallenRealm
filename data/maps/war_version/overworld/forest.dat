@@ -7961,3 +7961,68 @@ separator{
   height = 592,
 }
 
+enemy{
+  layer = 0,
+  x = 536,
+  y = 301,
+  direction = 0,
+  breed = "",
+}
+
+enemy{
+  layer = 0,
+  x = 408,
+  y = 317,
+  direction = 0,
+  breed = "",
+}
+
+enemy{
+  layer = 0,
+  x = 344,
+  y = 333,
+  direction = 0,
+  breed = "",
+}
+
+enemy{
+  layer = 0,
+  x = 424,
+  y = 205,
+  direction = 0,
+  breed = "",
+}
+
+enemy{
+  layer = 0,
+  x = 392,
+  y = 77,
+  direction = 0,
+  breed = "",
+}
+
+enemy{
+  layer = 0,
+  x = 584,
+  y = 77,
+  direction = 0,
+  breed = "",
+}
+
+enemy{
+  layer = 0,
+  x = 280,
+  y = 221,
+  direction = 2,
+  breed = "moblin_sword",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 600,
+  y = 205,
+  direction = 0,
+  breed = "",
+}
+

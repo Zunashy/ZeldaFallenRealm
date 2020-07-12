@@ -5876,3 +5876,12 @@ pickable{
   treasure_name = "sword",
 }
 
+enemy{
+  layer = 1,
+  x = 536,
+  y = 205,
+  direction = 3,
+  breed = "octorok",
+  treasure_name = "random",
+}
+
