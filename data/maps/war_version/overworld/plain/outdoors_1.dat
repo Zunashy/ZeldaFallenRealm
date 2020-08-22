@@ -2681,6 +2681,7 @@ teletransporter{
   width = 128,
   height = 16,
   destination_map = "war_version/overworld/plain/outdoors_2",
+  destination = "destination_2",
 }
 
 enemy{
@@ -2690,5 +2691,21 @@ enemy{
   direction = 2,
   breed = "octorok",
   treasure_name = "random",
+}
+
+destination{
+  name = "destination_2",
+  layer = 0,
+  x = 112,
+  y = 245,
+  direction = 1,
+}
+
+destination{
+  name = "destination_3",
+  layer = 0,
+  x = 240,
+  y = 245,
+  direction = 1,
 }
 

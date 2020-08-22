@@ -7982,15 +7982,6 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 424,
-  y = 205,
-  direction = 0,
-  breed = "skeleton_1",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
   x = 600,
   y = 205,
   direction = 2,
@@ -8030,6 +8021,15 @@ enemy{
   y = 205,
   direction = 0,
   breed = "rope",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 424,
+  y = 205,
+  direction = 0,
+  breed = "skeleton_2",
   treasure_name = "random",
 }
 

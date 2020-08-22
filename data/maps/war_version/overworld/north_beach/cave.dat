@@ -1,0 +1,217 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 160,
+  height = 128,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 160,
+  height = 128,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "196_8",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "196_11",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "196_10",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "196_9",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 112,
+  width = 128,
+  height = 16,
+  pattern = "196_7",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 16,
+  width = 16,
+  height = 96,
+  pattern = "196_5",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 96,
+  pattern = "196_4",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 0,
+  width = 128,
+  height = 16,
+  pattern = "196_6",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "228",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "197",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "197",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "197",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "197",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "227",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "227",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "227",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "227",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "240",
+}
+
+chest{
+  layer = 0,
+  x = 40,
+  y = 29,
+  treasure_name = "heart_quarter",
+  treasure_savegame_variable = "gimli",
+  sprite = "entities/chests/chest",
+}
+
+enemy{
+  layer = 0,
+  x = 104,
+  y = 61,
+  direction = 0,
+  breed = "skeleton_2",
+  treasure_name = "random",
+}
+
+teletransporter{
+  layer = 0,
+  x = 72,
+  y = 0,
+  width = 16,
+  height = 16,
+  destination_map = "war_version/overworld/north beach",
+  destination = "destination_6",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 80,
+  y = 21,
+  direction = 1,
+}
+

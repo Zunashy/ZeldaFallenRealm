@@ -653,3 +653,12 @@ separator{
   height = 16,
 }
 
+chest{
+  layer = 0,
+  x = 40,
+  y = 157,
+  treasure_name = "heart_quarter",
+  treasure_savegame_variable = "boromir",
+  sprite = "entities/chests/chest",
+}
+

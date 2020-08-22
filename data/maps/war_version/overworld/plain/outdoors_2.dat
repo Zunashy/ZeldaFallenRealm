@@ -1471,6 +1471,7 @@ teletransporter{
   width = 128,
   height = 16,
   destination_map = "war_version/overworld/plain/outdoors_1",
+  destination = "destination_2",
 }
 
 teletransporter{
@@ -1480,6 +1481,7 @@ teletransporter{
   width = 128,
   height = 16,
   destination_map = "war_version/overworld/plain/outdoors_1",
+  destination = "destination_3",
 }
 
 destination{
@@ -1487,7 +1489,7 @@ destination{
   layer = 0,
   x = 728,
   y = 21,
-  direction = 1,
+  direction = 3,
 }
 
 destination{
@@ -1495,7 +1497,7 @@ destination{
   layer = 0,
   x = 856,
   y = 21,
-  direction = 1,
+  direction = 3,
 }
 
 tile{
