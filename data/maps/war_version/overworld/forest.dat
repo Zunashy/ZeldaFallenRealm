@@ -6773,7 +6773,7 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 0,
+  y = 8,
   width = 8,
   height = 56,
   pattern = "93_5",
@@ -7973,10 +7973,11 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 344,
-  y = 333,
+  x = 392,
+  y = 301,
   direction = 0,
-  breed = "",
+  breed = "rope",
+  treasure_name = "random",
 }
 
 enemy{
@@ -7985,24 +7986,6 @@ enemy{
   y = 205,
   direction = 0,
   breed = "skeleton_1",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 392,
-  y = 77,
-  direction = 1,
-  breed = "moblin_sword",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 232,
-  y = 205,
-  direction = 0,
-  breed = "moblin_sword",
   treasure_name = "random",
 }
 
@@ -8021,6 +8004,32 @@ enemy{
   y = 301,
   direction = 0,
   breed = "bat",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 552,
+  y = 45,
+  direction = 3,
+  breed = "moblin_sword",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 232,
+  y = 349,
+  direction = 0,
+  breed = "moblin_sword",
+}
+
+enemy{
+  layer = 0,
+  x = 232,
+  y = 205,
+  direction = 0,
+  breed = "rope",
   treasure_name = "random",
 }
 

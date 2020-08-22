@@ -8044,6 +8044,15 @@ destination{
   direction = 2,
 }
 
+enemy{
+  layer = 0,
+  x = 88,
+  y = 461,
+  direction = 0,
+  breed = "moblin_sword",
+  treasure_name = "random",
+}
+
 tile{
   layer = 1,
   x = 336,
