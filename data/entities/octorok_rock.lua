@@ -17,7 +17,7 @@ function entity:on_created()
   -- Initialisation des propriétés de la pierre
   entity:set_size(8, 8)
   entity:set_origin(4, 4)
-  entity:create_sprite("entities/octorok_rock")
+  entity:create_sprite("entities/projectile/octorok_rock")
   init_traversable()
 
   -- Création du mouvement

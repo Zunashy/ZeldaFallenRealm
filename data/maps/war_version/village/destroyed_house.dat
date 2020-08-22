@@ -465,6 +465,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "war_version/village/outdoors",
+  destination = "destination",
 }
 
 destination{

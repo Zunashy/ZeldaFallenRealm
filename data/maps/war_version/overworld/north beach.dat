@@ -5530,6 +5530,7 @@ teletransporter{
   width = 96,
   height = 16,
   destination_map = "war_version/overworld/forest",
+  destination = "destination",
 }
 
 destination{
@@ -5867,13 +5868,6 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
-}
-
-pickable{
-  layer = 1,
-  x = 584,
-  y = 357,
-  treasure_name = "sword",
 }
 
 enemy{

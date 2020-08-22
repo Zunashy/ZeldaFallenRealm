@@ -49,11 +49,11 @@ map{ id = "tests/obscurity", description = "tests/obscurity" }
 map{ id = "tests/platform", description = "tests/platform" }
 map{ id = "tests/tttteteessst", description = "oui" }
 map{ id = "war_version/overworld/forest", description = "forêt version guerre" }
-map{ id = "war_version/overworld/jojo_tree", description = "war_version/overworld/jojo_tree" }
-map{ id = "war_version/overworld/north beach", description = "war_version/overworld/north beach" }
+map{ id = "war_version/overworld/jojo_tree", description = "jojo tree house" }
+map{ id = "war_version/overworld/north beach", description = "war world north beach" }
 map{ id = "war_version/overworld/plain/outdoors_1", description = "plain 1 war version" }
 map{ id = "war_version/overworld/plain/outdoors_2", description = "plain 2 war version" }
-map{ id = "war_version/overworld/sword_cave", description = "war_version/overworld/sword_cave" }
+map{ id = "war_version/overworld/sword_cave", description = "war world sword cave" }
 map{ id = "war_version/village/destroyed_house", description = "war_version/village/destroyed_house" }
 map{ id = "war_version/village/octorock_cave", description = "octorock cave war" }
 map{ id = "war_version/village/outdoors", description = "war_version/village/outdoors" }
@@ -68,18 +68,7 @@ tileset{ id = "house", description = "house" }
 tileset{ id = "model", description = "model" }
 tileset{ id = "normal_world", description = "normal_world" }
 tileset{ id = "normal_world_annexe", description = "normal_world_annexe" }
-tileset{ id = "overworld/forest_plain", description = "overworld/forest_plain" }
-tileset{ id = "overworld/jungle", description = "overworld/jungle" }
-tileset{ id = "overworld/mountain_sea", description = "overworld/mountain_sea" }
-tileset{ id = "overworld/structure", description = "overworld/structure" }
-tileset{ id = "overworld/structure2", description = "overworld/structure2" }
 tileset{ id = "war_world", description = "war_world" }
-tileset{ id = "war_world/autumn_dark", description = "war_world/autumn_dark" }
-tileset{ id = "war_world/autumn_dark.old", description = "war_world/autumn_dark.old" }
-tileset{ id = "war_world/mountain_sea", description = "war_world/mountain_sea" }
-tileset{ id = "war_world/overworld", description = "war_world/overworld" }
-tileset{ id = "war_world/overworld_war", description = "war_world/overworld_war" }
-tileset{ id = "war_world/structure", description = "war_world/structure" }
 tileset{ id = "war_world_annexe" }
 
 sprite{ id = "citizens/old_man", description = "citizens/old_man" }
