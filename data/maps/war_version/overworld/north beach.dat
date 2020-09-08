@@ -407,15 +407,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 0,
-  y = 0,
-  width = 176,
-  height = 288,
-  pattern = "43",
-}
-
-tile{
-  layer = 0,
   x = 176,
   y = 80,
   width = 80,
@@ -461,182 +452,61 @@ tile{
 
 tile{
   layer = 0,
-  x = 8,
-  y = 544,
-  width = 64,
-  height = 96,
-  pattern = "26",
-  tileset = "war_world_annexe",
-}
-
-tile{
-  layer = 0,
-  x = 8,
-  y = 496,
-  width = 64,
-  height = 48,
-  pattern = "27",
-  tileset = "war_world_annexe",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 544,
-  width = 8,
-  height = 96,
-  pattern = "25",
-  tileset = "war_world_annexe",
-}
-
-tile{
-  layer = 0,
-  x = 72,
-  y = 544,
-  width = 8,
-  height = 96,
-  pattern = "25_2",
-  tileset = "war_world_annexe",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 528,
-  width = 8,
-  height = 16,
-  pattern = "24",
-  tileset = "war_world_annexe",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 496,
-  width = 8,
-  height = 32,
-  pattern = "22",
-  tileset = "war_world_annexe",
-}
-
-tile{
-  layer = 0,
-  x = 72,
-  y = 496,
-  width = 8,
-  height = 32,
-  pattern = "22_2",
-  tileset = "war_world_annexe",
-}
-
-tile{
-  layer = 0,
-  x = 72,
-  y = 528,
-  width = 8,
-  height = 16,
-  pattern = "23",
-  tileset = "war_world_annexe",
-}
-
-tile{
-  layer = 0,
-  x = 64,
-  y = 480,
+  x = 120,
+  y = 40,
   width = 16,
   height = 16,
-  pattern = "20",
+  pattern = "10",
   tileset = "war_world_annexe",
 }
 
 tile{
   layer = 0,
-  x = 0,
-  y = 480,
-  width = 32,
-  height = 16,
-  pattern = "19",
-  tileset = "war_world_annexe",
-}
-
-tile{
-  layer = 0,
-  x = 48,
-  y = 480,
-  width = 16,
-  height = 16,
-  pattern = "18",
-  tileset = "war_world_annexe",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 480,
-  width = 16,
-  height = 16,
-  pattern = "17",
-  tileset = "war_world_annexe",
-}
-
-tile{
-  layer = 0,
-  x = 8,
-  y = 448,
-  width = 64,
-  height = 16,
-  pattern = "8_2",
-  tileset = "war_world_annexe",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 464,
-  width = 80,
-  height = 16,
-  pattern = "14",
-  tileset = "war_world_annexe",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 440,
+  x = 104,
+  y = 56,
   width = 48,
   height = 8,
-  pattern = "9_2",
+  pattern = "9",
   tileset = "war_world_annexe",
 }
 
 tile{
   layer = 0,
-  x = 32,
-  y = 424,
-  width = 16,
-  height = 16,
-  pattern = "10_2",
-  tileset = "war_world_annexe",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 400,
+  x = 120,
+  y = 16,
   width = 16,
   height = 24,
-  pattern = "11_2",
+  pattern = "11",
   tileset = "war_world_annexe",
 }
 
 tile{
   layer = 0,
-  x = 32,
-  y = 480,
-  width = 16,
-  height = 16,
-  pattern = "18",
+  x = 88,
+  y = 80,
+  width = 80,
+  height = 40,
+  pattern = "7",
   tileset = "war_world_annexe",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 64,
+  width = 64,
+  height = 16,
+  pattern = "8",
+  tileset = "war_world_annexe",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 176,
+  height = 288,
+  pattern = "43",
 }
 
 tile{
@@ -3498,7 +3368,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 112,
+  x = 104,
   y = 576,
   width = 16,
   height = 32,
@@ -3642,20 +3512,11 @@ tile{
 
 tile{
   layer = 1,
-  x = 128,
+  x = 120,
   y = 592,
   width = 16,
   height = 16,
   pattern = "168_3",
-}
-
-tile{
-  layer = 1,
-  x = 144,
-  y = 576,
-  width = 16,
-  height = 16,
-  pattern = "168_5",
 }
 
 tile{
@@ -5473,6 +5334,204 @@ tile{
   pattern = "131",
 }
 
+tile{
+  layer = 1,
+  x = 8,
+  y = 544,
+  width = 64,
+  height = 96,
+  pattern = "26",
+  tileset = "war_world_annexe",
+}
+
+tile{
+  layer = 1,
+  x = 8,
+  y = 496,
+  width = 64,
+  height = 48,
+  pattern = "27",
+  tileset = "war_world_annexe",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 544,
+  width = 8,
+  height = 96,
+  pattern = "25",
+  tileset = "war_world_annexe",
+}
+
+tile{
+  layer = 1,
+  x = 72,
+  y = 544,
+  width = 8,
+  height = 96,
+  pattern = "25_2",
+  tileset = "war_world_annexe",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 528,
+  width = 8,
+  height = 16,
+  pattern = "24",
+  tileset = "war_world_annexe",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 496,
+  width = 8,
+  height = 32,
+  pattern = "22",
+  tileset = "war_world_annexe",
+}
+
+tile{
+  layer = 1,
+  x = 72,
+  y = 496,
+  width = 8,
+  height = 32,
+  pattern = "22_2",
+  tileset = "war_world_annexe",
+}
+
+tile{
+  layer = 1,
+  x = 72,
+  y = 528,
+  width = 8,
+  height = 16,
+  pattern = "23",
+  tileset = "war_world_annexe",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "20",
+  tileset = "war_world_annexe",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 480,
+  width = 32,
+  height = 16,
+  pattern = "19",
+  tileset = "war_world_annexe",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "18",
+  tileset = "war_world_annexe",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "17",
+  tileset = "war_world_annexe",
+}
+
+tile{
+  layer = 1,
+  x = 8,
+  y = 448,
+  width = 64,
+  height = 16,
+  pattern = "8_2",
+  tileset = "war_world_annexe",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 464,
+  width = 80,
+  height = 16,
+  pattern = "14",
+  tileset = "war_world_annexe",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 440,
+  width = 48,
+  height = 8,
+  pattern = "9_2",
+  tileset = "war_world_annexe",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 424,
+  width = 16,
+  height = 16,
+  pattern = "10_2",
+  tileset = "war_world_annexe",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 400,
+  width = 16,
+  height = 24,
+  pattern = "11_2",
+  tileset = "war_world_annexe",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "18",
+  tileset = "war_world_annexe",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "74",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "74",
+}
+
 teletransporter{
   layer = 1,
   x = 512,
@@ -5497,15 +5556,15 @@ teletransporter{
   y = 464,
   width = 16,
   height = 16,
-  destination_map = "war_version/overworld/north beach",
+  destination_map = "war_version/overworld/north_beach/indoors/beach_house",
 }
 
 destination{
   name = "destination_2",
   layer = 1,
   x = 232,
-  y = 477,
-  direction = 1,
+  y = 485,
+  direction = 3,
 }
 
 teletransporter{
@@ -5541,7 +5600,7 @@ destination{
   layer = 1,
   x = 560,
   y = 21,
-  direction = 1,
+  direction = 3,
 }
 
 teletransporter{
@@ -5550,7 +5609,7 @@ teletransporter{
   y = 416,
   width = 16,
   height = 16,
-  destination_map = "war_version/overworld/north beach",
+  destination_map = "war_version/overworld/north_beach/indoors/plain_house",
 }
 
 destination{
@@ -5631,13 +5690,14 @@ destination{
   layer = 1,
   x = 280,
   y = 69,
-  direction = 1,
+  direction = 3,
 }
 
 destructible{
   layer = 1,
   x = 552,
   y = 157,
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
   weight = -1,
@@ -5649,6 +5709,7 @@ destructible{
   layer = 1,
   x = 568,
   y = 157,
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
   weight = -1,
@@ -5660,6 +5721,7 @@ destructible{
   layer = 1,
   x = 568,
   y = 173,
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
   weight = -1,
@@ -5671,6 +5733,7 @@ destructible{
   layer = 1,
   x = 568,
   y = 189,
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
   weight = -1,
@@ -5682,6 +5745,7 @@ destructible{
   layer = 1,
   x = 552,
   y = 189,
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
   weight = -1,
@@ -5693,6 +5757,7 @@ destructible{
   layer = 1,
   x = 552,
   y = 173,
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
   weight = -1,
@@ -5704,6 +5769,7 @@ destructible{
   layer = 1,
   x = 408,
   y = 221,
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
   weight = -1,
@@ -5715,6 +5781,7 @@ destructible{
   layer = 1,
   x = 408,
   y = 237,
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
   weight = -1,
@@ -5726,6 +5793,7 @@ destructible{
   layer = 1,
   x = 376,
   y = 173,
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
   weight = -1,
@@ -5737,6 +5805,7 @@ destructible{
   layer = 1,
   x = 424,
   y = 221,
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
   weight = -1,
@@ -5748,6 +5817,7 @@ destructible{
   layer = 1,
   x = 424,
   y = 237,
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
   weight = -1,
@@ -5781,6 +5851,7 @@ destructible{
   layer = 1,
   x = 376,
   y = 461,
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
   weight = -1,
@@ -5792,6 +5863,7 @@ destructible{
   layer = 1,
   x = 392,
   y = 461,
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
   weight = -1,
@@ -5810,8 +5882,61 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 344,
-  y = 189,
+  x = 408,
+  y = 301,
+  direction = 3,
+  breed = "octorok",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 216,
+  y = 557,
+  direction = 0,
+  breed = "tektite_red",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 424,
+  y = 589,
+  direction = 0,
+  breed = "oursin",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 232,
+  y = 317,
+  direction = 0,
+  breed = "tektite_blue",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 200,
+  y = 365,
+  direction = 0,
+  breed = "oursin",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 520,
+  y = 477,
+  direction = 2,
+  breed = "blue_octorock",
+}
+
+enemy{
+  layer = 1,
+  x = 352,
+  y = 181,
   direction = 0,
   breed = "moblin_sword",
   treasure_name = "random",
