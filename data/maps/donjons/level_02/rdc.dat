@@ -5163,6 +5163,15 @@ tile{
   pattern = "47_14",
 }
 
+tile{
+  layer = 0,
+  x = 352,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "47_9",
+}
+
 teletransporter{
   layer = 0,
   x = 352,
@@ -5211,18 +5220,6 @@ enemy{
   y = 621,
   direction = 0,
   breed = "octorok",
-}
-
-door{
-  layer = 0,
-  x = 352,
-  y = 528,
-  direction = 3,
-  sprite = "entities/door/door_key",
-  savegame_variable = "dungeon_1_door_key_2",
-  opening_method = "interaction_if_item",
-  opening_condition = "small_key",
-  opening_condition_consumed = true,
 }
 
 enemy{
@@ -5580,14 +5577,6 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 368,
-  y = 293,
-  direction = 0,
-  breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
   x = 264,
   y = 205,
   direction = 0,
@@ -5596,8 +5585,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 456,
-  y = 317,
+  x = 272,
+  y = 333,
   direction = 0,
   breed = "blue_octorock",
 }
@@ -5621,6 +5610,63 @@ door{
   savegame_variable = "dungeon_1_door_key_2",
   opening_condition = "small_key",
   opening_condition_consumed = true,
+}
+
+enemy{
+  layer = 0,
+  x = 312,
+  y = 221,
+  direction = 0,
+  breed = "blade_trap",
+}
+
+enemy{
+  layer = 0,
+  x = 360,
+  y = 317,
+  direction = 0,
+  breed = "blade_trap",
+}
+
+enemy{
+  layer = 0,
+  x = 456,
+  y = 317,
+  direction = 0,
+  breed = "blade_trap",
+}
+
+enemy{
+  layer = 0,
+  x = 408,
+  y = 221,
+  direction = 0,
+  breed = "blade_trap",
+}
+
+enemy{
+  layer = 0,
+  x = 88,
+  y = 381,
+  direction = 0,
+  breed = "blade_trap",
+}
+
+destructible{
+  layer = 0,
+  x = 360,
+  y = 541,
+  sprite = "entities/vegetation/grass_door",
+}
+
+door{
+  layer = 0,
+  x = 352,
+  y = 544,
+  direction = 3,
+  sprite = "entities/block/key_block",
+  opening_method = "interaction_if_item",
+  opening_condition = "small_key",
 }
 
 custom_entity{

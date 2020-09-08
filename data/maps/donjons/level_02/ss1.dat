@@ -3467,6 +3467,62 @@ enemy{
   breed = "skeleton_1",
 }
 
+enemy{
+  layer = 0,
+  x = 24,
+  y = 301,
+  direction = 0,
+  breed = "blade_trap",
+}
+
+enemy{
+  layer = 0,
+  x = 200,
+  y = 333,
+  direction = 0,
+  breed = "blade_trap",
+}
+
+enemy{
+  layer = 0,
+  x = 120,
+  y = 29,
+  direction = 0,
+  breed = "blade_trap",
+}
+
+enemy{
+  layer = 0,
+  x = 152,
+  y = 77,
+  direction = 0,
+  breed = "blade_trap",
+}
+
+enemy{
+  layer = 0,
+  x = 520,
+  y = 221,
+  direction = 0,
+  breed = "blade_trap",
+}
+
+enemy{
+  layer = 0,
+  x = 632,
+  y = 317,
+  direction = 0,
+  breed = "blade_trap",
+}
+
+enemy{
+  layer = 0,
+  x = 680,
+  y = 317,
+  direction = 0,
+  breed = "blade_trap",
+}
+
 custom_entity{
   layer = 1,
   x = 56,
