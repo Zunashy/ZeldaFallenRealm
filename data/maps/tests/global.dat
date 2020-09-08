@@ -4727,7 +4727,7 @@ tile{
   y = 1360,
   width = 32,
   height = 32,
-  pattern = "58",
+  pattern = "16_47",
 }
 
 tile{
@@ -48855,7 +48855,7 @@ tile{
   x = 1992,
   y = 824,
   width = 16,
-  height = 160,
+  height = 176,
   pattern = "236",
 }
 
@@ -53020,15 +53020,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1992,
-  y = 984,
-  width = 16,
-  height = 16,
-  pattern = "263",
-}
-
-tile{
-  layer = 1,
   x = 2008,
   y = 984,
   width = 8,
@@ -54458,6 +54449,33 @@ tile{
   width = 32,
   height = 16,
   pattern = "113",
+}
+
+tile{
+  layer = 1,
+  x = 696,
+  y = 128,
+  width = 8,
+  height = 16,
+  pattern = "151",
+}
+
+tile{
+  layer = 1,
+  x = 736,
+  y = 128,
+  width = 8,
+  height = 16,
+  pattern = "151_2",
+}
+
+tile{
+  layer = 1,
+  x = 752,
+  y = 120,
+  width = 16,
+  height = 8,
+  pattern = "284_2",
 }
 
 destructible{

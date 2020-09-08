@@ -58,7 +58,7 @@ tile{
   x = 592,
   y = 192,
   width = 16,
-  height = 144,
+  height = 80,
   pattern = "1",
 }
 
@@ -66,7 +66,7 @@ tile{
   layer = 0,
   x = 112,
   y = 256,
-  width = 592,
+  width = 480,
   height = 16,
   pattern = "1",
 }
@@ -1703,9 +1703,9 @@ tile{
 tile{
   layer = 0,
   x = 80,
-  y = 200,
+  y = 272,
   width = 8,
-  height = 144,
+  height = 72,
   pattern = "7",
 }
 
@@ -4861,9 +4861,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 584,
+  x = 576,
   y = 16,
-  width = 32,
+  width = 48,
   height = 32,
   pattern = "5",
 }
@@ -5170,6 +5170,15 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_9",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 200,
+  width = 8,
+  height = 56,
+  pattern = "7",
 }
 
 teletransporter{
