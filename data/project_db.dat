@@ -64,6 +64,7 @@ tileset{ id = "House", description = "House" }
 tileset{ id = "caves/cave_side", description = "caves/cave_side" }
 tileset{ id = "dungeon/tileset_donjon_1", description = "dungeon/tileset_donjon_1" }
 tileset{ id = "dungeon/tileset_donjon_2", description = "dungeon/tileset_donjon_2" }
+tileset{ id = "dungeon/tileset_donjon_2a", description = "dungeon/tileset_donjon_2a" }
 tileset{ id = "dungeon/tileset_donjon_6", description = "dungeon/tileset_donjon_6" }
 tileset{ id = "grotte", description = "grotte" }
 tileset{ id = "house", description = "house" }
