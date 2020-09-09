@@ -3601,6 +3601,22 @@ separator{
   height = 16,
 }
 
+switch{
+  layer = 0,
+  x = 832,
+  y = 208,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "door_3",
+    },
+  },
+  subtype = "walkable",
+  sprite = "entities/dungeon_elements/switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
 custom_entity{
   layer = 1,
   x = 136,
