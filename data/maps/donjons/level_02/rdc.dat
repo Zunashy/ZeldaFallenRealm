@@ -10,6 +10,24 @@ properties{
 
 tile{
   layer = 0,
+  x = 368,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
   x = 16,
   y = 192,
   width = 688,
@@ -1592,22 +1610,6 @@ tile{
   width = 16,
   height = 48,
   pattern = "30",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 368,
-  enabled_at_start = false,
-  properties = {
-    {
-      key = "activate_trigger",
-      value = "door_4",
-    },
-  },
-  width = 16,
-  height = 16,
-  pattern = "33",
 }
 
 tile{
@@ -4678,26 +4680,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 368,
-  y = 384,
-  width = 16,
-  height = 16,
-  pattern = "63",
-}
-
-tile{
-  layer = 0,
-  x = 352,
-  y = 368,
-  width = 16,
-  height = 16,
-  pattern = "63",
-}
-
-tile{
-  layer = 0,
   x = 336,
-  y = 384,
+  y = 368,
   width = 16,
   height = 16,
   pattern = "63",
@@ -5099,6 +5083,321 @@ tile{
   pattern = "30",
 }
 
+tile{
+  layer = 0,
+  x = 336,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "66",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "66",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "47_16",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "47_16",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
 chest{
   layer = 0,
   x = 120,
@@ -5139,12 +5438,13 @@ enemy{
 }
 
 door{
+  name = "door_2",
   layer = 0,
   x = 240,
   y = 432,
   direction = 0,
   sprite = "entities/door/door",
-  savegame_variable = "dungeon_1_door_key_2",
+  savegame_variable = "dungeon_2_door_2",
   opening_condition = "small_key",
   opening_condition_consumed = true,
 }
@@ -5251,14 +5551,13 @@ custom_entity{
 }
 
 door{
-  name = "door_4",
+  name = "door_3",
   layer = 0,
   x = 48,
   y = 352,
   direction = 3,
   sprite = "entities/door/door",
-  savegame_variable = "dungeon_1_door_key_2",
-  opening_method = "interaction_if_item",
+  savegame_variable = "dungeon_2_door_3",
   opening_condition = "small_key",
   opening_condition_consumed = true,
 }
@@ -5271,16 +5570,6 @@ custom_entity{
   height = 16,
   direction = 0,
   sprite = "entities/dungeon_elements/color_cube_destination",
-}
-
-custom_entity{
-  layer = 0,
-  x = 360,
-  y = 445,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/dungeon_elements/color_cube",
 }
 
 enemy{
@@ -5642,6 +5931,51 @@ destination{
   x = 600,
   y = 621,
   direction = 1,
+}
+
+custom_entity{
+  layer = 0,
+  x = 24,
+  y = 381,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "door_3",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/switches",
+}
+
+custom_entity{
+  layer = 0,
+  x = 376,
+  y = 389,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/colored_flame",
+}
+
+custom_entity{
+  layer = 0,
+  x = 344,
+  y = 389,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/colored_flame",
+}
+
+block{
+  layer = 0,
+  x = 360,
+  y = 429,
+  sprite = "entities/dungeon_elements/color_cube",
+  pushable = true,
+  pullable = false,
 }
 
 custom_entity{

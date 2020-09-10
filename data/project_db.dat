@@ -126,6 +126,7 @@ sprite{ id = "entities/dungeon_elements/colored_flame", description = "entities/
 sprite{ id = "entities/dungeon_elements/platform", description = "entities/dungeon_elements/platform" }
 sprite{ id = "entities/dungeon_elements/platform_old", description = "entities/dungeon_elements/platform_old" }
 sprite{ id = "entities/dungeon_elements/switch", description = "entities/dungeon_elements/switch" }
+sprite{ id = "entities/dungeon_elements/switches" }
 sprite{ id = "entities/dungeon_elements/teleport", description = "entities/dungeon_elements/teleport" }
 sprite{ id = "entities/dungeon_statue_eye", description = "entities/dungeon_statue_eye" }
 sprite{ id = "entities/items", description = "entities/items" }
