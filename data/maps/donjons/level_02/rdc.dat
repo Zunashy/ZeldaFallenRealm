@@ -5000,6 +5000,105 @@ tile{
   pattern = "33",
 }
 
+tile{
+  layer = 0,
+  x = 560,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "28",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "28",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "29",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "29",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 464,
+  width = 16,
+  height = 48,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 464,
+  width = 16,
+  height = 48,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
 chest{
   layer = 0,
   x = 120,
@@ -5104,30 +5203,6 @@ enemy{
   y = 221,
   direction = 0,
   breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
-  x = 608,
-  y = 245,
-  direction = 0,
-  breed = "mini_boss/mr_pers",
-}
-
-switch{
-  layer = 0,
-  x = 608,
-  y = 208,
-  properties = {
-    {
-      key = "activate_trigger",
-      value = "door_3",
-    },
-  },
-  subtype = "walkable",
-  sprite = "entities/dungeon_elements/switch",
-  needs_block = false,
-  inactivate_when_leaving = false,
 }
 
 door{
@@ -5411,6 +5486,9 @@ destructible{
   x = 600,
   y = 541,
   sprite = "entities/vegetation/grass_door",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
 }
 
 enemy{
@@ -5439,24 +5517,6 @@ enemy{
   },
   direction = 0,
   breed = "blue_octorock",
-}
-
-destination{
-  name = "test",
-  layer = 0,
-  x = 680,
-  y = 381,
-  direction = 1,
-}
-
-custom_entity{
-  layer = 0,
-  x = 696,
-  y = 381,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/dungeon_elements/teleport",
 }
 
 enemy{
@@ -5539,6 +5599,49 @@ separator{
   y = 168,
   width = 720,
   height = 16,
+}
+
+enemy{
+  layer = 0,
+  x = 600,
+  y = 237,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_teleport;spawn_teleport_2;door_miniboss;music_dungeon2",
+    },
+    {
+      key = "no_reset",
+      value = "1",
+    },
+  },
+  direction = 0,
+  breed = "mini_boss/mr_pers",
+}
+
+door{
+  name = "door_miniboss",
+  layer = 0,
+  x = 480,
+  y = 256,
+  enabled_at_start = false,
+  properties = {
+    {
+      key = "spawn_trigger",
+      value = "music_miniboss",
+    },
+  },
+  direction = 0,
+  sprite = "entities/door/door",
+  savegame_variable = "dungeon_2_door_miniboss",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 600,
+  y = 621,
+  direction = 1,
 }
 
 custom_entity{
