@@ -831,15 +831,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 352,
-  y = 680,
-  width = 16,
-  height = 24,
-  pattern = "23_2",
-}
-
-tile{
-  layer = 0,
   x = 464,
   y = 368,
   width = 16,
@@ -5009,25 +5000,6 @@ tile{
   pattern = "33",
 }
 
-teletransporter{
-  layer = 0,
-  x = 352,
-  y = 688,
-  width = 16,
-  height = 16,
-  destination_map = "normal_version/overworld/north_beach/outdoors",
-  destination = "trident_dungeon",
-}
-
-destination{
-  name = "destination",
-  layer = 0,
-  x = 360,
-  y = 693,
-  direction = 1,
-  default = true,
-}
-
 chest{
   layer = 0,
   x = 120,
@@ -5100,22 +5072,6 @@ enemy{
   y = 461,
   direction = 0,
   breed = "rope",
-}
-
-enemy{
-  layer = 0,
-  x = 648,
-  y = 397,
-  direction = 0,
-  breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
-  x = 616,
-  y = 397,
-  direction = 0,
-  breed = "octorok",
 }
 
 enemy{
@@ -5200,14 +5156,6 @@ switch{
   sprite = "entities/dungeon_elements/switch",
   needs_block = false,
   inactivate_when_leaving = false,
-}
-
-destination{
-  name = "destination_2",
-  layer = 0,
-  x = 360,
-  y = 629,
-  direction = 1,
 }
 
 pickable{
@@ -5407,12 +5355,13 @@ custom_entity{
 }
 
 door{
+  name = "door_1",
   layer = 0,
   x = 480,
   y = 432,
   direction = 0,
   sprite = "entities/door/door",
-  savegame_variable = "dungeon_1_door_key_2",
+  savegame_variable = "dungeon_2_door_1",
   opening_condition = "small_key",
   opening_condition_consumed = true,
 }
@@ -5468,6 +5417,12 @@ enemy{
   layer = 0,
   x = 584,
   y = 397,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_1",
+    },
+  },
   direction = 0,
   breed = "octorok",
 }
@@ -5476,16 +5431,114 @@ enemy{
   layer = 0,
   x = 600,
   y = 381,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_1",
+    },
+  },
   direction = 0,
   breed = "blue_octorock",
+}
+
+destination{
+  name = "test",
+  layer = 0,
+  x = 680,
+  y = 381,
+  direction = 1,
+}
+
+custom_entity{
+  layer = 0,
+  x = 696,
+  y = 381,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/teleport",
+}
+
+enemy{
+  layer = 0,
+  x = 616,
+  y = 397,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_1",
+    },
+  },
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 648,
+  y = 397,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_1",
+    },
+  },
+  direction = 0,
+  breed = "moblin_sword",
 }
 
 enemy{
   layer = 0,
   x = 552,
   y = 397,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_1",
+    },
+  },
   direction = 0,
   breed = "moblin_sword",
+}
+
+separator{
+  layer = 0,
+  x = 472,
+  y = 0,
+  width = 16,
+  height = 704,
+}
+
+separator{
+  layer = 0,
+  x = 232,
+  y = 0,
+  width = 16,
+  height = 704,
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 520,
+  width = 720,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 344,
+  width = 720,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 168,
+  width = 720,
+  height = 16,
 }
 
 custom_entity{
