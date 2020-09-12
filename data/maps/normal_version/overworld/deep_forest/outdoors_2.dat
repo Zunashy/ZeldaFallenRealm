@@ -8636,8 +8636,8 @@ teletransporter{
   y = 192,
   width = 16,
   height = 16,
-  destination_map = "normal_version/overworld/deep_forest/outdoors_2",
-  destination = "deep1_to_deep2",
+  destination_map = "normal_version/overworld/deep_forest/outdoors",
+  destination = "deep2_to_deep1",
 }
 
 teletransporter{
@@ -8646,7 +8646,8 @@ teletransporter{
   y = 16,
   width = 16,
   height = 16,
-  destination_map = "normal_version/overworld/deep_forest/outdoors_2",
+  destination_map = "donjons/level_02/rdc",
+  destination = "entrance",
 }
 
 destination{

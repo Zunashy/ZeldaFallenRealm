@@ -5989,7 +5989,7 @@ teletransporter{
 }
 
 destination{
-  name = "destination_2",
+  name = "entrance",
   layer = 0,
   x = 360,
   y = 693,
@@ -6048,6 +6048,16 @@ destination{
   x = 680,
   y = 141,
   direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 352,
+  y = 608,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_02/ss1",
+  destination = "test",
 }
 
 custom_entity{

@@ -11046,13 +11046,3 @@ custom_entity{
   sprite = "entities/dungeon_elements/teleport",
 }
 
-teletransporter{
-  layer = 0,
-  x = 832,
-  y = 1296,
-  width = 16,
-  height = 16,
-  destination_map = "donjons/level_02/rdc",
-  destination = "destination",
-}
-

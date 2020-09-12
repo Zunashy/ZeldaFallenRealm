@@ -6,6 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "dungeon/tileset_donjon_2",
+  music = "dungeon1",
 }
 
 tile{
@@ -3939,22 +3940,6 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 424,
-  y = 205,
-  direction = 0,
-  breed = "skeleton_1",
-}
-
-enemy{
-  layer = 0,
-  x = 360,
-  y = 301,
-  direction = 0,
-  breed = "skeleton_1",
-}
-
-enemy{
-  layer = 0,
   x = 24,
   y = 477,
   direction = 0,
@@ -4063,38 +4048,6 @@ custom_entity{
   height = 16,
   direction = 0,
   sprite = "entities/dungeon_elements/color_cube",
-}
-
-enemy{
-  layer = 0,
-  x = 312,
-  y = 205,
-  direction = 0,
-  breed = "rope",
-}
-
-enemy{
-  layer = 0,
-  x = 312,
-  y = 317,
-  direction = 0,
-  breed = "octorok",
-}
-
-enemy{
-  layer = 0,
-  x = 392,
-  y = 237,
-  direction = 0,
-  breed = "blue_octorock",
-}
-
-enemy{
-  layer = 0,
-  x = 424,
-  y = 317,
-  direction = 0,
-  breed = "octorok",
 }
 
 separator{
@@ -4264,6 +4217,62 @@ teletransporter{
   height = 16,
   destination_map = "donjons/level_02/rdc",
   destination = "boss",
+}
+
+switch{
+  layer = 0,
+  x = 352,
+  y = 256,
+  properties = {
+    {
+      key = "trigger_spawn_ambush",
+      value = "1",
+    },
+  },
+  subtype = "walkable",
+  sprite = "entities/dungeon_elements/switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+enemy{
+  name = "ambush_2",
+  layer = 0,
+  x = 424,
+  y = 229,
+  enabled_at_start = false,
+  properties = {
+    {
+      key = "ambush",
+      value = "0",
+    },
+  },
+  direction = 0,
+  breed = "blue_octorock",
+}
+
+destination{
+  name = "test",
+  layer = 0,
+  x = 296,
+  y = 285,
+  direction = 1,
+}
+
+enemy{
+  name = "ambush_1",
+  layer = 0,
+  x = 280,
+  y = 317,
+  enabled_at_start = false,
+  properties = {
+    {
+      key = "ambush",
+      value = "0",
+    },
+  },
+  direction = 0,
+  breed = "blue_octorock",
 }
 
 custom_entity{
