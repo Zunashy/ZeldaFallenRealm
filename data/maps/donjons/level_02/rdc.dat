@@ -5978,6 +5978,78 @@ block{
   pullable = false,
 }
 
+teletransporter{
+  layer = 0,
+  x = 352,
+  y = 688,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/overworld/deep_forest/outdoors_2",
+  destination = "level2_to_village",
+}
+
+destination{
+  name = "destination_2",
+  layer = 0,
+  x = 360,
+  y = 693,
+  direction = 1,
+}
+
+destination{
+  name = "rdc",
+  layer = 0,
+  x = 56,
+  y = 245,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 48,
+  y = 224,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_02/ss1",
+  destination = "ss1",
+}
+
+teletransporter{
+  layer = 0,
+  x = 688,
+  y = 144,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_02/ss1",
+  destination = "boss",
+}
+
+teletransporter{
+  layer = 0,
+  x = 648,
+  y = 256,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_02/ss1",
+  destination = "bracelet",
+}
+
+destination{
+  name = "bracelet",
+  layer = 0,
+  x = 648,
+  y = 269,
+  direction = 1,
+}
+
+destination{
+  name = "boss",
+  layer = 0,
+  x = 680,
+  y = 141,
+  direction = 1,
+}
+
 custom_entity{
   layer = 1,
   x = 440,

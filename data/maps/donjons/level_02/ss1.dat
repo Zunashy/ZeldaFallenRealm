@@ -4212,6 +4212,60 @@ separator{
   height = 16,
 }
 
+destination{
+  name = "bracelet",
+  layer = 0,
+  x = 600,
+  y = 389,
+  direction = 1,
+}
+
+destination{
+  name = "boss",
+  layer = 0,
+  x = 928,
+  y = 333,
+  direction = 1,
+}
+
+destination{
+  name = "ss1",
+  layer = 0,
+  x = 56,
+  y = 421,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 48,
+  y = 400,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_02/rdc",
+  destination = "rdc",
+}
+
+teletransporter{
+  layer = 0,
+  x = 592,
+  y = 368,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_02/rdc",
+  destination = "bracelet",
+}
+
+teletransporter{
+  layer = 0,
+  x = 928,
+  y = 320,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_02/rdc",
+  destination = "boss",
+}
+
 custom_entity{
   layer = 1,
   x = 136,

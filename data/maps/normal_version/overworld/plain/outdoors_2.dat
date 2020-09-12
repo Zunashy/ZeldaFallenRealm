@@ -16927,3 +16927,21 @@ enemy{
   treasure_name = "random",
 }
 
+destination{
+  name = "deep_to_plain",
+  layer = 1,
+  x = 944,
+  y = 461,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 1,
+  x = 944,
+  y = 448,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/overworld/deep_forest/outdoors",
+  destination = "plain_to_deep",
+}
+
