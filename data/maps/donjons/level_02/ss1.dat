@@ -4221,12 +4221,12 @@ teletransporter{
 
 switch{
   layer = 0,
-  x = 352,
-  y = 256,
+  x = 448,
+  y = 224,
   properties = {
     {
-      key = "trigger_spawn_ambush",
-      value = "1",
+      key = "activate_trigger",
+      value = "spawn_ambush",
     },
   },
   subtype = "walkable",
@@ -4236,15 +4236,15 @@ switch{
 }
 
 enemy{
-  name = "ambush_2",
+  name = "ambush",
   layer = 0,
   x = 424,
   y = 229,
   enabled_at_start = false,
   properties = {
     {
-      key = "ambush",
-      value = "0",
+      key = "death_trigger",
+      value = "door5",
     },
   },
   direction = 0,
@@ -4260,19 +4260,31 @@ destination{
 }
 
 enemy{
-  name = "ambush_1",
+  name = "ambush_2",
   layer = 0,
   x = 280,
   y = 317,
   enabled_at_start = false,
   properties = {
     {
-      key = "ambush",
-      value = "0",
+      key = "death_trigger",
+      value = "door_5",
     },
   },
   direction = 0,
   breed = "blue_octorock",
+}
+
+door{
+  name = "door_5",
+  layer = 0,
+  x = 464,
+  y = 256,
+  direction = 2,
+  sprite = "entities/door/door",
+  savegame_variable = "dungeon_2_door_4",
+  opening_condition = "small_key",
+  opening_condition_consumed = true,
 }
 
 custom_entity{

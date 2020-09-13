@@ -912,15 +912,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 104,
-  y = 480,
-  width = 16,
-  height = 16,
-  pattern = "2",
-}
-
-tile{
-  layer = 0,
   x = 32,
   y = 368,
   width = 16,
@@ -1812,6 +1803,33 @@ tile{
   tileset = "normal_world",
 }
 
+tile{
+  layer = 0,
+  x = 64,
+  y = 480,
+  width = 32,
+  height = 16,
+  pattern = "5_4",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 480,
+  width = 32,
+  height = 16,
+  pattern = "182",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 464,
+  width = 16,
+  height = 32,
+  pattern = "178",
+}
+
 separator{
   layer = 0,
   x = 0,
@@ -1842,70 +1860,6 @@ separator{
   y = 504,
   width = 160,
   height = 16,
-}
-
-custom_entity{
-  layer = 0,
-  x = 40,
-  y = 189,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/vegetation/flowers",
-}
-
-custom_entity{
-  layer = 0,
-  x = 112,
-  y = 309,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/vegetation/grass/grass",
-}
-
-custom_entity{
-  layer = 0,
-  x = 120,
-  y = 189,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/vegetation/flowers",
-}
-
-custom_entity{
-  layer = 0,
-  x = 40,
-  y = 237,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/vegetation/flowers",
-}
-
-custom_entity{
-  layer = 0,
-  x = 120,
-  y = 237,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/vegetation/flowers",
-}
-
-destructible{
-  layer = 0,
-  x = 72,
-  y = 493,
-  sprite = "entities/vegetation/arbuste",
-}
-
-destructible{
-  layer = 0,
-  x = 88,
-  y = 493,
-  sprite = "entities/vegetation/arbuste",
 }
 
 teletransporter{
@@ -2788,5 +2742,55 @@ tile{
   width = 32,
   height = 32,
   pattern = "13_2",
+}
+
+destructible{
+  layer = 1,
+  x = 120,
+  y = 189,
+  treasure_name = "random",
+  sprite = "entities/vegetation/flowers/flower",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 112,
+  y = 309,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 40,
+  y = 237,
+  treasure_name = "random",
+  sprite = "entities/vegetation/flowers/flower",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 120,
+  y = 237,
+  treasure_name = "random",
+  sprite = "entities/vegetation/flowers/flower_4",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 40,
+  y = 189,
+  treasure_name = "random",
+  sprite = "entities/vegetation/flowers/flower_3",
+  weight = 1,
+  can_be_cut = true,
 }
 

@@ -142,6 +142,10 @@ sprite{ id = "entities/projectile/rock", description = "entities/projectile/rock
 sprite{ id = "entities/shadow", description = "entities/shadow" }
 sprite{ id = "entities/vegetation/arbuste", description = "entities/vegetation/arbuste" }
 sprite{ id = "entities/vegetation/flowers", description = "entities/vegetation/flowers" }
+sprite{ id = "entities/vegetation/flowers/flower", description = "entities/vegetation/flowers/grass" }
+sprite{ id = "entities/vegetation/flowers/flower_2", description = "entities/vegetation/flowers/grass_2" }
+sprite{ id = "entities/vegetation/flowers/flower_3", description = "entities/vegetation/flowers/grass_3" }
+sprite{ id = "entities/vegetation/flowers/flower_4", description = "entities/vegetation/flowers/grass_4" }
 sprite{ id = "entities/vegetation/grass/grass", description = "entities/vegetation/grass/grass" }
 sprite{ id = "entities/vegetation/grass/grass_2" }
 sprite{ id = "entities/vegetation/grass/grass_3" }

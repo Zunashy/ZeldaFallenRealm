@@ -8239,6 +8239,16 @@ tile{
   pattern = "186",
 }
 
+tile{
+  layer = 1,
+  x = 128,
+  y = 72,
+  width = 16,
+  height = 8,
+  pattern = "70",
+  tileset = "normal_world",
+}
+
 destructible{
   layer = 1,
   x = 400,
