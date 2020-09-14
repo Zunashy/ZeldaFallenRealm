@@ -5540,16 +5540,6 @@ pickable{
   treasure_name = "sword",
 }
 
-custom_entity{
-  layer = 0,
-  x = 360,
-  y = 621,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/dungeon_elements/teleport",
-}
-
 door{
   name = "door_3",
   layer = 0,
@@ -5706,16 +5696,6 @@ enemy{
   y = 333,
   direction = 0,
   breed = "blue_octorock",
-}
-
-custom_entity{
-  layer = 0,
-  x = 600,
-  y = 269,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/dungeon_elements/teleport",
 }
 
 door{
@@ -6051,13 +6031,43 @@ destination{
 }
 
 teletransporter{
+  name = "teleport_2",
   layer = 0,
   x = 352,
   y = 608,
   width = 16,
   height = 16,
-  destination_map = "donjons/level_02/ss1",
-  destination = "test",
+  destination_map = "donjons/level_02/rdc",
+  destination = "tp",
+  sprite = "entities/dungeon_elements/teleport",
+}
+
+teletransporter{
+  name = "teleport",
+  layer = 0,
+  x = 592,
+  y = 256,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_02/rdc",
+  destination = "tp2",
+  sprite = "entities/dungeon_elements/teleport",
+}
+
+destination{
+  name = "tp",
+  layer = 0,
+  x = 600,
+  y = 285,
+  direction = 1,
+}
+
+destination{
+  name = "tp2",
+  layer = 0,
+  x = 360,
+  y = 637,
+  direction = 1,
 }
 
 custom_entity{

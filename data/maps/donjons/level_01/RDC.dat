@@ -11022,27 +11022,43 @@ destructible{
   weight = 1,
 }
 
-custom_entity{
-  name = "teleport_2",
+teletransporter{
+  name = "teleporte_2",
   layer = 0,
-  x = 840,
-  y = 1309,
-  enabled_at_start = false,
+  x = 832,
+  y = 1296,
   width = 16,
   height = 16,
-  direction = 0,
+  destination_map = "donjons/level_01/RDC",
+  destination = "tp2",
   sprite = "entities/dungeon_elements/teleport",
 }
 
-custom_entity{
+teletransporter{
   name = "teleport",
   layer = 0,
-  x = 1320,
-  y = 109,
-  enabled_at_start = false,
+  x = 1312,
+  y = 96,
   width = 16,
   height = 16,
-  direction = 0,
+  destination_map = "donjons/level_01/RDC",
+  destination = "tp1",
   sprite = "entities/dungeon_elements/teleport",
+}
+
+destination{
+  name = "tp2",
+  layer = 0,
+  x = 1320,
+  y = 125,
+  direction = 1,
+}
+
+destination{
+  name = "tp1",
+  layer = 0,
+  x = 840,
+  y = 1325,
+  direction = 1,
 }
 
