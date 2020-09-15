@@ -49,17 +49,17 @@ map{ id = "tests/global" }
 map{ id = "tests/obscurity", description = "tests/obscurity" }
 map{ id = "tests/platform", description = "tests/platform" }
 map{ id = "tests/tttteteessst", description = "oui" }
-map{ id = "war_version/overworld/forest/forest", description = "war_version/overworld/forest/forest" }
-map{ id = "war_version/overworld/forest/sword_cave", description = "war_version/overworld/forest/sword_cave" }
+map{ id = "war_version/overworld/forest", description = "forêt version guerre" }
+map{ id = "war_version/overworld/jojo_tree", description = "jojo tree house" }
+map{ id = "war_version/overworld/north beach", description = "war world north beach" }
 map{ id = "war_version/overworld/north_beach/cave", description = "grotte north beach" }
 map{ id = "war_version/overworld/north_beach/indoors/beach_house", description = "maison sur la plage" }
-map{ id = "war_version/overworld/north_beach/indoors/jojo_house", description = "war_version/overworld/north_beach/indoors/jojo_house" }
 map{ id = "war_version/overworld/north_beach/indoors/plain_house", description = "maison plaine plage" }
-map{ id = "war_version/overworld/north_beach/jojo_tree", description = "war_version/overworld/north_beach/jojo_tree" }
-map{ id = "war_version/overworld/north_beach/north beach", description = "war_version/overworld/north_beach/north beach" }
+map{ id = "war_version/overworld/north_beach/jojo_house", description = "maison arbre jojo" }
 map{ id = "war_version/overworld/plain/outdoors_1", description = "plain 1 war version" }
 map{ id = "war_version/overworld/plain/outdoors_2", description = "plain 2 war version" }
-map{ id = "war_version/village/indoors/destroyed_house", description = "war_version/village/indoors/destroyed_house" }
+map{ id = "war_version/overworld/sword_cave", description = "war world sword cave" }
+map{ id = "war_version/village/destroyed_house", description = "war_version/village/destroyed_house" }
 map{ id = "war_version/village/octorock_cave", description = "octorock cave war" }
 map{ id = "war_version/village/outdoors", description = "war_version/village/outdoors" }
 
@@ -100,6 +100,7 @@ sprite{ id = "enemies/mini_boss/mr_pers", description = "enemies/mini_boss/mr_pe
 sprite{ id = "enemies/mini_boss/mr_pers_sword", description = "enemies/mini_boss/mr_pers_sword" }
 sprite{ id = "enemies/moblin", description = "enemies/moblin" }
 sprite{ id = "enemies/moblin_sword", description = "enemies/moblin_sword" }
+sprite{ id = "enemies/moblin_sword_sword", description = "enemies/moblin_sword_sword" }
 sprite{ id = "enemies/moblin_sword_word", description = "enemies/moblin_sword_word" }
 sprite{ id = "enemies/octorok", description = "enemies/octorok" }
 sprite{ id = "enemies/oursin", description = "enemies/oursin" }
@@ -163,6 +164,7 @@ sprite{ id = "hero/sword1", description = "hero/sword1" }
 sprite{ id = "hero/sword_stars1", description = "hero/sword_stars1" }
 sprite{ id = "hero/trail", description = "hero/trail" }
 sprite{ id = "hero/tunic1", description = "hero/tunic1" }
+sprite{ id = "hud/bush_destroy" }
 sprite{ id = "hud/piece_of_heart_icon", description = "hud/piece_of_heart_icon" }
 sprite{ id = "menus/dialog_end", description = "menus/dialog_end" }
 sprite{ id = "menus/solarus_logo", description = "menus/solarus_logo" }
