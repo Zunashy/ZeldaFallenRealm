@@ -10,6 +10,24 @@ properties{
 
 tile{
   layer = 0,
+  x = 368,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
   x = 16,
   y = 192,
   width = 688,
@@ -831,15 +849,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 352,
-  y = 680,
-  width = 16,
-  height = 24,
-  pattern = "23_2",
-}
-
-tile{
-  layer = 0,
   x = 464,
   y = 368,
   width = 16,
@@ -1601,22 +1610,6 @@ tile{
   width = 16,
   height = 48,
   pattern = "30",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 368,
-  enabled_at_start = false,
-  properties = {
-    {
-      key = "activate_trigger",
-      value = "door_4",
-    },
-  },
-  width = 16,
-  height = 16,
-  pattern = "33",
 }
 
 tile{
@@ -4687,26 +4680,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 368,
-  y = 384,
-  width = 16,
-  height = 16,
-  pattern = "63",
-}
-
-tile{
-  layer = 0,
-  x = 352,
-  y = 368,
-  width = 16,
-  height = 16,
-  pattern = "63",
-}
-
-tile{
-  layer = 0,
   x = 336,
-  y = 384,
+  y = 368,
   width = 16,
   height = 16,
   pattern = "63",
@@ -5009,23 +4984,418 @@ tile{
   pattern = "33",
 }
 
-teletransporter{
+tile{
   layer = 0,
-  x = 352,
-  y = 688,
+  x = 560,
+  y = 480,
   width = 16,
   height = 16,
-  destination_map = "normal_version/overworld/north_beach/outdoors",
-  destination = "trident_dungeon",
+  pattern = "35",
 }
 
-destination{
-  name = "destination",
+tile{
   layer = 0,
-  x = 360,
-  y = 693,
-  direction = 1,
-  default = true,
+  x = 624,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "28",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "28",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "29",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "29",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 464,
+  width = 16,
+  height = 48,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 464,
+  width = 16,
+  height = 48,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "66",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "66",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "47_16",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "47_16",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "18",
 }
 
 chest{
@@ -5068,12 +5438,13 @@ enemy{
 }
 
 door{
+  name = "door_2",
   layer = 0,
   x = 240,
   y = 432,
   direction = 0,
   sprite = "entities/door/door",
-  savegame_variable = "dungeon_1_door_key_2",
+  savegame_variable = "dungeon_2_door_2",
   opening_condition = "small_key",
   opening_condition_consumed = true,
 }
@@ -5100,22 +5471,6 @@ enemy{
   y = 461,
   direction = 0,
   breed = "rope",
-}
-
-enemy{
-  layer = 0,
-  x = 648,
-  y = 397,
-  direction = 0,
-  breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
-  x = 616,
-  y = 397,
-  direction = 0,
-  breed = "octorok",
 }
 
 enemy{
@@ -5150,30 +5505,6 @@ enemy{
   breed = "moblin_sword",
 }
 
-enemy{
-  layer = 0,
-  x = 608,
-  y = 245,
-  direction = 0,
-  breed = "mini_boss/mr_pers",
-}
-
-switch{
-  layer = 0,
-  x = 608,
-  y = 208,
-  properties = {
-    {
-      key = "activate_trigger",
-      value = "door_3",
-    },
-  },
-  subtype = "walkable",
-  sprite = "entities/dungeon_elements/switch",
-  needs_block = false,
-  inactivate_when_leaving = false,
-}
-
 door{
   layer = 0,
   x = 592,
@@ -5202,14 +5533,6 @@ switch{
   inactivate_when_leaving = false,
 }
 
-destination{
-  name = "destination_2",
-  layer = 0,
-  x = 360,
-  y = 629,
-  direction = 1,
-}
-
 pickable{
   layer = 0,
   x = 232,
@@ -5217,25 +5540,14 @@ pickable{
   treasure_name = "sword",
 }
 
-custom_entity{
-  layer = 0,
-  x = 360,
-  y = 621,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/dungeon_elements/teleport",
-}
-
 door{
-  name = "door_4",
+  name = "door_3",
   layer = 0,
   x = 48,
   y = 352,
   direction = 3,
   sprite = "entities/door/door",
-  savegame_variable = "dungeon_1_door_key_2",
-  opening_method = "interaction_if_item",
+  savegame_variable = "dungeon_2_door_3",
   opening_condition = "small_key",
   opening_condition_consumed = true,
 }
@@ -5248,16 +5560,6 @@ custom_entity{
   height = 16,
   direction = 0,
   sprite = "entities/dungeon_elements/color_cube_destination",
-}
-
-custom_entity{
-  layer = 0,
-  x = 360,
-  y = 445,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/dungeon_elements/color_cube",
 }
 
 enemy{
@@ -5396,23 +5698,14 @@ enemy{
   breed = "blue_octorock",
 }
 
-custom_entity{
-  layer = 0,
-  x = 600,
-  y = 269,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/dungeon_elements/teleport",
-}
-
 door{
+  name = "door_1",
   layer = 0,
   x = 480,
   y = 432,
   direction = 0,
   sprite = "entities/door/door",
-  savegame_variable = "dungeon_1_door_key_2",
+  savegame_variable = "dungeon_2_door_1",
   opening_condition = "small_key",
   opening_condition_consumed = true,
 }
@@ -5462,12 +5755,21 @@ destructible{
   x = 600,
   y = 541,
   sprite = "entities/vegetation/grass_door",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
 }
 
 enemy{
   layer = 0,
   x = 584,
   y = 397,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_1",
+    },
+  },
   direction = 0,
   breed = "octorok",
 }
@@ -5476,16 +5778,296 @@ enemy{
   layer = 0,
   x = 600,
   y = 381,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_1",
+    },
+  },
   direction = 0,
   breed = "blue_octorock",
 }
 
 enemy{
   layer = 0,
-  x = 552,
+  x = 616,
   y = 397,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_1",
+    },
+  },
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 0,
+  x = 648,
+  y = 397,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_1",
+    },
+  },
   direction = 0,
   breed = "moblin_sword",
+}
+
+enemy{
+  layer = 0,
+  x = 552,
+  y = 397,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_1",
+    },
+  },
+  direction = 0,
+  breed = "moblin_sword",
+}
+
+separator{
+  layer = 0,
+  x = 472,
+  y = 0,
+  width = 16,
+  height = 704,
+}
+
+separator{
+  layer = 0,
+  x = 232,
+  y = 0,
+  width = 16,
+  height = 704,
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 520,
+  width = 720,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 344,
+  width = 720,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 168,
+  width = 720,
+  height = 16,
+}
+
+enemy{
+  layer = 0,
+  x = 600,
+  y = 237,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_teleport;spawn_teleport_2;door_miniboss;music_dungeon2",
+    },
+    {
+      key = "no_reset",
+      value = "1",
+    },
+  },
+  direction = 0,
+  breed = "mini_boss/mr_pers",
+}
+
+door{
+  name = "door_miniboss",
+  layer = 0,
+  x = 480,
+  y = 256,
+  enabled_at_start = false,
+  properties = {
+    {
+      key = "spawn_trigger",
+      value = "music_miniboss",
+    },
+  },
+  direction = 0,
+  sprite = "entities/door/door",
+  savegame_variable = "dungeon_2_door_miniboss",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 600,
+  y = 621,
+  direction = 1,
+}
+
+custom_entity{
+  layer = 0,
+  x = 24,
+  y = 381,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "door_3",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/switches",
+}
+
+custom_entity{
+  layer = 0,
+  x = 376,
+  y = 389,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/colored_flame",
+}
+
+custom_entity{
+  layer = 0,
+  x = 344,
+  y = 389,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/colored_flame",
+}
+
+block{
+  layer = 0,
+  x = 360,
+  y = 429,
+  sprite = "entities/dungeon_elements/color_cube",
+  pushable = true,
+  pullable = false,
+}
+
+teletransporter{
+  layer = 0,
+  x = 352,
+  y = 688,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/overworld/deep_forest/outdoors_2",
+  destination = "level2_to_village",
+}
+
+destination{
+  name = "entrance",
+  layer = 0,
+  x = 360,
+  y = 693,
+  direction = 1,
+}
+
+destination{
+  name = "rdc",
+  layer = 0,
+  x = 56,
+  y = 245,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 48,
+  y = 224,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_02/ss1",
+  destination = "ss1",
+}
+
+teletransporter{
+  layer = 0,
+  x = 688,
+  y = 144,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_02/ss1",
+  destination = "boss",
+}
+
+teletransporter{
+  layer = 0,
+  x = 648,
+  y = 256,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_02/ss1",
+  destination = "bracelet",
+}
+
+destination{
+  name = "bracelet",
+  layer = 0,
+  x = 648,
+  y = 269,
+  direction = 1,
+}
+
+destination{
+  name = "boss",
+  layer = 0,
+  x = 680,
+  y = 141,
+  direction = 1,
+}
+
+teletransporter{
+  name = "teleport_2",
+  layer = 0,
+  x = 352,
+  y = 608,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_02/rdc",
+  destination = "tp",
+  sprite = "entities/dungeon_elements/teleport",
+}
+
+teletransporter{
+  name = "teleport",
+  layer = 0,
+  x = 592,
+  y = 256,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_02/rdc",
+  destination = "tp2",
+  sprite = "entities/dungeon_elements/teleport",
+}
+
+destination{
+  name = "tp",
+  layer = 0,
+  x = 600,
+  y = 285,
+  direction = 1,
+}
+
+destination{
+  name = "tp2",
+  layer = 0,
+  x = 360,
+  y = 637,
+  direction = 1,
 }
 
 custom_entity{

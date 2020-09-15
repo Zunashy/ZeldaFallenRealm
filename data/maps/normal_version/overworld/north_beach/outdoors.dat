@@ -3847,7 +3847,7 @@ tile{
   layer = 1,
   x = 80,
   y = 576,
-  width = 16,
+  width = 32,
   height = 16,
   pattern = "103",
 }
@@ -7301,8 +7301,8 @@ teletransporter{
 
 enemy{
   layer = 1,
-  x = 192,
-  y = 317,
+  x = 208,
+  y = 309,
   properties = {
     {
       key = "min_story_state",
@@ -7320,7 +7320,7 @@ enemy{
 enemy{
   layer = 1,
   x = 216,
-  y = 365,
+  y = 333,
   properties = {
     {
       key = "min_story_state",
@@ -7337,8 +7337,8 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 256,
-  y = 333,
+  x = 240,
+  y = 317,
   properties = {
     {
       key = "min_story_state",
@@ -7451,10 +7451,10 @@ destination{
 
 enemy{
   layer = 1,
-  x = 368,
-  y = 333,
+  x = 424,
+  y = 349,
   direction = 0,
-  breed = "skeleton_1",
+  breed = "octorok",
   treasure_name = "random",
 }
 

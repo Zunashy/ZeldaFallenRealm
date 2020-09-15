@@ -123,9 +123,12 @@ sprite{ id = "entities/door/door_key", description = "entities/door/door_key" }
 sprite{ id = "entities/dungeon_elements/color_cube", description = "entities/dungeon_elements/color_cube" }
 sprite{ id = "entities/dungeon_elements/color_cube_destination", description = "Destination cube coloré" }
 sprite{ id = "entities/dungeon_elements/colored_flame", description = "entities/dungeon_elements/colored_flame" }
+sprite{ id = "entities/dungeon_elements/false_floor" }
+sprite{ id = "entities/dungeon_elements/levier" }
 sprite{ id = "entities/dungeon_elements/platform", description = "entities/dungeon_elements/platform" }
 sprite{ id = "entities/dungeon_elements/platform_old", description = "entities/dungeon_elements/platform_old" }
 sprite{ id = "entities/dungeon_elements/switch", description = "entities/dungeon_elements/switch" }
+sprite{ id = "entities/dungeon_elements/switches" }
 sprite{ id = "entities/dungeon_elements/teleport", description = "entities/dungeon_elements/teleport" }
 sprite{ id = "entities/dungeon_statue_eye", description = "entities/dungeon_statue_eye" }
 sprite{ id = "entities/items", description = "entities/items" }
@@ -141,6 +144,10 @@ sprite{ id = "entities/projectile/rock", description = "entities/projectile/rock
 sprite{ id = "entities/shadow", description = "entities/shadow" }
 sprite{ id = "entities/vegetation/arbuste", description = "entities/vegetation/arbuste" }
 sprite{ id = "entities/vegetation/flowers", description = "entities/vegetation/flowers" }
+sprite{ id = "entities/vegetation/flowers/flower", description = "entities/vegetation/flowers/grass" }
+sprite{ id = "entities/vegetation/flowers/flower_2", description = "entities/vegetation/flowers/grass_2" }
+sprite{ id = "entities/vegetation/flowers/flower_3", description = "entities/vegetation/flowers/grass_3" }
+sprite{ id = "entities/vegetation/flowers/flower_4", description = "entities/vegetation/flowers/grass_4" }
 sprite{ id = "entities/vegetation/grass/grass", description = "entities/vegetation/grass/grass" }
 sprite{ id = "entities/vegetation/grass/grass_2" }
 sprite{ id = "entities/vegetation/grass/grass_3" }

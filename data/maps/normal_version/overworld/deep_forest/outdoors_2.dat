@@ -4239,24 +4239,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 256,
-  y = 288,
-  width = 16,
-  height = 16,
-  pattern = "7",
-}
-
-tile{
-  layer = 1,
-  x = 224,
-  y = 288,
-  width = 16,
-  height = 16,
-  pattern = "6",
-}
-
-tile{
-  layer = 1,
   x = 368,
   y = 264,
   width = 32,
@@ -4983,24 +4965,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "2",
-}
-
-tile{
-  layer = 1,
-  x = 256,
-  y = 280,
-  width = 32,
-  height = 32,
-  pattern = "13_3",
-}
-
-tile{
-  layer = 1,
-  x = 208,
-  y = 280,
-  width = 32,
-  height = 32,
-  pattern = "13",
 }
 
 tile{
@@ -7456,8 +7420,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 512,
-  y = 336,
+  x = 496,
+  y = 352,
   width = 16,
   height = 16,
   pattern = "17_4",
@@ -8193,6 +8157,98 @@ tile{
   pattern = "13",
 }
 
+tile{
+  layer = 1,
+  x = 240,
+  y = 280,
+  width = 16,
+  height = 8,
+  pattern = "85_2",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 280,
+  width = 8,
+  height = 8,
+  pattern = "79_3",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 280,
+  width = 8,
+  height = 8,
+  pattern = "79_4",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 288,
+  width = 8,
+  height = 16,
+  pattern = "78_3",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 288,
+  width = 8,
+  height = 16,
+  pattern = "78_4",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 296,
+  width = 8,
+  height = 8,
+  pattern = "82_2",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 296,
+  width = 8,
+  height = 8,
+  pattern = "81_2",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 392,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "186",
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 328,
+  width = 128,
+  height = 16,
+  pattern = "186",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 72,
+  width = 16,
+  height = 8,
+  pattern = "70",
+  tileset = "normal_world",
+}
+
 destructible{
   layer = 1,
   x = 400,
@@ -8582,5 +8638,41 @@ separator{
   y = 504,
   width = 800,
   height = 16,
+}
+
+teletransporter{
+  layer = 1,
+  x = 160,
+  y = 192,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/overworld/deep_forest/outdoors",
+  destination = "deep2_to_deep1",
+}
+
+teletransporter{
+  layer = 1,
+  x = 72,
+  y = 16,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_02/rdc",
+  destination = "entrance",
+}
+
+destination{
+  name = "deep1_to_deep2",
+  layer = 1,
+  x = 176,
+  y = 205,
+  direction = 1,
+}
+
+destination{
+  name = "level2_to_village",
+  layer = 1,
+  x = 80,
+  y = 37,
+  direction = 1,
 }
 

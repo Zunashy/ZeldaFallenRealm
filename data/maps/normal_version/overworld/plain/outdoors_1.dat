@@ -3831,3 +3831,13 @@ destructible{
   ground = "grass",
 }
 
+teletransporter{
+  layer = 1,
+  x = 384,
+  y = 32,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/overworld/plain/indoors/cave_01",
+  destination = "entrance",
+}
+
