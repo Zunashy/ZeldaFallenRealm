@@ -100,6 +100,7 @@ sprite{ id = "enemies/mini_boss/mr_pers", description = "enemies/mini_boss/mr_pe
 sprite{ id = "enemies/mini_boss/mr_pers_sword", description = "enemies/mini_boss/mr_pers_sword" }
 sprite{ id = "enemies/moblin", description = "enemies/moblin" }
 sprite{ id = "enemies/moblin_sword", description = "enemies/moblin_sword" }
+sprite{ id = "enemies/moblin_sword_sword", description = "enemies/moblin_sword_sword" }
 sprite{ id = "enemies/moblin_sword_word", description = "enemies/moblin_sword_word" }
 sprite{ id = "enemies/octorok", description = "enemies/octorok" }
 sprite{ id = "enemies/oursin", description = "enemies/oursin" }
@@ -163,6 +164,7 @@ sprite{ id = "hero/sword1", description = "hero/sword1" }
 sprite{ id = "hero/sword_stars1", description = "hero/sword_stars1" }
 sprite{ id = "hero/trail", description = "hero/trail" }
 sprite{ id = "hero/tunic1", description = "hero/tunic1" }
+sprite{ id = "hud/bush_destroy" }
 sprite{ id = "hud/piece_of_heart_icon", description = "hud/piece_of_heart_icon" }
 sprite{ id = "menus/dialog_end", description = "menus/dialog_end" }
 sprite{ id = "menus/solarus_logo", description = "menus/solarus_logo" }

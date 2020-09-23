@@ -8056,10 +8056,20 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 520,
-  y = 493,
+  x = 440,
+  y = 77,
   direction = 0,
   breed = "skeleton_1",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 40,
+  y = 221,
+  direction = 0,
+  breed = "blue_octorock",
+  treasure_name = "random",
 }
 
 tile{

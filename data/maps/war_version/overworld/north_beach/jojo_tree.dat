@@ -616,6 +616,33 @@ tile{
   pattern = "6_2",
 }
 
+tile{
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 32,
+  width = 8,
+  height = 8,
+  pattern = "5_2",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 32,
+  width = 8,
+  height = 8,
+  pattern = "7_2",
+}
+
 teletransporter{
   layer = 0,
   x = 72,
