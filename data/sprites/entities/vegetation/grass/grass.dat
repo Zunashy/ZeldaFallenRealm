@@ -16,7 +16,7 @@ animation{
 }
 animation{
   name = "cut",
-  src_image = "entities/vegetation/grass/grass.png",
+  src_image = "tileset",
   directions = {
   },
 }

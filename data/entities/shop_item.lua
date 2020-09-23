@@ -27,7 +27,7 @@ function entity:on_created()
 
   local price_string = self:get_property("price") or "20"
   self.price = tonumber(price_string)
-
+  
   local save_var = self:get_property("savegame_variable")
   if save_var then
     if game:get_value(save_var) then

@@ -4448,7 +4448,6 @@ tile{
   layer = 1,
   x = 240,
   y = 288,
-  enabled_at_start = false,
   width = 16,
   height = 16,
   pattern = "73",

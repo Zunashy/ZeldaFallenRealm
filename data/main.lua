@@ -11,12 +11,15 @@ local loading_menu = {
     loading_surface:draw(dst_surface)
   end
 }
+
 sol.menu.start(sol.main, loading_menu)
+
 require("scripts/features")
+
 
 local game_manager = require("scripts/game_manager")
 local start_initial_menus = require("scripts/menus/initial_menus_manager")
-local settings_manager = require ("scripts/api/settings")
+local settings_manager = require("scripts/api/settings")
 local controls_manager = require("scripts/api/controls_manager")
 --require("scripts/sinking_override")
 
@@ -36,7 +39,6 @@ function sol.main:on_started()
   sol.audio.default_music_volume = 10
   gen.randomseed(os.time())
 
-  -- Setting a language is useful to display text and dialogs.
   sol.menu.stop(loading_menu)
   start_initial_menus()
 end

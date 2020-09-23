@@ -70,3 +70,24 @@ function dest_meta:is_flammable()
   local sprite_name = self:get_sprite():get_animation_set()
   return name == "tree" or name == "grass"
 end
+
+local carried_meta = sol.main.get_metatable("carried_object")
+local visu = require("scripts/debug/visualizer")
+
+function carried_meta:on_thrown()
+  visu:start_visualization(self:get_map(), 0, 0, 0, 0)
+  local co = self
+  sol.timer.start(self, 10, function()
+    local x, y = co:get_position()
+    visu:set_position(x, y, 10, 10)
+    return true
+  end)
+
+  local _, y = self:get_position()
+  self.throw_y = y
+end
+
+function carried_meta:on_breaking()
+  local x = self:get_position()
+  self:set_position(x, self.throw_y)
+end  

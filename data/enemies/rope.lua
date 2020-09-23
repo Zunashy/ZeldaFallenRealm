@@ -22,6 +22,7 @@ local walk_dist = 32
 local function reset_tested_dirs()
   tested_dirs = {false, false, false, false}
 end
+
 -- Event called when the enemy is initialized.
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/rope")
@@ -50,7 +51,6 @@ local function on_position_changed()
 end
 
 function enemy:start_walk()
-  print("walk")
   local m = sol.movement.create("straight")
   local dir = mg.choose_random_direction(enemy, dir_callback)
   m:set_speed(walk_speed)

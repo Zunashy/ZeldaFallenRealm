@@ -3321,7 +3321,6 @@ tile{
   layer = 1,
   x = 16,
   y = 32,
-  enabled_at_start = false,
   width = 128,
   height = 160,
   pattern = "39",

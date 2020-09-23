@@ -251,8 +251,8 @@ end
 
 local colored_block_manager = require("entities/colored_block")
 function map:enable_colored_blocks()
+  colored_block_manager.parse_event_string = parse_event_string
   for block in self:get_entities("colored_block") do
-    colored_block_manager.parse_event_string = parse_event_string
     colored_block_manager.init(block)
   end
 end

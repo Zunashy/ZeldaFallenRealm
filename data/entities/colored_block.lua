@@ -1,6 +1,5 @@
 local manager = {}
 
-
 local function color_trigger_callback(block_destination)
     local map = block_destination:get_map()
     local event
@@ -21,7 +20,6 @@ local function color_trigger_callback(block_destination)
         manager.parse_event_string(map, event)
     end
 end
-
 
 function on_moving(block)
     local dir = block:get_game():get_hero():get_direction()
@@ -88,4 +86,5 @@ function manager.init(block)
     block.set_colors_state = set_colors_state
     block:set_colors_state({top = "red", right = "yellow", up = "blue"})
 end
+
 return manager

@@ -11,7 +11,8 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+function map:on_started_()
+    self:init_dungeon_features()
     self:enable_colored_blocks()
 end
 -- Event called after the opening transition effect of the map,

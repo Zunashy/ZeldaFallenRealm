@@ -9223,6 +9223,15 @@ tile{
   pattern = "15",
 }
 
+tile{
+  layer = 0,
+  x = 824,
+  y = 600,
+  width = 8,
+  height = 8,
+  pattern = "63",
+}
+
 block{
   layer = 0,
   x = 792,
@@ -10092,6 +10101,7 @@ door{
   },
   direction = 3,
   sprite = "entities/door/door",
+  savegame_variable = "dungeon_1_door_6",
 }
 
 door{
@@ -10462,6 +10472,10 @@ enemy{
     {
       key = "death_trigger",
       value = "spawn_chest_feather;door_miniboss",
+    },
+    {
+      key = "step_length",
+      value = "8",
     },
   },
   direction = 0,
@@ -11027,6 +11041,7 @@ teletransporter{
   layer = 0,
   x = 832,
   y = 1296,
+  enabled_at_start = false,
   width = 16,
   height = 16,
   destination_map = "donjons/level_01/RDC",
@@ -11039,6 +11054,7 @@ teletransporter{
   layer = 0,
   x = 1312,
   y = 96,
+  enabled_at_start = false,
   width = 16,
   height = 16,
   destination_map = "donjons/level_01/RDC",
@@ -11060,5 +11076,44 @@ destination{
   x = 840,
   y = 1325,
   direction = 1,
+}
+
+pickable{
+  layer = 0,
+  x = 832,
+  y = 1381,
+  treasure_name = "sword",
+}
+
+custom_entity{
+  layer = 0,
+  x = 112,
+  y = 389,
+  properties = {
+    {
+      key = "direction",
+      value = "3",
+    },
+  },
+  width = 32,
+  height = 24,
+  direction = 0,
+  model = "platform_controller",
+}
+
+custom_entity{
+  layer = 0,
+  x = 112,
+  y = 429,
+  properties = {
+    {
+      key = "direction",
+      value = "1",
+    },
+  },
+  width = 32,
+  height = 24,
+  direction = 0,
+  model = "platform_controller",
 }
 

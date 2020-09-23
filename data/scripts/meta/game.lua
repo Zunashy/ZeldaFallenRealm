@@ -7,9 +7,9 @@ local function map_callback(game, map)
   
   if map.obscurity then
     map:set_obscurity(map.obscurity)
+  --game.obscurity_shader:set_uniform("amount", 3)
   end
-  camera:get_surface():set_shader(game.chroma_shader)
-  game.obscurity_shader:set_uniform("amount", 3)
+  --camera:get_surface():set_shader(game.chroma_shader)
   local hero = map:get_hero()
   hero:save_solid_ground()
   hero:reset_walking_speed()
@@ -60,8 +60,8 @@ function game_meta:on_started()
     self.started = true
   end
 
-  self.obscurity_shader = sol.shader.create("obscurity")
-  self.chroma_shader = sol.shader.create("shader")
+  --self.obscurity_shader = sol.shader.create("obscurity")
+  --self.chroma_shader = sol.shader.create("shader")
 end
 
 function game_meta:on_finished()

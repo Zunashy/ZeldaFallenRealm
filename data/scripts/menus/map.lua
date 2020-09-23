@@ -4,6 +4,8 @@ local map_menu = {
     name = "Minimap Menu"
 }
 
+
+
 map_menu.bg_surface = sol.surface.create(sol.video.get_quest_size())
 map_menu.bg_surface:fill_color({0, 0, 0})
 map_menu.cursor_surface = sol.surface.create("menus/map_cursor.png")
@@ -32,6 +34,7 @@ function map_menu:cursor_right()
     self.cx = self.cx + 1
     if self.cx > 14 then self.cx = 0 end
 end
+
 
 function map_menu:cursor_up()
     self.cy = self.cy - 1

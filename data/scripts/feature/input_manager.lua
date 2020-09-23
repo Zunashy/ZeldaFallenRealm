@@ -69,6 +69,8 @@ function meta:on_key_pressed(key, modifiers) --manages inputs upstream of the co
     sol.main.game:set_life(12)  
   elseif key == "f7" then
     print(sol.main.game:get_value("small_keys"))
+  elseif key == "f8" then
+    sol.main.game:get_hero():teleport("donjons/level_01/RDC")
   end
 
   return handled

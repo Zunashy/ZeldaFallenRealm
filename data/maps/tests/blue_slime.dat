@@ -116,6 +116,36 @@ tile{
   pattern = "50",
 }
 
+tile{
+  layer = 1,
+  x = 232,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "50",
+}
+
+custom_entity{
+  layer = 1,
+  x = 256,
+  y = 173,
+  properties = {
+    {
+      key = "red_trigger",
+      value = "spawn_chest_1",
+    },
+    {
+      key = "torchs",
+      value = "torch;torch_2",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/color_cube_destination",
+  model = "colored_block_destination",
+}
+
 destination{
   name = "spawn",
   layer = 1,
@@ -164,32 +194,11 @@ block{
   pullable = false,
 }
 
-custom_entity{
-  layer = 1,
-  x = 256,
-  y = 173,
-  properties = {
-    {
-      key = "red_trigger",
-      value = "spawn_chest_1",
-    },
-    {
-      key = "torchs",
-      value = "torch",
-    },
-  },
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/dungeon_elements/color_cube_destination",
-  model = "colored_block_destination",
-}
-
 chest{
   name = "chest_1",
   layer = 1,
-  x = 232,
-  y = 173,
+  x = 264,
+  y = 149,
   enabled_at_start = false,
   sprite = "entities/chests/chest",
 }
@@ -225,5 +234,49 @@ enemy{
   },
   direction = 3,
   breed = "blade_trap",
+}
+
+destructible{
+  name = "rochey",
+  layer = 1,
+  x = 264,
+  y = 253,
+  sprite = "entities/projectile/rock",
+}
+
+enemy{
+  name = "blue",
+  layer = 1,
+  x = 232,
+  y = 301,
+  enabled_at_start = false,
+  direction = 3,
+  breed = "blue_slime",
+}
+
+enemy{
+  layer = 1,
+  x = 184,
+  y = 285,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "spawn_blue",
+    },
+  },
+  direction = 0,
+  breed = "switch",
+}
+
+custom_entity{
+  name = "torch_2",
+  layer = 1,
+  x = 240,
+  y = 165,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/colored_flame",
 }
 

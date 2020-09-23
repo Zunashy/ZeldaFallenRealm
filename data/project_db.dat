@@ -309,6 +309,7 @@ enemy{ id = "skeleton_1", description = "skeleton_1" }
 enemy{ id = "skeleton_2", description = "skeleton_2" }
 enemy{ id = "skeleton_3", description = "skeleton_3" }
 enemy{ id = "slime_green", description = "slime_green" }
+enemy{ id = "switch", description = "Le bouton. C'est un enemi. Oui." }
 enemy{ id = "tektite_blue", description = "Tektite Bleu" }
 enemy{ id = "tektite_red", description = "Tektite Rouge" }
 

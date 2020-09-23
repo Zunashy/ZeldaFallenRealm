@@ -34,7 +34,7 @@ local dash_speed = 96
 
 -- Dash and back movement methods
 
-local function dash_hit_callback()
+local function kick_hero()
   local m = sol.movement.create("straight")
   m:set_angle(sprite:get_direction() * math.pi / 2)
   m:set_speed(240)
@@ -55,6 +55,10 @@ local function dash_hit_callback()
 
   hero:freeze()
   m:start(hero)
+end
+
+local function dash_hit_callback()
+  kick_hero()
   dash:dEnd()
 end
 
@@ -64,14 +68,15 @@ end
 
 local function check_distance(movement)
   local x, y = enemy:get_position()
-  local d = math.sqrt(math.pow(x - dash.xs, 2) + math.pow(y - dash.ys, 2))
-  local i = 0         
-  if d > 16 then i = 1 end
-  if d > 32 then i = 2 end 
-  if d > 48 then i = 3 end
-  if d > 64 then i = 4 end
-  if d > 80 then i = 5 end
-  if d > 96 then i = 6 end
+  local d = math.sqrt(math.pow(x - dash.xs, 2) + math.pow(y - dash.ys, 2))     
+  local i = 6
+  local l = enemy.step_len
+  for j = 1,6 do
+    if d < j * l then
+      i = j
+      break
+    end
+  end
   if not (enemy.dash_state == i) then 
     enemy:set_dash_state(i)
   end 
@@ -119,6 +124,17 @@ function enemy:on_created()
   enemy:set_life(3)
   enemy:set_damage(2)
   enemy:set_obstacle_behavior("swimming")
+
+  enemy.step_len = enemy:get_property("step_length") or 16
+
+end
+
+local function basic_hit_callback(enemy)
+  if enemy:cone_detect(hero, detect_distance, enemy:get_sprite():get_direction(), detect_angle) then
+    kick_hero()
+  else
+    hero:start_hurt(enemy, 2)
+  end
 end
 
 -- Event called when the enemy should start or restart its movements.
@@ -126,7 +142,7 @@ end
 -- it was hurt or immobilized.
 function enemy:on_restarted()
   enemy:set_attacks_state(1) 
-  enemy.on_attacking_hero = nil
+  enemy.on_attacking_hero = basic_hit_callback
   sol.timer.start(enemy, 100, function()
     local back = (enemy:get_sprite():get_direction() + 2) % 4
     for i = 0,3 do

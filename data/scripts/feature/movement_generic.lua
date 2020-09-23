@@ -102,7 +102,7 @@ function mg.choose_direction(enemy)
   return dirs[i % 4]
 end
 
-function mg.choose_random_direction(entity,callback)
+function mg.choose_random_direction(entity, callback)
   local dirs = {}
   local i = 0
   callback = callback or (function(dir, entity) return dir end)

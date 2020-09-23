@@ -4,8 +4,12 @@ local visualizer = {
     active = false
 }
 
-function visualizer:start_visualization(map, x, y, w, h)
+function visualizer:set_position(x, y, w, h)
     self.box = {x, y, w, h}
+end
+
+function visualizer:start_visualization(map, x, y, w, h)
+    self:set_position(x, y, w, h)
 
     local surf = map:get_camera():get_surface()
     self.prev_shader = surf:get_shader()

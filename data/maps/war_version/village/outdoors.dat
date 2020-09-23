@@ -8009,6 +8009,7 @@ teletransporter{
   height = 16,
   destination_map = "normal_version/village/nielint/outdoors",
   destination = "test_war",
+  sprite = "entities/dungeon_elements/teleport",
 }
 
 destination{
@@ -8017,16 +8018,6 @@ destination{
   x = 80,
   y = 101,
   direction = 1,
-}
-
-custom_entity{
-  layer = 0,
-  x = 80,
-  y = 85,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/dungeon_elements/teleport",
 }
 
 separator{
