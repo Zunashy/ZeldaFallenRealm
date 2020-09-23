@@ -5276,6 +5276,24 @@ custom_entity{
 
 tile{
   layer = 1,
+  x = 640,
+  y = 512,
+  width = 480,
+  height = 128,
+  pattern = "43",
+}
+
+tile{
+  layer = 1,
+  x = 1104,
+  y = 528,
+  width = 16,
+  height = 32,
+  pattern = "74_3",
+}
+
+tile{
+  layer = 1,
   x = 0,
   y = 1024,
   width = 640,
@@ -11308,7 +11326,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 1056,
+  x = 1048,
   y = 656,
   width = 32,
   height = 32,
@@ -55049,15 +55067,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 640,
-  y = 512,
-  width = 480,
-  height = 128,
-  pattern = "43",
-}
-
-tile{
-  layer = 1,
   x = 0,
   y = 768,
   width = 160,
@@ -55539,6 +55548,141 @@ tile{
   width = 16,
   height = 16,
   pattern = "202_8",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 512,
+  width = 512,
+  height = 32,
+  pattern = "211",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 528,
+  width = 512,
+  height = 32,
+  pattern = "211",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 544,
+  width = 512,
+  height = 32,
+  pattern = "211",
+}
+
+tile{
+  layer = 1,
+  x = 944,
+  y = 632,
+  width = 8,
+  height = 16,
+  pattern = "62_3",
+}
+
+tile{
+  layer = 1,
+  x = 944,
+  y = 624,
+  width = 8,
+  height = 8,
+  pattern = "56_3",
+}
+
+tile{
+  layer = 1,
+  x = 952,
+  y = 624,
+  width = 160,
+  height = 8,
+  pattern = "57_3",
+}
+
+tile{
+  layer = 1,
+  x = 952,
+  y = 632,
+  width = 8,
+  height = 8,
+  pattern = "221_5",
+}
+
+tile{
+  layer = 1,
+  x = 960,
+  y = 632,
+  width = 152,
+  height = 8,
+  pattern = "94_5",
+}
+
+tile{
+  layer = 1,
+  x = 1112,
+  y = 560,
+  width = 8,
+  height = 72,
+  pattern = "93_5",
+}
+
+tile{
+  layer = 1,
+  x = 1112,
+  y = 632,
+  width = 8,
+  height = 8,
+  pattern = "219_6",
+}
+
+tile{
+  layer = 1,
+  x = 1104,
+  y = 616,
+  width = 8,
+  height = 16,
+  pattern = "151_8",
+}
+
+tile{
+  layer = 1,
+  x = 1104,
+  y = 560,
+  width = 8,
+  height = 64,
+  pattern = "78_5",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 528,
+  width = 512,
+  height = 32,
+  pattern = "73_3",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 560,
+  width = 512,
+  height = 8,
+  pattern = "42",
+}
+
+tile{
+  layer = 1,
+  x = 1112,
+  y = 560,
+  width = 8,
+  height = 8,
+  pattern = "85_27",
 }
 
 destructible{
