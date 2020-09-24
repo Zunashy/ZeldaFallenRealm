@@ -300,6 +300,7 @@ enemy{ id = "blue_octorock", description = "Octorock Bleu" }
 enemy{ id = "blue_slime", description = "Slime Bleu" }
 enemy{ id = "boss/merman", description = "Boss donjon 1" }
 enemy{ id = "crab", description = "crab" }
+enemy{ id = "hitbox", description = "Hitbox" }
 enemy{ id = "mini_boss/mr_pers", description = "Miniboss Donjon 1" }
 enemy{ id = "moblin_bow", description = "Moblin (arc)" }
 enemy{ id = "moblin_sword", description = "Moblin (Épée)" }
@@ -311,7 +312,6 @@ enemy{ id = "skeleton_1", description = "skeleton_1" }
 enemy{ id = "skeleton_2", description = "skeleton_2" }
 enemy{ id = "skeleton_3", description = "skeleton_3" }
 enemy{ id = "slime_green", description = "slime_green" }
-enemy{ id = "switch", description = "Le bouton. C'est un enemi. Oui." }
 enemy{ id = "tektite_blue", description = "Tektite Bleu" }
 enemy{ id = "tektite_red", description = "Tektite Rouge" }
 
@@ -353,6 +353,7 @@ file{ path = "enemies/blue_octorock.lua", author = "a_tom;TwilCynder", }
 file{ path = "enemies/blue_slime.lua", author = "TwilCynder", }
 file{ path = "enemies/boss/merman.lua", author = "TwilCynder", }
 file{ path = "enemies/crab.lua", author = "TwilCynder", }
+file{ path = "enemies/hitbox.lua", author = "TwilCynder", }
 file{ path = "enemies/mini_boss/mr_pers.lua", author = "TwilCynder", }
 file{ path = "enemies/moblin_bow.lua", author = "TwilCynder", }
 file{ path = "enemies/moblin_sword.lua", author = "TwilCynder", }

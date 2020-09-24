@@ -71,6 +71,22 @@ function dest_meta:is_flammable()
   return name == "tree" or name == "grass"
 end
 
+function dest_meta:on_cut()
+  if self:get_sprite():has_animation("cut") then
+    local x, y, layer = self:get_position()
+    local entity = self:get_map():create_custom_entity({
+      direction = 0,
+      layer = layer,
+      x = x,
+      y = y,
+      sprite = self:get_sprite():get_animation_set(),
+      width = 32,
+      height = 32,
+    })
+    entity:get_sprite():set_animation("cut")
+  end
+end
+
 local carried_meta = sol.main.get_metatable("carried_object")
 local visu = require("scripts/debug/visualizer")
 

@@ -1,0 +1,145 @@
+- nil
+nil
+absence de valeur
+
+- boolean
+true / false
+
+- numbers
+123456
+1e-15
+0xFFFFF
+
+- string
+"a bc \n"
+
+- table
+ensemble de propriétés (clé + valeur)
+{ 0 = "oui , 1 = "abc", bcd = 10}
+table["bcd"] = 12
+table.bcd = table["bcd"]
+
+- functions
+function()
+    ...
+end
+
+f = function() end
+g = f
+
+function f()
+
+f()
+
+- userdata
+
+enemy.a = 10
+
+Expressions
+10 "a"
+
+- ecrire une valeur directement
+- nom d'une variable
+a = 50
+a
+- appel de fonction
+f()
+
+- en combinant 2 expressions 
++ - / * % ..
+
+a + b 
+
+a = exp
+local a = exp
+
+if condition then
+    
+elseif condition then
+
+else
+
+end
+
+== < > ~=
+
+if a < b then
+
+not and or
+
+not b 
+a and b 
+a or b
+
+do
+    ...
+while condition
+
+
+while condition do
+    ...
+end
+
+
+functions
+
+f = function(a, b, c)
+    local ret
+    ...
+    return ret
+end
+
+local table = {}
+table.f = function(a, b)
+    ...
+end
+
+function table:f(a, b)
+    
+end
+
+function table.f(self, a, b)
+    
+end
+
+table:f(10)
+table.f(table, 10)
+
+enemy:kill()
+
+function enemy:on_restarted()
+
+end
+
+
+local f = function()
+    ...
+    return exp1, exp2
+end
+
+
+for i = 1, 12 do
+    ...
+end
+
+for k, v in pairs(t) do
+    ...
+end
+
+
+function pairs(t)
+    return function()
+        ...
+        return k, v
+    end
+end
+
+-------
+local a = 10
+
+local function f()
+    a 
+end
+
+return f
+-----

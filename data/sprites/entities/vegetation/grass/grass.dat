@@ -17,6 +17,8 @@ animation{
 animation{
   name = "cut",
   src_image = "tileset",
+  frame_delay = 70,
   directions = {
+    { x = 0, y = 128, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21, num_frames = 4, num_columns = 1 },
   },
 }
