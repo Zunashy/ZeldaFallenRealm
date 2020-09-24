@@ -5,8 +5,7 @@ properties{
   height = 128,
   min_layer = 0,
   max_layer = 2,
-  tileset = "house",
-  music = "houses",
+  tileset = "House",
 }
 
 tile{
@@ -513,6 +512,16 @@ tile{
   pattern = "33",
 }
 
+teletransporter{
+  layer = 0,
+  x = 56,
+  y = 112,
+  width = 16,
+  height = 16,
+  destination_map = "war_version/village/outdoors",
+  destination = "destination_5",
+}
+
 destination{
   name = "destination",
   layer = 0,
@@ -523,58 +532,18 @@ destination{
 
 teletransporter{
   layer = 0,
-  x = 56,
-  y = 112,
-  width = 16,
-  height = 16,
-  destination_map = "normal_version/village/nielint/outdoors",
-  destination = "mairie",
-}
-
-teletransporter{
-  layer = 0,
   x = 120,
   y = 0,
   width = 16,
   height = 16,
-  destination_map = "normal_version/village/nielint/indoors/mairie_etage",
+  destination_map = "war_version/village/indoors/mairie étage",
 }
 
 destination{
-  name = "etage",
+  name = "destination_2",
   layer = 0,
   x = 128,
   y = 21,
-  direction = 1,
-}
-
-npc{
-  layer = 0,
-  x = 56,
-  y = 61,
   direction = 3,
-  subtype = 1,
-  sprite = "pnj/nielint/4",
-  behavior = "dialog#pnj.village.nielint.indoors.woman_cityhall",
-}
-
-npc{
-  layer = 0,
-  x = 232,
-  y = 45,
-  direction = 3,
-  subtype = 1,
-  sprite = "pnj/nielint/7",
-  behavior = "dialog#pnj.village.nielint.indoors.young_man_cityhall",
-}
-
-npc{
-  layer = 0,
-  x = 168,
-  y = 29,
-  direction = 3,
-  subtype = 1,
-  sprite = "pnj/nielint/14",
-  behavior = "dialog#pnj.village.nielint.indoors.old_man_cityhall",
 }
 

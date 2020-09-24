@@ -58,8 +58,18 @@ map{ id = "war_version/overworld/north_beach/indoors/plain_house", description =
 map{ id = "war_version/overworld/north_beach/jojo_house", description = "maison arbre jojo" }
 map{ id = "war_version/overworld/plain/outdoors_1", description = "plain 1 war version" }
 map{ id = "war_version/overworld/plain/outdoors_2", description = "plain 2 war version" }
+<<<<<<< HEAD
+map{ id = "war_version/village/indoors/destroyed_house", description = "war_version/village/indoors/destroyed_house" }
+map{ id = "war_version/village/indoors/house_01", description = "maison 1 guerre" }
+map{ id = "war_version/village/indoors/house_02", description = "maison 2 guerre" }
+map{ id = "war_version/village/indoors/mairie étage", description = "mairie étage war" }
+map{ id = "war_version/village/indoors/mairie_rdc", description = "mairie rdc war" }
+map{ id = "war_version/village/indoors/shop_war", description = "shop guerre" }
+map{ id = "war_version/village/indoors/tree_house", description = "tree_house war world" }
+=======
 map{ id = "war_version/overworld/sword_cave", description = "war world sword cave" }
 map{ id = "war_version/village/destroyed_house", description = "war_version/village/destroyed_house" }
+>>>>>>> 323a7c52524f354231be813750b377eddd3f1a89
 map{ id = "war_version/village/octorock_cave", description = "octorock cave war" }
 map{ id = "war_version/village/outdoors", description = "war_version/village/outdoors" }
 
