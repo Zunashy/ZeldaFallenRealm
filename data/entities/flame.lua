@@ -65,6 +65,7 @@ function entity:on_created()
     if e:overlaps(self) and is_flammable(e) then
       e:get_sprite():set_animation("burning")
       sol.timer.start(e, 2000, function()
+        e:on_destroyed()
         e:remove()
       end)
     end

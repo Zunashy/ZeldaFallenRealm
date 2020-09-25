@@ -71,6 +71,24 @@ function dest_meta:is_flammable()
   return name == "tree" or name == "grass"
 end
 
+function dest_meta:on_destroyed()
+  local prop = self:get_property("savegame_variable")
+  if prop then
+    self:get_game():set_value(prop, true)
+  end
+end
+
+function dest_meta:on_exploded()
+  self:on_destroyed()
+end
+
+function dest_meta:on_created()
+  local prop = self:get_property("savegame_variable")
+  if prop and self:get_game():get_value(prop) then
+    self:remove()
+  end
+end
+
 function dest_meta:on_cut()
   if self:get_sprite():has_animation("cut") then
     local x, y, layer = self:get_position()
@@ -85,19 +103,13 @@ function dest_meta:on_cut()
     })
     entity:get_sprite():set_animation("cut")
   end
+  self:on_destroyed()
 end
 
 local carried_meta = sol.main.get_metatable("carried_object")
-local visu = require("scripts/debug/visualizer")
 
 function carried_meta:on_thrown()
-  visu:start_visualization(self:get_map(), 0, 0, 0, 0)
   local co = self
-  sol.timer.start(self, 10, function()
-    local x, y = co:get_position()
-    visu:set_position(x, y, 10, 10)
-    return true
-  end)
 
   local _, y = self:get_position()
   self.throw_y = y

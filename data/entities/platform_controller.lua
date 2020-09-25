@@ -18,9 +18,7 @@ function entity:read_properties()
 end
 
 local function collision_callback(controler, other)
-  print(other)
   if other.is_moving_platform and not (other.initial_movement and spawned_inside[other]) then
-    print("oui")
     local m = other:get_movement()
     if m then m:stop() end
 

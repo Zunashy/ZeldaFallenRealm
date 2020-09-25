@@ -157,9 +157,10 @@ destination{
 
 destructible{
   layer = 1,
-  x = 160,
-  y = 261,
+  x = 112,
+  y = 245,
   sprite = "entities/vegetation/grass/grass",
+  weight = -1,
   can_be_cut = true,
 }
 
@@ -168,6 +169,7 @@ destructible{
   x = 208,
   y = 261,
   sprite = "entities/vegetation/arbuste",
+  weight = -1,
 }
 
 destructible{
@@ -349,5 +351,16 @@ custom_entity{
   direction = 0,
   sprite = "entities/dungeon_elements/fragile_ground",
   model = "unstable_ground",
+}
+
+custom_entity{
+  layer = 1,
+  x = 168,
+  y = 221,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/levier",
+  model = "pull_lever",
 }
 

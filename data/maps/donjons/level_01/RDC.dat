@@ -11127,3 +11127,25 @@ custom_entity{
   model = "unstable_ground",
 }
 
+destructible{
+  layer = 0,
+  x = 832,
+  y = 1349,
+  properties = {
+    {
+      key = "savegame_variable",
+      value = "dungeon_1_bush_1",
+    },
+  },
+  sprite = "entities/vegetation/grass/grass",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 856,
+  y = 1349,
+  sprite = "entities/vegetation/grass/grass",
+  can_be_cut = true,
+}
+

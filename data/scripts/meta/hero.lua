@@ -6,6 +6,8 @@ local hero_meta = sol.main.get_metatable("hero")
 
 local hero_sprite, sword_sprite
 
+local pull_lever_state
+
 local function initialize_hero_features(game)
   print("hero")
 
@@ -114,13 +116,24 @@ local function initialize_hero_features(game)
      m:start(self)
      --sol.audio.play_sound("sword_tapping")
     end
+    pull_lever_state = sol.state.create()
+    pull_lever_state:set_can_control_movement(false)
 
+    function pull_lever_state:on_command_released(command)
+      if command == "action" then
+        self:get_entity():unfreeze()
+      end
+    end
   end
       
   function hero:on_taking_damage(dmg)
     game:remove_life(dmg)
   end
 
+end
+
+function hero_meta:start_pull_lever()
+  self:start_state(pull_lever_state)
 end
 
 local game_meta = sol.main.get_metatable("game")
