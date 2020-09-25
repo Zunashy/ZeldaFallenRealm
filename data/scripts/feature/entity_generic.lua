@@ -89,13 +89,13 @@ function eg.shake(entity, dir, amplitude, delay, duration)
   amplitude = amplitude or 1
   local m = sol.movement.create("pixel")
   local vertical = dir % 2 == 1
-  local traj = (vertical and {{0, -amplitude * 2},{0, amplitude * 2}}) or {{-amplitude * 2, 0},{amplitude * 2, 0}}
+  local traj = (vertical and {{0, -amplitude},{0, amplitude}}) or {{-amplitude, 0},{amplitude, 0}}
   m:set_trajectory(traj)
   m:set_delay(delay)
   m:set_loop(true)  
   m:set_ignore_obstacles()
   local x, y = entity:get_position()
-  entity:set_position((vertical and x) or x + amplitude, (vertical and y + amplitude) or y)
+  entity:set_position((vertical and x) or x + amplitude / 2, (vertical and y + amplitude / 2) or y)
   m:start(entity)
 
   if duration and type(entity) == "userdata" then

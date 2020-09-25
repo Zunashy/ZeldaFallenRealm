@@ -25,7 +25,6 @@ function entity:on_created()
 end
 
 function entity:on_interaction()
-  print(self.target.on_interaction)
   if self.target.on_interaction then
     self.target:on_interaction()
   end

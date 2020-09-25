@@ -15,10 +15,6 @@ local hero = map:get_hero()
 local sprite
 local movement
 
-local function hurt_cb()
-  print(self.entity)
-end
-
 -- Event called when the enemy is initialized.
 function enemy:on_created()
   local prop = self:get_property("entity") or ""
@@ -27,12 +23,13 @@ function enemy:on_created()
     self:remove()
     return
   end
-
-  sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
+  sprite = enemy:create_sprite("enemies/bat")
   enemy:set_life(1)
   enemy:set_damage(1)
   self:set_attacks_consequence(hurt_cb)
-  
+  self:set_pushed_back_when_hurt(false)
+  self:set_size(16, 16)
+  self:set_origin(8, 13)
 end
 
 

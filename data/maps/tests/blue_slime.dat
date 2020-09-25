@@ -230,14 +230,6 @@ enemy{
   breed = "blade_trap",
 }
 
-destructible{
-  name = "rochey",
-  layer = 1,
-  x = 264,
-  y = 253,
-  sprite = "entities/projectile/rock",
-}
-
 enemy{
   name = "blue",
   layer = 1,
@@ -268,26 +260,94 @@ pickable{
 }
 
 switch{
+  name = "testswitch",
   layer = 1,
   x = 192,
-  y = 224,
-  subtype = "walkable",
+  y = 192,
+  subtype = "solid",
   sprite = "entities/dungeon_elements/switches",
   needs_block = false,
   inactivate_when_leaving = false,
 }
 
-enemy{
+destructible{
+  name = "rochey_3",
+  layer = 1,
+  x = 120,
+  y = 197,
+  sprite = "entities/projectile/rock",
+}
+
+destructible{
+  name = "rochey_5",
+  layer = 1,
+  x = 176,
+  y = 189,
+  sprite = "entities/projectile/rock",
+}
+
+destructible{
+  name = "rochey_6",
+  layer = 1,
+  x = 144,
+  y = 181,
+  sprite = "entities/projectile/rock",
+}
+
+destructible{
+  name = "rochey_8",
+  layer = 1,
+  x = 160,
+  y = 165,
+  sprite = "entities/projectile/rock",
+}
+
+custom_entity{
   layer = 1,
   x = 200,
-  y = 237,
+  y = 205,
   properties = {
     {
-      key = "entity",
+      key = "target",
       value = "testswitch",
     },
   },
+  width = 16,
+  height = 16,
   direction = 0,
-  breed = "hitbox",
+  model = "interaction_box",
+}
+
+custom_entity{
+  layer = 1,
+  x = 56,
+  y = 237,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/fragile_ground",
+  model = "unstable_ground",
+}
+
+custom_entity{
+  layer = 1,
+  x = 56,
+  y = 221,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/fragile_ground",
+  model = "unstable_ground",
+}
+
+custom_entity{
+  layer = 1,
+  x = 56,
+  y = 253,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/fragile_ground",
+  model = "unstable_ground",
 }
 

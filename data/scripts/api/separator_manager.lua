@@ -15,7 +15,7 @@ function separator_manager:manage_map(map, default)
 
   local enemy_places = {}
   local destructible_places = {}
-  local entities_place = {}
+  local entity_places = {}
   local game = map:get_game()
 
   function map:get_stored_enemies()
@@ -56,6 +56,19 @@ function separator_manager:manage_map(map, default)
       end
     end
 
+    -- Entities.
+    for _, entity_place in ipairs(entity_places) do
+      if entity_place.entity:exists() then
+        entity_place.entity:remove()
+      end
+
+      if entity_place.entity:is_in_same_region(hero)then
+        local old_entity = entity_place.entity
+        local entity = map:create_custom_entity(entity_place)
+        entity_place.entity = entity
+      end
+    end
+
     -- Blocks.
     for block in map:get_entities_property("no_reset", "1", "block", true) do
       -- Reset blocks in regions no longer visible.
@@ -68,10 +81,11 @@ function separator_manager:manage_map(map, default)
   -- Function called when a separator is being taken.
   local function separator_on_activating(separator)
     local hero = map:get_hero()
+    local destructible
 
     -- Destructibles.
     for _, destructible_place in ipairs(destructible_places) do
-      local destructible = destructible_place.destructible
+      destructible = destructible_place.destructible
 
       if not destructible:exists() then
         -- Re-create destructibles in all regions except the active one.
@@ -95,10 +109,10 @@ function separator_manager:manage_map(map, default)
         end
       end
     end
-	
-	for _, e in ipairs(separator_manager.destroy_on_activate) do
-		e:remove()
-	end
+		for _, e in ipairs(separator_manager.destroy_on_activate) do
+      e:remove()
+    end
+
   end
 
   for separator in map:get_entities_property("auto_separator", "1", "separator", default) do
@@ -130,9 +144,9 @@ function separator_manager:manage_map(map, default)
     enemy:register_event("on_dead", death_callback)
 
     local hero = map:get_hero()
-    --if not enemy:is_in_same_region(hero) then
-    --  enemy:remove()
-    --end
+    if not enemy:is_in_same_region(hero) then
+      enemy:remove()
+    end
   end
 
   local function get_destructible_sprite_name(destructible)
@@ -158,6 +172,26 @@ function separator_manager:manage_map(map, default)
       damage_on_enemies = destructible:get_damage_on_enemies(),
       ground = destructible:get_modified_ground(),
       destructible = destructible,
+    }
+  end
+
+  for entity in map:get_entities_property("separator_reset", "1") do
+    local x, y, layer = entity:get_position()
+    local w, h = entity:get_size()
+    local sprite = entity:get_sprite()
+    entity_places[#entity_places + 1] = {
+      x = x,
+      y = y,
+      layer = layer,
+      width = w,
+      height = h,
+      model = entity:get_model(),
+      direction = sprite and sprite:get_direction() or 0,
+      name = entity:get_name(),
+      sprite = sprite and sprite:get_animation_set() or "",
+      entity = entity,
+      enabled_at_start = entity:is_enabled(),
+      properties = entity:get_properties()
     }
   end
 

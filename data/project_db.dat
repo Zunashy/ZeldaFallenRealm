@@ -130,6 +130,7 @@ sprite{ id = "entities/dungeon_elements/color_cube", description = "entities/dun
 sprite{ id = "entities/dungeon_elements/color_cube_destination", description = "Destination cube coloré" }
 sprite{ id = "entities/dungeon_elements/colored_flame", description = "entities/dungeon_elements/colored_flame" }
 sprite{ id = "entities/dungeon_elements/false_floor" }
+sprite{ id = "entities/dungeon_elements/fragile_ground", description = "Sol fragile" }
 sprite{ id = "entities/dungeon_elements/levier" }
 sprite{ id = "entities/dungeon_elements/platform", description = "entities/dungeon_elements/platform" }
 sprite{ id = "entities/dungeon_elements/platform_old", description = "entities/dungeon_elements/platform_old" }
@@ -334,6 +335,7 @@ entity{ id = "octorok_rock", description = "Projecitle Octorick" }
 entity{ id = "platform", description = "Plateforme mouvante" }
 entity{ id = "platform_controller", description = "Contrôleur de plateforme" }
 entity{ id = "shop_item", description = "Item du Shop" }
+entity{ id = "unstable_ground", description = "Sol Instable" }
 
 language{ id = "en", description = "en" }
 language{ id = "fr", description = "fr" }
@@ -435,3 +437,4 @@ file{ path = "scripts/hud/item.lua", author = "TwilCynder", }
 file{ path = "scripts/hud/rupees.lua", author = "TwilCynder", }
 file{ path = "sprites/enemies/blade_trap.dat", author = "Nintendo", }
 file{ path = "sprites/entities/dungeon_elements/color_cube_destination.dat", author = "Zunashy", }
+file{ path = "sprites/entities/dungeon_elements/fragile_ground.dat", author = "TwilCynder", }

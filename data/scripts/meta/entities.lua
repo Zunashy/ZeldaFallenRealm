@@ -107,3 +107,9 @@ function carried_meta:on_breaking()
   local x = self:get_position()
   self:set_position(x, self.throw_y)
 end  
+
+local switch_meta = sol.main.get_metatable("switch")
+
+function switch_meta:on_interaction()
+  self:set_activated(true)
+end

@@ -11078,13 +11078,6 @@ destination{
   direction = 1,
 }
 
-pickable{
-  layer = 0,
-  x = 832,
-  y = 1381,
-  treasure_name = "sword",
-}
-
 custom_entity{
   layer = 0,
   x = 112,
@@ -11115,5 +11108,22 @@ custom_entity{
   height = 24,
   direction = 0,
   model = "platform_controller",
+}
+
+custom_entity{
+  layer = 0,
+  x = 840,
+  y = 1213,
+  properties = {
+    {
+      key = "separator_reset",
+      value = "1",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/fragile_ground",
+  model = "unstable_ground",
 }
 
