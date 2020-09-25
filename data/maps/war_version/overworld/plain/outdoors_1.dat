@@ -2622,13 +2622,14 @@ destination{
   layer = 0,
   x = 16,
   y = 77,
-  direction = 1,
+  direction = 0,
 }
 
 destructible{
   layer = 0,
   x = 40,
   y = 109,
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass_2",
   destruction_sound = "walk_on_grass",
   can_be_cut = true,
@@ -2639,6 +2640,7 @@ destructible{
   layer = 0,
   x = 72,
   y = 205,
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass_4",
   destruction_sound = "walk_on_grass",
   can_be_cut = true,
@@ -2649,8 +2651,9 @@ destructible{
   layer = 0,
   x = 56,
   y = 213,
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass_3",
-  destruction_sound = "walk_on_water",
+  destruction_sound = "walk_on_grass",
   can_be_cut = true,
   damage_on_enemies = 0,
 }
@@ -2659,6 +2662,7 @@ destructible{
   layer = 0,
   x = 56,
   y = 197,
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass_2",
   destruction_sound = "walk_on_grass",
   can_be_cut = true,
