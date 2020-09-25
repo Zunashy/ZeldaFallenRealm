@@ -5,7 +5,7 @@ properties{
   height = 400,
   min_layer = 0,
   max_layer = 2,
-  tileset = "dungeon/tileset_donjon_1",
+  tileset = "war_world",
 }
 
 tile{
@@ -157,8 +157,8 @@ destination{
 
 destructible{
   layer = 1,
-  x = 112,
-  y = 245,
+  x = 120,
+  y = 253,
   sprite = "entities/vegetation/grass/grass",
   weight = -1,
   can_be_cut = true,
