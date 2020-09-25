@@ -5538,7 +5538,7 @@ teletransporter{
   y = 624,
   width = 96,
   height = 16,
-  destination_map = "war_version/overworld/forest",
+  destination_map = "war_version/overworld/forest/forest",
   destination = "destination",
 }
 
@@ -5591,7 +5591,7 @@ teletransporter{
   y = 0,
   width = 64,
   height = 16,
-  destination_map = "war_version/overworld/jojo_tree",
+  destination_map = "war_version/overworld/north_beach/jojo_tree",
   destination = "destination_2",
 }
 

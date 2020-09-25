@@ -6798,7 +6798,7 @@ teletransporter{
   y = 0,
   width = 32,
   height = 16,
-  destination_map = "war_version/overworld/north beach",
+  destination_map = "war_version/overworld/north_beach/north beach",
   destination = "destination",
 }
 

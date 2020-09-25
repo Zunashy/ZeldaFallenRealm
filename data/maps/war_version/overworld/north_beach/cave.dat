@@ -221,7 +221,7 @@ teletransporter{
   y = 0,
   width = 16,
   height = 16,
-  destination_map = "war_version/overworld/north beach",
+  destination_map = "war_version/overworld/north_beach/north beach",
   destination = "destination_6",
 }
 
@@ -230,6 +230,6 @@ destination{
   layer = 0,
   x = 80,
   y = 21,
-  direction = 1,
+  direction = 3,
 }
 

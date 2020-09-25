@@ -4154,15 +4154,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 80,
-  y = 80,
-  width = 8,
-  height = 8,
-  pattern = "85_58",
-}
-
-tile{
-  layer = 0,
   x = 40,
   y = 88,
   width = 8,
@@ -7198,6 +7189,15 @@ tile{
   pattern = "138_2",
 }
 
+tile{
+  layer = 0,
+  x = 88,
+  y = 88,
+  width = 8,
+  height = 8,
+  pattern = "85_58",
+}
+
 destructible{
   layer = 0,
   x = 24,
@@ -7249,7 +7249,7 @@ teletransporter{
   y = 304,
   width = 16,
   height = 16,
-  destination_map = "war_version/village/destroyed_house",
+  destination_map = "war_version/village/indoors/destroyed_house",
 }
 
 teletransporter{
@@ -7268,7 +7268,7 @@ teletransporter{
   y = 192,
   width = 16,
   height = 16,
-  destination_map = "war_version/village/outdoors",
+  destination_map = "war_version/village/indoors/house_02",
 }
 
 teletransporter{
@@ -7874,7 +7874,7 @@ teletransporter{
   y = 32,
   width = 16,
   height = 16,
-  destination_map = "war_version/village/outdoors",
+  destination_map = "war_version/village/indoors/tree_house",
 }
 
 destination{
@@ -7936,6 +7936,7 @@ teletransporter{
   width = 16,
   height = 48,
   destination_map = "war_version/overworld/north_beach/north beach",
+  destination = "destination_3",
 }
 
 destination{
@@ -8016,7 +8017,7 @@ destination{
   name = "test_war",
   layer = 0,
   x = 80,
-  y = 101,
+  y = 93,
   direction = 1,
 }
 
