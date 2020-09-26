@@ -6,7 +6,6 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "war_world",
-  music = "horon village",
 }
 
 tile{
@@ -3598,103 +3597,103 @@ tile{
 
 tile{
   layer = 0,
-  x = 480,
+  x = 488,
   y = 144,
   width = 16,
   height = 16,
   pattern = "237_3",
-}
-
-tile{
-  layer = 0,
-  x = 464,
-  y = 160,
-  width = 16,
-  height = 16,
-  pattern = "237_3",
-}
-
-tile{
-  layer = 0,
-  x = 448,
-  y = 160,
-  width = 16,
-  height = 16,
-  pattern = "237_3",
-}
-
-tile{
-  layer = 0,
-  x = 432,
-  y = 144,
-  width = 16,
-  height = 16,
-  pattern = "237_3",
-}
-
-tile{
-  layer = 0,
-  x = 432,
-  y = 136,
-  width = 16,
-  height = 8,
-  pattern = "10_2",
-  tileset = "war_world",
-}
-
-tile{
-  layer = 0,
-  x = 480,
-  y = 136,
-  width = 16,
-  height = 8,
-  pattern = "10_2",
-  tileset = "war_world",
-}
-
-tile{
-  layer = 0,
-  x = 424,
-  y = 144,
-  width = 8,
-  height = 16,
-  pattern = "8_2",
-  tileset = "war_world",
-}
-
-tile{
-  layer = 0,
-  x = 448,
-  y = 144,
-  width = 8,
-  height = 8,
-  pattern = "12_2",
-  tileset = "war_world",
 }
 
 tile{
   layer = 0,
   x = 472,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "237_3",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "237_3",
+}
+
+tile{
+  layer = 0,
+  x = 440,
   y = 144,
-  width = 8,
+  width = 16,
+  height = 16,
+  pattern = "237_3",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 136,
+  width = 16,
   height = 8,
-  pattern = "8_2",
+  pattern = "10_2",
   tileset = "war_world",
 }
 
 tile{
   layer = 0,
-  x = 496,
+  x = 488,
+  y = 136,
+  width = 16,
+  height = 8,
+  pattern = "10_2",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 432,
   y = 144,
   width = 8,
   height = 16,
-  pattern = "12_2",
+  pattern = "8_2",
   tileset = "war_world",
 }
 
 tile{
   layer = 0,
   x = 456,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "12_2",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "8_2",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 144,
+  width = 8,
+  height = 16,
+  pattern = "12_2",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 464,
   y = 152,
   width = 16,
   height = 8,
@@ -3704,27 +3703,17 @@ tile{
 
 tile{
   layer = 0,
-  x = 432,
-  y = 160,
-  width = 8,
-  height = 8,
-  pattern = "6_2",
-  tileset = "war_world",
-}
-
-tile{
-  layer = 0,
-  x = 488,
-  y = 160,
-  width = 8,
-  height = 8,
-  pattern = "6_2",
-  tileset = "war_world",
-}
-
-tile{
-  layer = 0,
   x = 440,
+  y = 160,
+  width = 8,
+  height = 8,
+  pattern = "6_2",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 448,
   y = 168,
   width = 8,
   height = 8,
@@ -3734,7 +3723,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 480,
+  x = 488,
   y = 168,
   width = 8,
   height = 8,
@@ -3744,17 +3733,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 448,
-  y = 176,
-  width = 32,
-  height = 8,
-  pattern = "6_2",
-  tileset = "war_world",
-}
-
-tile{
-  layer = 0,
-  x = 448,
+  x = 456,
   y = 152,
   width = 8,
   height = 8,
@@ -3764,7 +3743,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 472,
+  x = 480,
   y = 152,
   width = 8,
   height = 8,
@@ -3774,7 +3753,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 440,
+  x = 448,
   y = 160,
   width = 8,
   height = 8,
@@ -3784,7 +3763,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 480,
+  x = 488,
   y = 160,
   width = 8,
   height = 8,
@@ -4902,7 +4881,7 @@ tile{
 tile{
   layer = 0,
   x = 448,
-  y = 112,
+  y = 104,
   width = 16,
   height = 16,
   pattern = "132_2",
@@ -4910,7 +4889,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 432,
+  x = 448,
   y = 120,
   width = 16,
   height = 16,
@@ -4928,8 +4907,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 448,
-  y = 128,
+  x = 432,
+  y = 112,
   width = 16,
   height = 16,
   pattern = "132_3",
@@ -7198,6 +7177,26 @@ tile{
   pattern = "85_58",
 }
 
+tile{
+  layer = 0,
+  x = 496,
+  y = 160,
+  width = 8,
+  height = 8,
+  pattern = "6_2",
+  tileset = "war_world",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 176,
+  width = 32,
+  height = 8,
+  pattern = "6_2",
+  tileset = "war_world",
+}
+
 destructible{
   layer = 0,
   x = 24,
@@ -7846,7 +7845,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 440,
+  x = 448,
   y = 157,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
@@ -7858,7 +7857,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 456,
+  x = 464,
   y = 173,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
@@ -7950,7 +7949,7 @@ destination{
 
 destructible{
   layer = 0,
-  x = 472,
+  x = 480,
   y = 173,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
@@ -7962,7 +7961,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 488,
+  x = 496,
   y = 157,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
