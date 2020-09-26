@@ -9,7 +9,7 @@ local hero_sprite, sword_sprite
 local pull_lever_state
 
 local function initialize_hero_features(game)
-  print("hero")
+  print("init_hero")
 
   local hero = game:get_hero()
   hero.get_corner_position = eg.get_corner_position
@@ -116,16 +116,25 @@ local function initialize_hero_features(game)
      m:start(self)
      --sol.audio.play_sound("sword_tapping")
     end
-    pull_lever_state = sol.state.create()
-    pull_lever_state:set_can_control_movement(false)
+  end
 
-    function pull_lever_state:on_command_released(command)
-      if command == "action" then
-        self:get_entity():unfreeze()
+  pull_lever_state = sol.state.create()
+  pull_lever_state:set_can_control_movement(false)
+  pull_lever_state:set_can_control_direction(false)
+
+  function pull_lever_state:stop()
+    self:get_entity():unfreeze()
+  end
+
+  function pull_lever_state:on_command_released(command)
+    if command == "action" then
+      self:stop()
+      if self.lever and self.lever.state == 1 then 
+        self.lever:release()
       end
     end
   end
-      
+
   function hero:on_taking_damage(dmg)
     game:remove_life(dmg)
   end
@@ -134,6 +143,7 @@ end
 
 function hero_meta:start_pull_lever()
   self:start_state(pull_lever_state)
+  return pull_lever_state
 end
 
 local game_meta = sol.main.get_metatable("game")

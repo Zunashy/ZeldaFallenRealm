@@ -6070,6 +6070,19 @@ destination{
   direction = 1,
 }
 
+destructible{
+  layer = 0,
+  x = 360,
+  y = 669,
+  properties = {
+    {
+      key = "savegame_variable",
+      value = "dungeon_2_grass_door_1",
+    },
+  },
+  sprite = "entities/vegetation/grass_door",
+}
+
 custom_entity{
   layer = 1,
   x = 440,

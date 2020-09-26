@@ -9,6 +9,6 @@ animation{
   name = "pull",
   src_image = "tileset",
   directions = {
-    { x = 112, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 118, y = 80, frame_width = 4, frame_height = 16, origin_x = 2, origin_y = 13 },
   },
 }
