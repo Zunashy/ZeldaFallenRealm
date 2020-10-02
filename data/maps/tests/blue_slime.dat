@@ -166,15 +166,6 @@ destination{
 
 destructible{
   layer = 1,
-  x = 120,
-  y = 253,
-  sprite = "entities/vegetation/grass/grass",
-  weight = -1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
   x = 208,
   y = 261,
   sprite = "entities/vegetation/arbuste",
@@ -193,7 +184,7 @@ block{
   name = "colored_block",
   layer = 1,
   x = 256,
-  y = 205,
+  y = 245,
   sprite = "entities/dungeon_elements/color_cube",
   pushable = true,
   pullable = false,
@@ -222,8 +213,8 @@ custom_entity{
 
 pickable{
   layer = 1,
-  x = 232,
-  y = 205,
+  x = 200,
+  y = 197,
   treasure_name = "rock_feather",
 }
 
@@ -265,16 +256,16 @@ custom_entity{
 
 pickable{
   layer = 1,
-  x = 240,
-  y = 221,
+  x = 152,
+  y = 253,
   treasure_name = "sword",
 }
 
 switch{
   name = "testswitch",
   layer = 1,
-  x = 192,
-  y = 192,
+  x = 168,
+  y = 152,
   subtype = "solid",
   sprite = "entities/dungeon_elements/switches",
   needs_block = false,
@@ -315,8 +306,8 @@ destructible{
 
 custom_entity{
   layer = 1,
-  x = 200,
-  y = 205,
+  x = 176,
+  y = 165,
   properties = {
     {
       key = "target",
@@ -363,6 +354,7 @@ custom_entity{
 }
 
 custom_entity{
+  name = "lever_test",
   layer = 1,
   x = 168,
   y = 221,
@@ -377,6 +369,25 @@ custom_entity{
   direction = 0,
   sprite = "entities/dungeon_elements/levier",
   model = "pull_lever",
+}
+
+door{
+  name = "test_door",
+  layer = 1,
+  x = 128,
+  y = 192,
+  direction = 3,
+  sprite = "entities/door/door",
+}
+
+npc{
+  name = "snas",
+  layer = 1,
+  x = 232,
+  y = 205,
+  direction = 3,
+  subtype = 1,
+  sprite = "test/snas",
 }
 
 tile{

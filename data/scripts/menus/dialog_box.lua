@@ -35,18 +35,18 @@ local dialog_box = {
   -- Graphics.
   surface = nil,
   box_surface = nil,
+  cursor_surface = nil,
   icons_img = nil,
   end_arrow = nil,
   arrow_timer = nil,
   draw_arrow = false,
-  box_position = {x = 0, y = 0},      -- Destination coordinates of the dialog box.
+  box_position = nil,      -- Destination coordinates of the dialog box.
   question_dst_position = nil, -- Destination coordinates of the question icon.
   icon_dst_position = nil,     -- Destination coordinates of the icon.
   df_font = "oracle",
   current_font = "", 
   font_size = 9,
-  text_color = { 248, 208, 136 } -- Text color.
-
+  choice_cursor_positions = {24, 100, y = 24}
 }
 
 
@@ -70,16 +70,20 @@ function text_pos:reset()
   self.y = 6
 end
 
+function on_game_started()
+  -- Initialize dialog box data.
+  --dialog_box.font, dialog_box.font_size = language_manager:get_dialog_font()
+  for i = 1, nb_visible_lines do
+    dialog_box.line_surfaces[i] = gen.char_surface.create(text_max_width, 11, "")
+  end
 
--- Initialize dialog box data.
---dialog_box.font, dialog_box.font_size = language_manager:get_dialog_font()
-for i = 1, nb_visible_lines do
-  dialog_box.line_surfaces[i] = gen.char_surface.create(text_max_width, 11, "")
+  dialog_box.surface = sol.surface.create(sol.video.get_quest_size())
+  dialog_box.box_surface = sol.surface.create(box_size.w, box_size.h)
+  dialog_box.end_arrow = sol.surface.create("menus/dialog.png")
+  dialog_box.cursor_surface = sol.surface.create("menus/dialog_cursor.png")
+
+  dialog_box.box_position = gen.vector_class()
 end
-
-dialog_box.surface = sol.surface.create(sol.video.get_quest_size())
-dialog_box.box_surface = sol.surface.create(box_size.w, box_size.h)
-dialog_box.end_arrow = sol.surface.create("menus/dialog.png")
 
 --dialog_box.box_img = sol.surface.create("hud/dialog_box.png")
 --dialog_box.icons_img = sol.surface.create("hud/dialog_icons.png")
@@ -95,7 +99,7 @@ function dialog_box:on_started()
 
   local map = game:get_map()
   local _, camera_y, _, camera_height = map:get_camera():get_bounding_box()
-  local hero = map:get_entity("hero")
+  local hero = game:get_hero()
   if hero:is_enabled() and hero:is_visible() then
     local _, hero_y = hero:get_position()
     if hero_y - camera_y > camera_height - 56 and not self.dialog.position == "1" then
@@ -110,7 +114,9 @@ function dialog_box:on_finished()
   self.arrow_timer = nil
   game:set_custom_command_effect("action", nil)
   if game:is_dialog_enabled() then 
-    game:stop_dialog()
+    local answer
+    if self.dialog.choice then answer = self.selected_answer end
+    game:stop_dialog({dialog = self.dialog.dialog_id, answer = answer})
   end
 end
 
@@ -118,8 +124,12 @@ function dialog_box:on_draw(dst_surface)
   local x, y = self.box_position:get()
   self.box_surface:fill_color({0, 0, 0})
 
-  if self:is_full() and self.draw_arrow then
-    self.end_arrow:draw(self.box_surface, arrow_pos.x, arrow_pos.y)
+  if self:is_full() then
+    if self:is_choice_active() then
+      self.cursor_surface:draw(self.box_surface, self.choice_cursor_positions[self.selected_answer], self.choice_cursor_positions.y)
+    elseif self.draw_arrow then
+      self.end_arrow:draw(self.box_surface, arrow_pos.x, arrow_pos.y)
+    end
   end
   
   local text_y = text_pos.y
@@ -137,7 +147,11 @@ function dialog_box:on_command_pressed(command)
   if command == "action" and dialog_box:is_full() then
     dialog_box:advance()
   elseif command == "attack" then 
-    dialog_box:skip()    
+    dialog_box:skip()
+  elseif command == "left" and self:is_choice_active() then
+    self.selected_answer = 1
+  elseif command == "right" and self:is_choice_active() then
+    self.selected_answer = 2
   end
   return true
 end
@@ -150,13 +164,8 @@ function dialog_box:quit()
   end
 end
 
-function dialog_box.box_position:get()
-  return self.x, self.y
-end
-
-function dialog_box.box_position:set(x, y)
-  self.x = x
-  self.y = y
+function dialog_box:is_choice_active()
+  return self.dialog.choice and not self:has_more_lines()
 end
 
 function dialog_box:is_line_full()
@@ -165,8 +174,7 @@ end
 
 -- Updates the result of is_full().
 function dialog_box:check_full()
-  if self.new_lines > 1 or 
-   not self:has_more_lines() then
+  if self.new_lines > 1 or not self:has_more_lines() then
     self.full = true
   else
     self.full = false
@@ -260,6 +268,12 @@ function dialog_box:show_dialog()
   text = text:gsub("\r\n", "\n"):gsub("\r", "\n")
   self.line_it = text:gmatch("([^\n]*)\n")  -- Each line including empty ones.
   self.next_line = self.line_it()
+
+  if self.dialog.choice then
+    self.dialog.choice = 1
+  end
+  self.selected_answer = 1
+
   self.line_index = 0
   
   self.current_font = self.df_font
@@ -305,7 +319,12 @@ function dialog_box:start_next_line()
   text_pos:reset()
 
   self.current_line = self.next_line
-  self.next_line = self.line_it()  
+  self.next_line = self.line_it()
+
+  if self.next_line == nil and self.dialog.choice == 1 then
+    self.next_line = "    yes     no"
+    self.dialog.choice = 2
+  end
 
   self.new_lines = self.new_lines + 1
 
@@ -407,9 +426,16 @@ function dialog_box:show_next_char()
 end
 
 function dialog_box:show_next_dialog()
-  if self.next_dialog then
-    dialog_box.dialog = dialog
-    dialog_box.info = info 
+  local next 
+  if self.selected_answer == 2 then 
+    next = self.dialog.next_dialog_2 
+  else
+    next = self.dialog.next_dialog
+  end
+
+  if next then
+    self.dialog = sol.language.get_dialog(next)
+    self.dialog.dialog_id = next
     self:show_dialog()
   else
     self:quit()
@@ -438,13 +464,15 @@ end
 function dialog_box:set_text_speed(speed)
   self.text_speed = speed
 end
+
 --====== BINDING THE DIALOG TO THE GAME ======
 
 local function dialog_start_callback(game, dialog, info)
   dialog_box.dialog = dialog
   dialog_box.info = (dialog.use_preset_info) and dialog_box.info or info
+
   if sol.menu.is_started(dialog_box) then 
-    print("already started")
+    print("/!\\ Tried starting a dialog but the dialog menu is already started")
     sol.menu.stop(dialog_box) 
   end
   sol.menu.start(game, dialog_box)
@@ -455,6 +483,7 @@ local function get_dialog_box(game)
 end
 
 local function bind_to_game(game_)
+  on_game_started()
   game = game_
   game:register_event("on_dialog_started", dialog_start_callback)
   game.get_dialog_box = get_dialog_box

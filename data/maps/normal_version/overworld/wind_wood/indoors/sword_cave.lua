@@ -19,7 +19,6 @@ function map:on_started_()
 			map:enable_entity("octo")
 		end
 	end
-	
 end
 
 -- Event called after the opening transition effect of the map,

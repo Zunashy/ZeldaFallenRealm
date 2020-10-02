@@ -27,6 +27,8 @@ function map:on_started_()
   if game:get_story_state() == 0 then sol.audio.disable_music() end
 end
 
+
+
 function map:on_opening_transition_finished()
   if game:get_story_state() == 0 then
 
@@ -44,7 +46,7 @@ function map:on_opening_transition_finished()
 
     local mHero = init_movement()
     local mRadeau = init_movement()
-
+    
     function mHero:on_finished()
       eg.shake(map:get_camera(), 0, 2, 50)
       sol.timer.start(800, function()
@@ -55,7 +57,19 @@ function map:on_opening_transition_finished()
     mHero:start(hero)
     mRadeau:start(map:get_entity("radeau"))
     vfx.fade_in(game)
+  elseif game:get_story_state() == 4 then
+    map:get_entity("sensor_1").on_activated = function()
 
+      hero:freeze()
+      
+      local m = sol.movement.create("straight")
+      m:set_speed(64)
+      m:set_angle(math.pi)
+      m:set_max_distance(120)      
+
+      m:start(map:get_entity("sorcier"))
+
+    end
   end
 
   self:discover(cases)

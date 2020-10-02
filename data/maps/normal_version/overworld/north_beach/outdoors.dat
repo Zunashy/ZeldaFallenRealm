@@ -7577,6 +7577,39 @@ npc{
   behavior = "dialog#pnj.overworld.north_beach.guard",
 }
 
+npc{
+  name = "sorcier",
+  layer = 1,
+  x = 344,
+  y = 189,
+  properties = {
+    {
+      key = "is_story_state",
+      value = "4",
+    },
+  },
+  direction = 0,
+  subtype = 1,
+  sprite = "pnj/main/sorcier",
+}
+
+sensor{
+  name = "sensor_1",
+  layer = 1,
+  x = 344,
+  y = 237,
+  width = 16,
+  height = 16,
+}
+
+destination{
+  name = "test",
+  layer = 1,
+  x = 344,
+  y = 325,
+  direction = 1,
+}
+
 tile{
   layer = 2,
   x = 352,

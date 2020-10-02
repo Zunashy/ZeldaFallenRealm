@@ -10525,16 +10525,6 @@ door{
   savegame_variable = "dungeon_1_door_boss",
 }
 
-npc{
-  name = "zuna",
-  layer = 0,
-  x = 840,
-  y = 37,
-  direction = 3,
-  subtype = 1,
-  sprite = "pnj/nielint/5",
-}
-
 destination{
   name = "out_b_2",
   layer = 0,

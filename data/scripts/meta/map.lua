@@ -72,6 +72,10 @@ local function generic_start_callback(map)
         if prop and tonumber(prop) < game:get_story_state() then
             e:set_enabled(false)
         end
+        prop = e:get_property("is_story_state")
+        if prop and tonumber(prop) ~= game:get_story_state() then
+            e:set_enabled(false)
+        end
         prop = e:get_property("spawn_savegame_variable")
         if prop and game:get_value(prop) then
             e:set_enabled(true)
@@ -86,8 +90,6 @@ local function call_alt_on_started(map)
         map:on_started_()
     end
 end
-
-
 
 map_meta:register_event("on_started", generic_start_callback)
 map_meta:register_event("on_started", call_alt_on_started)

@@ -39,11 +39,11 @@ function gen.class(bClass)
   local newclass = {}
   newclass.mt = {
     __index = newclass,
-    __tostring = function () return newclass.name end
+    __tostring = function () return "class : " .. newclass.name end
   }
 
   function newclass:new(...)
-    local inst, info
+    local inst
     if type(self.build) == "function" then
       inst = self:build(...) or {}
     elseif bClass then
@@ -168,5 +168,18 @@ function gen.random(bound, upper)
   end
   return res 
 end
+
+gen.vector_class = gen.class()
+
+function gen.vector_class:set(x, y)
+  self.x = x
+  self.y = y
+end
+
+function gen.vector_class:get()
+  return self.x, self.y
+end
+
+gen.vector_class.name = "Vector"
 
 return gen
