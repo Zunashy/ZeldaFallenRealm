@@ -5,7 +5,8 @@ local inventory_menu = {
     items = {
         "rock_feather",
         "ice_seed",
-        "fire_seed"
+        "fire_seed",
+        "horn"
     },
     items_sprites = {},
     enable_info_text = true
@@ -93,18 +94,49 @@ function inventory_menu:on_draw(dst_surface, game_menu)
     end
 end
 
+local function use_item_callback(item, unpause)
+    if unpause then
+        inventory_menu.game_menu.game:set_paused(false)
+    end
+    item:on_using()
+end
+
+function inventory_menu:use_item(item)
+    if item.use_from_inventory and true then
+        if item.on_using_from_inventory then
+            item:on_using_from_inventory(use_item_callback)
+        else
+            item:on_using()
+        end
+    end
+end
+
+function inventory_menu:assign_item(item, slot)
+    if item:is_assignable() then
+        item:get_game():set_item_assigned(slot, item)
+    else
+        self:use_item(item)
+    end
+end
+
 function inventory_menu:on_command_pressed(command)
     local cx, cy
+    local ret = true
     if command == "item_1" then
         local item = self:get_selected_item()
         if item and item:get_variant() ~= 0 then
-            item:get_game():set_item_assigned(1, item)
+            self:assign_item(item, 1)
         end
 	elseif command == "item_2" then
 		local item = self:get_selected_item()
 		if item and item:get_variant() ~= 0 then
-			item:get_game():set_item_assigned(2, item)
-		end
+			self:assign_item(item, 1)
+        end
+    elseif command == "action" then
+        local item = self:get_selected_item()
+        if item and item:get_variant() ~= 0 then
+            self:use_item(item)
+        end
     elseif command == "right" then
         cx, cy = slot_index_to_coords(self.cursor)
         cx = cx + 1
@@ -129,7 +161,10 @@ function inventory_menu:on_command_pressed(command)
         if cy > 3 then cy = 0 end
         self.cursor = slot_coords_to_index(cx, cy)
         self:on_selection_changed()
+    else
+        ret = false
     end
+    return ret
 end
 
 --Replacing the items names by the items objects when the game starts

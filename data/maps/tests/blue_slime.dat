@@ -385,6 +385,16 @@ npc{
   layer = 1,
   x = 232,
   y = 205,
+  properties = {
+    {
+      key = "horn_map",
+      value = "tests/dungeon",
+    },
+    {
+      key = "horn_destination",
+      value = "destination",
+    },
+  },
   direction = 3,
   subtype = 1,
   sprite = "test/snas",

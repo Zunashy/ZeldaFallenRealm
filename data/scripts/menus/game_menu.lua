@@ -67,8 +67,12 @@ function game_menu:init_info_surface(name, desc)
 
     sol.timer.stop_all(self)
     if not (name and desc) then return false end
-    info_name_text_surface:set_text_key(name)
-    info_desc_text_surface:set_text_key(desc)
+    local name_text = sol.language.get_string(name)
+    local desc_text = sol.language.get_string(desc)
+    if name_text and desc_text then
+        info_name_text_surface:set_text(name_text)
+        info_desc_text_surface:set_text(desc_text)
+    end
 
     local desc_size, _ = info_desc_text_surface:get_size()
     self.info_pre_surface = sol.surface.create(152 + desc_size, 19)
@@ -224,10 +228,10 @@ function game_menu:on_command_pressed(command)
             self.current_page_index = 1
         end
         self:open_page(self.main_pages[self.current_page_index], true)
-    end
-
-    if self.current_page.on_command_pressed then
-        self.current_page:on_command_pressed(command)
+    elseif command == "attack" then
+        self.game:set_paused(false)
+    elseif self.current_page.on_command_pressed then
+        return self.current_page:on_command_pressed(command)
     end
 end
 

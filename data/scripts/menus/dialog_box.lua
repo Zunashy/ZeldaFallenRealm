@@ -92,8 +92,6 @@ end
 --====== DIALOG MENU CALLBACKS ======
 
 function dialog_box:on_started()
-  --debug
-  --print(dialog_box.dialog.text)
   self.char_delay = char_delays[self.text_speed] -- à remplacer par une vraie sélection de la vitesse (settings ?)
   self.box_position:set(8, 96)
 
@@ -111,13 +109,6 @@ function dialog_box:on_started()
 end
 
 function dialog_box:on_finished()
-  self.arrow_timer = nil
-  game:set_custom_command_effect("action", nil)
-  if game:is_dialog_enabled() then 
-    local answer
-    if self.dialog.choice then answer = self.selected_answer end
-    game:stop_dialog({dialog = self.dialog.dialog_id, answer = answer})
-  end
 end
 
 function dialog_box:on_draw(dst_surface)
@@ -159,9 +150,19 @@ end
 --====== DIALOG MENU FUNCTIONS ======
 
 function dialog_box:quit()
+  print("oui")
   if sol.menu.is_started(self) then
     sol.menu.stop(self)
   end
+  
+  self.arrow_timer = nil
+  game:set_custom_command_effect("action", nil)
+  if game:is_dialog_enabled() then 
+    local answer
+    if self.dialog.choice then answer = self.selected_answer end
+    game:stop_dialog({dialog = self.dialog.dialog_id, answer = answer})
+  end
+  
 end
 
 function dialog_box:is_choice_active()
@@ -322,7 +323,7 @@ function dialog_box:start_next_line()
   self.next_line = self.line_it()
 
   if self.next_line == nil and self.dialog.choice == 1 then
-    self.next_line = "    yes     no"
+    self.next_line = "    oui      non"
     self.dialog.choice = 2
   end
 

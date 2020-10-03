@@ -116,6 +116,21 @@ et taillez en pièces tout ce qui vous tombe sous la main !
 }
 
 dialog{
+  id = "item.horn",
+  choice = "1",
+  text = [[
+utiliser la corne ?
+]],
+}
+
+dialog{
+  id = "item.horn.no_npc",
+  text = [[
+Rien ne se passe ...
+]],
+}
+
+dialog{
   id = "pnj.end",
   text = [[
 Merci à toi d'avoir joué jusqu'ici ! C'est ici que s'achève la partie terminée, ce qui suit est encore en développement.
