@@ -66,6 +66,7 @@ function gen.class(bClass)
       meta = bClass
     else
       meta = {__index = bClass}
+      newclass.super = bClass
     end
   else 
     meta = {}
@@ -181,5 +182,21 @@ function gen.vector_class:get()
 end
 
 gen.vector_class.name = "Vector"
+
+gen.rect_class = gen.class(gen.vector_class)
+
+
+function gen.rect_class:set(x, y, w, h)
+  self.super.set(self, x, y)
+  self.w = w
+  self.h = h
+end
+
+function gen.rect_class:get()
+  local x, y = self.super.get(self)
+  return x, y, self.w, self.h
+end
+
+gen.rect_class.name = "Rectangle"
 
 return gen

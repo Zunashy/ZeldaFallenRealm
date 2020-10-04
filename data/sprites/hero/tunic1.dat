@@ -121,6 +121,18 @@ animation{
   },
 }
 animation{
+  name = "horn",
+  src_image = "hero/Charset_Link.png",
+  frame_delay = 400,
+  frame_to_loop_on = 1,
+  directions = {
+    { x = 96, y = 128, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 96, y = 128, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 96, y = 128, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 96, y = 128, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+  },
+}
+animation{
   name = "hurt",
   src_image = "hero/Charset_Link.png",
   directions = {

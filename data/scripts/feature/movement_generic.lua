@@ -219,4 +219,16 @@ function mg.start_jumping(entity, direction, distance, speed, callback)
   return m
 end
 
+function mg.move_straight(entity, direction, distance, speed, callback, change_direction)
+  local m = sol.movement.create("straight")
+  m:set_speed(speed or 16)
+  m:set_angle((direction or 0) * (math.pi / 2))
+  m:set_distance(distance or 16)
+  m:start(entity, callback)
+  if change_direction then
+    entity:get_sprite():set_direction(direction)
+  end
+  return m
+end
+
 return mg

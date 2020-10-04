@@ -1,0 +1,4 @@
+shader{
+  fragment_file = "shockwave.glsl",
+  scaling_factor = 1,
+}

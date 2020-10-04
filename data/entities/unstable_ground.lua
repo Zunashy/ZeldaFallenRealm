@@ -13,12 +13,8 @@ local game = entity:get_game()
 local map = entity:get_map()
 local hero = map:get_hero()
 
-local crumble_delay = 1500
-local fall_delay = 1500
-
-local is_hero_here = false
-local get_time =  sol.main.get_elapsed_time
-local start_time = 0
+local crumble_delay = 1000
+local fall_delay = 1000
 
 local function start_shaking()
   eg.shake(entity, 1, 1, 100, nil)
@@ -34,6 +30,10 @@ end
 
 -- Event called when the custom entity is initialized.
 function entity:on_created()
+  local is_hero_here = false
+  local get_time =  sol.main.get_elapsed_time
+  local start_time = 0
+
   sol.timer.start(self, 40, function()
     if check_hero() then
       if not is_hero_here then

@@ -41,6 +41,7 @@ end
 local meta = sol.main.get_metatable("game") --what comes after this line is about the input management during a game
 
 --DEBUG COMMANDS FUNCTION
+local vfx = require("scripts/api/visual_effects")
 function meta:on_key_pressed(key, modifiers) --manages inputs upstream of the commands management
   local handled = false
   if key == "f5" then
@@ -71,6 +72,8 @@ function meta:on_key_pressed(key, modifiers) --manages inputs upstream of the co
     print(sol.main.game:get_value("small_keys"))
   elseif key == "f8" then
     sol.main.game:get_hero():teleport("donjons/level_01/RDC")
+  elseif key == "f9" then
+    vfx.shockwave(sol.main.game:get_map():get_camera():get_surface(), 64, 64, 1, 10, 30, 0.4)
   end
 
   return handled

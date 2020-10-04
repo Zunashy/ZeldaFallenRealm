@@ -400,6 +400,16 @@ npc{
   sprite = "test/snas",
 }
 
+custom_entity{
+  layer = 1,
+  x = 192,
+  y = 221,
+  width = 32,
+  height = 32,
+  direction = 0,
+  model = "poisoned_water",
+}
+
 tile{
   layer = 2,
   x = 160,

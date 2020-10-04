@@ -1,0 +1,4 @@
+shader{
+  fragment_file = "poisoned_effect.frag.glsl",
+  scaling_factor = 1,
+}

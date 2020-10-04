@@ -28,22 +28,32 @@ end
 
 local obs_uniform_names = {"light1", "light2", "light3", "light4"}
 
---NOTE : s'il s'avène qu'on n'utilise l'obscurité que sur des maps à séparateurs, retirer le test de position
+function game_meta:manage_obscurity_shader(camera, shader)
+  local i = 1
+  local cx, cy, cw, ch = camera:get_bounding_box()
+  for i, light in ipairs(map.active_lights) do
+    local power, x, y = (light.light_power or 30), light:get_position()
+    x, y = x - cx, y - cy + 8
+    if x > -power and x < cw + power * 2 and y > -power and y < ch + power * 2 then
+      shader:set_uniform(obs_uniform_names[i], {x, y, power})
+      i = i + 1
+    end
+  end
+  --print(map.active_lights)
+end
+
+--NOTE : s'il s'avère qu'on n'utilise l'obscurité que sur des maps à séparateurs, retirer le test de position
 function game_meta:on_draw(dst_surf)
   local map = self:get_map()
   local camera = map:get_camera()
-  local i = 1
-  if camera:get_surface():get_shader() == self.obscurity_shader and map.lights then
-    local cx, cy, cw, ch = camera:get_bounding_box()
-    for i, light in ipairs(map.active_lights) do
-      local power, x, y = (light.light_power or 30), light:get_position()
-      x, y = x - cx, y - cy + 8
-      if x > -power and x < cw + power * 2 and y > -power and y < ch + power * 2 then
-        self.obscurity_shader:set_uniform(obs_uniform_names[i], {x, y, power})
-        i = i + 1
-      end
-    end
-    --print(map.active_lights)
+  local shader = camera:get_surface():get_shader()
+
+  if shader == self.shaders.obscurity and map.lights then
+    self:obscure(camera, shader)
+  end
+
+  if shader and shader.on_draw then
+    shader:on_draw(self)
   end
 
   if self.game_over_link_sprite then
@@ -60,8 +70,7 @@ function game_meta:on_started()
     self.started = true
   end
 
-  --self.obscurity_shader = sol.shader.create("obscurity")
-  --self.chroma_shader = sol.shader.create("shader")
+  self.shaders = require("scripts/api/shader")
 end
 
 function game_meta:on_finished()

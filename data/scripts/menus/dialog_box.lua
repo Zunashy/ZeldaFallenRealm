@@ -150,7 +150,6 @@ end
 --====== DIALOG MENU FUNCTIONS ======
 
 function dialog_box:quit()
-  print("oui")
   if sol.menu.is_started(self) then
     sol.menu.stop(self)
   end

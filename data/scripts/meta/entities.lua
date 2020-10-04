@@ -125,3 +125,10 @@ local switch_meta = sol.main.get_metatable("switch")
 function switch_meta:on_interaction()
   self:set_activated(true)
 end
+
+local camera_meta = sol.main.get_metatable("camera")
+
+function camera_meta:get_position_on_camera(x, y)
+  local cx, cy = self:get_position()
+  return x - cx, y - cy
+end

@@ -30,17 +30,25 @@ function item:on_using_from_inventory(callback)
   end)
 end
 
+local vfx = require("scripts/api/visual_effects")
 function item:on_using()
   local hero = game:get_hero()
   local npc = self:find_npc()
   if npc then
-    hero:teleport(npc:get_property("horn_map"), npc:get_property("horn_destination"), "fade")
-    item:set_finished()
+    hero:freeze()
+    hero:get_sprite():set_animation("horn")
+
+    local camera = game:get_map():get_camera()
+    local x, y = camera:get_position_on_camera(hero:get_position())
+    vfx.shockwave(camera:get_surface(), x, y, 1, 10, 30, 0.4)
+
+    sol.timer.start(hero, 2000, function()
+      hero:teleport(npc:get_property("horn_map"), npc:get_property("horn_destination"), "fade")
+      item:set_finished()
+    end)
   else
-    print("non")
     game:start_dialog("item.horn.no_npc", function() item:set_finished() end)
   end
-
 end
 
 function item:on_obtained()
