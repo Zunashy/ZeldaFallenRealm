@@ -6,7 +6,8 @@ local inventory_menu = {
         "rock_feather",
         "ice_seed",
         "fire_seed",
-        "horn"
+        [9] = "horn",
+        [13] = "bracelet"
     },
     items_sprites = {},
     enable_info_text = true
@@ -32,7 +33,7 @@ local items_pos = {
     h_offset = 32,
     v_offset = 24,
     tl_offset = {
-        x = 32, 
+        x = 34, 
         y = 21
     }
 }
@@ -64,7 +65,7 @@ end
 
 --SUBMENU METHODS : will be called by the game_menu methods
 function inventory_menu:on_started(game_menu)
-    for i, item in ipairs(self.items) do 
+    for i, item in pairs(self.items) do 
         if item:get_variant() ~= 0 and not (self.items_sprites[item] and 
           self.items_sprites[item]:get_direction() == item:get_variant() - 1) then 
             self.items_sprites[item] = sol.sprite.create("entities/items")
@@ -85,7 +86,7 @@ function inventory_menu:on_draw(dst_surface, game_menu)
     local x, y = cursor_pos.tl_offset.x + (cx * cursor_pos.h_offset), cursor_pos.tl_offset.y + (cy * cursor_pos.v_offset)
     self.game_menu.cursor_surface:draw(dst_surface, x, y)
 
-    for i, item in ipairs(self.items) do
+    for i, item in pairs(self.items) do
         if item:get_variant() ~= 0 then
             cx, cy = slot_index_to_coords(i)
             x, y = items_pos.tl_offset.x + (cx * items_pos.h_offset), items_pos.tl_offset.y + (cy * items_pos.v_offset)
@@ -169,7 +170,7 @@ end
 
 --Replacing the items names by the items objects when the game starts
 function inventory_menu:preload(game)
-    for k, v in ipairs(inventory_menu.items) do
+    for k, v in pairs(inventory_menu.items) do
         inventory_menu.items[k] = game:get_item(v)
     end
 	self.initalized = true

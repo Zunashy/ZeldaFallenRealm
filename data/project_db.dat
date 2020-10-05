@@ -287,6 +287,7 @@ sound{ id = "walk_on_grass", description = "walk_on_grass" }
 sound{ id = "walk_on_water", description = "walk_on_water" }
 
 item{ id = "bomb", description = "Bombe" }
+item{ id = "bracelet", description = "Bracelet de Force" }
 item{ id = "fire_seed", description = "Graine de feu" }
 item{ id = "great_key", description = "great_key" }
 item{ id = "heart", description = "heart" }
@@ -394,6 +395,7 @@ file{ path = "entities/platform.lua", author = "TwilCynder", }
 file{ path = "entities/platform_controller.lua", author = "TwilCynder", }
 file{ path = "entities/poisoned_water.lua", author = "TwilCynder", }
 file{ path = "entities/shop_item.lua", author = "TwilCynder", }
+file{ path = "items/bracelet.lua", author = "TwilCynder", }
 file{ path = "items/fire_seed.lua", author = "TwilCynder", }
 file{ path = "items/great_key.lua", author = "TwilCynder", }
 file{ path = "items/heart.lua", author = "TwilCynder", }

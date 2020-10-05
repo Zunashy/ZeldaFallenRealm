@@ -40,9 +40,9 @@ function item:on_using()
 
     local camera = game:get_map():get_camera()
     local x, y = camera:get_position_on_camera(hero:get_position())
-    vfx.shockwave(camera:get_surface(), x, y, 1, 10, 30, 0.4)
+    vfx.shockwave(camera:get_surface(), x, y, 1, 5, 30, 0.4)
 
-    sol.timer.start(hero, 2000, function()
+    sol.timer.start(hero, 1000, function()
       hero:teleport(npc:get_property("horn_map"), npc:get_property("horn_destination"), "fade")
       item:set_finished()
     end)

@@ -7,7 +7,7 @@ precision mediump float;
 
 in vec2 sol_vtex_coord;
 in vec4 sol_vcolor;
-layout(origin_upper_left, pixel_center_integer) in vec4 gl_FragCoord;
+layout(pixel_center_integer) in vec4 gl_FragCoord;
 
 out vec4 FragColor;
 
@@ -25,7 +25,7 @@ void main(){
     float dist = distance(gl_FragCoord.xy, center);
 
     if ((dist <= rad + width) && (dist >= rad - width)){
-        float diff = (dist - rad) / width; //to stay between -1.0 and 1.0
+        float diff = (rad - dist) / width; //to stay between -1.0 and 1.0
         float diffPow = 1.0 - pow(abs(diff), refraction);
         float diffFinal = diff * diffPow;
         vec2 dir = normalize(gl_FragCoord.xy - center);
