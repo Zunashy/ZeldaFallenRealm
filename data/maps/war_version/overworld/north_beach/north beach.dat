@@ -5996,3 +5996,48 @@ enemy{
   treasure_name = "random",
 }
 
+npc{
+  layer = 1,
+  x = 48,
+  y = 541,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/pirates/captain",
+}
+
+npc{
+  layer = 1,
+  x = 128,
+  y = 589,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/pirates/3",
+}
+
+npc{
+  layer = 1,
+  x = 112,
+  y = 541,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/pirates/4",
+}
+
+npc{
+  layer = 1,
+  x = 264,
+  y = 461,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/pirates/2",
+}
+
+npc{
+  layer = 1,
+  x = 344,
+  y = 605,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/pirates/2",
+}
+
