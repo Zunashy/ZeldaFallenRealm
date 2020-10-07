@@ -5,6 +5,20 @@ dialog{
 }
 
 dialog{
+  id = "_treasure.essence.1",
+  text = [[
+Vous obtenez ... un objet mystérieux ?
+]],
+}
+
+dialog{
+  id = "_treasure.essence.2",
+  text = [[
+Vous obtenez ... un autre objet mystérieux ?
+]],
+}
+
+dialog{
   id = "_treasure.great_key.1",
   text = [[
 Vous avez trouvé la grande clé ! Elle permet d'ouvrir la porte du boss.
@@ -43,6 +57,13 @@ dialog{
   use_preset_info = "1",
   text = [[
 Vous obtenez un quart de coeur ! Trouvez en 4 pour ajouter un coeur à votre barre de vie. Encore $v !
+]],
+}
+
+dialog{
+  id = "_treasure.horn.1",
+  text = [[
+Vous obtenez la Corne de Guerre !
 ]],
 }
 
@@ -131,9 +152,51 @@ Rien ne se passe ...
 }
 
 dialog{
+  id = "item.horn.svp",
+  text = [[
+Pour des raisons scénaristiques, il serait préférable que Link utilise la corne 
+]],
+}
+
+dialog{
   id = "pnj.end",
   text = [[
 Merci à toi d'avoir joué jusqu'ici ! C'est ici que s'achève la partie terminée, ce qui suit est encore en développement.
+]],
+}
+
+dialog{
+  id = "pnj.main.sorcier.first_encounter.1",
+  text = [[
+$n ! Je t'attendais.
+]],
+}
+
+dialog{
+  id = "pnj.main.sorcier.first_encounter.2",
+  text = [[
+bla bla bla prend la corne etc
+]],
+}
+
+dialog{
+  id = "pnj.main.zuna.first_encounter.1",
+  text = [[
+ptdr t ki
+]],
+}
+
+dialog{
+  id = "pnj.main.zuna.first_encounter.2",
+  text = [[
+olala mais c mon épée
+]],
+}
+
+dialog{
+  id = "pnj.main.zuna.first_encounter.3",
+  text = [[
+bla bla utilise la corne
 ]],
 }
 
@@ -431,6 +494,22 @@ dialog{
   choice = "1",
   text = [[
 darude sandstorm
+]],
+}
+
+dialog{
+  id = "test.sans4",
+  next_dialog = "test.sans5",
+  text = [[
+test lol
+]],
+}
+
+dialog{
+  id = "test.sans5",
+  illustrate_item = "essence",
+  text = [[
+ça marche wouhouuuu
 ]],
 }
 

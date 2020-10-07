@@ -175,6 +175,8 @@ sprite{ id = "hud/piece_of_heart_icon", description = "hud/piece_of_heart_icon" 
 sprite{ id = "menus/dialog_end", description = "menus/dialog_end" }
 sprite{ id = "menus/solarus_logo", description = "menus/solarus_logo" }
 sprite{ id = "pnj/main/sorcier", description = "Sorcier" }
+sprite{ id = "pnj/main/zuna", description = "Prince Zuna" }
+sprite{ id = "pnj/main/zuna_sword", description = "Epee de Zuna" }
 sprite{ id = "pnj/nielint/1", description = "pnj/nielint/1" }
 sprite{ id = "pnj/nielint/10", description = "pnj/nielint/10" }
 sprite{ id = "pnj/nielint/11", description = "pnj/nielint/11" }
@@ -207,6 +209,7 @@ sprite{ id = "shadows/shadow_big", description = "shadows/shadow_big" }
 sprite{ id = "shadows/shadow_big_dynamic", description = "shadows/shadow_big_dynamic" }
 sprite{ id = "shadows/shadow_small", description = "shadows/shadow_small" }
 sprite{ id = "test/snas", description = "test/snas" }
+sprite{ id = "things/exclamation", description = "Exclamation" }
 sprite{ id = "things/fall_on_hole_effect", description = "things/fall_on_hole_effect" }
 sprite{ id = "things/grass_effect", description = "things/grass_effect" }
 sprite{ id = "things/lava_splash_effect", description = "things/lava_splash_effect" }
@@ -260,6 +263,7 @@ sound{ id = "door_open", description = "door_open" }
 sound{ id = "door_unlocked", description = "door_unlocked" }
 sound{ id = "enemy_hurt", description = "enemy_hurt" }
 sound{ id = "enemy_killed", description = "enemy_killed" }
+sound{ id = "exclamation", description = "exclamation" }
 sound{ id = "heart", description = "heart" }
 sound{ id = "hero_falls", description = "hero_falls" }
 sound{ id = "hero_hurt", description = "hero_hurt" }
@@ -288,6 +292,7 @@ sound{ id = "walk_on_water", description = "walk_on_water" }
 
 item{ id = "bomb", description = "Bombe" }
 item{ id = "bracelet", description = "Bracelet de Force" }
+item{ id = "essence", description = "Essences" }
 item{ id = "fire_seed", description = "Graine de feu" }
 item{ id = "great_key", description = "great_key" }
 item{ id = "heart", description = "heart" }
@@ -396,6 +401,7 @@ file{ path = "entities/platform_controller.lua", author = "TwilCynder", }
 file{ path = "entities/poisoned_water.lua", author = "TwilCynder", }
 file{ path = "entities/shop_item.lua", author = "TwilCynder", }
 file{ path = "items/bracelet.lua", author = "TwilCynder", }
+file{ path = "items/essence.lua", author = "TwilCynder", }
 file{ path = "items/fire_seed.lua", author = "TwilCynder", }
 file{ path = "items/great_key.lua", author = "TwilCynder", }
 file{ path = "items/heart.lua", author = "TwilCynder", }
@@ -450,3 +456,6 @@ file{ path = "sprites/enemies/blade_trap.dat", author = "Nintendo", }
 file{ path = "sprites/entities/dungeon_elements/color_cube_destination.dat", author = "Zunashy", }
 file{ path = "sprites/entities/dungeon_elements/fragile_ground.dat", author = "TwilCynder", }
 file{ path = "sprites/pnj/main/sorcier.dat", author = "Zunashy", }
+file{ path = "sprites/pnj/main/zuna.dat", author = "Zunashy", }
+file{ path = "sprites/pnj/main/zuna_sword.dat", author = "Zunashy", }
+file{ path = "sprites/things/exclamation.dat", author = "Nintendo", }

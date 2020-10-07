@@ -7224,6 +7224,24 @@ tile{
   pattern = "74",
 }
 
+tile{
+  layer = 0,
+  x = 216,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "47_6",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "47_6",
+}
+
 destructible{
   layer = 0,
   x = 24,
@@ -7716,30 +7734,6 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 232,
-  y = 109,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 248,
-  y = 93,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
   x = 264,
   y = 109,
   treasure_name = "random",
@@ -8097,6 +8091,58 @@ enemy{
   direction = 0,
   breed = "blue_octorock",
   treasure_name = "random",
+}
+
+sensor{
+  name = "sensor_1",
+  layer = 0,
+  x = 216,
+  y = 125,
+  width = 64,
+  height = 16,
+}
+
+custom_entity{
+  name = "zuna",
+  layer = 0,
+  x = 240,
+  y = 45,
+  properties = {
+    {
+      key = "is_story_state",
+      value = "4",
+    },
+    {
+      key = "horn_map",
+      value = "normal_version/village/nielint/indoors/bar",
+    },
+    {
+      key = "horn_destination",
+      value = "horn",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "pnj/main/zuna",
+}
+
+npc{
+  layer = 0,
+  x = 240,
+  y = 29,
+  properties = {
+    {
+      key = "horn_map",
+      value = "normal_version/village/nielint/indoors/bar",
+    },
+    {
+      key = "horn_destination",
+      value = "horn",
+    },
+  },
+  direction = 3,
+  subtype = 1,
 }
 
 tile{

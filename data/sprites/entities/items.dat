@@ -20,6 +20,14 @@ animation{
   },
 }
 animation{
+  name = "essence",
+  src_image = "items/essence.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "fire_seed",
   src_image = "items/inventory_items.png",
   directions = {

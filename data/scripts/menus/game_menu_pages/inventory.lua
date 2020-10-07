@@ -1,13 +1,13 @@
 --initializing the submenu object
 local inventory_menu = {
     bg_sprite = "menus/inventory.png",
+    bg_image = nil,
     bg_surface = nil,
     items = {
         "rock_feather",
         "ice_seed",
         "fire_seed",
-        [9] = "horn",
-        [13] = "bracelet"
+        [13] = "horn",
     },
     items_sprites = {},
     enable_info_text = true
@@ -38,8 +38,6 @@ local items_pos = {
     }
 }
 
-inventory_menu.bg_surface = sol.surface.create("menus/inventory.png")
-
 --local functions and generic methods
 function inventory_menu:get_selected_item()
     return self.items[self.cursor]
@@ -65,12 +63,18 @@ end
 
 --SUBMENU METHODS : will be called by the game_menu methods
 function inventory_menu:on_started(game_menu)
+    self.bg_surface:clear()
+    self.bg_image:draw(self.bg_surface)
     for i, item in pairs(self.items) do 
-        if item:get_variant() ~= 0 and not (self.items_sprites[item] and 
-          self.items_sprites[item]:get_direction() == item:get_variant() - 1) then 
-            self.items_sprites[item] = sol.sprite.create("entities/items")
-            self.items_sprites[item]:set_animation(item:get_name())
-            self.items_sprites[item]:set_direction(item:get_variant() - 1)
+        if item:get_variant() ~= 0  then 
+            if not (self.items_sprites[item] and self.items_sprites[item]:get_direction() == item:get_variant() - 1) then
+                self.items_sprites[item] = sol.sprite.create("entities/items")
+                self.items_sprites[item]:set_animation(item:get_name())
+                self.items_sprites[item]:set_direction(item:get_variant() - 1)
+            end
+            cx, cy = slot_index_to_coords(i)
+            x, y = items_pos.tl_offset.x + (cx * items_pos.h_offset), items_pos.tl_offset.y + (cy * items_pos.v_offset)
+            self.items_sprites[item]:draw(self.bg_surface, x, y)
         end 
     end    
 end
@@ -85,14 +89,6 @@ function inventory_menu:on_draw(dst_surface, game_menu)
     local cx, cy = slot_index_to_coords(self.cursor)
     local x, y = cursor_pos.tl_offset.x + (cx * cursor_pos.h_offset), cursor_pos.tl_offset.y + (cy * cursor_pos.v_offset)
     self.game_menu.cursor_surface:draw(dst_surface, x, y)
-
-    for i, item in pairs(self.items) do
-        if item:get_variant() ~= 0 then
-            cx, cy = slot_index_to_coords(i)
-            x, y = items_pos.tl_offset.x + (cx * items_pos.h_offset), items_pos.tl_offset.y + (cy * items_pos.v_offset)
-            self.items_sprites[item]:draw(dst_surface, x, y)
-        end
-    end
 end
 
 local function use_item_callback(item, unpause)
@@ -171,8 +167,10 @@ end
 --Replacing the items names by the items objects when the game starts
 function inventory_menu:preload(game)
     for k, v in pairs(inventory_menu.items) do
-        inventory_menu.items[k] = game:get_item(v)
+        self.items[k] = game:get_item(v)
     end
+    self.bg_image = sol.surface.create("menus/inventory.png")
+    self.bg_surface = sol.surface.create(self.bg_image:get_size())
 	self.initalized = true
 end
 

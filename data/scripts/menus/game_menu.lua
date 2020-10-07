@@ -260,8 +260,8 @@ local function start_callback(game)
 
     for k, v in pairs(game_menu.pages) do
         if v.preload and not v.initalized then 
-		v:preload(game)
-	end
+		    v:preload(game)
+	    end
     end            
 end
 

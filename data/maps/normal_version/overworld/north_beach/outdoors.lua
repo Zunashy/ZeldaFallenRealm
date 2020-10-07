@@ -56,19 +56,44 @@ function map:on_opening_transition_finished()
 
     mHero:start(hero)
     mRadeau:start(map:get_entity("radeau"))
-    vfx.fade_in(game)
+    vfx.fade_in(40)
   elseif game:get_story_state() == 4 then
     map:get_entity("sensor_1").on_activated = function()
 
       hero:freeze()
-      
-      local m = sol.movement.create("straight")
-      m:set_speed(64)
-      m:set_angle(math.pi)
-      m:set_max_distance(120)      
+      local sorcier = map:get_entity("sorcier")
 
-      m:start(map:get_entity("sorcier"))
+      local function start_horn_dialog()
+        game:start_dialog("item.horn", function(res)
+          if res.answer == 2 then
+            game:start_dialog("item.horn.svp", start_horn_dialog)
+          else
+            local sprite = hero:get_sprite()
+            sprite:set_animation("horn")
+            sprite:set_paused(true)
+            sol.timer.start(hero, 2000, function()
+              sprite:set_frame(1)
+              local vfx = require("scripts/api/visual_effects")
+              local camera = map:get_camera()
+              local x, y = camera:get_position_on_camera(hero:get_position())
+              vfx.shockwave(camera:get_surface(), x, y, 1, 5, 30, 0.4)
+              sol.timer.start(hero, 1500, function()
+                hero:teleport("war_version/overworld/forest/sword_cave", "horn", "fade")
+              end)
+            end)
+          end
+        end)
+      end
 
+      sorcier:exclamation(function()
+        game:start_dialog("pnj.main.sorcier.first_encounter.1", function()
+          mg.move_straight(sorcier, 3, 16, 64, function()
+            game:start_dialog("pnj.main.sorcier.first_encounter.2", function()
+              hero:start_treasure("horn", 1, "", start_horn_dialog)
+            end)
+          end)
+        end)
+      end)
     end
   end
 

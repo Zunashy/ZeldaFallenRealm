@@ -1,0 +1,8 @@
+animation{
+  name = "default",
+  src_image = "things/exclam.png",
+  frame_delay = 150,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+  },
+}

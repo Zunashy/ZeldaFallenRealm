@@ -7581,7 +7581,7 @@ npc{
   name = "sorcier",
   layer = 1,
   x = 344,
-  y = 189,
+  y = 205,
   properties = {
     {
       key = "is_story_state",

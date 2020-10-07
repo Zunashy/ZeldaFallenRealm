@@ -39,7 +39,6 @@ function game_meta:manage_obscurity_shader(camera, shader)
       i = i + 1
     end
   end
-  --print(map.active_lights)
 end
 
 --NOTE : s'il s'avère qu'on n'utilise l'obscurité que sur des maps à séparateurs, retirer le test de position
@@ -54,6 +53,10 @@ function game_meta:on_draw(dst_surf)
 
   if shader and shader.on_draw then
     shader:on_draw(self)
+  end
+
+  if self.visual_effect then
+    self.visual_effect(dst_surf)
   end
 
   if self.game_over_link_sprite then

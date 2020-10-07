@@ -1012,3 +1012,11 @@ destructible{
   weight = 1,
 }
 
+destination{
+  name = "horn",
+  layer = 0,
+  x = 248,
+  y = 77,
+  direction = 1,
+}
+

@@ -1,5 +1,9 @@
+text{ key = "items.bracelet.description", value = "Permet de soulever les rochers" }
+text{ key = "items.bracelet.name", value = "Bracelet de Force" }
 text{ key = "items.fire_seed.description", value = "BRULE PUTAIN BRULE" }
 text{ key = "items.fire_seed.name", value = "Graine de feu" }
+text{ key = "items.horn.description", value = "? ? ?" }
+text{ key = "items.horn.name", value = "Corne de Guerre" }
 text{ key = "items.rock_feather.description", value = "Permet de sauter" }
 text{ key = "items.rock_feather.name", value = "Plume de Roc" }
 text{ key = "menus.quest.qheart.description", value = "Collectez-en 4 pour obtenir un coeur supplémentaire !" }

@@ -91,6 +91,12 @@ local function initialize_hero_features(game)
     self.pObject.speed = -3.2
   end
 
+  function hero:on_state_changing(current, next)
+    if current == "treasure" then
+      sol.audio.restore_music()
+    end
+  end
+
   function hero:on_state_changed(s)
     local map = game:get_map()
     if not map then return false end
@@ -115,6 +121,8 @@ local function initialize_hero_features(game)
      m:set_max_distance(3)
      m:start(self)
      --sol.audio.play_sound("sword_tapping")
+    elseif s == "treasure" then
+      sol.audio.disable_music()
     end
   end
 

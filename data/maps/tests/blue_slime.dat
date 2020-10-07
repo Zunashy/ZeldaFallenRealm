@@ -4,7 +4,7 @@ properties{
   width = 400,
   height = 400,
   min_layer = 0,
-  max_layer = 2,
+  max_layer = 4,
   tileset = "dungeon/tileset_donjon_1",
 }
 
@@ -408,6 +408,14 @@ custom_entity{
   height = 32,
   direction = 0,
   model = "poisoned_water",
+}
+
+pickable{
+  layer = 1,
+  x = 248,
+  y = 221,
+  treasure_name = "essence",
+  treasure_variant = 2,
 }
 
 tile{

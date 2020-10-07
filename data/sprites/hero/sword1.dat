@@ -21,6 +21,16 @@ animation{
   },
 }
 animation{
+  name = "stopped",
+  src_image = "hero/sword1.png",
+  directions = {
+    { x = 0, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "sword_load_stopped",
   src_image = "hero/sword1.png",
   frame_delay = 50,
@@ -50,6 +60,18 @@ animation{
     { x = 152, y = 16, frame_width = 8, frame_height = 32, origin_x = 9, origin_y = 27, num_frames = 2 },
     { x = 136, y = 0, frame_width = 32, frame_height = 8, origin_x = 20, origin_y = 6, num_frames = 2, num_columns = 1 },
     { x = 184, y = 0, frame_width = 8, frame_height = 32, origin_x = 1, origin_y = 14, num_frames = 2 },
+  },
+}
+animation{
+  name = "sword_looping",
+  src_image = "hero/sword1.png",
+  frame_delay = 100,
+  frame_to_loop_on = 2,
+  directions = {
+    { x = 72, y = 0, frame_width = 32, frame_height = 32, origin_x = 8, origin_y = 30, num_frames = 3, num_columns = 1 },
+    { x = 104, y = 0, frame_width = 32, frame_height = 32, origin_x = 8, origin_y = 28, num_frames = 3, num_columns = 1 },
+    { x = 40, y = 0, frame_width = 32, frame_height = 32, origin_x = 24, origin_y = 30, num_frames = 3, num_columns = 1 },
+    { x = 8, y = 0, frame_width = 32, frame_height = 32, origin_x = 24, origin_y = 14, num_frames = 3, num_columns = 1 },
   },
 }
 animation{

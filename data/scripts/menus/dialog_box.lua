@@ -1,5 +1,3 @@
-local game
-
 --====== INIT DIALOG_BOX =======
 local dialog_box = {
 
@@ -36,6 +34,7 @@ local dialog_box = {
   surface = nil,
   box_surface = nil,
   cursor_surface = nil,
+  illutration_surface = nil,
   icons_img = nil,
   end_arrow = nil,
   arrow_timer = nil,
@@ -70,7 +69,7 @@ function text_pos:reset()
   self.y = 6
 end
 
-function on_game_started()
+local function on_game_started()
   -- Initialize dialog box data.
   --dialog_box.font, dialog_box.font_size = language_manager:get_dialog_font()
   for i = 1, nb_visible_lines do
@@ -83,6 +82,8 @@ function on_game_started()
   dialog_box.cursor_surface = sol.surface.create("menus/dialog_cursor.png")
 
   dialog_box.box_position = gen.vector_class()
+  dialog_box.illutration_surface = sol.surface.create(32, 32)
+
 end
 
 --dialog_box.box_img = sol.surface.create("hud/dialog_box.png")
@@ -95,12 +96,12 @@ function dialog_box:on_started()
   self.char_delay = char_delays[self.text_speed] -- à remplacer par une vraie sélection de la vitesse (settings ?)
   self.box_position:set(8, 96)
 
-  local map = game:get_map()
-  local _, camera_y, _, camera_height = map:get_camera():get_bounding_box()
-  local hero = game:get_hero()
+  local map = self.game:get_map()
+  local hero = self.game:get_hero()
+  local _, hero_y = map:get_camera():get_position_on_camera(hero:get_position())
+  local _, cam_h = map:get_camera():get_size()
   if hero:is_enabled() and hero:is_visible() then
-    local _, hero_y = hero:get_position()
-    if hero_y - camera_y > camera_height - 56 and not self.dialog.position == "1" then
+    if hero_y > cam_h - 56 and not (self.dialog.position == "1") then
       self.box_position:set(8, 24)
     end
   end
@@ -130,6 +131,9 @@ function dialog_box:on_draw(dst_surface)
     text_y = text_y + line_spacing
   end
   
+  if self.illustrate then
+    self.illutration_surface:draw(self.surface, 64, 48)
+  end
   self.box_surface:draw(self.surface, x, y)
   self.surface:draw(dst_surface)
 end
@@ -154,12 +158,13 @@ function dialog_box:quit()
     sol.menu.stop(self)
   end
   
+  self.illustrate = false
   self.arrow_timer = nil
-  game:set_custom_command_effect("action", nil)
-  if game:is_dialog_enabled() then 
+  self.game:set_custom_command_effect("action", nil)
+  if self.game:is_dialog_enabled() then 
     local answer
     if self.dialog.choice then answer = self.selected_answer end
-    game:stop_dialog({dialog = self.dialog.dialog_id, answer = answer})
+    self.game:stop_dialog({dialog = self.dialog.dialog_id, answer = answer})
   end
   
 end
@@ -254,6 +259,24 @@ function dialog_box:parse_text()
   self.dialog.text = text
 end
 
+function dialog_box:init_illustration(sprite)
+  self.illutration_surface:fill_color({0, 0, 0})
+  sprite:draw(self.illutration_surface, 16, 21)
+  self.illustrate = true
+end
+
+function dialog_box:illustrate_item(name)
+  if not name then return end
+  local item_name, variant = name:xfields("#")
+  local item = self.game:get_item(item_name)
+  if item then
+    local sprite = sol.sprite.create("entities/items")
+    sprite:set_animation(item_name)
+    sprite:set_direction((variant or 1) - 1)
+    self:init_illustration(sprite)
+  end
+end
+
 function dialog_box:show_dialog()
 -- Initialize this dialog.
   local dialog = self.dialog
@@ -264,6 +287,7 @@ function dialog_box:show_dialog()
     -- There is a "$v" sequence to substitute.
     text = text:gsub("%$v", dialog_box.info)
   end
+  text = text:gsub("%$n", self.game:get_value("name"))
   -- Split the text in lines.
   text = text:gsub("\r\n", "\n"):gsub("\r", "\n")
   self.line_it = text:gmatch("([^\n]*)\n")  -- Each line including empty ones.
@@ -273,6 +297,12 @@ function dialog_box:show_dialog()
     self.dialog.choice = 1
   end
   self.selected_answer = 1
+
+  if self.illustrate_item then
+    self:illustrate_item(self.dialog.illustrate_item)
+  else
+    self.illustrate = false
+  end
 
   self.line_index = 0
   
@@ -434,9 +464,14 @@ function dialog_box:show_next_dialog()
   end
 
   if next then
-    self.dialog = sol.language.get_dialog(next)
-    self.dialog.dialog_id = next
-    self:show_dialog()
+    local dialog = sol.language.get_dialog(next)
+    if dialog then
+      self.dialog = dialog
+      self.dialog.dialog_id = next
+      self:show_dialog()
+    else
+      self:quit()
+    end
   else
     self:quit()
   end
@@ -484,9 +519,9 @@ end
 
 local function bind_to_game(game_)
   on_game_started()
-  game = game_
-  game:register_event("on_dialog_started", dialog_start_callback)
-  game.get_dialog_box = get_dialog_box
+  dialog_box.game = game_
+  game_:register_event("on_dialog_started", dialog_start_callback)
+  game_.get_dialog_box = get_dialog_box
 end
 
 --When the game starts, binds everything to it.

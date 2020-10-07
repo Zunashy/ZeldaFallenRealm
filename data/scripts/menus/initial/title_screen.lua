@@ -19,7 +19,7 @@ start_surface_pos = {
 }
 
 function title_screen:on_started()
-    vfx.fade_in(self, 20, {255, 255, 255})
+    vfx.fade_in(20, {255, 255, 255})
     sol.timer.start(self, 800, function()
         title_screen.view_cursor = not title_screen.view_cursor
         return true

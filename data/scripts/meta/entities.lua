@@ -45,6 +45,7 @@ function sep_meta:on_activated()
 end
 
 local npc_meta = sol.main.get_metatable("npc")
+
 local function npc_interaction(npc)
   local dialog = npc:get_property("dialog")
   if dialog then
@@ -53,6 +54,25 @@ local function npc_interaction(npc)
 end
 
 npc_meta:register_event("on_interaction", npc_interaction)
+
+local function exclam_anim_cb(self)
+  self.entity:remove_sprite(self)
+  if self.callback then
+    self.callback(self, self.entity)
+  end
+end
+
+function npc_meta:exclamation(callback)
+  local sprite = self:create_sprite("things/exclamation")
+  sprite:set_xy(0, -16)
+  sol.audio.play_sound("exclamation")
+  sprite.callback = callback
+  sprite.entity = self
+
+  sprite.on_animation_finished = exclam_anim_cb
+end
+
+sol.main.get_metatable("hero").exclamation = npc_meta.exclamation
 
 local enemy_meta = sol.main.get_metatable("enemy")
 function enemy_meta:set_attacks_consequence(consequence)
