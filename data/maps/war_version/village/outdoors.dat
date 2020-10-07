@@ -8134,7 +8134,7 @@ npc{
   properties = {
     {
       key = "horn_map",
-      value = "normal_version/village/nielint/indoors/bar",
+      value = "normal_version/village/nielint/outdoors",
     },
     {
       key = "horn_destination",
@@ -8143,6 +8143,14 @@ npc{
   },
   direction = 3,
   subtype = 1,
+}
+
+destination{
+  name = "horn_zuna",
+  layer = 0,
+  x = 240,
+  y = 77,
+  direction = 1,
 }
 
 tile{

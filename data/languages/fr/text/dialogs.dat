@@ -201,6 +201,13 @@ bla bla utilise la corne
 }
 
 dialog{
+  id = "pnj.main.zuna.teleport_back",
+  text = [[
+sample text
+]],
+}
+
+dialog{
   id = "pnj.overworld.north_beach.deku_tree",
   text = [[
 Link, je t'attendais. C'est ma voix que tu as suivi depuis la mer et te voilà enfin. Un sorcier menace d'anéantir cet endroit et un héros doit l'arrêter. Ce héros, c'est toi. Pour l'heure, dirige toi vers le temple du Trident, à l'ouest. Il vient d'être corrompu et c'est cela qui a causé la tempête.
@@ -347,6 +354,13 @@ Tu connais le prince Zuna ?
 
 Il parait qu'il maniait
 la lance comme personne !
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.barman.after_war_world",
+  text = [[
+sample text
 ]],
 }
 

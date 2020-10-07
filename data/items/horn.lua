@@ -12,7 +12,7 @@ function item:find_npc()
 
 
   for npc in self:get_map():get_entities_by_type("npc") do
-    if npc:get_property("horn_map") then
+    if npc:get_property("horn_map") and npc:is_in_same_region(hero) then
       dist = npc:get_distance(hero)
       if dist < closest_dist then
         chosen = npc

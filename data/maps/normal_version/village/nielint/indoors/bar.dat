@@ -932,6 +932,16 @@ npc{
   layer = 0,
   x = 248,
   y = 45,
+  properties = {
+    {
+      key = "horn_map",
+      value = "war_version/village/outdoors",
+    },
+    {
+      key = "horn_destination",
+      value = "horn_zuna",
+    },
+  },
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/5",
@@ -1010,13 +1020,5 @@ destructible{
   y = 93,
   sprite = "entities/projectile/rock",
   weight = 1,
-}
-
-destination{
-  name = "horn",
-  layer = 0,
-  x = 248,
-  y = 77,
-  direction = 1,
 }
 
