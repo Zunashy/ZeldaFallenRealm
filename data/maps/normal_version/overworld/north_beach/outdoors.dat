@@ -7195,7 +7195,7 @@ destination{
   layer = 1,
   x = 240,
   y = 213,
-  direction = 1,
+  direction = 3,
 }
 
 teletransporter{
@@ -7223,7 +7223,7 @@ destination{
   layer = 1,
   x = 624,
   y = 357,
-  direction = 1,
+  direction = 2,
 }
 
 teletransporter{
@@ -7250,7 +7250,7 @@ destination{
   layer = 1,
   x = 296,
   y = 69,
-  direction = 1,
+  direction = 3,
 }
 
 destination{
@@ -7258,7 +7258,7 @@ destination{
   layer = 1,
   x = 408,
   y = 293,
-  direction = 1,
+  direction = 3,
 }
 
 teletransporter{
@@ -7286,7 +7286,7 @@ destination{
   layer = 1,
   x = 48,
   y = 581,
-  direction = 1,
+  direction = 3,
 }
 
 teletransporter{
@@ -7395,7 +7395,7 @@ destination{
   layer = 1,
   x = 240,
   y = 485,
-  direction = 1,
+  direction = 3,
 }
 
 destination{
@@ -7403,7 +7403,7 @@ destination{
   layer = 1,
   x = 400,
   y = 37,
-  direction = 1,
+  direction = 3,
 }
 
 teletransporter{
@@ -7446,7 +7446,7 @@ destination{
   layer = 1,
   x = 560,
   y = 21,
-  direction = 1,
+  direction = 3,
 }
 
 enemy{
