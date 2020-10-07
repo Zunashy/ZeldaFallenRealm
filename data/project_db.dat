@@ -205,6 +205,11 @@ sprite{ id = "pnj/overworld/3", description = "pnj/overworld/3" }
 sprite{ id = "pnj/overworld/4", description = "pnj/overworld/4" }
 sprite{ id = "pnj/overworld/5", description = "pnj/overworld/5" }
 sprite{ id = "pnj/overworld/6", description = "pnj/overworld/6" }
+sprite{ id = "pnj/pirates/1" }
+sprite{ id = "pnj/pirates/2", description = "pnj/pirates/2" }
+sprite{ id = "pnj/pirates/3", description = "pnj/pirates/3" }
+sprite{ id = "pnj/pirates/4", description = "pnj/pirates/4" }
+sprite{ id = "pnj/pirates/captain" }
 sprite{ id = "shadows/shadow_big", description = "shadows/shadow_big" }
 sprite{ id = "shadows/shadow_big_dynamic", description = "shadows/shadow_big_dynamic" }
 sprite{ id = "shadows/shadow_small", description = "shadows/shadow_small" }
