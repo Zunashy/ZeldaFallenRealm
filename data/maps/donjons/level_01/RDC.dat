@@ -9222,15 +9222,6 @@ tile{
   pattern = "63",
 }
 
-tile{
-  layer = 0,
-  x = 832,
-  y = 1232,
-  width = 16,
-  height = 16,
-  pattern = "47_11",
-}
-
 block{
   layer = 0,
   x = 792,
@@ -11227,5 +11218,32 @@ custom_entity{
   height = 16,
   direction = 0,
   model = "pickable",
+}
+
+tile{
+  layer = 1,
+  x = 832,
+  y = 1240,
+  width = 16,
+  height = 8,
+  pattern = "65_3",
+}
+
+tile{
+  layer = 1,
+  x = 832,
+  y = 1232,
+  width = 16,
+  height = 8,
+  pattern = "67",
+}
+
+tile{
+  layer = 2,
+  x = 832,
+  y = 1232,
+  width = 16,
+  height = 8,
+  pattern = "66_3",
 }
 
