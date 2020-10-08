@@ -4525,15 +4525,6 @@ tile{
 tile{
   layer = 1,
   x = 200,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "132",
-}
-
-tile{
-  layer = 1,
-  x = 200,
   y = 64,
   width = 16,
   height = 16,
@@ -7357,6 +7348,24 @@ tile{
   pattern = "4",
 }
 
+tile{
+  layer = 1,
+  x = 200,
+  y = 8,
+  width = 16,
+  height = 8,
+  pattern = "132",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 0,
+  width = 16,
+  height = 8,
+  pattern = "164",
+}
+
 teletransporter{
   layer = 1,
   x = 64,
@@ -8043,25 +8052,6 @@ npc{
   behavior = "dialog#pnj.village.nielint.exit_guards",
 }
 
-teletransporter{
-  layer = 1,
-  x = 72,
-  y = 72,
-  width = 16,
-  height = 16,
-  destination_map = "war_version/village/outdoors",
-  destination = "test_war",
-  sprite = "entities/dungeon_elements/teleport",
-}
-
-destination{
-  name = "test_war",
-  layer = 1,
-  x = 80,
-  y = 101,
-  direction = 1,
-}
-
 destination{
   name = "horn",
   layer = 1,
@@ -8129,5 +8119,14 @@ tile{
   width = 48,
   height = 16,
   pattern = "233",
+}
+
+tile{
+  layer = 2,
+  x = 200,
+  y = 0,
+  width = 16,
+  height = 8,
+  pattern = "133",
 }
 

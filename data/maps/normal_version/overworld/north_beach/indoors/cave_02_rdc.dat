@@ -868,6 +868,7 @@ destructible{
   x = 72,
   y = 29,
   sprite = "entities/vegetation/grass/grass",
+  can_be_cut = true,
 }
 
 destructible{
@@ -875,6 +876,7 @@ destructible{
   x = 72,
   y = 61,
   sprite = "entities/vegetation/grass/grass",
+  can_be_cut = true,
 }
 
 destructible{
@@ -882,6 +884,7 @@ destructible{
   x = 152,
   y = 61,
   sprite = "entities/vegetation/grass/grass",
+  can_be_cut = true,
 }
 
 destructible{
@@ -889,6 +892,7 @@ destructible{
   x = 248,
   y = 77,
   sprite = "entities/vegetation/grass/grass",
+  can_be_cut = true,
 }
 
 destructible{
@@ -896,6 +900,7 @@ destructible{
   x = 296,
   y = 45,
   sprite = "entities/vegetation/grass/grass",
+  can_be_cut = true,
 }
 
 destructible{
@@ -903,6 +908,7 @@ destructible{
   x = 88,
   y = 93,
   sprite = "entities/vegetation/grass/grass",
+  can_be_cut = true,
 }
 
 destructible{
@@ -910,6 +916,7 @@ destructible{
   x = 88,
   y = 45,
   sprite = "entities/vegetation/grass/grass_2",
+  can_be_cut = true,
 }
 
 destructible{
@@ -917,6 +924,7 @@ destructible{
   x = 136,
   y = 77,
   sprite = "entities/vegetation/grass/grass_2",
+  can_be_cut = true,
 }
 
 destructible{
@@ -924,6 +932,7 @@ destructible{
   x = 296,
   y = 77,
   sprite = "entities/vegetation/grass/grass_2",
+  can_be_cut = true,
 }
 
 destructible{
@@ -931,6 +940,7 @@ destructible{
   x = 248,
   y = 61,
   sprite = "entities/vegetation/grass/grass_2",
+  can_be_cut = true,
 }
 
 destructible{
@@ -938,6 +948,7 @@ destructible{
   x = 40,
   y = 93,
   sprite = "entities/vegetation/grass/grass_2",
+  can_be_cut = true,
 }
 
 destructible{
@@ -945,6 +956,7 @@ destructible{
   x = 24,
   y = 61,
   sprite = "entities/vegetation/grass/grass_2",
+  can_be_cut = true,
 }
 
 destructible{
@@ -952,6 +964,7 @@ destructible{
   x = 104,
   y = 93,
   sprite = "entities/vegetation/grass/grass_2",
+  can_be_cut = true,
 }
 
 destructible{
@@ -959,6 +972,7 @@ destructible{
   x = 184,
   y = 109,
   sprite = "entities/vegetation/grass/grass_3",
+  can_be_cut = true,
 }
 
 destructible{
@@ -966,6 +980,7 @@ destructible{
   x = 184,
   y = 61,
   sprite = "entities/vegetation/grass/grass_3",
+  can_be_cut = true,
 }
 
 destructible{
@@ -973,20 +988,7 @@ destructible{
   x = 184,
   y = 29,
   sprite = "entities/vegetation/grass/grass_3",
-}
-
-destructible{
-  layer = 0,
-  x = 280,
-  y = 45,
-  sprite = "entities/vegetation/grass/grass_3",
-}
-
-destructible{
-  layer = 0,
-  x = 296,
-  y = 29,
-  sprite = "entities/vegetation/grass/grass_3",
+  can_be_cut = true,
 }
 
 destructible{
@@ -994,6 +996,7 @@ destructible{
   x = 56,
   y = 109,
   sprite = "entities/vegetation/grass/grass_3",
+  can_be_cut = true,
 }
 
 destructible{
@@ -1001,6 +1004,7 @@ destructible{
   x = 56,
   y = 61,
   sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
 }
 
 destructible{
@@ -1008,6 +1012,7 @@ destructible{
   x = 104,
   y = 29,
   sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
 }
 
 destructible{
@@ -1015,5 +1020,22 @@ destructible{
   x = 208,
   y = 45,
   sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 29,
+  sprite = "entities/vegetation/grass/grass_3",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 280,
+  y = 45,
+  sprite = "entities/vegetation/grass/grass_3",
+  can_be_cut = true,
 }
 
