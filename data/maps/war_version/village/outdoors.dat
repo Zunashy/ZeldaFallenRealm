@@ -7941,14 +7941,6 @@ destructible{
   damage_on_enemies = 0,
 }
 
-separator{
-  layer = 0,
-  x = -8,
-  y = 120,
-  width = 672,
-  height = 16,
-}
-
 teletransporter{
   layer = 0,
   x = 0,
@@ -8093,15 +8085,6 @@ enemy{
   treasure_name = "random",
 }
 
-sensor{
-  name = "sensor_1",
-  layer = 0,
-  x = 216,
-  y = 125,
-  width = 64,
-  height = 16,
-}
-
 custom_entity{
   name = "zuna",
   layer = 0,
@@ -8109,22 +8092,15 @@ custom_entity{
   y = 45,
   properties = {
     {
-      key = "is_story_state",
-      value = "4",
-    },
-    {
-      key = "horn_map",
-      value = "normal_version/village/nielint/indoors/bar",
-    },
-    {
-      key = "horn_destination",
-      value = "horn",
+      key = "dialog",
+      value = "pnj.main.zuna.first_encounter.4",
     },
   },
   width = 16,
   height = 16,
   direction = 1,
   sprite = "pnj/main/zuna",
+  model = "npc",
 }
 
 npc{
@@ -8140,6 +8116,14 @@ npc{
       key = "horn_destination",
       value = "horn",
     },
+    {
+      key = "min_story_state",
+      value = "5",
+    },
+    {
+      key = "max_story_state",
+      value = "6",
+    },
   },
   direction = 3,
   subtype = 1,
@@ -8151,6 +8135,31 @@ destination{
   x = 240,
   y = 77,
   direction = 1,
+}
+
+separator{
+  layer = 0,
+  x = 312,
+  y = 120,
+  width = 352,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = -8,
+  y = 120,
+  width = 176,
+  height = 16,
+}
+
+separator{
+  name = "sep_1",
+  layer = 0,
+  x = 152,
+  y = 120,
+  width = 176,
+  height = 16,
 }
 
 tile{

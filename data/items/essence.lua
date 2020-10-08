@@ -20,3 +20,4 @@ end
 function item:on_obtained(variant)
   self:set_variant(variant)
 end
+

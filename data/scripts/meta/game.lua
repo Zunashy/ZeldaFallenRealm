@@ -26,6 +26,10 @@ function game_meta:set_story_state(state)
   return self:set_value("story_state", state)
 end
 
+function game_meta:get_essence()
+  return self:get_value("essence") or 0
+end
+
 local obs_uniform_names = {"light1", "light2", "light3", "light4"}
 
 function game_meta:manage_obscurity_shader(camera, shader)

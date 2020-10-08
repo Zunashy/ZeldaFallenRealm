@@ -344,13 +344,14 @@ entity{ id = "interaction_box", description = "Interaction Box" }
 entity{ id = "light", description = "Source de lumière" }
 entity{ id = "merman_wave", description = "Projectile Boss donjon 1" }
 entity{ id = "nonsolid_ground", description = "Indicateur de sol instable" }
+entity{ id = "npc", description = "PNJ" }
 entity{ id = "octorok_rock", description = "Projecitle Octorick" }
 entity{ id = "platform", description = "Plateforme mouvante" }
 entity{ id = "platform_controller", description = "Contrôleur de plateforme" }
 entity{ id = "poisoned_water", description = "Eau empoisonée" }
 entity{ id = "pull_lever", description = "Levier à tirer" }
 entity{ id = "shop_item", description = "Item du Shop" }
-entity{ id = "unstable_ground", description = "Sol Instable" }
+entity{ id = "unstable_ground", description = "Sol Fragile" }
 
 language{ id = "en", description = "en" }
 language{ id = "fr", description = "fr" }
@@ -400,6 +401,7 @@ file{ path = "entities/interaction_box.lua", author = "TwilCynder", }
 file{ path = "entities/light.lua", author = "TwilCynder", }
 file{ path = "entities/merman_wave.lua", author = "TwilCynder", }
 file{ path = "entities/nonsolid_ground.lua", author = "TwilCynder", }
+file{ path = "entities/npc.lua", author = "TwilCynder", }
 file{ path = "entities/octorok_rock.lua", author = "TwilCynder", }
 file{ path = "entities/platform.lua", author = "TwilCynder", }
 file{ path = "entities/platform_controller.lua", author = "TwilCynder", }

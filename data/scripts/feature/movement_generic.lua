@@ -224,11 +224,13 @@ function mg.move_straight(entity, direction, distance, speed, callback, config)
   m:set_speed(speed or 16)
   m:set_angle((direction or 0) * (math.pi / 2))
   m:set_max_distance(distance or 16)
-  if config.change_direction then
-    entity:get_sprite():set_direction(direction)
-  end
-  if config.ignore_obstacles then
-    m:set_ignore_obstacles(true)
+  if config then
+    if config.change_direction then
+      entity:get_sprite():set_direction(direction)
+    end
+    if config.ignore_obstacles then
+      m:set_ignore_obstacles(true)
+    end
   end
   m:start(entity, callback)
   return m

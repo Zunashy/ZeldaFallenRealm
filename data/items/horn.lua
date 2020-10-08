@@ -30,6 +30,12 @@ function item:on_using_from_inventory(callback)
   end)
 end
 
+function item:on_teleporting()
+  if game:get_story_state() == 5 then
+    game:set_story_state(6)
+  end
+end
+
 local vfx = require("scripts/api/visual_effects")
 function item:on_using()
   local hero = game:get_hero()
@@ -44,6 +50,7 @@ function item:on_using()
 
     sol.timer.start(hero, 1000, function()
       hero:teleport(npc:get_property("horn_map"), npc:get_property("horn_destination"), "fade")
+      item:on_teleporting()
       item:set_finished()
     end)
   else

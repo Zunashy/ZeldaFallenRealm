@@ -957,6 +957,12 @@ destructible{
   layer = 0,
   x = 80,
   y = 77,
+  properties = {
+    {
+      key = "savegame_variable",
+      value = "dungeon_1_transit_porte_liane",
+    },
+  },
   sprite = "entities/vegetation/grass_door",
   weight = -1,
   can_be_cut = true,
@@ -977,6 +983,7 @@ destination{
   x = 80,
   y = 245,
   direction = 1,
+  default = true,
 }
 
 teletransporter{

@@ -1,5 +1,7 @@
 local manager = {}
 
+local parse_event_string = require("scripts/feature/event_string")
+
 local function color_trigger_callback(block_destination)
     local map = block_destination:get_map()
     local event
@@ -17,7 +19,7 @@ local function color_trigger_callback(block_destination)
         end
     end
     if all_activated then
-        manager.parse_event_string(map, event)
+        parse_event_string(map, event)
     end
 end
 

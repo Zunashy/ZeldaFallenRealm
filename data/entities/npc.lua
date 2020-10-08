@@ -1,4 +1,4 @@
--- Lua script of custom entity interaction_box.
+-- Lua script of custom entity npc.
 -- This script is executed every time a custom entity with this model is created.
 
 -- Feel free to modify the code below.
@@ -14,22 +14,12 @@ local map = entity:get_map()
 
 -- Event called when the custom entity is initialized.
 function entity:on_created()
-  local target = self:get_property("target")
-  target = self:get_map():get_entity(target)
-  if not target then
-    self:remove()
-    return false
-  end
-
-  self.target = target
+  self:set_modified_ground("wall")
 end
 
 function entity:on_interaction()
-  if self.target.on_interaction then
-    self.target:on_interaction()
-    local sprite = self.target:get_sprite()
-    if sprite then
-      sprite:set_direction(self.target:get_direction4_to(self:get_map():get_hero()))
-    end
+  local dialog = self:get_property("dialog")
+  if dialog then
+    game:start_dialog(dialog)
   end
 end
