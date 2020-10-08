@@ -7412,7 +7412,7 @@ destination{
 
 teletransporter{
   layer = 1,
-  x = 632,
+  x = 624,
   y = 320,
   width = 16,
   height = 16,
@@ -7956,6 +7956,13 @@ destination{
   x = 240,
   y = 69,
   direction = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 616,
+  y = 333,
+  sprite = "entities/vegetation/arbuste",
 }
 
 tile{
