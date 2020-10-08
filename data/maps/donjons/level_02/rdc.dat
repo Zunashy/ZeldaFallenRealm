@@ -5915,22 +5915,6 @@ destination{
 
 custom_entity{
   layer = 0,
-  x = 24,
-  y = 381,
-  properties = {
-    {
-      key = "activate_trigger",
-      value = "door_3",
-    },
-  },
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/dungeon_elements/switches",
-}
-
-custom_entity{
-  layer = 0,
   x = 376,
   y = 389,
   width = 16,
@@ -6081,6 +6065,22 @@ destructible{
     },
   },
   sprite = "entities/vegetation/grass_door",
+}
+
+switch{
+  layer = 0,
+  x = 16,
+  y = 368,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "door_3",
+    },
+  },
+  subtype = "solid",
+  sprite = "entities/dungeon_elements/switches",
+  needs_block = false,
+  inactivate_when_leaving = false,
 }
 
 custom_entity{

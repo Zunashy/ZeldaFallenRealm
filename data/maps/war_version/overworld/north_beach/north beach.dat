@@ -813,7 +813,7 @@ tile{
   x = 304,
   y = 512,
   width = 32,
-  height = 32,
+  height = 48,
   pattern = "166",
 }
 
@@ -5586,11 +5586,29 @@ tile{
   pattern = "93_5",
 }
 
-teletransporter{
+tile{
   layer = 1,
   x = 512,
   y = 624,
-  width = 96,
+  width = 16,
+  height = 16,
+  pattern = "168_3",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "74",
+}
+
+teletransporter{
+  layer = 1,
+  x = 528,
+  y = 624,
+  width = 64,
   height = 16,
   destination_map = "war_version/overworld/forest/forest",
   destination = "destination",
