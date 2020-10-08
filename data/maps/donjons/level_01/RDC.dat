@@ -9341,6 +9341,7 @@ destination{
   x = 1232,
   y = 445,
   direction = 1,
+  starting_location_mode = "no",
 }
 
 teletransporter{
@@ -10430,6 +10431,7 @@ destination{
   x = 600,
   y = 37,
   direction = 1,
+  starting_location_mode = "no",
 }
 
 door{
@@ -10530,6 +10532,7 @@ destination{
   x = 840,
   y = 453,
   direction = 1,
+  starting_location_mode = "no",
 }
 
 sensor{
@@ -11031,6 +11034,12 @@ teletransporter{
   x = 832,
   y = 1296,
   enabled_at_start = false,
+  properties = {
+    {
+      key = "spawn_savegame_variable",
+      value = "dungeon_1_tp",
+    },
+  },
   width = 16,
   height = 16,
   destination_map = "donjons/level_01/RDC",
@@ -11044,6 +11053,12 @@ teletransporter{
   x = 1312,
   y = 96,
   enabled_at_start = false,
+  properties = {
+    {
+      key = "spawn_savegame_variable",
+      value = "dungeon_1_tp",
+    },
+  },
   width = 16,
   height = 16,
   destination_map = "donjons/level_01/RDC",
@@ -11055,7 +11070,7 @@ destination{
   name = "tp2",
   layer = 0,
   x = 1320,
-  y = 125,
+  y = 117,
   direction = 1,
 }
 
@@ -11116,14 +11131,6 @@ custom_entity{
   model = "unstable_ground",
 }
 
-pickable{
-  layer = 0,
-  x = 840,
-  y = 37,
-  treasure_name = "essence",
-  treasure_savegame_variable = "dungeon_1_essence",
-}
-
 custom_entity{
   layer = 0,
   x = 840,
@@ -11138,5 +11145,87 @@ custom_entity{
   height = 16,
   direction = 0,
   model = "nonsolid_ground",
+}
+
+custom_entity{
+  layer = 0,
+  x = 792,
+  y = 1293,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  layer = 0,
+  x = 888,
+  y = 1293,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  layer = 0,
+  x = 888,
+  y = 1325,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  layer = 0,
+  x = 792,
+  y = 1325,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  layer = 0,
+  x = 808,
+  y = 1357,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  layer = 0,
+  x = 872,
+  y = 1357,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  layer = 0,
+  x = 840,
+  y = 37,
+  properties = {
+    {
+      key = "item",
+      value = "essence",
+    },
+    {
+      key = "variant",
+      value = "1",
+    },
+    {
+      key = "savegame_variable",
+      value = "dungeon_1_essence",
+    },
+    {
+      key = "on_obtained",
+      value = "teleport_here:entrance$fade",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "pickable",
 }
 

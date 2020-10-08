@@ -30,6 +30,14 @@ local function trigger_event(map, event)
       if e and e:get_type() == "destination" then
         map:get_game():set_starting_location(map:get_id(), name)
       end
+    elseif event:starts("teleport_") then
+      name = event:sub(10)
+      local name, style = name:xfields("$")
+      local map_name, dest = name:xfields(":")
+      if map_name == "here" then
+        map_name = map:get_id()
+      end
+      map:get_hero():teleport(map_name, dest, style)
     end
 end
 

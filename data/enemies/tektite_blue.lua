@@ -13,7 +13,6 @@ local map = enemy:get_map()
 local hero = map:get_hero()
 local sprite
 local movement
-local display_h = 0
 
 local idle_time = 600
 local movement_speed = 75
@@ -24,11 +23,17 @@ function enemy:on_created()
 
   -- Initialize the properties of your enemy here,
   -- like the sprite, the life and the damage.
-  sprite = sol.sprite.create("enemies/" .. enemy:get_breed())
   self:create_sprite("enemies/tektite_shadow")
+  sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   self:set_size(16, 16)
   self:set_life(2)
   self:set_damage(3)
+
+end
+
+function enemy:set_h(h)
+  self.display_h = h
+  sprite:set_xy(0, -h)
 end
 
 local function parabola(x)
@@ -53,10 +58,10 @@ local function update_pos_timer()
     enemy:restart()
     return nil
   end
-  display_h = parabola(dist)
-  if display_h > 6 and display_h < 7 then
+  enemy:set_h(parabola(dist))
+  if enemy.display_h > 6 and enemy.display_h < 7 then
     enemy:set_attack_consequence("sword", "ignored")
-  elseif display_h < 6 and display_h > 5 then
+  elseif enemy.display_h < 6 and enemy.display_h > 5 then
     enemy:set_attack_consequence("sword", 1)
   end
   return true
@@ -80,21 +85,10 @@ function enemy:on_restarted()
   sprite:set_animation("walking")
   sol.timer.start(self, idle_time, idle_timer_callback)
   enemy:set_attack_consequence("sword", 1)
-  display_h = 0
+  self:set_h(0)
 end
 
 function enemy:on_hurt()
-  display_h = 0
+  self:set_h(0)
   sprite:set_animation("hurt")
-end
-
-function enemy:on_post_draw()
-  if not sprite then return end
-  local x, y = self:get_position()
-  map:draw_visual(sprite, x, y - display_h)
-end
-
-function enemy:on_dying()
-  sprite = nil
-  self:create_sprite("enemies/" .. enemy:get_breed())
 end

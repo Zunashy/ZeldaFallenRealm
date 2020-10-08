@@ -36,13 +36,6 @@ local function collision_callback(e, other)
     local state = other:get_state()
     if state == "hurt" then
       return
-    elseif state == "jumping" then
-      local m = sol.movement.create("straight")
-      m:set_speed(128)
-      m:set_max_distance(80)
-      m:set_angle(math.pi * other:get_direction() / 2)
-      m:start(other)
-      return
     end
     other:start_hurt(e.x, e.y, 1)
   end 

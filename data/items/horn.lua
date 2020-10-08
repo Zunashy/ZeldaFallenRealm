@@ -58,8 +58,4 @@ function item:on_using()
   end
 end
 
-function item:on_obtained()
-  self:set_variant(1)
-end
-
 item.use_from_inventory = true

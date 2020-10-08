@@ -128,10 +128,82 @@ tile{
 tile{
   layer = 1,
   x = 160,
-  y = 272,
+  y = 288,
   width = 16,
   height = 16,
   pattern = "10",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "33",
 }
 
 custom_entity{
@@ -160,6 +232,12 @@ destination{
   layer = 1,
   x = 232,
   y = 237,
+  properties = {
+    {
+      key = "on_obtained",
+      value = "teleport_here:test",
+    },
+  },
   direction = 1,
   default = true,
 }
@@ -174,7 +252,7 @@ destructible{
 
 destructible{
   layer = 1,
-  x = 232,
+  x = 264,
   y = 269,
   sprite = "entities/vegetation/grass/grass_dark",
   ground = "grass",
@@ -235,8 +313,8 @@ enemy{
 enemy{
   name = "blue",
   layer = 1,
-  x = 232,
-  y = 301,
+  x = 328,
+  y = 269,
   enabled_at_start = false,
   direction = 3,
   breed = "blue_slime",
@@ -410,12 +488,56 @@ custom_entity{
   model = "poisoned_water",
 }
 
-pickable{
+enemy{
+  layer = 1,
+  x = 88,
+  y = 365,
+  direction = 0,
+  breed = "tektite_blue",
+}
+
+enemy{
+  layer = 1,
+  x = 56,
+  y = 365,
+  direction = 0,
+  breed = "blue_octorock",
+}
+
+destination{
+  name = "test",
+  layer = 1,
+  x = 264,
+  y = 333,
+  direction = 1,
+}
+
+custom_entity{
   layer = 1,
   x = 248,
   y = 221,
-  treasure_name = "essence",
-  treasure_variant = 2,
+  properties = {
+    {
+      key = "item",
+      value = "essence",
+    },
+    {
+      key = "variant",
+      value = "2",
+    },
+    {
+      key = "savegame_variable",
+      value = "test_pickable",
+    },
+    {
+      key = "on_obtained",
+      value = "teleport_here:test$fade",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "pickable",
 }
 
 tile{
