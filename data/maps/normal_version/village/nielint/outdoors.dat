@@ -7442,6 +7442,7 @@ separator{
 }
 
 npc{
+  name = "octo_guard",
   layer = 1,
   x = 416,
   y = 477,
@@ -7702,7 +7703,7 @@ teletransporter{
 }
 
 destination{
-  name = "ocotrok",
+  name = "octorock",
   layer = 1,
   x = 400,
   y = 477,
@@ -8065,6 +8066,16 @@ destructible{
   x = 616,
   y = 333,
   sprite = "entities/vegetation/arbuste",
+}
+
+npc{
+  name = "zuna",
+  layer = 1,
+  x = 56,
+  y = 453,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/5",
 }
 
 tile{

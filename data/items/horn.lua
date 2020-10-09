@@ -31,8 +31,8 @@ function item:on_using_from_inventory(callback)
 end
 
 function item:on_teleporting()
-  if game:get_story_state() == 5 then
-    game:set_story_state(6)
+  if game:get_story_state() == 4 then
+    game:set_story_state(5)
   end
 end
 

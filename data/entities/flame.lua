@@ -16,7 +16,7 @@ local random = gen.random
 
 local function is_flammable(entity)
   local sprite = entity:get_sprite():get_animation_set()
-  return (sprite == "entities/vegetation/grass/grass") or (sprite == "entities/vegetation/arbuste") or (sprite == "entities/vegetation/grass/grass_dark")
+  return (sprite:starts("entities/vegetation/grass/grass")) or (sprite == "entities/vegetation/arbuste") or (sprite == "entities/vegetation/grass_door")
 end
 
 local function collision_callback(e, other)

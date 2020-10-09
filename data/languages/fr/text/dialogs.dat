@@ -215,16 +215,37 @@ sample text
 }
 
 dialog{
-  id = "pnj.overworld.north_beach.deku_tree",
+  id = "pnj.overworld.north_beach.deku_tree.part1.1",
   text = [[
 Link, je t'attendais. C'est ma voix que tu as suivi depuis la mer et te voilà enfin. Un sorcier menace d'anéantir cet endroit et un héros doit l'arrêter. Ce héros, c'est toi. Pour l'heure, dirige toi vers le temple du Trident, à l'ouest. Il vient d'être corrompu et c'est cela qui a causé la tempête.
 ]],
 }
 
 dialog{
-  id = "pnj.overworld.north_beach.deku_tree.alt",
+  id = "pnj.overworld.north_beach.deku_tree.part1.2",
   text = [[
 Allez ! Le temps presse, le temple ne vas pas se restaurer tout seul !
+]],
+}
+
+dialog{
+  id = "pnj.overworld.north_beach.deku_tree.part2.1",
+  text = [[
+bla bla bla donjon
+]],
+}
+
+dialog{
+  id = "pnj.overworld.north_beach.deku_tree.part2.2",
+  text = [[
+l'essence (c cher (lol))
+]],
+}
+
+dialog{
+  id = "pnj.overworld.north_beach.deku_tree.part2.3",
+  text = [[
+va a l'est
 ]],
 }
 

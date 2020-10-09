@@ -412,17 +412,8 @@ destination{
   direction = 1,
 }
 
-npc{
-  name = "deku_tree",
-  layer = 1,
-  x = 80,
-  y = 13,
-  direction = 3,
-  subtype = 1,
-  behavior = "dialog#pnj.overworld.north_beach.guard",
-}
-
 custom_entity{
+  name = "deku_tree",
   layer = 1,
   x = 72,
   y = 77,
@@ -435,6 +426,5 @@ custom_entity{
   width = 32,
   height = 16,
   direction = 0,
-  model = "interaction_box",
 }
 
