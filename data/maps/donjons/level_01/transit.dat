@@ -991,8 +991,8 @@ teletransporter{
 
 teletransporter{
   layer = 0,
-  x = 88,
-  y = 56,
+  x = 72,
+  y = 64,
   width = 16,
   height = 16,
   destination_map = "donjons/level_01/RDC",
@@ -1009,7 +1009,7 @@ destructible{
       value = "dungeon_1_transit_porte_liane",
     },
   },
-  sprite = "entities/vegetation/grass_door",
+  sprite = "entities/vegetation/grass_door_4",
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,

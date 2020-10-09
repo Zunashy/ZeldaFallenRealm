@@ -161,6 +161,9 @@ sprite{ id = "entities/vegetation/grass/grass_3" }
 sprite{ id = "entities/vegetation/grass/grass_4" }
 sprite{ id = "entities/vegetation/grass/grass_dark", description = "entities/vegetation/grass/grass_dark" }
 sprite{ id = "entities/vegetation/grass_door", description = "entities/vegetation/grass_door" }
+sprite{ id = "entities/vegetation/grass_door_2" }
+sprite{ id = "entities/vegetation/grass_door_3" }
+sprite{ id = "entities/vegetation/grass_door_4" }
 sprite{ id = "entities/wall/fissured_wall", description = "Mur fissuré" }
 sprite{ id = "entities/wall/fissured_wall_2", description = "Mur fissuré 2" }
 sprite{ id = "entities/water/deep_water", description = "Eau Profonde" }
