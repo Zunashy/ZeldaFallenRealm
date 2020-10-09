@@ -8145,6 +8145,25 @@ npc{
   subtype = 1,
 }
 
+teletransporter{
+  layer = 0,
+  x = 552,
+  y = 344,
+  width = 16,
+  height = 16,
+  destination_map = "war_version/overworld/plain/outdoors_1",
+  destination = "villagebloqué",
+  sprite = "entities/dungeon_elements/teleport",
+}
+
+destination{
+  name = "plainebloquée",
+  layer = 0,
+  x = 560,
+  y = 349,
+  direction = 1,
+}
+
 tile{
   layer = 1,
   x = 336,

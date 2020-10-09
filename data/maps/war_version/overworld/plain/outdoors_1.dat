@@ -2688,15 +2688,6 @@ teletransporter{
   destination = "destination_2",
 }
 
-enemy{
-  layer = 0,
-  x = 112,
-  y = 77,
-  direction = 2,
-  breed = "octorok",
-  treasure_name = "random",
-}
-
 destination{
   name = "destination_2",
   layer = 0,
@@ -2710,6 +2701,25 @@ destination{
   layer = 0,
   x = 240,
   y = 245,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 104,
+  y = 48,
+  width = 16,
+  height = 16,
+  destination_map = "war_version/village/outdoors",
+  destination = "plainebloquée",
+  sprite = "entities/dungeon_elements/teleport",
+}
+
+destination{
+  name = "villagebloqué",
+  layer = 0,
+  x = 112,
+  y = 69,
   direction = 1,
 }
 
