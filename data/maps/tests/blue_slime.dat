@@ -9,44 +9,44 @@ properties{
 }
 
 tile{
-  layer = 1,
+  layer = 0,
+  x = 0,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
   x = 0,
   y = 0,
   width = 16,
   height = 16,
-  pattern = "10",
+  pattern = "14",
 }
 
 tile{
-  layer = 1,
-  x = 384,
-  y = 16,
-  width = 16,
-  height = 368,
-  pattern = "9",
-}
-
-tile{
-  layer = 1,
-  x = 384,
-  y = 0,
+  layer = 0,
+  x = 0,
+  y = 384,
   width = 16,
   height = 16,
   pattern = "12",
 }
 
 tile{
-  layer = 1,
+  layer = 0,
   x = 384,
-  y = 384,
-  width = 16,
-  height = 16,
-  pattern = "13",
-}
-
-tile{
-  layer = 1,
-  x = 0,
   y = 384,
   width = 16,
   height = 16,
@@ -54,30 +54,12 @@ tile{
 }
 
 tile{
-  layer = 1,
-  x = 0,
-  y = 16,
-  width = 16,
-  height = 368,
-  pattern = "7",
-}
-
-tile{
-  layer = 1,
-  x = 16,
+  layer = 0,
+  x = 384,
   y = 0,
-  width = 368,
+  width = 16,
   height = 16,
-  pattern = "8",
-}
-
-tile{
-  layer = 1,
-  x = 16,
-  y = 384,
-  width = 368,
-  height = 16,
-  pattern = "6",
+  pattern = "13",
 }
 
 tile{
@@ -91,38 +73,146 @@ tile{
 
 tile{
   layer = 1,
+  x = 48,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 288,
+  width = 48,
+  height = 16,
+  pattern = "29",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 128,
+  width = 48,
+  height = 160,
+  pattern = "35",
+}
+
+tile{
+  layer = 1,
   x = 16,
   y = 112,
-  width = 48,
-  height = 208,
+  width = 64,
+  height = 16,
   pattern = "28",
 }
 
 tile{
   layer = 1,
   x = 64,
-  y = 112,
+  y = 128,
   width = 16,
-  height = 32,
-  pattern = "28",
+  height = 16,
+  pattern = "29",
 }
 
 tile{
   layer = 1,
-  x = 264,
-  y = 160,
-  width = 16,
+  x = 16,
+  y = 384,
+  width = 368,
   height = 16,
-  pattern = "50",
+  pattern = "9",
 }
 
 tile{
   layer = 1,
-  x = 232,
-  y = 160,
+  x = 0,
+  y = 16,
   width = 16,
+  height = 368,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 0,
+  width = 368,
   height = 16,
-  pattern = "50",
+  pattern = "10",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 16,
+  width = 16,
+  height = 368,
+  pattern = "19",
 }
 
 tile{
@@ -131,28 +221,25 @@ tile{
   y = 272,
   width = 16,
   height = 16,
-  pattern = "10",
+  pattern = "34",
 }
 
-custom_entity{
+tile{
   layer = 1,
-  x = 256,
-  y = 173,
-  properties = {
-    {
-      key = "red_trigger",
-      value = "spawn_chest_1",
-    },
-    {
-      key = "torchs",
-      value = "torch;torch_2",
-    },
-  },
+  x = 352,
+  y = 144,
   width = 16,
   height = 16,
-  direction = 0,
-  sprite = "entities/dungeon_elements/color_cube_destination",
-  model = "colored_block_destination",
+  pattern = "50",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "50",
 }
 
 destination{
@@ -160,31 +247,21 @@ destination{
   layer = 1,
   x = 232,
   y = 237,
+  properties = {
+    {
+      key = "on_obtained",
+      value = "teleport_here:test",
+    },
+  },
   direction = 1,
   default = true,
-}
-
-destructible{
-  layer = 1,
-  x = 208,
-  y = 261,
-  sprite = "entities/vegetation/arbuste",
-  weight = -1,
-}
-
-destructible{
-  layer = 1,
-  x = 232,
-  y = 269,
-  sprite = "entities/vegetation/grass/grass_dark",
-  ground = "grass",
 }
 
 block{
   name = "colored_block",
   layer = 1,
-  x = 256,
-  y = 245,
+  x = 312,
+  y = 189,
   sprite = "entities/dungeon_elements/color_cube",
   pushable = true,
   pullable = false,
@@ -197,18 +274,6 @@ chest{
   y = 149,
   enabled_at_start = false,
   sprite = "entities/chests/chest",
-}
-
-custom_entity{
-  name = "torch",
-  layer = 1,
-  x = 272,
-  y = 165,
-  enabled_at_start = false,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/dungeon_elements/colored_flame",
 }
 
 pickable{
@@ -235,23 +300,11 @@ enemy{
 enemy{
   name = "blue",
   layer = 1,
-  x = 232,
-  y = 301,
+  x = 328,
+  y = 269,
   enabled_at_start = false,
   direction = 3,
   breed = "blue_slime",
-}
-
-custom_entity{
-  name = "torch_2",
-  layer = 1,
-  x = 240,
-  y = 165,
-  enabled_at_start = false,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/dungeon_elements/colored_flame",
 }
 
 pickable{
@@ -388,7 +441,7 @@ npc{
   properties = {
     {
       key = "horn_map",
-      value = "tests/dungeon",
+      value = "tests/outside",
     },
     {
       key = "horn_destination",
@@ -410,12 +463,112 @@ custom_entity{
   model = "poisoned_water",
 }
 
-pickable{
+enemy{
+  layer = 1,
+  x = 88,
+  y = 365,
+  direction = 0,
+  breed = "tektite_blue",
+}
+
+enemy{
+  layer = 1,
+  x = 56,
+  y = 365,
+  direction = 0,
+  breed = "blue_octorock",
+}
+
+destination{
+  name = "test",
+  layer = 1,
+  x = 264,
+  y = 333,
+  direction = 1,
+}
+
+custom_entity{
   layer = 1,
   x = 248,
   y = 221,
-  treasure_name = "essence",
-  treasure_variant = 2,
+  properties = {
+    {
+      key = "item",
+      value = "essence",
+    },
+    {
+      key = "variant",
+      value = "2",
+    },
+    {
+      key = "savegame_variable",
+      value = "test_pickable",
+    },
+    {
+      key = "on_obtained",
+      value = "teleport_here:test$fade",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "pickable",
+}
+
+teletransporter{
+  layer = 1,
+  x = 256,
+  y = 224,
+  width = 16,
+  height = 16,
+  transition = "immediate",
+  destination_map = "tests/outside",
+  sprite = "entities/dungeon_elements/teleport",
+}
+
+custom_entity{
+  layer = 1,
+  x = 344,
+  y = 157,
+  properties = {
+    {
+      key = "red_trigger",
+      value = "spawn_chest_1",
+    },
+    {
+      key = "torchs",
+      value = "torch;torch_2",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/color_cube_destination",
+  model = "colored_block_destination",
+}
+
+custom_entity{
+  name = "torch",
+  layer = 1,
+  x = 360,
+  y = 149,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/colored_flame",
+}
+
+custom_entity{
+  name = "torch_2",
+  layer = 1,
+  x = 328,
+  y = 149,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/colored_flame",
 }
 
 tile{

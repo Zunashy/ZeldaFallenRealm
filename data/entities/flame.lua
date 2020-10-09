@@ -16,7 +16,7 @@ local random = gen.random
 
 local function is_flammable(entity)
   local sprite = entity:get_sprite():get_animation_set()
-  return (sprite == "entities/vegetation/grass/grass") or (sprite == "entities/vegetation/arbuste") or (sprite == "entities/vegetation/grass/grass_dark")
+  return (sprite:starts("entities/vegetation/grass/grass")) or (sprite == "entities/vegetation/arbuste") or (sprite == "entities/vegetation/grass_door")
 end
 
 local function collision_callback(e, other)
@@ -35,13 +35,6 @@ local function collision_callback(e, other)
   elseif other:get_type() == "hero" then 
     local state = other:get_state()
     if state == "hurt" then
-      return
-    elseif state == "jumping" then
-      local m = sol.movement.create("straight")
-      m:set_speed(128)
-      m:set_max_distance(80)
-      m:set_angle(math.pi * other:get_direction() / 2)
-      m:start(other)
       return
     end
     other:start_hurt(e.x, e.y, 1)

@@ -7199,15 +7199,6 @@ destination{
 }
 
 teletransporter{
-  layer = 1,
-  x = 232,
-  y = 192,
-  width = 16,
-  height = 16,
-  destination_map = "donjons/level_01/RDC",
-}
-
-teletransporter{
   name = "beach_to_village",
   layer = 1,
   x = 624,
@@ -7469,7 +7460,14 @@ destructible{
   layer = 1,
   x = 240,
   y = 205,
+  properties = {
+    {
+      key = "savegame_variable",
+      value = "beach_porte_liane",
+    },
+  },
   sprite = "entities/vegetation/grass_door",
+  destruction_sound = "treasure",
   weight = -1,
   can_be_cut = true,
 }
@@ -7582,6 +7580,7 @@ npc{
   layer = 1,
   x = 344,
   y = 205,
+  enabled_at_start = false,
   properties = {
     {
       key = "is_story_state",
@@ -7608,6 +7607,15 @@ destination{
   x = 344,
   y = 325,
   direction = 1,
+}
+
+teletransporter{
+  layer = 1,
+  x = 232,
+  y = 192,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_01/transit",
 }
 
 tile{

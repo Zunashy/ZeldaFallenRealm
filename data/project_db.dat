@@ -44,11 +44,9 @@ map{ id = "normal_version/village/nielint/outdoors", description = "normal_versi
 map{ id = "testHub", description = "testHub" }
 map{ id = "tests/blue_slime", description = "tests/blue_slime" }
 map{ id = "tests/bridges", description = "tests/bridges" }
-map{ id = "tests/dungeon", description = "tests/dungeon" }
 map{ id = "tests/global" }
-map{ id = "tests/obscurity", description = "tests/obscurity" }
+map{ id = "tests/outside", description = "Monde extérieur" }
 map{ id = "tests/platform", description = "tests/platform" }
-map{ id = "tests/tttteteessst", description = "oui" }
 map{ id = "war_version/overworld/forest/forest", description = "war_version/overworld/forest/forest" }
 map{ id = "war_version/overworld/forest/sword_cave", description = "war_version/overworld/forest/sword_cave" }
 map{ id = "war_version/overworld/north_beach/cave", description = "grotte north beach" }
@@ -161,6 +159,9 @@ sprite{ id = "entities/vegetation/grass/grass_3" }
 sprite{ id = "entities/vegetation/grass/grass_4" }
 sprite{ id = "entities/vegetation/grass/grass_dark", description = "entities/vegetation/grass/grass_dark" }
 sprite{ id = "entities/vegetation/grass_door", description = "entities/vegetation/grass_door" }
+sprite{ id = "entities/vegetation/grass_door_2" }
+sprite{ id = "entities/vegetation/grass_door_3" }
+sprite{ id = "entities/vegetation/grass_door_4" }
 sprite{ id = "entities/wall/fissured_wall", description = "Mur fissuré" }
 sprite{ id = "entities/wall/fissured_wall_2", description = "Mur fissuré 2" }
 sprite{ id = "entities/water/deep_water", description = "Eau Profonde" }
@@ -344,13 +345,15 @@ entity{ id = "interaction_box", description = "Interaction Box" }
 entity{ id = "light", description = "Source de lumière" }
 entity{ id = "merman_wave", description = "Projectile Boss donjon 1" }
 entity{ id = "nonsolid_ground", description = "Indicateur de sol instable" }
+entity{ id = "npc", description = "PNJ" }
 entity{ id = "octorok_rock", description = "Projecitle Octorick" }
+entity{ id = "pickable", description = "Trésor Ramassable" }
 entity{ id = "platform", description = "Plateforme mouvante" }
 entity{ id = "platform_controller", description = "Contrôleur de plateforme" }
 entity{ id = "poisoned_water", description = "Eau empoisonée" }
 entity{ id = "pull_lever", description = "Levier à tirer" }
 entity{ id = "shop_item", description = "Item du Shop" }
-entity{ id = "unstable_ground", description = "Sol Instable" }
+entity{ id = "unstable_ground", description = "Sol Fragile" }
 
 language{ id = "en", description = "en" }
 language{ id = "fr", description = "fr" }
@@ -400,7 +403,9 @@ file{ path = "entities/interaction_box.lua", author = "TwilCynder", }
 file{ path = "entities/light.lua", author = "TwilCynder", }
 file{ path = "entities/merman_wave.lua", author = "TwilCynder", }
 file{ path = "entities/nonsolid_ground.lua", author = "TwilCynder", }
+file{ path = "entities/npc.lua", author = "TwilCynder", }
 file{ path = "entities/octorok_rock.lua", author = "TwilCynder", }
+file{ path = "entities/pickable.lua", author = "TwilCynder", }
 file{ path = "entities/platform.lua", author = "TwilCynder", }
 file{ path = "entities/platform_controller.lua", author = "TwilCynder", }
 file{ path = "entities/poisoned_water.lua", author = "TwilCynder", }

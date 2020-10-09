@@ -27,5 +27,9 @@ end
 function entity:on_interaction()
   if self.target.on_interaction then
     self.target:on_interaction()
+    local sprite = self.target:get_sprite()
+    if sprite then
+      sprite:set_direction(self.target:get_direction4_to(self:get_map():get_hero()))
+    end
   end
 end

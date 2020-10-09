@@ -18,48 +18,7 @@ function map:close_door(name)
   self:close_doors("door_"..name)
 end
 
---Launches an event described by the event string (ex : 'door_<name> to open all doors with this name)
-
-local function trigger_event(map, event)
-  if not type(event) == "string" then return end
-  local name
-	
-  if event:starts("door_") then  --event type : opening a door
-    map:open_door(event:sub(6))   --opening all doors having the name specified after "door_"
-  elseif event:starts("close_door") then
-    map:close_door(event:sub(11))
-  elseif event:starts("treasure_") then  --Event type: item spawn
-    name = event:sub(10)
-    if map:has_entity(name) then
-      map:enable_entity(name)   --Enabling the item with this name
-    else 
-      map:enable_entity(event)
-    end
-  elseif event:starts("spawn_") then
-    name = event:sub(7)
-    map.enable_entity(map, name)
-  elseif event:starts("function_") then
-    name = event:sub(10)
-    if type(map[name]) == "function" then
-      map[name](map)
-    end
-  elseif event:starts("music_") then
-    name = event:sub(7)
-    sol.audio.play_music(name)
-  elseif event:starts("setrespawn_") then
-    name = event:sub(12)
-    local e = map:get_entity(name)
-    if e and e:get_type() == "destination" then
-      map:get_game():set_starting_location(map:get_id(), name)
-    end
-  end
-end
-
-local function parse_event_string(map, s)
-  for event in s:fields(";") do
-	  trigger_event(map, event)
-  end
-end
+local parse_event_string = require("scripts/feature/event_string")
 
 --Enable an entity with a specified name on the specified map (or disables it, depending on state)
 function map:enable_entity(name)
@@ -129,6 +88,7 @@ local function activate_trigger_callback(entity)
 end
 
 local function spawn_loot(enemy, item, variant, save_var)
+  print()
 	if enemy:get_game():get_value(save_var) then return end
 	local x, y, layer = enemy:get_position()
 	
@@ -138,7 +98,7 @@ local function spawn_loot(enemy, item, variant, save_var)
 		y = y,
 		treasure_name = item,
 		treasure_variant = variant,
-		trasure_savegame_variable = save_var,
+		treasure_savegame_variable = save_var,
 	})
 end
 
@@ -251,7 +211,6 @@ end
 
 local colored_block_manager = require("entities/colored_block")
 function map:enable_colored_blocks()
-  colored_block_manager.parse_event_string = parse_event_string
   for block in self:get_entities("colored_block") do
     colored_block_manager.init(block)
   end

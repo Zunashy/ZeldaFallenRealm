@@ -12,7 +12,7 @@ function item:find_npc()
 
 
   for npc in self:get_map():get_entities_by_type("npc") do
-    if npc:get_property("horn_map") then
+    if npc:get_property("horn_map") and npc:is_in_same_region(hero) then
       dist = npc:get_distance(hero)
       if dist < closest_dist then
         chosen = npc
@@ -30,6 +30,12 @@ function item:on_using_from_inventory(callback)
   end)
 end
 
+function item:on_teleporting()
+  if game:get_story_state() == 4 then
+    game:set_story_state(5)
+  end
+end
+
 local vfx = require("scripts/api/visual_effects")
 function item:on_using()
   local hero = game:get_hero()
@@ -44,15 +50,12 @@ function item:on_using()
 
     sol.timer.start(hero, 1000, function()
       hero:teleport(npc:get_property("horn_map"), npc:get_property("horn_destination"), "fade")
+      item:on_teleporting()
       item:set_finished()
     end)
   else
     game:start_dialog("item.horn.no_npc", function() item:set_finished() end)
   end
-end
-
-function item:on_obtained()
-  self:set_variant(1)
 end
 
 item.use_from_inventory = true

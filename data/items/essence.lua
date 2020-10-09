@@ -17,6 +17,3 @@ function item:on_started()
   item:set_brandish_when_picked()
 end
 
-function item:on_obtained(variant)
-  self:set_variant(variant)
-end

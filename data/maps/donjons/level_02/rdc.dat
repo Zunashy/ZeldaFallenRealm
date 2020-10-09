@@ -4716,15 +4716,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 592,
-  y = 528,
-  width = 16,
-  height = 16,
-  pattern = "47_9",
-}
-
-tile{
-  layer = 0,
   x = 80,
   y = 200,
   width = 8,
@@ -5398,6 +5389,24 @@ tile{
   pattern = "18",
 }
 
+tile{
+  layer = 0,
+  x = 592,
+  y = 536,
+  width = 16,
+  height = 8,
+  pattern = "68",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 528,
+  width = 16,
+  height = 8,
+  pattern = "67",
+}
+
 chest{
   layer = 0,
   x = 120,
@@ -5753,7 +5762,7 @@ enemy{
 destructible{
   layer = 0,
   x = 600,
-  y = 541,
+  y = 557,
   sprite = "entities/vegetation/grass_door",
   weight = -1,
   can_be_cut = true,
@@ -5915,22 +5924,6 @@ destination{
 
 custom_entity{
   layer = 0,
-  x = 24,
-  y = 381,
-  properties = {
-    {
-      key = "activate_trigger",
-      value = "door_3",
-    },
-  },
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/dungeon_elements/switches",
-}
-
-custom_entity{
-  layer = 0,
   x = 376,
   y = 389,
   width = 16,
@@ -6058,7 +6051,7 @@ destination{
   name = "tp",
   layer = 0,
   x = 600,
-  y = 285,
+  y = 277,
   direction = 1,
 }
 
@@ -6066,7 +6059,7 @@ destination{
   name = "tp2",
   layer = 0,
   x = 360,
-  y = 637,
+  y = 629,
   direction = 1,
 }
 
@@ -6081,6 +6074,31 @@ destructible{
     },
   },
   sprite = "entities/vegetation/grass_door",
+}
+
+switch{
+  layer = 0,
+  x = 16,
+  y = 368,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "door_3",
+    },
+  },
+  subtype = "solid",
+  sprite = "entities/dungeon_elements/switches",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 528,
+  width = 16,
+  height = 8,
+  pattern = "69",
 }
 
 custom_entity{
