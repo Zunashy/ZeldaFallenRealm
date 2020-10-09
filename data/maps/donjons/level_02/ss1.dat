@@ -576,7 +576,7 @@ tile{
 tile{
   layer = 0,
   x = 832,
-  y = 400,
+  y = 384,
   width = 16,
   height = 16,
   pattern = "2",
@@ -3908,9 +3908,12 @@ tile{
 }
 
 chest{
+  name = "chest_bracelet",
   layer = 0,
   x = 840,
   y = 381,
+  enabled_at_start = false,
+  treasure_name = "bracelet",
   sprite = "entities/chests/chest",
 }
 
@@ -3994,7 +3997,7 @@ enemy{
   layer = 0,
   x = 632,
   y = 493,
-  direction = 0,
+  direction = 2,
   breed = "blade_trap",
 }
 
@@ -4002,7 +4005,7 @@ enemy{
   layer = 0,
   x = 680,
   y = 493,
-  direction = 0,
+  direction = 1,
   breed = "blade_trap",
 }
 
@@ -4014,16 +4017,6 @@ custom_entity{
   height = 16,
   direction = 0,
   sprite = "entities/dungeon_elements/color_cube_destination",
-}
-
-custom_entity{
-  layer = 0,
-  x = 184,
-  y = 317,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/dungeon_elements/color_cube",
 }
 
 enemy{
@@ -4105,11 +4098,11 @@ separator{
 switch{
   layer = 0,
   x = 832,
-  y = 384,
+  y = 400,
   properties = {
     {
       key = "activate_trigger",
-      value = "door_3",
+      value = "spawn_yolo",
     },
   },
   subtype = "walkable",
@@ -4266,8 +4259,8 @@ switch{
 enemy{
   name = "ambush",
   layer = 0,
-  x = 424,
-  y = 229,
+  x = 400,
+  y = 237,
   enabled_at_start = false,
   properties = {
     {
@@ -4290,8 +4283,8 @@ destination{
 enemy{
   name = "ambush_2",
   layer = 0,
-  x = 280,
-  y = 317,
+  x = 456,
+  y = 301,
   enabled_at_start = false,
   properties = {
     {
@@ -4315,6 +4308,99 @@ door{
   opening_condition_consumed = true,
 }
 
+enemy{
+  name = "yolo",
+  layer = 0,
+  x = 776,
+  y = 429,
+  enabled_at_start = false,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_bracelet",
+    },
+  },
+  direction = 0,
+  breed = "rope",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "yolo_3",
+  layer = 0,
+  x = 888,
+  y = 445,
+  enabled_at_start = false,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_bracelet",
+    },
+  },
+  direction = 0,
+  breed = "rope",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "yolo_4",
+  layer = 0,
+  x = 888,
+  y = 493,
+  enabled_at_start = false,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_bracelet",
+    },
+  },
+  direction = 0,
+  breed = "rope",
+  treasure_name = "random",
+}
+
+enemy{
+  name = "yolo_2",
+  layer = 0,
+  x = 776,
+  y = 477,
+  enabled_at_start = false,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_bracelet",
+    },
+  },
+  direction = 0,
+  breed = "skeleton_1",
+  treasure_name = "random",
+}
+
+block{
+  layer = 0,
+  x = 184,
+  y = 317,
+  sprite = "entities/dungeon_elements/color_cube",
+  pushable = true,
+  pullable = false,
+}
+
+destructible{
+  layer = 0,
+  x = 616,
+  y = 397,
+  sprite = "entities/projectile/rock",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 584,
+  y = 397,
+  sprite = "entities/projectile/rock",
+  weight = 1,
+}
+
 tile{
   layer = 1,
   x = 352,
@@ -4328,26 +4414,6 @@ custom_entity{
   layer = 1,
   x = 136,
   y = 429,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/projectile/rock",
-}
-
-custom_entity{
-  layer = 1,
-  x = 584,
-  y = 397,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/projectile/rock",
-}
-
-custom_entity{
-  layer = 1,
-  x = 616,
-  y = 397,
   width = 16,
   height = 16,
   direction = 0,

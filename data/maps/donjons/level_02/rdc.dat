@@ -4684,7 +4684,7 @@ tile{
   y = 368,
   width = 16,
   height = 16,
-  pattern = "63",
+  pattern = "65",
 }
 
 tile{
@@ -5098,7 +5098,7 @@ tile{
   y = 368,
   width = 16,
   height = 16,
-  pattern = "63",
+  pattern = "65",
 }
 
 tile{
@@ -5107,7 +5107,7 @@ tile{
   y = 368,
   width = 16,
   height = 16,
-  pattern = "63",
+  pattern = "65",
 }
 
 tile{
@@ -5428,6 +5428,7 @@ enemy{
   y = 597,
   direction = 0,
   breed = "rope",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5436,6 +5437,7 @@ enemy{
   y = 645,
   direction = 0,
   breed = "octorok",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5444,6 +5446,7 @@ enemy{
   y = 485,
   direction = 0,
   breed = "octorok",
+  treasure_name = "random",
 }
 
 door{
@@ -5464,6 +5467,7 @@ enemy{
   y = 397,
   direction = 0,
   breed = "moblin_sword",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5472,6 +5476,7 @@ enemy{
   y = 429,
   direction = 0,
   breed = "moblin_sword",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5480,6 +5485,7 @@ enemy{
   y = 461,
   direction = 0,
   breed = "rope",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5488,6 +5494,7 @@ enemy{
   y = 405,
   direction = 0,
   breed = "moblin_sword",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5504,6 +5511,7 @@ enemy{
   y = 317,
   direction = 0,
   breed = "moblin_sword",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5512,6 +5520,7 @@ enemy{
   y = 221,
   direction = 0,
   breed = "moblin_sword",
+  treasure_name = "random",
 }
 
 door{
@@ -5533,7 +5542,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "door_3",
+      value = "spawn_secret_stair",
     },
   },
   subtype = "walkable",
@@ -5565,10 +5574,21 @@ custom_entity{
   layer = 0,
   x = 360,
   y = 397,
+  properties = {
+    {
+      key = "red_trigger",
+      value = "door_2",
+    },
+    {
+      key = "torchs",
+      value = "flamme_1;flamme_2",
+    },
+  },
   width = 16,
   height = 16,
   direction = 0,
   sprite = "entities/dungeon_elements/color_cube_destination",
+  model = "colored_block_destination",
 }
 
 enemy{
@@ -5577,14 +5597,16 @@ enemy{
   y = 661,
   direction = 0,
   breed = "rope",
+  treasure_name = "random",
 }
 
 enemy{
   layer = 0,
   x = 632,
-  y = 581,
+  y = 589,
   direction = 0,
   breed = "rope",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5593,6 +5615,7 @@ enemy{
   y = 661,
   direction = 0,
   breed = "rope",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5601,6 +5624,7 @@ enemy{
   y = 477,
   direction = 0,
   breed = "skeleton_1",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5609,6 +5633,7 @@ enemy{
   y = 501,
   direction = 0,
   breed = "skeleton_1",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5633,6 +5658,7 @@ enemy{
   y = 429,
   direction = 0,
   breed = "skeleton_1",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5641,6 +5667,7 @@ enemy{
   y = 469,
   direction = 0,
   breed = "skeleton_1",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5649,6 +5676,7 @@ enemy{
   y = 501,
   direction = 0,
   breed = "skeleton_1",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5657,6 +5685,7 @@ enemy{
   y = 309,
   direction = 0,
   breed = "rope",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5665,6 +5694,7 @@ enemy{
   y = 245,
   direction = 0,
   breed = "rope",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5673,6 +5703,7 @@ enemy{
   y = 269,
   direction = 0,
   breed = "rope",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5681,6 +5712,7 @@ enemy{
   y = 269,
   direction = 0,
   breed = "rope",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5689,6 +5721,7 @@ enemy{
   y = 269,
   direction = 0,
   breed = "rope",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5697,6 +5730,7 @@ enemy{
   y = 205,
   direction = 0,
   breed = "moblin_sword",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5705,6 +5739,7 @@ enemy{
   y = 333,
   direction = 0,
   breed = "blue_octorock",
+  treasure_name = "random",
 }
 
 door{
@@ -5714,7 +5749,6 @@ door{
   y = 432,
   direction = 0,
   sprite = "entities/door/door",
-  savegame_variable = "dungeon_2_door_1",
   opening_condition = "small_key",
   opening_condition_consumed = true,
 }
@@ -5723,7 +5757,7 @@ enemy{
   layer = 0,
   x = 312,
   y = 221,
-  direction = 0,
+  direction = 3,
   breed = "blade_trap",
 }
 
@@ -5731,7 +5765,7 @@ enemy{
   layer = 0,
   x = 360,
   y = 317,
-  direction = 0,
+  direction = 1,
   breed = "blade_trap",
 }
 
@@ -5739,7 +5773,7 @@ enemy{
   layer = 0,
   x = 456,
   y = 317,
-  direction = 0,
+  direction = 1,
   breed = "blade_trap",
 }
 
@@ -5747,7 +5781,7 @@ enemy{
   layer = 0,
   x = 408,
   y = 221,
-  direction = 0,
+  direction = 3,
   breed = "blade_trap",
 }
 
@@ -5757,16 +5791,6 @@ enemy{
   y = 381,
   direction = 0,
   breed = "blade_trap",
-}
-
-destructible{
-  layer = 0,
-  x = 600,
-  y = 557,
-  sprite = "entities/vegetation/grass_door",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
 }
 
 enemy{
@@ -5781,6 +5805,7 @@ enemy{
   },
   direction = 0,
   breed = "octorok",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5795,6 +5820,7 @@ enemy{
   },
   direction = 0,
   breed = "blue_octorock",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5809,6 +5835,7 @@ enemy{
   },
   direction = 0,
   breed = "octorok",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5823,6 +5850,7 @@ enemy{
   },
   direction = 0,
   breed = "moblin_sword",
+  treasure_name = "random",
 }
 
 enemy{
@@ -5837,6 +5865,7 @@ enemy{
   },
   direction = 0,
   breed = "moblin_sword",
+  treasure_name = "random",
 }
 
 separator{
@@ -5923,9 +5952,11 @@ destination{
 }
 
 custom_entity{
+  name = "flamme_2",
   layer = 0,
   x = 376,
   y = 389,
+  enabled_at_start = false,
   width = 16,
   height = 16,
   direction = 0,
@@ -5933,9 +5964,11 @@ custom_entity{
 }
 
 custom_entity{
+  name = "flamme_1",
   layer = 0,
   x = 344,
   y = 389,
+  enabled_at_start = false,
   width = 16,
   height = 16,
   direction = 0,
@@ -5943,6 +5976,7 @@ custom_entity{
 }
 
 block{
+  name = "colored_block",
   layer = 0,
   x = 360,
   y = 429,
@@ -6065,8 +6099,8 @@ destination{
 
 destructible{
   layer = 0,
-  x = 360,
-  y = 669,
+  x = 600,
+  y = 541,
   properties = {
     {
       key = "savegame_variable",
@@ -6092,6 +6126,65 @@ switch{
   inactivate_when_leaving = false,
 }
 
+dynamic_tile{
+  name = "secret_stair",
+  layer = 0,
+  x = 96,
+  y = 256,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "70_3",
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 269,
+  sprite = "entities/projectile/rock",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 344,
+  y = 269,
+  sprite = "entities/projectile/rock",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 392,
+  y = 269,
+  sprite = "entities/projectile/rock",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 440,
+  y = 269,
+  sprite = "entities/projectile/rock",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 104,
+  y = 429,
+  sprite = "entities/projectile/rock",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 24,
+  y = 413,
+  sprite = "entities/projectile/rock",
+  weight = 1,
+}
+
 tile{
   layer = 1,
   x = 592,
@@ -6099,66 +6192,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "69",
-}
-
-custom_entity{
-  layer = 1,
-  x = 440,
-  y = 269,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/projectile/rock",
-}
-
-custom_entity{
-  layer = 1,
-  x = 392,
-  y = 269,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/projectile/rock",
-}
-
-custom_entity{
-  layer = 1,
-  x = 344,
-  y = 269,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/projectile/rock",
-}
-
-custom_entity{
-  layer = 1,
-  x = 296,
-  y = 269,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/projectile/rock",
-}
-
-custom_entity{
-  layer = 1,
-  x = 24,
-  y = 413,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/projectile/rock",
-}
-
-custom_entity{
-  layer = 1,
-  x = 104,
-  y = 429,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/projectile/rock",
 }
 
 custom_entity{
