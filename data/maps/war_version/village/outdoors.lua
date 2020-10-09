@@ -59,9 +59,9 @@ function map:on_started_()
         end)
       end)
     end
-  elseif story < 7 then
+  elseif story < 6 then
     zuna:get_sprite():set_direction(3)
-  elseif game:get_story_state() > 6 then
+  elseif game:get_story_state() > 5 then
     zuna:set_enabled(false)
   end
 
