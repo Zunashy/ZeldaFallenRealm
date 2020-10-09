@@ -371,15 +371,6 @@ tile{
 tile{
   layer = 0,
   x = 72,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "47_9",
-}
-
-tile{
-  layer = 0,
-  x = 72,
   y = 16,
   width = 16,
   height = 16,
@@ -827,6 +818,24 @@ tile{
   pattern = "4",
 }
 
+tile{
+  layer = 0,
+  x = 72,
+  y = 40,
+  width = 16,
+  height = 8,
+  pattern = "68",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 32,
+  width = 16,
+  height = 8,
+  pattern = "67",
+}
+
 destructible{
   layer = 0,
   x = 80,
@@ -835,5 +844,14 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
+}
+
+tile{
+  layer = 1,
+  x = 72,
+  y = 32,
+  width = 16,
+  height = 8,
+  pattern = "69",
 }
 

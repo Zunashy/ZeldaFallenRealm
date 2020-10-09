@@ -7467,6 +7467,7 @@ destructible{
     },
   },
   sprite = "entities/vegetation/grass_door",
+  destruction_sound = "treasure",
   weight = -1,
   can_be_cut = true,
 }
