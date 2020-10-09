@@ -7078,15 +7078,7 @@ tile{
   pattern = "16_9",
 }
 
-destination{
-  name = "ocotrok",
-  layer = 1,
-  x = 400,
-  y = 477,
-  direction = 1,
-}
-
-teletransporter{
+tile{
   layer = 1,
   x = 288,
   y = 16,
@@ -7450,15 +7442,10 @@ separator{
 }
 
 npc{
+  name = "octo_guard",
   layer = 1,
-  x = 400,
+  x = 416,
   y = 477,
-  properties = {
-    {
-      key = "max_story_state",
-      value = "3",
-    },
-  },
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/8",
@@ -7713,6 +7700,14 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "normal_version/village/nielint/indoors/tree_house",
+}
+
+destination{
+  name = "octorock",
+  layer = 1,
+  x = 400,
+  y = 477,
+  direction = 1,
 }
 
 teletransporter{
@@ -8076,9 +8071,9 @@ destructible{
 npc{
   name = "zuna",
   layer = 1,
-  x = 64,
-  y = 485,
-  direction = 2,
+  x = 56,
+  y = 453,
+  direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/5",
 }
