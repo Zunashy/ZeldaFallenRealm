@@ -1835,15 +1835,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 112,
-  y = 384,
-  width = 16,
-  height = 16,
-  pattern = "33",
-}
-
-tile{
-  layer = 0,
   x = 80,
   y = 384,
   width = 16,
@@ -1867,24 +1858,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "30",
-}
-
-tile{
-  layer = 0,
-  x = 112,
-  y = 432,
-  width = 16,
-  height = 16,
-  pattern = "33",
-}
-
-tile{
-  layer = 0,
-  x = 192,
-  y = 480,
-  width = 16,
-  height = 16,
-  pattern = "33",
 }
 
 tile{
@@ -3107,65 +3080,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 176,
-  y = 208,
-  width = 16,
-  height = 16,
-  pattern = "65",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 240,
-  width = 64,
-  height = 16,
-  pattern = "27",
-}
-
-tile{
-  layer = 0,
   x = 64,
   y = 272,
   width = 160,
   height = 16,
   pattern = "27",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 224,
-  width = 16,
-  height = 16,
-  pattern = "16",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 224,
-  width = 16,
-  height = 16,
-  pattern = "17",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 208,
-  width = 16,
-  height = 16,
-  pattern = "18",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 208,
-  width = 16,
-  height = 16,
-  pattern = "15",
 }
 
 tile{
@@ -3201,12 +3120,12 @@ tile{
   y = 208,
   width = 16,
   height = 16,
-  pattern = "63",
+  pattern = "64",
 }
 
 tile{
   layer = 0,
-  x = 48,
+  x = 208,
   y = 208,
   width = 16,
   height = 16,
@@ -3369,11 +3288,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 208,
+  x = 48,
   y = 208,
   width = 16,
   height = 16,
-  pattern = "65",
+  pattern = "64",
 }
 
 tile{
@@ -3907,6 +3826,24 @@ tile{
   pattern = "67",
 }
 
+tile{
+  layer = 0,
+  x = 112,
+  y = 240,
+  width = 80,
+  height = 16,
+  pattern = "29",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 224,
+  width = 80,
+  height = 16,
+  pattern = "28",
+}
+
 chest{
   name = "chest_bracelet",
   layer = 0,
@@ -3981,7 +3918,7 @@ enemy{
   layer = 0,
   x = 200,
   y = 509,
-  direction = 0,
+  direction = 2,
   breed = "blade_trap",
 }
 
@@ -4009,28 +3946,10 @@ enemy{
   breed = "blade_trap",
 }
 
-custom_entity{
-  layer = 0,
-  x = 200,
-  y = 205,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/dungeon_elements/color_cube_destination",
-}
-
 enemy{
   layer = 0,
   x = 168,
-  y = 237,
-  direction = 0,
-  breed = "blade_trap",
-}
-
-enemy{
-  layer = 0,
-  x = 72,
-  y = 237,
+  y = 221,
   direction = 0,
   breed = "skeleton_1",
 }
@@ -4045,7 +3964,7 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 24,
+  x = 56,
   y = 253,
   direction = 0,
   breed = "octorok",
@@ -4055,20 +3974,21 @@ custom_entity{
   layer = 0,
   x = 40,
   y = 205,
+  properties = {
+    {
+      key = "yellow_trigger",
+      value = "spawn_colored_block_2",
+    },
+    {
+      key = "torchs",
+      value = "flamme_1;flamme_2",
+    },
+  },
   width = 16,
   height = 16,
   direction = 0,
   sprite = "entities/dungeon_elements/color_cube_destination",
-}
-
-custom_entity{
-  layer = 0,
-  x = 104,
-  y = 221,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/dungeon_elements/color_cube",
+  model = "colored_block_destination",
 }
 
 separator{
@@ -4259,8 +4179,8 @@ switch{
 enemy{
   name = "ambush",
   layer = 0,
-  x = 400,
-  y = 237,
+  x = 416,
+  y = 229,
   enabled_at_start = false,
   properties = {
     {
@@ -4376,15 +4296,6 @@ enemy{
   treasure_name = "random",
 }
 
-block{
-  layer = 0,
-  x = 184,
-  y = 317,
-  sprite = "entities/dungeon_elements/color_cube",
-  pushable = true,
-  pullable = false,
-}
-
 destructible{
   layer = 0,
   x = 616,
@@ -4401,6 +4312,162 @@ destructible{
   weight = 1,
 }
 
+destructible{
+  layer = 0,
+  x = 200,
+  y = 221,
+  sprite = "entities/projectile/rock",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 152,
+  y = 269,
+  sprite = "entities/projectile/rock",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 136,
+  y = 429,
+  sprite = "entities/projectile/rock",
+  weight = 1,
+}
+
+custom_entity{
+  name = "flamme_2",
+  layer = 0,
+  x = 56,
+  y = 197,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/colored_flame",
+}
+
+custom_entity{
+  name = "flamme_1",
+  layer = 0,
+  x = 24,
+  y = 197,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/colored_flame",
+}
+
+custom_entity{
+  name = "flamme_3",
+  layer = 0,
+  x = 216,
+  y = 197,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/colored_flame",
+}
+
+custom_entity{
+  name = "flamme_4",
+  layer = 0,
+  x = 184,
+  y = 197,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/colored_flame",
+}
+
+custom_entity{
+  layer = 0,
+  x = 200,
+  y = 205,
+  properties = {
+    {
+      key = "blue_trigger",
+      value = "door_6",
+    },
+    {
+      key = "torchs",
+      value = "flamme_3;flamme_4",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/color_cube_destination",
+  model = "colored_block_destination",
+}
+
+door{
+  name = "door_6",
+  layer = 0,
+  x = 224,
+  y = 256,
+  direction = 2,
+  sprite = "entities/door/door",
+  savegame_variable = "dungeon_2_door_6",
+  opening_condition = "small_key",
+  opening_condition_consumed = true,
+}
+
+block{
+  layer = 0,
+  x = 120,
+  y = 445,
+  sprite = "entities/block/block",
+  pushable = true,
+  pullable = false,
+  max_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 200,
+  y = 493,
+  sprite = "entities/block/block",
+  pushable = true,
+  pullable = false,
+  max_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 120,
+  y = 397,
+  sprite = "entities/block/block",
+  pushable = true,
+  pullable = false,
+  max_moves = 1,
+}
+
+block{
+  name = "colored_block",
+  layer = 0,
+  x = 184,
+  y = 317,
+  sprite = "entities/dungeon_elements/color_cube",
+  pushable = true,
+  pullable = false,
+}
+
+block{
+  name = "colored_block_2",
+  layer = 0,
+  x = 88,
+  y = 221,
+  enabled_at_start = false,
+  sprite = "entities/dungeon_elements/color_cube",
+  pushable = true,
+  pullable = false,
+}
+
 tile{
   layer = 1,
   x = 352,
@@ -4408,45 +4475,5 @@ tile{
   width = 16,
   height = 8,
   pattern = "69",
-}
-
-custom_entity{
-  layer = 1,
-  x = 136,
-  y = 429,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/projectile/rock",
-}
-
-custom_entity{
-  layer = 1,
-  x = 152,
-  y = 269,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/projectile/rock",
-}
-
-custom_entity{
-  layer = 1,
-  x = 200,
-  y = 221,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/projectile/rock",
-}
-
-custom_entity{
-  layer = 1,
-  x = 200,
-  y = 253,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/projectile/rock",
 }
 
