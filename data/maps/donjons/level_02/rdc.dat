@@ -6,6 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "dungeon/tileset_donjon_2",
+  music = "dungeon1",
 }
 
 tile{
@@ -1997,15 +1998,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "5",
-}
-
-tile{
-  layer = 0,
-  x = 648,
-  y = 256,
-  width = 16,
-  height = 16,
-  pattern = "32",
 }
 
 tile{
@@ -5915,7 +5907,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_teleport;spawn_teleport_2;door_miniboss;music_dungeon2",
+      value = "spawn_teleport;spawn_teleport_2;door_miniboss;music_dungeon2;spawn_mini_boss_stair;spawn_tp_ss1",
     },
     {
       key = "no_reset",
@@ -6032,9 +6024,11 @@ teletransporter{
 }
 
 teletransporter{
+  name = "tp_ss1",
   layer = 0,
   x = 648,
   y = 256,
+  enabled_at_start = false,
   width = 16,
   height = 16,
   destination_map = "donjons/level_02/ss1",
@@ -6062,6 +6056,7 @@ teletransporter{
   layer = 0,
   x = 352,
   y = 608,
+  enabled_at_start = false,
   width = 16,
   height = 16,
   destination_map = "donjons/level_02/rdc",
@@ -6074,6 +6069,7 @@ teletransporter{
   layer = 0,
   x = 592,
   y = 256,
+  enabled_at_start = false,
   width = 16,
   height = 16,
   destination_map = "donjons/level_02/rdc",
@@ -6183,6 +6179,17 @@ destructible{
   y = 413,
   sprite = "entities/projectile/rock",
   weight = 1,
+}
+
+dynamic_tile{
+  name = "mini_boss_stair",
+  layer = 0,
+  x = 648,
+  y = 256,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "32",
 }
 
 tile{
