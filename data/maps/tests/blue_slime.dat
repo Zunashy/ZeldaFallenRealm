@@ -242,6 +242,27 @@ tile{
   pattern = "50",
 }
 
+custom_entity{
+  layer = 1,
+  x = 344,
+  y = 157,
+  properties = {
+    {
+      key = "red_trigger",
+      value = "spawn_chest_1",
+    },
+    {
+      key = "torchs",
+      value = "torch;torch_2",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/color_cube_destination",
+  model = "colored_block_destination",
+}
+
 destination{
   name = "spawn",
   layer = 1,
@@ -524,27 +545,6 @@ teletransporter{
   transition = "immediate",
   destination_map = "tests/outside",
   sprite = "entities/dungeon_elements/teleport",
-}
-
-custom_entity{
-  layer = 1,
-  x = 344,
-  y = 157,
-  properties = {
-    {
-      key = "red_trigger",
-      value = "spawn_chest_1",
-    },
-    {
-      key = "torchs",
-      value = "torch;torch_2",
-    },
-  },
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/dungeon_elements/color_cube_destination",
-  model = "colored_block_destination",
 }
 
 custom_entity{

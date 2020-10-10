@@ -57,7 +57,7 @@ function map:on_opening_transition_finished()
     mHero:start(hero)
     mRadeau:start(map:get_entity("radeau"))
     vfx.fade_in(40)
-  elseif game:get_story_state() > 2 and game:get_essence() > 0 then
+  elseif game:get_story_state() > 2 and game:get_essence() > 0 and game:get_story_state() < 4 then
     local sorcier = map:get_entity("sorcier")
     sorcier:set_enabled(true)
     map:get_entity("sensor_1").on_activated = function()
@@ -96,6 +96,7 @@ function map:on_opening_transition_finished()
         end)
       end)
     end
+    
   end
 
   self:discover(cases)

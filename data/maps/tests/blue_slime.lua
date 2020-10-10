@@ -25,5 +25,7 @@ function map:on_started_()
 end
 
 function map:on_opening_transition_finished()
-
+    mg.move_straight(map:get_entity("snas"), 3, nil , 64, function()
+        print("oui")
+    end, {stop_on_obstacle = true})
 end

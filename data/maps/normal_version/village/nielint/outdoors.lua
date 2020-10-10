@@ -25,7 +25,11 @@ function map:on_opening_transition_finished(destination)
   local zuna = self:get_entity("zuna")
   if story == 6 then
     if destination:get_name() == "" then
-      mg.move_straight(zuna, 2, distance, speed, callback, config)
+      mg.move_straight(zuna, 2, nil, 64, function()
+        game:start_dialog("pnj.village.nielint.barman.east", function()
+          map:get_hero():start_treasure("fire_seed")
+        end)
+      end, {stop_on_obstacle = true})
     end
   else
     zuna:set_enabled(false)

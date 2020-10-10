@@ -402,6 +402,13 @@ Allez, l'épée ne va pas aller se chercher toute seule.
 }
 
 dialog{
+  id = "pnj.village.nielint.barman.east",
+  text = [[
+mmmmh prends mes graines mmmh
+]],
+}
+
+dialog{
   id = "pnj.village.nielint.barman.sleep",
   text = [[
 zzz...

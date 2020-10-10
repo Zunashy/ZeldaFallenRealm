@@ -219,6 +219,13 @@ function mg.start_jumping(entity, direction, distance, speed, callback)
   return m
 end
 
+local function movement_obstacle_callback(m)
+  m:stop()
+  if m.callback then
+    m:callback()
+  end
+end
+
 function mg.move_straight(entity, direction, distance, speed, callback, config)
   local m = sol.movement.create("straight")
   m:set_speed(speed or 16)
@@ -230,6 +237,10 @@ function mg.move_straight(entity, direction, distance, speed, callback, config)
     end
     if config.ignore_obstacles then
       m:set_ignore_obstacles(true)
+    end
+    if config.stop_on_obstacle then
+      m.on_obstacle_reached = movement_obstacle_callback
+      m.callback = callback
     end
   end
   m:start(entity, callback)

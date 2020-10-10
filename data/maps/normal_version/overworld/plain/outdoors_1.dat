@@ -30,7 +30,6 @@ tile{
   layer = 1,
   x = 256,
   y = 0,
-  enabled_at_start = false,
   width = 224,
   height = 96,
   pattern = "1",
@@ -40,7 +39,6 @@ tile{
   layer = 1,
   x = 0,
   y = 0,
-  enabled_at_start = false,
   width = 208,
   height = 96,
   pattern = "1",
@@ -50,7 +48,6 @@ tile{
   layer = 1,
   x = 368,
   y = 0,
-  enabled_at_start = false,
   width = 112,
   height = 160,
   pattern = "1",
@@ -60,7 +57,6 @@ tile{
   layer = 1,
   x = 400,
   y = 160,
-  enabled_at_start = false,
   width = 80,
   height = 32,
   pattern = "1",
@@ -70,7 +66,6 @@ tile{
   layer = 1,
   x = 368,
   y = 192,
-  enabled_at_start = false,
   width = 112,
   height = 64,
   pattern = "1",
@@ -80,7 +75,6 @@ tile{
   layer = 1,
   x = 0,
   y = 80,
-  enabled_at_start = false,
   width = 368,
   height = 176,
   pattern = "1",
@@ -3839,5 +3833,21 @@ teletransporter{
   height = 16,
   destination_map = "normal_version/overworld/plain/indoors/cave_01",
   destination = "entrance",
+}
+
+enemy{
+  layer = 1,
+  x = 232,
+  y = 197,
+  direction = 0,
+  breed = "tektite_blue",
+}
+
+enemy{
+  layer = 1,
+  x = 112,
+  y = 205,
+  direction = 0,
+  breed = "tektite_blue",
 }
 

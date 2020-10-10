@@ -1,3 +1,5 @@
+local vfx = require("scripts/api/visual_effects")
+
 local function trigger_event(map, event)
     if not type(event) == "string" then return end
     local name
@@ -15,7 +17,7 @@ local function trigger_event(map, event)
       end
     elseif event:starts("spawn_") then
       name = event:sub(7)
-      map.enable_entity(map, name)
+      map:enable_entity(name)
     elseif event:starts("function_") then
       name = event:sub(10)
       if type(map[name]) == "function" then
@@ -38,6 +40,8 @@ local function trigger_event(map, event)
         map_name = map:get_id()
       end
       map:get_hero():teleport(map_name, dest, style)
+    elseif event:starts("flash") then
+      vfx.flash(20, {255, 255, 255})
     end
 end
 
