@@ -29,6 +29,7 @@ end
 
 local function collision_callback(controler, other)
   if other.is_moving_platform and not (other.initial_movement and spawned_inside[other]) then
+    print("platform")
     local m = other:get_movement()
     if m then m:stop() end
 
@@ -36,8 +37,9 @@ local function collision_callback(controler, other)
 
     if speed == other.speed and dir == other.direction then return false end
 
+    other.initial_movement = false
     if not controler.delay then
-      start_movement(other)
+      start_movement(other, controler.direction)
     else 
       sol.timer.start(other, controler.delay, function()
         start_movement(other, controler.direction)
