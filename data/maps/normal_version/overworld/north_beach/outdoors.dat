@@ -7220,9 +7220,9 @@ destination{
 teletransporter{
   name = "beach_to_forest",
   layer = 1,
-  x = 512,
+  x = 544,
   y = 624,
-  width = 96,
+  width = 32,
   height = 16,
   destination_map = "normal_version/overworld/wind_wood/forest_outdoor",
   destination = "beach_to_forest",
@@ -7477,6 +7477,7 @@ destructible{
   x = 552,
   y = 285,
   sprite = "entities/vegetation/grass/grass",
+  weight = 1,
   can_be_cut = true,
 }
 
@@ -7485,6 +7486,7 @@ destructible{
   x = 536,
   y = 301,
   sprite = "entities/vegetation/grass/grass",
+  weight = 1,
   can_be_cut = true,
 }
 
@@ -7493,6 +7495,7 @@ destructible{
   x = 584,
   y = 301,
   sprite = "entities/vegetation/grass/grass",
+  weight = 1,
   can_be_cut = true,
 }
 
@@ -7501,6 +7504,7 @@ destructible{
   x = 568,
   y = 285,
   sprite = "entities/vegetation/grass/grass",
+  weight = 1,
   can_be_cut = true,
 }
 
