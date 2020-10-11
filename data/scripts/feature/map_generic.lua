@@ -88,9 +88,14 @@ local function activate_trigger_callback(entity)
 end
 
 local function spawn_loot(enemy, item, variant, save_var)
-  print()
 	if enemy:get_game():get_value(save_var) then return end
-	local x, y, layer = enemy:get_position()
+  local x, y, layer = enemy:get_position()
+  
+  local ground = enemy:get_map():get_ground(x, y, layer)
+  if ground == "deep_water" or ground == "lava" or ground == "hole" then
+    x = enemy.hurt_x
+    y = enemy.hurt_y
+  end
 	
 	enemy:get_map():create_pickable({
 		layer = layer,
@@ -124,7 +129,7 @@ local function group_loot_callback(enemy)
   
   if last_to_die then  --if no such enemy was found, launches the event
     --enemy:register_event("on_dead", function(e)  spawn_loot(e, item, variant, save_var)end)
-	spawn_loot(enemy, item, variant, save_var)
+	  spawn_loot(enemy, item, variant, save_var)
   end
 end
 

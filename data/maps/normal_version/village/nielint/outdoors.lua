@@ -14,24 +14,29 @@ local story = game:get_story_state()
 
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started()
-  local npc = sef:get_entity("octo_guard")
+  local npc = self:get_entity("octo_guard")
   if story < 4 then
     local x, y = octo_guard:get_position()
-    octo_guard:set_position(x - 16, y)
+    npc:set_position(x - 16, y)
+  end
+
+  local zuna = self:get_entity("zuna")
+  if game:get_story_state() == 6 then
+    map:get_entity("sensor_1").on_activated = function()
+      if  game:get_item("fire_seed"):get_variant() == 0 then
+        map:get_hero():freeze()
+        game:set_story_state(7)
+        mg.move_straight(zuna, 3, nil, 64, function()
+          game:start_dialog("pnj.village.nielint.barman.east", function()
+            map:get_hero():start_treasure("fire_seed")
+          end)
+        end, {stop_on_obstacle = true})
+      end
+    end
+  elseif story > 7 or story < 6 then
+    zuna:set_enabled(false)
   end
 end
 
 function map:on_opening_transition_finished(destination)
-  local zuna = self:get_entity("zuna")
-  if story == 6 then
-    if destination:get_name() == "" then
-      mg.move_straight(zuna, 2, nil, 64, function()
-        game:start_dialog("pnj.village.nielint.barman.east", function()
-          map:get_hero():start_treasure("fire_seed")
-        end)
-      end, {stop_on_obstacle = true})
-    end
-  else
-    zuna:set_enabled(false)
-  elseif 
 end

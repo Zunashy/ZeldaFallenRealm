@@ -20,9 +20,13 @@ function map:on_started_()
     elseif story < 4 then
       game:start_dialog("pnj.overworld.north_beach.deku_tree.part1.2")
     elseif story < 6 then
-      game:start_dialog("pnj.overworld.north_beach.deku_tree.part2.1", function() game:set_story_state(6) end) *
+      game:start_dialog("pnj.overworld.north_beach.deku_tree.part2.1", function() 
+        game:start_dialog("pnj.overworld.north_beach.deku_tree.part2.2", function()
+          game:set_story_state(6) 
+        end)
+      end)
     else
-      game:start_dialog("pnj.overworld.north_beach.deku_tree.part2.2")
+      game:start_dialog("pnj.overworld.north_beach.deku_tree.part2.3")
     end
   end
 end

@@ -15924,7 +15924,7 @@ destination{
 }
 
 destination{
-  name = "plain_cave_03",
+  name = "plain_cave_04",
   layer = 1,
   x = 400,
   y = 309,
@@ -15952,7 +15952,7 @@ teletransporter{
 }
 
 destination{
-  name = "plain_cave_04",
+  name = "plain_cave_3",
   layer = 1,
   x = 712,
   y = 293,
@@ -16487,6 +16487,7 @@ destructible{
 }
 
 npc{
+  name = "moblin_cave_guard",
   layer = 1,
   x = 408,
   y = 573,
@@ -16496,12 +16497,20 @@ npc{
 }
 
 npc{
+  name = "guard_east",
   layer = 1,
   x = 936,
   y = 461,
+  properties = {
+    {
+      key = "max_story_state",
+      value = "8",
+    },
+  },
   direction = 2,
   subtype = 1,
   sprite = "pnj/overworld/5",
+  behavior = "dialog#pnj.overworld.plain.SE_guard",
 }
 
 npc{
@@ -16511,6 +16520,7 @@ npc{
   direction = 2,
   subtype = 1,
   sprite = "pnj/overworld/5",
+  behavior = "dialog#pnj.overworld.plain.SE_guard",
 }
 
 npc{
@@ -16520,9 +16530,11 @@ npc{
   direction = 2,
   subtype = 1,
   sprite = "pnj/overworld/5",
+  behavior = "dialog#pnj.overworld.plain.SE_guard",
 }
 
 npc{
+  name = "guard_camp",
   layer = 1,
   x = 728,
   y = 429,
@@ -16532,6 +16544,7 @@ npc{
 }
 
 npc{
+  name = "villager_2",
   layer = 1,
   x = 904,
   y = 333,
@@ -16541,6 +16554,7 @@ npc{
 }
 
 npc{
+  name = "villager_3",
   layer = 1,
   x = 888,
   y = 349,
@@ -16550,6 +16564,7 @@ npc{
 }
 
 npc{
+  name = "villager_1",
   layer = 1,
   x = 872,
   y = 301,
@@ -16559,6 +16574,7 @@ npc{
 }
 
 npc{
+  name = "villager_4",
   layer = 1,
   x = 840,
   y = 333,
@@ -16875,15 +16891,6 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 392,
-  y = 413,
-  direction = 3,
-  breed = "moblin_sword",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 1,
   x = 456,
   y = 429,
   direction = 3,
@@ -16943,5 +16950,13 @@ teletransporter{
   height = 16,
   destination_map = "normal_version/overworld/deep_forest/outdoors",
   destination = "plain_to_deep",
+}
+
+destination{
+  name = "campfire",
+  layer = 1,
+  x = 856,
+  y = 317,
+  direction = 3,
 }
 

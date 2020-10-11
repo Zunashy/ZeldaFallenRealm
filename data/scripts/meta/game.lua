@@ -26,6 +26,14 @@ function game_meta:set_story_state(state)
   return self:set_value("story_state", state)
 end
 
+function game_meta:get_sidequest_state(sidequest)
+  return self:get_value("sidequest_"..sidequest) or 0
+end
+
+function game_meta:set_sidequest_state(sidequest, state)
+  return self:set_value("sidequest_"..sidequest, state)
+end
+
 function game_meta:get_essence()
   return self:get_value("essence") or 0
 end

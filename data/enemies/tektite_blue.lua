@@ -88,7 +88,7 @@ function enemy:on_restarted()
   self:set_h(0)
 end
 
-function enemy:on_hurt()
+enemy:register_event("on_hurt", function (self)
   self:set_h(0)
   sprite:set_animation("hurt")
-end
+end)

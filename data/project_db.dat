@@ -219,7 +219,6 @@ sprite{ id = "things/exclamation", description = "Exclamation" }
 sprite{ id = "things/fall_on_hole_effect", description = "things/fall_on_hole_effect" }
 sprite{ id = "things/grass_effect", description = "things/grass_effect" }
 sprite{ id = "things/lava_splash_effect", description = "things/lava_splash_effect" }
-sprite{ id = "things/long_chair", description = "things/long_chair" }
 sprite{ id = "things/radeau", description = "things/radeau" }
 sprite{ id = "things/switch_aureole", description = "things/switch_aureole" }
 sprite{ id = "things/water_splash_effect", description = "things/water_splash_effect" }
@@ -302,12 +301,13 @@ item{ id = "essence", description = "Essences" }
 item{ id = "fire_seed", description = "Graine de feu" }
 item{ id = "great_key", description = "great_key" }
 item{ id = "heart", description = "heart" }
-item{ id = "heart_container", description = "heart_container" }
+item{ id = "heart_full", description = "heart_container" }
 item{ id = "heart_quarter", description = "heart_quarter" }
 item{ id = "horn", description = "Flute monde guerre" }
 item{ id = "ice_seed", description = "ice_seed" }
 item{ id = "map", description = "map" }
 item{ id = "random", description = "random" }
+item{ id = "ring_octorock", description = "Anneau Octorock" }
 item{ id = "rock_feather", description = "rock_feather" }
 item{ id = "rupee", description = "rupee" }
 item{ id = "shield", description = "shield" }
@@ -415,11 +415,12 @@ file{ path = "items/essence.lua", author = "TwilCynder", }
 file{ path = "items/fire_seed.lua", author = "TwilCynder", }
 file{ path = "items/great_key.lua", author = "TwilCynder", }
 file{ path = "items/heart.lua", author = "TwilCynder", }
-file{ path = "items/heart_container.lua", author = "TwilCynder", }
+file{ path = "items/heart_full.lua", author = "TwilCynder", }
 file{ path = "items/heart_quarter.lua", author = "TwilCynder", }
 file{ path = "items/horn.lua", author = "TwilCynder", }
 file{ path = "items/ice_seed.lua", author = "TwilCynder", }
 file{ path = "items/random.lua", author = "Benoit", }
+file{ path = "items/ring_octorock.lua", author = "TwilCynder", }
 file{ path = "items/rock_feather.lua", author = "TwilCynder", }
 file{ path = "items/rupee.lua", author = "TwilCynder", }
 file{ path = "items/small_key.lua", author = "TwilCynder", }

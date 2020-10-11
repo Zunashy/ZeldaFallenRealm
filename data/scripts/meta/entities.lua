@@ -62,6 +62,10 @@ local function exclam_anim_cb(self)
   end
 end
 
+function npc_meta:set_dialog(dialog)
+  self:set_property("dialog", dialog)
+end
+
 function npc_meta:exclamation(callback)
   local sprite = self:create_sprite("things/exclamation")
   sprite:set_xy(0, -16)
@@ -83,6 +87,13 @@ function enemy_meta:set_attacks_consequence(consequence)
   self:set_attack_consequence("hookshot", consequence)
   self:set_attack_consequence("boomerang", consequence)
   self:set_attack_consequence("fire", consequence)
+end
+
+function enemy_meta:on_hurt()
+  local x, y = self:get_position()
+  self.hurt_x = x
+  self.hurt_y = y
+  print(self.death_x)
 end
 
 local dest_meta = sol.main.get_metatable("destructible")

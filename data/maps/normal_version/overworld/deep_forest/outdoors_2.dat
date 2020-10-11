@@ -8684,6 +8684,156 @@ npc{
   sprite = "pnj/overworld/5",
 }
 
+enemy{
+  layer = 1,
+  x = 248,
+  y = 205,
+  properties = {
+    {
+      key = "max_story_state",
+      value = "9",
+    },
+  },
+  direction = 0,
+  breed = "tektite_blue",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 384,
+  y = 213,
+  properties = {
+    {
+      key = "max_story_state",
+      value = "9",
+    },
+  },
+  direction = 0,
+  breed = "rope",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 560,
+  y = 197,
+  properties = {
+    {
+      key = "max_story_state",
+      value = "9",
+    },
+  },
+  direction = 0,
+  breed = "rope",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 360,
+  y = 93,
+  properties = {
+    {
+      key = "max_story_state",
+      value = "9",
+    },
+  },
+  direction = 0,
+  breed = "skeleton_2",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 520,
+  y = 221,
+  properties = {
+    {
+      key = "max_story_state",
+      value = "9",
+    },
+  },
+  direction = 0,
+  breed = "octorok",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 424,
+  y = 69,
+  properties = {
+    {
+      key = "max_story_state",
+      value = "9",
+    },
+  },
+  direction = 0,
+  breed = "rope",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 520,
+  y = 93,
+  properties = {
+    {
+      key = "max_story_state",
+      value = "9",
+    },
+  },
+  direction = 0,
+  breed = "tektite_blue",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 576,
+  y = 61,
+  properties = {
+    {
+      key = "max_story_state",
+      value = "9",
+    },
+  },
+  direction = 0,
+  breed = "tektite_blue",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 192,
+  y = 85,
+  properties = {
+    {
+      key = "max_story_state",
+      value = "9",
+    },
+  },
+  direction = 0,
+  breed = "moblin_bow",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 240,
+  y = 53,
+  properties = {
+    {
+      key = "max_story_state",
+      value = "9",
+    },
+  },
+  direction = 0,
+  breed = "moblin_bow",
+  treasure_name = "random",
+}
+
 tile{
   layer = 2,
   x = 392,

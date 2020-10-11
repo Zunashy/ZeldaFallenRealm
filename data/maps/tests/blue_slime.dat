@@ -285,7 +285,7 @@ block{
   y = 189,
   sprite = "entities/dungeon_elements/color_cube",
   pushable = true,
-  pullable = false,
+  pullable = true,
 }
 
 chest{
@@ -486,18 +486,19 @@ custom_entity{
 
 enemy{
   layer = 1,
-  x = 88,
-  y = 365,
+  x = 200,
+  y = 333,
   direction = 0,
   breed = "tektite_blue",
 }
 
 enemy{
+  name = "octo",
   layer = 1,
-  x = 56,
+  x = 80,
   y = 365,
   direction = 0,
-  breed = "blue_octorock",
+  breed = "octorok",
 }
 
 destination{
