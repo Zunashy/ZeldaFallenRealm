@@ -26,11 +26,12 @@ local speed = 60
 
 -- Event called when the enemy is initialized.
 function enemy:on_created()
-
-  -- Initialize the properties of your enemy here,
-  -- like the sprite, the life and the damage.
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
-  enemy:set_life(3)
+  if game:get_item("ring_octorock"):get_variant() == 1 then
+    enemy:set_life(2)
+  else
+    enemy:set_life(3)
+  end
   enemy:set_damage(2)
   mg.initialize_state(enemy, speed)
 end

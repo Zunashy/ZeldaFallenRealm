@@ -52,9 +52,9 @@ local dialog_box = {
 -- Constants.
 local nb_visible_lines = 2     -- Maximum number of lines in the dialog box.
 local char_delays = {          -- Delay before displaying the next character.
-  60,
-  40,
-  20
+  45,
+  30,
+  15
 }
 local letter_sound_delay = 50
 local box_size = {w = 144, h = 40}
