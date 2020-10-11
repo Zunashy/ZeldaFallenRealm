@@ -1852,8 +1852,8 @@ tile{
 door{
   name = "door_2",
   layer = 1,
-  x = 232,
-  y = 512,
+  x = 248,
+  y = 528,
   direction = 3,
   sprite = "entities/door/door",
 }
@@ -1870,8 +1870,8 @@ door{
 destination{
   name = "entrance",
   layer = 1,
-  x = 240,
-  y = 757,
+  x = 184,
+  y = 429,
   direction = 1,
 }
 
@@ -2029,6 +2029,10 @@ custom_entity{
       key = "direction",
       value = "0",
     },
+    {
+      key = "delay",
+      value = "400",
+    },
   },
   width = 24,
   height = 32,
@@ -2045,6 +2049,10 @@ custom_entity{
       key = "direction",
       value = "2",
     },
+    {
+      key = "delay",
+      value = "400",
+    },
   },
   width = 24,
   height = 32,
@@ -2059,7 +2067,7 @@ custom_entity{
   properties = {
     {
       key = "direction",
-      value = "1",
+      value = "0",
     },
     {
       key = "speed",
@@ -2080,7 +2088,7 @@ custom_entity{
   properties = {
     {
       key = "direction",
-      value = "1",
+      value = "2",
     },
     {
       key = "speed",
@@ -2092,70 +2100,6 @@ custom_entity{
   direction = 0,
   sprite = "entities/dungeon_elements/platform",
   model = "platform",
-}
-
-custom_entity{
-  layer = 1,
-  x = 200,
-  y = 333,
-  properties = {
-    {
-      key = "direction",
-      value = "0",
-    },
-  },
-  width = 24,
-  height = 32,
-  direction = 0,
-  model = "platform_controller",
-}
-
-custom_entity{
-  layer = 1,
-  x = 176,
-  y = 301,
-  properties = {
-    {
-      key = "direction",
-      value = "0",
-    },
-  },
-  width = 24,
-  height = 32,
-  direction = 0,
-  model = "platform_controller",
-}
-
-custom_entity{
-  layer = 1,
-  x = 272,
-  y = 333,
-  properties = {
-    {
-      key = "direction",
-      value = "2",
-    },
-  },
-  width = 24,
-  height = 32,
-  direction = 0,
-  model = "platform_controller",
-}
-
-custom_entity{
-  layer = 1,
-  x = 296,
-  y = 301,
-  properties = {
-    {
-      key = "direction",
-      value = "2",
-    },
-  },
-  width = 24,
-  height = 32,
-  direction = 0,
-  model = "platform_controller",
 }
 
 separator{
@@ -2265,7 +2209,7 @@ enemy{
   },
   direction = 0,
   breed = "blue_octorock",
-  treasure_name = "random",
+  treasure_name = "ring_octorock",
 }
 
 separator{
@@ -2312,5 +2256,81 @@ sensor{
   },
   width = 16,
   height = 16,
+}
+
+custom_entity{
+  layer = 1,
+  x = 208,
+  y = 333,
+  properties = {
+    {
+      key = "direction",
+      value = "0",
+    },
+    {
+      key = "delay",
+      value = "400",
+    },
+  },
+  width = 24,
+  height = 32,
+  direction = 0,
+  model = "platform_controller",
+}
+
+custom_entity{
+  layer = 1,
+  x = 184,
+  y = 301,
+  properties = {
+    {
+      key = "direction",
+      value = "0",
+    },
+    {
+      key = "delay",
+      value = "400",
+    },
+  },
+  width = 24,
+  height = 32,
+  direction = 0,
+  model = "platform_controller",
+}
+
+custom_entity{
+  layer = 1,
+  x = 272,
+  y = 333,
+  properties = {
+    {
+      key = "direction",
+      value = "2",
+    },
+    {
+      key = "delay",
+      value = "400",
+    },
+  },
+  width = 24,
+  height = 32,
+  direction = 0,
+  model = "platform_controller",
+}
+
+custom_entity{
+  layer = 1,
+  x = 296,
+  y = 301,
+  properties = {
+    {
+      key = "direction",
+      value = "2",
+    },
+  },
+  width = 24,
+  height = 32,
+  direction = 0,
+  model = "platform_controller",
 }
 

@@ -73,7 +73,9 @@ function npc_meta:exclamation(callback)
   sprite.callback = callback
   sprite.entity = self
 
-  sprite.on_animation_finished = exclam_anim_cb
+  sol.timer.start(self,300,function()
+    exclam_anim_cb(sprite)
+    end)
 end
 
 sol.main.get_metatable("hero").exclamation = npc_meta.exclamation

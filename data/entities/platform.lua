@@ -35,7 +35,7 @@ function entity:on_created()
   m:set_speed(self.speed)
   m:set_angle((math.pi / 2) * self.dir)
   m:start(self)
-
+  
   entity:add_collision_test("overlapping", entity.collision_callback)
   entity.on_position_changed = entity.movement_callback
   px, py = entity:get_position()

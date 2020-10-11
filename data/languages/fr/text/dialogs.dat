@@ -82,6 +82,13 @@ Vous avez trouvé des graines de glace supplémentaires ! Rangez-les dans votre 
 }
 
 dialog{
+  id = "_treasure.ring_octorock.1",
+  text = [[
+Vous obtenez l'anneau octorok, vous connaissez leur point faible.
+]],
+}
+
+dialog{
   id = "_treasure.rock_feather.1",
   text = [[
 Vous avez trouvé la plume de roc ! Cet objet vous servira à sauter par-dessus les obstacles et certaines enemis.

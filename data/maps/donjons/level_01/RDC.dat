@@ -2348,8 +2348,8 @@ tile{
   layer = 1,
   x = 0,
   y = 0,
-  width = 240,
-  height = 176,
+  width = 224,
+  height = 192,
   pattern = "1",
   tileset = "dungeon/tileset_donjon_1",
 }
@@ -11205,6 +11205,10 @@ custom_entity{
       key = "direction",
       value = "3",
     },
+    {
+      key = "delay",
+      value = "400",
+    },
   },
   width = 32,
   height = 24,
@@ -11220,6 +11224,10 @@ custom_entity{
     {
       key = "direction",
       value = "1",
+    },
+    {
+      key = "delay",
+      value = "400",
     },
   },
   width = 32,

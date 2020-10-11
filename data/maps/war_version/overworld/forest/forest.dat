@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "war_world",
-  music = "maku_trees",
+  music = "mysterious forest",
 }
 
 tile{
@@ -133,34 +133,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "17_4",
-}
-
-tile{
-  layer = 0,
-  x = 520,
-  y = 312,
-  width = 48,
-  height = 48,
-  pattern = "231",
-}
-
-tile{
-  layer = 0,
-  x = 528,
-  y = 320,
-  width = 32,
-  height = 32,
-  pattern = "230",
-}
-
-custom_entity{
-  layer = 0,
-  x = 528,
-  y = 325,
-  width = 48,
-  height = 48,
-  direction = 0,
-  model = "poisoned_water",
 }
 
 tile{
@@ -6726,6 +6698,33 @@ tile{
   pattern = "2",
 }
 
+tile{
+  layer = 1,
+  x = 368,
+  y = 192,
+  width = 32,
+  height = 16,
+  pattern = "265",
+}
+
+tile{
+  layer = 1,
+  x = 520,
+  y = 312,
+  width = 48,
+  height = 48,
+  pattern = "231",
+}
+
+tile{
+  layer = 1,
+  x = 528,
+  y = 320,
+  width = 32,
+  height = 32,
+  pattern = "230",
+}
+
 separator{
   layer = 1,
   x = -16,
@@ -7851,6 +7850,16 @@ destructible{
   can_be_cut = true,
 }
 
+custom_entity{
+  layer = 1,
+  x = 528,
+  y = 325,
+  width = 48,
+  height = 48,
+  direction = 0,
+  model = "poisoned_water",
+}
+
 tile{
   layer = 2,
   x = 512,
@@ -7894,5 +7903,14 @@ tile{
   width = 16,
   height = 8,
   pattern = "133",
+}
+
+tile{
+  layer = 2,
+  x = 336,
+  y = 288,
+  width = 32,
+  height = 16,
+  pattern = "264",
 }
 
