@@ -38,7 +38,7 @@ function enemy:on_created()
   -- Initialize the properties of your enemy here,
   -- like the sprite, the life and the damage.
   --sprite = enemy:create_sprite("enemies/moblin")
-  sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
+  sprite = enemy:create_sprite("enemies/moblin")
   sprite:set_direction(math.random(0,3))
   enemy:set_life(4)
   enemy:set_damage(2)

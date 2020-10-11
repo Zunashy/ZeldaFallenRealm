@@ -7,7 +7,7 @@ local spawned_inside = {}
 function entity:read_properties()
   local p = self:get_property("direction")
   if p then p = tonumber(p) end
-  if 0 < p and p < 4 then
+  if -1 < p and p < 4 then
     self.direction = p 
   end  
 
@@ -37,6 +37,7 @@ local function collision_callback(controler, other)
     if speed == other.speed and dir == other.direction then return false end
 
     other.initial_movement = false
+    other.last_controler=controler
     if not controler.delay then
       start_movement(other, controler.direction)
     else 

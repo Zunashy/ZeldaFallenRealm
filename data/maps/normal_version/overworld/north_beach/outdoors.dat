@@ -4767,7 +4767,7 @@ tile{
   y = 16,
   width = 16,
   height = 16,
-  pattern = "57",
+  pattern = "57_9",
 }
 
 tile{
@@ -7292,8 +7292,8 @@ teletransporter{
 
 enemy{
   layer = 1,
-  x = 224,
-  y = 325,
+  x = 408,
+  y = 541,
   properties = {
     {
       key = "min_story_state",
@@ -7310,8 +7310,8 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 200,
-  y = 357,
+  x = 384,
+  y = 573,
   properties = {
     {
       key = "min_story_state",
@@ -7328,8 +7328,8 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 240,
-  y = 341,
+  x = 424,
+  y = 557,
   properties = {
     {
       key = "min_story_state",
@@ -7636,6 +7636,51 @@ destructible{
   destruction_sound = "walk_on_grass",
   weight = 1,
   can_be_cut = true,
+}
+
+enemy{
+  layer = 1,
+  x = 280,
+  y = 413,
+  properties = {
+    {
+      key = "min_story_state",
+      value = "1",
+    },
+    {
+      key = "group_loot",
+      value = "great_key#1$beach_great_key",
+    },
+  },
+  direction = 0,
+  breed = "moblin_sword",
+}
+
+enemy{
+  layer = 1,
+  x = 264,
+  y = 349,
+  properties = {
+    {
+      key = "min_story_state",
+      value = "1",
+    },
+    {
+      key = "group_loot",
+      value = "great_key#1$beach_great_key",
+    },
+  },
+  direction = 0,
+  breed = "moblin_sword",
+}
+
+enemy{
+  layer = 1,
+  x = 216,
+  y = 573,
+  direction = 0,
+  breed = "octorok",
+  treasure_name = "random",
 }
 
 tile{
