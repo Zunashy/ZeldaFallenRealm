@@ -36,8 +36,9 @@ local function collision_callback(controler, other)
 
     if speed == other.speed and dir == other.direction then return false end
 
+    other.initial_movement = false
     if not controler.delay then
-      start_movement(other)
+      start_movement(other, controler.direction)
     else 
       sol.timer.start(other, controler.delay, function()
         start_movement(other, controler.direction)
