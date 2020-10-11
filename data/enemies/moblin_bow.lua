@@ -131,9 +131,9 @@ function enemy:fire_arrow(direction)
   sol.timer.start(enemy,3000, function() enemy.arrow_cooldown = false end)
 end
 
-function enemy:on_hurt(atk)
+
+enemy:register_event("on_hurt", function (self)
   if atk == "sword" then
     detect_state = true
   end
-end
------------
+end)

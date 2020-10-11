@@ -21,11 +21,15 @@ function map:on_started_()
             print("oui")
         end)
     end
-
+    local octo = self:get_entity("octo")
+    octo:register_event("on_dying", function ()
+        print("dying")
+    end)
+    octo:register_event("on_dead", function ()
+        print("dead")
+    end)
 end
 
 function map:on_opening_transition_finished()
-    mg.move_straight(map:get_entity("snas"), 3, nil , 64, function()
-        print("oui")
-    end, {stop_on_obstacle = true})
+
 end

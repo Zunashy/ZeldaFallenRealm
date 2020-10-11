@@ -154,6 +154,12 @@ function hero_meta:start_pull_lever()
   return pull_lever_state
 end
 
+function hero_meta:light_teleport(destination, map)
+  map = map or hero:get_map()
+  local dest = map:get_entity(destination)
+  hero:set_position(dest:get_position())
+end
+
 local game_meta = sol.main.get_metatable("game")
 game_meta:register_event("on_started", initialize_hero_features)
 return true

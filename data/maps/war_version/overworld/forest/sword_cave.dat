@@ -1500,3 +1500,11 @@ destination{
   direction = 1,
 }
 
+enemy{
+  layer = 0,
+  x = 64,
+  y = 69,
+  direction = 0,
+  breed = "blue_octorock",
+}
+

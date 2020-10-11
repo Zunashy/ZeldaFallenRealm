@@ -82,6 +82,7 @@ local function on_game_started()
   dialog_box.cursor_surface = sol.surface.create("menus/dialog_cursor.png")
 
   dialog_box.box_position = gen.vector_class()
+  dialog_box.illustration_position = gen.vector_class()
   dialog_box.illutration_surface = sol.surface.create(32, 32)
 
 end
@@ -95,6 +96,7 @@ end
 function dialog_box:on_started()
   self.char_delay = char_delays[self.text_speed] -- à remplacer par une vraie sélection de la vitesse (settings ?)
   self.box_position:set(8, 96)
+  self.illustration_position:set(64, 48)
 
   local map = self.game:get_map()
   local hero = self.game:get_hero()
@@ -103,6 +105,7 @@ function dialog_box:on_started()
   if hero:is_enabled() and hero:is_visible() then
     if hero_y > cam_h - 56 and not (self.dialog.position == "1") then
       self.box_position:set(8, 24)
+      self.illustration_position:set(64, 80)
     end
   end
 
@@ -132,7 +135,7 @@ function dialog_box:on_draw(dst_surface)
   end
   
   if self.illustrate then
-    self.illutration_surface:draw(self.surface, 64, 48)
+    self.illutration_surface:draw(self.surface, self.illustration_position:get())
   end
   self.box_surface:draw(self.surface, x, y)
   self.surface:draw(dst_surface)

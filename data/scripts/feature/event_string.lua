@@ -41,7 +41,7 @@ local function trigger_event(map, event)
       end
       map:get_hero():teleport(map_name, dest, style)
     elseif event:starts("flash") then
-      vfx.flash(20, {255, 255, 255})
+      vfx.flash(tonumber(event:sub(7) or 20), {255, 255, 255})
     end
 end
 

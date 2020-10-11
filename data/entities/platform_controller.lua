@@ -15,6 +15,16 @@ function entity:read_properties()
   if p then p = tonumber(p) end
   self.speed = p
 
+  p = self:get_property("delay")
+  if p then p = tonumber(p) end
+  self.delay = p or 0
+end
+
+local function start_movement(platform, direction)
+  local m = sol.movement.create("straight")
+  m:set_speed(platform.speed)
+  m:set_angle((math.pi / 2) * direction)
+  m:start(platform)
 end
 
 local function collision_callback(controler, other)
@@ -26,11 +36,14 @@ local function collision_callback(controler, other)
 
     if speed == other.speed and dir == other.direction then return false end
 
-    m = sol.movement.create("straight")
-    m:set_speed(other.speed)
-    m:set_angle((math.pi / 2) * controler.direction)
-    m:start(other)
-    other.initial_movement = false
+    if not controler.delay then
+      start_movement(other)
+    else 
+      sol.timer.start(other, controler.delay, function()
+        start_movement(other, controler.direction)
+      end)
+    end
+    
   end
 end
 

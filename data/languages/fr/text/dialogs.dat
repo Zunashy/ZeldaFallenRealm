@@ -237,6 +237,7 @@ bla bla bla donjon
 
 dialog{
   id = "pnj.overworld.north_beach.deku_tree.part2.2",
+  illustrate_item = "essence",
   text = [[
 l'essence (c cher (lol))
 ]],
@@ -287,6 +288,134 @@ C'est à cette heure là que tu rentres ?!
 Le dîner est presque prêt et tu n'as toujours pas mis la table ! 
 ... Oh... Pardonnez-moi je vous ai confondu avec mon fils. 
 Il est toujours en train de trainer dehors avec ses copains, je ne sais plus quoi faire pour qu'il rentre à l'heure.
+]],
+}
+
+dialog{
+  id = "pnj.overworld.plain.SE_guard",
+  text = [[
+Interdiction d'aller plus loin.
+]],
+}
+
+dialog{
+  id = "pnj.overworld.plain.camp.cinematic",
+  text = [[
+oui alors du coup va tuer les monstres stp
+]],
+}
+
+dialog{
+  id = "pnj.overworld.plain.camp.talked_all",
+  text = [[
+hey reste un peu on a de la vodka et du saucisson
+]],
+}
+
+dialog{
+  id = "pnj.overworld.plain.camp.villager_1.1",
+  text = [[
+... Son épée scintillait, sous le clair de lune. 
+Le héros, le héros, affrontant la brume... Ma chanson te plait ? 
+Elle parle d'un héros vêtu d'une tunique verte, tout comme toi. Amusant non ?
+]],
+}
+
+dialog{
+  id = "pnj.overworld.plain.camp.villager_1.2",
+  text = [[
+va tuer les monstres stp
+]],
+}
+
+dialog{
+  id = "pnj.overworld.plain.camp.villager_2.1",
+  text = [[
+Viens t'assoir près du feu, mon jeune ami. 
+Cette plaine est infestée de monstres et nous avons déjà perdu trop des nôtres. 
+Si seulement j'étais encore capable de me battre comme avant, je leur montrerai de quel bois je me chauffe !
+]],
+}
+
+dialog{
+  id = "pnj.overworld.plain.camp.villager_2.2",
+  text = [[
+va tuer les monstres stp
+]],
+}
+
+dialog{
+  id = "pnj.overworld.plain.camp.villager_3.1",
+  text = [[
+Ahahahahah ! Pourquoi je rigole ? Je repense à la fois j'ai vu un insecte se poser sur le nez d'un moblin. 
+Ce gros balourd s'est cogné lui-même avec sa massue !
+]],
+}
+
+dialog{
+  id = "pnj.overworld.plain.camp.villager_3.2",
+  text = [[
+va tuer les monstres stp
+]],
+}
+
+dialog{
+  id = "pnj.overworld.plain.camp.villager_4.1",
+  text = [[
+Autrefois j'étais un soldat. Maintenant je profite de la vie pour m'amuser. 
+Comme ça, j'ai plus de boissons et moins d'ennuis !
+]],
+}
+
+dialog{
+  id = "pnj.overworld.plain.camp.villager_4.2",
+  text = [[
+va tuer les monstres stp
+]],
+}
+
+dialog{
+  id = "pnj.overworld.plain.guard_camp",
+  text = [[
+ Je suis désolé mais j'ai pour ordre de ne laisser passer personne.
+...
+Tu viens de Nielint ? Ces gars là ont besoin d'aide, tu peux passer.
+]],
+}
+
+dialog{
+  id = "pnj.overworld.plain.guard_camp.alt",
+  text = [[
+...
+]],
+}
+
+dialog{
+  id = "pnj.overworld.plain.guard_moblin_cave",
+  choice = "1",
+  text = [[
+Halte ! La zone au dela est très dangereuse. En fait, c'est l'endroit le plus dangereux du jeu. Est-tu sûr de vouloir y aller ?
+]],
+}
+
+dialog{
+  id = "pnj.overworld.plain.guard_moblin_cave.alt",
+  text = [[
+Bonne chance !
+]],
+}
+
+dialog{
+  id = "pnj.overworld.plain.guard_moblin_cave.goodluck",
+  text = [[
+Bonne chance alors !
+]],
+}
+
+dialog{
+  id = "pnj.overworld.plain.guard_moblin_cave.success",
+  text = [[
+woah bravo gg
 ]],
 }
 
@@ -516,6 +645,33 @@ dialog{
   text = [[
 Bienvenue à la mairie ! Je suis désolé mais nous allons bientôt fermer, 
 veuillez repasser demain je vous prie.
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.pocht_1",
+  text = [[
+Salut à toi, camarade de beuverie ! 
+Viens donc t'amuser avec nous ! 
+hips 
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.pocht_2",
+  text = [[
+On nous prend pour des bons à rien au village. 
+Tout ça parce qu'on préfère tenir une choppe qu'une épée ! 
+Où est passé leur sens de la fête ?
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.pocht_3",
+  text = [[
+Lalalaaa... et les oiseaux qui... euh... 
+Toi là ! Aide-moi à trouver un truc qui rime avec oiseaux ! Panneaux ? Cageots ? Poireaux ? 
+Raaah, je suis nul comme chanteur !
 ]],
 }
 

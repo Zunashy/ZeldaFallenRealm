@@ -66,6 +66,13 @@ animation{
   },
 }
 animation{
+  name = "heart_full",
+  src_image = "items/heart_full.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "heart_quarter",
   src_image = "items/heart_quarter.png",
   directions = {

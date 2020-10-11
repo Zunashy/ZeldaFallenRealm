@@ -135,10 +135,10 @@ function enemy:target_hero()
   m:start(enemy)
 end
 
-function enemy:on_hurt(atk)
+enemy:register_event("on_hurt", function (self, atk)
   if atk == "sword" then
     self:get_movement().on_finished = function(self)
       enemy:target_hero()
     end
   end
-end
+end)
