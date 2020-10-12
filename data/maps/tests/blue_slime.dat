@@ -242,6 +242,24 @@ tile{
   pattern = "50",
 }
 
+tile{
+  layer = 1,
+  x = 96,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
 custom_entity{
   layer = 1,
   x = 344,
@@ -570,6 +588,35 @@ custom_entity{
   height = 16,
   direction = 0,
   sprite = "entities/dungeon_elements/colored_flame",
+}
+
+custom_entity{
+  layer = 1,
+  x = 168,
+  y = 285,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+
+enemy{
+  layer = 1,
+  x = 264,
+  y = 357,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_boss;music_dungeon1",
+    },
+    {
+      key = "no_reset",
+      value = "1",
+    },
+  },
+  direction = 0,
+  breed = "boss/merman",
+  savegame_variable = "dungeon_1_boss",
 }
 
 tile{

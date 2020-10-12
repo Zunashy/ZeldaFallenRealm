@@ -63,7 +63,8 @@ end
 
 local function hurt_cb()
   enemy:set_invincible()
-  enemy:blink(100, 500, function()
+  enemy:get_sprite():set_animation("hurt")
+  sol.timer.start(enemy, 500, function()
     enemy:set_attacks_consequence(hurt_cb)
   end)
   enemy:remove_life(1)

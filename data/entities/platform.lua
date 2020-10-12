@@ -36,7 +36,7 @@ function entity:on_created()
   m:set_angle((math.pi / 2) * self.dir)
   m:start(self)
   
-  entity:add_collision_test("overlapping", entity.collision_callback)
+  entity:add_collision_test("origin", entity.collision_callback)
   entity.on_position_changed = entity.movement_callback
   px, py = entity:get_position()
 
@@ -45,7 +45,6 @@ function entity:on_created()
 end
 
 function entity:collision_callback(other)
-  
   if other:get_type() == "hero" then
     hero.is_on_nonsolid_ground = true
   end
@@ -59,7 +58,7 @@ end
 function entity:movement_callback()
   x, y = entity:get_position()
   dx, dy = x - px, y - py
-  if entity:overlaps(hero) and hero_can_be_moved() then
+  if entity:overlaps(hero, "origin") and hero_can_be_moved() then
     hero.is_on_nonsolid_ground = true
     if not hero:test_obstacles(dx, dy) and hero_can_be_moved() then 
       hx, hy = hero:get_position()
@@ -69,13 +68,13 @@ function entity:movement_callback()
   px, py = x, y
   
   for e in map:get_entities() do
-    if entity:overlaps(e, "overlapping") and 
+    if entity:overlaps(e, "origin") and 
       not e.static and 
       not e.airborne and
       not e:test_obstacles(dx, dy) and
       e:get_type() ~= "hero" and
       e ~= entity then
-  
+        print("collision")
       hx, hy = e:get_position()
       e:set_position(hx + dx, hy + dy)    
     end
