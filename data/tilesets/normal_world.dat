@@ -1866,6 +1866,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "165",
+  ground = "wall",
+  default_layer = 0,
+  x = 576,
+  y = 112,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "166",
   ground = "traversable",
   default_layer = 0,
@@ -2794,9 +2804,9 @@ tile_pattern{
   ground = "wall",
   default_layer = 0,
   x = 496,
-  y = 176,
+  y = 192,
   width = 16,
-  height = 32,
+  height = 16,
   repeat_mode = "none",
 }
 
@@ -5682,6 +5692,17 @@ tile_pattern{
   default_layer = 0,
   x = 640,
   y = 32,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "245",
+  ground = "wall",
+  default_layer = 0,
+  x = 496,
+  y = 176,
   width = 16,
   height = 16,
   repeat_mode = "none",
@@ -11341,6 +11362,22 @@ tile_pattern{
   width = 8,
   height = 8,
   repeat_mode = "none",
+}
+
+border_set{
+  id = "mur grotte",
+  pattern_0 = "196_5",
+  pattern_1 = "196_6",
+  pattern_2 = "196_4",
+  pattern_3 = "196_7",
+  pattern_4 = "196_9",
+  pattern_5 = "196_8",
+  pattern_6 = "196_10",
+  pattern_7 = "196_11",
+  pattern_8 = "196_12",
+  pattern_9 = "196_13",
+  pattern_10 = "196_15",
+  pattern_11 = "196_14",
 }
 
 border_set{
