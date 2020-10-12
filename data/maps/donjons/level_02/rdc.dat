@@ -6027,7 +6027,7 @@ teletransporter{
   name = "tp_ss1",
   layer = 0,
   x = 648,
-  y = 256,
+  y = 216,
   enabled_at_start = false,
   width = 16,
   height = 16,
@@ -6039,7 +6039,7 @@ destination{
   name = "bracelet",
   layer = 0,
   x = 648,
-  y = 269,
+  y = 229,
   direction = 1,
 }
 
@@ -6057,6 +6057,12 @@ teletransporter{
   x = 352,
   y = 608,
   enabled_at_start = false,
+  properties = {
+    {
+      key = "spawn_savegame_variable",
+      value = "dungeon_2_tp",
+    },
+  },
   width = 16,
   height = 16,
   destination_map = "donjons/level_02/rdc",
@@ -6070,6 +6076,12 @@ teletransporter{
   x = 592,
   y = 256,
   enabled_at_start = false,
+  properties = {
+    {
+      key = "spawn_savegame_variable",
+      value = "dungeon_2_tp",
+    },
+  },
   width = 16,
   height = 16,
   destination_map = "donjons/level_02/rdc",
@@ -6104,6 +6116,7 @@ destructible{
     },
   },
   sprite = "entities/vegetation/grass_door",
+  can_be_cut = true,
 }
 
 switch{
@@ -6190,6 +6203,14 @@ dynamic_tile{
   width = 16,
   height = 16,
   pattern = "32",
+}
+
+sensor{
+  layer = 0,
+  x = 504,
+  y = 269,
+  width = 16,
+  height = 16,
 }
 
 tile{

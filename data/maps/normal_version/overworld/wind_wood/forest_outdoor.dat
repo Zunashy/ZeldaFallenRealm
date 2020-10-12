@@ -3006,16 +3006,6 @@ tile{
   layer = 1,
   x = 384,
   y = 216,
-  width = 8,
-  height = 8,
-  pattern = "6",
-  tileset = "normal_world",
-}
-
-tile{
-  layer = 1,
-  x = 400,
-  y = 216,
   width = 16,
   height = 8,
   pattern = "6",
@@ -8444,6 +8434,16 @@ tile{
   pattern = "178",
 }
 
+tile{
+  layer = 1,
+  x = 400,
+  y = 216,
+  width = 16,
+  height = 8,
+  pattern = "70",
+  tileset = "normal_world",
+}
+
 separator{
   layer = 1,
   x = 0,
@@ -8569,7 +8569,10 @@ destructible{
   layer = 1,
   x = 264,
   y = 197,
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = 1,
   can_be_cut = true,
 }
 
@@ -8577,31 +8580,10 @@ destructible{
   layer = 1,
   x = 216,
   y = 229,
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 456,
-  y = 197,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 584,
-  y = 221,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 504,
-  y = 197,
-  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = 1,
   can_be_cut = true,
 }
 
@@ -8609,23 +8591,10 @@ destructible{
   layer = 1,
   x = 360,
   y = 301,
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 360,
-  y = 333,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 360,
-  y = 349,
-  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = 1,
   can_be_cut = true,
 }
 
@@ -8633,7 +8602,32 @@ destructible{
   layer = 1,
   x = 408,
   y = 349,
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 360,
+  y = 349,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 360,
+  y = 333,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = 1,
   can_be_cut = true,
 }
 
@@ -8641,7 +8635,43 @@ destructible{
   layer = 1,
   x = 200,
   y = 349,
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 456,
+  y = 197,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 504,
+  y = 197,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 584,
+  y = 221,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = 1,
   can_be_cut = true,
 }
 

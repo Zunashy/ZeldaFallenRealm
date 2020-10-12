@@ -30,7 +30,7 @@ function entity:on_created()
 
   self.speed = self:get_property("speed") and tonumber(self:get_property("speed")) or 16
   self.dir = self:get_property("direction") and tonumber(self:get_property("direction")) or entity:get_sprite():get_direction() or 1
-
+  print(self.dir)
   local m = sol.movement.create("straight")
   m:set_speed(self.speed)
   m:set_angle((math.pi / 2) * self.dir)
