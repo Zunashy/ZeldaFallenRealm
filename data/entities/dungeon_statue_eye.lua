@@ -12,7 +12,6 @@ local entity = ...
 local game = entity:get_game()
 local map = entity:get_map()
 local hero = map:get_hero()
-local x, y = 0, 0
 --local sprite = sol.sprite.create("entities/dungeon_statue_eye")
 
 local coords = {
@@ -25,9 +24,9 @@ local coords = {
 local s = sol.surface.create(1, 1)
 s:fill_color({0, 0, 0})
 
-local function get_draw_pos()
+function entity:get_draw_pos()
   oX, oY = entity:get_position()
-  return x + oX, y + oY
+  return self.x + oX, self.y + oY
 end
 
 function entity:get_hero_angle()
@@ -38,7 +37,7 @@ local function update_eye_pos()
   local angle = entity:get_hero_angle()
   for i = 1, 4 do
     if angle < (math.pi / 2) * i then
-      x, y = coords[i].x, coords[i].y      
+      entity.x, entity.y = coords[i].x, coords[i].y      
       break
     end
   end
@@ -49,8 +48,12 @@ end
 function entity:on_created()
   update_eye_pos()
   sol.timer.start(entity, 50, update_eye_pos)
+  local x, y = self:get_position()
+  self:set_position(x - 1, y - 6)
+  self.x = 0
+  self.y = 0
 end
 
 function entity:on_post_draw()
-  map:draw_visual(s,get_draw_pos())
+  map:draw_visual(s, self:get_draw_pos())
 end
