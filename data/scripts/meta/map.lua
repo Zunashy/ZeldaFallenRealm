@@ -1,5 +1,10 @@
 local map_meta = sol.main.get_metatable("map")
 
+function map_meta:is_ladder(x,y, layer)
+    layer = layer or 0
+    return self:get_ground(x, y, layer) == "ladder"
+end
+
 function map_meta:get_entities_property(key, value, p1, p2)
     local t, rev
     local xor = gen.xor

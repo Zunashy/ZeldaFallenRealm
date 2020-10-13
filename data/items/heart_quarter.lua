@@ -23,6 +23,7 @@ function item:on_obtaining()
 end
 
 function item:on_obtained()
+  game:add_life(math.floor(game:get_max_life() / 4))
   self:add_amount(1)
   if self:get_amount() > 3 then
     self:set_amount(0)

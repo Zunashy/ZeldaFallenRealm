@@ -16,10 +16,10 @@ function map:on_started_()
   local story = game:get_story_state()
   local hero = self:get_hero()
   local zuna = self:get_entity("zuna")
-  if story < 4 then 
+  if story < 7 then 
 
     self:get_entity("sep_1").on_activated = function()
-      if game:get_story_state() < 4 then
+      if game:get_story_state() < 7 then
         local zuna_sprite = zuna:get_sprite()
         local zuna_sword = zuna:get_sprite("sword")
         local hero_sprite = hero:get_sprite()
@@ -49,7 +49,7 @@ function map:on_started_()
                     zuna_sword:set_animation("stopped")
                     zuna_sprite:set_direction(3)
                     game:start_dialog("pnj.main.zuna.first_encounter.3", function()
-                      game:set_story_state(4)
+                      game:set_story_state(7)
                       hero:unfreeze()
                       zuna.dialog = "pnj.main.zuna.first_encounter.4"
                     end)
@@ -61,12 +61,11 @@ function map:on_started_()
         end)
       end
     end
-  elseif story < 6 then
+  elseif story < 666 then
     zuna:get_sprite():set_direction(3)
-  elseif game:get_story_state() > 5 then
+  elseif game:get_story_state() > 666 then
     zuna:set_enabled(false)
   end
-
 end
 
 

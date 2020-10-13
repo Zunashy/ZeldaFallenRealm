@@ -34,3 +34,11 @@ animation{
     { x = 96, y = 32, frame_width = 16, frame_height = 28, origin_x = 8, origin_y = 13 },
   },
 }
+animation{
+  name = "swing",
+  src_image = "enemies/moblin_sword.png",
+  frame_delay = 100,
+  directions = {
+    { x = 0, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3, num_columns = 1 },
+  },
+}

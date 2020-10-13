@@ -9,7 +9,6 @@ local hero_sprite, sword_sprite
 local pull_lever_state
 
 local function initialize_hero_features(game)
-  print("init_hero")
 
   local hero = game:get_hero()
   hero.get_corner_position = eg.get_corner_position
@@ -55,23 +54,45 @@ local function initialize_hero_features(game)
 
     m:start(hero)
   end
+  
+  function hero:test_ladder()
+    local map = self:get_map()
+    local x, y, layer = self:get_position()
+    return self:get_ground_below() == "ladder"
+  end
 
   hero.is_on_nonsolid_ground = false
   
+  function hero:update_ladder()
+    if self:test_ladder(self) or self.ladder_below then
+      if not self:get_state_object() then
+        self.on_ladder = true
+        self:start_state(self.ladder_state)
+        self:get_sprite():set_direction(1)
+      end
+    elseif self.on_ladder then
+      self.on_ladder = false
+      self:unfreeze()
+    end
+  end
+
   function hero:on_position_changed() 
-    if hero.need_solid_ground then
-      local ground = hero:get_ground_below();
+    if self.need_solid_ground then
+      local ground = self:get_ground_below();
       if (ground ~= "deep_water"
         and ground ~= "hole"
         and ground ~= "lava"
         and ground ~= "prickles"
         and ground ~= "empty"
-        and hero.is_on_nonsolid_ground == false)
+        and self.is_on_nonsolid_ground == false)
       then 
-        hero:save_solid_ground()
-        hero.need_solid_ground = false
+        self:save_solid_ground()
+        self.need_solid_ground = false
       end
     end
+
+    self:update_ladder()
+
     hero.is_on_nonsolid_ground = false
   end
 
@@ -86,7 +107,7 @@ local function initialize_hero_features(game)
      -- return false
     end
 
-    if not self.pObject or not self.pObject.on_ground then return false end
+    if not self.pObject or not (self.pObject.on_ground) then return false end
 
     self.pObject.speed = -3.2
   end
@@ -145,6 +166,22 @@ local function initialize_hero_features(game)
 
   function hero:on_taking_damage(dmg)
     game:remove_life(dmg)
+  end
+
+  hero.ladder_state = sol.state.create()
+  hero.ladder_state:set_can_control_direction(false)
+  hero.ladder_state:set_can_control_movement(true)
+
+  function hero.ladder_state:on_movement_started()
+    self:get_entity():get_sprite():set_animation("walking")
+  end
+
+  function hero.ladder_state:on_movement_changed(m)
+    if m:get_speed() == 0 then
+      self:get_entity():get_sprite():set_animation("stopped")
+    else
+      self:get_entity():get_sprite():set_animation("walking")
+    end
   end
 
 end

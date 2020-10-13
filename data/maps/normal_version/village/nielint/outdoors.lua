@@ -21,11 +21,11 @@ function map:on_started()
   end
 
   local zuna = self:get_entity("zuna")
-  if game:get_story_state() == 6 then
+  if game:get_story_state() == 9 then
     map:get_entity("sensor_1").on_activated = function()
       if  game:get_item("fire_seed"):get_variant() == 0 then
         map:get_hero():freeze()
-        game:set_story_state(7)
+        game:set_story_state(10)
         mg.move_straight(zuna, 3, nil, 64, function()
           game:start_dialog("pnj.village.nielint.barman.east", function()
             map:get_hero():start_treasure("fire_seed")
@@ -33,7 +33,7 @@ function map:on_started()
         end, {stop_on_obstacle = true})
       end
     end
-  elseif story > 7 or story < 6 then
+  elseif story < 9 or story > 10
     zuna:set_enabled(false)
   end
 end

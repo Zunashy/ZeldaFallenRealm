@@ -24,7 +24,7 @@ local function villagers_dialog_callback(villager)
           sol.timer.start(hero, 3000, function()
             game:start_dialog("pnj.overworld.plain.camp.cinematic", function()
               hero:unfreeze()
-              game:set_story_state(9)
+              game:set_story_state(12)
               map:get_entity("guard_east"):set_enabled(false)
             end)
           end)
@@ -35,7 +35,7 @@ local function villagers_dialog_callback(villager)
 end
 
 local function villager_interaction(villager)
-  if game:get_story_state() < 9 then
+  if game:get_story_state() < 12 then
     game:start_dialog("pnj.overworld.plain.camp." .. villager:get_name() .. ".1", function() villagers_dialog_callback(villager) end)
   else
     game:start_dialog("pnj.overworld.plain.camp." .. villager:get_name() .. ".2")
@@ -78,14 +78,14 @@ function map:on_started_()
   local guard_camp = self:get_entity("guard_camp")
   local story = game:get_story_state()
 
-  if story < 8 then
+  if story < 11 then
     function guard_camp:on_interaction()
-      if game:get_story_state() < 8 then
+      if game:get_story_state() < 11 then
         game:start_dialog("pnj.overworld.plain.guard_camp", function()
           mg.move_straight(guard_camp, 1, 16, 64, function()
             mg.move_straight(guard_camp, 2, 16, 64, function()
               guard_camp:get_sprite():set_direction(0)
-              game:set_story_state(8)
+              game:set_story_state(11)
             end)
           end)
         end)
@@ -93,7 +93,7 @@ function map:on_started_()
         game:start_dialog("pnj.overworld.plain.guard_camp.alt")
       end
     end
-  elseif story == 8 then
+  elseif story == 11 then
     guard_camp:set_dialog("pnj.overworld.plain.guard_camp.alt")
     local x, y = guard_camp:get_position()
     guard_camp:set_position(x - 16, y - 32)

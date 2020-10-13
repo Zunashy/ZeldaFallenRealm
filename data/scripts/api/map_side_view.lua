@@ -32,29 +32,19 @@ end
 
 --CODE DE PHOENIXII54
 
-local function is_ladder(map, x,y, layer)
-  layer=layer or 0
-  return map:get_ground(x,y, layer)=="ladder"
-end
-
-local function test_ladder(entity)
-  local map=entity:get_map()
-  local x,y,layer= entity:get_position()
-  return is_ladder(map, x, y-2, layer) or is_ladder(map, x, y+2, layer)
-end
-
 
 local function is_on_ground(entity, dy)
   dy = dy or 0
   local x,y = entity:get_position()
-  return entity:test_obstacles(0, 1) or not test_ladder(entity) and is_ladder(entity:get_map(), x, y+3)
+  local map = entity:get_map()
+  return entity:test_obstacles(0, 1) or not (entity:get_ground_below() == "ladder") and map:is_ladder(x, y+3)
 end
 
 ----
 
 function sv.pObject:apply_physics()
   if (is_on_ground(self.entity) and self.on_ground or 
-    test_ladder(self.entity)) and 
+    (self.entity:get_ground_below() == "ladder")) and 
     not (self.speed < 0) or
     self.frozen
   then return end
@@ -65,16 +55,18 @@ function sv.pObject:apply_physics()
 
   local dy = self.speed
   local map = self.entity:get_map()
-  if self.entity:test_obstacles(0, dy) or is_ladder(map, x, y + dy+2, layer) then
+
+  if self.entity:test_obstacles(0, dy) or (map:is_ladder(x, y + dy+2, layer)) then
     local sign = math.sign(self.speed)
     dy = sign
-    while not (self.entity:test_obstacles(0, self.speed) or is_ladder(map, x, y + dy+2, layer)) do
+    while not (self.entity:test_obstacles(0, self.speed) or map:is_ladder(x, y + dy+2, layer)) do
       dy = dy + sign
     end
     dy = dy - sign
     self.speed = 0   
   end
   y = y + dy  
+
 
   self.on_ground = is_on_ground(self.entity)
 
@@ -86,9 +78,7 @@ function sv.init_physics(entity)
   entity.pObject.acc = sv.gravity
 end
 
-
 local function update_animation(hero, direction)
- 
   local state, cstate = hero:get_state()
   local map = hero:get_map()
   local movement = hero:get_movement()
@@ -111,11 +101,11 @@ local function update_animation(hero, direction)
     end
   end
  
-  if state=="free" and not (hero.frozen) then
+  if (state=="free" or cstate == hero.ladder_state) and not (hero.frozen) then
     if (movement and movement:get_speed() ~= 0) then
-      if hero.on_ladder and test_ladder(hero) then
-        --new_animation = "walking"
-      elseif not is_on_ground(hero) and not test_ladder(hero) then
+      if hero.on_ladder and hero:test_ladder() then
+        new_animation = "walking"
+      elseif not is_on_ground(hero) and not hero:test_ladder() then
         if map:get_ground(x,y+4,layer)=="deep_water" then
           --new_animation ="swimming_scroll"
         else
@@ -125,9 +115,9 @@ local function update_animation(hero, direction)
         new_animation = "walking"
       end
     else
-      if hero.on_ladder and test_ladder(hero) then
-        --new_animation = "walking"
-      elseif not is_on_ground(hero) and not test_ladder(hero) then
+      if hero.on_ladder and hero:test_ladder() then
+        new_animation = "stopped"
+      elseif not is_on_ground(hero) and not hero:test_ladder() then
         if map:get_ground(x,y+4,layer)=="deep_water" then
           --new_animation ="stopped_swimming_scroll"
         else
@@ -153,20 +143,21 @@ function sv.update_hero(hero)
     return game:is_command_pressed(id)
   end
  
-  local x,y,layer = hero:get_position()
+  local x, y, layer = hero:get_position()
   local map = game:get_map()
   local speed, hangle, vangle
   local can_move_vertically = true
   local _left, _right, _up, _down
  
+  hero.ladder_below = map:is_ladder(x, y+3, layer)
+
   --TODO enhance the movement angle calculation.
   if command("up") and not command("down") then
     _up=true
-    if test_ladder(hero) then
-      hero.on_ladder = true
-      speed = climbing_speed
-    elseif map:get_ground(x,y,layer)=="deep_water" then
+    if map:get_ground(x,y,layer)=="deep_water" then
       speed = swimming_speed
+    elseif hero.on_ladder then
+      speed = climbing_speed
     else
       can_move_vertically=false
       --    game:simulate_command_released("up")
@@ -176,7 +167,7 @@ function sv.update_hero(hero)
     _down=true
     if map:get_ground(x,y, layer) =="deep_water" then
       speed = swimming_speed
-    elseif test_ladder(hero) or is_ladder(map, x, y+3, layer) then
+    elseif map:is_ladder(x, y+3, layer) then
       hero.on_ladder = true
       speed = climbing_speed
     else
@@ -184,10 +175,7 @@ function sv.update_hero(hero)
       --  game:simulate_command_released("down")
     end
   end
- 
-  if not (test_ladder(hero) or is_ladder(map, x, y+3)) then
-    hero.on_ladder = false
-  end
+
  
   if command("right") and not command("left") then
     _right=true
@@ -206,7 +194,7 @@ function sv.update_hero(hero)
     end
   end
  
-  if hero:test_obstacles(0,1) and test_ladder(hero) and is_ladder(map,x,y+3) then
+  if hero:test_obstacles(0,1) and hero:test_ladder() and map:is_ladder(x,y+3) then
     hero.on_ladder=true
   end
  
@@ -253,6 +241,7 @@ end
 local function leave_map_callback(map)
   local hero = map:get_hero()
   hero.pObject = nil
+  hero.ladder_below = false
 end
 
 function sv:init(map)
@@ -268,6 +257,8 @@ function sv:init(map)
 
   map.is_side_view = true
   map:register_event("on_finished", leave_map_callback)
+
+  hero:update_ladder()
 
 end
 

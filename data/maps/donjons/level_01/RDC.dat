@@ -11,16 +11,6 @@ properties{
 
 tile{
   layer = 0,
-  x = 720,
-  y = 528,
-  width = 240,
-  height = 176,
-  pattern = "1",
-  tileset = "dungeon/tileset_donjon_1",
-}
-
-tile{
-  layer = 0,
   x = 320,
   y = 528,
   width = 80,
@@ -73,6 +63,16 @@ tile{
   width = 208,
   height = 144,
   pattern = "4",
+}
+
+tile{
+  layer = 1,
+  x = 720,
+  y = 528,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "dungeon/tileset_donjon_1",
 }
 
 tile{
@@ -11185,6 +11185,10 @@ custom_entity{
       key = "direction",
       value = "3",
     },
+    {
+      key = "delay",
+      value = "400",
+    },
   },
   width = 32,
   height = 24,
@@ -11200,6 +11204,10 @@ custom_entity{
     {
       key = "direction",
       value = "1",
+    },
+    {
+      key = "delay",
+      value = "400",
     },
   },
   width = 32,
@@ -11260,7 +11268,7 @@ custom_entity{
     },
     {
       key = "on_obtained",
-      value = "teleport_here:entrance$fade",
+      value = "teleport_normal_version/overworld/north_beach/outdoors:trident_dungeon$fade",
     },
   },
   width = 16,
@@ -11329,15 +11337,6 @@ custom_entity{
   model = "dungeon_statue_eye",
 }
 
-destination{
-  name = "entrance",
-  layer = 1,
-  x = 144,
-  y = 453,
-  direction = 1,
-  default = true,
-}
-
 jumper{
   layer = 1,
   x = 648,
@@ -11386,6 +11385,15 @@ jumper{
   height = 8,
   direction = 6,
   jump_length = 40,
+}
+
+destination{
+  name = "entrance",
+  layer = 1,
+  x = 840,
+  y = 1397,
+  direction = 1,
+  default = true,
 }
 
 tile{

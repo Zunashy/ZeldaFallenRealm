@@ -12,11 +12,15 @@ function map:on_started_()
   end
 
   local story_state = game:get_story_state() or 0
-  if story_state < 666 and game:has_item("sword") then
+  if story_state > 7 then
+    function zuna:on_interaction()
+      game:start_dialog("pnj.village.nielint.barman.sleep")
+    end
+  elseif game:has_item("sword") then
     function zuna:on_interaction()
       game:start_dialog("pnj.village.nielint.barman.sword")
     end
-  elseif story_state < 3 then
+  elseif  then
     function zuna:on_interaction()
       game:start_dialog("pnj.village.nielint.barman.awake2")
     end

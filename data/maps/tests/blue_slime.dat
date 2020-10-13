@@ -527,34 +527,6 @@ destination{
   direction = 1,
 }
 
-custom_entity{
-  layer = 1,
-  x = 248,
-  y = 221,
-  properties = {
-    {
-      key = "item",
-      value = "essence",
-    },
-    {
-      key = "variant",
-      value = "2",
-    },
-    {
-      key = "savegame_variable",
-      value = "test_pickable",
-    },
-    {
-      key = "on_obtained",
-      value = "teleport_here:test$fade",
-    },
-  },
-  width = 16,
-  height = 16,
-  direction = 0,
-  model = "pickable",
-}
-
 teletransporter{
   layer = 1,
   x = 256,
@@ -617,6 +589,34 @@ enemy{
   direction = 0,
   breed = "boss/merman",
   savegame_variable = "dungeon_1_boss",
+}
+
+custom_entity{
+  layer = 1,
+  x = 248,
+  y = 221,
+  properties = {
+    {
+      key = "item",
+      value = "essence",
+    },
+    {
+      key = "variant",
+      value = "1",
+    },
+    {
+      key = "savegame_variable",
+      value = "dungeon_1_essence",
+    },
+    {
+      key = "on_obtained",
+      value = "teleport_normal_version/overworld/north_beach/outdoors:entrance$fade",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "pickable",
 }
 
 tile{

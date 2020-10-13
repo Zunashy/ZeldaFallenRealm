@@ -31,8 +31,8 @@ function item:on_using_from_inventory(callback)
 end
 
 function item:on_teleporting()
-  if game:get_story_state() == 4 then
-    game:set_story_state(5)
+  if game:get_story_state() == 7 then
+    game:set_story_state(8)
   end
 end
 
@@ -47,6 +47,7 @@ function item:on_using()
     local camera = game:get_map():get_camera()
     local x, y = camera:get_position_on_camera(hero:get_position())
     vfx.shockwave(camera:get_surface(), x, y, 1, 5, 30, 0.4)
+    sol.audio.play_sound("horn")
 
     sol.timer.start(hero, 1000, function()
       hero:teleport(npc:get_property("horn_map"), npc:get_property("horn_destination"), "fade")

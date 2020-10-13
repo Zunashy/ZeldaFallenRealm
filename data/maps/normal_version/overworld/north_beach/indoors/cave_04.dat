@@ -3721,21 +3721,6 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 344,
-  y = 301,
-  properties = {
-    {
-      key = "death_trigger",
-      value = "door_1",
-    },
-  },
-  direction = 0,
-  breed = "moblin_sword",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
   x = 304,
   y = 237,
   properties = {
@@ -3807,6 +3792,38 @@ enemy{
   direction = 0,
   breed = "moblin_sword",
   treasure_name = "random",
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 344,
+  width = 720,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 168,
+  width = 720,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 232,
+  y = 0,
+  width = 16,
+  height = 528,
+}
+
+separator{
+  layer = 0,
+  x = 472,
+  y = 0,
+  width = 16,
+  height = 528,
 }
 
 tile{
@@ -4059,6 +4076,7 @@ block{
   sprite = "entities/block/block",
   pushable = true,
   pullable = false,
+  max_moves = 1,
 }
 
 block{
@@ -4069,5 +4087,6 @@ block{
   sprite = "entities/block/block",
   pushable = true,
   pullable = false,
+  max_moves = 1,
 }
 

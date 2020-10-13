@@ -322,6 +322,7 @@ enemy{ id = "blue_slime", description = "Slime Bleu" }
 enemy{ id = "boss/merman", description = "Boss donjon 1" }
 enemy{ id = "crab", description = "crab" }
 enemy{ id = "hitbox", description = "Hitbox" }
+enemy{ id = "mini_boss/fantom", description = "Fantom" }
 enemy{ id = "mini_boss/mr_pers", description = "Miniboss Donjon 1" }
 enemy{ id = "moblin_bow", description = "Moblin (arc)" }
 enemy{ id = "moblin_sword", description = "Moblin (Épée)" }
