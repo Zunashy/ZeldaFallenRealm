@@ -20,7 +20,7 @@ function map:on_started_()
     function zuna:on_interaction()
       game:start_dialog("pnj.village.nielint.barman.sword")
     end
-  elseif  then
+  else
     function zuna:on_interaction()
       game:start_dialog("pnj.village.nielint.barman.awake2")
     end

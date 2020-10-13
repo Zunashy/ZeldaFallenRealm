@@ -33,7 +33,7 @@ function map:on_started()
         end, {stop_on_obstacle = true})
       end
     end
-  elseif story < 9 or story > 10
+  elseif story < 9 or story > 10 then
     zuna:set_enabled(false)
   end
 end
