@@ -1007,18 +1007,3 @@ teletransporter{
   destination = "etage",
 }
 
-pickable{
-  layer = 0,
-  x = 56,
-  y = 93,
-  treasure_name = "bracelet",
-}
-
-destructible{
-  layer = 0,
-  x = 88,
-  y = 93,
-  sprite = "entities/projectile/rock",
-  weight = 1,
-}
-
