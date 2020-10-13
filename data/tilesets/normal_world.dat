@@ -5709,6 +5709,94 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "246",
+  ground = "shallow_water",
+  default_layer = 0,
+  x = { 136, 136 },
+  y = { 464, 472 },
+  width = 8,
+  height = 8,
+  frame_delay = 250,
+}
+
+tile_pattern{
+  id = "246_2",
+  ground = "shallow_water",
+  default_layer = 0,
+  x = { 144, 144 },
+  y = { 464, 472 },
+  width = 8,
+  height = 8,
+  frame_delay = 250,
+}
+
+tile_pattern{
+  id = "246_3",
+  ground = "shallow_water",
+  default_layer = 0,
+  x = { 152, 152 },
+  y = { 464, 472 },
+  width = 8,
+  height = 8,
+  frame_delay = 250,
+}
+
+tile_pattern{
+  id = "246_4",
+  ground = "shallow_water",
+  default_layer = 0,
+  x = { 152, 152 },
+  y = { 480, 488 },
+  width = 8,
+  height = 8,
+  frame_delay = 250,
+}
+
+tile_pattern{
+  id = "246_5",
+  ground = "shallow_water",
+  default_layer = 0,
+  x = { 136, 136 },
+  y = { 480, 488 },
+  width = 8,
+  height = 8,
+  frame_delay = 250,
+}
+
+tile_pattern{
+  id = "246_7",
+  ground = "shallow_water",
+  default_layer = 0,
+  x = { 152, 152 },
+  y = { 496, 504 },
+  width = 8,
+  height = 8,
+  frame_delay = 250,
+}
+
+tile_pattern{
+  id = "246_8",
+  ground = "shallow_water",
+  default_layer = 0,
+  x = { 136, 136 },
+  y = { 496, 504 },
+  width = 8,
+  height = 8,
+  frame_delay = 250,
+}
+
+tile_pattern{
+  id = "246_9",
+  ground = "shallow_water",
+  default_layer = 0,
+  x = { 144, 144 },
+  y = { 496, 504 },
+  width = 8,
+  height = 8,
+  frame_delay = 250,
+}
+
+tile_pattern{
   id = "247",
   ground = "traversable",
   default_layer = 0,
@@ -11362,6 +11450,19 @@ tile_pattern{
   width = 8,
   height = 8,
   repeat_mode = "none",
+}
+
+border_set{
+  id = "eau",
+  inner = true,
+  pattern_0 = "246_4",
+  pattern_1 = "246_2",
+  pattern_2 = "246_5",
+  pattern_3 = "246_9",
+  pattern_4 = "246_3",
+  pattern_5 = "246",
+  pattern_6 = "246_8",
+  pattern_7 = "246_7",
 }
 
 border_set{
