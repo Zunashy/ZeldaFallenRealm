@@ -2339,7 +2339,7 @@ tile{
   x = 0,
   y = 0,
   width = 240,
-  height = 176,
+  height = 192,
   pattern = "1",
   tileset = "dungeon/tileset_donjon_1",
 }
@@ -10566,6 +10566,7 @@ enemy{
   direction = 0,
   breed = "boss/merman",
   savegame_variable = "dungeon_1_boss",
+  treasure_name = "heart_full",
 }
 
 enemy{

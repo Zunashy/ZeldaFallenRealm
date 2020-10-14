@@ -6208,6 +6208,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "270",
+  ground = "wall",
+  default_layer = 1,
+  x = 448,
+  y = 160,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
   id = "270_2",
   ground = "traversable",
   default_layer = 0,
@@ -6238,6 +6248,56 @@ tile_pattern{
   width = 8,
   height = 8,
   repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "270_5",
+  ground = "wall",
+  default_layer = 1,
+  x = 480,
+  y = 160,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "270_6",
+  ground = "wall",
+  default_layer = 1,
+  x = 512,
+  y = 160,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "271",
+  ground = "wall",
+  default_layer = 2,
+  x = 448,
+  y = 144,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "271_2",
+  ground = "wall",
+  default_layer = 2,
+  x = 480,
+  y = 144,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "271_3",
+  ground = "wall",
+  default_layer = 2,
+  x = 512,
+  y = 144,
+  width = 32,
+  height = 16,
 }
 
 tile_pattern{
