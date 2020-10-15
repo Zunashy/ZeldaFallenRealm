@@ -11,6 +11,13 @@ animation{
   },
 }
 animation{
+  name = "sleeping",
+  src_image = "pnj/nielint/citizens.png",
+  directions = {
+    { x = 0, y = 160, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "stopped",
   src_image = "pnj/nielint/citizens.png",
   frame_delay = 600,

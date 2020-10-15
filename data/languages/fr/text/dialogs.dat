@@ -683,6 +683,31 @@ Raaah, je suis nul comme chanteur !
 }
 
 dialog{
+  id = "pnj.village.nielint.zora",
+  text = [[
+sfr sucks
+a cause d'eux j'ai pas pu push ce magnifique sprite avant deux jours.
+mais bon, des gens ont déclenché une guerre ici pour moins que ça
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.zora_2",
+  text = [[
+Je trouve le barman assez louche, je croire qu'il essaye... de noyer le poisson !
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.zora_3",
+  text = [[
+Fais pas attention à mes collègues de gauche.
+Ils ont pété un plomb depuis une panne de réseau
+Je ne sais même pas ce que c'est ! 
+]],
+}
+
+dialog{
   id = "test.sans",
   choice = "1",
   next_dialog = "test.sans2",

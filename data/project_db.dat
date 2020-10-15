@@ -176,6 +176,7 @@ sprite{ id = "hud/bush_destroy" }
 sprite{ id = "hud/piece_of_heart_icon", description = "hud/piece_of_heart_icon" }
 sprite{ id = "menus/dialog_end", description = "menus/dialog_end" }
 sprite{ id = "menus/solarus_logo", description = "menus/solarus_logo" }
+sprite{ id = "pnj/main/mugen" }
 sprite{ id = "pnj/main/sorcier", description = "Sorcier" }
 sprite{ id = "pnj/main/zuna", description = "Prince Zuna" }
 sprite{ id = "pnj/main/zuna_sword", description = "Epee de Zuna" }
@@ -212,6 +213,9 @@ sprite{ id = "pnj/pirates/2", description = "pnj/pirates/2" }
 sprite{ id = "pnj/pirates/3", description = "pnj/pirates/3" }
 sprite{ id = "pnj/pirates/4", description = "pnj/pirates/4" }
 sprite{ id = "pnj/pirates/captain" }
+sprite{ id = "pnj/zora/1" }
+sprite{ id = "pnj/zora/2" }
+sprite{ id = "pnj/zora/3" }
 sprite{ id = "shadows/shadow_big", description = "shadows/shadow_big" }
 sprite{ id = "shadows/shadow_big_dynamic", description = "shadows/shadow_big_dynamic" }
 sprite{ id = "shadows/shadow_small", description = "shadows/shadow_small" }
