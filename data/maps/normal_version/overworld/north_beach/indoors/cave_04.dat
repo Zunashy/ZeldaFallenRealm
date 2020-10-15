@@ -4040,7 +4040,7 @@ enemy{
 enemy{
   layer = 0,
   x = 600,
-  y = 61,
+  y = 69,
   properties = {
     {
       key = "min_story_state",
@@ -4052,7 +4052,7 @@ enemy{
     },
   },
   direction = 0,
-  breed = "moblin_sword",
+  breed = "blue_moblin_sword",
 }
 
 enemy{
@@ -4180,6 +4180,15 @@ door{
   direction = 1,
   sprite = "entities/door/door",
   savegame_variable = "dungeon_1_door_miniboss",
+}
+
+custom_entity{
+  layer = 0,
+  x = 600,
+  y = 101,
+  width = 16,
+  height = 16,
+  direction = 0,
 }
 
 tile{
