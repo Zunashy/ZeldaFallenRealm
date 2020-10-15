@@ -3369,7 +3369,7 @@ tile{
   layer = 1,
   x = 16,
   y = 32,
-  width = 128,
+  width = 16,
   height = 160,
   pattern = "39",
 }
@@ -7366,6 +7366,193 @@ tile{
   pattern = "164",
 }
 
+tile{
+  layer = 1,
+  x = 128,
+  y = 32,
+  width = 16,
+  height = 160,
+  pattern = "39",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 136,
+  width = 24,
+  height = 56,
+  pattern = "39",
+}
+
+tile{
+  layer = 1,
+  x = 104,
+  y = 136,
+  width = 24,
+  height = 56,
+  pattern = "39",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 32,
+  width = 8,
+  height = 152,
+  pattern = "246_5",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 32,
+  width = 8,
+  height = 104,
+  pattern = "246_4",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 32,
+  width = 8,
+  height = 104,
+  pattern = "246_5",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 136,
+  y = 32,
+  width = 8,
+  height = 152,
+  pattern = "246_4",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 136,
+  width = 16,
+  height = 8,
+  pattern = "246_2",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 136,
+  width = 16,
+  height = 8,
+  pattern = "246_2",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 144,
+  width = 8,
+  height = 40,
+  pattern = "246_4",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 104,
+  y = 144,
+  width = 8,
+  height = 40,
+  pattern = "246_5",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 184,
+  width = 24,
+  height = 8,
+  pattern = "246_9",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 184,
+  width = 24,
+  height = 8,
+  pattern = "246_9",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "246_3",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 104,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "246",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 184,
+  width = 8,
+  height = 8,
+  pattern = "246_8",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 184,
+  width = 8,
+  height = 8,
+  pattern = "246_7",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 104,
+  y = 184,
+  width = 8,
+  height = 8,
+  pattern = "246_8",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 136,
+  y = 184,
+  width = 8,
+  height = 8,
+  pattern = "246_7",
+  tileset = "normal_world",
+}
+
 teletransporter{
   layer = 1,
   x = 64,
@@ -8123,6 +8310,36 @@ destructible{
   destruction_sound = "walk_on_grass",
   weight = 1,
   can_be_cut = true,
+}
+
+npc{
+  layer = 1,
+  x = 528,
+  y = 309,
+  direction = -1,
+  subtype = 1,
+  sprite = "pnj/zora/3",
+  behavior = "dialog#pnj.village.nielint.zora",
+}
+
+npc{
+  layer = 1,
+  x = 552,
+  y = 309,
+  direction = -1,
+  subtype = 1,
+  sprite = "pnj/zora/2",
+  behavior = "dialog#pnj.village.nielint.zora_2",
+}
+
+npc{
+  layer = 1,
+  x = 576,
+  y = 309,
+  direction = -1,
+  subtype = 1,
+  sprite = "pnj/zora/1",
+  behavior = "dialog#pnj.village.nielint.zora_3",
 }
 
 tile{
