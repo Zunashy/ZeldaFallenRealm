@@ -504,8 +504,8 @@ custom_entity{
 
 enemy{
   layer = 1,
-  x = 200,
-  y = 333,
+  x = 56,
+  y = 365,
   direction = 0,
   breed = "tektite_blue",
 }
@@ -572,25 +572,6 @@ custom_entity{
   model = "dungeon_statue_eye",
 }
 
-enemy{
-  layer = 1,
-  x = 264,
-  y = 357,
-  properties = {
-    {
-      key = "death_trigger",
-      value = "door_boss;music_dungeon1",
-    },
-    {
-      key = "no_reset",
-      value = "1",
-    },
-  },
-  direction = 0,
-  breed = "boss/merman",
-  savegame_variable = "dungeon_1_boss",
-}
-
 custom_entity{
   layer = 1,
   x = 248,
@@ -617,6 +598,14 @@ custom_entity{
   height = 16,
   direction = 0,
   model = "pickable",
+}
+
+enemy{
+  layer = 1,
+  x = 232,
+  y = 293,
+  direction = 0,
+  breed = "slime_red",
 }
 
 tile{

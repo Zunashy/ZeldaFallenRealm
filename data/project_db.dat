@@ -115,6 +115,8 @@ sprite{ id = "enemies/skeleton_1", description = "enemies/skeleton_1" }
 sprite{ id = "enemies/skeleton_2", description = "enemies/skeleton_2" }
 sprite{ id = "enemies/skeleton_3", description = "enemies/skeleton_3" }
 sprite{ id = "enemies/slime_green", description = "enemies/slime_green" }
+sprite{ id = "enemies/slime_red", description = "Slime Rouge" }
+sprite{ id = "enemies/slime_red_small", description = "Slime Rouge (Divisé)" }
 sprite{ id = "enemies/tektite_blue", description = "enemies/tektite_blue" }
 sprite{ id = "enemies/tektite_red", description = "Tektite Red" }
 sprite{ id = "enemies/tektite_shadow", description = "Ombre de tektite" }
@@ -334,6 +336,8 @@ enemy{ id = "skeleton_1", description = "Squelette 1" }
 enemy{ id = "skeleton_2", description = "skeleton_2" }
 enemy{ id = "skeleton_3", description = "skeleton_3" }
 enemy{ id = "slime_green", description = "slime_green" }
+enemy{ id = "slime_red", description = "Slime Rouge" }
+enemy{ id = "slime_red_small", description = "Slime Rouge (Divisé)" }
 enemy{ id = "tektite_blue", description = "Tektite Bleu" }
 enemy{ id = "tektite_red", description = "Tektite Rouge" }
 
@@ -392,6 +396,8 @@ file{ path = "enemies/rope.lua", author = "TwilCynder", }
 file{ path = "enemies/skeleton_1.lua", author = "TwilCynder", }
 file{ path = "enemies/skeleton_2.lua", author = "TwilCynder", }
 file{ path = "enemies/skeleton_3.lua", author = "TwilCynder", }
+file{ path = "enemies/slime_red.lua", author = "TwilCynder", }
+file{ path = "enemies/slime_red_small.lua", author = "TwilCynder", }
 file{ path = "enemies/tektite_blue.lua", author = "TwilCynder", }
 file{ path = "enemies/tektite_red.lua", author = "TwilCynder", }
 file{ path = "entities/arrow.lua", author = "TwilCynder", }
@@ -466,6 +472,7 @@ file{ path = "scripts/hud/rupees.lua", author = "TwilCynder", }
 file{ path = "shaders/poisoned_effect.dat", author = "TwilCynder", }
 file{ path = "shaders/shockwave.dat", author = "TwilCynder", }
 file{ path = "sprites/enemies/blade_trap.dat", author = "Nintendo", }
+file{ path = "sprites/enemies/slime_red.dat", author = "Nintendo", }
 file{ path = "sprites/entities/dungeon_elements/color_cube_destination.dat", author = "Zunashy", }
 file{ path = "sprites/entities/dungeon_elements/fragile_ground.dat", author = "TwilCynder", }
 file{ path = "sprites/pnj/main/sorcier.dat", author = "Zunashy", }

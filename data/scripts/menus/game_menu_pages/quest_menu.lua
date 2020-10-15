@@ -5,7 +5,8 @@ quest_menu = {
     cursor_36x14_surface = nil,
     current_cursor = nil,
     items = {
-        "bracelet"
+        "bracelet",
+        "ring_octorock"
     },
     items_sprites = {},
     cursor_area = 1, -- 0 : items | 1 : right side

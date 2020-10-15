@@ -145,7 +145,11 @@ function dialog_box:on_command_pressed(command)
   if command == "action" and dialog_box:is_full() then
     dialog_box:advance()
   elseif command == "attack" then 
-    dialog_box:skip()
+    if dialog_box:is_full() then
+      dialog_box:advance()
+    else
+      dialog_box:skip()
+    end
   elseif command == "left" and self:is_choice_active() then
     self.selected_answer = 1
   elseif command == "right" and self:is_choice_active() then

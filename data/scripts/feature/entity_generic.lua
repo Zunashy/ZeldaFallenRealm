@@ -85,7 +85,7 @@ function eg.get_corner_position(entity)
   return x - ox, y - oy
 end
 
-function eg.shake(entity, dir, amplitude, delay, duration)
+function eg.shake(entity, dir, amplitude, delay, duration, callback)
   amplitude = amplitude or 1
   local m = sol.movement.create("pixel")
   local vertical = dir % 2 == 1
@@ -102,6 +102,9 @@ function eg.shake(entity, dir, amplitude, delay, duration)
     sol.timer.start(entity, duration, function()
       m:stop()
       entity:set_position(x, y)
+      if callback then
+        callback(entity)
+      end
     end)
   end
 end
