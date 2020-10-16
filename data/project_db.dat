@@ -38,7 +38,6 @@ map{ id = "normal_version/village/nielint/indoors/house_04", description = "norm
 map{ id = "normal_version/village/nielint/indoors/mairie_etage", description = "normal_version/village/nielint/indoors/mairie_etage" }
 map{ id = "normal_version/village/nielint/indoors/mairie_rdc", description = "normal_version/village/nielint/indoors/mairie_rdc" }
 map{ id = "normal_version/village/nielint/indoors/octorok_cave_01", description = "normal_version/village/nielint/indoors/octorok_cave_01" }
-map{ id = "normal_version/village/nielint/indoors/octorok_cave_02", description = "normal_version/village/nielint/indoors/octorok_cave_02" }
 map{ id = "normal_version/village/nielint/indoors/shop", description = "normal_version/village/nielint/indoors/shop" }
 map{ id = "normal_version/village/nielint/indoors/tree_house", description = "normal_version/village/nielint/indoors/tree_house" }
 map{ id = "normal_version/village/nielint/outdoors", description = "normal_version/village/nielint/outdoors" }
@@ -93,10 +92,11 @@ sprite{ id = "citizens/vieux07", description = "citizens/vieux07" }
 sprite{ id = "citizens/witch", description = "citizens/witch" }
 sprite{ id = "enemies/bat", description = "Chauve souris" }
 sprite{ id = "enemies/blade_trap", description = "Blade Trap" }
-sprite{ id = "enemies/blue_octorock", description = "Octorok bleu" }
-sprite{ id = "enemies/blue_slime", description = "Slime Bleu" }
-sprite{ id = "enemies/boss/merman", description = "Merman (Boss D1)" }
-sprite{ id = "enemies/boss/merman_trident", description = "Trident Merman" }
+sprite{ id = "enemies/blue_moblin_sword" }
+sprite{ id = "enemies/blue_octorock", description = "enemies/blue_octorock" }
+sprite{ id = "enemies/blue_slime", description = "enemies/blue_slime" }
+sprite{ id = "enemies/boss/merman", description = "enemies/boss/merman" }
+sprite{ id = "enemies/boss/merman_trident", description = "enemies/boss/merman_trident" }
 sprite{ id = "enemies/boss/merman_wave", description = "enemies/boss/merman_wave" }
 sprite{ id = "enemies/boss/rock_mosquito", description = "Rock Mosquito (Boss D2)" }
 sprite{ id = "enemies/boss/rock_mosquito_arm", description = "Rock Mosquito Arm" }
@@ -329,6 +329,7 @@ item{ id = "sword", description = "sword" }
 
 enemy{ id = "bat", description = "Bat" }
 enemy{ id = "blade_trap", description = "Blade Trap" }
+enemy{ id = "blue_moblin_sword" }
 enemy{ id = "blue_octorock", description = "Octorock Bleu" }
 enemy{ id = "blue_slime", description = "Slime Bleu" }
 enemy{ id = "boss/merman", description = "Boss donjon 1" }
