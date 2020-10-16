@@ -4681,7 +4681,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "spawn_square_1;spawn_square_2;spawn_emb;door_7;spawn_colored_block_3;",
+      value = "spawn_square_1;spawn_square_2;spawn_emb;spawn_door_7;spawn_colored_block_3;",
     },
   },
   subtype = "solid",
@@ -4740,7 +4740,7 @@ door{
   enabled_at_start = false,
   direction = 0,
   sprite = "entities/door/door",
-  savegame_variable = "dungeon_2_door_4",
+  savegame_variable = "dungeon_2_door_7",
   opening_condition = "small_key",
   opening_condition_consumed = true,
 }
@@ -4751,6 +4751,12 @@ enemy{
   x = 544,
   y = 285,
   enabled_at_start = false,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_7",
+    },
+  },
   direction = 0,
   breed = "tektite_red",
   treasure_name = "random",
@@ -4762,6 +4768,12 @@ enemy{
   x = 632,
   y = 309,
   enabled_at_start = false,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_7",
+    },
+  },
   direction = 0,
   breed = "octorok",
   treasure_name = "random",
@@ -4773,6 +4785,12 @@ enemy{
   x = 672,
   y = 245,
   enabled_at_start = false,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "door_7",
+    },
+  },
   direction = 0,
   breed = "blue_octorock",
   treasure_name = "random",

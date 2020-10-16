@@ -4351,42 +4351,6 @@ tile{
 tile{
   layer = 0,
   x = 544,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "30",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "30",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "30",
-}
-
-tile{
-  layer = 0,
-  x = 528,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "30",
-}
-
-tile{
-  layer = 0,
-  x = 544,
   y = 144,
   width = 16,
   height = 16,
@@ -5023,15 +4987,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 592,
-  y = 464,
-  width = 16,
-  height = 16,
-  pattern = "49",
-}
-
-tile{
-  layer = 0,
   x = 544,
   y = 464,
   width = 16,
@@ -5475,15 +5430,6 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 392,
-  y = 429,
-  direction = 0,
-  breed = "moblin_sword",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
   x = 328,
   y = 461,
   direction = 0,
@@ -5517,22 +5463,13 @@ enemy{
   treasure_name = "random",
 }
 
-enemy{
-  layer = 0,
-  x = 200,
-  y = 221,
-  direction = 0,
-  breed = "moblin_sword",
-  treasure_name = "random",
-}
-
 door{
   layer = 0,
   x = 592,
   y = 176,
   direction = 1,
   sprite = "entities/door/boss_door",
-  savegame_variable = "dungeon_1_door_key_2",
+  savegame_variable = "dungeon_2_boss_door",
   opening_method = "interaction_if_item",
   opening_condition = "great_key",
   opening_condition_consumed = true,
@@ -5632,15 +5569,6 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 312,
-  y = 501,
-  direction = 0,
-  breed = "skeleton_1",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
   x = 152,
   y = 589,
   direction = 0,
@@ -5675,15 +5603,6 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 176,
-  y = 501,
-  direction = 0,
-  breed = "skeleton_1",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
   x = 200,
   y = 309,
   direction = 0,
@@ -5697,51 +5616,6 @@ enemy{
   y = 245,
   direction = 0,
   breed = "rope",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 312,
-  y = 269,
-  direction = 0,
-  breed = "rope",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 368,
-  y = 269,
-  direction = 0,
-  breed = "rope",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 416,
-  y = 269,
-  direction = 0,
-  breed = "rope",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 264,
-  y = 205,
-  direction = 0,
-  breed = "moblin_sword",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 272,
-  y = 333,
-  direction = 0,
-  breed = "blue_octorock",
   treasure_name = "random",
 }
 
@@ -5912,6 +5786,7 @@ separator{
 }
 
 enemy{
+  name = "mini_boss_1",
   layer = 0,
   x = 600,
   y = 237,
@@ -5921,8 +5796,8 @@ enemy{
       value = "spawn_teleport;spawn_teleport_2;door_miniboss;music_dungeon2;spawn_mini_boss_stair;spawn_tp_ss1",
     },
     {
-      key = "no_reset",
-      value = "1",
+      key = "savegame_variable",
+      value = "mini_boss_1_dungeon_2",
     },
   },
   direction = 0,
@@ -6215,6 +6090,7 @@ enemy{
 }
 
 enemy{
+  name = "mini_boss_2",
   layer = 0,
   x = 600,
   y = 317,
@@ -6224,12 +6100,59 @@ enemy{
       value = "spawn_teleport;spawn_teleport_2;door_miniboss;music_dungeon2;spawn_mini_boss_stair;spawn_tp_ss1",
     },
     {
-      key = "no_reset",
-      value = "1",
+      key = "savegame_variable",
+      value = "mini_boss_2_dungeon_2",
     },
   },
   direction = 0,
   breed = "mini_boss/fantom",
+}
+
+sensor{
+  layer = 0,
+  x = 504,
+  y = 269,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "spawn_door_miniboss;music_miniboss",
+    },
+  },
+  width = 16,
+  height = 16,
+}
+
+door{
+  name = "door_8",
+  layer = 0,
+  x = 592,
+  y = 160,
+  enabled_at_start = false,
+  direction = 1,
+  sprite = "entities/door/door",
+  savegame_variable = "dungeon_2_door_miniboss",
+}
+
+sensor{
+  layer = 0,
+  x = 600,
+  y = 157,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "spawn_door_8;music_boss",
+    },
+  },
+  width = 16,
+  height = 16,
+}
+
+destructible{
+  layer = 0,
+  x = 600,
+  y = 93,
+  sprite = "entities/projectile/rock",
+  weight = 1,
 }
 
 tile{
@@ -6269,19 +6192,5 @@ custom_entity{
   height = 16,
   direction = 0,
   sprite = "entities/projectile/rock",
-}
-
-sensor{
-  layer = 1,
-  x = 504,
-  y = 269,
-  properties = {
-    {
-      key = "activate_trigger",
-      value = "spawn_door_miniboss;music_miniboss",
-    },
-  },
-  width = 16,
-  height = 16,
 }
 
