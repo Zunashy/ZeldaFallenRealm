@@ -29,10 +29,6 @@ function item:on_started()
   self:set_assignable(true)
 end
 
-function item:on_obtaining()
-
-end
-
 local function check_ground(map, x, y, layer)
   return map:get_ground(x, y, layer) == "deep_water" or map:get_ground(x, y, layer) == "shallow_water"
 end
@@ -116,11 +112,4 @@ function item:on_using()
   end
 
   item:set_finished()
-end
-
--- Event called when a pickable treasure representing this item
--- is created on the map.
-function item:on_pickable_created(pickable)
-
-  -- You can set a particular movement here if you don't like the default one.
 end

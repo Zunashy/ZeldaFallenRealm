@@ -13,8 +13,8 @@ local game = item:get_game()
 
 -- Event called when all items have been created.
 function item:on_started()
-  self:set_savegame_variable("ice_seed_possession")
-  self:set_amount_savegame_variable("ice_seed_amount")
+  self:set_savegame_variable("fire_seed_possession")
+  self:set_amount_savegame_variable("fire_seed_amount")
   self:set_assignable(true)
 end
 

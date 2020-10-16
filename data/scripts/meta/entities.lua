@@ -91,11 +91,20 @@ function enemy_meta:set_attacks_consequence(consequence)
   self:set_attack_consequence("fire", consequence)
 end
 
+function enemy_meta:set_attacks_consequence_sprite(sprite, consequence)
+  self:set_attack_consequence_sprite(sprite, "sword", consequence)
+  self:set_attack_consequence_sprite(sprite, "thrown_item", consequence)
+  self:set_attack_consequence_sprite(sprite, "explosion", consequence)
+  self:set_attack_consequence_sprite(sprite, "arrow", consequence)
+  self:set_attack_consequence_sprite(sprite, "hookshot", consequence)
+  self:set_attack_consequence_sprite(sprite, "boomerang", consequence)
+  self:set_attack_consequence_sprite(sprite, "fire", consequence)
+end
+
 function enemy_meta:on_hurt()
   local x, y = self:get_position()
   self.hurt_x = x
   self.hurt_y = y
-  print(self.death_x)
 end
 
 local dest_meta = sol.main.get_metatable("destructible")
@@ -134,7 +143,9 @@ function dest_meta:on_cut()
       width = 32,
       height = 32,
     })
-    entity:get_sprite():set_animation("cut")
+    entity:get_sprite():set_animation("cut", function()
+      entity:remove()
+    end)
   end
   self:on_destroyed()
 end
@@ -149,8 +160,14 @@ function carried_meta:on_thrown()
 end
 
 function carried_meta:on_breaking()
-  local x = self:get_position()
-  self:set_position(x, self.throw_y)
+  local x, y = self:get_position()
+  local direction = self:get_movement():get_direction4()
+  if direction == 1 then
+    local _, sprite_y = self:get_sprite():get_xy()
+    self:set_position(x, y - sprite_y)
+  elseif direction % 2 == 0 then
+    self:set_position(x, self.throw_y)
+  end
 end  
 
 local switch_meta = sol.main.get_metatable("switch")

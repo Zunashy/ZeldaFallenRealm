@@ -163,9 +163,10 @@ function gen.random(bound, upper)
   local res = seed / mod
   if bound then
     if upper then
-      bound = upper - bound
+      upper = upper - bound
+      return math.floor(res * upper + bound)
     end
-    res = math.floor(res * bound)
+    return math.floor(res * bound)
   end
   return res 
 end

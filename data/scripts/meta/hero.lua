@@ -116,6 +116,7 @@ local function initialize_hero_features(game)
     if current == "treasure" then
       sol.audio.restore_music()
     end
+    self:get_map():call_hero_state_callback(current, next)
   end
 
   function hero:on_state_changed(s)

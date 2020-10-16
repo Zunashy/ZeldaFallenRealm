@@ -45,7 +45,6 @@ function entity:on_created()
   local x, y, layer = self:get_position()
   local sprite = self:get_sprite():get_animation_set()
   local i = 1
-  print( self.distance)
   while (i - 2) * 16 < self.distance do
     create_rod_part(self, x, y, layer, sprite, i)
     i = i + 1
@@ -127,9 +126,7 @@ function entity:release()
 end
 
 function entity:on_released()
-  print("release")
 end
 
 function entity:on_reset()
-  print("reset")
 end
