@@ -25,7 +25,8 @@ local function separator_callback_1(self)
   if game:get_story_state() == 3 then
     local moblin = map:get_entity("moblin_cinematic")
     local key = map:get_entity("great_key")
-
+ 
+    game:start_dialog("pnj.overworld.north_beach.moblin_run")
     moblin:get_sprite():set_direction(2)
     mg.move_straight(moblin, 2, 40, 64, function()
       key:set_enabled(false)

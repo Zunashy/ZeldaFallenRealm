@@ -2484,46 +2484,6 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "16_45",
-  ground = "wall",
-  default_layer = 0,
-  x = 480,
-  y = 400,
-  width = 32,
-  height = 32,
-}
-
-tile_pattern{
-  id = "16_46",
-  ground = "wall",
-  default_layer = 0,
-  x = 480,
-  y = 368,
-  width = 32,
-  height = 32,
-}
-
-tile_pattern{
-  id = "16_47",
-  ground = "wall",
-  default_layer = 0,
-  x = 480,
-  y = 336,
-  width = 32,
-  height = 32,
-}
-
-tile_pattern{
-  id = "16_48",
-  ground = "wall",
-  default_layer = 0,
-  x = 480,
-  y = 304,
-  width = 32,
-  height = 32,
-}
-
-tile_pattern{
   id = "16_5",
   ground = "wall",
   default_layer = 0,
@@ -5710,7 +5670,7 @@ tile_pattern{
 
 tile_pattern{
   id = "246",
-  ground = "shallow_water",
+  ground = "empty",
   default_layer = 0,
   x = { 136, 136 },
   y = { 464, 472 },
@@ -5721,7 +5681,7 @@ tile_pattern{
 
 tile_pattern{
   id = "246_2",
-  ground = "shallow_water",
+  ground = "empty",
   default_layer = 0,
   x = { 144, 144 },
   y = { 464, 472 },
@@ -5732,7 +5692,7 @@ tile_pattern{
 
 tile_pattern{
   id = "246_3",
-  ground = "shallow_water",
+  ground = "empty",
   default_layer = 0,
   x = { 152, 152 },
   y = { 464, 472 },
@@ -5743,7 +5703,7 @@ tile_pattern{
 
 tile_pattern{
   id = "246_4",
-  ground = "shallow_water",
+  ground = "empty",
   default_layer = 0,
   x = { 152, 152 },
   y = { 480, 488 },
@@ -5754,18 +5714,19 @@ tile_pattern{
 
 tile_pattern{
   id = "246_5",
-  ground = "shallow_water",
+  ground = "empty",
   default_layer = 0,
   x = { 136, 136 },
   y = { 480, 488 },
   width = 8,
   height = 8,
   frame_delay = 250,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
   id = "246_7",
-  ground = "shallow_water",
+  ground = "empty",
   default_layer = 0,
   x = { 152, 152 },
   y = { 496, 504 },
@@ -5776,7 +5737,7 @@ tile_pattern{
 
 tile_pattern{
   id = "246_8",
-  ground = "shallow_water",
+  ground = "empty",
   default_layer = 0,
   x = { 136, 136 },
   y = { 496, 504 },
@@ -5787,7 +5748,7 @@ tile_pattern{
 
 tile_pattern{
   id = "246_9",
-  ground = "shallow_water",
+  ground = "empty",
   default_layer = 0,
   x = { 144, 144 },
   y = { 496, 504 },
@@ -6296,6 +6257,86 @@ tile_pattern{
   default_layer = 2,
   x = 512,
   y = 144,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "272",
+  ground = "wall",
+  default_layer = 1,
+  x = 480,
+  y = 416,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "272_2",
+  ground = "wall",
+  default_layer = 1,
+  x = 480,
+  y = 352,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "272_3",
+  ground = "wall",
+  default_layer = 1,
+  x = 480,
+  y = 320,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "272_4",
+  ground = "wall",
+  default_layer = 1,
+  x = 480,
+  y = 384,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "273",
+  ground = "wall",
+  default_layer = 2,
+  x = 480,
+  y = 400,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "273_2",
+  ground = "wall",
+  default_layer = 2,
+  x = 480,
+  y = 336,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "273_3",
+  ground = "wall",
+  default_layer = 2,
+  x = 480,
+  y = 304,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "273_4",
+  ground = "wall",
+  default_layer = 2,
+  x = 480,
+  y = 368,
   width = 32,
   height = 16,
 }

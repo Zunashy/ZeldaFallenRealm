@@ -189,21 +189,21 @@ bla bla bla prend la corne etc
 dialog{
   id = "pnj.main.zuna.first_encounter.1",
   text = [[
-ptdr t ki
+... Qui es-tu ? Mmh, encore un stupide soldat qui veut se mesurer à moi ?
 ]],
 }
 
 dialog{
   id = "pnj.main.zuna.first_encounter.2",
   text = [[
-olala mais c mon épée
+Attends... Où est-ce que tu as trouvé cette épée ? C'est impossible, elle ressemble exactement à la mienne. 
 ]],
 }
 
 dialog{
   id = "pnj.main.zuna.first_encounter.3",
   text = [[
-bla bla utilise la corne
+Et cette corne que tu portes...  Link, c'est bien ça ? Peux-tu faire sonner ta corne ? J'aimerai savoir si elle produit le même son que la mienne. 
 ]],
 }
 
@@ -218,6 +218,13 @@ dialog{
   id = "pnj.main.zuna.teleport_back",
   text = [[
 sample text
+]],
+}
+
+dialog{
+  id = "pnj.overworld.deep_forest.dungeon_guard",
+  text = [[
+Fais attention à toi si tu entres là dedans. On dirait que les monstres sortent de cette grotte.
 ]],
 }
 
@@ -265,6 +272,13 @@ Halte ! La plage est infestée de monstres depuis tout à l'heure, même avec to
 }
 
 dialog{
+  id = "pnj.overworld.north_beach.indoors.moblin_blue",
+  text = [[
+Attendez, pourquoi est-ce que vous avez peur de ce minus ? Ce n'est pas le prince Zunashy. C'est juste son épée !
+]],
+}
+
+dialog{
   id = "pnj.overworld.north_beach.indoors.old_man_map",
   text = [[
 Salut p'tit gars ! Tu n'aurais pas trouvé une carte en te baladant sur la plage par hasard ? 
@@ -299,6 +313,13 @@ Il est toujours en train de trainer dehors avec ses copains, je ne sais plus quo
 }
 
 dialog{
+  id = "pnj.overworld.north_beach.moblin_run",
+  text = [[
+Cette épée... C'est celle du prince ! Gaaaah, sauve-qui-peut !
+]],
+}
+
+dialog{
   id = "pnj.overworld.plain.SE_guard",
   text = [[
 Interdiction d'aller plus loin.
@@ -308,14 +329,15 @@ Interdiction d'aller plus loin.
 dialog{
   id = "pnj.overworld.plain.camp.cinematic",
   text = [[
-oui alors du coup va tuer les monstres stp
+Quelle belle nuit... Les étoiles restent toujours les mêmes, peut importe ce qui peut arriver. 
+Tu sais, avant de nous retrouver ici, nous faisions partie de l'armée du prince Zunashy. C'était un commandant exceptionnel. Il nous avait confiés la protection du village de la forêt profonde. Un jour, des centaines de monstres ont envahis le village et nous n'avons pas eu d'autre choix que de nous enfuir. Contrairement à ce qu'on raconte, le prince n'a jamais voulu conquérir le monde avec ses armées. Il souhaitait unifier tous les peuples afin de lutter contre cette menace, mais cela n'a fait qu'empirer les choses. Les peuples se sont mis à se méfier les uns des autres et cela à déclenché la guerre. Triste histoire, pas vrai ? 
 ]],
 }
 
 dialog{
   id = "pnj.overworld.plain.camp.talked_all",
   text = [[
-hey reste un peu on a de la vodka et du saucisson
+La nuit va tomber, reste avec nous, c'est vraiment dangereux dehors.
 ]],
 }
 
@@ -331,7 +353,7 @@ Elle parle d'un héros vêtu d'une tunique verte, tout comme toi. Amusant non ?
 dialog{
   id = "pnj.overworld.plain.camp.villager_1.2",
   text = [[
-va tuer les monstres stp
+Je n'ai jamais été fait pour être soldat. Je préfère largement la guitare aux combats.
 ]],
 }
 
@@ -347,7 +369,7 @@ Si seulement j'étais encore capable de me battre comme avant, je leur montrerai
 dialog{
   id = "pnj.overworld.plain.camp.villager_2.2",
   text = [[
-va tuer les monstres stp
+J'étais l'une des meilleures combattantes de l'armée. Pourtant, lorsque les monstres sont arrivés, je n'ai pas eu le courage de mourir pour protéger le village...
 ]],
 }
 
@@ -362,7 +384,7 @@ Ce gros balourd s'est cogné lui-même avec sa massue !
 dialog{
   id = "pnj.overworld.plain.camp.villager_3.2",
   text = [[
-va tuer les monstres stp
+" Cette guerre dure depuis trop longtemps. Tout ça parce que les dirigeants des peuples sont incapables de mettre leurs querelles de cotés et de résoudre les vrais problèmes.
 ]],
 }
 
@@ -377,7 +399,7 @@ Comme ça, j'ai plus de boissons et moins d'ennuis !
 dialog{
   id = "pnj.overworld.plain.camp.villager_4.2",
   text = [[
-va tuer les monstres stp
+J'ai eu beaucoup de chance de m'être enfui du village. J'étais à un an de la retraite ! Tu imagines ?
 ]],
 }
 
@@ -498,6 +520,14 @@ maman, hein ?
 }
 
 dialog{
+  id = "pnj.village.nielint.SE_girl_green_dress_2",
+  text = [[
+Quoi ? Le barman t'a demandé d'entrer dans la grotte pour tuer les monstres ?
+Woah, tu dois être trop fort !
+]],
+}
+
+dialog{
   id = "pnj.village.nielint.SW_entrance_girl",
   text = [[
 Tiens, tu es nouveau
@@ -525,8 +555,7 @@ dialog{
   id = "pnj.village.nielint.barman.awake1",
   position = "1",
   text = [[
-Ah, t'es enfin réveillé, d'habitude les gens ne mettent qu'une nuit pour ça. Quoi, tu ne sais pas où t'es ? Bah on est pas sorti de l'auberge, enfin, surtout moi. Tu es dans le village de Nielint, à Elrint.
-... Mh ? Cette tempête n'était pas naturelle ? C'est probable, un sorcier a jugé bon de semer le chaos un peu partout, et comme pour ajouter au désordre, un royaume a déclaré la guerre aux autres. La guerre est terminée mais le sorcier lui n'a pas décidé de s'arrêter. Tu veux y faire quelque chose ? Tu devrais voir l'arbre Jojo, au nord-ouest d'ici, mais le chemin est bloqué par des buissons, trouve de quoi débroussailler dans la forêt au sud d'ici, nous n'avons ni le temps ni les moyens de faire quoi que ce soit.
+Ah, te voilà enfin réveillé p'tit gars. Content de voir que tu vas bien. On t'a repêché sur la plage, pas très loin d'ici. Tu étais dans un sale état. Tu te rappelles de ton nom ? Link, très bien. Bienvenue au village de Nielint, dans la région d'Elrint. Tu dois être un peu déboussolé. Je te conseille d'aller voir l'arbre Mojo si tu as besoin de quelques éclaircissements. Le chemin qui mène à lui est bloqué mais tu devrais pouvoir passer si tu as une bonne épée. Vas dans la grotte au sud d'ici. Tu en trouveras une. Fais attention aux monstres quand-même, je ne voudrais pas avoir à te sauver une deuxième fois. Ahah, ne fais pas cette tête ! Je plaisantais. 
 ]],
 }
 
@@ -679,31 +708,6 @@ dialog{
 Lalalaaa... et les oiseaux qui... euh... 
 Toi là ! Aide-moi à trouver un truc qui rime avec oiseaux ! Panneaux ? Cageots ? Poireaux ? 
 Raaah, je suis nul comme chanteur !
-]],
-}
-
-dialog{
-  id = "pnj.village.nielint.zora",
-  text = [[
-sfr sucks
-a cause d'eux j'ai pas pu push ce magnifique sprite avant deux jours.
-mais bon, des gens ont déclenché une guerre ici pour moins que ça
-]],
-}
-
-dialog{
-  id = "pnj.village.nielint.zora_2",
-  text = [[
-Je trouve le barman assez louche, je croire qu'il essaye... de noyer le poisson !
-]],
-}
-
-dialog{
-  id = "pnj.village.nielint.zora_3",
-  text = [[
-Fais pas attention à mes collègues de gauche.
-Ils ont pété un plomb depuis une panne de réseau
-Je ne sais même pas ce que c'est ! 
 ]],
 }
 

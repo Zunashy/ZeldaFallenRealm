@@ -1885,6 +1885,86 @@ tile{
   pattern = "49",
 }
 
+tile{
+  layer = 1,
+  x = 232,
+  y = 56,
+  width = 16,
+  height = 8,
+  pattern = "246_2",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "246_5",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "246_4",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 80,
+  width = 16,
+  height = 8,
+  pattern = "246_9",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "246",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "246_3",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 80,
+  width = 8,
+  height = 8,
+  pattern = "246_8",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 80,
+  width = 8,
+  height = 8,
+  pattern = "246_7",
+  tileset = "normal_world",
+}
+
 door{
   name = "door_2",
   layer = 1,
@@ -1907,7 +1987,7 @@ destination{
   name = "entrance",
   layer = 1,
   x = 240,
-  y = 757,
+  y = 157,
   direction = 1,
 }
 
@@ -2172,35 +2252,8 @@ separator{
 
 enemy{
   layer = 1,
-  x = 216,
-  y = 173,
-  direction = 0,
-  breed = "octorok",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 1,
-  x = 280,
-  y = 181,
-  direction = 0,
-  breed = "octorok",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 1,
-  x = 240,
-  y = 213,
-  direction = 0,
-  breed = "octorok",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 1,
   x = 192,
-  y = 69,
+  y = 221,
   direction = 0,
   breed = "octorok",
   treasure_name = "random",
@@ -2208,8 +2261,8 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 280,
-  y = 85,
+  x = 288,
+  y = 221,
   direction = 0,
   breed = "octorok",
   treasure_name = "random",
@@ -2217,17 +2270,8 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 280,
-  y = 37,
-  direction = 0,
-  breed = "octorok",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 1,
-  x = 200,
-  y = 45,
+  x = 216,
+  y = 237,
   direction = 0,
   breed = "octorok",
   treasure_name = "random",
@@ -2236,16 +2280,16 @@ enemy{
 enemy{
   layer = 1,
   x = 240,
-  y = 29,
+  y = 45,
   properties = {
     {
       key = "death_trigger",
-      value = "door_miniboss",
+      value = "door_miniboss;spawn_anneau",
     },
   },
   direction = 0,
   breed = "blue_octorock",
-  treasure_name = "ring_octorock",
+  treasure_name = "random",
 }
 
 separator{
@@ -2372,5 +2416,91 @@ custom_entity{
   height = 32,
   direction = 0,
   model = "platform_controller",
+}
+
+enemy{
+  layer = 1,
+  x = 192,
+  y = 53,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_anneau",
+    },
+  },
+  direction = 0,
+  breed = "octorok",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 184,
+  y = 85,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_anneau",
+    },
+  },
+  direction = 0,
+  breed = "octorok",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 288,
+  y = 37,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_anneau",
+    },
+  },
+  direction = 0,
+  breed = "octorok",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 280,
+  y = 77,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_anneau",
+    },
+  },
+  direction = 0,
+  breed = "octorok",
+  treasure_name = "random",
+}
+
+custom_entity{
+  name = "anneau",
+  layer = 1,
+  x = 240,
+  y = 29,
+  enabled_at_start = false,
+  properties = {
+    {
+      key = "item",
+      value = "anneau_octorok",
+    },
+    {
+      key = "variant",
+      value = "1",
+    },
+    {
+      key = "on_obtained",
+      value = "teleport_normal_version/village/nielint/outdoors:octorok$fade",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "pickable",
 }
 
