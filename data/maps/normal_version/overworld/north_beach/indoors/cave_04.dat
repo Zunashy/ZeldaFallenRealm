@@ -3975,7 +3975,6 @@ block{
       value = "door_2",
     },
   },
-  direction = 0,
   sprite = "entities/block/block",
   pushable = true,
   pullable = false,
@@ -4119,7 +4118,7 @@ custom_entity{
   properties = {
     {
       key = "item",
-      value = "great_key#1$beach_great_key",
+      value = "great_key",
     },
     {
       key = "on_obtained",
@@ -4139,7 +4138,7 @@ custom_entity{
 enemy{
   layer = 0,
   x = 656,
-  y = 93,
+  y = 101,
   properties = {
     {
       key = "min_story_state",

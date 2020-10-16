@@ -127,7 +127,7 @@ function inventory_menu:on_command_pressed(command)
 	elseif command == "item_2" then
 		local item = self:get_selected_item()
 		if item and item:get_variant() ~= 0 then
-			self:assign_item(item, 1)
+			self:assign_item(item, 2)
         end
     elseif command == "action" then
         local item = self:get_selected_item()
