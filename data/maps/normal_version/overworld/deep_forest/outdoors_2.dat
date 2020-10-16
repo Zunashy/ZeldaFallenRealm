@@ -8682,6 +8682,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/overworld/5",
+  behavior = "dialog#pnj.overworld.deep_forest.dungeon_guard",
 }
 
 enemy{
