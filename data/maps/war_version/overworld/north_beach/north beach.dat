@@ -6003,6 +6003,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/pirates/3",
+  behavior = "dialog#pnj.overworld.pirates.3",
 }
 
 npc{
@@ -6012,6 +6013,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/pirates/4",
+  behavior = "dialog#pnj.overworld.pirates.4",
 }
 
 npc{
@@ -6021,6 +6023,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/pirates/2",
+  behavior = "dialog#pnj.overworld.pirates.1",
 }
 
 npc{
@@ -6030,6 +6033,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "pnj/pirates/2",
+  behavior = "dialog#pnj.overworld.pirates.2",
 }
 
 tile{

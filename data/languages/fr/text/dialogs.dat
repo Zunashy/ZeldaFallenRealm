@@ -231,7 +231,7 @@ Fais attention à toi si tu entres là dedans. On dirait que les monstres sorten
 dialog{
   id = "pnj.overworld.north_beach.deku_tree.part1.1",
   text = [[
-Link, je t'attendais. C'est ma voix que tu as suivi depuis la mer et te voilà enfin. Un sorcier menace d'anéantir cet endroit et un héros doit l'arrêter. Ce héros, c'est toi. Pour l'heure, dirige toi vers le temple du Trident, à l'ouest. Il vient d'être corrompu et c'est cela qui a causé la tempête.
+Jeune Link, j'attendais ta venue. Tu dois très certainement te demander ce qui t'es arrivé, n'est-ce pas ? Ton bateau a été secoué par une puissante tempête et tu as fait naufrage sur la plage. Écoute-moi bien, c'est très important. Cette tempête n'était pas naturelle. Elle est toujours en train de faire rage et tu dois l'arrêter avant qu'elle ne cause d'avantage de dégâts. Rends-toi sans plus tarder au Temple Trident. C'est de là qu'elle provient. Surtout, sois prudent. Je sens une puissance maléfique émaner de cet endroit.
 ]],
 }
 
@@ -245,7 +245,7 @@ Allez ! Le temps presse, le temple ne vas pas se restaurer tout seul !
 dialog{
   id = "pnj.overworld.north_beach.deku_tree.part2.1",
   text = [[
-bla bla bla donjon
+Link, tu es enfin là ! Malheureusement, la situation ne s'est pas arrangée... La tempête est de plus en plus forte. Il faut l'arrêter au plus vite, mais je ne sais pas comment faire.
 ]],
 }
 
@@ -253,14 +253,14 @@ dialog{
   id = "pnj.overworld.north_beach.deku_tree.part2.2",
   illustrate_item = "essence",
   text = [[
-l'essence (c cher (lol))
+Tiens, je vois que possèdes une essence ? C'est un objet extrêmement rare et doté d'une grande puissance. Rends-toi à l'Est. Tu devrais y trouver un moyen d'arrêter cette tempête. Du moins, je l'espère.
 ]],
 }
 
 dialog{
   id = "pnj.overworld.north_beach.deku_tree.part2.3",
   text = [[
-va a l'est
+Dépêche, je commence à perdre mes feuilles.
 ]],
 }
 
@@ -320,6 +320,34 @@ Cette épée... C'est celle du prince ! Gaaaah, sauve-qui-peut !
 }
 
 dialog{
+  id = "pnj.overworld.pirates.1",
+  text = [[
+Hé gamin ! La bourse ou la vie ! Euh... J'te fais pas peur ? Ben... Passe alors. J'suis d'humeur généreuse aujourd'hui.
+]],
+}
+
+dialog{
+  id = "pnj.overworld.pirates.2",
+  text = [[
+Le rafiot, la flotte, les pillages... J'commence à en avoir ras-le-bol moi ! Pourquoi j'pourrais pas être dans les bras d'une jolie fille pour changer, hein
+]],
+}
+
+dialog{
+  id = "pnj.overworld.pirates.3",
+  text = [[
+Dégage gamin. C'est notre repaire ici, pas une aire de jeux !
+]],
+}
+
+dialog{
+  id = "pnj.overworld.pirates.4",
+  text = [[
+Qu'est-ce que tu viens faire ici moussaillon ? Tu veux rejoindre mon équipage ? J'te préviens, j'prends pas les marins d'eau douce ! J'vais te faire récurer chaque planche de ce navire jusqu'à ce qu'il brille comme une pièce neuve.
+]],
+}
+
+dialog{
   id = "pnj.overworld.plain.SE_guard",
   text = [[
 Interdiction d'aller plus loin.
@@ -331,6 +359,12 @@ dialog{
   text = [[
 Quelle belle nuit... Les étoiles restent toujours les mêmes, peut importe ce qui peut arriver. 
 Tu sais, avant de nous retrouver ici, nous faisions partie de l'armée du prince Zunashy. C'était un commandant exceptionnel. Il nous avait confiés la protection du village de la forêt profonde. Un jour, des centaines de monstres ont envahis le village et nous n'avons pas eu d'autre choix que de nous enfuir. Contrairement à ce qu'on raconte, le prince n'a jamais voulu conquérir le monde avec ses armées. Il souhaitait unifier tous les peuples afin de lutter contre cette menace, mais cela n'a fait qu'empirer les choses. Les peuples se sont mis à se méfier les uns des autres et cela à déclenché la guerre. Triste histoire, pas vrai ? 
+]],
+}
+
+dialog{
+  id = "pnj.overworld.plain.camp.morning",
+  text = [[
 ]],
 }
 
@@ -409,13 +443,14 @@ dialog{
  Je suis désolé mais j'ai pour ordre de ne laisser passer personne.
 ...
 Tu viens de Nielint ? Ces gars là ont besoin d'aide, tu peux passer.
+Essaye de parler à chacun d'entre eux.
 ]],
 }
 
 dialog{
   id = "pnj.overworld.plain.guard_camp.alt",
   text = [[
-...
+Essaye de parler à chacun d'entre eux.
 ]],
 }
 
@@ -562,7 +597,7 @@ Ah, te voilà enfin réveillé p'tit gars. Content de voir que tu vas bien. On t
 dialog{
   id = "pnj.village.nielint.barman.awake2",
   text = [[
-Allez, l'épée ne va pas aller se chercher toute seule.
+Bon, par contre, va chercher, j'ai autre chose à faire.
 ]],
 }
 
