@@ -16,8 +16,10 @@ local hero = map:get_hero()
 local crumble_delay = 1000
 local fall_delay = 1000
 
+local shake = eg.shake
+
 local function start_shaking()
-  eg.shake(entity, 1, 1, 100, nil)
+  shake(entity, 1, 1, 100, nil)
 end
 
 local function destroy()

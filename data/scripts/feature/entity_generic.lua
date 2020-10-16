@@ -85,7 +85,30 @@ function eg.get_corner_position(entity)
   return x - ox, y - oy
 end
 
-function eg.shake(entity, dir, amplitude, delay, duration, callback)
+
+
+local function get_pos(object)
+  if object.get_xy then
+    return object:get_xy()
+  elseif object.get_position then
+    return object:get_position()
+  else
+    return object.x, object.y
+  end
+end
+
+local function set_pos(object, x, y)
+  if object.set_xy then
+    return object:set_xy(x, y)
+  elseif object.gset_position then
+    return object:set_position(x, y)
+  else
+    object.x = x
+    object.y = y
+  end
+end
+
+function eg.shake(entity, dir, amplitude, delay, duration, callback, context)
   amplitude = amplitude or 1
   local m = sol.movement.create("pixel")
   local vertical = dir % 2 == 1
@@ -94,14 +117,14 @@ function eg.shake(entity, dir, amplitude, delay, duration, callback)
   m:set_delay(delay)
   m:set_loop(true)  
   m:set_ignore_obstacles()
-  local x, y = entity:get_position()
-  entity:set_position((vertical and x) or x + amplitude / 2, (vertical and y + amplitude / 2) or y)
+  local x, y = get_pos(entity)
+  set_pos(entity, (vertical and x) or x + amplitude / 2, (vertical and y + amplitude / 2) or y)
   m:start(entity)
 
-  if duration and type(entity) == "userdata" then
-    sol.timer.start(entity, duration, function()
+  if duration then
+    sol.timer.start(context or entity, duration, function()
       m:stop()
-      entity:set_position(x, y)
+      set_pos(entity, x, y)
       if callback then
         callback(entity)
       end

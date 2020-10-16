@@ -10244,7 +10244,7 @@ sensor{
   properties = {
     {
       key = "activate_trigger",
-      value = "spawn_door_miniboss",
+      value = "spawn_door_miniboss;music_miniboss",
     },
   },
   width = 16,

@@ -20,3 +20,27 @@ animation{
     { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
+animation{
+  name = "spin",
+  src_image = "enemies/mini_boss/fantom.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 64, y = 16, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13, num_frames = 4, num_columns = 1 },
+  },
+}
+animation{
+  name = "stunned",
+  src_image = "enemies/mini_boss/fantom.png",
+  directions = {
+    { x = 64, y = 0, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13 },
+  },
+}
+animation{
+  name = "windup",
+  src_image = "enemies/mini_boss/fantom.png",
+  frame_delay = 500,
+  directions = {
+    { x = 64, y = 0, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13, num_frames = 2, num_columns = 1 },
+  },
+}

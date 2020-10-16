@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "dungeon/tileset_donjon_2",
-  music = "dungeon1",
+  music = "dungeon2",
 }
 
 tile{
@@ -5399,6 +5399,17 @@ tile{
   pattern = "67",
 }
 
+dynamic_tile{
+  name = "mini_boss_stair",
+  layer = 0,
+  x = 648,
+  y = 256,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "32",
+}
+
 chest{
   layer = 0,
   x = 120,
@@ -5545,8 +5556,8 @@ switch{
 
 pickable{
   layer = 0,
-  x = 232,
-  y = 717,
+  x = 0,
+  y = 573,
   treasure_name = "sword",
 }
 
@@ -5915,7 +5926,7 @@ enemy{
     },
   },
   direction = 0,
-  breed = "mini_boss/mr_pers",
+  breed = "mini_boss/fantom",
 }
 
 door{
@@ -6027,7 +6038,7 @@ teletransporter{
   name = "tp_ss1",
   layer = 0,
   x = 648,
-  y = 216,
+  y = 256,
   enabled_at_start = false,
   width = 16,
   height = 16,
@@ -6039,7 +6050,7 @@ destination{
   name = "bracelet",
   layer = 0,
   x = 648,
-  y = 229,
+  y = 269,
   direction = 1,
 }
 
@@ -6194,23 +6205,31 @@ destructible{
   weight = 1,
 }
 
-dynamic_tile{
-  name = "mini_boss_stair",
+enemy{
   layer = 0,
-  x = 648,
-  y = 256,
-  enabled_at_start = false,
-  width = 16,
-  height = 16,
-  pattern = "32",
+  x = 600,
+  y = 45,
+  direction = 0,
+  breed = "boss/rock_mosquito",
+  treasure_name = "heart_full",
 }
 
-sensor{
+enemy{
   layer = 0,
-  x = 504,
-  y = 269,
-  width = 16,
-  height = 16,
+  x = 600,
+  y = 317,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_teleport;spawn_teleport_2;door_miniboss;music_dungeon2;spawn_mini_boss_stair;spawn_tp_ss1",
+    },
+    {
+      key = "no_reset",
+      value = "1",
+    },
+  },
+  direction = 0,
+  breed = "mini_boss/fantom",
 }
 
 tile{
@@ -6250,5 +6269,19 @@ custom_entity{
   height = 16,
   direction = 0,
   sprite = "entities/projectile/rock",
+}
+
+sensor{
+  layer = 1,
+  x = 504,
+  y = 269,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "spawn_door_miniboss;music_miniboss",
+    },
+  },
+  width = 16,
+  height = 16,
 }
 

@@ -373,14 +373,6 @@ destructible{
 }
 
 destructible{
-  name = "rochey_5",
-  layer = 1,
-  x = 232,
-  y = 77,
-  sprite = "entities/projectile/rock",
-}
-
-destructible{
   name = "rochey_6",
   layer = 1,
   x = 120,
@@ -611,9 +603,9 @@ enemy{
 enemy{
   layer = 1,
   x = 232,
-  y = 40,
+  y = 77,
   direction = 0,
-  breed = "boss/rock_mosquito",
+  breed = "mini_boss/fantom",
 }
 
 tile{
