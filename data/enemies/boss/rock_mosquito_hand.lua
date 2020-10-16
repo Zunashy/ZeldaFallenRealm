@@ -12,7 +12,7 @@ local hand_radius = 6
 local arms_nb = 2
 local movement_range = shield_radius + hand_radius + (arm_diameter * arms_nb) 
 
-local movement_speed = 20
+local movement_speed = 80
 local rock_speed = 140
 local protect_movement_speed = 96
 
@@ -131,7 +131,7 @@ local function init_rock(rock, movement_angle, distance)
   end
 
   m:start(rock, function()
-    if math.random() < 0.5 or rock:overlaps(hero, "overlapping") then
+    if math.random() < 0.8 or rock:overlaps(hero, "overlapping") then
       rock:destroy()
     else
       local x, y, layer = rock:get_position()

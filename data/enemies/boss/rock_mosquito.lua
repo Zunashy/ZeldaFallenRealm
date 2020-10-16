@@ -128,5 +128,9 @@ local function hurt_cb(self)
 
 end
 
+function enemy:on_dying()
+  self.left_hand:remove_life(999)
+  self.right_hand:remove_life(999)
+end
 
 enemy:register_event("on_hurt", hurt_cb)
