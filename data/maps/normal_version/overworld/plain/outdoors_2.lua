@@ -5,8 +5,8 @@ local game = map:get_game()
 
 local villagers = {count = 0}
 
+
 local function villagers_dialog_callback(villager)
-  print(villager, villagers[villager])
   if not villagers[villager] then
     villagers[villager] = true
     print(villager, villagers[villager])
