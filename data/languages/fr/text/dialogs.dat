@@ -175,14 +175,14 @@ Merci à toi d'avoir joué jusqu'ici ! C'est ici que s'achève la partie termin�
 dialog{
   id = "pnj.main.sorcier.first_encounter.1",
   text = [[
-$n ! Je t'attendais.
+Bonjour $n, je t'attendais. On m'appelle Eradus le sage. J'ai vu comment tu t'étais débarrassé de ce monstre dans le Temple Trident. Tes capacités au combat son réellement impressionnantes... Jeune homme, ce monde a besoin d'un héros tel que toi pour le libérer du mal qui le ronge. As-tu déjà entendu parler du prince Zunashy ? C'est à cause de lui que le chaos s'est répandu sur ces terres. Il a initié la guerre et a ravagé le monde pour satisfaire ses désirs de conquête. Quelqu'un doit le retrouver et le neutraliser avant qu'il ne soit trop tard.
 ]],
 }
 
 dialog{
   id = "pnj.main.sorcier.first_encounter.2",
   text = [[
-bla bla bla prend la corne etc
+Tiens, prends cette corne. C'est un objet très précieux qui te conduira à l'endroit ou il se trouve. Joue-en et tu découvriras les réponses à tes questions. Bonne chance, $n.
 ]],
 }
 
@@ -203,14 +203,14 @@ Attends... Où est-ce que tu as trouvé cette épée ? C'est impossible, elle re
 dialog{
   id = "pnj.main.zuna.first_encounter.3",
   text = [[
-Et cette corne que tu portes...  Link, c'est bien ça ? Peux-tu faire sonner ta corne ? J'aimerai savoir si elle produit le même son que la mienne. 
+Et cette corne que tu portes...  $n , c'est bien ça ? Peux-tu faire sonner ta corne ? J'aimerai savoir si elle produit le même son que la mienne. 
 ]],
 }
 
 dialog{
   id = "pnj.main.zuna.first_encounter.4",
   text = [[
-Utilise la corne abruti
+Bon, par contre, utilise la corne. Je n'ai pas le temps.
 ]],
 }
 
@@ -231,7 +231,7 @@ Fais attention à toi si tu entres là dedans. On dirait que les monstres sorten
 dialog{
   id = "pnj.overworld.north_beach.deku_tree.part1.1",
   text = [[
-Jeune Link, j'attendais ta venue. Tu dois très certainement te demander ce qui t'es arrivé, n'est-ce pas ? Ton bateau a été secoué par une puissante tempête et tu as fait naufrage sur la plage. Écoute-moi bien, c'est très important. Cette tempête n'était pas naturelle. Elle est toujours en train de faire rage et tu dois l'arrêter avant qu'elle ne cause d'avantage de dégâts. Rends-toi sans plus tarder au Temple Trident. C'est de là qu'elle provient. Surtout, sois prudent. Je sens une puissance maléfique émaner de cet endroit.
+Jeune $n, j'attendais ta venue. Tu dois très certainement te demander ce qui t'es arrivé, n'est-ce pas ? Ton bateau a été secoué par une puissante tempête et tu as fait naufrage sur la plage. Écoute-moi bien, c'est très important. Cette tempête n'était pas naturelle. Elle est toujours en train de faire rage et tu dois l'arrêter avant qu'elle ne cause d'avantage de dégâts. Rends-toi sans plus tarder au Temple Trident. C'est de là qu'elle provient. Surtout, sois prudent. Je sens une puissance maléfique émaner de cet endroit.
 ]],
 }
 
@@ -245,7 +245,7 @@ Allez ! Le temps presse, le temple ne vas pas se restaurer tout seul !
 dialog{
   id = "pnj.overworld.north_beach.deku_tree.part2.1",
   text = [[
-Link, tu es enfin là ! Malheureusement, la situation ne s'est pas arrangée... La tempête est de plus en plus forte. Il faut l'arrêter au plus vite, mais je ne sais pas comment faire.
+$n, tu es enfin là ! Malheureusement, la situation ne s'est pas arrangée... La tempête est de plus en plus forte. Il faut l'arrêter au plus vite, mais je ne sais pas comment faire.
 ]],
 }
 
@@ -365,6 +365,7 @@ Tu sais, avant de nous retrouver ici, nous faisions partie de l'armée du prince
 dialog{
   id = "pnj.overworld.plain.camp.morning",
   text = [[
+Merci de nous avoir un peu écouté, va à l'Est pour continuer ton périple.
 ]],
 }
 
@@ -582,7 +583,7 @@ un grand chevalier...
 Tu connais le prince Zuna ?
 
 Il parait qu'il maniait
-la lance comme personne !
+l'épée comme personne !
 ]],
 }
 
@@ -590,14 +591,14 @@ dialog{
   id = "pnj.village.nielint.barman.awake1",
   position = "1",
   text = [[
-Ah, te voilà enfin réveillé p'tit gars. Content de voir que tu vas bien. On t'a repêché sur la plage, pas très loin d'ici. Tu étais dans un sale état. Tu te rappelles de ton nom ? Link, très bien. Bienvenue au village de Nielint, dans la région d'Elrint. Tu dois être un peu déboussolé. Je te conseille d'aller voir l'arbre Mojo si tu as besoin de quelques éclaircissements. Le chemin qui mène à lui est bloqué mais tu devrais pouvoir passer si tu as une bonne épée. Vas dans la grotte au sud d'ici. Tu en trouveras une. Fais attention aux monstres quand-même, je ne voudrais pas avoir à te sauver une deuxième fois. Ahah, ne fais pas cette tête ! Je plaisantais. 
+Ah, te voilà enfin réveillé p'tit gars. Content de voir que tu vas bien. On t'a repêché sur la plage, pas très loin d'ici. Tu étais dans un sale état. Tu te rappelles de ton nom ? $n, très bien. Bienvenue au village de Nielint, dans la région d'Elrint. Tu dois être un peu déboussolé. Je te conseille d'aller voir l'arbre Mojo si tu as besoin de quelques éclaircissements. Le chemin qui mène à lui est bloqué mais tu devrais pouvoir passer si tu as une bonne épée. Vas dans la grotte au sud d'ici. Tu en trouveras une. Fais attention aux monstres quand-même, je ne voudrais pas avoir à te sauver une deuxième fois. Ahah, ne fais pas cette tête ! Je plaisantais. 
 ]],
 }
 
 dialog{
   id = "pnj.village.nielint.barman.awake2",
   text = [[
-Bon, par contre, va chercher, j'ai autre chose à faire.
+Bon, par contre, va chercher l'épée, j'ai autre chose à faire.
 ]],
 }
 

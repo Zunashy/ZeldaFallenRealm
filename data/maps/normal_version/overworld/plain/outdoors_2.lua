@@ -1,9 +1,11 @@
 local map = ...
 local game = map:get_game()
-
+local hero = map:get_hero()
 -- Event called at initialization time, as soon as this map is loaded.
 
 local villagers = {count = 0}
+
+local flash = require("scripts/api/visual_effects").flash
 
 local function villagers_dialog_callback(villager)
   print(villager, villagers[villager])
@@ -15,17 +17,22 @@ local function villagers_dialog_callback(villager)
       hero:freeze()
       sol.timer.start(hero, 500, function()
         game:start_dialog("pnj.overworld.plain.camp.talked_all", function()
-          require("scripts/api/visual_effects").flash(50)
+          flash(50)
           sol.timer.start(hero, 750, function()
             map:get_hero():light_teleport("campfire", map)
-            hero:set_direction(3)
+            hero:set_direction(0)
             hero:freeze()
           end)
           sol.timer.start(hero, 3000, function()
-            game:start_dialog("pnj.overworld.plain.camp.cinematic", function()
-              hero:unfreeze()
-              game:set_story_state(12)
-              map:get_entity("guard_east"):set_enabled(false)
+            game:start_dialog("pnj.overworld.plain.camp.cinematic", function()              
+              flash(50)
+              sol.timer.start(hero,2000,function() 
+                game:start_dialog("pnj.overworld.plain.camp.morning", function()
+                  hero:unfreeze()
+                  game:set_story_state(12)
+                  map:get_entity("guard_east"):set_enabled(false) 
+                end )    
+              end )
             end)
           end)
         end)
