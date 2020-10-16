@@ -285,7 +285,7 @@ destination{
   name = "spawn",
   layer = 1,
   x = 232,
-  y = 237,
+  y = 109,
   properties = {
     {
       key = "on_obtained",
@@ -356,8 +356,8 @@ pickable{
 switch{
   name = "testswitch",
   layer = 1,
-  x = 168,
-  y = 152,
+  x = 128,
+  y = 160,
   subtype = "solid",
   sprite = "entities/dungeon_elements/switches",
   needs_block = false,
@@ -375,8 +375,8 @@ destructible{
 destructible{
   name = "rochey_5",
   layer = 1,
-  x = 192,
-  y = 149,
+  x = 232,
+  y = 77,
   sprite = "entities/projectile/rock",
 }
 
@@ -391,14 +391,14 @@ destructible{
 destructible{
   name = "rochey_8",
   layer = 1,
-  x = 184,
-  y = 133,
+  x = 128,
+  y = 101,
   sprite = "entities/projectile/rock",
 }
 
 custom_entity{
   layer = 1,
-  x = 176,
+  x = 136,
   y = 165,
   properties = {
     {
@@ -602,10 +602,18 @@ custom_entity{
 
 enemy{
   layer = 1,
-  x = 232,
-  y = 293,
+  x = 72,
+  y = 365,
   direction = 0,
   breed = "slime_red",
+}
+
+enemy{
+  layer = 1,
+  x = 232,
+  y = 40,
+  direction = 0,
+  breed = "boss/rock_mosquito",
 }
 
 tile{

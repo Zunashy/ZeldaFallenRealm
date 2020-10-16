@@ -18,6 +18,7 @@ local function collision_test(entity, other)
   end
 end
 
+
 function entity:on_created()
   self.item = self:get_property("item")
   if not self.item then

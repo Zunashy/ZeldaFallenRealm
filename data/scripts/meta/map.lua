@@ -65,6 +65,32 @@ function map_meta:add_active_light(light)
     end
 end
 
+function map_meta:init_hero_state_callbacks()
+    self.hero_state_callbacks = {}
+end
+
+function map_meta:add_hero_state_callback(callback, state, leaving, data) 
+    if not self.hero_state_callbacks then
+        self:init_hero_state_callbacks()
+    end
+    self.hero_state_callbacks[#self.hero_state_callbacks + 1] = { 
+        callback = callback,
+        state = state,
+        leaving = leaving,
+        data = data
+    }
+end
+
+function map_meta:call_hero_state_callback(old, new)
+    if self.hero_state_callbacks then
+        for _, event in ipairs(self.hero_state_callbacks) do
+            if (event.state == old and event.leaving) or (event.state == new and not event.leaving) then
+                event.callback(event.data, self)
+            end
+        end
+    end
+end
+
 local function generic_start_callback(map)
     local prop
     local game = map:get_game()

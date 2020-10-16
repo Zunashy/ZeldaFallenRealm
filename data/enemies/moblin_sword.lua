@@ -38,7 +38,7 @@ function enemy:on_created()
   -- like the sprite, the life and the damage.
   --sprite = enemy:create_sprite("enemies/moblin")
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
-  sword_sprite = enemy:create_sprite("enemies/moblin_sword_word")
+  sword_sprite = enemy:create_sprite("enemies/moblin_sword_sword")
   sprite:set_direction(math.random(0,3))
   sword_sprite:set_direction(sprite:get_direction())
   enemy:set_life(3)

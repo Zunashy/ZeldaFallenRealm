@@ -1,3 +1,5 @@
+
+
 local enemy = ...
 local map = enemy:get_map()
 local hero = map:get_hero()
@@ -22,6 +24,7 @@ function enemy:movement_cycle()
   if self:get_distance(hero) < 48 then
     self.movement_count = self.movement_count + 1
   end
+
 
   if self.movement_count < 2 then
     sol.timer.start(enemy, delay, function()
@@ -58,4 +61,25 @@ end
 
 function enemy:on_restarted()
   enemy:movement_cycle()
+end
+
+function enemy:on_dead()
+  local map = self:get_map()
+  local x, y, layer = self:get_position()
+  map:create_enemy({
+    x = x - 6, 
+    y = y,
+    layer = layer,
+    breed = self:get_breed().."_small",
+    treasure_name = "random",
+    direction = 0,
+  })
+  map:create_enemy({
+    x = x + 6, 
+    y = y - 12,
+    layer = layer,
+    breed = self:get_breed().."_small",
+    treasure_name = "random",
+    direction = 0,
+  })
 end
