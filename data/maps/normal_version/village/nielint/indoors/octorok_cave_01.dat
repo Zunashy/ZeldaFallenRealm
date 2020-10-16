@@ -1885,6 +1885,86 @@ tile{
   pattern = "49",
 }
 
+tile{
+  layer = 1,
+  x = 232,
+  y = 56,
+  width = 16,
+  height = 8,
+  pattern = "246_2",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "246_5",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "246_4",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 80,
+  width = 16,
+  height = 8,
+  pattern = "246_9",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "246",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "246_3",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 80,
+  width = 8,
+  height = 8,
+  pattern = "246_8",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 80,
+  width = 8,
+  height = 8,
+  pattern = "246_7",
+  tileset = "normal_world",
+}
+
 door{
   name = "door_2",
   layer = 1,

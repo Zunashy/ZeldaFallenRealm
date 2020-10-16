@@ -4015,7 +4015,7 @@ enemy{
       value = "key",
     },
   },
-  direction = 0,
+  direction = 3,
   breed = "blue_moblin_sword",
 }
 
@@ -4150,7 +4150,7 @@ enemy{
       value = "key",
     },
   },
-  direction = 0,
+  direction = 3,
   breed = "moblin_sword",
 }
 
@@ -4168,7 +4168,7 @@ enemy{
       value = "key",
     },
   },
-  direction = 0,
+  direction = 3,
   breed = "moblin_sword",
 }
 
@@ -4186,7 +4186,7 @@ enemy{
       value = "key",
     },
   },
-  direction = 0,
+  direction = 3,
   breed = "moblin_sword",
 }
 
@@ -4204,7 +4204,7 @@ enemy{
       value = "key",
     },
   },
-  direction = 0,
+  direction = 3,
   breed = "moblin_sword",
 }
 

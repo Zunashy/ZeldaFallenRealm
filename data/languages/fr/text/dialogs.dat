@@ -299,6 +299,13 @@ Il est toujours en train de trainer dehors avec ses copains, je ne sais plus quo
 }
 
 dialog{
+  id = "pnj.overworld.north_beach.moblin_run",
+  text = [[
+Cette épée... C'est celle du prince ! Gaaaah, sauve-qui-peut !
+]],
+}
+
+dialog{
   id = "pnj.overworld.plain.SE_guard",
   text = [[
 Interdiction d'aller plus loin.
@@ -498,6 +505,14 @@ maman, hein ?
 }
 
 dialog{
+  id = "pnj.village.nielint.SE_girl_green_dress_2",
+  text = [[
+Quoi ? Le barman t'a demandé d'entrer dans la grotte pour tuer les monstres ?
+Woah, tu dois être trop fort !
+]],
+}
+
+dialog{
   id = "pnj.village.nielint.SW_entrance_girl",
   text = [[
 Tiens, tu es nouveau
@@ -679,31 +694,6 @@ dialog{
 Lalalaaa... et les oiseaux qui... euh... 
 Toi là ! Aide-moi à trouver un truc qui rime avec oiseaux ! Panneaux ? Cageots ? Poireaux ? 
 Raaah, je suis nul comme chanteur !
-]],
-}
-
-dialog{
-  id = "pnj.village.nielint.zora",
-  text = [[
-sfr sucks
-a cause d'eux j'ai pas pu push ce magnifique sprite avant deux jours.
-mais bon, des gens ont déclenché une guerre ici pour moins que ça
-]],
-}
-
-dialog{
-  id = "pnj.village.nielint.zora_2",
-  text = [[
-Je trouve le barman assez louche, je croire qu'il essaye... de noyer le poisson !
-]],
-}
-
-dialog{
-  id = "pnj.village.nielint.zora_3",
-  text = [[
-Fais pas attention à mes collègues de gauche.
-Ils ont pété un plomb depuis une panne de réseau
-Je ne sais même pas ce que c'est ! 
 ]],
 }
 
