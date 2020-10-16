@@ -4011,7 +4011,7 @@ enemy{
     },
     {
       key = "death_trigger",
-      value = "key",
+      value = "spawn_key",
     },
   },
   direction = 3,
@@ -4127,6 +4127,10 @@ custom_entity{
     {
       key = "variant",
       value = "1",
+    },
+    {
+      key = "savegame_variable",
+      value = "key_cave_key",
     },
   },
   width = 16,
