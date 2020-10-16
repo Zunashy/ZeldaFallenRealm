@@ -5399,6 +5399,15 @@ tile{
   pattern = "67",
 }
 
+tile{
+  layer = 0,
+  x = 592,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "2",
+}
+
 dynamic_tile{
   name = "mini_boss_stair",
   layer = 0,
@@ -5794,21 +5803,6 @@ enemy{
   y = 381,
   direction = 0,
   breed = "blade_trap",
-}
-
-enemy{
-  layer = 0,
-  x = 584,
-  y = 397,
-  properties = {
-    {
-      key = "death_trigger",
-      value = "door_1",
-    },
-  },
-  direction = 0,
-  breed = "octorok",
-  treasure_name = "random",
 }
 
 enemy{
