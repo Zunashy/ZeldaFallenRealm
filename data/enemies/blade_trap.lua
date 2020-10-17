@@ -14,7 +14,7 @@ local map = enemy:get_map()
 local hero = map:get_hero()
 
 local speed = 144
-local back_speed = 64
+local back_speed = 48
 
 local back_movement = sol.movement.create("target")
 local movement = sol.movement.create("straight")
@@ -34,6 +34,7 @@ function enemy:on_created()
   enemy:create_sprite("enemies/" .. enemy:get_breed())
   self.distance = self:get_property("distance") or 160
   self:set_invincible()
+  self:set_damage(2)
 end
 
 function enemy:check_hero()

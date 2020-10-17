@@ -229,6 +229,7 @@ end
 
 local colored_block_manager = require("entities/colored_block")
 function map:enable_colored_blocks()
+  self.colored_block_manager = colored_block_manager
   for block in self:get_entities("colored_block") do
     colored_block_manager.init(block)
   end

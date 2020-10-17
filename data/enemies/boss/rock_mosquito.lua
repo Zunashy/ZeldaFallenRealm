@@ -53,14 +53,21 @@ function enemy:on_created()
     x = -hand_offset.x,
     y = hand_offset.y,
     breed = "boss/rock_mosquito_hand",
-    direction = 0
+    direction = 0,
+    name = "left_hand",
+    properties = {
+      no_reset = "1"
+    }
   })
+  self.left_hand.no_reset = true
   self.right_hand = self:create_enemy({
     x = hand_offset.x,
     y = hand_offset.y,
+    name = "right_hand",
     breed = "boss/rock_mosquito_hand",
     direction = 0
   })
+  self.right_hand.no_reset = true
   self.left_hand.rm = self
   self.right_hand.rm = self
 
@@ -102,6 +109,7 @@ end
 local function hurt_cb(self)
   if self.waiting then
     self.waiting = false
+    sol.audio.play_music("boss", true)
     self.left_hand:start()
     self.right_hand:start()
   end
