@@ -5711,36 +5711,6 @@ enemy{
     },
   },
   direction = 0,
-  breed = "octorok",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 648,
-  y = 397,
-  properties = {
-    {
-      key = "death_trigger",
-      value = "door_1",
-    },
-  },
-  direction = 0,
-  breed = "moblin_sword",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 552,
-  y = 397,
-  properties = {
-    {
-      key = "death_trigger",
-      value = "door_1",
-    },
-  },
-  direction = 0,
   breed = "moblin_sword",
   treasure_name = "random",
 }
@@ -5793,7 +5763,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_teleport;spawn_teleport_2;door_miniboss;music_dungeon2;spawn_mini_boss_stair;spawn_tp_ss1",
+      value = "spawn_teleport;spawn_teleport_2;door_miniboss;music_dungeon2;spawn_mini_boss_stair;spawn_tp_ss1;music_dungeon1",
     },
     {
       key = "savegame_variable",
@@ -6097,7 +6067,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_teleport;spawn_teleport_2;door_miniboss;music_dungeon2;spawn_mini_boss_stair;spawn_tp_ss1",
+      value = "spawn_teleport;spawn_teleport_2;door_miniboss;music_dungeon2;spawn_mini_boss_stair;spawn_tp_ss1;music_dungeon1",
     },
     {
       key = "savegame_variable",
