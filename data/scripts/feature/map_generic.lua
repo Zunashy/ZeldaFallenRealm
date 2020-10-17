@@ -31,8 +31,7 @@ function map:enable_entity(name)
     
     if force or not (
     (e:get_type() == "door" and not e:is_closed()) or 
-    (e:get_type() == "enemy" and not  e:exists()) or 
-    (e:get_type() == "chest" and e:is_open())) then
+    (e:get_type() == "enemy" and not  e:exists())) then
         
       
       
