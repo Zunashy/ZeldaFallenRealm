@@ -3908,7 +3908,6 @@ door{
   y = 176,
   direction = 3,
   sprite = "entities/door/door",
-  savegame_variable = "key_cave_door_3",
   opening_condition = "small_key",
 }
 
