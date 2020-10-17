@@ -5,6 +5,13 @@ dialog{
 }
 
 dialog{
+  id = "_treasure.bracelet.1",
+  text = [[
+Vous obtenez le bracelet de force ! Cet accessoire vous permettant de déplacer de lourdes charges devrait bien vous faciliter la vie !
+]],
+}
+
+dialog{
   id = "_treasure.essence.1",
   text = [[
 Vous obtenez ... un objet mystérieux ?
@@ -15,6 +22,13 @@ dialog{
   id = "_treasure.essence.2",
   text = [[
 Vous obtenez ... un autre objet mystérieux ?
+]],
+}
+
+dialog{
+  id = "_treasure.fire_seed.1",
+  text = [[
+Vous obtenez les graines de feu ! Assignez-les à "k" ou "o" pour les utiliser, et déchaînez vos passions de pyromane !
 ]],
 }
 
@@ -70,7 +84,7 @@ Vous obtenez un quart de coeur ! C'est le quatrième, votre barre de vie augment
 dialog{
   id = "_treasure.horn.1",
   text = [[
-Vous obtenez la Corne de Guerre !
+Vous obtenez la corne de guerre ! ... Une étrange aura semble émaner de cet instrument, qui n'a pourtant rien de spécial ?
 ]],
 }
 
