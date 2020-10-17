@@ -2676,34 +2676,13 @@ tile{
   pattern = "178",
 }
 
-destructible{
+tile{
   layer = 1,
-  x = 120,
-  y = 189,
-  treasure_name = "random",
-  sprite = "entities/vegetation/flowers/flower",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 40,
-  y = 237,
-  treasure_name = "random",
-  sprite = "entities/vegetation/flowers/flower",
-  weight = 1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 120,
-  y = 237,
-  treasure_name = "random",
-  sprite = "entities/vegetation/flowers/flower_4",
-  weight = 1,
-  can_be_cut = true,
+  x = 72,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "29",
 }
 
 destructible{
@@ -2711,7 +2690,7 @@ destructible{
   x = 40,
   y = 189,
   treasure_name = "random",
-  sprite = "entities/vegetation/flowers/flower_3",
+  sprite = "entities/vegetation/grass/grass_3",
   weight = 1,
   can_be_cut = true,
 }
@@ -2791,6 +2770,36 @@ destructible{
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 120,
+  y = 189,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 120,
+  y = 237,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  weight = 1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 40,
+  y = 237,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_2",
   weight = 1,
   can_be_cut = true,
 }
