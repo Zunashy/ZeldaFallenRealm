@@ -4085,6 +4085,7 @@ chest{
   y = 381,
   enabled_at_start = false,
   treasure_name = "bracelet",
+  treasure_savegame_variable = "dungeon_2_chest_bracelet",
   sprite = "entities/chests/chest",
 }
 
