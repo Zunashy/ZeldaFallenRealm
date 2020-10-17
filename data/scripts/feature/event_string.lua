@@ -25,7 +25,11 @@ local function trigger_event(map, event)
       end
     elseif event:starts("music_") then
       name = event:sub(7)
-      sol.audio.play_music(name)
+      if name == "none" then
+        sol.audio.stop_music()
+      else
+        sol.audio.play_music(name)
+      end
     elseif event:starts("setrespawn_") then
       name = event:sub(12)
       local e = map:get_entity(name)

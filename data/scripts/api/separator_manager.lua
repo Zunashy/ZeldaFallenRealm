@@ -87,6 +87,10 @@ function separator_manager:manage_map(map, default)
       if not block_place.block:exists() then
         entity = map:create_block(block_place)
         entity:set_pushable(block_place.pushable)
+        print(block_place.pushable)
+        if block_place.colored then
+          map.colored_block_manager.init(entity)
+        end
       end
     end
   end
@@ -139,26 +143,28 @@ function separator_manager:manage_map(map, default)
 
   -- Store the position and properties of enemies.
   for enemy in map:get_entities_property("no_reset", "1", "enemy", true) do
-    local x, y, layer = enemy:get_position()
-    local sprite = enemy:get_sprite()
-    enemy_places[#enemy_places + 1] = {
-      x = x,
-      y = y,
-      layer = layer,
-      breed = enemy:get_breed(),
-      direction = sprite and sprite:get_direction() or 0,
-      name = enemy:get_name(),
-      treasure = { enemy:get_treasure() },
-      enemy = enemy,
-      is_enabled = enemy:is_enabled(),
-      properties = enemy:get_properties()
-    }
+    if not enemy.no_reset then
+      local x, y, layer = enemy:get_position()
+      local sprite = enemy:get_sprite()
+      enemy_places[#enemy_places + 1] = {
+        x = x,
+        y = y,
+        layer = layer,
+        breed = enemy:get_breed(),
+        direction = sprite and sprite:get_direction() or 0,
+        name = enemy:get_name(),
+        treasure = { enemy:get_treasure() },
+        enemy = enemy,
+        is_enabled = enemy:is_enabled(),
+        properties = enemy:get_properties()
+      }
 
-    enemy:register_event("on_dead", death_callback)
+      enemy:register_event("on_dead", death_callback)
 
-    local hero = map:get_hero()
-    if not enemy:is_in_same_region(hero) then
-      enemy:remove()
+      local hero = map:get_hero()
+      if not enemy:is_in_same_region(hero) then
+        enemy:remove()
+      end
     end
   end
 
@@ -221,7 +227,8 @@ function separator_manager:manage_map(map, default)
       max_moves = block:get_max_moves(),
       sprite = block:get_sprite():get_animation_set(),
       enabled_at_start = block:is_enabled(),
-      properties = block:get_properties()
+      properties = block:get_properties(),
+      colored = block.is_colored_block
     }
   end
 

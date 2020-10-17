@@ -1943,15 +1943,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 112,
-  y = 400,
-  width = 16,
-  height = 16,
-  pattern = "30",
-}
-
-tile{
-  layer = 0,
   x = 16,
   y = 192,
   width = 208,
@@ -4286,6 +4277,7 @@ chest{
   y = 29,
   enabled_at_start = false,
   treasure_name = "great_key",
+  treasure_savegame_variable = "dungeon_2_great_key",
   sprite = "entities/chests/chest",
 }
 
@@ -4296,7 +4288,7 @@ custom_entity{
   properties = {
     {
       key = "yellow_trigger",
-      value = "spawn_boss_key",
+      value = "spawn_boss_key;spawn_ss_secret_stairs",
     },
     {
       key = "torchs",
@@ -4829,6 +4821,49 @@ block{
   sprite = "entities/dungeon_elements/color_cube",
   pushable = true,
   pullable = false,
+}
+
+destination{
+  name = "shortcut",
+  layer = 0,
+  x = 600,
+  y = 325,
+  direction = 1,
+}
+
+dynamic_tile{
+  name = "ss_secret_stairs",
+  layer = 0,
+  x = 592,
+  y = 320,
+  enabled_at_start = false,
+  properties = {
+    {
+      key = "spawn_savegame_variable",
+      value = "dungeon_2_ss_secret_stairs",
+    },
+  },
+  width = 16,
+  height = 16,
+  pattern = "31",
+}
+
+teletransporter{
+  name = "ss_secret_stairs_tp",
+  layer = 0,
+  x = 592,
+  y = 320,
+  enabled_at_start = false,
+  properties = {
+    {
+      key = "spawn_savegame_variable",
+      value = "dungeon_2_ss_secret_stairs_tp",
+    },
+  },
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_02/rdc",
+  destination = "shortcut",
 }
 
 tile{

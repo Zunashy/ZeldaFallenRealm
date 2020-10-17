@@ -83,6 +83,7 @@ function set_colors_state(block, state)
 end
 
 function manager.init(block)
+    block.is_colored_block = true
     block.on_moving = on_moving
     block.on_moved = on_moved
     block.set_colors_state = set_colors_state

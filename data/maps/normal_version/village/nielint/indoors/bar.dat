@@ -1007,3 +1007,11 @@ teletransporter{
   destination = "etage",
 }
 
+destination{
+  name = "horn",
+  layer = 0,
+  x = 248,
+  y = 93,
+  direction = 1,
+}
+

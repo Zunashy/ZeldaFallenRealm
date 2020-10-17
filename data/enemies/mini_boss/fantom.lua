@@ -4,6 +4,7 @@ local map = enemy:get_map()
 local camera = map:get_camera()
 local hero = map:get_hero()
 local sprite
+local wind_sprite
 
 local walk_speed = 32
 local dash_speed = 104
