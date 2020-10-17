@@ -3760,7 +3760,6 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
-  ground = "grass",
 }
 
 destructible{
@@ -3788,7 +3787,6 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
-  ground = "grass",
 }
 
 destructible{
@@ -3802,7 +3800,6 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
-  ground = "grass",
 }
 
 destructible{
@@ -3830,7 +3827,6 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
-  ground = "grass",
 }
 
 destructible{
@@ -3844,7 +3840,6 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
-  ground = "grass",
 }
 
 teletransporter{
@@ -3884,7 +3879,6 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
-  ground = "grass",
 }
 
 destructible{
@@ -3898,7 +3892,6 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
-  ground = "grass",
 }
 
 destructible{
@@ -3912,7 +3905,6 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
-  ground = "grass",
 }
 
 destructible{
@@ -3926,7 +3918,6 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
-  ground = "grass",
 }
 
 destructible{
@@ -3940,7 +3931,6 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
-  ground = "grass",
 }
 
 destructible{
@@ -3954,6 +3944,15 @@ destructible{
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
-  ground = "grass",
+}
+
+teletransporter{
+  layer = 1,
+  x = 0,
+  y = 64,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/village/nielint/outdoors",
+  destination = "plain_to_nielint",
 }
 
