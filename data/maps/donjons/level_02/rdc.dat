@@ -5479,7 +5479,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "spawn_secret_stair",
+      value = "spawn_secret_stairs",
     },
   },
   subtype = "walkable",
@@ -5996,7 +5996,7 @@ switch{
 }
 
 dynamic_tile{
-  name = "secret_stair",
+  name = "secret_stairs",
   layer = 0,
   x = 96,
   y = 256,

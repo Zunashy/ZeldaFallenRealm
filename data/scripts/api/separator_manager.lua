@@ -157,7 +157,7 @@ function separator_manager:manage_map(map, default)
         enemy = enemy,
         is_enabled = enemy:is_enabled(),
         properties = enemy:get_properties(),
-        savegame_variable = enemy.get_property("savegame_variable")
+        savegame_variable = enemy:get_property("savegame_variable")
       }
 
       enemy:register_event("on_dead", death_callback)

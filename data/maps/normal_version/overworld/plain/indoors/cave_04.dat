@@ -201,25 +201,25 @@ tile{
   layer = 0,
   x = 176,
   y = 40,
-  width = 128,
+  width = 48,
   height = 16,
   pattern = "240",
 }
 
 tile{
   layer = 0,
-  x = 176,
+  x = 256,
   y = 72,
-  width = 128,
+  width = 48,
   height = 16,
   pattern = "240",
 }
 
 tile{
   layer = 0,
-  x = 192,
+  x = 240,
   y = 160,
-  width = 112,
+  width = 64,
   height = 16,
   pattern = "240",
 }
@@ -228,7 +228,7 @@ tile{
   layer = 0,
   x = 176,
   y = 192,
-  width = 112,
+  width = 64,
   height = 16,
   pattern = "240",
 }
@@ -1106,75 +1106,47 @@ tile{
   pattern = "196_14",
 }
 
-enemy{
+tile{
   layer = 0,
-  x = 40,
-  y = 173,
-  direction = 0,
-  breed = "moblin_sword",
+  x = 224,
+  y = 24,
+  width = 32,
+  height = 16,
+  pattern = "240",
 }
 
-enemy{
-  layer = 0,
-  x = 40,
-  y = 221,
-  direction = 0,
-  breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
-  x = 56,
-  y = 189,
-  direction = 0,
-  breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
-  x = 56,
-  y = 205,
-  direction = 0,
-  breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
-  x = 24,
-  y = 157,
-  direction = 0,
-  breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
-  x = 24,
-  y = 237,
-  direction = 0,
-  breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
-  x = 48,
-  y = 109,
-  direction = 0,
-  breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
-  x = 120,
-  y = 93,
-  direction = 0,
-  breed = "moblin_sword",
-}
-
-enemy{
+tile{
   layer = 0,
   x = 256,
-  y = 69,
-  direction = 0,
+  y = 40,
+  width = 48,
+  height = 16,
+  pattern = "240",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 72,
+  width = 48,
+  height = 16,
+  pattern = "240",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 88,
+  width = 32,
+  height = 16,
+  pattern = "240",
+}
+
+enemy{
+  layer = 0,
+  x = 248,
+  y = 85,
+  direction = 1,
   breed = "moblin_sword",
 }
 
@@ -1182,95 +1154,15 @@ enemy{
   layer = 0,
   x = 280,
   y = 69,
-  direction = 0,
-  breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
-  x = 424,
-  y = 45,
-  direction = 0,
-  breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
-  x = 440,
-  y = 85,
-  direction = 0,
-  breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
-  x = 440,
-  y = 181,
-  direction = 0,
-  breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
-  x = 408,
-  y = 221,
-  direction = 0,
-  breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
-  x = 256,
-  y = 157,
-  direction = 0,
-  breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
-  x = 184,
-  y = 189,
-  direction = 0,
-  breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
-  x = 224,
-  y = 221,
-  direction = 0,
-  breed = "moblin_sword",
+  direction = 2,
+  breed = "moblin_bow",
 }
 
 enemy{
   layer = 0,
   x = 232,
-  y = 69,
-  direction = 0,
-  breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
-  x = 272,
-  y = 221,
-  direction = 0,
-  breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
-  x = 272,
-  y = 189,
-  direction = 0,
-  breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
-  x = 208,
-  y = 157,
-  direction = 0,
+  y = 53,
+  direction = 3,
   breed = "moblin_sword",
 }
 
@@ -1290,5 +1182,326 @@ teletransporter{
   height = 16,
   destination_map = "normal_version/overworld/plain/outdoors_2",
   destination = "plain_cave_04",
+}
+
+enemy{
+  layer = 0,
+  x = 48,
+  y = 93,
+  direction = 0,
+  breed = "slime_red",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 80,
+  y = 69,
+  direction = 0,
+  breed = "slime_red",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 96,
+  y = 37,
+  direction = 0,
+  breed = "slime_red",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 112,
+  y = 93,
+  direction = 0,
+  breed = "slime_red",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 360,
+  y = 29,
+  direction = 0,
+  breed = "rope",
+}
+
+enemy{
+  layer = 0,
+  x = 424,
+  y = 29,
+  direction = 0,
+  breed = "rope",
+}
+
+enemy{
+  layer = 0,
+  x = 368,
+  y = 109,
+  direction = 0,
+  breed = "rope",
+}
+
+enemy{
+  layer = 0,
+  x = 424,
+  y = 109,
+  direction = 0,
+  breed = "rope",
+}
+
+enemy{
+  layer = 0,
+  x = 400,
+  y = 77,
+  direction = 0,
+  breed = "tektite_blue",
+  treasure_name = "heart",
+}
+
+enemy{
+  layer = 0,
+  x = 376,
+  y = 213,
+  direction = 0,
+  breed = "blue_octorock",
+  treasure_name = "heart",
+}
+
+enemy{
+  layer = 0,
+  x = 432,
+  y = 197,
+  direction = 0,
+  breed = "blue_octorock",
+  treasure_name = "random",
+}
+
+separator{
+  layer = 0,
+  x = 152,
+  y = 0,
+  width = 16,
+  height = 256,
+}
+
+separator{
+  layer = 0,
+  x = 312,
+  y = 0,
+  width = 16,
+  height = 256,
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 120,
+  width = 480,
+  height = 16,
+}
+
+enemy{
+  layer = 0,
+  x = 376,
+  y = 189,
+  direction = 0,
+  breed = "octorok",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 432,
+  y = 173,
+  direction = 0,
+  breed = "octorok",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 264,
+  y = 205,
+  direction = 0,
+  breed = "skeleton_2",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 216,
+  y = 181,
+  direction = 0,
+  breed = "skeleton_2",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 184,
+  y = 157,
+  direction = 0,
+  breed = "skeleton_1",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 288,
+  y = 213,
+  direction = 0,
+  breed = "skeleton_1",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 208,
+  y = 37,
+  direction = 0,
+  breed = "bat",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 272,
+  y = 109,
+  direction = 0,
+  breed = "bat",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 104,
+  y = 157,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_heart",
+    },
+  },
+  direction = 3,
+  breed = "blue_moblin_sword",
+}
+
+enemy{
+  layer = 0,
+  x = 104,
+  y = 237,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_heart",
+    },
+  },
+  direction = 1,
+  breed = "blue_moblin_sword",
+}
+
+enemy{
+  layer = 0,
+  x = 48,
+  y = 189,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_heart",
+    },
+  },
+  direction = 0,
+  breed = "blue_octorock",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 48,
+  y = 205,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_heart",
+    },
+  },
+  direction = 0,
+  breed = "blue_octorock",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 256,
+  y = 189,
+  direction = 2,
+  breed = "blue_slime",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 136,
+  y = 69,
+  direction = 0,
+  breed = "bat",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 352,
+  y = 229,
+  direction = 0,
+  breed = "bat",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 368,
+  y = 77,
+  direction = 0,
+  breed = "bat",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 432,
+  y = 53,
+  direction = 0,
+  breed = "bat",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 136,
+  y = 157,
+  properties = {
+    {
+      key = "directon",
+      value = "3",
+    },
+    {
+      key = "distance",
+      value = "80",
+    },
+  },
+  direction = 3,
+  breed = "blade_trap",
+}
+
+pickable{
+  name = "heart",
+  layer = 0,
+  x = 80,
+  y = 197,
+  enabled_at_start = false,
+  treasure_name = "heart_full",
 }
 

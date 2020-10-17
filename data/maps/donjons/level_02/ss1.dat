@@ -4818,7 +4818,7 @@ block{
 destination{
   name = "shortcut",
   layer = 0,
-  x = 600,
+  x = 456,
   y = 325,
   direction = 1,
 }
@@ -4826,7 +4826,7 @@ destination{
 dynamic_tile{
   name = "ss_secret_stairs",
   layer = 0,
-  x = 592,
+  x = 448,
   y = 320,
   enabled_at_start = false,
   properties = {
@@ -4843,7 +4843,7 @@ dynamic_tile{
 teletransporter{
   name = "ss_secret_stairs_tp",
   layer = 0,
-  x = 592,
+  x = 448,
   y = 320,
   enabled_at_start = false,
   properties = {

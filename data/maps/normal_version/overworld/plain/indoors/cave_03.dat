@@ -273,6 +273,9 @@ chest{
   layer = 0,
   x = 80,
   y = 29,
+  treasure_name = "rupee",
+  treasure_variant = 2,
+  treasure_savegame_variable = "plain_cave_3_chest",
   sprite = "entities/chests/chest",
 }
 
