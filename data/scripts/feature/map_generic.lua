@@ -27,26 +27,34 @@ function map:enable_entity(name)
   
   for e in self:get_entities(name) do
   
-	force = e:get_property("force_spawn")
-  
-	if force or not (
-	(e:get_type() == "door" and not e:is_closed()) or 
-	(e:get_type() == "enemy" and not  e:exists()) or 
-	(e:get_type() == "chest" and e:is_open())) then
-			
-		
-		
-		e:set_enabled(true)
-		prop = e:get_property("spawn_savegame_variable")
-		if prop then
-		  self:get_game():set_value(prop, 1)
-		end
-	  
-		prop = e:get_property("spawn_trigger")
-		if prop and not (e:get_type() == "door" and not e:is_closed()) then 
-		  parse_event_string(self, prop) 
-		end
-	end
+    force = e:get_property("force_spawn")
+    
+    if force or not (
+    (e:get_type() == "door" and not e:is_closed()) or 
+    (e:get_type() == "enemy" and not  e:exists()) or 
+    (e:get_type() == "chest" and e:is_open())) then
+        
+      
+      
+      e:set_enabled(true)
+      prop = e:get_property("spawn_savegame_variable")
+      if prop then
+        self:get_game():set_value(prop, 1)
+      end
+      
+      prop = e:get_property("spawn_trigger")
+      if prop and not (e:get_type() == "door" and not e:is_closed()) then 
+        parse_event_string(self, prop) 
+      end
+    end
+  end
+
+  if self.separator_manager_enabled then
+    for _, enemy in ipairs(self:get_stored_enemies()) do
+      if enemy.name and enemy.name:starts(name) then
+        enemy.is_enabled = true
+      end
+    end 
   end
 end
 
@@ -75,6 +83,11 @@ local function activate_trigger_callback(entity)
   local all_activated = true
 
   if not event then return end
+
+  local var = entity:get_property("savegame_variable")
+  if var and map:get_game():get_value(var) then
+    return
+  end
 
   for e in map:get_entities() do
     local o_event = e:get_property("activate_trigger")

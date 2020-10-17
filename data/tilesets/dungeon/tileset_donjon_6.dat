@@ -460,7 +460,7 @@ tile_pattern{
 
 tile_pattern{
   id = "6",
-  ground = "ladder",
+  ground = "traversable",
   default_layer = 0,
   x = 32,
   y = 32,

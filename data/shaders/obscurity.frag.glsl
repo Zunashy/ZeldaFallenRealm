@@ -21,29 +21,29 @@ uniform bool sol_alpha_mult;
 COMPAT_VARYING vec2 sol_vtex_coord;
 COMPAT_VARYING vec4 sol_vcolor;
 
-uniform vec3 light1;
-uniform vec3 light2;
-uniform vec3 light3;
-uniform vec3 light4;
+uniform vec4 light1;
+uniform vec4 light2;
+uniform vec4 light3;
+uniform vec4 light4;
 uniform float n_lights;
 uniform float obs_level;
 
 void main()
 {
     float level = obs_level;
+    float dist;
 
     vec4 tex_color = texture(sol_texture, sol_vtex_coord.xy);
     
     vec3 col = tex_color.xyz;
 
     if (n_lights > 0){
-        vec2 d = gl_FragCoord.xy - light1.xy;
-        float dist = sqrt(d.x * d.x + d.y * d.y);
+        dist = distance(gl_FragCoord.xy, light1.xy);
         if (dist < light1.z) {
-            level += (light1.z - dist) / 10.0;
+            level += (light1.z - dist) / light1.w;
         }
     }
-    if (n_lights > 1){
+    /*if (n_lights > 1){
         vec2 d = gl_FragCoord.xy - light2.xy;
         float dist = sqrt(d.x * d.x + d.y * d.y);
         if (dist < light2.z) {
@@ -63,7 +63,7 @@ void main()
         if (dist < light4.z) {
             level += (light4.z - dist) / 10.0;
         }
-    } 
+    } */
     col -= col / level;
 
     FragColor = vec4(col, 1.0);

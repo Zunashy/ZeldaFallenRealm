@@ -62,7 +62,8 @@ function map:on_started_()
       end
     end
   elseif story < 666 then
-    zuna:get_sprite():set_direction(3)
+    zuna:get_sprite():set_direction(1)
+    zuna:set_property("dialog", "pnj.main.zuna.first_encounter.5")
   elseif game:get_story_state() > 666 then
     zuna:set_enabled(false)
   end

@@ -17,7 +17,7 @@ local map = entity:get_map()
 function entity:on_created()
   entity:set_size(8,16)
   entity:set_origin(4,8)
-  local sprite = entity:create_sprite("entities/arrow")
+  local sprite = entity:create_sprite("entities/projectile/arrow")
   sprite:set_direction(entity:get_direction())
   
   init_traversable()

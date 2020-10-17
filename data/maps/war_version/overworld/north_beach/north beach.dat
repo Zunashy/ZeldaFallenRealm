@@ -5363,15 +5363,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 232,
-  y = 232,
-  width = 16,
-  height = 64,
-  pattern = "155",
-}
-
-tile{
-  layer = 1,
   x = 184,
   y = 72,
   width = 120,
@@ -5575,6 +5566,15 @@ tile{
   width = 16,
   height = 16,
   pattern = "239",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 232,
+  width = 16,
+  height = 64,
+  pattern = "155",
 }
 
 teletransporter{
@@ -6034,6 +6034,13 @@ npc{
   subtype = 1,
   sprite = "pnj/pirates/2",
   behavior = "dialog#pnj.overworld.pirates.2",
+}
+
+pickable{
+  layer = 1,
+  x = 256,
+  y = 69,
+  treasure_name = "heart_full",
 }
 
 tile{

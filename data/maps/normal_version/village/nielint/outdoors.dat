@@ -7631,12 +7631,17 @@ separator{
 npc{
   name = "octo_guard",
   layer = 1,
-  x = 416,
+  x = 400,
   y = 477,
+  properties = {
+    {
+      key = "dialog",
+      value = "pnj.village.nielint.SE_girl_green_dress",
+    },
+  },
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/8",
-  behavior = "dialog#pnj.village.nielint.SE_girl_green_dress",
 }
 
 npc{
@@ -7990,9 +7995,20 @@ npc{
   layer = 1,
   x = 56,
   y = 453,
+  properties = {
+    {
+      key = "horn_map",
+      value = "war_version/village/outdoors",
+    },
+    {
+      key = "horn_destination",
+      value = "horn_zuna",
+    },
+  },
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/5",
+  behavior = "dialog#pnj.village.nielint.barman.east_alt",
 }
 
 sensor{

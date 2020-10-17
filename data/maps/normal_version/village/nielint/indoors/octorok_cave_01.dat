@@ -1972,6 +1972,7 @@ door{
   y = 512,
   direction = 3,
   sprite = "entities/door/door",
+  savegame_variable = "cave_octo_door_2",
 }
 
 door{
@@ -1981,6 +1982,7 @@ door{
   y = 568,
   direction = 0,
   sprite = "entities/door/door",
+  savegame_variable = "cave_octo_door_1",
 }
 
 destination{
@@ -2270,8 +2272,8 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 216,
-  y = 237,
+  x = 208,
+  y = 189,
   direction = 0,
   breed = "octorok",
   treasure_name = "random",
@@ -2425,7 +2427,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_anneau",
+      value = "door_miniboss;spawn_anneau",
     },
   },
   direction = 0,
@@ -2440,7 +2442,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_anneau",
+      value = "door_miniboss;spawn_anneau",
     },
   },
   direction = 0,
@@ -2455,7 +2457,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_anneau",
+      value = "door_miniboss;spawn_anneau",
     },
   },
   direction = 0,
@@ -2470,7 +2472,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_anneau",
+      value = "door_miniboss;spawn_anneau",
     },
   },
   direction = 0,
@@ -2487,7 +2489,7 @@ custom_entity{
   properties = {
     {
       key = "item",
-      value = "anneau_octorok",
+      value = "ring_octorock",
     },
     {
       key = "variant",
@@ -2496,6 +2498,10 @@ custom_entity{
     {
       key = "on_obtained",
       value = "teleport_normal_version/village/nielint/outdoors:octorok$fade",
+    },
+    {
+      key = "savegame_variable",
+      value = "octo_cave_ring",
     },
   },
   width = 16,

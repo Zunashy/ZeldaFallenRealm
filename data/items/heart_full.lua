@@ -20,5 +20,5 @@ end
 
 function item:on_obtained()
   game:add_max_life(4)
-  game:add_life(4)
+  game:add_life(game:get_max_life())
 end

@@ -48,6 +48,7 @@ end
 function enemy:on_restarted() --L'ennemi restart après avoir été immobilisé (quand il prend un coup par exemple)
   enemy:reset_jump_state()
   m:refresh()
+  self.can_jump = true
 end
 
 function m:refresh() --Démarre le mouvement de base de l'ennemi : 16 pixels tout droit dans une direction random.
@@ -60,7 +61,6 @@ function m:refresh() --Démarre le mouvement de base de l'ennemi : 16 pixels tou
 end 
 
 function m:on_obstacle_reached() --Callback d'event appelé quand l'ennemi atteint un obstacle
-  print("obstacle reached")
   m:refresh()
 end
 
@@ -81,8 +81,8 @@ function enemy:on_hero_state_sword_swinging(hero) --Callback appelé quand le h�
 end
 
 local function jump_callback() --Fonction qui servira de callback de fin au jump
-  enemy:restart()
-  print("enemy:get_obstacle_behavior() :", enemy:get_obstacle_behavior())
+  m:refresh()
+  enemy:reset_jump_state()
 end
 
 local function dir_callback(dir) --Fonction qui sera fournie comme callback de choose_random_direction
@@ -90,12 +90,17 @@ local function dir_callback(dir) --Fonction qui sera fournie comme callback de c
 end
 
 function enemy:start_jump() --Déclenche le saut, et change les propriétés de l'enemi en conséquence
+  if not self.can_jump then return end 
   local dir = mg.dir_from_angle(enemy:get_angle(hero) + math.pi) * 2
   enemy:jump(dir, 16, 36, jump_callback)
   enemy:set_obstacle_behavior("flying")
   enemy:set_attack_consequence("sword", "ignored")
   enemy.is_jumping = true
   sprite:set_animation("jumping")
+  self.can_jump = false
+  sol.timer.start(self, 700, function()
+    enemy.can_jump = true
+  end)
 end
 
 function enemy:reset_jump_state() --Annule les changements de propriétés causés par le saut

@@ -47,6 +47,7 @@ function item:on_using()
     local camera = game:get_map():get_camera()
     local x, y = camera:get_position_on_camera(hero:get_position())
     vfx.shockwave(camera:get_surface(), x, y, 1, 5, 30, 0.4)
+    sol.audio.stop_music()
     sol.audio.play_sound("horn")
 
     sol.timer.start(hero, 1000, function()

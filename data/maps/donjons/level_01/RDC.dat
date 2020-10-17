@@ -9459,17 +9459,17 @@ teletransporter{
 
 enemy{
   layer = 1,
-  x = 568,
-  y = 749,
+  x = 552,
+  y = 829,
   direction = 0,
-  breed = "octorok",
+  breed = "slime_red",
   treasure_name = "random",
 }
 
 enemy{
   layer = 1,
-  x = 656,
-  y = 797,
+  x = 600,
+  y = 781,
   properties = {
     {
       key = "oui",
@@ -9483,8 +9483,8 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 520,
-  y = 797,
+  x = 640,
+  y = 829,
   properties = {
     {
       key = "oui",
@@ -9492,7 +9492,7 @@ enemy{
     },
   },
   direction = 0,
-  breed = "octorok",
+  breed = "slime_red",
   treasure_name = "random",
 }
 
@@ -9561,21 +9561,6 @@ enemy{
   layer = 1,
   x = 1320,
   y = 621,
-  properties = {
-    {
-      key = "death_trigger",
-      value = "door_4",
-    },
-  },
-  direction = 0,
-  breed = "blue_slime",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 1,
-  x = 1320,
-  y = 589,
   properties = {
     {
       key = "death_trigger",
@@ -9707,10 +9692,10 @@ enemy{
 
 enemy{
   layer = 1,
-  x = 520,
-  y = 1341,
+  x = 528,
+  y = 1309,
   direction = 0,
-  breed = "moblin_sword",
+  breed = "slime_green",
   treasure_name = "random",
 }
 
@@ -9780,7 +9765,7 @@ chest{
   x = 1280,
   y = 477,
   treasure_name = "rupee",
-  treasure_variant = 3,
+  treasure_variant = 2,
   treasure_savegame_variable = "dungeon_1_chest_rupee_2",
   sprite = "entities/chests/chest",
 }
@@ -9798,24 +9783,6 @@ enemy{
   layer = 1,
   x = 568,
   y = 1117,
-  direction = 0,
-  breed = "skeleton_1",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 1,
-  x = 696,
-  y = 381,
-  direction = 0,
-  breed = "skeleton_1",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 1,
-  x = 504,
-  y = 509,
   direction = 0,
   breed = "skeleton_1",
   treasure_name = "random",
@@ -10246,6 +10213,10 @@ sensor{
       key = "activate_trigger",
       value = "spawn_door_miniboss;music_miniboss",
     },
+    {
+      key = "savegame_variable",
+      value = "dungeon_1_chest_feather",
+    },
   },
   width = 16,
   height = 16,
@@ -10550,6 +10521,7 @@ door{
 }
 
 enemy{
+  name = "boss",
   layer = 1,
   x = 840,
   y = 237,
@@ -11395,6 +11367,14 @@ destination{
   y = 1397,
   direction = 1,
   default = true,
+}
+
+enemy{
+  layer = 1,
+  x = 528,
+  y = 485,
+  direction = 0,
+  breed = "slime_green",
 }
 
 tile{

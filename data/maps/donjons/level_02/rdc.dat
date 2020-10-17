@@ -5467,7 +5467,7 @@ door{
   layer = 0,
   x = 592,
   y = 176,
-  direction = 1,
+  direction = 0,
   sprite = "entities/door/boss_door",
   savegame_variable = "dungeon_2_boss_door",
   opening_method = "interaction_if_item",
@@ -6123,6 +6123,14 @@ destructible{
   y = 93,
   sprite = "entities/projectile/rock",
   weight = 1,
+}
+
+destination{
+  name = "entrance_2",
+  layer = 0,
+  x = 504,
+  y = 285,
+  direction = 1,
 }
 
 tile{

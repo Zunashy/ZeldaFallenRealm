@@ -11,7 +11,6 @@
 local entity = ...
 local game = entity:get_game()
 local map = entity:get_map()
-local separator_manager = require("scripts/api/separator_manager")
 local random = gen.random
 
 local function is_flammable(entity)
@@ -47,7 +46,6 @@ end
 
 function entity:on_created()
   self:create_sprite("entities/items_effects/flame")
-  separator_manager:destroy_on_separator()
 
   self:add_collision_test("overlapping", collision_callback)
 

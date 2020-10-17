@@ -60,7 +60,7 @@ function game_meta:on_draw(dst_surf)
   local shader = camera:get_surface():get_shader()
 
   if shader == self.shaders.obscurity and map.lights then
-    self:obscure(camera, shader)
+    --self:manage_obscurity_shader(camera, shader)
   end
 
   if shader and shader.on_draw then

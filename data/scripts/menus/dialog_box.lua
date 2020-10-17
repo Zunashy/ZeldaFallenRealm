@@ -103,7 +103,8 @@ function dialog_box:on_started()
   local _, hero_y = map:get_camera():get_position_on_camera(hero:get_position())
   local _, cam_h = map:get_camera():get_size()
   if hero:is_enabled() and hero:is_visible() then
-    if hero_y > cam_h - 56 and not (self.dialog.position == "1") then
+    print(hero_y > cam_h - 56)
+    if hero_y > cam_h - 56 and not (self.dialog.position == "bottom") or (self.dialog.position == "top")  then
       self.box_position:set(8, 24)
       self.illustration_position:set(64, 80)
     end

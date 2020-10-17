@@ -8,7 +8,7 @@ function hearts_builder:new(game, config)
 
   local hearts = {name = "HUD hearts"}
 
-  hearts.surface = sol.surface.create(60, 12)
+  hearts.surface = sol.surface.create(60, 16)
   hearts.dst_x = config.x
   hearts.dst_y = config.y
   hearts.max_life_displayed = game:get_max_life()
@@ -42,7 +42,7 @@ function hearts_builder:new(game, config)
           y = 0
         else
           x = 2 * (j - 24)
-          y = 8
+          y = 7
         end
         if life >= j then
           hearts_img:draw_region(0, 0, 8, 8, hearts.surface, x, y)
@@ -58,7 +58,7 @@ function hearts_builder:new(game, config)
         y = 0
       else
         x = 2 * (life - 23)
-        y = 8
+        y = 7
       end
       hearts_img:draw_region(8, 0, 8, 8, hearts.surface, x, y)
     end
@@ -70,7 +70,7 @@ function hearts_builder:new(game, config)
         y = 0
       else
         x = 2 * (life - 22)
-        y = 8
+        y = 7
       end
       hearts_img:draw_region(16, 0, 8, 8, hearts.surface, x, y)
     end
@@ -82,7 +82,7 @@ function hearts_builder:new(game, config)
         y = 0
       else
         x = 2 * (life - 21)
-        y = 8
+        y = 7
       end
       hearts_img:draw_region(24, 0, 8, 8, hearts.surface, x, y)
     end

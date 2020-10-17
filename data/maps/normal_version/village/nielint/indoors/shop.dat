@@ -192,7 +192,7 @@ custom_entity{
     },
     {
       key = "price",
-      value = "20",
+      value = "100",
     },
     {
       key = "savegame_variable",
@@ -203,21 +203,5 @@ custom_entity{
   height = 32,
   direction = 0,
   model = "shop_item",
-}
-
-pickable{
-  layer = 0,
-  x = 88,
-  y = 69,
-  treasure_name = "rupee",
-  treasure_variant = 3,
-}
-
-pickable{
-  layer = 0,
-  x = 64,
-  y = 69,
-  treasure_name = "rupee",
-  treasure_variant = 3,
 }
 

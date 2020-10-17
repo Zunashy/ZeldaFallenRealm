@@ -1,14 +1,12 @@
 local map = ...
 local game = map:get_game()
 local hero = map:get_hero()
+local camera = map:get_camera()
 -- Event called at initialization time, as soon as this map is loaded.
 
 local villagers = {count = 0}
 
-<<<<<<< HEAD
-=======
 local flash = require("scripts/api/visual_effects").flash
->>>>>>> 2d5f8a305ef09db723dadc01af575051fdf9c92c
 
 local function villagers_dialog_callback(villager)
   if not villagers[villager] then
@@ -20,14 +18,24 @@ local function villagers_dialog_callback(villager)
       sol.timer.start(hero, 500, function()
         game:start_dialog("pnj.overworld.plain.camp.talked_all", function()
           flash(50)
+          sol.audio.stop_music()
           sol.timer.start(hero, 750, function()
             map:get_hero():light_teleport("campfire", map)
             hero:set_direction(0)
+            sol.audio.play_music("campfire")
             hero:freeze()
+            camera:get_surface():set_shader(game.shaders.obscurity)
+            game.shaders.obscurity:set_uniform("obs_level", 1.2)
+            game.shaders.obscurity:set_uniform("n_lights", 1)
+            game.shaders.obscurity:set_uniform("light1", {72, 80, 40, 15})
           end)
           sol.timer.start(hero, 3000, function()
             game:start_dialog("pnj.overworld.plain.camp.cinematic", function()              
               flash(50)
+              sol.timer.start(hero, 750, function()
+                camera:get_surface():set_shader(nil)
+                sol.audio.play_music("plain")
+              end)
               sol.timer.start(hero,2000,function() 
                 game:start_dialog("pnj.overworld.plain.camp.morning", function()
                   hero:unfreeze()
@@ -63,7 +71,7 @@ function map:on_started_()
       game:start_dialog("pnj.overworld.plain.guard_moblin_cave", function(res)
         if res.answer == 1 then
           game:start_dialog("pnj.overworld.plain.guard_moblin_cave.goodluck", function()
-            mg.move_straight(guard_moblin, 1, 32, 64, function()
+            mg.move_straight(guard_moblin, 1, 16, 64, function()
               mg.move_straight(guard_moblin, 2, 16, 64, function()
                 guard_moblin:get_sprite():set_direction(0)
                 game:set_sidequest_state("moblin_cave", 1)

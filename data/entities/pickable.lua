@@ -30,7 +30,7 @@ function entity:on_created()
   self.savegame_variable = self:get_property("savegame_variable")
   self.on_obtained = self:get_property("on_obtained")
 
-  if game:get_value(self.savegame_variable) then
+  if self.savegame_variable and game:get_value(self.savegame_variable) then
     self:remove()
   end
 

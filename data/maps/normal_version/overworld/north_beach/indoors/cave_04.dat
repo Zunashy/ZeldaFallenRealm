@@ -6,6 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "normal_world",
+  music = "caves",
 }
 
 tile{
@@ -3720,6 +3721,7 @@ door{
   y = 336,
   direction = 1,
   sprite = "entities/door/door_key",
+  savegame_variable = "key_cave_door_key_1",
   opening_method = "interaction_if_item",
   opening_condition = "small_key",
 }
@@ -3731,6 +3733,7 @@ chest{
   y = 53,
   enabled_at_start = false,
   treasure_name = "small_key",
+  treasure_savegame_variable = "key_cave_chest_1",
   sprite = "entities/chests/chest",
 }
 
@@ -3741,6 +3744,7 @@ door{
   y = 176,
   direction = 3,
   sprite = "entities/door/door",
+  savegame_variable = "key_cave_door_1",
   opening_condition = "small_key",
 }
 
@@ -3774,14 +3778,6 @@ enemy{
   y = 285,
   direction = 0,
   breed = "bat",
-}
-
-destination{
-  name = "destination",
-  layer = 0,
-  x = 120,
-  y = 517,
-  direction = 1,
 }
 
 enemy{
@@ -3876,6 +3872,7 @@ door{
   y = 432,
   direction = 2,
   sprite = "entities/door/door",
+  savegame_variable = "key_cave_door_2",
   opening_condition = "small_key",
 }
 
@@ -3884,8 +3881,8 @@ chest{
   layer = 0,
   x = 680,
   y = 381,
-  enabled_at_start = false,
   treasure_name = "heart_quarter",
+  treasure_savegame_variable = "key_cave_chest_2",
   sprite = "entities/chests/chest",
 }
 
@@ -3911,6 +3908,7 @@ door{
   y = 176,
   direction = 3,
   sprite = "entities/door/door",
+  savegame_variable = "key_cave_door_3",
   opening_condition = "small_key",
 }
 
@@ -4016,6 +4014,7 @@ enemy{
   },
   direction = 3,
   breed = "blue_moblin_sword",
+  savegame_variable = "key_cave_moblin_2",
 }
 
 block{
@@ -4087,6 +4086,10 @@ sensor{
       key = "activate_trigger",
       value = "spawn_door_miniboss",
     },
+    {
+      key = "savegame_variable",
+      value = "key_cave_key",
+    },
   },
   width = 16,
   height = 16,
@@ -4126,7 +4129,7 @@ custom_entity{
     },
     {
       key = "variant",
-      value = "1",
+      value = "2",
     },
     {
       key = "savegame_variable",
@@ -4141,8 +4144,8 @@ custom_entity{
 
 enemy{
   layer = 0,
-  x = 656,
-  y = 101,
+  x = 664,
+  y = 117,
   properties = {
     {
       key = "min_story_state",
@@ -4150,17 +4153,19 @@ enemy{
     },
     {
       key = "death_trigger",
-      value = "key",
+      value = "spawn_key",
     },
   },
   direction = 3,
   breed = "moblin_sword",
+  savegame_variable = "key_cave_moblin_3",
 }
 
 enemy{
+  name = "boss_1",
   layer = 0,
-  x = 544,
-  y = 101,
+  x = 536,
+  y = 117,
   properties = {
     {
       key = "min_story_state",
@@ -4168,47 +4173,20 @@ enemy{
     },
     {
       key = "death_trigger",
-      value = "key",
+      value = "spawn_key",
     },
   },
   direction = 3,
   breed = "moblin_sword",
+  savegame_variable = "key_cave_moblin_1",
 }
 
-enemy{
+destination{
+  name = "destination",
   layer = 0,
-  x = 512,
-  y = 133,
-  properties = {
-    {
-      key = "min_story_state",
-      value = "1",
-    },
-    {
-      key = "death_trigger",
-      value = "key",
-    },
-  },
-  direction = 3,
-  breed = "moblin_sword",
-}
-
-enemy{
-  layer = 0,
-  x = 680,
-  y = 141,
-  properties = {
-    {
-      key = "min_story_state",
-      value = "1",
-    },
-    {
-      key = "death_trigger",
-      value = "key",
-    },
-  },
-  direction = 3,
-  breed = "moblin_sword",
+  x = 120,
+  y = 517,
+  direction = 1,
 }
 
 tile{

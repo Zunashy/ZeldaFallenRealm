@@ -121,6 +121,7 @@ sprite{ id = "enemies/skeleton_1", description = "enemies/skeleton_1" }
 sprite{ id = "enemies/skeleton_2", description = "enemies/skeleton_2" }
 sprite{ id = "enemies/skeleton_3", description = "enemies/skeleton_3" }
 sprite{ id = "enemies/slime_green", description = "enemies/slime_green" }
+sprite{ id = "enemies/slime_green_old", description = "enemies/slime_green" }
 sprite{ id = "enemies/slime_red", description = "Slime Rouge" }
 sprite{ id = "enemies/slime_red_small", description = "Slime Rouge (Divisé)" }
 sprite{ id = "enemies/tektite_blue", description = "enemies/tektite_blue" }
@@ -210,6 +211,7 @@ sprite{ id = "pnj/nielint/6", description = "pnj/nielint/6" }
 sprite{ id = "pnj/nielint/7", description = "pnj/nielint/7" }
 sprite{ id = "pnj/nielint/8", description = "pnj/nielint/8" }
 sprite{ id = "pnj/nielint/9", description = "pnj/nielint/9" }
+sprite{ id = "pnj/nielint/barman_sleeping", description = "Barman endormi" }
 sprite{ id = "pnj/overworld/1", description = "pnj/overworld/1" }
 sprite{ id = "pnj/overworld/2", description = "pnj/overworld/2" }
 sprite{ id = "pnj/overworld/3", description = "pnj/overworld/3" }
@@ -243,6 +245,7 @@ music{ id = "Zelda Original/mysterious forest", description = "Zelda Original/my
 music{ id = "Zelda Original/overworld", description = "Zelda Original/overworld" }
 music{ id = "bar", description = "bar" }
 music{ id = "boss", description = "boss" }
+music{ id = "campfire", description = "campfire" }
 music{ id = "caves", description = "caves" }
 music{ id = "dungeon1", description = "dungeon1" }
 music{ id = "dungeon2", description = "Donjon 2" }
@@ -271,6 +274,7 @@ music{ id = "maku_trees", description = "maku_trees" }
 music{ id = "miniboss", description = "miniboss" }
 music{ id = "mysterious forest", description = "mysterious forest" }
 music{ id = "overworld", description = "overworld" }
+music{ id = "plain", description = "Plaine" }
 music{ id = "save_select", description = "save_select" }
 music{ id = "title", description = "title" }
 
@@ -289,6 +293,7 @@ sound{ id = "hero_hurt", description = "hero_hurt" }
 sound{ id = "hero_lands", description = "hero_lands" }
 sound{ id = "hero_pushes", description = "hero_pushes" }
 sound{ id = "hero_seen", description = "hero_seen" }
+sound{ id = "horn", description = "horn" }
 sound{ id = "jump", description = "jump" }
 sound{ id = "picked_item", description = "picked_item" }
 sound{ id = "picked_money", description = "picked_money" }
@@ -305,6 +310,7 @@ sound{ id = "sword_spin_attack_release", description = "sword_spin_attack_releas
 sound{ id = "sword_tapping", description = "sword_tapping" }
 sound{ id = "sword_tapping_weak_wall", description = "sword_tapping_weak_wall" }
 sound{ id = "text", description = "text" }
+sound{ id = "throw", description = "throw" }
 sound{ id = "treasure", description = "treasure" }
 sound{ id = "walk_on_grass", description = "walk_on_grass" }
 sound{ id = "walk_on_water", description = "walk_on_water" }
@@ -457,6 +463,7 @@ file{ path = "maps/donjons/level_02/rdc.dat", author = "Zunashy", }
 file{ path = "maps/donjons/level_02/ss1.dat", author = "Zunashy", }
 file{ path = "maps/normal_version", author = "Zunashy", }
 file{ path = "maps/war_version", author = "Nillan", }
+file{ path = "musics/plain.ogg", author = "Nintendo", }
 file{ path = "scripts/api/bit.lua", author = "TwilCynder", }
 file{ path = "scripts/api/controls_manager.lua", author = "TwilCynder", }
 file{ path = "scripts/api/image_fonts.lua", author = "TwilCynder", }
@@ -493,10 +500,12 @@ file{ path = "sprites/enemies/boss/rock_mosquito_hand.dat", author = "Zunashy", 
 file{ path = "sprites/enemies/boss/rock_mosquito_hand_shield.dat", author = "Zunashy", }
 file{ path = "sprites/enemies/boss/rock_mosquito_shields.dat", author = "Zunashy", }
 file{ path = "sprites/enemies/mini_boss/fantom.dat", author = "Nintendo", }
+file{ path = "sprites/enemies/slime_green.dat", author = "Nintendo", }
 file{ path = "sprites/enemies/slime_red.dat", author = "Nintendo", }
 file{ path = "sprites/entities/dungeon_elements/color_cube_destination.dat", author = "Zunashy", }
 file{ path = "sprites/entities/dungeon_elements/fragile_ground.dat", author = "TwilCynder", }
 file{ path = "sprites/pnj/main/sorcier.dat", author = "Zunashy", }
 file{ path = "sprites/pnj/main/zuna.dat", author = "Zunashy", }
 file{ path = "sprites/pnj/main/zuna_sword.dat", author = "Zunashy", }
+file{ path = "sprites/pnj/nielint/barman_sleeping.dat", author = "Zunashy", }
 file{ path = "sprites/things/exclamation.dat", author = "Nintendo", }

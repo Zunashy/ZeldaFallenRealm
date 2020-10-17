@@ -7,7 +7,6 @@
 -- - Bombs.
 
 local separator_manager = {
-	destroy_on_activate = {} --array des entités qui seront détruites au changement de région
 }
 require("scripts/multi_events")
 
@@ -16,10 +15,16 @@ function separator_manager:manage_map(map, default)
   local enemy_places = {}
   local destructible_places = {}
   local entity_places = {}
+  local block_places = {}
   local game = map:get_game()
+  local destroy_on_activate = {}
 
   function map:get_stored_enemies()
-	return enemy_places
+	  return enemy_places
+  end
+
+  function separator_manager:destroy_on_separator(e)
+    destroy_on_activate[#destroy_on_activate + 1] = e
   end
 
   -- Function called when a separator was just taken.
@@ -57,14 +62,15 @@ function separator_manager:manage_map(map, default)
     end
 
     -- Entities.
+    local entity, old_entity
     for _, entity_place in ipairs(entity_places) do
       if entity_place.entity:exists() then
         entity_place.entity:remove()
       end
 
       if entity_place.entity:is_in_same_region(hero)then
-        local old_entity = entity_place.entity
-        local entity = map:create_custom_entity(entity_place)
+        old_entity = entity_place.entity
+        entity = map:create_custom_entity(entity_place)
         entity_place.entity = entity
       end
     end
@@ -74,6 +80,13 @@ function separator_manager:manage_map(map, default)
       -- Reset blocks in regions no longer visible.
       if not block:is_in_same_region(hero) then
         block:reset()
+      end
+    end
+
+    for _, block_place in ipairs(block_places) do
+      if not block_place.block:exists() then
+        entity = map:create_block(block_place)
+        entity:set_pushable(block_place.pushable)
       end
     end
   end
@@ -109,7 +122,7 @@ function separator_manager:manage_map(map, default)
         end
       end
     end
-		for _, e in ipairs(separator_manager.destroy_on_activate) do
+		for _, e in ipairs(destroy_on_activate) do
       e:remove()
     end
 
@@ -195,16 +208,25 @@ function separator_manager:manage_map(map, default)
     }
   end
 
-end
+  for block in map:get_entities_property("no_reset", "1", "block", true) do
+    local x, y, layer = block:get_position()
+    block_places[#block_places + 1] = {
+      x = x,
+      y = y,
+      layer = layer,
+      name = block:get_name(),
+      block = block,
+      pushable = block:is_pushable(),
+      pullable = block:is_pullable(),
+      max_moves = block:get_max_moves(),
+      sprite = block:get_sprite():get_animation_set(),
+      enabled_at_start = block:is_enabled(),
+      properties = block:get_properties()
+    }
+  end
 
-function separator_manager:destroy_on_separator(e)
-	local t = self.destroy_on_activate
-	t[#t + 1] = e
-end
+  map.separator_manager_enabled = true
 
-local function map_change_callback()
-	separator_manager.destroy_on_activate = {}
 end
-sol.main.get_metatable("game"):register_event("on_map_changed", map_change_callback)
 
 return separator_manager

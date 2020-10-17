@@ -100,8 +100,6 @@ function enemy:start_jump() --Déclenche le saut, et change les propriétés de 
   sprite:set_animation("jumping")
 
   enemy.direction = (dir + 2) % 4 
-  print(dir)
-  print(enemy.direction)
 end
 
 function enemy:reset_jump_state() --Annule les changements de propriétés causés par le saut

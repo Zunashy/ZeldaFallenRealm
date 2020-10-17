@@ -12,7 +12,13 @@ function map:on_started_()
   end
 
   local story_state = game:get_story_state() or 0
-  if story_state > 7 then
+  if story_state > 9 then
+    zuna:set_enabled(false)
+  elseif story_state > 7 then
+    local x, y = zuna:get_position()
+    zuna:set_position(x, y + 8)
+    zuna:remove_sprite(zuna:get_sprite())
+    zuna:create_sprite("pnj/nielint/barman_sleeping")
     function zuna:on_interaction()
       game:start_dialog("pnj.village.nielint.barman.sleep")
     end

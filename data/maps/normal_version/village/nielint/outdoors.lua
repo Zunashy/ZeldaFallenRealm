@@ -13,11 +13,16 @@ local game = map:get_game()
 local story = game:get_story_state()
 
 -- Event called at initialization time, as soon as this map is loaded.
+local function free_octo_entrance()
+  local npc = map:get_entity("octo_guard")
+  local x, y = npc:get_position()
+  npc:set_position(x + 16, y)
+  npc:set_dialog("pnj.village.nielint.SE_girl_green_dress_2")
+end
+
 function map:on_started()
-  local npc = self:get_entity("octo_guard")
-  if story < 4 then
-    local x, y = octo_guard:get_position()
-    npc:set_position(x - 16, y)
+  if story > 9 then
+    free_octo_entrance()
   end
 
   local zuna = self:get_entity("zuna")
@@ -29,6 +34,7 @@ function map:on_started()
         mg.move_straight(zuna, 3, nil, 64, function()
           game:start_dialog("pnj.village.nielint.barman.east", function()
             map:get_hero():start_treasure("fire_seed")
+            free_octo_entrance()
           end)
         end, {stop_on_obstacle = true})
       end

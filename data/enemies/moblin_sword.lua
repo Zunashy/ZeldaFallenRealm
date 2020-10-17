@@ -16,11 +16,11 @@ local sprite, sword_sprite
 
 local movement
 local movement_distance = 32
-local movement_speed = 48
-local movement_speed_target = 48
+local movement_speed = 32
+local movement_speed_target = 32
 
 local detect_angle = math.pi/2
-local detect_distance = 64
+local detect_distance = 80
 local detect_state
 
 local dirCoef = gen.dirCoef

@@ -42,7 +42,7 @@ end
 function m:refresh()
   math.randomseed(os.time())  
   local dir = mg.choose_random_direction(enemy, dir_callback)
-  m:set_speed(48)
+  m:set_speed(32)
   m:set_max_distance(16)
   m:set_angle(dir * math.pi / 2)
   m:start(enemy)

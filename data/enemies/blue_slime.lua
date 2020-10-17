@@ -209,6 +209,3 @@ function enemy:dash(d)
     end
   )
 end
-
-function enemy:on_attack()
-end 

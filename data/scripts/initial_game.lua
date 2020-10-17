@@ -16,7 +16,7 @@ function initial_game:initialize_new_savegame(game)
 
   game:set_max_life(12)
   game:set_life(game:get_max_life())
-  game:set_max_money(100)
+  game:set_max_money(300)
 end
 
 return initial_game

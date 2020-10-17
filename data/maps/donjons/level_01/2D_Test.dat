@@ -1141,7 +1141,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 496,
+  x = 512,
   y = 304,
   width = 16,
   height = 16,
@@ -1151,9 +1151,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 496,
+  x = 512,
   y = 320,
-  width = 48,
+  width = 32,
   height = 16,
   pattern = "22",
   tileset = "caves/cave_side",
@@ -1161,7 +1161,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 496,
+  x = 512,
   y = 320,
   width = 16,
   height = 16,
@@ -1201,7 +1201,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 560,
+  x = 576,
   y = 304,
   width = 16,
   height = 16,
@@ -1211,9 +1211,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 560,
+  x = 576,
   y = 320,
-  width = 48,
+  width = 32,
   height = 16,
   pattern = "22",
   tileset = "caves/cave_side",
@@ -1221,7 +1221,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 560,
+  x = 576,
   y = 320,
   width = 16,
   height = 16,
@@ -1459,6 +1459,26 @@ tile{
   tileset = "caves/cave_side",
 }
 
+tile{
+  layer = 0,
+  x = 496,
+  y = 328,
+  width = 16,
+  height = 8,
+  pattern = "12",
+  tileset = "caves/cave_side",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 328,
+  width = 16,
+  height = 8,
+  pattern = "12",
+  tileset = "caves/cave_side",
+}
+
 teletransporter{
   name = "out_a",
   layer = 0,
@@ -1487,6 +1507,7 @@ destination{
   x = 456,
   y = 21,
   direction = 1,
+  starting_location_mode = "no",
 }
 
 destination{
@@ -1495,6 +1516,7 @@ destination{
   x = 40,
   y = 21,
   direction = 1,
+  starting_location_mode = "no",
 }
 
 separator{
@@ -1527,6 +1549,7 @@ destination{
   x = 40,
   y = 205,
   direction = 1,
+  starting_location_mode = "no",
 }
 
 teletransporter{

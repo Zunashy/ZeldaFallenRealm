@@ -15,7 +15,7 @@ local hero = map:get_hero()
 local sprite, trident_sprite
 local movement
 
-local mov_speed = 64
+local mov_speed = 48
 local wave_amp, wave_period = 16, 32
 local swing_detect_distance = 48
 local swing_cooldown = 800
@@ -62,10 +62,15 @@ function enemy:start_movement(direction)
 end
 
 local function hurt_cb()
+  print("hurt")
   enemy:set_invincible()
-  enemy:get_sprite():set_animation("hurt")
+  sprite:set_animation("hurt")
+  enemy:set_attacks_consequence("ignored")
   sol.timer.start(enemy, 500, function()
-    enemy:set_attacks_consequence(hurt_cb)
+    if sprite:get_animation() == "hurt" then
+      sprite:set_animation("walking")
+      enemy:set_attacks_consequence(hurt_cb)
+    end
   end)
   enemy:remove_life(1)
 end
@@ -82,11 +87,13 @@ local function launch_wave()
 end
 
 function enemy:swing()
+  print("swing")
   local m = self:get_movement()
   if m then
     m:stop()
   end
   self:set_attacks_consequence("protected")
+  trident_sprite:set_animation("swing_load")
   sprite:set_animation("swing_load", function()
     trident_sprite:set_animation("swing")
     self:set_attacks_consequence(hurt_cb)
@@ -105,7 +112,6 @@ function enemy:swing()
       sol.timer.start(enemy, swing_cooldown, function () enemy:start_swing_detect() end)
     end)
   end)
-  trident_sprite:set_animation("swing_load")
 end
 
 function enemy:check_hero()
@@ -132,7 +138,7 @@ end
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
-  trident_sprite = enemy:create_sprite("enemies/boss/merman_trident")
+  trident_sprite = enemy:create_sprite("enemies/boss/merman_trident", "trident")
   enemy:set_invincible_sprite(trident_sprite)
   enemy:set_life(6)
   enemy:set_damage(1)
