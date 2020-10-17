@@ -1898,15 +1898,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 208,
-  y = 464,
-  width = 16,
-  height = 16,
-  pattern = "30",
-}
-
-tile{
-  layer = 0,
   x = 192,
   y = 448,
   width = 16,
@@ -4104,7 +4095,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "door_4",
+      value = "door_4;disable_obstacle",
     },
   },
   subtype = "walkable",
@@ -4865,6 +4856,16 @@ teletransporter{
   height = 16,
   destination_map = "donjons/level_02/rdc",
   destination = "shortcut",
+}
+
+dynamic_tile{
+  name = "obstacle",
+  layer = 0,
+  x = 208,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "30",
 }
 
 tile{

@@ -42,7 +42,7 @@ function separator_manager:manage_map(map, default)
       end
 
       -- Re-create enemies in the new active region.
-      if enemy:is_in_same_region(hero) and not enemy.dead then
+      if enemy:is_in_same_region(hero) and not enemy.dead and not (enemy.savegame_variable and game:get_value(enemy.savegame_variable) ) then
         local old_enemy = enemy_place.enemy
         local enemy = map:create_enemy({
           x = enemy_place.x,
@@ -156,7 +156,8 @@ function separator_manager:manage_map(map, default)
         treasure = { enemy:get_treasure() },
         enemy = enemy,
         is_enabled = enemy:is_enabled(),
-        properties = enemy:get_properties()
+        properties = enemy:get_properties(),
+        savegame_variable = enemy.get_property("savegame_variable")
       }
 
       enemy:register_event("on_dead", death_callback)

@@ -5764,7 +5764,7 @@ enemy{
     },
     {
       key = "savegame_variable",
-      value = "mini_boss_1_dungeon_2",
+      value = "dungeon_2_tp",
     },
   },
   direction = 0,
@@ -6093,7 +6093,7 @@ enemy{
     },
     {
       key = "savegame_variable",
-      value = "mini_boss_2_dungeon_2",
+      value = "dungeon_2_tp",
     },
   },
   direction = 0,

@@ -39,7 +39,7 @@ function map:enable_entity(name)
       e:set_enabled(true)
       prop = e:get_property("spawn_savegame_variable")
       if prop then
-        self:get_game():set_value(prop, 1)
+        self:get_game():set_value(prop, true)
       end
       
       prop = e:get_property("spawn_trigger")
@@ -55,6 +55,19 @@ function map:enable_entity(name)
         enemy.is_enabled = true
       end
     end 
+  end
+end
+
+function map:disable_entity(name)
+  self = self or sol.main.game:get_map()
+  local prop, force
+  
+  for e in self:get_entities(name) do    
+    e:set_enabled(false)
+    prop = e:get_property("spawn_savegame_variable")
+    if prop then
+      self:get_game():set_value(prop, false)
+    end
   end
 end
 
