@@ -3899,7 +3899,7 @@ enemy{
       value = "door_3",
     },
   },
-  direction = 0,
+  direction = 3,
   breed = "moblin_sword",
   treasure_name = "random",
 }
@@ -3924,7 +3924,7 @@ enemy{
       value = "door_3",
     },
   },
-  direction = 0,
+  direction = 3,
   breed = "moblin_sword",
   treasure_name = "random",
 }
