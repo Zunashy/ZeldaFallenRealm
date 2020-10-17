@@ -6001,6 +6001,12 @@ dynamic_tile{
   x = 96,
   y = 256,
   enabled_at_start = false,
+  properties = {
+    {
+      key = "spawn_savegame_variable",
+      value = "dungeon_2_secret_stairs_1",
+    },
+  },
   width = 16,
   height = 16,
   pattern = "70_3",

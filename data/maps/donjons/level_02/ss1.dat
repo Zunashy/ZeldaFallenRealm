@@ -4422,7 +4422,7 @@ door{
   y = 256,
   direction = 2,
   sprite = "entities/door/door",
-  savegame_variable = "dungeon_2_door_4",
+  savegame_variable = "dungeon_2_door_5",
   opening_condition = "small_key",
   opening_condition_consumed = true,
 }
