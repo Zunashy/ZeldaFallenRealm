@@ -940,7 +940,7 @@ tile{
   layer = 1,
   x = -32,
   y = 0,
-  width = 720,
+  width = 656,
   height = 640,
   pattern = "43",
 }
@@ -5599,7 +5599,7 @@ tile{
   y = 320,
   width = 8,
   height = 8,
-  pattern = "220_4",
+  pattern = "85_17",
 }
 
 tile{
