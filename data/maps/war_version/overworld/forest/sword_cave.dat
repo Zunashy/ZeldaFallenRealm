@@ -1508,3 +1508,12 @@ enemy{
   breed = "blue_octorock",
 }
 
+npc{
+  layer = 0,
+  x = 392,
+  y = 45,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#pnj.overworld.wind_wood.skeleton",
+}
+

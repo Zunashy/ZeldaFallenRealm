@@ -107,6 +107,13 @@ function enemy_meta:on_hurt()
   self.hurt_y = y
 end
 
+function enemy_meta:on_dead()
+  local prop = self:get_property("savegame_variable") 
+  if prop then
+    self:get_game():set_value(prop, true)
+  end
+end
+
 local dest_meta = sol.main.get_metatable("destructible")
 function dest_meta:is_flammable()
   local sprite_name = self:get_sprite():get_animation_set()

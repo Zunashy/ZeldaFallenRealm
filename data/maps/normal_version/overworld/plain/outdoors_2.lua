@@ -71,7 +71,7 @@ function map:on_started_()
       game:start_dialog("pnj.overworld.plain.guard_moblin_cave", function(res)
         if res.answer == 1 then
           game:start_dialog("pnj.overworld.plain.guard_moblin_cave.goodluck", function()
-            mg.move_straight(guard_moblin, 1, 16, 64, function()
+            mg.move_straight(guard_moblin, 1, 32, 64, function()
               mg.move_straight(guard_moblin, 2, 16, 64, function()
                 guard_moblin:get_sprite():set_direction(0)
                 game:set_sidequest_state("moblin_cave", 1)

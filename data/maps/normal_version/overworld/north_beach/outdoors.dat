@@ -7608,7 +7608,6 @@ destructible{
     },
   },
   sprite = "entities/vegetation/grass_door",
-  destruction_sound = "treasure",
   weight = -1,
   can_be_cut = true,
 }
@@ -7925,7 +7924,7 @@ door{
   layer = 1,
   x = 232,
   y = 288,
-  direction = 3,
+  direction = 0,
   sprite = "entities/door/boss_door",
   savegame_variable = "north_beach_door",
   opening_method = "interaction_if_item",

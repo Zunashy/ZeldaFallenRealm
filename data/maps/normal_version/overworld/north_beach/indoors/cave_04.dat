@@ -3886,21 +3886,6 @@ chest{
   sprite = "entities/chests/chest",
 }
 
-enemy{
-  layer = 0,
-  x = 616,
-  y = 245,
-  properties = {
-    {
-      key = "death_trigger",
-      value = "door_3",
-    },
-  },
-  direction = 3,
-  breed = "moblin_sword",
-  treasure_name = "random",
-}
-
 door{
   name = "door_3",
   layer = 0,
@@ -3913,8 +3898,8 @@ door{
 
 enemy{
   layer = 0,
-  x = 584,
-  y = 245,
+  x = 576,
+  y = 269,
   properties = {
     {
       key = "death_trigger",
@@ -4156,7 +4141,7 @@ enemy{
     },
   },
   direction = 3,
-  breed = "moblin_sword",
+  breed = "octorok",
   savegame_variable = "key_cave_moblin_3",
 }
 

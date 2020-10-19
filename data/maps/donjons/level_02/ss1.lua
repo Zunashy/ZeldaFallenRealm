@@ -14,8 +14,12 @@ local game = map:get_game()
 function map:on_started_()
   self:init_dungeon_features()
   map:enable_colored_blocks()
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
+  self:init_dungeon_features()
+  local zuna = map:get_entity("zuna")
+  function zuna:on_interaction()
+    local menu = require("scripts/menus/credits")
+    game:start_dialog("pnj.end", function() sol.menu.start(game, menu) end)
+  end
 end
 
 -- Event called after the opening transition effect of the map,
