@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "dungeon/tileset_donjon_2",
-  music = "dungeon1",
+  music = "dungeon2",
 }
 
 tile{
@@ -4866,6 +4866,16 @@ dynamic_tile{
   width = 16,
   height = 16,
   pattern = "30",
+}
+
+npc{
+  name = "zuna",
+  layer = 0,
+  x = 840,
+  y = 213,
+  direction = 3,
+  subtype = 1,
+  sprite = "pnj/nielint/5",
 }
 
 tile{

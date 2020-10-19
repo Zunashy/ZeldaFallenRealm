@@ -5,7 +5,7 @@ properties{
   height = 128,
   min_layer = 0,
   max_layer = 2,
-  tileset = "House",
+  tileset = "house",
   music = "bar",
 }
 
@@ -34,7 +34,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "4",
-  tileset = "House",
+  tileset = "house",
 }
 
 tile{
@@ -44,7 +44,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "2",
-  tileset = "House",
+  tileset = "house",
 }
 
 tile{
@@ -54,7 +54,7 @@ tile{
   width = 128,
   height = 16,
   pattern = "3",
-  tileset = "House",
+  tileset = "house",
 }
 
 tile{
@@ -190,7 +190,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "4",
-  tileset = "House",
+  tileset = "house",
 }
 
 tile{
@@ -200,7 +200,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "2",
-  tileset = "House",
+  tileset = "house",
 }
 
 tile{
@@ -210,7 +210,7 @@ tile{
   width = 128,
   height = 16,
   pattern = "3",
-  tileset = "House",
+  tileset = "house",
 }
 
 tile{
@@ -265,7 +265,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "4",
-  tileset = "House",
+  tileset = "house",
 }
 
 tile{
@@ -275,7 +275,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "2",
-  tileset = "House",
+  tileset = "house",
 }
 
 tile{
@@ -285,7 +285,7 @@ tile{
   width = 128,
   height = 16,
   pattern = "3",
-  tileset = "House",
+  tileset = "house",
 }
 
 tile{
@@ -628,7 +628,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "25",
-  tileset = "House",
+  tileset = "house",
 }
 
 tile{
@@ -638,7 +638,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "26",
-  tileset = "House",
+  tileset = "house",
 }
 
 tile{
@@ -648,7 +648,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "24",
-  tileset = "House",
+  tileset = "house",
 }
 
 tile{
@@ -658,7 +658,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "25",
-  tileset = "House",
+  tileset = "house",
 }
 
 tile{
@@ -668,7 +668,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "26",
-  tileset = "House",
+  tileset = "house",
 }
 
 tile{
@@ -678,7 +678,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "24",
-  tileset = "House",
+  tileset = "house",
 }
 
 tile{
@@ -688,7 +688,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "25",
-  tileset = "House",
+  tileset = "house",
 }
 
 tile{
@@ -698,7 +698,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "26",
-  tileset = "House",
+  tileset = "house",
 }
 
 tile{
@@ -708,7 +708,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "24",
-  tileset = "House",
+  tileset = "house",
 }
 
 tile{
@@ -718,7 +718,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "25",
-  tileset = "House",
+  tileset = "house",
 }
 
 tile{
@@ -728,7 +728,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "26",
-  tileset = "House",
+  tileset = "house",
 }
 
 tile{
@@ -738,7 +738,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "24",
-  tileset = "House",
+  tileset = "house",
 }
 
 tile{

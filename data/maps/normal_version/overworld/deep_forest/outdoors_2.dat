@@ -6,6 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "normal_world",
+  music = "overworld",
 }
 
 tile{
@@ -8692,7 +8693,7 @@ enemy{
   properties = {
     {
       key = "max_story_state",
-      value = "9",
+      value = "12",
     },
   },
   direction = 0,
@@ -8707,7 +8708,7 @@ enemy{
   properties = {
     {
       key = "max_story_state",
-      value = "9",
+      value = "12",
     },
   },
   direction = 0,
@@ -8722,7 +8723,7 @@ enemy{
   properties = {
     {
       key = "max_story_state",
-      value = "9",
+      value = "12",
     },
   },
   direction = 0,
@@ -8737,7 +8738,7 @@ enemy{
   properties = {
     {
       key = "max_story_state",
-      value = "9",
+      value = "12",
     },
   },
   direction = 0,
@@ -8752,7 +8753,7 @@ enemy{
   properties = {
     {
       key = "max_story_state",
-      value = "9",
+      value = "12",
     },
   },
   direction = 0,
@@ -8767,7 +8768,7 @@ enemy{
   properties = {
     {
       key = "max_story_state",
-      value = "9",
+      value = "12",
     },
   },
   direction = 0,
@@ -8782,7 +8783,7 @@ enemy{
   properties = {
     {
       key = "max_story_state",
-      value = "9",
+      value = "12",
     },
   },
   direction = 0,
@@ -8797,7 +8798,7 @@ enemy{
   properties = {
     {
       key = "max_story_state",
-      value = "9",
+      value = "12",
     },
   },
   direction = 0,
@@ -8812,7 +8813,7 @@ enemy{
   properties = {
     {
       key = "max_story_state",
-      value = "9",
+      value = "12",
     },
   },
   direction = 0,
@@ -8827,7 +8828,7 @@ enemy{
   properties = {
     {
       key = "max_story_state",
-      value = "9",
+      value = "12",
     },
   },
   direction = 0,

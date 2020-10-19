@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "dungeon/tileset_donjon_2",
-  music = "dungeon1",
+  music = "dungeon2",
 }
 
 tile{
@@ -5764,7 +5764,7 @@ enemy{
     },
     {
       key = "savegame_variable",
-      value = "dungeon_2_tp",
+      value = "dungeon_2_miniboss_1",
     },
   },
   direction = 0,
@@ -6093,7 +6093,7 @@ enemy{
     },
     {
       key = "savegame_variable",
-      value = "dungeon_2_tp",
+      value = "dungeon_2_miniboss_2",
     },
   },
   direction = 0,

@@ -7,7 +7,7 @@ dialog{
 dialog{
   id = "_treasure.bracelet.1",
   text = [[
-Vous obtenez le bracelet de force ! Cet accessoire vous permettant de déplacer de lourdes charges devrait bien vous faciliter la vie !
+Vous obtenez le bracelet de force ! Cet accessoire vous permettant de déplacer de lourdes charges devrait bien vous faciliter la vie ! Et vous n'avez même pas besoin de l'équiper !
 ]],
 }
 
@@ -370,7 +370,7 @@ Dégage gamin. C'est notre repaire ici, pas une aire de jeux !
 dialog{
   id = "pnj.overworld.pirates.4",
   text = [[
-Qu'est-ce que tu viens faire ici moussaillon ? Tu veux rejoindre mon équipage ? J'te préviens, j'prends pas les marins d'eau douce ! J'vais te faire récurer chaque planche de ce navire jusqu'à ce qu'il brille comme une pièce neuve.
+Qu'est-ce que tu viens faire ici moussaillon ? Tu veux rejoindre mon équipage ? J'te préviens, j'prends pas les marins d'eau douce ! J'vais te faire récurer chaque planche de ce navire jusqu'à ce qu'il brille comme une pièce neuve. Ah ? Pas intéressé ? Ben voyons.
 ]],
 }
 
@@ -524,6 +524,13 @@ Depuis, c'est moi qui veille sur eux.
 Excuse-moi si je m'égare... 
 Je te remercie de m'avoir écouté jusqu'au bout, mon petit ! 
 Tu peux te reposer ici autant que tu veux.
+]],
+}
+
+dialog{
+  id = "pnj.overworld.wind_wood.skeleton",
+  text = [[
+(...Oh ? quelqu'un a retrouvé mon corps... Je pensais que je resterai pour toujours oublié ici, depuis cette terrible bataille...)
 ]],
 }
 

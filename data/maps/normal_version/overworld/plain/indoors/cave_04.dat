@@ -6,6 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "normal_world",
+  music = "caves",
 }
 
 tile{
@@ -1276,7 +1277,6 @@ enemy{
   y = 197,
   direction = 0,
   breed = "blue_octorock",
-  treasure_name = "random",
 }
 
 separator{
@@ -1309,7 +1309,6 @@ enemy{
   y = 189,
   direction = 0,
   breed = "octorok",
-  treasure_name = "random",
 }
 
 enemy{
@@ -1318,7 +1317,6 @@ enemy{
   y = 173,
   direction = 0,
   breed = "octorok",
-  treasure_name = "random",
 }
 
 enemy{
@@ -1327,7 +1325,6 @@ enemy{
   y = 205,
   direction = 0,
   breed = "skeleton_2",
-  treasure_name = "random",
 }
 
 enemy{
@@ -1336,7 +1333,6 @@ enemy{
   y = 181,
   direction = 0,
   breed = "skeleton_2",
-  treasure_name = "random",
 }
 
 enemy{
@@ -1345,7 +1341,6 @@ enemy{
   y = 157,
   direction = 0,
   breed = "skeleton_1",
-  treasure_name = "random",
 }
 
 enemy{
@@ -1354,7 +1349,6 @@ enemy{
   y = 213,
   direction = 0,
   breed = "skeleton_1",
-  treasure_name = "random",
 }
 
 enemy{
@@ -1363,7 +1357,6 @@ enemy{
   y = 37,
   direction = 0,
   breed = "bat",
-  treasure_name = "random",
 }
 
 enemy{
@@ -1372,7 +1365,6 @@ enemy{
   y = 109,
   direction = 0,
   breed = "bat",
-  treasure_name = "random",
 }
 
 enemy{
@@ -1382,7 +1374,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_heart",
+      value = "spawn_heart;spawn_tp",
     },
   },
   direction = 3,
@@ -1396,7 +1388,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_heart",
+      value = "spawn_heart;spawn_tp",
     },
   },
   direction = 1,
@@ -1410,7 +1402,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_heart",
+      value = "spawn_heart;spawn_tp",
     },
   },
   direction = 0,
@@ -1425,7 +1417,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_heart",
+      value = "spawn_heart;spawn_tp",
     },
   },
   direction = 0,
@@ -1439,7 +1431,6 @@ enemy{
   y = 189,
   direction = 2,
   breed = "blue_slime",
-  treasure_name = "random",
 }
 
 enemy{
@@ -1457,7 +1448,6 @@ enemy{
   y = 229,
   direction = 0,
   breed = "bat",
-  treasure_name = "random",
 }
 
 enemy{
@@ -1475,7 +1465,6 @@ enemy{
   y = 53,
   direction = 0,
   breed = "bat",
-  treasure_name = "random",
 }
 
 enemy{
@@ -1503,5 +1492,18 @@ pickable{
   y = 197,
   enabled_at_start = false,
   treasure_name = "heart_full",
+  treasure_savegame_variable = "moblin_cave_heart",
+}
+
+teletransporter{
+  name = "tp",
+  layer = 0,
+  x = 72,
+  y = 144,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/overworld/plain/outdoors_2",
+  destination = "plain_cave_04",
+  sprite = "entities/dungeon_elements/teleport",
 }
 
