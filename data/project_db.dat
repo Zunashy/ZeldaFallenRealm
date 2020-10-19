@@ -77,6 +77,7 @@ tileset{ id = "house", description = "house" }
 tileset{ id = "model", description = "model" }
 tileset{ id = "normal_world", description = "normal_world" }
 tileset{ id = "normal_world_annexe", description = "normal_world_annexe" }
+tileset{ id = "normal_world_v2" }
 tileset{ id = "war_world", description = "war_world" }
 tileset{ id = "war_world_annexe" }
 

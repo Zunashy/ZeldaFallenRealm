@@ -6185,6 +6185,50 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "279",
+  ground = "wall",
+  default_layer = 0,
+  x = 368,
+  y = 240,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "279_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 368,
+  y = 256,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "279_3",
+  ground = "wall",
+  default_layer = 0,
+  x = 384,
+  y = 256,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "279_4",
+  ground = "wall",
+  default_layer = 0,
+  x = 384,
+  y = 240,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
   id = "27_2",
   ground = "wall",
   default_layer = 0,
@@ -6204,6 +6248,50 @@ tile_pattern{
   width = 16,
   height = 16,
   repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "280",
+  ground = "wall",
+  default_layer = 0,
+  x = 376,
+  y = 256,
+  width = 8,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "280_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 376,
+  y = 240,
+  width = 8,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "281",
+  ground = "wall",
+  default_layer = 0,
+  x = 384,
+  y = 248,
+  width = 8,
+  height = 8,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "281_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 368,
+  y = 248,
+  width = 8,
+  height = 8,
+  repeat_mode = "vertical",
 }
 
 tile_pattern{
@@ -10597,5 +10685,13 @@ border_set{
 
 border_set{
   id = "rock_2",
+  pattern_0 = "65",
+  pattern_1 = "50",
+  pattern_2 = "65_2",
+  pattern_3 = "50_2",
+  pattern_8 = "1_7",
+  pattern_9 = "64_2",
+  pattern_10 = "64",
+  pattern_11 = "1_6",
 }
 
