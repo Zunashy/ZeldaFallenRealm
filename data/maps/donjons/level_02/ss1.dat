@@ -4719,8 +4719,8 @@ jumper{
 door{
   name = "door_7",
   layer = 0,
-  x = 480,
-  y = 256,
+  x = 496,
+  y = 240,
   enabled_at_start = false,
   direction = 0,
   sprite = "entities/door/door",

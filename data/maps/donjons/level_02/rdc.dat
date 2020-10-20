@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "dungeon/tileset_donjon_2",
-  music = "dungeon2",
+  music = "dungeon1",
 }
 
 tile{
@@ -5764,7 +5764,7 @@ enemy{
     },
     {
       key = "savegame_variable",
-      value = "dungeon_2_miniboss_1",
+      value = "dungeon_2_tp",
     },
   },
   direction = 0,
@@ -6093,7 +6093,7 @@ enemy{
     },
     {
       key = "savegame_variable",
-      value = "dungeon_2_miniboss_2",
+      value = "dungeon_2_tp",
     },
   },
   direction = 0,
@@ -6219,6 +6219,13 @@ dynamic_tile{
   width = 16,
   height = 16,
   pattern = "32",
+}
+
+pickable{
+  layer = 0,
+  x = 344,
+  y = 653,
+  treasure_name = "bracelet",
 }
 
 tile{
