@@ -1,8 +1,9 @@
 # Guide de création des maps
 Les maps sont les environements où Link évoluera dans le jeu. Elles sont donc fondamentales à son fonctionnement.
 
-Les maps sont composées d'un décor "inerte" (donc à peu de chose près, une image de fond et des éléments de terrain), les tiles ; et d'entités dynamiques généralement contrôlées par un script (dont Link !).  
-Dans ce guide je présenterai la méthodes à suivre pour créer et éditer des maps, placer les tiles, et les entités, etc.
+Les maps sont composées d'un décor "inerte" (donc à peu de chose près, une image de fond et des éléments de terrain), les tiles ; et d'entités dynamiques généralement contrôlées par un script (dont Link !). 
+Dans ce guide je présenterai la méthodes à suivre pour créer et éditer des maps, placer les tiles, et les entités, etc. 
+(Il est à noter que chaque map est liée à un script Lua ; il n'est pas nécessaire de réellement coder ce script pour créer une map, cependant une map avec un fonctionnement complexe nécessitera un peu de code.)
 
 Il n'est pas nécessaire d'utiliser un autre logiciel que l'éditeur solarus pour éditer les maps.
 
@@ -15,15 +16,16 @@ Comme expliqué précédemment, la map est composée d'un décor et d'éléments
 
 ## Les tiles
 
-Le décor d'une map est composé d'une multitude d'images carrées, de taille 8x8 ou parfois plus, souvent répétés.  
+Le décor d'une map est composé d'une multitude de petites images, généralement de taille 8x8 ou 16x16, souvent répétés.  
 
 
 **Exemple** : sur cette image, on peut voir deux tiles différentes, de 16x16 pixels  
 ![Image indisponible](img/tiles1.PNG)  
-Celle de droite n'est présente qu'une fois, mais celle de droite à été répétée pour créer le motif du sol.
+Celle de gauche n'est présente qu'une fois, mais celle de droite à été répétée pour créer le motif du sol.
 
 #### Tilesets
-Ces images sont regroupées sur des **tilesets**, de grandes images contenant toutes les tiles nécessaires à une map (on trouvera par exemple un tileset pour les maisons de base, un pour le donjon 1, etc). Avant de commencer à palcer des tiles sur une map et donc construire sond écor, il faut donc choisir le tileset, dans les propriétés de la map (au centre de l'écran).
+Les tiles sont regroupées sur des **tilesets**, de grandes images contenant toutes les tiles nécessaires à une map (on trouvera par exemple un tileset pour les maisons de base, un pour le donjon 1, un pour le monde extérieur, etc). 
+Chaque map est liée à un tileset, sélectionnable dans le menu déroulant en bas des propriétés de la map, et les tiles que vous y placerez proviendront de ce tileset *par défaut*, il est cependant possible de placer des tiles provenant d'un autre tileset (en changeant le tileset affiché en bas à gauche grâce au menu déroulant juste au dessus). On peut alors se poser la question : pourquoi définir un "tileset de la map" si on peut de toute façon utiliser des tiles de n'importe quel tileset ? Premièrement, parce que c'est plus pratique d'avoir un tileset par défaut étant donné d'en général la map contiendra *surtout* des tiles venant d'un seul et même tileset, mais aussi pour une autre raison liée au fonctionnement des sprites, que l'on verra dans la partie qui leur est dédiée.
 
 (note : vous pouvez aussi aller voir le tileset directement, avec chaque tile et leurs propriétés dont on parlera plus tard, dans le dossier `data/tilesets/`, ou en cliquant sur l'icône crayon à côté du tileset sélectionné)
 
@@ -34,7 +36,7 @@ A partir de là, c'est très simple : on clique sur une tile pour la sélectionn
 Il existe quelques subtilités que j'ajouterait plus tard (mais n'hésitez pas à demander à Zuna en attendant), mais en voici quelques unes assez indispensables :
 
 - Maintenir clic gauche appuyé quand on place une tile sur la map et déplacer la souris dans une direction répète la tile, utile pour les grandes surfaces constituées d'une seule tile répétée. Certaines tiles ne peuvent pas être répétées ; d'autres ne peuvent l'être que dans une seule direction (ex : les murs horizontaux ne peuvent être répétés qu'à l'horizontale, etc)
-- Double-clic sur une tile pour afficher ses propriétés : il y est par exemple possible de chanegr manuellement leur position et leur taille.
+- Double-clic sur une tile pour afficher ses propriétés : il y est par exemple possible de changer manuellement leur position et leur taille.
 
 Il est important de noter que certains tiles sont animées (toutes les frames de l'animation sont présentes côte à côte sur le tileset).
 
@@ -53,14 +55,14 @@ Ces types sont :
 
 Les autres ont des effets plus particuliers, et sont assez explicites :
 
-- Trous, piquants, eau profonde, lave : tiles qui auront chacune particulier sur les entités passant dessus, en particulier sur Link (tue les monstres directement, et inflige des dégâts à Link avant de le faire revenir en arrière).
+- Trous, piquants, eau profonde, lave : tiles qui auront chacune un effet particulier sur les entités passant dessus, en particulier sur Link (tue les monstres directement, et inflige des dégâts à Link avant de le faire revenir en arrière).
 - Eau peu profonde, herbe : Modifie un peu l'animation de Link et joue un son lorsqu'il marche dessus. 
 - Et qques autres un peu osef
 
 #### Couches
-En effet, les maps se sont pas des environements *entièrement* 2D : les tiles peuvent être à différentes hauteurs, symbolisées par des couches/layers. Toutes les tiles sont par défaut à la couche 0, mais on peut changer ça avec un simple clic-droit.  
-Le système est assez simple, les tiles de la couche 1 s'affiche toujours au dessus de la couche 0 (modifier l'ordre des tiles avec clic-droit -> mettre à l'arrière-plan / mettre au premier plan n'a d'effet qu'au sein d'une même couche : mettre à l'arriere plan une tile de la couche 1 l'affichera sous les tiles de la couche 1 mais au dessus de toutes les tiles de la couche 0)  
-Nous y reviendront dans la partie dédiée, mais les entités se trouvent toujours sur une couche : si Link de trouve sur une couche, il y restera tant qu'il y a une tile Traversable sous ses pieds à la même couche que lui ; s'il se retrouve sur un tile avec Vide comme type de terrain, ou juste un endroit sans tile, il "tombera" (descendra les couches jusqu'à retomber sur une tile non vide ou à la couche 0.  
+En effet, les maps se sont pas des environements *entièrement* 2D : les tiles peuvent être à différentes hauteurs, symbolisées par des couches/layers. Toutes les tiles sont par défaut à la couche 0, mais on peut changer ça avec un simple clic-droit sur la tile.  
+Le système est assez simple, les tiles de la couche 1 s'affiche toujours au dessus de la couche 0 (modifier l'ordre des tiles avec clic-droit -> mettre à l'arrière-plan / mettre au premier plan n'a d'effet qu'au sein d'une même couche : mettre à l'arriere plan une tile de la couche 1 l'affichera sous les autres tiles de la couche 1 mais au dessus de toutes les tiles de la couche 0)  
+Nous y reviendront dans la partie dédiée, mais les entités se trouvent toujours sur une couche : si Link de trouve sur une couche, il y restera tant qu'il y a une tile Traversable sous ses pieds à la même couche que lui ; s'il se retrouve sur un tile avec Vide comme type de terrain, ou juste un endroit sans tile, il "tombera" (descendra les couches jusqu'à retomber sur une tile non vide ou à la couche 0. Cela n'a pas d'effet in-game autre qu'un changement de couche, qui ne provoque par ailleurs aucun effet visible (en somme, si link tombe d'une couche à la couche d'en dessous, visuellement rien ne se passe sur le moment)
 
 (note: les entités sont toujours affichées au dessus des tiles de leur couche ; pour qu'une tile s'affiche par dessus Link, il faudra la placer sur une couche supérieure à celle où se trouvera Link)
 
@@ -73,26 +75,31 @@ Il existe de nombreux types d'entités, qui seront décrits plus tard.
 
 Pour placer des entités, cliquez simplement sur les icones correspondantes au dessus de l'aerçu de la map, puis placez les comme des tiles.
 ![Image indisponible](img/entities_icons.png)  
-Lorsque vous placez une entité, une fenêtre s'affiche, vous permettant de modifier ses propriétés, notament son nom, sa taille (rarement utile) ou le sprite qui y est associé.
+Lorsque vous placez une entité, une fenêtre s'affiche, vous permettant de modifier ses propriétés, notament son nom, sa taille (rarement utile) ou le sprite qui y est associé, ainsi que beaucoup d'autres propriétés spécifiques à chaque type d'entité.
 
+Il est à noter que les sprites des entités auront souvent un fonctionnement particulier, qui sera expliqué dans la partie Sprites.
 
 Les différents types d'entités sont : 
 
 ##### Hero
-Le personnage jouable, c'est à dire Link dans notre jeu. Cette entité existe toujours sur la map et est entièrement gérée par le jeu, vous n'avez donc pas beosin de la créer.
+Le personnage jouable, c'est à dire Link dans notre jeu. Cette entité existe toujours sur la map et est entièrement gérée par le jeu, vous n'avez donc pas besoin de la créer.
 
 ##### Destination
 Entité n'ayant aucun effet. Elles sont cependant très utiles dans la mesure où elles permettent de "marquer" une position : lorsque Link doit être téléporté (ce qui inclut surtout le moment où il arrive sur la map) il est généralement envoyé vers une destination. Il est donc important de donner des noms explicites aux destinations.  
 Note : il est possible d'indiquer qu'une destination est la detination par défaut de la map : elle sera utilisée si on téléporte Link vers cette map sans spécifier de destination.
 
-(note : il est possible de donner un sprite à une destination mais ce n'est généralement pas nécessaire)
+Une destination possède deux paramètres important : 
+- Une direciton, qui sera celle que link aura en étant téléporté à cette destination
+- Le comportement lié à la sauvegarde : vous pouvez choisir de faire en sorte que cette destination devienne le point de respawn de Link (l'endroit où il reviendra en mourrant, où si le joueur quitte le jeu) quand il y est téléporté. Par défaut, toutes les destinations feront ça.
+
+(note : il est possible de donner un sprite à une destination mais ce n'est généralement pas utile.)
 
 ##### Téléporteurs
 Si Link se trouve sur un téléporteur, il sera envoyé vers la map et à la destination spécifiées dans les propriétés. 
 Il est également possible de spécifier dans les propriétés le type de transition (fondu, immédiat ou scrolling. Le type scrolling est complexe à utiliser et nécessitera des explications supplémentaires).
-Ils seront généralement couplés avec une destination placée à peu près au même endroit. En effet, on les utilisera généralement pour une transition entre deux maps : par exemple, pour l'entrée d'une maison, à l'extérieur on mettra une destination nommée "maison\_to\_outdoor" et un téléporteur au niveau de la porte, une destination "from\_outdoor" et un téléporteur à l'entrée de la maison ; le téléporteur de dehors envoyant donc vers la map de la maison à la destination "from\_outdoor" et vice versa.
+Ils seront généralement couplés avec une destination placée à peu près au même endroit. En effet, on les utilisera généralement pour une transition entre deux maps : par exemple, pour l'entrée d'une maison, à l'extérieur on mettra une destination nommée "maison\_to\_outdoor" et un téléporteur au niveau de la porte, et à l'intérieur une destination "from\_outdoor" et un téléporteur à l'entrée de la maison ; le téléporteur de dehors envoyant donc vers la map de la maison à la destination "from\_outdoor" et vice versa.
 
-il est possible de donner un sprite à un téléporteur mais ce n'est généralement pas nécessaire)
+Il est possible de donner un sprite à un téléporteur mais ce n'est généralement pas nécessaire)
 
 ##### Trésor ramassable
 Un item que link obtiendra s'il le touche. Le concept d'item est très large dans Solarus, dépendant de la manière dont c'est codé ça peut désigner autant un objet de l'inventaire qu'un réceptacle de coeur ou un rubis.
@@ -107,15 +114,15 @@ Les items que peuvent représenter les trésors ramassables regroupent :
 - Les fragments/réceptacles de coeur
 - Les clés
 
-(note : on ne donne pas de sprite à un trésor, le sprite de cette entité correspondant toujours à celui associé à l'item en question)
+(note : on ne donne pas de sprite à un trésor, le sprite de cette entité est toujours celui associé à l'item en question)
 
 ##### Destructible
 Objet pouvant être détruit par Link, comme un buisson coupable à l'épée par exemple.     
 En plus du sprite, il existe de nombreux paramètres pour les destructibles :
 
 - La manière de le détruire (s'il est possible de le détruire avec une explosion, avec l'épée, etc)
-- S'il est possible de le soulever (Link peut en effet soulever et porter certains éléments du décor)
-- S'il doit possède un type de terrain : si le destructible doit se comporter comme un terrain particulier (Voir "Tiles>Terrain). Ainsi si cette propriété est "mur", le destructible ne sera pas traversable.
+- S'il est possible de le soulever (Link peut en effet soulever et porter certains éléments du décor, à partir du moment où il possède le bracelet de force)
+- S'il possède un type de terrain : si le destructible doit se comporter comme un terrain particulier (Voir "Tiles>Terrain"). Ainsi si cette propriété est "mur", le destructible ne sera pas traversable.
 - Et évidemment, son sprite.
 
 ##### Coffre
@@ -123,36 +130,43 @@ Objet contenant un trésor, spécifié dans les propriétés (avec sa variante),
 Il existe plusieurs modes d'ouverture : 
 
 - "Par le héros" : Link peut l'ouvrir à tout moment
-- "Par le héro, item nécessaire" : Link peut l'ouvrir s'il possède un certain item (si l'item en question gère la possession, ce qui inclut les petites clés ou les items d'inventaire mais pas les rubis ou les fragments de coeurs, qui ne sont pas réellement possédés par Link). Cocher "retirer/décrémenter l'item" enlèvera cet item à Link (pour les objets uniques comme les objets d'inventaire) ou lui en retirera un (pour les items dont Link possède une certaine quantité, comme les clés).
+- "Par le héro, item nécessaire" : Link peut l'ouvrir s'il possède un certain item (si l'item en question gère la possession, ce qui inclut les petites clés ou les items d'inventaire mais pas les rubis ou les fragments de coeurs, qui ne sont pas réellement possédés par Link). Cocher "retirer/décrémenter l'item" enlèvera cet item à Link (pour les objets uniques comme les objets d'inventaire) ou lui en retirera un (pour les items dont Link possède une certaine quantité, comme les clés). Voir la partie "Items et sauvegarde".
 - "Par le héros, variable sauvegardée nécessaire" : ouvrable seulement si une certaine "variable sauvegardée" est présente dans la sauvegarde. Les variables sauvegardées sont gérées de différents manières par le code, et peuvent représenter n'importe quel élément qui doit être sauvegardé (et qui n'est pas un item). Cette option doit donc être utilisée si Link ne peut ouvrir le coffre qu'à une condition qui n'est pas liée à un item : généralement, à voir avec les codeurs. 
 
 ##### Enemi
 Un enemi (no shit sherlock). Il faudra spécifier le "modèle d'enemi" (quel enemi c'est, en gros), et éventuellement la direction vers laquelle il regarde au lancement de la map.
-Les enemis sont généralement réinitialiés (et donc réapparaissent s'ils ont été tués) quand on change de map ou qu'on ferme le jeu : l'option "sauvegarder l'état" permet de ne pas les faire réapparaître, utile pour les boss surtout.
+Les enemis sont généralement réinitialiés (et donc réapparaissent s'ils ont été tués) quand on change de map ou qu'on ferme le jeu : l'option "sauvegarder l'état" permet de ne pas les faire réapparaître, utile pour les boss surtout. Il faut alors associer l'enemi à une variable de sauvegarde (voir la partie "Items et sauvegarde").
 
 (note : on ne donne pas de sprite à un enemi, son script s'occupera de créer un sprite)
 
 ##### PNJ
 Un personnage avec qui Link pourra généralement interagir. Outre le sprite et la direction, il faudra spécifier l'effet de l'interaction, parmi 3 options :
 
-- Le souvent, "afficher un dialogue" en indiquand le nom du dialogue (les dialogues sont indiqués dans le fichier `languages/<langue>/dialogs` dans l'arborescence à gauche de l'éditeur), pour les PNJ qui n'ont qu'un simple dialogue.
+- Le souvent, "afficher un dialogue" en indiquand le nom du dialogue (voir la partie "Dialogues"), pour les PNJ qui n'ont qu'un simple dialogue.
 - "Appeler le script de la map" lancera une fonction définie dans le script de la map. Utile pour des PNJ plus complexe ou dont le dialogue évolue souvent (il faudra évidemment voir avec les codeurs pour implémenter ce PNJ dans le script de la map)
 - Appeler le script d'un item : pas compris l'utilité, n'utilisez jamais ça
 
 ##### Séparateurs
-Tehniquement, les séparateurs agissent comme "un obstacle pour la caméra" (c'est à dire la zone affichée à l'écran, qui doit suivre Link=. D'un point de vue plus pratique, un séparateur est une ligne que la caméra ne peut pas traverser, sauf si Link la traverse, auquel cas la caméra passera de l'autre côté avec une petite animation de scrolling.  
+Tehniquement, les séparateurs agissent comme "un obstacle pour la caméra" (c'est à dire la zone affichée à l'écran, qui doit suivre Link). D'un point de vue plus pratique, un séparateur est une ligne que la caméra ne peut pas traverser, sauf si Link la traverse, auquel cas la caméra passera de l'autre côté avec une petite animation de scrolling.
 
 (Lorsque Link vient de traverser un séparateur, sa position est sauvegardée en tant que "safe position" : c'est ici qu'il sera ramené s'il tombe dans un trou/lave/etc. Pour que le jeu ne change pas la "safe position" quand Link traverse un séparateur, il faut appliquer la propriété `no_save` au séparateur ; voir partie Map Features)
 
 ##### Capteurs
 Un capteur est une entité qui s'activera quand link passera dessus. L'activation n'a pas d'effet direct par défaut, mais est utilisable par le script de la map, ou par les *map features* (voir partie dédiée).  
-Lorsque Link quitte le capteur, il n'est plus considéré comme activé : pour qu'un capteur reste activé après le départ de Link, lui appliquer la propriété "persistent" (voir partie Map Features)
+Lorsque Link quitte le capteur, il n'est plus considéré comme activé : pour qu'un capteur reste activé après le départ de Link, lui appliquer la propriété "persistent" (voir partie Map Features).  
+Les capteurs sont invisibles et ne possèdent pas de sprite.
 
 ##### Blocs
-Les blocs sont des entités immobiles, considérés comme des murs, et que Link peut pousser ou tirer (il est possible de spécifier si Link peut tirer ou pousser dans les propriétés de l'entité). Les blocs poussables présents dans tous les Zelda 2D, en gros.
+Les blocs sont des entités immobiles, considérés comme des murs, et que Link peut pousser ou tirer (il est possible de spécifier si Link peut tirer ou pousser dans les propriétés de l'entité). Les blocs poussables présents dans tous les Zelda 2D, en gros. 
+Il est possible de spécifier une direction, auquel cas le bloc ne pourra être poussé/tiré que dans cette direction. Les blocs se déplacent par à-coup, de 16 pixels dans une direction à chaque fois. Il est possible de spécifier le nombre de déplacement max qu'un bloc peut effectuer, anquel cas une fois que le bloc aura été poussé/tiré n fois (de 16 pixels à chaque fois donc), il se bloquera.
 
 ##### Interrupteurs 
-Entité qu'il est possible d'activer. Par défaut elle s'active si Link marche dessus, mais il est possible d'indiquer dans les propriétés que l'interrupteur ne s'active que si un bloc est posé dessus).  
+Entité qu'il est possible d'activer. 
+Il existe plusieurs types d'interrupteurs.
+- Walkable : se comporte comme les Capteurs (mais avec un sprite).
+- Arrow target : pas spécialement utile.
+- Solid : se comporte comme un mur, et s'active quand link l'attaque (peut importe la manière).
+
 De même que pour les capteurs, l'activation n'a pas d'effet direct par défaut, mais est utilisable par le script de la map, ou par les *map features* (voir partie dédiée).  
 
 ##### Entités custom
@@ -161,10 +175,12 @@ Une entité programmable : plus précisément, elle n'a aucun effet mais peut av
 Les scripts disponibles (et utiles pour le mapping) sont : 
 
 - interaction_box : Doit être liée à une autre entité "cible" avec laquelle il est possible d'interagir, comme un PNJ, en lui donnant la propriété `target : <nom de l'entité cible>` (voir partie Propriétés Custom plus bas). Lorsque Link interagira avec cette entité, ce sera comme si il avait interagi avec l'entité cible.  
-Utilisation typique : en placer une sur un objet du décor et la lier à un PNJ pour déclencher le dialogue de ce PNJ lorque Link interagit avec l'objet.
+Utilisation typique : en placer une sur un objet du décor et la lier à un PNJ pour déclencher le dialogue de ce PNJ lorque Link interagit avec l'objet.  
+Note : lier une interaction box à une switch fera qu'interagir avec l'interaction box activera le switch.
 - platform : Une plateforme mouvante. Une plateforme (donc une zone solide sur laquelle Link peut marcher) en mouvement. Sa direction de déplacement doit être indiquée en lui donnant la propriété `direction : <ID de la direction>` (les ID de directions vont de 0 pour la droite à 3 pour le bas). Elle s'arrête en touchant un mur.
 (il est important de spécifier un sprite, sinon il s'agira simplement d'une plateforme invisible. Elle prendra la taille du sprite)
 - dungeon\_statue\_eye : A placer sur les statues à l'entrée du donjon. Affiche simplement un oeil regardant vers Link.
+
 
 ### Propriétés Custom
 Il est possible d'affecter des propriétés particulières aux entités, avec le nom qu'on veut. C'est d'ailleurs nécessaire pour contrôler les fonctionnement de la plupart des entités custom.
@@ -224,5 +240,4 @@ Les conditions supportés pour l'instant sont :
 - Entités liées au scénario : dans Fallen Realm, l'avancement de la quête est représenté par une valeur numérique appelée story state (je ferai un document qui explique en détail le déroulement de la quête prochainement, la valeur correspondant à chaque étape sera expliqué).  
 La propriété `min_story_state : n` fera qu'une entité n'apparaît que si le story state est de n au moins.  
 La propriété `max_story_state : n` fera qu'une entité n'apparaît que si le story state est de n au plus.  
-
-	
+La propriété `is_story_state : n` fer qu'une entité n'apparaît que si le storsy state est de n exactement.
