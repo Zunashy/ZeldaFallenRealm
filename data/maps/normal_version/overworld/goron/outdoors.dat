@@ -28,16 +28,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 304,
-  y = 112,
-  width = 16,
-  height = 32,
-  pattern = "1_3",
-  tileset = "normal_world_v2",
-}
-
-tile{
-  layer = 1,
   x = 352,
   y = 40,
   width = 96,
@@ -1020,26 +1010,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 336,
+  x = 352,
   y = 320,
-  width = 32,
-  height = 16,
-  pattern = "95",
-}
-
-tile{
-  layer = 1,
-  x = 336,
-  y = 288,
-  width = 16,
-  height = 16,
-  pattern = "95",
-}
-
-tile{
-  layer = 1,
-  x = 288,
-  y = 288,
   width = 16,
   height = 16,
   pattern = "95",
@@ -2238,16 +2210,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 280,
-  y = 288,
-  width = 8,
-  height = 8,
-  pattern = "65",
-  tileset = "normal_world",
-}
-
-tile{
-  layer = 1,
   x = 304,
   y = 288,
   width = 8,
@@ -2263,16 +2225,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "65",
-  tileset = "normal_world",
-}
-
-tile{
-  layer = 1,
-  x = 352,
-  y = 288,
-  width = 8,
-  height = 16,
-  pattern = "65_2",
   tileset = "normal_world",
 }
 
@@ -2420,7 +2372,7 @@ tile{
   layer = 1,
   x = 272,
   y = 296,
-  width = 8,
+  width = 16,
   height = 8,
   pattern = "50_2",
   tileset = "normal_world",
@@ -2553,16 +2505,6 @@ tile{
   width = 8,
   height = 32,
   pattern = "65",
-  tileset = "normal_world",
-}
-
-tile{
-  layer = 1,
-  x = 344,
-  y = 304,
-  width = 8,
-  height = 8,
-  pattern = "50",
   tileset = "normal_world",
 }
 
@@ -2729,28 +2671,18 @@ tile{
 tile{
   layer = 1,
   x = 288,
-  y = 312,
+  y = 304,
   width = 8,
-  height = 24,
+  height = 32,
   pattern = "65_2",
   tileset = "normal_world",
 }
 
 tile{
   layer = 1,
-  x = 296,
+  x = 352,
   y = 312,
-  width = 8,
-  height = 8,
-  pattern = "65",
-  tileset = "normal_world",
-}
-
-tile{
-  layer = 1,
-  x = 344,
-  y = 312,
-  width = 24,
+  width = 16,
   height = 8,
   pattern = "50_2",
   tileset = "normal_world",
@@ -3148,16 +3080,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 280,
-  y = 296,
-  width = 8,
-  height = 8,
-  pattern = "64_2",
-  tileset = "normal_world",
-}
-
-tile{
-  layer = 1,
   x = 384,
   y = 296,
   width = 8,
@@ -3199,26 +3121,6 @@ tile{
 tile{
   layer = 1,
   x = 232,
-  y = 304,
-  width = 8,
-  height = 8,
-  pattern = "64",
-  tileset = "normal_world",
-}
-
-tile{
-  layer = 1,
-  x = 288,
-  y = 304,
-  width = 8,
-  height = 8,
-  pattern = "1_6",
-  tileset = "normal_world",
-}
-
-tile{
-  layer = 1,
-  x = 296,
   y = 304,
   width = 8,
   height = 8,
@@ -4177,15 +4079,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 336,
-  y = 320,
-  width = 16,
-  height = 16,
-  pattern = "167_8",
-}
-
-tile{
-  layer = 1,
   x = 368,
   y = 288,
   width = 16,
@@ -4857,7 +4750,7 @@ tile{
   layer = 1,
   x = 248,
   y = 288,
-  width = 24,
+  width = 16,
   height = 8,
   pattern = "50",
 }
@@ -5909,7 +5802,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 304,
+  x = 296,
   y = 64,
   width = 16,
   height = 40,
@@ -5919,7 +5812,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 304,
+  x = 296,
   y = 104,
   width = 16,
   height = 8,
@@ -5929,9 +5822,9 @@ tile{
 
 tile{
   layer = 1,
-  x = 320,
+  x = 304,
   y = 112,
-  width = 16,
+  width = 32,
   height = 48,
   pattern = "96",
 }
@@ -7335,6 +7228,89 @@ tile{
   pattern = "202_5",
 }
 
+tile{
+  layer = 1,
+  x = 296,
+  y = 112,
+  width = 16,
+  height = 32,
+  pattern = "1_3",
+  tileset = "normal_world_v2",
+}
+
+tile{
+  layer = 1,
+  x = 720,
+  y = 176,
+  width = 32,
+  height = 32,
+  pattern = "16_7",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 272,
+  width = 32,
+  height = 32,
+  pattern = "16_6",
+}
+
+tile{
+  layer = 1,
+  x = 552,
+  y = 176,
+  width = 32,
+  height = 32,
+  pattern = "16_8",
+}
+
+tile{
+  layer = 1,
+  x = 424,
+  y = 160,
+  width = 32,
+  height = 32,
+  pattern = "16_6",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 160,
+  width = 32,
+  height = 32,
+  pattern = "16_7",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 288,
+  width = 8,
+  height = 48,
+  pattern = "65_3",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 288,
+  width = 8,
+  height = 48,
+  pattern = "65_4",
+}
+
+tile{
+  layer = 1,
+  x = 344,
+  y = 320,
+  width = 8,
+  height = 16,
+  pattern = "65",
+  tileset = "normal_world",
+}
+
 separator{
   layer = 1,
   x = 0,
@@ -7427,7 +7403,7 @@ destination{
   name = "dungeon_4",
   layer = 1,
   x = 400,
-  y = 85,
+  y = 77,
   direction = 1,
 }
 
@@ -7474,6 +7450,16 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "normal_version/overworld/goron/indoors/house_1",
+}
+
+teletransporter{
+  layer = 1,
+  x = 392,
+  y = 56,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_04/rdc",
+  destination = "entrance",
 }
 
 tile{
