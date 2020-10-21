@@ -526,6 +526,325 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "23",
+  ground = "wall",
+  default_layer = 0,
+  x = 208,
+  y = 32,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "24",
+  ground = "wall",
+  default_layer = 0,
+  x = 208,
+  y = 16,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "24_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 224,
+  y = 16,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "24_3",
+  ground = "wall",
+  default_layer = 0,
+  x = 224,
+  y = 0,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "24_4",
+  ground = "wall",
+  default_layer = 0,
+  x = 208,
+  y = 0,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "25",
+  ground = "wall",
+  default_layer = 0,
+  x = 112,
+  y = 160,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "25_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 144,
+  y = 160,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "25_3",
+  ground = "wall",
+  default_layer = 0,
+  x = 144,
+  y = 192,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "25_4",
+  ground = "wall",
+  default_layer = 0,
+  x = 112,
+  y = 192,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "25_5",
+  ground = "wall",
+  default_layer = 0,
+  x = 160,
+  y = 192,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "25_6",
+  ground = "wall",
+  default_layer = 0,
+  x = 192,
+  y = 160,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "25_7",
+  ground = "wall",
+  default_layer = 0,
+  x = 192,
+  y = 192,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "25_8",
+  ground = "wall",
+  default_layer = 0,
+  x = 160,
+  y = 160,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "26",
+  ground = "wall",
+  default_layer = 0,
+  x = 128,
+  y = 160,
+  width = 16,
+  height = 16,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "26_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 128,
+  y = 192,
+  width = 16,
+  height = 16,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "26_3",
+  ground = "wall",
+  default_layer = 0,
+  x = 176,
+  y = 192,
+  width = 16,
+  height = 16,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "26_4",
+  ground = "wall",
+  default_layer = 0,
+  x = 176,
+  y = 160,
+  width = 16,
+  height = 16,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "27",
+  ground = "wall",
+  default_layer = 0,
+  x = 112,
+  y = 176,
+  width = 16,
+  height = 16,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "27_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 144,
+  y = 176,
+  width = 16,
+  height = 16,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "27_3",
+  ground = "wall",
+  default_layer = 0,
+  x = 192,
+  y = 176,
+  width = 16,
+  height = 16,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "27_4",
+  ground = "wall",
+  default_layer = 0,
+  x = 160,
+  y = 176,
+  width = 16,
+  height = 16,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "28",
+  ground = "wall",
+  default_layer = 0,
+  x = 128,
+  y = 184,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "28_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 128,
+  y = 176,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "28_3",
+  ground = "wall",
+  default_layer = 0,
+  x = 136,
+  y = 184,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "28_4",
+  ground = "wall",
+  default_layer = 0,
+  x = 136,
+  y = 176,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "28_5",
+  ground = "wall",
+  default_layer = 0,
+  x = 184,
+  y = 176,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "28_6",
+  ground = "wall",
+  default_layer = 0,
+  x = 184,
+  y = 184,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "28_7",
+  ground = "wall",
+  default_layer = 0,
+  x = 176,
+  y = 184,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "28_8",
+  ground = "wall",
+  default_layer = 0,
+  x = 176,
+  y = 176,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
   id = "2_2",
   ground = "wall",
   default_layer = 0,
