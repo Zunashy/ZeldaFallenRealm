@@ -79,7 +79,14 @@ Lorsque vous placez une entité, une fenêtre s'affiche, vous permettant de modi
 
 Il est à noter que les sprites des entités auront souvent un fonctionnement particulier, qui sera expliqué dans la partie Sprites.
 
-Les différents types d'entités sont : 
+### Propriétés Custom
+Outre les propriétés de base des entités (nom, taille, position) et les propriétés spécifiques à chaque type d'entité, il est possible d'affecter des propriétés particulières aux entités, avec le nom qu'on veut. C'est d'ailleurs nécessaire pour contrôler les fonctionnement de certaines entités.  
+Pour cela, il faut regarder la partie "propriétés utilisateur", en bas de la fenêtre de configuration des entités, cliquer sur le "+" vert, et spécifier le nom de la propriété et sa valeur. En effet, une propriété custom est composée d'un nom et d'une valeur (les deux étants des textes).  
+Dans ce guide, je présenterai généralement les propriété avec le format `nom : valeur`. Si la valeur contient un élément entre brackets `<>`, il est à comprendre qu'il faut remplacer cette partie (incluant les brackets) par ce qui est décrit à l'intérieur.
+
+Les propriétés custom n'ont aucun effet *par défaut* dans solarus, mais Fallen Realm possède des scripts qui donnent certains effets à certains propriéts particulères.  
+
+### Les différents types d'entités
 
 ##### Hero
 Le personnage jouable, c'est à dire Link dans notre jeu. Cette entité existe toujours sur la map et est entièrement gérée par le jeu, vous n'avez donc pas besoin de la créer.
@@ -106,13 +113,15 @@ Un item que link obtiendra s'il le touche. Le concept d'item est très large dan
 Les trésors sont en réalité rarement placés directement sur la map (+ souvent drop par des enemis ou trouvés dans un coffre).  
 Lorsque vous placez un trésor, vous devez choisir l'item dont il s'agit, mais également sa variante. La variante peut avoir de nombreuses significations (pour un rubis : sa couleur, pour l'épée, son niveau, etc). Des informations sur les différents items (dont la significations de leurs variantes) sont disponibles sur le google doc.
 
-Les items que peuvent représenter les trésors ramassables regroupent :  
+Les items que peuvent représenter les trésors ramassables regroupent par exemple :  
 
 - Les items utilisables (dont l'épée)
 - Les rubis
 - Les coeurs
 - Les fragments/réceptacles de coeur
 - Les clés
+
+Il est également possible de spécifier que l'état du trésor est sauvegardé, et d'y associer une variable de sauvegarde : cela fera en sorte que le trésor ne réapparaitra pas (CàD, ne spawnera plus si la map est chargée) une fois récupéré.  (la variable de sauvegarde sera donc utilisée pour conserver l'état de ce trésor s'il a déjà été acheté ; voir la partie Item et sauvegarde).  Ce sera généralement le cas pour les items placés directement sur la map, tandis que les trésors ramassables qui ne sont pas sauvegardés seront surtout ceux générés par solarus, comme les items droppés par les enemis ou les buissons par exemple.
 
 (note : on ne donne pas de sprite à un trésor, le sprite de cette entité est toujours celui associé à l'item en question)
 
@@ -125,6 +134,8 @@ En plus du sprite, il existe de nombreux paramètres pour les destructibles :
 - S'il possède un type de terrain : si le destructible doit se comporter comme un terrain particulier (Voir "Tiles>Terrain"). Ainsi si cette propriété est "mur", le destructible ne sera pas traversable.
 - Et évidemment, son sprite.
 
+Il est possible d'appliquer la propriété `savegame_variable : <variable>` à un destructible, ce qui aura pour effet de conserver son état, c'est à dire qu'une fois détruit (coupé, soulevé puis lancé, etc, selon sa configuration) le destructible ne réapparaitra pas (son état sera conservé dans la variable spécifiée, voir partie Items et Sauvegarde)
+
 ##### Coffre
 Objet contenant un trésor, spécifié dans les propriétés (avec sa variante), que Link obtiendra en l'ouvrant.  
 Il existe plusieurs modes d'ouverture : 
@@ -132,6 +143,8 @@ Il existe plusieurs modes d'ouverture :
 - "Par le héros" : Link peut l'ouvrir à tout moment
 - "Par le héro, item nécessaire" : Link peut l'ouvrir s'il possède un certain item (si l'item en question gère la possession, ce qui inclut les petites clés ou les items d'inventaire mais pas les rubis ou les fragments de coeurs, qui ne sont pas réellement possédés par Link). Cocher "retirer/décrémenter l'item" enlèvera cet item à Link (pour les objets uniques comme les objets d'inventaire) ou lui en retirera un (pour les items dont Link possède une certaine quantité, comme les clés). Voir la partie "Items et sauvegarde".
 - "Par le héros, variable sauvegardée nécessaire" : ouvrable seulement si une certaine "variable sauvegardée" est présente dans la sauvegarde. Les variables sauvegardées sont gérées de différents manières par le code, et peuvent représenter n'importe quel élément qui doit être sauvegardé (et qui n'est pas un item). Cette option doit donc être utilisée si Link ne peut ouvrir le coffre qu'à une condition qui n'est pas liée à un item : généralement, à voir avec les codeurs. 
+
+Il est également possible de spécifier que l'état du trésor est sauvegardé, et d'y associer une variable de sauvegarde : cela fera en sorte que le trésor ne pourra plus être obtenu (CàD, le coffre ne contiendra rien si la map est chargée à nouveau) une fois le coffre ouvert une fois. (la variable de sauvegarde sera donc utilisée pour conserver l'état de ce trésor s'il a déjà été acheté ; voir la partie Item et sauvegarde). Ce sera généralement le cas, étant donné qu'un coffre dont l'état n'est pas sauvegardé peut être ouvert (et son trésor récupéré) à l'infini, ce qui est rarement pertinent.
 
 ##### Enemi
 Un enemi (no shit sherlock). Il faudra spécifier le "modèle d'enemi" (quel enemi c'est, en gros), et éventuellement la direction vers laquelle il regarde au lancement de la map.
@@ -144,17 +157,22 @@ Un personnage avec qui Link pourra généralement interagir. Outre le sprite et 
 
 - Le souvent, "afficher un dialogue" en indiquand le nom du dialogue (voir la partie "Dialogues"), pour les PNJ qui n'ont qu'un simple dialogue.
 - "Appeler le script de la map" lancera une fonction définie dans le script de la map. Utile pour des PNJ plus complexe ou dont le dialogue évolue souvent (il faudra évidemment voir avec les codeurs pour implémenter ce PNJ dans le script de la map)
-- Appeler le script d'un item : pas compris l'utilité, n'utilisez jamais ça
+- Appeler le script d'un item : pas compris l'utilité, n'utilisez jamais ça  
+
+Lorque Link interagit avec un PNJ, son sprite est automatiquement tourné vers Link (c'est à dire, sa direcion changée en celle depuis Link interagit).  
+D'autres changements sont automatiquements apportés au sprite du PNJ en fonction des actions qui lui sont appliquées via la script de la map. Ce fonctionnement est décrit plus en détail dans la partie Sprite.
 
 ##### Séparateurs
 Tehniquement, les séparateurs agissent comme "un obstacle pour la caméra" (c'est à dire la zone affichée à l'écran, qui doit suivre Link). D'un point de vue plus pratique, un séparateur est une ligne que la caméra ne peut pas traverser, sauf si Link la traverse, auquel cas la caméra passera de l'autre côté avec une petite animation de scrolling.
 
-(Lorsque Link vient de traverser un séparateur, sa position est sauvegardée en tant que "safe position" : c'est ici qu'il sera ramené s'il tombe dans un trou/lave/etc. Pour que le jeu ne change pas la "safe position" quand Link traverse un séparateur, il faut appliquer la propriété `no_save` au séparateur ; voir partie Map Features)
+(Lorsque Link vient de traverser un séparateur, sa position est sauvegardée en tant que "safe position" : c'est ici qu'il sera ramené s'il tombe dans un trou/lave/etc. Pour que le jeu ne change pas la "safe position" quand Link traverse un séparateur, il faut appliquer la propriété `no_save` (avec nimporte quelle valeur) au séparateur ; voir partie Map Features)
 
 ##### Capteurs
 Un capteur est une entité qui s'activera quand link passera dessus. L'activation n'a pas d'effet direct par défaut, mais est utilisable par le script de la map, ou par les *map features* (voir partie dédiée).  
 Lorsque Link quitte le capteur, il n'est plus considéré comme activé : pour qu'un capteur reste activé après le départ de Link, lui appliquer la propriété "persistent" (voir partie Map Features).  
 Les capteurs sont invisibles et ne possèdent pas de sprite.
+
+Si un capteur possède la propriété `savegame_variable : <variable>`, il ne sera jamais activé si la variable spécifiée est présente (voir Items et Sauvegardes). Cependant, l'activation du capteur n'affecte pas l'état de cette variable. 
 
 ##### Blocs
 Les blocs sont des entités immobiles, considérés comme des murs, et que Link peut pousser ou tirer (il est possible de spécifier si Link peut tirer ou pousser dans les propriétés de l'entité). Les blocs poussables présents dans tous les Zelda 2D, en gros. 
@@ -169,75 +187,105 @@ Il existe plusieurs types d'interrupteurs.
 
 De même que pour les capteurs, l'activation n'a pas d'effet direct par défaut, mais est utilisable par le script de la map, ou par les *map features* (voir partie dédiée).  
 
+```
+NOTE : On arrive ici à la fin de la partie "basique" du mapping Solarus. Tout ce que vous venez de lire vous permet de construire n'importe quelle map, mais sans réel fonctionnement avancé ; la suite de ce guide décrira les fonctionnalités propres à Fallen Realm qui permettent d'implémenter un fonctionnement complexe à votre map.
+```
+
 ##### Entités custom
 Une entité programmable : plus précisément, elle n'a aucun effet mais peut avoir son propre script ou juste être utilisée par celui de la map. Il est possible (mais pas obligatoire) d'indiquer un sprite et surtout un script.
 
+
+
 Les scripts disponibles (et utiles pour le mapping) sont : 
 
-- interaction_box : Doit être liée à une autre entité "cible" avec laquelle il est possible d'interagir, comme un PNJ, en lui donnant la propriété `target : <nom de l'entité cible>` (voir partie Propriétés Custom plus bas). Lorsque Link interagira avec cette entité, ce sera comme si il avait interagi avec l'entité cible.  
+- interaction_box : Doit être liée à une autre entité "cible" avec laquelle il est possible d'interagir, comme un PNJ, en lui donnant la propriété `target : <nom de l'entité cible>`. Lorsque Link interagira avec cette entité, ce sera comme si il avait interagi avec l'entité cible.  
 Utilisation typique : en placer une sur un objet du décor et la lier à un PNJ pour déclencher le dialogue de ce PNJ lorque Link interagit avec l'objet.  
-Note : lier une interaction box à une switch fera qu'interagir avec l'interaction box activera le switch.
+Note : lier une interaction box à un switch fera qu'interagir avec l'interaction box activera le switch.
 - platform : Une plateforme mouvante. Une plateforme (donc une zone solide sur laquelle Link peut marcher) en mouvement. Sa direction de déplacement doit être indiquée en lui donnant la propriété `direction : <ID de la direction>` (les ID de directions vont de 0 pour la droite à 3 pour le bas). Elle s'arrête en touchant un mur.
 (il est important de spécifier un sprite, sinon il s'agira simplement d'une plateforme invisible. Elle prendra la taille du sprite)
 - dungeon\_statue\_eye : A placer sur les statues à l'entrée du donjon. Affiche simplement un oeil regardant vers Link.
+- unstable_ground : entité se comportant comme un sol traversable, à la différence qu'elle commence à trembler si link y reste 1.5s, et disparait 1.5s après avoir commencé à trembler, même si link n'y est plus. De même que pour la plateforme, il est nécessaire d'y associer un sprite.
+- shop_item : Item achetable. Il est nécessaire d'y associer 3 propriétés custom : 
+	- `item : <nom_item>` : le nom d'un item, qui sera obtenu à l'achat (voir la partie Item et sauvegarde)
+	- `variant : <variante>` : la variante de l'item qui sera obtenue.
+	- `price : <prix>` : le nombre de rubis que coute l'item (qui sera donc retiré au compteur de rubis à l'achat).   
 
+	Il est existe également une quatrième propriété, `savegame_variable : <nom_de_variable>`, qui associera ce shop item à une variable de sauvegarde, ce qui aura pour effet que l'item ne pourra être acheté qu'une seule fois (la variable de sauvegarde sera donc utilisée pour conserver l'état de ce shop item s'il a déjà été acheté ; voir la partie Item et sauvegarde.)
 
-### Propriétés Custom
-Il est possible d'affecter des propriétés particulières aux entités, avec le nom qu'on veut. C'est d'ailleurs nécessaire pour contrôler les fonctionnement de la plupart des entités custom.
-Pour cela, il faut regarder la partie "propriétés utilisateurs", en bas de la fenêtre de configuration des entités, cliquer sur le "+" vert, et spécifier le nom de la propriété et sa valeur.  
-Dans ce guide, je présenterai généralement les propriété avec le format `nom : valeur`.
+- npc : entité au fonctionnement similaire à celui des PNJ, à quelques exceptions près.
+Premièrement, solarus gère automatiquement le fonctionnement du sprite des PNJ normaux (changements d'animations, etc, tel quel mentionné plus haut), mais pas celui des entités custom de type npc.  
+Cette entité conserve cependant, du comportement des sprites de PNJ, le changement du direction si Link interagit avec, *sauf* si l'entité possède la propriété `no_turn` (peu importe la valeur).  
+Pour définir un dialogue qui s'affichera automatiquement quand Link interagira avec cette entité, (comme pour les PNJs normaux avec l'option "afficher un dialogue" donc), il faut lui affecter la propriété `dialog : <nom dialogue>`.
 
-Outre les entités custom, il peut être utile d'affecter des propriétés custom à d'autres types d'entité pour activer certaines fonctionnalités que j'ai créés pour le jeu, les *map features*.
+- pickable : entité au fonctionnement similaire à celui des Trésors ramassables, à quelques exceptions près.  
+Premièrement, le paramétrage du trésor (item, variante et variable de sauvegarde) se fait via les proprités custom `item`, `variant` et `savegame_variable` (exactement comme por le shop item).  
+Ensuite, il es possible de lui donner un effet, qui se déclenchera lorsque Link la ramassera, via la propriété `on_obtained : <event string>`. "event string" désigne l'effet en question, décrit d'une manière expliquée dans la section [Event Strings](#event-string) plus bas.  
+(Pour les programmeurs : de plus, du côté du script, cette entité possède un callback `on_obtained`, contrairement aux pickables de base) 
+
+- poisoned_water : entité à placer par dessus les tiles d'eau empoisonée (qui ne sont que purement décoratives sans cette entité), et qui inflige régulièrement des dégats à Link tant qu'il se trouve dans cette entité.
+
+- pull_lever : Levier à tirer. Bon franchement lui il est compliqué ce serait trop long à expliquer ici.
 
 ### Map features
 
-La plupart du temps, il s'agit d'affecter une propriété à une entité afin de modifier son comportement. Elles sont surtout utile pour "programmer" le fonctionnement des donjons, mais sont utiles dans beaucoup d'autres situation. 
-A noter que les map features ne sont pas activées par défaut, pour pouvoir utiliser une map feature sur une map il faudra généralement `on_started_` de son code. 
-(on accède au code d'une map en cliquant sur l'icone en haud à droite des propriétés de la map. Il suffit alors d'ajouter la ligne entre `function on_started_()` et `end`)
+Les map features sont simplement les fonctionnalités que j'ai ajouté à celles de solarus concernant les maps et les entités.
+
+La plupart du temps, il s'agit d'affecter une propriété à une entité afin de modifier son comportement. Elles sont surtout utile pour "programmer" le fonctionnement des donjons, mais aussi dans beaucoup d'autres situation.  
+Il est à noter que la plupart des map features doivent être activées dans le code, via une fonction à appeler au chargement de la map. Voir la section dédiée à l'API des maps pour plus d'informations ... ou simplement avec les codeurs. Ces fonctions seront mentionnées dans ce guide, mais n'y prêtez pas attention si vous ne comptez pas toucher au code.
 
 Les maps features disponibles actuellement sont les suivantes : 
 
-- **Group Loot** : il est possible de faire en sorte que Link doive tuer tout un groupe d'enemi pour loot un item (le dernier enemi à mourir droppera l'item). Pour cela, ajouter la propriété `group_loot : nom_de_l'item#variante$variable` à tous les enemis du groupe. (le `#variante` est inutile si l'item n'a pas plusieurs variantes). La `variable` est la variable de sauvegarde dans laquelle sera conservée l'état du trésor : s'il y en a une et que le joueur sauvegarde après avoir obtenu le trésor, il ne réapparaitra pas (à utiliser pour les drops uniques)
+- **Group Loot** : il est possible de faire en sorte que Link doive tuer tout un groupe d'enemi pour loot un item (le dernier enemi à mourir droppera l'item). Pour cela, ajouter la propriété `group_loot : <nom_de_l'item>#<variante>$<variable>` à tous les enemis du groupe. (le `#variante` est inutile si l'item n'a pas plusieurs variantes). La `variable` est la variable de sauvegarde dans laquelle sera conservée l'état du trésor : s'il y en a une, le trésor ne réapparaitra pas (à utiliser pour les drops uniques).
 L'item spécifié ne sera drop que lorsque tous les enemis avec la propriété `group_loot` avec la même valeur auront été tués. Par la même valeur j'entends bien le **même texte** comme valeur de la propriété, pas juste le même item : un enemi avec `group_loot : rupee#1` et un autre avec `group_loot : rupee#3` ne fonctionneront pas entre eux.  
-Exemple : Les 3 moblins devant le donjon 1 (sur la plage) possèdent la propriété `groop_loot : great_key`, ce qui signifie que quand le dernier est tué, il drop la grande clé.
+*Exemple : si trois moblins possèdent la propriété `group_loot : rupee#3$map_1_rupee`, tuer le dernier moblin droppera un rubis, de variante 3 (c'est à dire le rubis rouge), et une fois récupéré une fois ce rubis ne sera plus jamais droppé. Enlever la partie `$map_1_rupee` fera que le rubis pourra être droppé à l'infini.*  
+*Cette feature s'active via la fonction `map:init_enemies_event_triggers()`*
 
 - **Triggers** : le coeur de la gestion du fonctionnement des donjons.  
-Un trigger est un couple `propriété : valeur` qui va permettre de déclencher une action particulière quand l'entité respecte certaines conditions (généralement, quand un certain évènement concernant l'entité sera survenu). Le nom de la propriété doit être le type de conditions, la valeur l'action à réaliser.  
-Les conditions supportés pour l'instant sont : 
+Un trigger est un couple `propriété : valeur` qui va permettre de déclencher une action particulière quand l'entité respecte certaines conditions (généralement, quand un certain évènement concernant l'entité sera survenu). Le nom de la propriété doit être le type de conditions, la valeur l'action à réaliser, sous la forme d'une Event String (voir la [section corespondante](#Event-String) plus bas)
+Les conditions supportées pour l'instant sont : 
 
-	- `death_trigger` : est activé quand l'entité meurt (pour un enemi). S'active en ajoutant `self:init_enemies_event_triggers()` .
-	- `activate_trigger` : a placer sur un capteur ou un bouton (ou un bloc, voir plus bas), s'activera quand l'entité sera activée (quand link passe sur le capteur, active le bouton, ou déplace le bloc (voir plus bas pour les blocs). S'active en ajoutant `self:init_activate_triggers()`.  
+	- `death_trigger` : est activé quand l'entité meurt (pour un enemi). *S'active via la fonction `map:init_enemies_event_triggers()`*
+	- `activate_trigger` : a placer sur un capteur ou un bouton (ou un bloc, voir plus bas), s'activera quand l'entité sera activée (quand link passe sur le capteur, active le bouton, ou déplace le bloc (voir plus bas pour les blocs). *S'active via la fonction `map:init_activate_triggers()`*
 
 	A noter que si plusieurs entités possèdent le même trigger (c'est à dire un même type de conditions _avec la même action_), l'action ne sera déclenchée que quand les conditions seront vérifiées pour toutes les entités : si plusieurs enemis possèdent une propriété `death_trigger` avec la même valeur (donc le même effet), cette action ne sera réalisée que quand tous les enemis en question auront été tués.  
-	De même, si plusieurs boutons possèdent le même `activate_trigger`, l'action ne sera réalisée que si tous les boutons sont activés (donc si l'un d'entre eux n'est plus activé, ça ne fonctionnera pas).
+	De même, si plusieurs boutons possèdent le même `activate_trigger`, l'action ne sera réalisée que si tous les boutons sont activés *en même temps* (donc si l'un d'entre eux n'est plus activé, ça ne fonctionnera pas).
 
-	Les actions (qui doivent donc être la valeur de la propriété) possibles sont : 
-	- `door_*nom*` : ouvre toute porte donc le nom commence par "*nom*" ou "door_*nom*" (remplacer nom par le nom de la porte (sans blague) mais pas le door)
-	- `close_door_*nom*` : ouvre toute porte donc le nom commence par "*nom*" ou "door_*nom*" (remplacer nom par le nom de la porte (sans blague) mais pas le door)
-	- `spawn_*nom*` : fait apparaître l'entité nommée "*nom*". L'entité doit être déjà présente sur la map mais désactivée (pour cela, quand vous la placez sur la map, décochez la case "actif au démarrage" : quand une entité est désactivée c'est comme si elle n'existait pas).
-	- `treasure_*nom*` : comme pour `spawn_`, fait apparaître le trésor ramassable nommé "*nom*" ou "treasure_*nom*". (cela dit vous pouvez toujours utiliser `spawn_` pour les trésors, comme vous voulez)
-	- `music_*nom*` : joue la musique nommée "*nom*"
-	- `setrespawn_*nom*` : fait de la Destination nommée "*nom*" le poitn de réapparition actuel (ce qui signifie que link y réapparaitra s'il meurt, le point de réapparition de par défaut étant l'entrée du donjon)
-	- `function_*nom*` : éxécute une fonction du script de la map, nommée "*nom*".
+#### Event String
+Une event string est une manière de décrire une action qui doit avoir lieu sur la map. C'est par exemple de cette manière que l'on décrit les effets d'un trigger (rappel : l'effet, sous la forme d'event string, doit être la *valeur* de la propriété), mais aussi dans d'autres contextes : de manière générale, à chaque fois qu'une propriété d'une entité doit décrire une action (*exemple : la propriété on_obtained des entités custom de type pickable*).
 
-	Quelques exemples : 
-	- si 3 enemis possèdent la propriété `death_trigger : treasure_key_1`, et qu'il existe sur la map une clé (c'est à dire un trésor ramassable de l'item clé, désactivé) nommée "key_1", elle apparaîtra quand les 3 enemis auront été tués.
-	- si un interrupteur s'activant avec un bloc et 3 capteurs persistants (voir map features liées aux capteurs) possèdent la propriété `activate_trigger : door_1`, et qu'il existe deux portes nommés "door\_1-1" et "door\_1-2",  si Link passe sur les 3 capteurs et qu'un bloc se trouve actuellement sur l'interrupteur, les portes s'ouvriront.
+Les actions possibles sont : 
+- `door_<nom>` : ouvre toute porte donc le nom commence par "*nom*" ou "door_*nom*" (remplacer nom par le nom de la porte (sans blague) mais pas le door)
+- `close_door_<nom>` : ouvre toute porte donc le nom commence par "*nom*" ou "door_*nom*" (remplacer nom par le nom de la porte (sans blague) mais pas le door)
+- `spawn_<nom>` : fait apparaître l'entité nommée "*nom*". L'entité doit être déjà présente sur la map mais désactivée (pour cela, quand vous la placez sur la map, décochez la case "actif au démarrage" : quand une entité est désactivée c'est comme si elle n'existait pas).
+- `disable_<nom>` : désactive (= fait disparaitre) l'entité nommée *nom*.
+- `treasure_<nom>` : comme pour `spawn_`, fait apparaître le trésor ramassable nommé "*nom*" ou "treasure_*nom*". (cela dit vous pouvez toujours utiliser `spawn_` pour les trésors, comme vous voulez)
+- `music_<nom>` : joue la musique nommée "*nom*"
+- `setrespawn_<nom>` : fait de la Destination nommée "*nom*" le poitn de réapparition actuel (ce qui signifie que link y réapparaitra s'il meurt, le point de réapparition de par défaut étant l'entrée du donjon)
+- `function_<nom>` : éxécute une fonction du script de la map, nommée "*nom*". 
+- `teleport_<nom_map>:<nom_destination>$<style>` : téléporte la héros à la map et la destination spécifiée, avec le style spécifié (le style est optionnel). Voir la section [Téléporteurs](#Téléporteurs) plus haut pour plus d'informations.
 
+Quelques exemples : 
+- si 3 enemis possèdent la propriété `death_trigger : treasure_key_1`, et qu'il existe sur la map une clé (c'est à dire un trésor ramassable de l'item clé, désactivé par défaut) nommée "key_1", elle apparaîtra quand les 3 enemis auront été tués.
+- si un interrupteur s'activant avec un bloc et 3 capteurs persistants (voir map features liées aux capteurs) possèdent la propriété `activate_trigger : door_1`, et qu'il existe deux portes nommés "door\_1-1" et "door\_1-2",  si Link passe sur les 3 capteurs et qu'un bloc se trouve actuellement sur l'interrupteur, les portes s'ouvriront.
 
 
 - Séparateurs : il existe deux map features concernant les Séparateurs : 
-	- `no_save` : si un séparateur possède la propriété `no_save : 1` il ne sauvegardera pas la position de Link quand celui-ci le traversera (voir partie Séparateurs).
-	- dungeon style scrollings :  cette Map feature ne nécessite pas de propriété, juste d'ajouter `self:init_reset_separators(true)` au script. Si cette ligne est présente dans la fonction `on_started_`, passer un séparateur réinitialisera complètement les enemis et blocs présents sur la map.  
+	- `no_save` : si un séparateur possède la propriété `no_save` avec n'importe quelle valeur, il ne sauvegardera pas la position de Link quand celui-ci le traversera (voir partie Séparateurs).
+	- dungeon style scrollings :  cette Map feature ne nécessite pas de propriété, il suffit juste de l'activer la fonction `map:init_reset_separators()`. 
+	Si cette feature est activée, passer un séparateur réinitialisera complètement les enemis et blocs présents sur la map (sauf, dans le cas d'un enemi, s'il est déjà mort et que son état est sauvegardé).
 	Par exemple, dans la plupart des Zelda 2D, quand Link sort d'une salle et y retourne, les enemis sont de nouveau là (sauf les boss). Ici c'est la même idée, si dans un donjon on met des séparateurs entre chaque salle, le donjon ne comportera comme un donjon de Zelda 1.  
 	Il existe deux propriété permettant de modifier ce fonctionnement : 
-	- donner la propriété `auto_separator : 1` à un séparateur désactivera ce fonctionnement pour ce séparateur. Si dans la ligne d'activation on ne met pas `true` entre parenthèses, ce sera la contraire : seuls les séparateurs avec cette propriété auront ce fonctionnement.
-	- donner la propriété `no_reset : 1` à un ennemi/bloc l'excluera de la réinitalisation, il ne sera jamais réinitialisé.
+	- donner la propriété `auto_separator` à un séparateur désactivera ce fonctionnement pour ce séparateur. Si dans la ligne d'activation on ne met pas `true` entre parenthèses, ce sera la contraire : seuls les séparateurs avec cette propriété auront ce fonctionnement.
+	- donner la propriété `no_reset` à un ennemi/bloc l'excluera de la réinitalisation, il ne sera jamais réinitialisé.
 
-- Capteurs persistents : donner la propriété `persistent : 1` à un capteur fera qu'il sera toujours considéré comme activé même si Link n'est plus dessus.
-- Blocs activables : donner la propriété `activate_when_moved : 1` à un bloc fera qu'il sera considéré comme activé quand Link le déplacera. Il restera alors toujours activé, sauf s'il est réinitialisé (par un séparateur par exemple, voir plus haut)
+- Capteurs persistents : donner la propriété `persistent` à un capteur fera qu'il sera toujours considéré comme activé même si Link n'est plus dessus.
+- Blocs activables : donner la propriété `activate_when_moved` à un bloc fera qu'il sera considéré comme activé quand Link le déplacera. Il restera alors toujours activé, sauf s'il est réinitialisé (par un séparateur par exemple, voir plus haut). *S'active via la fonction `map:init_activatables()*`
 
-- Entités liées au scénario : dans Fallen Realm, l'avancement de la quête est représenté par une valeur numérique appelée story state (je ferai un document qui explique en détail le déroulement de la quête prochainement, la valeur correspondant à chaque étape sera expliqué).  
+- Entités liées au scénario : dans Fallen Realm, l'avancement de la quête est représenté par une valeur numérique appelée story state (qui est techniquement, une simple variable de sauvegarde. Vous trouverez une liste des significations des différents story states dans les messages pin du channel #code du discord.)  
 La propriété `min_story_state : n` fera qu'une entité n'apparaît que si le story state est de n au moins.  
 La propriété `max_story_state : n` fera qu'une entité n'apparaît que si le story state est de n au plus.  
-La propriété `is_story_state : n` fer qu'une entité n'apparaît que si le storsy state est de n exactement.
+La propriété `is_story_state : n` fer qu'une entité n'apparaît que si le storsy state est de n exactement.  
+La propriété `spawn_savegame_variable : <variable>` fera qu'une entité désactivée par défaut sera directement activée si la variable de sauvegarde spécifiée est présente.
+
+
+[Retour au sommaire](starting.md)
