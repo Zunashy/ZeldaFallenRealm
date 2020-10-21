@@ -6221,13 +6221,6 @@ dynamic_tile{
   pattern = "32",
 }
 
-pickable{
-  layer = 0,
-  x = 344,
-  y = 653,
-  treasure_name = "bracelet",
-}
-
 tile{
   layer = 1,
   x = 592,
