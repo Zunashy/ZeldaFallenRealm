@@ -5,8 +5,11 @@ local map = entity:get_map()
 local parse_event_string = require("scripts/feature/event_string.lua")
 
 local function obtained_callback()
-  if entity.on_obtained then
-    parse_event_string(map, entity.on_obtained)
+  if entity.on_obtained then 
+    entity:on_obtained()
+  end
+  if entity.on_obtained_effect then
+    parse_event_string(map, entity.on_obtained_effect)
   end
 end
 
@@ -28,7 +31,7 @@ function entity:on_created()
 
   self.variant = tonumber(self:get_property("variant"))
   self.savegame_variable = self:get_property("savegame_variable")
-  self.on_obtained = self:get_property("on_obtained")
+  self.on_obtained_effect = self:get_property("on_obtained")
 
   if self.savegame_variable and game:get_value(self.savegame_variable) then
     self:remove()
@@ -40,7 +43,7 @@ function entity:on_created()
 
   local item_object = game:get_item(self.item)
   if item_object.on_pickable_created then
-    item_object:on_pickable_created(self)
+    item_object:on_pickable_created(self, true)
   end
 
   self:add_collision_test("overlapping", collision_test)

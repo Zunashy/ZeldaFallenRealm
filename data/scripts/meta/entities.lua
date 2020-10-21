@@ -30,17 +30,18 @@ end
 
 function sep_meta:on_activated()
   hero = self:get_map():get_hero()
-  hero.need_solid_ground = false
   local ground = hero:get_ground_below();
   if (ground ~= "deep_water"
-    and ground ~= "hole"
-    and ground ~= "lava"
-    and ground ~= "prickles"
-    and ground ~= "empty"
-    and hero.is_on_nonsolid_ground == false
-    and not self.no_save)
+   and ground ~= "hole"
+   and ground ~= "lava"
+   and ground ~= "prickles"
+   and ground ~= "empty"
+   and hero.is_on_nonsolid_ground == false
+   and not self.no_save)
   then 
     hero:save_solid_ground()
+  else
+    hero.need_solid_ground = true
   end
 end
 
@@ -62,10 +63,6 @@ local function exclam_anim_cb(self)
   end
 end
 
-function npc_meta:set_dialog(dialog)
-  self:set_property("dialog", dialog)
-end
-
 function npc_meta:exclamation(callback)
   local sprite = self:create_sprite("things/exclamation")
   sprite:set_xy(0, -16)
@@ -77,6 +74,11 @@ function npc_meta:exclamation(callback)
     exclam_anim_cb(sprite)
     end)
 end
+
+function npc_meta:set_dialog(dialog)
+  self:set_property("dialog", dialog)
+end
+
 
 sol.main.get_metatable("hero").exclamation = npc_meta.exclamation
 
