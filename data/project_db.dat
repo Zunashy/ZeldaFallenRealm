@@ -202,6 +202,16 @@ sprite{ id = "hud/bush_destroy" }
 sprite{ id = "hud/piece_of_heart_icon", description = "hud/piece_of_heart_icon" }
 sprite{ id = "menus/dialog_end", description = "menus/dialog_end" }
 sprite{ id = "menus/solarus_logo", description = "menus/solarus_logo" }
+sprite{ id = "pnj/gorons/1" }
+sprite{ id = "pnj/gorons/10" }
+sprite{ id = "pnj/gorons/2" }
+sprite{ id = "pnj/gorons/3" }
+sprite{ id = "pnj/gorons/4" }
+sprite{ id = "pnj/gorons/5" }
+sprite{ id = "pnj/gorons/6" }
+sprite{ id = "pnj/gorons/7" }
+sprite{ id = "pnj/gorons/8" }
+sprite{ id = "pnj/gorons/9" }
 sprite{ id = "pnj/main/mugen" }
 sprite{ id = "pnj/main/sorcier", description = "Sorcier" }
 sprite{ id = "pnj/main/zuna", description = "Prince Zuna" }
