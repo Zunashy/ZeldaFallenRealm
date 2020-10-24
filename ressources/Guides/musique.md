@@ -93,5 +93,51 @@ Voilà le tour très rapide de TuxGuitar, je détaillerai plus en détail d'autr
 
 
 # 4. Utilisation de GSX CC
+Ce petit utilitaire tout mignon tout léger et ne nécessitant aucune installation va nous servir à 2 choses : 
+- lire votre fichier midi comme si vous etiez sur une NES (ou gamleboy)
+- exporter le rendu au format brut WAV
 
-# 5. Utilisation d'Audacity
+Faites une extraction de l'archive Zip et aller dans le dossier crééer suite à l'extraction.
+Voici le contenu du dossier
+Démarrez simplement gsxcc.exe
+![gsx 1](https://alonsobertrand.fr/ZeldaFallen/gsx1.png)
+
+Pour lire votre fichier Midi dans ce logiciel.. Faites simplement un Drag & Drop (glisser > déposer) du fichier midi dans la fenetre.
+Le programme va alors lire automatiquement le fichier au format 8bit <3
+
+Si le rendu 8bit vous satisfait pleinement, alors Cliquez sur l'icone sous *Authoring*. Confirmez avec OK
+Une fois qu'il a fini, le fichier WAV est créé dans le repertoire d'où provient votre Fichier MIDI.
+
+![gsx 2](https://alonsobertrand.fr/ZeldaFallen/gsx2.png)
+
+YAY ! tout fonctionne à merveille :3
+
+![gsx 3](https://alonsobertrand.fr/ZeldaFallen/gsx3.png)
+
+
+# 5. Installation & Utilisation d'Audacity
+
+Dernière étape : obtenir le format OGG
+
+**Installation** : Installez bêtement.. suivant suivant suivant OK
+
+**Utilisation** : 
+- Ouvrez Audacity, et faites Fichier -> Importer -> Audio  et charger votre fichier WAV
+Le spectre dit analogique va s'afficher sur tout votre écran. 
+Faites Ctrl + A et faites 'Effets' -> 'Amplification' et laissez les valeurs proposées et faites Valider
+
+![auda 1](https://alonsobertrand.fr/ZeldaFallen/auda1.png)
+
+Ceci va permettre d'avoir un même volume sonore entre nos fichiers sonores. Très important pour avoir qqch d'homogène !
+
+Maintenant, exportons notre fichier au format OGG
+
+Faites Fichier -> Exporter -> Exporter en OGG
+
+![auda 2](https://alonsobertrand.fr/ZeldaFallen/auda2.png)
+
+Mettez la qualité à 5 (pour du 8bit pas besoin de consommer plus de bande passante). et faites enregsitrer.
+
+Audacity va vous proposer de rentrer des Tags ID3 tels que Auteur, Album, Année, Titre.. Vous pouvez tout laisser vide et faire simplement Valider.
+
+Et voilà votre fichier OGG prêt a être utilisé, entendu INGAME ! <3
