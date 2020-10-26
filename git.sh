@@ -1,6 +1,6 @@
 #! /bin/bash
 
-function git_push(){
+function gpush(){
 git add .
 git commit -a -m "$1"
 git pull
