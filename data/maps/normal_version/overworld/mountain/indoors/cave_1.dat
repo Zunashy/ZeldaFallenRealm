@@ -10,6 +10,24 @@ properties{
 
 tile{
   layer = 0,
+  x = 224,
+  y = 32,
+  width = 16,
+  height = 8,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
   x = 176,
   y = 144,
   width = 128,
@@ -1411,6 +1429,156 @@ tile{
   width = 32,
   height = 16,
   pattern = "240",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 64,
+  width = 40,
+  height = 16,
+  pattern = "38",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 32,
+  width = 16,
+  height = 32,
+  pattern = "38",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 72,
+  width = 32,
+  height = 8,
+  pattern = "39",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "39",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "39",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 64,
+  width = 24,
+  height = 8,
+  pattern = "39",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 40,
+  width = 8,
+  height = 24,
+  pattern = "246_5",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 40,
+  width = 8,
+  height = 32,
+  pattern = "246_4",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 64,
+  width = 16,
+  height = 8,
+  pattern = "246_2",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 72,
+  width = 24,
+  height = 8,
+  pattern = "246_9",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 32,
+  width = 8,
+  height = 8,
+  pattern = "246",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 32,
+  width = 8,
+  height = 8,
+  pattern = "246_3",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 64,
+  width = 8,
+  height = 8,
+  pattern = "246",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 72,
+  width = 8,
+  height = 8,
+  pattern = "246_8",
+  tileset = "normal_world",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 72,
+  width = 8,
+  height = 8,
+  pattern = "246_7",
+  tileset = "normal_world",
 }
 
 chest{

@@ -8981,21 +8981,6 @@ destination{
   direction = 1,
 }
 
-dynamic_tile{
-  layer = 1,
-  x = 544,
-  y = 240,
-  properties = {
-    {
-      key = "max_story_state",
-      value = "12",
-    },
-  },
-  width = 80,
-  height = 16,
-  pattern = "186",
-}
-
 destination{
   name = "house_1",
   layer = 1,
@@ -9079,6 +9064,21 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "normal_version/overworld/deep_forest/outdoors_2",
+}
+
+dynamic_tile{
+  layer = 1,
+  x = 544,
+  y = 240,
+  properties = {
+    {
+      key = "max_story_state",
+      value = "20",
+    },
+  },
+  width = 80,
+  height = 16,
+  pattern = "186",
 }
 
 tile{

@@ -16322,6 +16322,70 @@ teletransporter{
   destination_map = "normal_version/overworld/mountain/indoors/cave_2",
 }
 
+enemy{
+  layer = 2,
+  x = 216,
+  y = 45,
+  direction = 0,
+  breed = "tektite_blue",
+}
+
+enemy{
+  layer = 2,
+  x = 232,
+  y = 77,
+  direction = 0,
+  breed = "octorok",
+}
+
+enemy{
+  layer = 2,
+  x = 384,
+  y = 93,
+  direction = 0,
+  breed = "moblin_sword",
+}
+
+enemy{
+  layer = 2,
+  x = 416,
+  y = 77,
+  direction = 0,
+  breed = "blue_octorock",
+}
+
+enemy{
+  layer = 2,
+  x = 568,
+  y = 29,
+  direction = 0,
+  breed = "moblin_sword",
+}
+
+enemy{
+  layer = 2,
+  x = 696,
+  y = 45,
+  direction = 0,
+  breed = "blue_moblin_sword",
+}
+
+enemy{
+  layer = 2,
+  x = 560,
+  y = 165,
+  direction = 0,
+  breed = "blue_moblin_sword",
+}
+
+enemy{
+  layer = 2,
+  x = 552,
+  y = 333,
+  direction = 0,
+  breed = "blue_moblin_sword",
+}
+
 tile{
   layer = 3,
   x = 512,
