@@ -288,4 +288,7 @@ La propriété `is_story_state : n` fer qu'une entité n'apparaît que si le sto
 La propriété `spawn_savegame_variable : <variable>` fera qu'une entité désactivée par défaut sera directement activée si la variable de sauvegarde spécifiée est présente.
 
 
+C'est à peu près tout, normalement ce guide devrait vous permettre d'utiliser toutes les features disponibles pour le mapping, qu'il s'agisse des fonctionnalités de base de solarus, ou de mécaniques que j'ai implémenté spécialement pour Fallen Realm.  
+Cependant, même toutes ces features ne permettent pas de faire n'importe quoi, et certaines maps complexes (avec des cinématiques notament) nécessiteront une programmation plus avancée, via la script de la map.
+
 [Retour au sommaire](starting.md)
