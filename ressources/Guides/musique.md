@@ -124,7 +124,7 @@ Pour définir votre piste comme DrumKit. Double cliquez sur la piste en bas et c
 **À partir de là, il vous faut des connaissances musicales (solfège) pour pouvoir comprendre cette partie.** Sinon passez directement à la partie 3.6 
 
 
-Nous avons vous que par defaut, la partition était du type Clé de Sol, Do majeur, 4/4, 120bpm et 6 cordes.
+Nous avons vu que par defaut, la partition était du type Clé de Sol, Do majeur, 4/4, 120bpm et 6 cordes.
 Si vous voulez à terme produire une vraie partition pour la retravailler ensuite avec MuseScore ou faire un export PDF, il va falloir mettre en pratique les vraies règles en musique ;).
 
 ## La Tonalité (armure)
@@ -140,17 +140,16 @@ Pour modifier l'armure, allez dans Composition -> Armure et choisissez le nombre
 
 ![instru 9](https://alonsobertrand.fr/ZeldaFallen/tux9.png)
 
-## La clef
-Dans une partition, la Clef permet de définir la hauteur des notes
-On en retiendra principalement 3 : 
+## La clé
+Dans une partition, la Clé permet de définir la hauteur des notes
+On en retiendra principalement 2 : 
 
-- La clef de Sol : pour les aigus
-- La clef d'Ut : pour les mediums
-- La clef de Fa : pour les graves
+- La clé de Sol : pour les aigus
+- La clé de Fa : pour les graves
 
-La guitare basse devra par exemple logiquement avoir une clé de Fa, tandis qu'une guitare sera en clé de sol. Cependant il est tout à fait possible de procéder à des changements de clef de manière ponctuelle.
+La guitare basse devra par exemple logiquement avoir une clé de Fa, tandis qu'une guitare sera en clé de sol. Cependant il est tout à fait possible de procéder à des changements de clés de manière ponctuelle.
 
-En pratique, vous verrez surtout la clef de Fa et la clef de Sol
+En pratique, vous verrez surtout la clé de Fa et la clé de Sol
 
 Pour modifier la clef, allez dans Composition -> Clé et choisissez puis faites Valider
 
@@ -218,7 +217,9 @@ Ce petit utilitaire tout mignon tout léger et ne nécessitant aucune installati
 
 Faites une extraction de l'archive Zip et aller dans le dossier crééer suite à l'extraction.
 Voici le contenu du dossier
+
 Démarrez simplement gsxcc.exe
+
 ![gsx 1](https://alonsobertrand.fr/ZeldaFallen/gsx1.png)
 
 Pour lire votre fichier Midi dans ce logiciel.. Faites simplement un Drag & Drop (glisser > déposer) du fichier midi dans la fenetre.
@@ -260,3 +261,25 @@ Mettez la qualité à 5 (pour du 8bit pas besoin de consommer plus de bande pass
 Audacity va vous proposer de rentrer des Tags ID3 tels que Auteur, Album, Année, Titre.. Vous pouvez tout laisser vide et faire simplement Valider.
 
 Et voilà votre fichier OGG prêt a être utilisé, entendu INGAME ! <3
+
+# 6. Utiliser une manque de sons MIDI de meilleure qualité et la lire avec VLC <3
+
+TuxGuitar embarque sa propre banque de sons MIDI qui est de bien meilleure qualité comparé à celle fournie par Windows et qui n'a pas évolué depuis + de 20ans.
+
+Je vous propose donc de passer aux choses sérieuses en téléchargeant cette banque de sons MIDI : [MagicSFver2.sf2](https://alonsobertrand.fr/ZeldaFallen/MagicSFver2.sf2). Si cette banque de son n'est pas dans les soundfonts de TuxGuitar ( *C:\Program Files (x86)\tuxguitar-1.5.4\share\soundfont* ), profitez-en pour faire un petit copier/coller qui va bien !
+
+
+Si vous n'avez pas [VLC](https://download.videolan.org/pub/videolan/vlc/last/win64/vlc-3.0.11-win64.exe), téléchargez le et installez-le.
+
+Une fois VLC installé, nous allons lui permettre de lire les fichiers MIDI (extension .mid)
+
+dans VLC allez dans **Outils** -> **Préférences**
+et cochez en bas à droite seletionner **Afficher les paramètres : tous**
+
+Puis naviguez dans Entrée / Codecs -> Codecs audio -> Fluidsynth
+Faites Parcourir et chargez votre fichier **MagicSFver2.sf2**. Laissez les autres paramètres par defaut et faites Enregistrer.
+
+
+![vlc 1](https://alonsobertrand.fr/ZeldaFallen/vlc1.png)
+
+Vous pouvez maintenant lire des fichier **MIDI** avec **VLC** et le rendu est beaucoup plus propre <3
