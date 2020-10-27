@@ -250,10 +250,10 @@ animation{
   src_image = "hero/Charset_Link.png",
   frame_delay = 50,
   directions = {
-    { x = 96, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 3, num_columns = 1 },
-    { x = 112, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 3, num_columns = 1 },
-    { x = 80, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 3, num_columns = 1 },
-    { x = 128, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 3, num_columns = 1 },
+    { x = 128, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 3, num_columns = 1 },
+    { x = 144, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 3, num_columns = 1 },
+    { x = 160, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 3, num_columns = 1 },
+    { x = 176, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 14, num_frames = 3, num_columns = 1 },
   },
 }
 animation{
