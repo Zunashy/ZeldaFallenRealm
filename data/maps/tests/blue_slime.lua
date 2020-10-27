@@ -32,9 +32,9 @@ function map:on_started_()
 end
 
 function map:on_opening_transition_finished()
-    print(game.shaders.obscurity)
-    camera:get_surface():set_shader(game.shaders.obscurity)
-    game.shaders.obscurity:set_uniform("obs_level", 1.3)
-    game.shaders.obscurity:set_uniform("n_lights", 1)
-    game.shaders.obscurity:set_uniform("light1", {72, 80, 40, 10})
+    --print(game.shaders.obscurity)
+    --camera:get_surface():set_shader(game.shaders.obscurity)
+    --game.shaders.obscurity:set_uniform("obs_level", 1.3)
+    --game.shaders.obscurity:set_uniform("n_lights", 1)
+    --game.shaders.obscurity:set_uniform("light1", {72, 80, 40, 10})
 end

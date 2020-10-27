@@ -85,6 +85,8 @@ function game_meta:on_started()
     self.started = true
   end
 
+  self:get_hero().test = 10
+
   self.shaders = require("scripts/api/shader")
 end
 
