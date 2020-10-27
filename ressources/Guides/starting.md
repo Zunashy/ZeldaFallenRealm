@@ -65,4 +65,5 @@ récupérez les modifs (voir paragraphe suivant) puis réesayer de `push`, sinon
 
 ## Autres Guides
 - [Mapping](mapping.md)
-- [Items et Sauvegarde](save_items.md)
+- [Sauvegarde](save.md)
+- [Items](items.md)

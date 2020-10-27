@@ -617,6 +617,14 @@ npc{
   sprite = "pnj/nielint/5",
 }
 
+door{
+  layer = 1,
+  x = 200,
+  y = 48,
+  direction = 3,
+  sprite = "",
+}
+
 tile{
   layer = 2,
   x = 160,

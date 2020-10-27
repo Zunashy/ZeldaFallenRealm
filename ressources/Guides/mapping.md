@@ -108,9 +108,20 @@ Ils seront généralement couplés avec une destination placée à peu près au 
 
 Il est possible de donner un sprite à un téléporteur mais ce n'est généralement pas nécessaire)
 
+#### Porte
+Une porte est une entité qui se comporte, de base, comme un mur. Elles peuvent être **ouvertes**, ce qui signifie qu'elles deviennent traversables.  
+Les portes peuvent toujours être ouvertes (et fermées, plus rarement) par le script de la map, cependant il est possible de les configurer de manière à ce que Link puisse les ouvrir en interragissant avec. Les différents modes sont : 
+- Script de la map : seul le script peut ouvrir la porte
+- Par le héros : Link peut ouvrir la porte
+- Par le héros, variable sauvegardée nécessaire : Link peut ouvrir la porte, si une certaine variable de sauvegarde est présente (voir partie [Sauvegarde](savegame.md))
+- Par le héros, item nécessaire : Link peut ouvrir la porte s'il possède un certain [Item](items.md). Il est alors possible de spécifier que l'item sera perdu (pour un item sauvegardé) ou que Link en perdra un (pour un Item à quantité). Voir la partie [Items](items.md) pour une explication de ces concepts.
+
+Il est possible (et très fortement recommandé) de donner un sprite à une porte, qui prendra la direction indiquée dans les paramètres de la porte.  
+Solarus effectue diverses actions sur le sprite d'une porte, qui seront décrites plus précisément dans la partie [Sprites](sprites.md), retenez surtout que lorsqu'une porte est fermée, elle prend l'animation "closed", et "open" quand elle est ouverte.
+
 ##### Trésor ramassable
-Un item que link obtiendra s'il le touche. Le concept d'item est très large dans Solarus, dépendant de la manière dont c'est codé ça peut désigner autant un objet de l'inventaire qu'un réceptacle de coeur ou un rubis.
-Les trésors sont en réalité rarement placés directement sur la map (+ souvent drop par des enemis ou trouvés dans un coffre).  
+Un item que link obtiendra s'il le touche. Le concept d'item est très large dans Solarus, dépendant de la manière dont c'est codé ça peut désigner autant un objet de l'inventaire qu'un réceptacle de coeur ou un rubis : voir le guide Items
+Les trésors sont en réalité rarement placés directement sur la map (+ souvent drop par des enemis).  
 Lorsque vous placez un trésor, vous devez choisir l'item dont il s'agit, mais également sa variante. La variante peut avoir de nombreuses significations (pour un rubis : sa couleur, pour l'épée, son niveau, etc). Des informations sur les différents items (dont la significations de leurs variantes) sont disponibles sur le google doc.
 
 Les items que peuvent représenter les trésors ramassables regroupent par exemple :  
