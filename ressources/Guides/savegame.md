@@ -25,7 +25,7 @@ Pour bien saisir ce que sont ces variables et ce qu'elles représentent, il est 
 
 Les variables de sauvegarde sont chargées depuis le fichier de sauvegarde quand le jeu est lancé (c'est  dire quand le joueur à slectionné ou créé une save, dans l'écran de sélection de sauvegarde, et pas avant), et sauvegardées dans ce fichier quand le joueur décide de sauvegarder depuis le menu. Il faut donc bien comprendre qu'entre ces deux moments, le fichier de sauvegarde n'est jamais touché ; quand une variable de sauvegarde est modifée, c'est au niveau du jeu et non pas du fichier de sauvegarde, ce qui signifie que lorsque le jeu est fermé, toute modification apportée aux variables de sauvegarde depuis la dernière sauvegarde est oubliée.
 
-![Image indisponible](img/savegame.PNG)
+![Image indisponible](img/savegame.png)
 
 ## Types de variables de sauvegarde
 
