@@ -2342,6 +2342,46 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "91",
+  ground = "empty",
+  default_layer = 0,
+  x = 112,
+  y = 240,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "92",
+  ground = "empty",
+  default_layer = 0,
+  x = 96,
+  y = 248,
+  width = 16,
+  height = 8,
+}
+
+tile_pattern{
+  id = "93",
+  ground = "empty",
+  default_layer = 0,
+  x = 96,
+  y = 264,
+  width = 16,
+  height = 8,
+}
+
+tile_pattern{
+  id = "94",
+  ground = "empty",
+  default_layer = 0,
+  x = 112,
+  y = 264,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "9_2",
   ground = "wall",
   default_layer = 0,

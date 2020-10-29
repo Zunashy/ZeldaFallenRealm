@@ -65,6 +65,7 @@ map{ id = "tests/outside", description = "Monde extérieur" }
 map{ id = "tests/platform", description = "tests/platform" }
 map{ id = "war_version/overworld/forest/forest", description = "war_version/overworld/forest/forest" }
 map{ id = "war_version/overworld/forest/sword_cave", description = "war_version/overworld/forest/sword_cave" }
+map{ id = "war_version/overworld/goron/outdoor" }
 map{ id = "war_version/overworld/north_beach/cave", description = "grotte north beach" }
 map{ id = "war_version/overworld/north_beach/indoors/beach_house", description = "maison sur la plage" }
 map{ id = "war_version/overworld/north_beach/indoors/jojo_house", description = "war_version/overworld/north_beach/indoors/jojo_house" }

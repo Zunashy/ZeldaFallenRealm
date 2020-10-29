@@ -20,6 +20,15 @@ tile{
 tile{
   layer = 1,
   x = 0,
+  y = 0,
+  width = 800,
+  height = 64,
+  pattern = "91",
+}
+
+tile{
+  layer = 1,
+  x = 0,
   y = 48,
   width = 800,
   height = 336,
@@ -9782,15 +9791,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 336,
-  y = -8,
-  width = 128,
-  height = 32,
-  pattern = "91",
-}
-
-tile{
-  layer = 1,
   x = 464,
   y = 40,
   width = 16,
@@ -9988,109 +9988,6 @@ separator{
   y = 0,
   width = 16,
   height = 384,
-}
-
-destination{
-  name = "entrance",
-  layer = 1,
-  x = 400,
-  y = 373,
-  direction = 1,
-}
-
-destination{
-  name = "house_3",
-  layer = 1,
-  x = 728,
-  y = 325,
-  direction = 1,
-}
-
-destination{
-  name = "house_1",
-  layer = 1,
-  x = 64,
-  y = 213,
-  direction = 1,
-}
-
-destination{
-  name = "house_2",
-  layer = 1,
-  x = 728,
-  y = 85,
-  direction = 1,
-}
-
-destination{
-  name = "cave_1",
-  layer = 1,
-  x = 568,
-  y = 53,
-  direction = 1,
-}
-
-destination{
-  name = "dungeon_4",
-  layer = 1,
-  x = 400,
-  y = 77,
-  direction = 1,
-}
-
-destination{
-  name = "cave_2",
-  layer = 1,
-  x = 72,
-  y = 53,
-  direction = 1,
-}
-
-teletransporter{
-  layer = 1,
-  x = 392,
-  y = 368,
-  width = 16,
-  height = 16,
-  destination_map = "normal_version/overworld/mountain/outdoors",
-  destination = "goron_mountain",
-}
-
-teletransporter{
-  layer = 1,
-  x = 720,
-  y = 304,
-  width = 16,
-  height = 16,
-  destination_map = "normal_version/overworld/goron/indoors/house_3",
-}
-
-teletransporter{
-  layer = 1,
-  x = 720,
-  y = 64,
-  width = 16,
-  height = 16,
-  destination_map = "normal_version/overworld/goron/indoors/house_2",
-}
-
-teletransporter{
-  layer = 1,
-  x = 56,
-  y = 192,
-  width = 16,
-  height = 16,
-  destination_map = "normal_version/overworld/goron/indoors/house_1",
-}
-
-teletransporter{
-  layer = 1,
-  x = 392,
-  y = 56,
-  width = 16,
-  height = 16,
-  destination_map = "donjons/level_04/rdc",
-  destination = "entrance",
 }
 
 npc{

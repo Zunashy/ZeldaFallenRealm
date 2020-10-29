@@ -789,6 +789,13 @@ Raaah, je suis nul comme chanteur !
 }
 
 dialog{
+  id = "test.mac",
+  text = [[
+nous sommes en guerre.
+]],
+}
+
+dialog{
   id = "test.sans",
   choice = "1",
   next_dialog = "test.sans2",
