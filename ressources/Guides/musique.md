@@ -128,7 +128,11 @@ Nous avons vu que par defaut, la partition était du type Clé de Sol, Do majeur
 Si vous voulez à terme produire une vraie partition pour la retravailler ensuite avec MuseScore ou faire un export PDF, il va falloir mettre en pratique les vraies règles en musique ;).
 
 ## La Tonalité (armure)
-Il existe beaucoup de tonalités. Chaque tonalité entraine des altérations de notes, ce qui se traduit par l'affichage sur la partition de dièses (♯) ou de bémols (♭).
+Il existe beaucoup de tonalités. Chaque tonalité entraine des altérations de notes, ce qui se traduit par l'affichage sur la partition de dièses (♯), de bémols (♭) et de bécarres (♮).
+
+- Le dièse (♯) permet de monter d'un demi-ton chromatique
+- Le bémol (♭) permet de descendre d'un demi-ton chromatique
+- le bécarre (♮) permet de remettre la note à sa hauteur naturelle (annule un dièse ou bémol)
 
 On dit alors qu'il y a "X bémols à la clé" ou "X dièses à la clé".
 
@@ -136,12 +140,18 @@ Par exemple, si je suis en *Sol majeur* : il y a 1 note alterée qui est le Fa ;
 
 ![instru 8](https://alonsobertrand.fr/ZeldaFallen/tux8.png)
 
+Impact sur votre partition : En *Sol majeur*, lorsque vous rencontrerez un Fa, celui-ci sera par defaut un Fa♯.
+Il sera donc inutile (interdit) d'indiquer le ♯ sur votre note sur la partition, puisque le ♯ est indiqué avec la clé et le tempo (cf screen ci-dessus).
+
+Si vous voulez ne jouer un Fa mais pas un Fa♯ (donc retirer ponctuellement l'altération), on utilise un autre caractère qui s'appèle le bécarre (♮).
+
 Pour modifier l'armure, allez dans Composition -> Armure et choisissez le nombre d'alterations (dièses ou bémols)
 
 ![instru 9](https://alonsobertrand.fr/ZeldaFallen/tux9.png)
 
 ## La clé
-Dans une partition, la Clé permet de définir la hauteur des notes
+Dans une partition, la Clé permet de définir la hauteur des notes.
+
 On en retiendra principalement 2 : 
 
 - La clé de Sol : pour les aigus
@@ -149,9 +159,7 @@ On en retiendra principalement 2 :
 
 La guitare basse devra par exemple logiquement avoir une clé de Fa, tandis qu'une guitare sera en clé de sol. Cependant il est tout à fait possible de procéder à des changements de clés de manière ponctuelle.
 
-En pratique, vous verrez surtout la clé de Fa et la clé de Sol
-
-Pour modifier la clef, allez dans Composition -> Clé et choisissez puis faites Valider
+Pour modifier la clé, allez dans Composition -> Clé et choisissez puis faites Valider
 
 ![instru 10](https://alonsobertrand.fr/ZeldaFallen/tux10.png)
 
