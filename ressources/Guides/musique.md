@@ -4,9 +4,9 @@ Dans ce petit tutoriel nous allons voir comment créer une musique à partir de 
 
 # 1. Télécharger les 4 indispensables
 
-Tout d'abord, commencez par télécharger ces 3 softs qui seront nécéssaires pour mener à bien notre mission.
+Tout d'abord, commencez par télécharger ces 3 softs (+ java) qui seront nécéssaires pour mener à bien notre mission.
 
-**Java 64bits** : [Java 8 x64](https://alonsobertrand.fr/pub/java/jre-8u271-windows-x64.exe)
+**Java** : [Java 8](https://alonsobertrand.fr/pub/java/jre-8u271-windows-x64.exe)
 
 ==> Ai-je besoin de présenter Java ? ;)
 
@@ -25,9 +25,9 @@ Tout d'abord, commencez par télécharger ces 3 softs qui seront nécéssaires p
 
 # 2. Installation de Java
 
-Installez le sinon Tuxguitar ne marchera pas.. Logiquement TuxGuitar embarque sa propre JVM mais pour des raisons que j'ignore il refuse de s'installer sans.
+Installez le sinon Tuxguitar ne marchera pas.. Logiquement TuxGuitar embarque sa propre JVM (Java virtual machine) mais pour des raisons que j'ignore il refuse de s'installer sans.
 
-Actuellement, vous pouvez prendre soit Java 8 (1.8) ou Java 15 (pour les devs)
+Dans le doute => vous pouvez prendre soit Java 8 (1.8) ou Java 15 (pour les devs expérimentés)
 
 # 3. Installation et configuration de TuxGuitar
 
@@ -132,7 +132,7 @@ Il existe beaucoup de tonalités. Chaque tonalité entraine des altérations de 
 
 - Le dièse (♯) permet de monter d'un demi-ton chromatique
 - Le bémol (♭) permet de descendre d'un demi-ton chromatique
-- le bécarre (♮) permet de remettre la note à sa hauteur naturelle (annule un dièse ou bémol)
+- le bécarre (♮) permet de remettre la note à sa hauteur naturelle (annule un dièse ou bémol d'une tonalité ou dans une même mesure)
 
 On dit alors qu'il y a "X bémols à la clé" ou "X dièses à la clé".
 
