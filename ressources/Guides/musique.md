@@ -4,9 +4,9 @@ Dans ce petit tutoriel nous allons voir comment créer une musique à partir de 
 
 # 1. Télécharger les 4 indispensables
 
-Tout d'abord, commencez par télécharger ces 3 softs qui seront nécéssaires pour mener à bien notre mission.
+Tout d'abord, commencez par télécharger ces 3 softs (+ java) qui seront nécéssaires pour mener à bien notre mission.
 
-**Java 64bits** : [Java 8 x64](https://alonsobertrand.fr/pub/java/jre-8u271-windows-x64.exe)
+**Java** : [Java 8](https://alonsobertrand.fr/pub/java/jre-8u271-windows-x64.exe)
 
 ==> Ai-je besoin de présenter Java ? ;)
 
@@ -25,9 +25,9 @@ Tout d'abord, commencez par télécharger ces 3 softs qui seront nécéssaires p
 
 # 2. Installation de Java
 
-Installez le sinon Tuxguitar ne marchera pas.. Logiquement TuxGuitar embarque sa propre JVM mais pour des raisons que j'ignore il refuse de s'installer sans.
+Installez le sinon Tuxguitar ne marchera pas.. Logiquement TuxGuitar embarque sa propre JVM (Java virtual machine) mais pour des raisons que j'ignore il refuse de s'installer sans.
 
-Actuellement, vous pouvez prendre soit Java 8 (1.8) ou Java 15 (pour les devs)
+Dans le doute => vous pouvez prendre soit Java 8 (1.8) ou Java 15 (pour les devs expérimentés)
 
 # 3. Installation et configuration de TuxGuitar
 
@@ -128,7 +128,11 @@ Nous avons vu que par defaut, la partition était du type Clé de Sol, Do majeur
 Si vous voulez à terme produire une vraie partition pour la retravailler ensuite avec MuseScore ou faire un export PDF, il va falloir mettre en pratique les vraies règles en musique ;).
 
 ## La Tonalité (armure)
-Il existe beaucoup de tonalités. Chaque tonalité entraine des altérations de notes, ce qui se traduit par l'affichage sur la partition de dièses (♯) ou de bémols (♭).
+Il existe beaucoup de tonalités. Chaque tonalité entraine des altérations de notes, ce qui se traduit par l'affichage sur la partition de dièses (♯), de bémols (♭) et de bécarres (♮).
+
+- Le dièse (♯) permet de monter d'un demi-ton chromatique
+- Le bémol (♭) permet de descendre d'un demi-ton chromatique
+- le bécarre (♮) permet de remettre la note à sa hauteur naturelle (annule un dièse ou bémol d'une tonalité ou dans une même mesure)
 
 On dit alors qu'il y a "X bémols à la clé" ou "X dièses à la clé".
 
@@ -136,12 +140,18 @@ Par exemple, si je suis en *Sol majeur* : il y a 1 note alterée qui est le Fa ;
 
 ![instru 8](https://alonsobertrand.fr/ZeldaFallen/tux8.png)
 
+Impact sur votre partition : En *Sol majeur*, lorsque vous rencontrerez un Fa, celui-ci sera par defaut un Fa♯.
+Il sera donc inutile (interdit) d'indiquer le ♯ sur votre note sur la partition, puisque le ♯ est indiqué avec la clé et le tempo (cf screen ci-dessus).
+
+Si vous voulez ne jouer un Fa mais pas un Fa♯ (donc retirer ponctuellement l'altération), on utilise un autre caractère qui s'appèle le bécarre (♮).
+
 Pour modifier l'armure, allez dans Composition -> Armure et choisissez le nombre d'alterations (dièses ou bémols)
 
 ![instru 9](https://alonsobertrand.fr/ZeldaFallen/tux9.png)
 
 ## La clé
-Dans une partition, la Clé permet de définir la hauteur des notes
+Dans une partition, la Clé permet de définir la hauteur des notes.
+
 On en retiendra principalement 2 : 
 
 - La clé de Sol : pour les aigus
@@ -149,9 +159,7 @@ On en retiendra principalement 2 :
 
 La guitare basse devra par exemple logiquement avoir une clé de Fa, tandis qu'une guitare sera en clé de sol. Cependant il est tout à fait possible de procéder à des changements de clés de manière ponctuelle.
 
-En pratique, vous verrez surtout la clé de Fa et la clé de Sol
-
-Pour modifier la clef, allez dans Composition -> Clé et choisissez puis faites Valider
+Pour modifier la clé, allez dans Composition -> Clé et choisissez puis faites Valider
 
 ![instru 10](https://alonsobertrand.fr/ZeldaFallen/tux10.png)
 

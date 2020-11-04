@@ -11,6 +11,24 @@ properties{
 
 tile{
   layer = 0,
+  x = 16,
+  y = 16,
+  width = 144,
+  height = 96,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
   x = 160,
   y = 16,
   width = 304,
@@ -84,18 +102,18 @@ tile{
 
 tile{
   layer = 0,
-  x = 160,
+  x = 144,
   y = 56,
-  width = 88,
+  width = 136,
   height = 8,
   pattern = "6",
 }
 
 tile{
   layer = 0,
-  x = 160,
+  x = 144,
   y = 64,
-  width = 88,
+  width = 136,
   height = 8,
   pattern = "10",
 }
@@ -534,15 +552,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 16,
-  y = 16,
-  width = 144,
-  height = 96,
-  pattern = "210",
-}
-
-tile{
-  layer = 0,
   x = 0,
   y = 16,
   width = 16,
@@ -962,6 +971,51 @@ tile{
   width = 16,
   height = 16,
   pattern = "210_6",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 56,
+  width = 8,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 48,
+  width = 8,
+  height = 8,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 72,
+  width = 8,
+  height = 8,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 72,
+  width = 8,
+  height = 8,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 48,
+  width = 8,
+  height = 8,
+  pattern = "7",
 }
 
 pickable{
