@@ -14,6 +14,9 @@ local function map_callback(game, map)
   hero:save_solid_ground()
   hero:reset_walking_speed()
 
+  if (hero:get_sprite():get_shader() and not hero:get_sprite():get_shader().persistent) then
+    hero:get_sprite():set_shader(nil)
+  end
 end  
 
 game_meta:register_event("on_map_changed", map_callback)

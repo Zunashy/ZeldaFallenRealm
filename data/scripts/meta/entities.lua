@@ -171,7 +171,7 @@ end
 function carried_meta:on_breaking()
   local x, y = self:get_position()
   local direction = self:get_movement():get_direction4()
-  if direction == 1 then
+  if direction % 2 == 1 then
     local _, sprite_y = self:get_sprite():get_xy()
     self:set_position(x, y - sprite_y)
   elseif direction % 2 == 0 then

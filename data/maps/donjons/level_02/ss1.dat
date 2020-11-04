@@ -4878,6 +4878,14 @@ npc{
   sprite = "pnj/nielint/5",
 }
 
+destination{
+  name = "test",
+  layer = 0,
+  x = 696,
+  y = 445,
+  direction = 0,
+}
+
 tile{
   layer = 1,
   x = 352,

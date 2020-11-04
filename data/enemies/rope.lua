@@ -66,7 +66,6 @@ function enemy:start_walk()
 end
 
 function enemy:start_run(dir)
-  print("run")
   local m = sol.movement.create("straight")
   m:set_speed(run_speed)
   m:set_angle(dir * math.pi / 2)

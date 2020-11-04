@@ -5789,14 +5789,6 @@ door{
   savegame_variable = "dungeon_2_door_miniboss",
 }
 
-destination{
-  name = "destination",
-  layer = 0,
-  x = 600,
-  y = 621,
-  direction = 1,
-}
-
 custom_entity{
   name = "flamme_2",
   layer = 0,
@@ -6161,6 +6153,7 @@ destination{
   x = 360,
   y = 693,
   direction = 1,
+  default = true,
 }
 
 dynamic_tile{

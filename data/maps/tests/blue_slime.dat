@@ -609,20 +609,28 @@ enemy{
 }
 
 npc{
+  name = "zuna",
   layer = 1,
   x = 232,
-  y = 269,
+  y = 317,
   direction = 3,
   subtype = 1,
   sprite = "pnj/nielint/5",
 }
 
-door{
+enemy{
+  name = "yolo",
   layer = 1,
   x = 200,
-  y = 48,
-  direction = 3,
-  sprite = "",
+  y = 269,
+  properties = {
+    {
+      key = "test",
+      value = "oue",
+    },
+  },
+  direction = 0,
+  breed = "oursin",
 }
 
 tile{
