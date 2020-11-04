@@ -81,15 +81,18 @@ local function separator_on_activated(separator)
             entity = map:create_block(place)
             entity:set_pushable(place.pushable)
             entity:set_pullable(place.pullable)
+            place.block = entity    
         end
     end
 
+    --Destructibles
     for _, place in ipairs(destructible_places) do
         entity = place.destructible 
         
         if not entity:exists() then
             entity = map:create_destructible(place)
             entity:set_treasure(unpack(place.treasure))
+            place.destructible = entity
         end
     end
     for _, e in ipairs(destroy_on_activate) do
