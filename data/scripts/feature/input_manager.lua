@@ -71,7 +71,7 @@ function meta:on_key_pressed(key, modifiers) --manages inputs upstream of the co
   elseif key == "f7" then
     print(sol.main.game:get_value("small_keys"))
   elseif key == "f8" then
-    sol.main.game:get_hero():teleport("donjons/level_01/RDC")
+    sol.main.game:get_hero():teleport("donjons/level_02/ss1", "test")
   elseif key == "f9" then
     vfx.shockwave(sol.main.game:get_map():get_camera():get_surface(), 64, 64, 1, 8, 20, 4)
   end

@@ -5,7 +5,7 @@ local camera = map:get_camera()
 
 
 function map:on_started_()
-    self:init_dungeon_features()
+    --self:init_dungeon_features()
     self:enable_colored_blocks()
 
     local lever = self:get_entity("lever_test")
