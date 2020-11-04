@@ -4253,7 +4253,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "spawn_yolo",
+      value = "spawn_yolo_2;spawn_yolo_3;spawn_yolo_4;spawn_yolo_1",
     },
   },
   subtype = "walkable",
@@ -4419,7 +4419,7 @@ door{
 }
 
 enemy{
-  name = "yolo",
+  name = "yolo_1",
   layer = 0,
   x = 776,
   y = 429,
