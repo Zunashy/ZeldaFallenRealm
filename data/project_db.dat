@@ -88,7 +88,11 @@ tileset{ id = "House", description = "House" }
 tileset{ id = "caves/cave_side", description = "caves/cave_side" }
 tileset{ id = "dungeon/tileset_donjon_1", description = "dungeon/tileset_donjon_1" }
 tileset{ id = "dungeon/tileset_donjon_2", description = "dungeon/tileset_donjon_2" }
+tileset{ id = "dungeon/tileset_donjon_3", description = "dungeon/tileset_donjon_3" }
+tileset{ id = "dungeon/tileset_donjon_4", description = "dungeon/tileset_donjon_4" }
+tileset{ id = "dungeon/tileset_donjon_5", description = "dungeon/tileset_donjon_5" }
 tileset{ id = "dungeon/tileset_donjon_6", description = "dungeon/tileset_donjon_6" }
+tileset{ id = "dungeon/tileset_donjon_7", description = "dungeon/tileset_donjon_7" }
 tileset{ id = "grotte", description = "grotte" }
 tileset{ id = "house", description = "house" }
 tileset{ id = "model", description = "model" }
