@@ -5,7 +5,7 @@ properties{
   height = 128,
   min_layer = 0,
   max_layer = 2,
-  tileset = "normal_world",
+  tileset = "normal/main",
   music = "maku_trees",
 }
 
@@ -49,7 +49,7 @@ tile{
   y = 16,
   width = 96,
   height = 64,
-  pattern = "5_5",
+  pattern = "237",
 }
 
 tile{
@@ -226,7 +226,7 @@ tile{
   y = 80,
   width = 64,
   height = 16,
-  pattern = "5_5",
+  pattern = "237",
 }
 
 tile{

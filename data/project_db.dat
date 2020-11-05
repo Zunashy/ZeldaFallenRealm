@@ -5,7 +5,6 @@ map{ id = "donjons/level_01/transit", description = "donjons/level_01/transit" }
 map{ id = "donjons/level_02/rdc", description = "donjons/level_02/rdc" }
 map{ id = "donjons/level_02/ss1", description = "donjons/level_02/ss1" }
 map{ id = "donjons/level_02/transit" }
-map{ id = "donjons/level_03/rdc" }
 map{ id = "donjons/level_04/rdc" }
 map{ id = "normal_version/overworld/deep_forest/indoors/cave_1" }
 map{ id = "normal_version/overworld/deep_forest/indoors/cave_2" }
@@ -96,9 +95,14 @@ tileset{ id = "dungeon/tileset_donjon_7", description = "dungeon/tileset_donjon_
 tileset{ id = "grotte", description = "grotte" }
 tileset{ id = "house", description = "house" }
 tileset{ id = "model", description = "model" }
+tileset{ id = "normal/annexe", description = "normal/annexe" }
+tileset{ id = "normal/lava", description = "normal/lava" }
+tileset{ id = "normal/main", description = "normal/main" }
 tileset{ id = "normal_world", description = "normal_world" }
 tileset{ id = "normal_world_annexe", description = "normal_world_annexe" }
 tileset{ id = "normal_world_v2" }
+tileset{ id = "war/annexe", description = "war/war_world_annexe" }
+tileset{ id = "war/main", description = "war/war_world" }
 tileset{ id = "war_world", description = "war_world" }
 tileset{ id = "war_world_annexe" }
 

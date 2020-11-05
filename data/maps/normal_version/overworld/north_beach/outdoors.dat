@@ -5,7 +5,7 @@ properties{
   height = 640,
   min_layer = 0,
   max_layer = 2,
-  tileset = "normal_world",
+  tileset = "normal/main",
   music = "overworld",
 }
 
@@ -7885,7 +7885,7 @@ destructible{
 
 separator{
   layer = 1,
-  x = -16,
+  x = -8,
   y = 0,
   width = 16,
   height = 640,
