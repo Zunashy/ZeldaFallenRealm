@@ -2,7 +2,7 @@ local font = gen.class()
 
 font.name = "Font"
 
-loaded_fonts = {}
+local loaded_fonts = {}
 
 function font:build(name)
     if loaded_fonts[name] then
@@ -37,7 +37,7 @@ function font:get_surface()
 end
 
 function font:get_char_pos(code)
-    char_w, char_h = self:get_char_size()
+    local char_w, char_h = self:get_char_size()
     return char_w * (code % 128), char_h * math.floor(code / 128), char_w, char_h
 end
 

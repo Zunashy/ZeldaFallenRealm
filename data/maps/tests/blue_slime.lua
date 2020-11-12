@@ -1,12 +1,11 @@
-
 local map = ...
 local game = map:get_game()
 local camera = map:get_camera()
 
 
 function map:on_started_()
-    --self:init_dungeon_features()
-    self:enable_colored_blocks()
+    self:init_dungeon_features()
+    --self:enable_colored_blocks()
 
     local lever = self:get_entity("lever_test")
     local door = self:get_entity("test_door")

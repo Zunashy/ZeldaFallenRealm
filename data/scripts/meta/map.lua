@@ -110,14 +110,15 @@ local function generic_start_callback(map)
         prop = e:get_property("spawn_savegame_variable")
         if prop and game:get_value(prop) then
             e:set_enabled(true)
-        end
+        end 
+
     end
     sol.audio.set_music_volume(sol.audio.default_music_volume)
     if map.obscurity then map:update_active_lights() end
 end
 
 local function call_alt_on_started(map)
-    if type(map.on_started_) == "function" then
+    if map.on_started_ then
         map:on_started_()
     end
 end

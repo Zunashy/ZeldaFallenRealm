@@ -1,6 +1,6 @@
 --/!\ the generic map features are no longer stored in a global module/object, they are now in the map meta
 local map = sol.main.get_metatable("map")
-mpg = map
+local mpg = map
 
 
 --Opens or closes all doors that have the name format 'door_<name>*'
@@ -239,13 +239,13 @@ function map:init_dungeon_features()
   self:init_reset_separators()
 end
 
-local colored_block_manager = require("entities/colored_block")
-function map:enable_colored_blocks()
-  self.colored_block_manager = colored_block_manager
-  for block in self:get_entities("colored_block") do
-    colored_block_manager.init(block)
-  end
-end
+--local colored_block_manager = require("entities/colored_block")
+--function map:enable_colored_blocks()
+--  self.colored_block_manager = colored_block_manager
+--  for block in self:get_entities("colored_block") do
+--    colored_block_manager.init(block)
+--  end
+--end
 
 --Map Manager
 local map_manager = require("scripts/api/map_manager")

@@ -65,5 +65,10 @@ récupérez les modifs (voir paragraphe suivant) puis réesayer de `push`, sinon
 
 ## Autres Guides
 - [Mapping](mapping.md)
-- [Sauvegarde](save.md)
+- [Sauvegarde](savegame.md)
 - [Items](items.md)
+
+### Guides à venir
+- Sprites
+- Map (API)
+- Ennemis

@@ -25,7 +25,7 @@ local s = sol.surface.create(1, 1)
 s:fill_color({0, 0, 0})
 
 function entity:get_draw_pos()
-  oX, oY = entity:get_position()
+  local oX, oY = entity:get_position()
   return self.x + oX, self.y + oY
 end
 

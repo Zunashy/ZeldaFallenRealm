@@ -2,7 +2,7 @@ local walking_speed = 88
 local swimming_speed = 66
 local climbing_speed = 44
 
-sv = {}
+local sv = {}
 
 sv.pObject = gen.class()
 

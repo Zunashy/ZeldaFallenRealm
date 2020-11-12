@@ -7,6 +7,7 @@ local hero_meta = sol.main.get_metatable("hero")
 local hero_sprite, sword_sprite
 
 local pull_lever_state
+local push_block_state
 
 local function initialize_hero_features(game)
 
@@ -126,9 +127,9 @@ local function initialize_hero_features(game)
     s = s:gsub(" ", "_")
     for e in map:get_entities() do
       if e["on_hero_state_" .. s] then
-        e["on_hero_state_" .. s](e, hero)
+        e["on_hero_state_" .. s](e, self)
       end
-    end  
+    end
     if s == "plunging" then
       if self.pObject then self.pObject:freeze() end
       hero_sprite:set_animation("plunging_water", function()
@@ -165,6 +166,24 @@ local function initialize_hero_features(game)
     end
   end
 
+  function hero_meta:start_pull_lever()
+    self:start_state(pull_lever_state)
+    return pull_lever_state
+  end
+
+  push_block_state = sol.state.create()
+  push_block_state:set_can_control_movement(false)
+  push_block_state:set_can_control_direction(false)
+
+  function push_block_state:stop()
+    self:get_entity():unfreeze()
+  end
+
+  function hero_meta:start_push_block()
+    self:start_state(push_block_state)
+    return push_block_state
+  end
+
   function hero:on_taking_damage(dmg)
     game:remove_life(dmg)
   end
@@ -187,10 +206,6 @@ local function initialize_hero_features(game)
 
 end
 
-function hero_meta:start_pull_lever()
-  self:start_state(pull_lever_state)
-  return pull_lever_state
-end
 
 function hero_meta:light_teleport(destination, map)
   map = map or hero:get_map()

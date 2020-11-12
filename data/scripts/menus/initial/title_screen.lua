@@ -13,7 +13,7 @@ title_screen.background_surf = sol.surface.create("menus/title_screen.png")
 title_screen.start_surface = sol.surface.create("menus/title_screen_start.png")
 title_screen.surface = sol.surface.create(sol.video.get_quest_size())
 
-start_surface_pos = {
+local start_surface_pos = {
     x = 36,
     y = 116
 }

@@ -39,6 +39,8 @@ local hearts_pos = {
     y = 81
 }
 
+local exists, game, name, name_surface
+
 local footer_y = 120
 
 local game_manager = require("scripts/game_manager")
@@ -258,7 +260,6 @@ function save_select:load_saves()
 end
 
 function save_select:on_started()
-    local exists, game, name, name_surface
 
     if not self.saves_loaded then self:load_saves() end
 

@@ -400,6 +400,7 @@ enemy{ id = "tektite_red", description = "Tektite Rouge" }
 
 entity{ id = "arrow", description = "Flèche" }
 entity{ id = "bone", description = "Os (projectile)" }
+entity{ id = "colored_block", description = "Bloc Coloré" }
 entity{ id = "colored_block_destination", description = "Destination bloc coloré" }
 entity{ id = "dungeon_statue_eye", description = "Oeil de statue" }
 entity{ id = "flame", description = "Flamme (graine)" }
@@ -462,6 +463,7 @@ file{ path = "entities/arrow.lua", author = "TwilCynder", }
 file{ path = "entities/bone.lua", author = "TwilCynder", }
 file{ path = "entities/colored_block.lua", author = "TwilCynder", }
 file{ path = "entities/colored_block_destination.lua", author = "TwilCynder", }
+file{ path = "entities/colored_block_old.lua", author = "TwilCynder", }
 file{ path = "entities/dungeon_statue_eye.lua", author = "TwilCynder", }
 file{ path = "entities/flame.lua", author = "TwilCynder", }
 file{ path = "entities/ice_floor.lua", author = "TwilCynder", }

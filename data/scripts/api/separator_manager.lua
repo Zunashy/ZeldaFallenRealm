@@ -5,6 +5,7 @@ local destructible_places
 local entity_places
 local block_places
 local destroy_on_activate
+local notify_on_activate
 
 local function get_stored_enemies()
     return enemy_places
@@ -98,6 +99,11 @@ local function separator_on_activated(separator)
     for _, e in ipairs(destroy_on_activate) do
         e:remove()
     end
+    for _, e in ipairs(notify_on_activate) do
+        if e:exists() then
+            e:on_separator_activated()
+        end
+    end
 end
 
 function separator_manager:manage_map(map)
@@ -109,9 +115,17 @@ function separator_manager:manage_map(map)
     entity_places = {}
     block_places = {}
     destroy_on_activate = {}
+    notify_on_activate = {}
 
     map.get_stored_enemies = get_stored_enemies
 
+    function map:destroy_on_separator(entity)
+        separator_manager:destroy_on_separator(entity)
+    end
+
+    function map:notify_on_separator(entity)
+        separator_manager:notify_on_separator(entity)
+    end
 
     for separator in map:get_entities_by_type("separator") do
         if not separator:get_property("no_reset") then
@@ -191,6 +205,10 @@ function separator_manager:manage_map(map)
                 entity = entity,
             })
         end
+
+        if entity.notify_on_separator then
+            self:notify_on_separator(entity)
+        end
     end 
 
     --Blocks.
@@ -218,6 +236,11 @@ end
 function separator_manager:destroy_on_separator(e)
     destroy_on_activate[#destroy_on_activate + 1] = e
     table.insert(destroy_on_activate, e)
+end
+
+function separator_manager:notify_on_separator(e)
+    notify_on_activate[#notify_on_activate + 1] = e
+    table.insert(notify_on_activate, e)
 end
 
 return separator_manager

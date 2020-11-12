@@ -29,7 +29,6 @@ function gen.import(dest, src, ...)
       dest[p] = src[p]
     end
   end
-
 end
 
 --Crée une nouvelle classe, avec sa métatable, et une méthode new() pour créer une instance.
@@ -42,22 +41,41 @@ function gen.class(bClass)
     __tostring = function () return "class : " .. newclass.name end
   }
 
-  function newclass:new(...)
-    local inst
-    if type(self.build) == "function" then
-      inst = self:build(...) or {}
-    elseif bClass then
-      inst = bClass:new(...)
-    else
-      inst = {}
-    end
-    setmetatable(inst, self.mt)
-    if type(newclass.constructor) == "function" then
-      if inst:constructor(...) then
-        return false
+  if bClass and bClass.new then
+    newclass.super = bClass
+    function newclass:new(...)
+      local inst
+      if type(self.build) == "function" then
+        inst = self:build(...) or {}
+      else
+        inst = bClass:new(...)
       end
-    end 
-    return inst
+      setmetatable(inst, self.mt)
+      if type(newclass.constructor) == "function" then
+        if inst:constructor(...) then
+          return false
+        end
+      end 
+      return inst
+    end
+
+  else
+
+    function newclass:new(...)
+      local inst
+      if type(self.build) == "function" then
+        inst = self:build(...) or {}
+      else
+        inst = {}
+      end
+      setmetatable(inst, self.mt)
+      if type(newclass.constructor) == "function" then
+        if inst:constructor(...) then
+          return false
+        end
+      end 
+      return inst
+    end
   end
 
   local meta

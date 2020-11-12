@@ -42,7 +42,7 @@ function entity:on_created()
         is_hero_here = true
         start_time = get_time()
       else
-        if get_time() > start_time + 1500 then
+        if get_time() > start_time + crumble_delay then
           start_shaking()
           sol.timer.start(self, fall_delay, function()
             destroy()

@@ -35,12 +35,13 @@ En soi, toutes les variables fonctionnent de la même manière, cependant il exi
     Exemple : la variable "_current_money" (qui contient le nombre de rubis de link) est créée par solarus, et modifiée automatiquement quand le nombre de rubis de link change.
     ```
 
-    Note : il est toujours *possible* de modifier/lire ces variables manuellement, seulement ce n'est pas nécessaire.
+    Note : il est toujours *possible* de modifier/lire ces variables manuellement via du code, seulement ce n'est pas nécessaire.
 
 - Certaines variables sont **gérées automatiquement par Solarus**, mais **créées par l'utilisateur** (CàD : vous). Il s'agit généralement des variables associées à une entité, telle que les coffres ou les enemis (voir [Mapping](mapping.md)) : elles sont en effet créées par l'utilisateur, dans le sens où c'est vous qui décidez que tel ennemi (par exemple) est lié à une variable dont vous décidez du nom, cependant c'est Solarus qui s'occupera de la modifier, et qui utilisera sa valeur. 
     ```
     Exemple : si vous créez un coffre et décidez que son état sera sauvegardée dans la variable "test_chest", alors cette variable sera créée automatiquement quand Link ouvrira le coffre, et à chaque chargement de la map Solarus ira voir si elle est présente (et possède la valeur "true"), et si oui affichera la coffre déjà ouvert.
     ```
+    La plupart de ces variables sont décrites dans le guide dédié au [Mapping](mapping.md).
 
 - Certaines variables sont liées aux **items**. Elles ont un fonctionnement similaire à la catégorie précédentes, mais un peu plus complexe : voir la section [Items](#items)
 
@@ -67,6 +68,15 @@ Premièrement, les variables de sauvegarde sont liées à l'objet `game` (ce qui
 On va donc utiliser deux méthodes de cet objet Game :   
 - `game:get_value(name)` renvoie la valeur de la variable nommée `name` (rappel : il peut s'agir d'une string, d'un entier, ou d'un booléen), ou `nil` si la variable n'existe pas.
 - `game:set_value(name, val)` change la valeur de la variable nommée `name`, la nouvelle valeur étant `val`.
+
+Ces deux méthodes suffisent, de manière générale, à gérer les variables de sauvegarde : les variables sont automatiquement créées quand on essaie d'affcter une valeur à une variable qui n'existe pas encore, et il n'est pas possible de supprimer une variable (affecter la valeur `nil` à une variable de sauvegarde fait exactement comme si elle n'existait plus).
+
+## Variables importantes
+Voyons maintenant quelques variables particulières (spécifiques ou non à Fallen Realm), dont il peut être utile de connaitre le fonctionnement.  
+- **story_state** : variable contenant un nombre qui indique l'avancement de la quête principale. Le fonctionnement est simple, certains évènements augmentent ce nombre, et beaucoup de script de map adaptent leur fonctionnement au story state actuel. Ainsi, chaque nombre entier à partir de 0 correspond à un état de l'histoire principale.
+Cette variable peut être obtenue et modifié par la méthode habituelle, mais aussi avec `game:get_story_state()` et `game:set_story_state(state)` (utiliser ces fonctions revient de toute façon à modifier la variable normalement avec `get/set_story_state`, elle ne sont là que pour la clarté du code)
+- **sidequest_*xxx*** : avancement de la quête annexe "xxx". Ces variables fonctionnent de la même manière que `story_state`, elles contiennent un nombre qui correspond à l'état de la sidequest nommée "xxx". Chaque quête annexe possède donc une variable de ce type.  
+A noter que le concept de sidequest n'existe pas vraiment dans solarus, et que le fait qu'une sidequest existe et soit nommée "xxx" ne signifie rien d'autre que : il existe une variable de sauvegarde nommée `sidequest_*xxx*`. Ainsi, le fonctionnement des sidequest dépend à 100% de votre utilisation de ces variables.  
 
 
 [Retour au sommaire](starting.md)

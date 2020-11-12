@@ -261,6 +261,7 @@ tile{
 }
 
 custom_entity{
+  name = "CBD",
   layer = 1,
   x = 344,
   y = 157,
@@ -296,16 +297,6 @@ destination{
   default = true,
 }
 
-block{
-  name = "colored_block",
-  layer = 1,
-  x = 312,
-  y = 189,
-  sprite = "entities/dungeon_elements/color_cube",
-  pushable = true,
-  pullable = true,
-}
-
 chest{
   name = "chest_1",
   layer = 1,
@@ -324,8 +315,8 @@ pickable{
 
 enemy{
   layer = 1,
-  x = 288,
-  y = 221,
+  x = 376,
+  y = 245,
   properties = {
     {
       key = "distance",
@@ -407,17 +398,6 @@ custom_entity{
 custom_entity{
   layer = 1,
   x = 56,
-  y = 237,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/dungeon_elements/fragile_ground",
-  model = "unstable_ground",
-}
-
-custom_entity{
-  layer = 1,
-  x = 56,
   y = 221,
   width = 16,
   height = 16,
@@ -429,7 +409,18 @@ custom_entity{
 custom_entity{
   layer = 1,
   x = 56,
-  y = 253,
+  y = 189,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/fragile_ground",
+  model = "unstable_ground",
+}
+
+custom_entity{
+  layer = 1,
+  x = 56,
+  y = 205,
   width = 16,
   height = 16,
   direction = 0,
@@ -621,14 +612,55 @@ npc{
 enemy{
   name = "yolo",
   layer = 1,
-  x = 200,
-  y = 269,
+  x = 24,
+  y = 381,
   properties = {
     {
       key = "test",
       value = "oue",
     },
   },
+  direction = 0,
+  breed = "oursin",
+}
+
+custom_entity{
+  name = "colored_block_2",
+  layer = 1,
+  x = 72,
+  y = 237,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/color_cube",
+  model = "colored_block",
+}
+
+custom_entity{
+  name = "colored_block_3",
+  layer = 1,
+  x = 344,
+  y = 189,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/color_cube",
+  model = "colored_block",
+}
+
+separator{
+  layer = 1,
+  x = 0,
+  y = 128,
+  width = 400,
+  height = 16,
+}
+
+enemy{
+  name = "oursin_test",
+  layer = 1,
+  x = 360,
+  y = 189,
   direction = 0,
   breed = "oursin",
 }

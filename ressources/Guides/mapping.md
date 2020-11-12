@@ -2,7 +2,7 @@
 Les maps sont les environements où Link évoluera dans le jeu. Elles sont donc fondamentales à son fonctionnement.
 
 Les maps sont composées d'un décor "inerte" (donc à peu de chose près, une image de fond et des éléments de terrain), les tiles ; et d'entités dynamiques généralement contrôlées par un script (dont Link !). 
-Dans ce guide je présenterai la méthodes à suivre pour créer et éditer des maps, placer les tiles, et les entités, etc. 
+Dans ce guide je présenterai la méthode à suivre pour créer et éditer des maps, placer les tiles, et les entités, etc. 
 (Il est à noter que chaque map est liée à un script Lua ; il n'est pas nécessaire de réellement coder ce script pour créer une map, cependant une map avec un fonctionnement complexe nécessitera un peu de code.)
 
 Il n'est pas nécessaire d'utiliser un autre logiciel que l'éditeur solarus pour éditer les maps.

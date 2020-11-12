@@ -61,7 +61,6 @@ function enemy:on_restarted()
   self.direction = self:get_sprite():get_direction()
   self.startPos = {}
   self.startPos.x, self.startPos.y = self:get_position()
-  print(self.direction)
   sol.timer.start(self, 10, function()
     if not self.dashing then
 

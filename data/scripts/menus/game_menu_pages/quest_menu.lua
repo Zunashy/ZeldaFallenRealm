@@ -1,4 +1,4 @@
-quest_menu = {
+local quest_menu = {
     enable_info_text = true,
     bg_surface = nil,
     bg_image = nil,
@@ -242,7 +242,6 @@ function quest_menu:preload(game)
         self.items[i] = game:get_item(v)
     end
     self.items.essence = game:get_item("essence")
-
 end
 
 return quest_menu

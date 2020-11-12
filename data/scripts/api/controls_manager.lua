@@ -1,6 +1,6 @@
 local controls = {}
 
-default_controls = {
+local default_controls = {
     action = "space",
     attack = "p",
     item_1 = "k",
@@ -13,7 +13,7 @@ default_controls = {
     select = "backspace"
 }
 
-current_controls = {}
+local current_controls = {}
 
 for k, v in pairs(default_controls) do current_controls[k] = v end
 
