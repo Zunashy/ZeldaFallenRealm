@@ -96,11 +96,11 @@ tileset{ id = "grotte", description = "grotte" }
 tileset{ id = "house", description = "house" }
 tileset{ id = "model", description = "model" }
 tileset{ id = "normal/annexe", description = "normal/annexe" }
+tileset{ id = "normal/jungle", description = "normal/jungle" }
 tileset{ id = "normal/lava", description = "normal/lava" }
 tileset{ id = "normal/main", description = "normal/main" }
-tileset{ id = "normal_world", description = "normal_world" }
-tileset{ id = "normal_world_annexe", description = "normal_world_annexe" }
-tileset{ id = "normal_world_v2" }
+tileset{ id = "normal/marais", description = "normal/marais" }
+tileset{ id = "normal/snow", description = "normal/snow" }
 tileset{ id = "war/annexe", description = "war/war_world_annexe" }
 tileset{ id = "war/main", description = "war/war_world" }
 tileset{ id = "war_world", description = "war_world" }

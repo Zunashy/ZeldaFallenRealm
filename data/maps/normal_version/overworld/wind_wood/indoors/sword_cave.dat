@@ -34,7 +34,7 @@ tile{
   width = 304,
   height = 96,
   pattern = "29",
-  tileset = "normal_world",
+  tileset = "normal/main",
 }
 
 tile{
