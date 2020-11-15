@@ -290,7 +290,7 @@ Quelques exemples :
 	- donner la propriété `no_reset` à un ennemi/bloc l'excluera de la réinitalisation, il ne sera jamais réinitialisé.
 
 - Capteurs persistents : donner la propriété `persistent` à un capteur fera qu'il sera toujours considéré comme activé même si Link n'est plus dessus.
-- Blocs activables : donner la propriété `activate_when_moved` à un bloc fera qu'il sera considéré comme activé quand Link le déplacera. Il restera alors toujours activé, sauf s'il est réinitialisé (par un séparateur par exemple, voir plus haut). *S'active via la fonction `map:init_activatables()*`
+- Blocs activables : donner la propriété `activate_when_moved` à un bloc fera qu'il sera considéré comme activé quand Link le déplacera. Il restera alors toujours activé, sauf s'il est réinitialisé (par un séparateur par exemple, voir plus haut). *S'active via la fonction `map:init_activatables()`*
 
 - Entités liées au scénario : dans Fallen Realm, l'avancement de la quête est représenté par une valeur numérique appelée story state (qui est techniquement, une simple variable de sauvegarde. Vous trouverez une liste des significations des différents story states dans les messages pin du channel #code du discord.)  
 La propriété `min_story_state : n` fera qu'une entité n'apparaît que si le story state est de n au moins.  
