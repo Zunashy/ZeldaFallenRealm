@@ -285,8 +285,8 @@ custom_entity{
 destination{
   name = "spawn",
   layer = 1,
-  x = 232,
-  y = 237,
+  x = 296,
+  y = 269,
   properties = {
     {
       key = "on_obtained",
@@ -315,8 +315,8 @@ pickable{
 
 enemy{
   layer = 1,
-  x = 376,
-  y = 245,
+  x = 360,
+  y = 269,
   properties = {
     {
       key = "distance",
@@ -332,7 +332,6 @@ enemy{
   layer = 1,
   x = 328,
   y = 269,
-  enabled_at_start = false,
   direction = 3,
   breed = "blue_slime",
 }
@@ -650,8 +649,8 @@ custom_entity{
 
 separator{
   layer = 1,
-  x = 0,
-  y = 128,
+  x = 24,
+  y = 240,
   width = 400,
   height = 16,
 }

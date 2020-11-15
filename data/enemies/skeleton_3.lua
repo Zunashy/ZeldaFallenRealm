@@ -69,7 +69,6 @@ function enemy:on_position_changed() --Callback d'event appelé quand l'ennemi s
   reset_tested_dirs()
 end
 
-
 function enemy:on_hero_state_sword_swinging(hero) --Callback appelé quand le héros utilise l'épée.
   if enemy.is_jumping then return end
   local x, y = hero:get_corner_position()
@@ -116,6 +115,9 @@ function enemy:throw_bone(direction)
     properties.width = 16
     properties.height = 16
     properties.direction = direction
-  local arrow = map:create_custom_entity(properties)
+    local arrow = map:create_custom_entity(properties)
     arrow:set_hurts_hero()
+    if map.separator_manager_enabled then
+      map:destroy_on_separator(arrow)
+    end
 end

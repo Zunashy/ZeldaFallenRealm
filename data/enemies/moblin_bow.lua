@@ -137,3 +137,7 @@ enemy:register_event("on_hurt", function (self)
     detect_state = true
   end
 end)
+
+function enemy:on_reset()
+  self.detect_state = false
+end

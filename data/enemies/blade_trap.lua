@@ -61,11 +61,15 @@ function enemy:on_restarted()
   self.direction = self:get_sprite():get_direction()
   self.startPos = {}
   self.startPos.x, self.startPos.y = self:get_position()
-  sol.timer.start(self, 10, function()
+  self.detect_timer = sol.timer.start(self, 10, function()
     if not self.dashing then
 
       enemy:check_hero()
     end
     return true
   end)
+end
+
+function enemy:on_reset()
+  self.dashing = false
 end

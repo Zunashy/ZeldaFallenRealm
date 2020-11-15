@@ -83,3 +83,7 @@ function enemy:on_dead()
     direction = 0,
   })
 end
+
+function enemy:on_reset()
+  self.movement_count = -1
+end

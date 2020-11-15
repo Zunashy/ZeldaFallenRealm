@@ -109,4 +109,3 @@ function enemy:reset_jump_state() --Annule les changements de propriétés caus�
   enemy.is_jumping = false
   sprite:set_animation("walking")
 end
-

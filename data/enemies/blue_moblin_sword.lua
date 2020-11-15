@@ -142,3 +142,8 @@ enemy:register_event("on_hurt", function (self, atk)
     end
   end
 end)
+
+function enemy:on_reset()
+  self.detect_state = false
+  sword_sprite:set_direction(sprite:get_direction())
+end

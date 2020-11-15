@@ -78,6 +78,11 @@ Cette variable peut être obtenue et modifié par la méthode habituelle, mais a
 - **sidequest_*xxx*** : avancement de la quête annexe "xxx". Ces variables fonctionnent de la même manière que `story_state`, elles contiennent un nombre qui correspond à l'état de la sidequest nommée "xxx". Chaque quête annexe possède donc une variable de ce type.  
 A noter que le concept de sidequest n'existe pas vraiment dans solarus, et que le fait qu'une sidequest existe et soit nommée "xxx" ne signifie rien d'autre que : il existe une variable de sauvegarde nommée `sidequest_*xxx*`. Ainsi, le fonctionnement des sidequest dépend à 100% de votre utilisation de ces variables.  
 
+## Memo : mécaniques liées au variables de sauvegarde
+Cette section regroupe les diverses fonctionnalités et mécaniques liées aux variables de sauvegarde, déjà présentées dans d'autres guides divers.
+
+- Sauvegarde de l'état d'une entité (Solarus) : solarus permet de lier une variable de sauvegarde à certaines entités ([enemi](mapping.md#enemi), coffre, pickable) afin que leur état soit sauvegardé dans une variable choisie par l'utilisateur.
+- Certaines entités custom
 
 [Retour au sommaire](starting.md)
 

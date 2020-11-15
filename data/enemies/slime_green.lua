@@ -15,7 +15,7 @@ function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   enemy:set_life(1)
   enemy:set_damage(2)
-  self.movement_count = 0
+  self.movement_count = -1
 end
 
 function enemy:movement_cycle()
@@ -58,4 +58,8 @@ end
 
 function enemy:on_restarted()
   enemy:movement_cycle()
+end
+
+function enemy:on_reset()
+  self.movement_count = -1
 end

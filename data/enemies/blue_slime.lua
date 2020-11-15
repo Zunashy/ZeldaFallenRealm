@@ -66,6 +66,10 @@ local function back_movement_hit_callback()
   return true
 end
 
+local function basic_hit_callback(enemy)
+  hero:start_hurt(enemy, 2)
+end
+
 local function check_distance(movement)
   local x, y = enemy:get_position()
   local d = math.sqrt(math.pow(x - dash.xs, 2) + math.pow(y - dash.ys, 2))     
@@ -91,7 +95,7 @@ end
 
 function dash:dEnd()
   dash:stop()
-
+  enemy.on_attacking_hero = basic_hit_callback
   sol.timer.start(enemy, 1000, function()
     enemy:shake(sprite:get_direction())
     sol.timer.start(enemy, 500, function()
@@ -127,14 +131,6 @@ function enemy:on_created()
 
   enemy.step_len = enemy:get_property("step_length") or 16
 
-end
-
-local function basic_hit_callback(enemy)
-  if enemy:cone_detect(hero, detect_distance, enemy:get_sprite():get_direction(), detect_angle) then
-    kick_hero()
-  else
-    hero:start_hurt(enemy, 2)
-  end
 end
 
 -- Event called when the enemy should start or restart its movements.

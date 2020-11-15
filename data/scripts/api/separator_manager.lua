@@ -45,13 +45,15 @@ local function separator_on_activated(separator)
             sprite:set_animation("walking")
             sprite:set_direction(place.direction)
 
+            if entity:get_movement() then
+                entity:get_movement():stop()
+            end
+
             entity.disabled_by_separator_manager = false
             if entity.on_reset then
                 entity:on_reset()
             end
-            if entity.on_restarted then
-                entity:on_restarted()
-            end
+            entity:restart()
         end
     end
 
@@ -99,6 +101,7 @@ local function separator_on_activated(separator)
     for _, e in ipairs(destroy_on_activate) do
         e:remove()
     end
+    destroy_on_activate = {}
     for _, e in ipairs(notify_on_activate) do
         if e:exists() then
             e:on_separator_activated()
