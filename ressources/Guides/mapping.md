@@ -296,7 +296,11 @@ Quelques exemples :
 La propriété `min_story_state : n` fera qu'une entité n'apparaît que si le story state est de n au moins.  
 La propriété `max_story_state : n` fera qu'une entité n'apparaît que si le story state est de n au plus.  
 La propriété `is_story_state : n` fer qu'une entité n'apparaît que si le storsy state est de n exactement.  
-La propriété `spawn_savegame_variable : <variable>` fera qu'une entité désactivée par défaut sera directement activée si la variable de sauvegarde spécifiée est présente.
+La propriété `spawn_savegame_variable : <variable>` indiquera au jeu de sauvegarder, dans la variable de sauvegarde indiquée, si l'entité a été activée ou désactivée (par un trigger, ou directement un script). C'est à dire que (cas le plus courant) s'il s'agit d'une entité non-active au démarrage, et qu'un trigger la fait apparaître, le jeu le retiendra et les prochaines fois que la map sera chargée cette entité sera directement activée.  
+    ```
+    Exemple:
+    un coffre possède la propriété "spawn_savegame_variable:dungeon_test_chest". Il n'est pas actif au démarrage, et un bouton possède un actiavate_trigger faisant apparaître ce coffre. Une fois que ce bouton aura été activé, faisant apparaître le coffre, la variable de sauvegarde "dungeon_test_chest" contiendra "true", et les prochaines fois que cette map sera chargée le coffre sera actif dès le début.
+    ```
 
 
 C'est à peu près tout, normalement ce guide devrait vous permettre d'utiliser toutes les features disponibles pour le mapping, qu'il s'agisse des fonctionnalités de base de solarus, ou de mécaniques que j'ai implémenté spécialement pour Fallen Realm.  

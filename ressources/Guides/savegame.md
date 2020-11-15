@@ -79,10 +79,15 @@ Cette variable peut être obtenue et modifié par la méthode habituelle, mais a
 A noter que le concept de sidequest n'existe pas vraiment dans solarus, et que le fait qu'une sidequest existe et soit nommée "xxx" ne signifie rien d'autre que : il existe une variable de sauvegarde nommée `sidequest_*xxx*`. Ainsi, le fonctionnement des sidequest dépend à 100% de votre utilisation de ces variables.  
 
 ## Memo : mécaniques liées au variables de sauvegarde
-Cette section regroupe les diverses fonctionnalités et mécaniques liées aux variables de sauvegarde, déjà présentées dans d'autres guides divers.
+Cette section regroupe les diverses fonctionnalités et mécaniques liées aux variables de sauvegarde, déjà présentées dans d'autres guides divers.  
 
 - Sauvegarde de l'état d'une entité (Solarus) : solarus permet de lier une variable de sauvegarde à certaines entités ([enemi](mapping.md#enemi), coffre, pickable) afin que leur état soit sauvegardé dans une variable choisie par l'utilisateur.
-- Certaines entités custom
+- Certaines [entités custom](mapping.md#entités-custom) intègrent une variable de sauvegarde à leur fonctionnement (indiquée dans une propriété custom). Ce fonctionnement dépend de l'entité.
+- Donner la propriété `spawn_savegame_variable` à une entité aura pour effet de sauvegarder le fait qu'elle soit ou non activée, dans la variable dont le nom est la valeur de cette propriété.  
+Quand une entité (avec cette prop) est activée ou désactivée par un trigger, la valeur de la variable est changée en "true" ou "false" respectivement (rappel : si elle n'existe pas, changer sa valeur la crée automatiquement) ; quand une map est chargée, les entités possédant cette propriété sont directement activées ou désactivées si leur variable existe et possède la valeur "true" ou "false", respectivement.
+- Donner la propriété `savegame_variable` à une entité dotée d'un activate trigger nullifie l'effet de ce trigger si la variable correspondaant à la valeur de la propriété existe. Cependant cette variable n'est pas automatiquement impactée (encore moins créée) si cet activate_trigger est activé.
+- Donner la propriété `savegame_variable` à un destructible conservera son état (détruit ou non) dans la variable correspondant à la valeur de la prop. S'il est détruit, la prochaine fois que la map est chargée il n'apparaîtra pas.
+
 
 [Retour au sommaire](starting.md)
 
