@@ -110,6 +110,7 @@ function enemy_meta:on_hurt()
 end
 
 function enemy_meta:on_dead()
+  self.dead = true
   local prop = self:get_property("savegame_variable") 
   if prop then
     self:get_game():set_value(prop, true)

@@ -55,6 +55,16 @@ animation{
   },
 }
 animation{
+  name = "sword_looping",
+  src_image = "hero/sword1.png",
+  directions = {
+    { x = 64, y = 80, frame_width = 32, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 64, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 32, y = 80, frame_width = 32, frame_height = 16, origin_x = 24, origin_y = 13 },
+    { x = 16, y = 64, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "sword_tapping",
   src_image = "hero/sword1.png",
   frame_delay = 100,

@@ -80,7 +80,7 @@ local function death_trigger_callback(enemy)
 
   for e in map:get_entities_by_type("enemy") do
     local o_event = e:get_property("death_trigger")
-    if o_event and o_event == event and not (e == enemy) then  --testing if there is any other enemy, alive, with this trigger
+    if o_event and o_event == event and not (e == enemy) and not e.dead  then  --testing if there is any other enemy, alive, with this trigger
       last_to_die = false  
     end
   end

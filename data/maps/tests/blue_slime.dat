@@ -664,6 +664,45 @@ enemy{
   breed = "oursin",
 }
 
+enemy{
+  name = "oursin_test_2",
+  layer = 1,
+  x = 232,
+  y = 285,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_test",
+    },
+  },
+  direction = 0,
+  breed = "oursin",
+}
+
+enemy{
+  name = "oursin_test_3",
+  layer = 1,
+  x = 232,
+  y = 285,
+  properties = {
+    {
+      key = "death_trigger",
+      value = "spawn_chest_test",
+    },
+  },
+  direction = 0,
+  breed = "oursin",
+}
+
+chest{
+  name = "chest_test",
+  layer = 1,
+  x = 248,
+  y = 301,
+  enabled_at_start = false,
+  sprite = "entities/chests/chest",
+}
+
 tile{
   layer = 2,
   x = 160,
