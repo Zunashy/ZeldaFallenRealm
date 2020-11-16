@@ -207,6 +207,7 @@ Tiens, prends cette corne. C'est un objet très précieux qui te conduira à l'e
 
 dialog{
   id = "pnj.main.zuna.first_encounter.1",
+  position = "bottom",
   text = [[
 ... Qui es-tu ? Mmh, encore un stupide soldat qui veut se mesurer à moi ?
 ]],

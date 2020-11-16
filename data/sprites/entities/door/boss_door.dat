@@ -3,6 +3,9 @@ animation{
   src_image = "tileset",
   directions = {
     { x = 128, y = 0, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0 },
+    { x = 128, y = 0, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0 },
+    { x = 128, y = 0, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0 },
+    { x = 128, y = 0, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0 },
   },
 }
 animation{
@@ -10,6 +13,9 @@ animation{
   src_image = "tileset",
   frame_delay = 400,
   directions = {
+    { x = 128, y = 0, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 2, num_columns = 1 },
+    { x = 128, y = 0, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 2, num_columns = 1 },
+    { x = 128, y = 0, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 2, num_columns = 1 },
     { x = 128, y = 0, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 2, num_columns = 1 },
   },
 }
