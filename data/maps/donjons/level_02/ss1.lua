@@ -13,8 +13,6 @@ local game = map:get_game()
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started_()
   self:init_dungeon_features()
-  map:enable_colored_blocks()
-  self:init_dungeon_features()
   local zuna = map:get_entity("zuna")
   function zuna:on_interaction()
     local menu = require("scripts/menus/credits")

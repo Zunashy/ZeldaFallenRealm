@@ -4637,27 +4637,6 @@ block{
   max_moves = 1,
 }
 
-block{
-  name = "colored_block",
-  layer = 0,
-  x = 184,
-  y = 317,
-  sprite = "entities/dungeon_elements/color_cube",
-  pushable = true,
-  pullable = false,
-}
-
-block{
-  name = "colored_block_2",
-  layer = 0,
-  x = 88,
-  y = 221,
-  enabled_at_start = false,
-  sprite = "entities/dungeon_elements/color_cube",
-  pushable = true,
-  pullable = false,
-}
-
 switch{
   layer = 0,
   x = 592,
@@ -4804,17 +4783,6 @@ custom_entity{
   sprite = "entities/dungeon_elements/colored_flame",
 }
 
-block{
-  name = "colored_block_3",
-  layer = 0,
-  x = 360,
-  y = 125,
-  enabled_at_start = false,
-  sprite = "entities/dungeon_elements/color_cube",
-  pushable = true,
-  pullable = false,
-}
-
 destination{
   name = "shortcut",
   layer = 0,
@@ -4884,6 +4852,41 @@ destination{
   x = 696,
   y = 445,
   direction = 0,
+}
+
+custom_entity{
+  name = "colored_block_3",
+  layer = 0,
+  x = 360,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/color_cube",
+  model = "colored_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 184,
+  y = 317,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/color_cube",
+  model = "colored_block",
+}
+
+custom_entity{
+  name = "colored_block_2",
+  layer = 0,
+  x = 88,
+  y = 221,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/color_cube",
+  model = "colored_block",
 }
 
 tile{

@@ -5815,16 +5815,6 @@ custom_entity{
   sprite = "entities/dungeon_elements/colored_flame",
 }
 
-block{
-  name = "colored_block",
-  layer = 0,
-  x = 360,
-  y = 429,
-  sprite = "entities/dungeon_elements/color_cube",
-  pushable = true,
-  pullable = false,
-}
-
 teletransporter{
   layer = 0,
   x = 352,
@@ -6214,6 +6204,17 @@ dynamic_tile{
   width = 16,
   height = 16,
   pattern = "32",
+}
+
+custom_entity{
+  layer = 0,
+  x = 360,
+  y = 429,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/color_cube",
+  model = "colored_block",
 }
 
 tile{
