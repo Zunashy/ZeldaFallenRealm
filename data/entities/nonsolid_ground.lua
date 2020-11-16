@@ -10,7 +10,7 @@
 
 local entity = ...
 local game = entity:get_game()
-local map = entity:get_map()
+local hero = game:get_hero()
 
 -- Event called when the custom entity is initialized.
 function entity:on_created()
@@ -21,9 +21,6 @@ function entity:on_created()
   self:add_collision_test("overlapping", function(_, e)
     if e == game:get_hero() then
       e.is_on_nonsolid_ground = true
-      if self.find_solid_ground then
-        e.need_solid_ground = true
-      end
     end
   end)
 end

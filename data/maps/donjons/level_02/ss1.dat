@@ -4719,8 +4719,8 @@ jumper{
 door{
   name = "door_7",
   layer = 0,
-  x = 496,
-  y = 240,
+  x = 480,
+  y = 256,
   enabled_at_start = false,
   direction = 0,
   sprite = "entities/door/door",
@@ -4893,5 +4893,21 @@ tile{
   width = 16,
   height = 8,
   pattern = "69",
+}
+
+custom_entity{
+  layer = 1,
+  x = 488,
+  y = 269,
+  properties = {
+    {
+      key = "find_solid_ground",
+      value = "1",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "nonsolid_ground",
 }
 

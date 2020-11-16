@@ -29,6 +29,7 @@ function sep_meta:on_created()
 end
 
 function sep_meta:on_activated()
+  if self.no_save then return end
   hero = self:get_map():get_hero()
   local ground = hero:get_ground_below();
   if (ground ~= "deep_water"
@@ -36,8 +37,7 @@ function sep_meta:on_activated()
    and ground ~= "lava"
    and ground ~= "prickles"
    and ground ~= "empty"
-   and hero.is_on_nonsolid_ground == false
-   and not self.no_save)
+   and not hero.is_on_nonsolid_ground)
   then 
     hero:save_solid_ground()
   else

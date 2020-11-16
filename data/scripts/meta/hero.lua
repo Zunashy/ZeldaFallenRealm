@@ -94,7 +94,7 @@ local function initialize_hero_features(game)
 
     self:update_ladder()
 
-    hero.is_on_nonsolid_ground = false
+    self.is_on_nonsolid_ground = false
   end
 
   function hero:start_jumping_oow(dir, dist)

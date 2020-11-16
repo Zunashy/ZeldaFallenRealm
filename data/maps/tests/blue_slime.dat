@@ -285,8 +285,8 @@ custom_entity{
 destination{
   name = "spawn",
   layer = 1,
-  x = 296,
-  y = 269,
+  x = 232,
+  y = 237,
   properties = {
     {
       key = "on_obtained",

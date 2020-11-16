@@ -5409,6 +5409,7 @@ door{
   layer = 0,
   x = 240,
   y = 432,
+  enabled_at_start = false,
   direction = 0,
   sprite = "entities/door/door",
   savegame_variable = "dungeon_2_door_2",
