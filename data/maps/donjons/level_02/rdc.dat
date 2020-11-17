@@ -5489,13 +5489,6 @@ switch{
   inactivate_when_leaving = false,
 }
 
-pickable{
-  layer = 0,
-  x = 0,
-  y = 573,
-  treasure_name = "sword",
-}
-
 door{
   name = "door_3",
   layer = 0,
