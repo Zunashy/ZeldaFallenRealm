@@ -330,8 +330,8 @@ enemy{
 enemy{
   name = "blue",
   layer = 1,
-  x = 328,
-  y = 269,
+  x = 336,
+  y = 309,
   direction = 3,
   breed = "blue_slime",
 }
@@ -476,8 +476,8 @@ npc{
 
 custom_entity{
   layer = 1,
-  x = 192,
-  y = 221,
+  x = 216,
+  y = 149,
   width = 32,
   height = 32,
   direction = 0,
@@ -511,8 +511,8 @@ destination{
 
 teletransporter{
   layer = 1,
-  x = 256,
-  y = 224,
+  x = 208,
+  y = 256,
   width = 16,
   height = 16,
   transition = "immediate",
@@ -557,7 +557,7 @@ custom_entity{
 custom_entity{
   layer = 1,
   x = 248,
-  y = 221,
+  y = 205,
   properties = {
     {
       key = "item",
@@ -626,8 +626,8 @@ enemy{
 custom_entity{
   name = "colored_block_2",
   layer = 1,
-  x = 72,
-  y = 237,
+  x = 200,
+  y = 221,
   width = 16,
   height = 16,
   direction = 0,
@@ -645,14 +645,6 @@ custom_entity{
   direction = 0,
   sprite = "entities/dungeon_elements/color_cube",
   model = "colored_block",
-}
-
-separator{
-  layer = 1,
-  x = 24,
-  y = 240,
-  width = 400,
-  height = 16,
 }
 
 enemy{

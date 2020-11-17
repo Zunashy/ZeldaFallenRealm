@@ -106,13 +106,17 @@ local function create_movement(dir)
     return m
 end
 
+local visu = require("scripts/debug/visualizer")
 function entity:move(dir, hero)
     local movtype = (dir % 2)
 
     if self:test_obstacles( 8 * dirCoef[dir + 1].x, 8 * dirCoef[dir + 1].y) then return end
-    
     local cx, cy, w, h = self:get_bounding_box()
-    if map:get_entities_in_rectangle(w * dirCoef[dir + 1].x + cx, h * dirCoef[dir + 1].y + cy, w, h) then return end
+    for e in map:get_entities_in_rectangle(w * dirCoef[dir + 1].x + cx, h * dirCoef[dir + 1].y + cy, w, h) do
+        if (e:get_type() == "enemy") then
+            return
+        end
+    end
 
     local m
     m = create_movement(dir)
