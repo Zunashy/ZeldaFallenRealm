@@ -48,6 +48,7 @@ function entity:on_created()
     self.is_colored_block = true
     self:set_colors_state({top = "red", right = "yellow", up = "blue"})
     self:add_collision_test("overlapping", collision_callback)
+    self.separator_reset = true
 end
 
 local function color_trigger_callback(block_destination)
@@ -68,8 +69,6 @@ local function color_trigger_callback(block_destination)
     if all_activated then
         parse_event_string(map, event)
     end
-
-    self.separator_reset = true
 end
 
 function entity:check_destination()
@@ -106,7 +105,6 @@ local function create_movement(dir)
     return m
 end
 
-local visu = require("scripts/debug/visualizer")
 function entity:move(dir, hero)
     local movtype = (dir % 2)
 
