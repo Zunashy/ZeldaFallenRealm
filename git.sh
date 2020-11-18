@@ -18,6 +18,19 @@ do
 done
 }
 
+function lua(){
+cd "${1:-.}" || exit 1
+for file in $(find . -name "*.lua");
+do
+   if grep -q "<<<<<<< HEAD" $file; then
+         echo -e "[ $RED KO $RESET ] $BOLD $file $NORMAL"
+   else
+         echo -e "[ $GREEN OK $RESET ] $BOLD $file $NORMAL"
+   fi
+done
+}
+
+
 
 function gpush(){
 git add .
