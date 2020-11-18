@@ -5,8 +5,9 @@ properties{
   height = 704,
   min_layer = 0,
   max_layer = 2,
+  world = "dungeon_2",
   tileset = "dungeon/tileset_donjon_2",
-  music = "dungeon1",
+  music = "dungeon2",
 }
 
 tile{
@@ -5388,15 +5389,6 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 616,
-  y = 645,
-  direction = 0,
-  breed = "octorok",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
   x = 80,
   y = 485,
   direction = 0,
@@ -5533,15 +5525,6 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 632,
-  y = 589,
-  direction = 0,
-  breed = "rope",
-  treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
   x = 560,
   y = 661,
   direction = 0,
@@ -5556,14 +5539,6 @@ enemy{
   direction = 0,
   breed = "skeleton_1",
   treasure_name = "random",
-}
-
-enemy{
-  layer = 0,
-  x = 152,
-  y = 589,
-  direction = 0,
-  breed = "blue_octorock",
 }
 
 enemy{
@@ -5664,8 +5639,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 584,
-  y = 397,
+  x = 552,
+  y = 429,
   properties = {
     {
       key = "death_trigger",
@@ -5679,8 +5654,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 600,
-  y = 381,
+  x = 648,
+  y = 429,
   properties = {
     {
       key = "death_trigger",
@@ -5694,8 +5669,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 616,
-  y = 397,
+  x = 520,
+  y = 445,
   properties = {
     {
       key = "death_trigger",
@@ -5870,14 +5845,6 @@ teletransporter{
   height = 16,
   destination_map = "donjons/level_02/ss1",
   destination = "bracelet",
-}
-
-destination{
-  name = "bracelet",
-  layer = 0,
-  x = 648,
-  y = 269,
-  direction = 1,
 }
 
 destination{
@@ -6208,6 +6175,14 @@ custom_entity{
   direction = 0,
   sprite = "entities/dungeon_elements/color_cube",
   model = "colored_block",
+}
+
+destination{
+  name = "bracelet",
+  layer = 0,
+  x = 56,
+  y = 269,
+  direction = 1,
 }
 
 tile{
