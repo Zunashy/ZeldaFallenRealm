@@ -5,7 +5,6 @@ properties{
   height = 528,
   min_layer = 0,
   max_layer = 2,
-  world = "dungeon_2",
   tileset = "dungeon/tileset_donjon_2",
   music = "dungeon2",
 }
@@ -4184,6 +4183,24 @@ enemy{
   treasure_name = "random",
 }
 
+enemy{
+  layer = 0,
+  x = 56,
+  y = 317,
+  direction = 0,
+  breed = "blue_octorock",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 56,
+  y = 253,
+  direction = 0,
+  breed = "octorok",
+  treasure_name = "random",
+}
+
 custom_entity{
   layer = 0,
   x = 40,
@@ -4851,8 +4868,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 56,
-  y = 237,
+  x = 184,
+  y = 317,
   width = 16,
   height = 16,
   direction = 0,
