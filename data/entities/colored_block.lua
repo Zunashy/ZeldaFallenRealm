@@ -115,6 +115,7 @@ function entity:move(dir, hero)
             return
         end
     end
+    sol.audio.play_sound("rolling_coloredcube")
 
     local m
     m = create_movement(dir)

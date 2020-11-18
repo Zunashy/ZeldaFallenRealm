@@ -335,6 +335,7 @@ sound{ id = "jump", description = "jump" }
 sound{ id = "picked_item", description = "picked_item" }
 sound{ id = "picked_money", description = "picked_money" }
 sound{ id = "picked_small_key", description = "picked_small_key" }
+sound{ id = "rolling_coloredcube", description = "rolling_coloredcube" }
 sound{ id = "splash", description = "splash" }
 sound{ id = "swim", description = "swim" }
 sound{ id = "switch", description = "switch" }
