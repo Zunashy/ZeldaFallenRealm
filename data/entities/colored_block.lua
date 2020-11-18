@@ -57,9 +57,9 @@ local function color_trigger_callback(block_destination)
     local all_activated = true
     event = block_destination:get_property(color.."_trigger")
     if not event then return end 
+
     for e in map:get_entities_by_type("custom_entity") do
-        if e:get_model() == "colored_block_destination" then
-            
+        if e:get_model() == "colored_block_destination" and not e == block_destination then
             local o_event = e:get_property(color.."_trigger")
             if o_event and o_event == event and e.block and not e.block.colorState.top == color then
                 all_activated = false
@@ -110,7 +110,7 @@ function entity:move(dir, hero)
 
     if self:test_obstacles( 8 * dirCoef[dir + 1].x, 8 * dirCoef[dir + 1].y) then return end
     local cx, cy, w, h = self:get_bounding_box()
-    for e in map:get_entities_in_rectangle(w * dirCoef[dir + 1].x + cx, h * dirCoef[dir + 1].y + cy, w, h) do
+    for e in map:get_entities_in_rectangle(8 * dirCoef[dir + 1].x + cx, 8 * dirCoef[dir + 1].y + cy, w, h) do
         if (e:get_type() == "enemy") then
             return
         end

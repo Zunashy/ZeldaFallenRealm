@@ -24,7 +24,6 @@ local parse_event_string = require("scripts/feature/event_string")
 function map:enable_entity(name)
   self = self or sol.main.game:get_map()
   local prop, force
-  
   for e in self:get_entities(name) do
   
     force = e:get_property("force_spawn")
