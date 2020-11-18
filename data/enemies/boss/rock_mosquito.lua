@@ -39,7 +39,7 @@ function enemy:on_created()
   head_sprite:set_direction(0)
   shield_sprite:set_direction(0)
 
-  head_sprite:set_xy(0, -16)
+  head_sprite:set_xy(0, 0)
 
   self:set_invincible_sprite(shield_sprite)
   self:set_attacks_consequence_sprite(head_sprite, "protected")
@@ -68,6 +68,7 @@ function enemy:on_created()
     direction = 0
   })
   self.right_hand.no_reset = true
+
   self.left_hand.rm = self
   self.right_hand.rm = self
 
@@ -102,8 +103,10 @@ function enemy:start_movement()
   m:start(head_sprite, function() enemy:start_movement() end)
 end
 
-function enemy:on_restarted()
-  self:start_movement()
+function enemy:on_restarted() 
+  if not self.waiting then
+    self:start_movement()
+  end
 end
 
 local function hurt_cb(self)
@@ -112,6 +115,7 @@ local function hurt_cb(self)
     sol.audio.play_music("boss", true)
     self.left_hand:start()
     self.right_hand:start()
+    self:start_movement()
   end
 
   for entity in map:get_entities_by_type("destructible") do  

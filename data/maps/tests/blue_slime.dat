@@ -695,6 +695,19 @@ chest{
   sprite = "entities/chests/chest",
 }
 
+destructible{
+  layer = 1,
+  x = 264,
+  y = 237,
+  properties = {
+    {
+      key = "savegame_variable",
+      value = "test_rock_savevar",
+    },
+  },
+  sprite = "entities/projectile/rock",
+}
+
 tile{
   layer = 2,
   x = 160,

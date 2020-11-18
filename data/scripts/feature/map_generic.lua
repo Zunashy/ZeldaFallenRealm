@@ -25,6 +25,7 @@ function map:enable_entity(name)
 
   self = self or sol.main.game:get_map()
   local prop, force
+<<<<<<< HEAD
   for e in self:get_entities(name) do
 
     force = e:get_property("force_spawn")
@@ -40,10 +41,26 @@ function map:enable_entity(name)
       if prop then
         self:get_game():set_value(prop, true)
       end
+=======
+  for e in self:get_entities() do
+    if e:get_name() and e:get_name():starts(name) then
+      force = e:get_property("force_spawn")
+>>>>>>> d8e090d4589261b5d011f3b062187753866ea48b
       
-      prop = e:get_property("spawn_trigger")
-      if prop and not (e:get_type() == "door" and not e:is_closed()) then 
-        parse_event_string(self, prop) 
+      if force or not (
+      (e:get_type() == "door" and not e:is_closed()) or 
+      (e:get_type() == "enemy" and not  e:exists())) then
+        
+        e:set_enabled(true)
+        prop = e:get_property("spawn_savegame_variable")
+        if prop then
+          self:get_game():set_value(prop, true)
+        end
+        
+        prop = e:get_property("spawn_trigger")
+        if prop and not (e:get_type() == "door" and not e:is_closed()) then 
+          parse_event_string(self, prop) 
+        end
       end
     end
   end

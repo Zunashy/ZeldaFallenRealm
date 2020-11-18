@@ -160,6 +160,15 @@ function dest_meta:on_cut()
   self:on_destroyed()
 end
 
+function dest_meta:on_lifting(hero, carried_object)
+  local prop = self:get_property("savegame_variable")
+  if prop then
+    carried_object.destructible_savegame_var = prop
+  end
+
+  carried_object.destructible_on_thrown = self.on_thrown
+end
+
 local carried_meta = sol.main.get_metatable("carried_object")
 
 function carried_meta:on_thrown()
@@ -177,6 +186,14 @@ function carried_meta:on_breaking()
     self:set_position(x, y - sprite_y)
   elseif direction % 2 == 0 then
     self:set_position(x, self.throw_y)
+  end
+
+  if self.destructible_on_thrown then
+    self:destructible_on_thrown()
+  end
+
+  if self.destructible_savegame_var then
+    self:get_game():set_value(self.destructible_savegame_var, true)
   end
 end  
 

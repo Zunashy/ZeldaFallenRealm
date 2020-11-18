@@ -7,7 +7,7 @@ properties{
   max_layer = 2,
   world = "dungeon_2",
   tileset = "dungeon/tileset_donjon_2",
-  music = "dungeon2",
+  music = "dungeon1",
 }
 
 tile{
@@ -5848,6 +5848,14 @@ teletransporter{
 }
 
 destination{
+  name = "bracelet",
+  layer = 0,
+  x = 648,
+  y = 269,
+  direction = 1,
+}
+
+destination{
   name = "boss",
   layer = 0,
   x = 680,
@@ -6012,7 +6020,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_stairs_boss;door_boss",
+      value = "spawn_stairs_boss;door_boss;music_dungeon2",
     },
     {
       key = "no_reset",
@@ -6092,6 +6100,7 @@ sensor{
 }
 
 destructible{
+  name = "boss_rock",
   layer = 0,
   x = 600,
   y = 93,
@@ -6155,6 +6164,7 @@ dynamic_tile{
   layer = 0,
   x = 688,
   y = 144,
+  enabled_at_start = false,
   properties = {
     {
       key = "spawn_savegame_variable",
@@ -6178,10 +6188,18 @@ custom_entity{
 }
 
 destination{
-  name = "bracelet",
+  name = "rock_respawn",
   layer = 0,
-  x = 56,
-  y = 269,
+  x = 568,
+  y = 125,
+  direction = 1,
+}
+
+destination{
+  name = "rock_respawn_2",
+  layer = 0,
+  x = 632,
+  y = 125,
   direction = 1,
 }
 
