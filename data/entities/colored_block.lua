@@ -23,7 +23,7 @@ end
 
 local function collision_callback(entity, other)
     local m = entity:get_movement()
-    if m and not (other:get_movement() and other:get_movement().is_color_block_knockback) then
+    if m and other:get_type() == "enemy" and not (other:get_movement() and other:get_movement().is_color_block_knockback) then
         new_m = sol.movement.create("straight")
         local ox, oy = other:get_position()
         other:set_position(ox + 4 * gen.dirCoef[m.direction + 1].x, oy + 4 * gen.dirCoef[m.direction + 1].y)
