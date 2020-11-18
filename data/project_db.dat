@@ -315,6 +315,8 @@ music{ id = "plain", description = "Plaine" }
 music{ id = "save_select", description = "save_select" }
 music{ id = "title", description = "title" }
 
+sound{ id = "bossexplode", description = "bossexplode" }
+sound{ id = "bosshit", description = "bosshit" }
 sound{ id = "chest_appears", description = "chest_appears" }
 sound{ id = "chest_open", description = "chest_open" }
 sound{ id = "danger", description = "danger" }
@@ -332,6 +334,8 @@ sound{ id = "hero_pushes", description = "hero_pushes" }
 sound{ id = "hero_seen", description = "hero_seen" }
 sound{ id = "horn", description = "horn" }
 sound{ id = "jump", description = "jump" }
+sound{ id = "levelteleport", description = "levelteleport" }
+sound{ id = "lift", description = "lift" }
 sound{ id = "picked_item", description = "picked_item" }
 sound{ id = "picked_money", description = "picked_money" }
 sound{ id = "picked_small_key", description = "picked_small_key" }

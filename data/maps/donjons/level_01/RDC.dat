@@ -11112,6 +11112,7 @@ teletransporter{
   destination_map = "donjons/level_01/RDC",
   destination = "tp2",
   sprite = "entities/dungeon_elements/teleport",
+  sound = "levelteleport",
 }
 
 teletransporter{
@@ -11131,6 +11132,7 @@ teletransporter{
   destination_map = "donjons/level_01/RDC",
   destination = "tp1",
   sprite = "entities/dungeon_elements/teleport",
+  sound = "levelteleport",
 }
 
 destination{
