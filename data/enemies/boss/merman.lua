@@ -72,6 +72,7 @@ local function hurt_cb()
       enemy:set_attacks_consequence(hurt_cb)
     end
   end)
+  sol.audio.play_sound("bosshit")
   enemy:remove_life(1)
 end
 
@@ -152,4 +153,8 @@ function enemy:on_restarted()
   self:set_visible(true)
   self:start_movement(0)
   self:start_swing_detect()
+end
+
+function enemy:on_dying()
+  sol.audio.play_sound("bossexplode")
 end

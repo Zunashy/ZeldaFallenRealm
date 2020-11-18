@@ -116,6 +116,7 @@ local function hurt_cb(self)
     self.left_hand:start()
     self.right_hand:start()
     self:start_movement()
+    sol.audio.play_sound("bosshit")
   end
 
   for entity in map:get_entities_by_type("destructible") do  
@@ -143,6 +144,7 @@ end
 function enemy:on_dying()
   self.left_hand:remove_life(999)
   self.right_hand:remove_life(999)
+  sol.audio.play_sound("bossexplode")
 end
 
 enemy:register_event("on_hurt", hurt_cb)
