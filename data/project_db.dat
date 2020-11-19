@@ -284,6 +284,7 @@ music{ id = "bar", description = "bar" }
 music{ id = "boss", description = "boss" }
 music{ id = "campfire", description = "campfire" }
 music{ id = "caves", description = "caves" }
+music{ id = "custom/nielint", description = "custom/nielint" }
 music{ id = "dungeon1", description = "dungeon1" }
 music{ id = "dungeon2", description = "Donjon 2" }
 music{ id = "eduardo/Scatman_John_-_pi_pa_pa_para_po_Original_Video_", description = "eduardo/Scatman_John_-_pi_pa_pa_para_po_Original_Video_" }
@@ -507,6 +508,7 @@ file{ path = "maps/donjons/level_02/rdc.dat", author = "Zunashy", }
 file{ path = "maps/donjons/level_02/ss1.dat", author = "Zunashy", }
 file{ path = "maps/normal_version", author = "Zunashy", }
 file{ path = "maps/war_version", author = "Nillan", }
+file{ path = "musics/custom/nielint.ogg", author = "SaniTOS", }
 file{ path = "musics/plain.ogg", author = "Nintendo", }
 file{ path = "scripts/api/bit.lua", author = "TwilCynder", }
 file{ path = "scripts/api/controls_manager.lua", author = "TwilCynder", }
