@@ -12207,7 +12207,7 @@ switch{
 }
 
 switch{
-  name = "lvl1_btn3",
+  name = "lvl1_btn4",
   layer = 1,
   x = 112,
   y = 584,
@@ -12263,15 +12263,8 @@ pickable{
 
 pickable{
   layer = 1,
-  x = 40,
-  y = 557,
-  treasure_name = "heart",
-}
-
-pickable{
-  layer = 1,
-  x = 168,
-  y = 573,
+  x = 152,
+  y = 669,
   treasure_name = "rupee",
 }
 
@@ -12281,6 +12274,39 @@ enemy{
   y = 493,
   direction = 0,
   breed = "slime_red_small",
+}
+
+switch{
+  name = "lvl1_btn3",
+  layer = 1,
+  x = 32,
+  y = 544,
+  enabled_at_start = false,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "spawn_lvl1_btn4",
+    },
+  },
+  subtype = "walkable",
+  sprite = "entities/dungeon_elements/switch",
+  sound = "chest_appears",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+pickable{
+  layer = 1,
+  x = 64,
+  y = 645,
+  treasure_name = "rupee",
+}
+
+pickable{
+  layer = 1,
+  x = 80,
+  y = 645,
+  treasure_name = "rupee",
 }
 
 tile{
