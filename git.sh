@@ -19,9 +19,11 @@ do
          echo -e "[ $GREEN OK $RESET ] $BOLD $file $NORMAL"
    fi
 done
-echo ""
-echo -e "File(s) with conflicts : " 
-echo -e $DAT_TAB
+if [ ${#DAT_TAB} -lt 1 ]; then echo ""; echo -e "$GREEN $BOLD[SUCC]$NORMAL $RESET There is no conflict ! =) $NORMAL"
+else echo ""
+     echo -e "$RED $BOLD[FAIL]$NORMAL $RESET File(s) with conflicts : " 
+     echo -e $DAT_TAB
+fi
 }
 
 function lua(){
@@ -35,9 +37,11 @@ do
          echo -e "[ $GREEN OK $RESET ] $BOLD $file $NORMAL"
    fi
 done
-echo ""
-echo -e "File(s) with conflicts : "
-echo -e $LUA_TAB
+if [ ${#LUA_TAB} -lt 1 ]; then echo ""; echo -e "$GREEN $BOLD[SUCC]$NORMAL $RESET There is no conflict ! =) $NORMAL"
+else echo ""
+     echo -e "$RED $BOLD[FAIL]$NORMAL $RESET File(s) with conflicts : "
+     echo -e $LUA_TAB
+fi
 }
 
 
