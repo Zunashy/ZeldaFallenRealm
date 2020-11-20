@@ -328,6 +328,7 @@ sound{ id = "enemy_hurt", description = "enemy_hurt" }
 sound{ id = "enemy_killed", description = "enemy_killed" }
 sound{ id = "exclamation", description = "exclamation" }
 sound{ id = "heart", description = "heart" }
+sound{ id = "hero_dying", description = "hero_dying" }
 sound{ id = "hero_falls", description = "hero_falls" }
 sound{ id = "hero_hurt", description = "hero_hurt" }
 sound{ id = "hero_lands", description = "hero_lands" }
