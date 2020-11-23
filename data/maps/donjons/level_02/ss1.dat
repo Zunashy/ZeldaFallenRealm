@@ -4859,6 +4859,7 @@ custom_entity{
   layer = 0,
   x = 360,
   y = 125,
+  enabled_at_start = false,
   width = 16,
   height = 16,
   direction = 0,

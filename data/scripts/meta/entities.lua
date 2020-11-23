@@ -7,6 +7,9 @@ function sensor_meta:on_created()
 end
 
 function sensor_meta:on_activated()
+  if self.persistent and self.activated then
+    return true
+  end
   self.activated = true
 end
 

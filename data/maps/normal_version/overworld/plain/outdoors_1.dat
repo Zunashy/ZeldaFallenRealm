@@ -3664,7 +3664,7 @@ destination{
   layer = 1,
   x = 16,
   y = 77,
-  direction = 1,
+  direction = 0,
 }
 
 destination{
@@ -3732,7 +3732,7 @@ destination{
   layer = 1,
   x = 392,
   y = 53,
-  direction = 1,
+  direction = 3,
 }
 
 destructible{

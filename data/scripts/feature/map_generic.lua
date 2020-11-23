@@ -22,13 +22,13 @@ local parse_event_string = require("scripts/feature/event_string")
 
 --Enable an entity with a specified name on the specified map (or disables it, depending on state)
 function map:enable_entity(name)
-
   self = self or sol.main.game:get_map()
   local prop, force
   for e in self:get_entities() do
+    print(e:get_name() == "colored_block_3")
     if e:get_name() and e:get_name():starts(name) then
       force = e:get_property("force_spawn")
-      
+
       if force or not (
       (e:get_type() == "door" and not e:is_closed()) or 
       (e:get_type() == "enemy" and not  e:exists())) then
@@ -48,9 +48,10 @@ function map:enable_entity(name)
   end
 
   if self.separator_manager_enabled then
-    for _, enemy in ipairs(self:get_stored_enemies()) do
-      if enemy.name and enemy.name:starts(name) then
-        enemy.is_enabled = true
+
+    for _, entity in ipairs(self:get_stored_entities()) do
+      if entity.name and entity.name:starts(name) then
+        entity.enabled_at_start = true
       end
     end 
   end

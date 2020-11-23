@@ -9482,7 +9482,7 @@ destination{
   layer = 1,
   x = 240,
   y = 21,
-  direction = 1,
+  direction = 3,
 }
 
 destination{
@@ -9490,7 +9490,7 @@ destination{
   layer = 1,
   x = 232,
   y = 317,
-  direction = 1,
+  direction = 3,
 }
 
 destination{
@@ -9498,7 +9498,7 @@ destination{
   layer = 1,
   x = 200,
   y = 165,
-  direction = 1,
+  direction = 3,
 }
 
 teletransporter{

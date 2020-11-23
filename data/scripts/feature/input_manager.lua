@@ -74,6 +74,10 @@ function meta:on_key_pressed(key, modifiers) --manages inputs upstream of the co
     sol.main.game:get_hero():teleport("donjons/level_02/ss1", "test")
   elseif key == "f9" then
     vfx.shockwave(sol.main.game:get_map():get_camera():get_surface(), 64, 64, 1, 8, 20, 4)
+  elseif key == "f10" then
+    sol.main.game:set_max_life(64)
+    sol.main.game:set_life(64)
+    sol.main.game:get_hero():set_walking_speed(128)
   end
 
   return handled

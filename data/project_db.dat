@@ -103,8 +103,6 @@ tileset{ id = "normal/marais", description = "normal/marais" }
 tileset{ id = "normal/snow", description = "normal/snow" }
 tileset{ id = "war/annexe", description = "war/war_world_annexe" }
 tileset{ id = "war/main", description = "war/war_world" }
-tileset{ id = "war_world", description = "war_world" }
-tileset{ id = "war_world_annexe" }
 
 sprite{ id = "citizens/old_man", description = "citizens/old_man" }
 sprite{ id = "citizens/old_woman", description = "citizens/old_woman" }

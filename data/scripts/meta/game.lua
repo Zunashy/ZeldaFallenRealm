@@ -108,6 +108,7 @@ function game_meta:on_game_over_started()
   y = y - cmy + self.HUD_height
   self.game_over_link_position = {x = x, y = y}
   sol.audio.play_sound("hero_dying")
+  sol.audio.stop_music()
   hero:remove()
   self.game_over_link_sprite:set_animation("dying", function ()
     game.game_over_link_sprite:set_animation("dead", function ()

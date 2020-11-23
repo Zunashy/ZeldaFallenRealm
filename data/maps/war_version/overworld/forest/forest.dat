@@ -6815,7 +6815,7 @@ teletransporter{
   y = 328,
   width = 16,
   height = 16,
-  destination_map = "war_version/overworld/sword_cave",
+  destination_map = "war_version/overworld/forest/sword_cave",
 }
 
 destination{

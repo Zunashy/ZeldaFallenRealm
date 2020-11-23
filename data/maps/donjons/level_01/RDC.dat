@@ -12033,7 +12033,7 @@ custom_entity{
     },
     {
       key = "on_obtained",
-      value = "teleport_normal_version/overworld/north_beach/outdoors:trident_dungeon$fade",
+      value = "teleport_normal_version/overworld/north_beach/outdoors:trident_dungeon$fade;music_none",
     },
   },
   width = 16,

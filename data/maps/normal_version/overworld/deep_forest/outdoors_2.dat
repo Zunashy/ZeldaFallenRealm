@@ -8375,6 +8375,15 @@ tile{
   pattern = "229_3",
 }
 
+tile{
+  layer = 1,
+  x = 48,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "1_2",
+}
+
 destructible{
   layer = 1,
   x = 400,
@@ -8960,17 +8969,6 @@ enemy{
   direction = 0,
   breed = "moblin_bow",
   treasure_name = "random",
-}
-
-teletransporter{
-  layer = 1,
-  x = 48,
-  y = 32,
-  width = 16,
-  height = 16,
-  destination_map = "normal_version/overworld/mountain/outdoors",
-  destination = "PUTEUH",
-  sprite = "entities/dungeon_elements/teleport",
 }
 
 destination{

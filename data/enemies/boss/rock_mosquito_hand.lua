@@ -18,6 +18,8 @@ local protect_movement_speed = 96
 
 local protect_y_offset = 30
 
+local rock_destroy_chance = 0.7
+
 local arms_pos = {}
 for i = 1, arms_nb do
   arms_pos[i] = (movement_range - hand_radius - (arm_diameter * (i - 0.5))) / movement_range
@@ -131,7 +133,7 @@ local function init_rock(rock, movement_angle, distance)
   end
 
   m:start(rock, function()
-    if math.random() < 0.8 or rock:overlaps(hero, "overlapping") then
+    if math.random() < rock_destroy_chance or rock:overlaps(hero, "overlapping") then
       rock:destroy()
     else
       local x, y, layer = rock:get_position()

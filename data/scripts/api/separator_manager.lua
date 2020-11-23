@@ -11,6 +11,10 @@ local function get_stored_enemies()
     return enemy_places
 end
 
+local function get_stored_entities()
+    return entity_places
+end
+
 local function get_sprite_name(entity)
     local sprite = entity:get_sprite()
     return sprite and sprite:get_animation_set() or ""
@@ -121,6 +125,7 @@ function separator_manager:manage_map(map)
     notify_on_activate = {}
 
     map.get_stored_enemies = get_stored_enemies
+    map.get_stored_entities = get_stored_entities
 
     function map:destroy_on_separator(entity)
         separator_manager:destroy_on_separator(entity)
