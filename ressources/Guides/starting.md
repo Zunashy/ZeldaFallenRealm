@@ -61,7 +61,16 @@ récupérez les modifs (voir paragraphe suivant) puis réesayer de `push`, sinon
 
 - `git pull` récupère les modifs apportées par les autres depuis le dépôt en ligne.
 - Git effectuera parfois un *merge* pour harmoniser deux modifications, et ouvrira un éditeur de texte en vous demandant d'écrire un message de merge. Mettez n'importe quoi (vraiment, on s'en fout, git tient à ce qu'il y ait quelque chose mais osef), sauvegardez et fermez l'éditeur.
-- Si pour une quelconque raison git refuse de terminer le `pull` après ça, vous affiche un message d'erreur ... ne perdez pas de temps à chercher à comprendre, on entre dans la partie obscure de Git, expliquez le problème à Twil.
+- Si pour une quelconque raison git refuse de terminer le `pull` après ça, vous affiche un message d'erreur ... ne perdez pas de temps à chercher à comprendre, on entre dans la partie obscure de Git, demandez sur le serveur discord.
+
+##### gpush
+Si vous utilisez le git.sh (voir aide sur le serveur discord) du projet, la commande `gpush "message` est l'équivalent des commandes suivantes
+```
+git add *
+git commit -a -m "message"
+git pull origin master
+git push origin master
+```
 
 ## Autres Guides
 - [Mapping](mapping.md)
