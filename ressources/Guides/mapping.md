@@ -18,10 +18,10 @@ Comme expliqué précédemment, la map est composée d'un décor et d'éléments
 
 Le décor d'une map est composé d'une multitude de petites images, appelées patterns ou tiles, généralement de taille 8x8 ou 16x16, souvent répétés.  
 
-**Exemple** : sur cette image, on peut voir deux patterns différents, de 16x16 pixels chacune.
+**Exemple** : sur cette image, on peut voir deux patterns différents, de 16x16 pixels chacuns.  
 ![Image indisponible](img/tiles1.PNG)  
 Celui de gauche n'est présent qu'une fois, mais celui de droite à été répétée pour créer le  sol.  
-Il est important de noter que si le pattern a été répété, il s'agit pour Solarus d'une seule et même grande tile. (Retenez qu'une **tile** peut être composée d'une répétition de **paterns**)
+Il est important de noter que si le pattern a été répété, il s'agit pour Solarus d'une seule et même grande tile. (Retenez qu'une **tile** peut être composée d'une répétition d'un même **patern**)
 
 #### [Tilesets](tilesets.md)
 Les patterns/tiles sont regroupées sur des **tilesets**, de grandes images contenant toutes les tiles nécessaires à une map (on trouvera par exemple un tileset pour les maisons de base, un pour le donjon 1, un pour le monde extérieur, etc). 
