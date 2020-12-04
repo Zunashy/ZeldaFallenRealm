@@ -6,6 +6,8 @@ map{ id = "donjons/level_02/rdc", description = "donjons/level_02/rdc" }
 map{ id = "donjons/level_02/ss1", description = "donjons/level_02/ss1" }
 map{ id = "donjons/level_02/transit" }
 map{ id = "donjons/level_04/rdc" }
+map{ id = "donjons/level_05/entrance", description = "Entrée de la reine des neiges" }
+map{ id = "donjons/level_05/rdc", description = "Entre deux givres" }
 map{ id = "normal_version/overworld/deep_forest/indoors/cave_1" }
 map{ id = "normal_version/overworld/deep_forest/indoors/cave_2" }
 map{ id = "normal_version/overworld/deep_forest/indoors/house_1" }
@@ -509,6 +511,8 @@ file{ path = "maps/donjons/level_01/RDC_old.dat", author = "Zunashy", }
 file{ path = "maps/donjons/level_01/transit.dat", author = "Zunashy", }
 file{ path = "maps/donjons/level_02/rdc.dat", author = "Zunashy", }
 file{ path = "maps/donjons/level_02/ss1.dat", author = "Zunashy", }
+file{ path = "maps/donjons/level_05/rdc.dat", author = "moi", license = "lui" }
+file{ path = "maps/donjons/level_05/rdc.lua", author = "moi", license = "lui" }
 file{ path = "maps/normal_version", author = "Zunashy", }
 file{ path = "maps/war_version", author = "Nillan", }
 file{ path = "musics/custom/nielint.ogg", author = "SaniTOS", }
