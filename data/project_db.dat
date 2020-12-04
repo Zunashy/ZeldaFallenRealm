@@ -101,6 +101,7 @@ tileset{ id = "normal/lava", description = "normal/lava" }
 tileset{ id = "normal/main", description = "normal/main" }
 tileset{ id = "normal/marais", description = "normal/marais" }
 tileset{ id = "normal/snow", description = "normal/snow" }
+tileset{ id = "test", description = "Test" }
 tileset{ id = "war/annexe", description = "war/war_world_annexe" }
 tileset{ id = "war/main", description = "war/war_world" }
 
@@ -412,6 +413,7 @@ entity{ id = "dungeon_statue_eye", description = "Oeil de statue" }
 entity{ id = "flame", description = "Flamme (graine)" }
 entity{ id = "ice_floor", description = "Sol de glace" }
 entity{ id = "interaction_box", description = "Interaction Box" }
+entity{ id = "layer_changer", description = "Transition Couche" }
 entity{ id = "light", description = "Source de lumière" }
 entity{ id = "merman_wave", description = "Projectile Boss donjon 1" }
 entity{ id = "nonsolid_ground", description = "Indicateur de sol instable" }
@@ -474,6 +476,7 @@ file{ path = "entities/dungeon_statue_eye.lua", author = "TwilCynder", }
 file{ path = "entities/flame.lua", author = "TwilCynder", }
 file{ path = "entities/ice_floor.lua", author = "TwilCynder", }
 file{ path = "entities/interaction_box.lua", author = "TwilCynder", }
+file{ path = "entities/layer_changer.lua", author = "TwilCynder", }
 file{ path = "entities/light.lua", author = "TwilCynder", }
 file{ path = "entities/merman_wave.lua", author = "TwilCynder", }
 file{ path = "entities/nonsolid_ground.lua", author = "TwilCynder", }
@@ -556,3 +559,6 @@ file{ path = "sprites/pnj/main/zuna.dat", author = "Zunashy", }
 file{ path = "sprites/pnj/main/zuna_sword.dat", author = "Zunashy", }
 file{ path = "sprites/pnj/nielint/barman_sleeping.dat", author = "Zunashy", }
 file{ path = "sprites/things/exclamation.dat", author = "Nintendo", }
+file{ path = "tilesets/test.dat", author = "Tuile Cintre", }
+file{ path = "tilesets/test.entities.png", author = "Tuile Cintre", }
+file{ path = "tilesets/test.tiles.png", author = "Tuile Cintre", }
