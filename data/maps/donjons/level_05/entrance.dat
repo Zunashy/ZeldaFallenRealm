@@ -918,8 +918,7 @@ teletransporter{
   enabled_at_start = false,
   width = 16,
   height = 16,
-  destination_map = "donjons/level_05/entrance",
-  destination = "ss1",
+  destination_map = "donjons/level_05/ss1",
 }
 
 destination{
