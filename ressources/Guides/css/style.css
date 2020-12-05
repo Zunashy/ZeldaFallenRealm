@@ -1,0 +1,47 @@
+body{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+    color:white;
+    background-color: #1E1E1E;
+    font-size: 14;
+    line-height: 1.6;
+    width: 70%;
+    min-width: 600px;
+    padding:0;
+}
+
+code{
+    color:#C9AE76;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+pre{
+    background-color: #161616;
+    margin-right: 7%;
+    padding: 10px;
+}
+
+pre>code{
+    color:white;
+}
+
+h1:after
+{
+    content:' ';
+    display:block;
+    border-bottom:1px solid #666666;
+}
+
+h2:after
+{
+    margin-top: 3px;
+    content:' ';
+    display:block;
+    border-bottom:1px solid #666666;
+    width: 40%;
+}
+
+a
+{
+    color:Red
+}

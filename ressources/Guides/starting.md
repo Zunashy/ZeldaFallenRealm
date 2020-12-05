@@ -74,8 +74,10 @@ git push origin master
 
 ## Autres Guides
 - [Mapping](mapping.md)
+- [Mapping avancé](mapping_advanced.md)
 - [Sauvegarde](savegame.md)
 - [Items](items.md)
+- [Tilesets](tilesets.md)
 
 ### Guides à venir
 - Sprites

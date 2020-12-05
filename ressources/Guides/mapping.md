@@ -16,23 +16,23 @@ Comme expliqué précédemment, la map est composée d'un décor et d'éléments
 
 ## Les tiles
 
-Le décor d'une map est composé d'une multitude de petites images, généralement de taille 8x8 ou 16x16, souvent répétés.  
+Le décor d'une map est composé d'une multitude de petites images, appelées patterns ou tiles, généralement de taille 8x8 ou 16x16, souvent répétés.  
 
-
-**Exemple** : sur cette image, on peut voir deux tiles différentes, de 16x16 pixels  
+**Exemple** : sur cette image, on peut voir deux patterns différents, de 16x16 pixels chacuns.  
 ![Image indisponible](img/tiles1.PNG)  
-Celle de gauche n'est présente qu'une fois, mais celle de droite à été répétée pour créer le motif du sol.
+Celui de gauche n'est présent qu'une fois, mais celui de droite à été répétée pour créer le  sol.  
+Il est important de noter que si le pattern a été répété, il s'agit pour Solarus d'une seule et même grande tile. (Retenez qu'une **tile** peut être composée d'une répétition d'un même **patern**)
 
-#### Tilesets
-Les tiles sont regroupées sur des **tilesets**, de grandes images contenant toutes les tiles nécessaires à une map (on trouvera par exemple un tileset pour les maisons de base, un pour le donjon 1, un pour le monde extérieur, etc). 
+#### [Tilesets](tilesets.md)
+Les patterns/tiles sont regroupées sur des **tilesets**, de grandes images contenant toutes les tiles nécessaires à une map (on trouvera par exemple un tileset pour les maisons de base, un pour le donjon 1, un pour le monde extérieur, etc). 
 Chaque map est liée à un tileset, sélectionnable dans le menu déroulant en bas des propriétés de la map, et les tiles que vous y placerez proviendront de ce tileset *par défaut*, il est cependant possible de placer des tiles provenant d'un autre tileset (en changeant le tileset affiché en bas à gauche grâce au menu déroulant juste au dessus). On peut alors se poser la question : pourquoi définir un "tileset de la map" si on peut de toute façon utiliser des tiles de n'importe quel tileset ? Premièrement, parce que c'est plus pratique d'avoir un tileset par défaut étant donné d'en général la map contiendra *surtout* des tiles venant d'un seul et même tileset, mais aussi pour une autre raison liée au fonctionnement des sprites, que l'on verra dans la partie qui leur est dédiée.
 
-(note : vous pouvez aussi aller voir le tileset directement, avec chaque tile et leurs propriétés dont on parlera plus tard, dans le dossier `data/tilesets/`, ou en cliquant sur l'icône crayon à côté du tileset sélectionné)
+(note : vous pouvez aussi aller voir le tileset directement, avec chaque pattern et leurs propriétés dont on parlera plus tard, dans le dossier `data/tilesets/`, ou en cliquant sur l'icône crayon à côté du tileset sélectionné)
 
 #### Placer des tiles
 
 Une fois le tileset choisi, il apparaît en dessous de propriétés, juste à droite de l'aperçu de la map.  
-A partir de là, c'est très simple : on clique sur une tile pour la sélectionner, pour on clique sur la map là où on veut la placer.  
+A partir de là, c'est très simple : on clique sur un pattern pour le sélectionner, puis on clique sur la map là où on veut placer la tile.  
 Il existe quelques subtilités que j'ajouterait plus tard (mais n'hésitez pas à demander à Zuna en attendant), mais en voici quelques unes assez indispensables :
 
 - Maintenir clic gauche appuyé quand on place une tile sur la map et déplacer la souris dans une direction répète la tile, utile pour les grandes surfaces constituées d'une seule tile répétée. Certaines tiles ne peuvent pas être répétées ; d'autres ne peuvent l'être que dans une seule direction (ex : les murs horizontaux ne peuvent être répétés qu'à l'horizontale, etc)
@@ -60,9 +60,18 @@ Les autres ont des effets plus particuliers, et sont assez explicites :
 - Et qques autres un peu osef
 
 #### Couches
-En effet, les maps se sont pas des environements *entièrement* 2D : les tiles peuvent être à différentes hauteurs, symbolisées par des couches/layers. Toutes les tiles sont par défaut à la couche 0, mais on peut changer ça avec un simple clic-droit sur la tile.  
-Le système est assez simple, les tiles de la couche 1 s'affiche toujours au dessus de la couche 0 (modifier l'ordre des tiles avec clic-droit -> mettre à l'arrière-plan / mettre au premier plan n'a d'effet qu'au sein d'une même couche : mettre à l'arriere plan une tile de la couche 1 l'affichera sous les autres tiles de la couche 1 mais au dessus de toutes les tiles de la couche 0)  
-Nous y reviendront dans la partie dédiée, mais les entités se trouvent toujours sur une couche : si Link de trouve sur une couche, il y restera tant qu'il y a une tile Traversable sous ses pieds à la même couche que lui ; s'il se retrouve sur un tile avec Vide comme type de terrain, ou juste un endroit sans tile, il "tombera" (descendra les couches jusqu'à retomber sur une tile non vide ou à la couche 0. Cela n'a pas d'effet in-game autre qu'un changement de couche, qui ne provoque par ailleurs aucun effet visible (en somme, si link tombe d'une couche à la couche d'en dessous, visuellement rien ne se passe sur le moment)
+En effet, les maps se sont pas des environements *entièrement* 2D : les tiles peuvent être à différentes hauteurs, symbolisées par des couches/layers. Toutes les tiles sont par défaut à la couche 0, mais on peut changer ça avec un simple clic-droit sur la tile. On peut aussi voir ça comme : chaque couche est un ensemble de tile indépendant des autres.
+Le système est assez simple, les tiles de la couche 1 s'affiche toujours au dessus de la couche 0, et ainsi de suite.
+
+Nous y reviendront dans la partie dédiée, mais les entités se trouvent toujours sur une couche : si Link se trouve sur une couche, il y restera tant qu'il y a une tile Traversable sous ses pieds à la même couche que lui ; s'il se retrouve sur un tile avec Vide comme type de terrain, ou juste un endroit sans tile, il "tombera" (descendra les couches jusqu'à retomber sur une tile non vide ou à la couche 0. Cela n'a pas d'effet in-game autre qu'un changement de couche, qui ne provoque par ailleurs aucun effet visible (en somme, si link tombe d'une couche à la couche d'en dessous, visuellement rien ne se passe)).  
+Les entités n'interragissent qu'avec les tiles à leur couche, c'est à dire que si Link se trouve à la couche 1, il pourra sans problème "traverser" des tiles Mur situées sur la couche 0 ou la couche 2, tant qu'il y a une tile traversable à cet endroit sur la couche 1.
+
+Il est important de noter qu'au sein d'une même couche, les tiles sont "empilées" : chaque tile possède sa position précise dans la liste des tiles de cette couche, la haut de cette liste étant le "premier plan". Cela n'a d'importance que pour les tiles qui se chevauchent : dans ce cas, celle qui est le plus proche du premier plan sera affichée "par dessus" l'autre, et seul son terrain sera pris en compte pour la zone de chevauchement.  
+Exemple : Si une tile Traversable est répétée pour créer une grande tile sur la map, et qu'on vient placer au milieu une tile Mur simple, les deux étant à la **même couche**.
+- Si la tile Mur se trouve "sous" la tile Traversable, elle ne sera pas visible et son terrain ne sera jamais pris en compte
+- Si la tile Mur se trouve au dessus, la tile Traversable restera traversable, sauf pour l'emplacement de la tile Mur qui sera bien considéré comme un obstacle.
+
+Pour changer cet ordre, clic droit sur une tile -> envoyer à l'arrière plan OU envoyer au premier plan. A *ne pas confondre* avec les deux options juste au dessus, qui changent la **couche** de la tile.
 
 (note: les entités sont toujours affichées au dessus des tiles de leur couche ; pour qu'une tile s'affiche par dessus Link, il faudra la placer sur une couche supérieure à celle où se trouvera Link)
 
@@ -71,7 +80,7 @@ Nous y reviendront dans la partie dédiée, mais les entités se trouvent toujou
 Tandis que les tiles sont la partie inerte de la map, sa base, qui ne pourra pas changer pendant le jeu, les entités sont des objets capables de se déplacer, apparaître ou disparaître, effectuer diverses actions, pendant le jeu. Elles seront donc, contrairement aux tiles, contrôlables par les scripts du jeu.   
 Certaines seront gérées par le jeu, mais la plupart devront être placées sur la map au même titre que les tiles.
 
-Il existe de nombreux types d'entités, qui seront décrits plus tard.
+Il existe de nombreux types d'entités, qui seront décrits plus bas.
 
 Pour placer des entités, cliquez simplement sur les icones correspondantes au dessus de l'aerçu de la map, puis placez les comme des tiles.
 ![Image indisponible](img/entities_icons.png)  
@@ -203,107 +212,10 @@ NOTE : On arrive ici à la fin de la partie "basique" du mapping Solarus. Tout c
 ```
 
 ##### Entités custom
-Une entité programmable : plus précisément, elle n'a aucun effet mais peut avoir son propre script ou juste être utilisée par celui de la map. Il est possible (mais pas obligatoire) d'indiquer un sprite et surtout un script.
+Une entité programmable : plus précisément, elle n'a aucun effet mais peut avoir son propre script ou juste être utilisée par celui de la map. Il est possible (mais pas obligatoire) d'indiquer un sprite et surtout un script.  
+Les seules propriétés à indiquer pour une entité custom, en plus du sprite, sont la direction (qui sera utilisée par le sprite s'il y en a un) et le script utilisé (s'il n'y en a un).
 
-
-
-Les scripts disponibles (et utiles pour le mapping) sont : 
-
-- interaction_box : Doit être liée à une autre entité "cible" avec laquelle il est possible d'interagir, comme un PNJ, en lui donnant la propriété `target : <nom de l'entité cible>`. Lorsque Link interagira avec cette entité, ce sera comme si il avait interagi avec l'entité cible.  
-Utilisation typique : en placer une sur un objet du décor et la lier à un PNJ pour déclencher le dialogue de ce PNJ lorque Link interagit avec l'objet.  
-Note : lier une interaction box à un switch fera qu'interagir avec l'interaction box activera le switch.
-- platform : Une plateforme mouvante. Une plateforme (donc une zone solide sur laquelle Link peut marcher) en mouvement. Sa direction de déplacement doit être indiquée en lui donnant la propriété `direction : <ID de la direction>` (les ID de directions vont de 0 pour la droite à 3 pour le bas). Elle s'arrête en touchant un mur.
-(il est important de spécifier un sprite, sinon il s'agira simplement d'une plateforme invisible. Elle prendra la taille du sprite)
-- dungeon\_statue\_eye : A placer sur les statues à l'entrée du donjon. Affiche simplement un oeil regardant vers Link.
-- unstable_ground : entité se comportant comme un sol traversable, à la différence qu'elle commence à trembler si link y reste 1.5s, et disparait 1.5s après avoir commencé à trembler, même si link n'y est plus. De même que pour la plateforme, il est nécessaire d'y associer un sprite.
-- shop_item : Item achetable. Il est nécessaire d'y associer 3 propriétés custom : 
-	- `item : <nom_item>` : le nom d'un item, qui sera obtenu à l'achat (voir la partie Item et sauvegarde)
-	- `variant : <variante>` : la variante de l'item qui sera obtenue.
-	- `price : <prix>` : le nombre de rubis que coute l'item (qui sera donc retiré au compteur de rubis à l'achat).   
-
-	Il est existe également une quatrième propriété, `savegame_variable : <nom_de_variable>`, qui associera ce shop item à une variable de sauvegarde, ce qui aura pour effet que l'item ne pourra être acheté qu'une seule fois (la variable de sauvegarde sera donc utilisée pour conserver l'état de ce shop item s'il a déjà été acheté ; voir la partie Item et sauvegarde.)
-
-- npc : entité au fonctionnement similaire à celui des PNJ, à quelques exceptions près.
-Premièrement, solarus gère automatiquement le fonctionnement du sprite des PNJ normaux (changements d'animations, etc, tel quel mentionné plus haut), mais pas celui des entités custom de type npc.  
-Cette entité conserve cependant, du comportement des sprites de PNJ, le changement du direction si Link interagit avec, *sauf* si l'entité possède la propriété `no_turn` (peu importe la valeur).  
-Pour définir un dialogue qui s'affichera automatiquement quand Link interagira avec cette entité, (comme pour les PNJs normaux avec l'option "afficher un dialogue" donc), il faut lui affecter la propriété `dialog : <nom dialogue>`.
-
-- pickable : entité au fonctionnement similaire à celui des Trésors ramassables, à quelques exceptions près.  
-Premièrement, le paramétrage du trésor (item, variante et variable de sauvegarde) se fait via les proprités custom `item`, `variant` et `savegame_variable` (exactement comme por le shop item).  
-Ensuite, il es possible de lui donner un effet, qui se déclenchera lorsque Link la ramassera, via la propriété `on_obtained : <event string>`. "event string" désigne l'effet en question, décrit d'une manière expliquée dans la section [Event Strings](#event-string) plus bas.  
-(Pour les programmeurs : de plus, du côté du script, cette entité possède un callback `on_obtained`, contrairement aux pickables de base) 
-
-- poisoned_water : entité à placer par dessus les tiles d'eau empoisonée (qui ne sont que purement décoratives sans cette entité), et qui inflige régulièrement des dégats à Link tant qu'il se trouve dans cette entité.
-
-- pull_lever : Levier à tirer. Bon franchement lui il est compliqué ce serait trop long à expliquer ici.
-
-### Map features
-
-Les map features sont simplement les fonctionnalités que j'ai ajouté à celles de solarus concernant les maps et les entités.
-
-La plupart du temps, il s'agit d'affecter une propriété à une entité afin de modifier son comportement. Elles sont surtout utile pour "programmer" le fonctionnement des donjons, mais aussi dans beaucoup d'autres situation.  
-Il est à noter que la plupart des map features doivent être activées dans le code, via une fonction à appeler au chargement de la map. Voir la section dédiée à l'API des maps pour plus d'informations ... ou simplement avec les codeurs. Ces fonctions seront mentionnées dans ce guide, mais n'y prêtez pas attention si vous ne comptez pas toucher au code.
-
-Les maps features disponibles actuellement sont les suivantes : 
-
-- **Group Loot** : il est possible de faire en sorte que Link doive tuer tout un groupe d'enemi pour loot un item (le dernier enemi à mourir droppera l'item). Pour cela, ajouter la propriété `group_loot : <nom_de_l'item>#<variante>$<variable>` à tous les enemis du groupe. (le `#variante` est inutile si l'item n'a pas plusieurs variantes). La `variable` est la variable de sauvegarde dans laquelle sera conservée l'état du trésor : s'il y en a une, le trésor ne réapparaitra pas (à utiliser pour les drops uniques).
-L'item spécifié ne sera drop que lorsque tous les enemis avec la propriété `group_loot` avec la même valeur auront été tués. Par la même valeur j'entends bien le **même texte** comme valeur de la propriété, pas juste le même item : un enemi avec `group_loot : rupee#1` et un autre avec `group_loot : rupee#3` ne fonctionneront pas entre eux.  
-*Exemple : si trois moblins possèdent la propriété `group_loot : rupee#3$map_1_rupee`, tuer le dernier moblin droppera un rubis, de variante 3 (c'est à dire le rubis rouge), et une fois récupéré une fois ce rubis ne sera plus jamais droppé. Enlever la partie `$map_1_rupee` fera que le rubis pourra être droppé à l'infini.*  
-*Cette feature s'active via la fonction `map:init_enemies_event_triggers()`*
-
-- **Triggers** : le coeur de la gestion du fonctionnement des donjons.  
-Un trigger est un couple `propriété : valeur` qui va permettre de déclencher une action particulière quand l'entité respecte certaines conditions (généralement, quand un certain évènement concernant l'entité sera survenu). Le nom de la propriété doit être le type de conditions, la valeur l'action à réaliser, sous la forme d'une Event String (voir la [section corespondante](#Event-String) plus bas)
-Les conditions supportées pour l'instant sont : 
-
-	- `death_trigger` : est activé quand l'entité meurt (pour un enemi). *S'active via la fonction `map:init_enemies_event_triggers()`*
-	- `activate_trigger` : a placer sur un capteur ou un bouton (ou un bloc, voir plus bas), s'activera quand l'entité sera activée (quand link passe sur le capteur, active le bouton, ou déplace le bloc (voir plus bas pour les blocs). *S'active via la fonction `map:init_activate_triggers()`*
-
-	A noter que si plusieurs entités possèdent le même trigger (c'est à dire un même type de conditions _avec la même action_), l'action ne sera déclenchée que quand les conditions seront vérifiées pour toutes les entités : si plusieurs enemis possèdent une propriété `death_trigger` avec la même valeur (donc le même effet), cette action ne sera réalisée que quand tous les enemis en question auront été tués.  
-	De même, si plusieurs boutons possèdent le même `activate_trigger`, l'action ne sera réalisée que si tous les boutons sont activés *en même temps* (donc si l'un d'entre eux n'est plus activé, ça ne fonctionnera pas).
-
-#### Event String
-Une event string est une manière de décrire une action qui doit avoir lieu sur la map. C'est par exemple de cette manière que l'on décrit les effets d'un trigger (rappel : l'effet, sous la forme d'event string, doit être la *valeur* de la propriété), mais aussi dans d'autres contextes : de manière générale, à chaque fois qu'une propriété d'une entité doit décrire une action (*exemple : la propriété on_obtained des entités custom de type pickable*).
-
-Les actions possibles sont : 
-- `door_<nom>` : ouvre toute porte donc le nom commence par "*nom*" ou "door_*nom*" (remplacer nom par le nom de la porte (sans blague) mais pas le door)
-- `close_door_<nom>` : ouvre toute porte donc le nom commence par "*nom*" ou "door_*nom*" (remplacer nom par le nom de la porte (sans blague) mais pas le door)
-- `spawn_<nom>` : fait apparaître l'entité nommée "*nom*". L'entité doit être déjà présente sur la map mais désactivée (pour cela, quand vous la placez sur la map, décochez la case "actif au démarrage" : quand une entité est désactivée c'est comme si elle n'existait pas).
-- `disable_<nom>` : désactive (= fait disparaitre) l'entité nommée *nom*.
-- `treasure_<nom>` : comme pour `spawn_`, fait apparaître le trésor ramassable nommé "*nom*" ou "treasure_*nom*". (cela dit vous pouvez toujours utiliser `spawn_` pour les trésors, comme vous voulez)
-- `music_<nom>` : joue la musique nommée "*nom*"
-- `setrespawn_<nom>` : fait de la Destination nommée "*nom*" le poitn de réapparition actuel (ce qui signifie que link y réapparaitra s'il meurt, le point de réapparition de par défaut étant l'entrée du donjon)
-- `function_<nom>` : éxécute une fonction du script de la map, nommée "*nom*". 
-- `teleport_<nom_map>:<nom_destination>$<style>` : téléporte la héros à la map et la destination spécifiée, avec le style spécifié (le style est optionnel). Voir la section [Téléporteurs](#Téléporteurs) plus haut pour plus d'informations.
-
-Quelques exemples : 
-- si 3 enemis possèdent la propriété `death_trigger : treasure_key_1`, et qu'il existe sur la map une clé (c'est à dire un trésor ramassable de l'item clé, désactivé par défaut) nommée "key_1", elle apparaîtra quand les 3 enemis auront été tués.
-- si un interrupteur s'activant avec un bloc et 3 capteurs persistants (voir map features liées aux capteurs) possèdent la propriété `activate_trigger : door_1`, et qu'il existe deux portes nommés "door\_1-1" et "door\_1-2",  si Link passe sur les 3 capteurs et qu'un bloc se trouve actuellement sur l'interrupteur, les portes s'ouvriront.
-
-
-- Séparateurs : il existe deux map features concernant les Séparateurs : 
-	- `no_save` : si un séparateur possède la propriété `no_save` avec n'importe quelle valeur, il ne sauvegardera pas la position de Link quand celui-ci le traversera (voir partie Séparateurs).
-	- dungeon style scrollings :  cette Map feature ne nécessite pas de propriété, il suffit juste de l'activer la fonction `map:init_reset_separators()`. 
-	Si cette feature est activée, passer un séparateur réinitialisera complètement les enemis et blocs présents sur la map (sauf, dans le cas d'un enemi, s'il est déjà mort et que son état est sauvegardé).
-	Par exemple, dans la plupart des Zelda 2D, quand Link sort d'une salle et y retourne, les enemis sont de nouveau là (sauf les boss). Ici c'est la même idée, si dans un donjon on met des séparateurs entre chaque salle, le donjon ne comportera comme un donjon de Zelda 1.  
-	Il existe deux propriété permettant de modifier ce fonctionnement : 
-	- donner la propriété `auto_separator` à un séparateur désactivera ce fonctionnement pour ce séparateur. Si dans la ligne d'activation on ne met pas `true` entre parenthèses, ce sera la contraire : seuls les séparateurs avec cette propriété auront ce fonctionnement.
-	- donner la propriété `no_reset` à un ennemi/bloc l'excluera de la réinitalisation, il ne sera jamais réinitialisé.
-
-- Capteurs persistents : donner la propriété `persistent` à un capteur fera qu'il sera toujours considéré comme activé même si Link n'est plus dessus.
-- Blocs activables : donner la propriété `activate_when_moved` à un bloc fera qu'il sera considéré comme activé quand Link le déplacera. Il restera alors toujours activé, sauf s'il est réinitialisé (par un séparateur par exemple, voir plus haut). *S'active via la fonction `map:init_activatables()`*          
-
-- Entités liées au scénario : dans Fallen Realm, l'avancement de la quête est représenté par une valeur numérique appelée story state (qui est techniquement, une simple variable de sauvegarde. Vous trouverez une liste des significations des différents story states dans les messages pin du channel #code du discord.)  
-	- La propriété `min_story_state : n` fera qu'une entité n'apparaît que si le story state est de n au moins.  
-	- La propriété `max_story_state : n` fera qu'une entité n'apparaît que si le story state est de n au plus.  
-	- La propriété `is_story_state : n` fer qu'une entité n'apparaît que si le storsy state est de n exactement.  
-	- La propriété `spawn_savegame_variable : <variable>` indiquera au jeu de sauvegarder, dans la variable de sauvegarde indiquée, si l'entité a été activée ou désactivée (par un trigger, ou directement un script). C'est à dire que (cas le plus courant) s'il s'agit d'une entité non-active au démarrage, et qu'un trigger la fait apparaître, le jeu le retiendra et les prochaines fois que la map sera chargée cette entité sera directement activée.  
-    	```
-    	Exemple:
-    	un coffre possède la propriété "spawn_savegame_variable:dungeon_test_chest". Il n'est pas actif au démarrage, et un bouton possède un actiavate_trigger faisant apparaître ce coffre. Une fois que ce bouton aura été activé, faisant apparaître le coffre, la variable de sauvegarde "dungeon_test_chest" contiendra "true", et les prochaines fois que cette map sera chargée le coffre sera actif dès le début.
-    	```
-
-
-C'est à peu près tout, normalement ce guide devrait vous permettre d'utiliser toutes les features disponibles pour le mapping, qu'il s'agisse des fonctionnalités de base de solarus, ou de mécaniques que j'ai implémenté spécialement pour Fallen Realm.  
-Cependant, même toutes ces features ne permettent pas de faire n'importe quoi, et certaines maps complexes (avec des cinématiques notament) nécessiteront une programmation plus avancée, via la script de la map.
+#
+A ce stade, vous devriez pouvoir créer sans problème des maps "basiques" (complètes, mais peu interactives), de plus vous avez vu à peu près tout concernant le mapping de base dans Solarus.  Pour les éléments plus spécifiques (et propres à Fallen Realm) permettant une bien plus grande interactivité, voir le guide [Mapping avancé](mapping_advanced.md)
 
 [Retour au sommaire](starting.md)
