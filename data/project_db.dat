@@ -209,6 +209,7 @@ sprite{ id = "entities/vegetation/grass_door_4" }
 sprite{ id = "entities/wall/fissured_wall", description = "Mur fissuré" }
 sprite{ id = "entities/wall/fissured_wall_2", description = "Mur fissuré 2" }
 sprite{ id = "entities/water/deep_water", description = "Eau Profonde" }
+sprite{ id = "hero/frozen", description = "frozen" }
 sprite{ id = "hero/ground1", description = "hero/ground1" }
 sprite{ id = "hero/ground2", description = "hero/ground2" }
 sprite{ id = "hero/sword1", description = "Epée (ancienne animation)" }
@@ -583,6 +584,7 @@ file{ path = "sprites/enemies/slime_green.dat", author = "Nintendo", }
 file{ path = "sprites/enemies/slime_red.dat", author = "Nintendo", }
 file{ path = "sprites/entities/dungeon_elements/color_cube_destination.dat", author = "Zunashy", }
 file{ path = "sprites/entities/dungeon_elements/fragile_ground.dat", author = "TwilCynder", }
+file{ path = "sprites/hero/frozen.dat", author = "SaniTOS", }
 file{ path = "sprites/pnj/main/sorcier.dat", author = "Zunashy", }
 file{ path = "sprites/pnj/main/zuna.dat", author = "Zunashy", }
 file{ path = "sprites/pnj/main/zuna_sword.dat", author = "Zunashy", }
