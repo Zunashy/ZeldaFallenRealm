@@ -739,28 +739,30 @@ tile{
   pattern = "32",
 }
 
+tile{
+  layer = 0,
+  x = 40,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
 enemy{
   layer = 0,
   x = 120,
   y = 45,
   direction = 3,
   breed = "blue_octorock",
-}
-
-enemy{
-  layer = 0,
-  x = 184,
-  y = 125,
-  direction = 2,
-  breed = "blue_octorock",
-}
-
-enemy{
-  layer = 0,
-  x = 24,
-  y = 141,
-  direction = 1,
-  breed = "blue_moblin_sword",
 }
 
 destructible{
@@ -927,5 +929,37 @@ destination{
   x = 120,
   y = 37,
   direction = 1,
+}
+
+enemy{
+  layer = 0,
+  x = 184,
+  y = 125,
+  direction = 0,
+  breed = "ice_slime",
+}
+
+enemy{
+  layer = 0,
+  x = 24,
+  y = 141,
+  direction = 0,
+  breed = "ice_slime",
+}
+
+enemy{
+  layer = 0,
+  x = 120,
+  y = 93,
+  direction = 0,
+  breed = "ice_slime",
+}
+
+enemy{
+  layer = 0,
+  x = 120,
+  y = 253,
+  direction = 3,
+  breed = "ice_slime",
 }
 
