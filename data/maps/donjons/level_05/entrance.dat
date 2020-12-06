@@ -959,7 +959,7 @@ enemy{
   layer = 0,
   x = 120,
   y = 253,
-  direction = 3,
+  direction = 0,
   breed = "ice_slime",
 }
 

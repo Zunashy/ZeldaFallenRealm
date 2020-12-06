@@ -139,6 +139,7 @@ sprite{ id = "enemies/goomba", description = "Goomba (test)" }
 sprite{ id = "enemies/ice_slime", description = "enemies/ice_slime" }
 sprite{ id = "enemies/mini_boss/fantom", description = "Fantom (Miniboss D2)" }
 sprite{ id = "enemies/mini_boss/fantom_wind", description = "Vent Fantom" }
+sprite{ id = "enemies/mini_boss/ice_bat", description = "Ice Bat" }
 sprite{ id = "enemies/mini_boss/mr_pers", description = "Mr Pers (miniboss D1)" }
 sprite{ id = "enemies/mini_boss/mr_pers_sword", description = "Épée Mr Pers" }
 sprite{ id = "enemies/moblin", description = "Moblin Rouge" }
@@ -401,6 +402,7 @@ enemy{ id = "crab", description = "crab" }
 enemy{ id = "hitbox", description = "Hitbox" }
 enemy{ id = "ice_slime", description = "ice_slime" }
 enemy{ id = "mini_boss/fantom", description = "Fantom" }
+enemy{ id = "mini_boss/ice_bat", description = "Ice Bat" }
 enemy{ id = "mini_boss/mr_pers", description = "Miniboss Donjon 1" }
 enemy{ id = "moblin_bow", description = "Moblin (arc)" }
 enemy{ id = "moblin_sword", description = "Moblin (Épée)" }
@@ -467,6 +469,7 @@ file{ path = "enemies/boss/rock_mosquito_hand.lua", author = "TwilCynder", }
 file{ path = "enemies/crab.lua", author = "TwilCynder", }
 file{ path = "enemies/hitbox.lua", author = "TwilCynder", }
 file{ path = "enemies/ice_slime.lua", author = "SaniTOS", }
+file{ path = "enemies/mini_boss/ice_bat.lua", author = "SaniTOS", }
 file{ path = "enemies/mini_boss/mr_pers.lua", author = "TwilCynder", }
 file{ path = "enemies/moblin_bow.lua", author = "TwilCynder", }
 file{ path = "enemies/moblin_sword.lua", author = "TwilCynder", }
@@ -575,6 +578,7 @@ file{ path = "sprites/enemies/boss/rock_mosquito_hand_shield.dat", author = "Zun
 file{ path = "sprites/enemies/boss/rock_mosquito_shields.dat", author = "Zunashy", }
 file{ path = "sprites/enemies/ice_slime.dat", author = "SaniTOS", }
 file{ path = "sprites/enemies/mini_boss/fantom.dat", author = "Nintendo", }
+file{ path = "sprites/enemies/mini_boss/ice_bat.dat", author = "SaniTOS", }
 file{ path = "sprites/enemies/slime_green.dat", author = "Nintendo", }
 file{ path = "sprites/enemies/slime_red.dat", author = "Nintendo", }
 file{ path = "sprites/entities/dungeon_elements/color_cube_destination.dat", author = "Zunashy", }
