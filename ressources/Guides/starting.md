@@ -78,8 +78,8 @@ git push origin master
 - [Sauvegarde](savegame.md)
 - [Items](items.md)
 - [Tilesets](tilesets.md)
+- [Sprites](sprites.md)
 
 ### Guides à venir
-- Sprites
 - Map (API)
 - Ennemis
