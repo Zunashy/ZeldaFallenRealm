@@ -1,10 +1,965 @@
 properties{
   x = 0,
   y = 0,
-  width = 160,
-  height = 128,
+  width = 240,
+  height = 352,
   min_layer = 0,
   max_layer = 2,
+  floor = -1,
   tileset = "dungeon/tileset_donjon_5",
+  music = "dungeon5",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 192,
+  width = 208,
+  height = 144,
+  pattern = "71",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 192,
+  width = 16,
+  height = 144,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 192,
+  width = 16,
+  height = 144,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 336,
+  width = 208,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 208,
+  height = 144,
+  pattern = "71",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 0,
+  width = 208,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 144,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 16,
+  width = 16,
+  height = 144,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 128,
+  width = 16,
+  height = 32,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 128,
+  width = 48,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 16,
+  width = 16,
+  height = 32,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 16,
+  width = 16,
+  height = 32,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 32,
+  width = 48,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 80,
+  width = 48,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 112,
+  width = 32,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 80,
+  width = 16,
+  height = 64,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 128,
+  width = 16,
+  height = 32,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 112,
+  width = 16,
+  height = 32,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 80,
+  width = 16,
+  height = 32,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 8,
+  width = 16,
+  height = 8,
+  pattern = "74",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 112,
+  width = 16,
+  height = 32,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 112,
+  width = 32,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 80,
+  width = 16,
+  height = 32,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 128,
+  width = 16,
+  height = 32,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 312,
+  width = 48,
+  height = 24,
+  pattern = "24",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 336,
+  width = 16,
+  height = 24,
+  pattern = "21",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 336,
+  width = 16,
+  height = 24,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 336,
+  width = 16,
+  height = 24,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 176,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 176,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 160,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 160,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 184,
+  width = 16,
+  height = 8,
+  pattern = "74",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 184,
+  width = 16,
+  height = 8,
+  pattern = "74",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 240,
+  width = 16,
+  height = 48,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 240,
+  width = 16,
+  height = 48,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 160,
+  width = 16,
+  height = 32,
+  pattern = "71",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+enemy{
+  layer = 0,
+  x = 120,
+  y = 45,
+  direction = 3,
+  breed = "blue_octorock",
+}
+
+destructible{
+  name = "lvl5_icrc_1",
+  layer = 0,
+  x = 152,
+  y = 141,
+  treasure_name = "rupee",
+  sprite = "entities/block/ice_crystal",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+separator{
+  layer = 0,
+  x = -8,
+  y = -8,
+  width = 16,
+  height = 368,
+}
+
+separator{
+  layer = 0,
+  x = -8,
+  y = -8,
+  width = 256,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 232,
+  y = -8,
+  width = 16,
+  height = 368,
+}
+
+separator{
+  layer = 0,
+  x = -8,
+  y = 344,
+  width = 256,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = -8,
+  y = 168,
+  width = 256,
+  height = 16,
+}
+
+teletransporter{
+  name = "lvl5_teleport",
+  layer = 0,
+  x = 112,
+  y = 256,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_05/entrance",
+  sprite = "entities/dungeon_elements/teleport",
+  sound = "levelteleport",
+}
+
+destructible{
+  layer = 0,
+  x = 88,
+  y = 109,
+  treasure_name = "rupee",
+  sprite = "entities/block/ice_crystal",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 24,
+  y = 45,
+  treasure_name = "rupee",
+  sprite = "entities/block/ice_crystal",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 168,
+  y = 45,
+  treasure_name = "rupee",
+  sprite = "entities/block/ice_crystal",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destination{
+  name = "destination_outdoor_lvl5",
+  layer = 0,
+  x = 120,
+  y = 341,
+  direction = 1,
+}
+
+switch{
+  name = "lvl5_btn_1",
+  layer = 0,
+  x = 16,
+  y = 144,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "spawn_lvl5_btn_2",
+    },
+  },
+  subtype = "walkable",
+  sprite = "entities/dungeon_elements/switch",
+  sound = "chest_appears",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+switch{
+  name = "lvl5_btn_2",
+  layer = 0,
+  x = 144,
+  y = 80,
+  enabled_at_start = false,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "spawn_lvl5_esc1",
+    },
+  },
+  subtype = "walkable",
+  sprite = "entities/dungeon_elements/switch",
+  sound = "chest_appears",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+teletransporter{
+  name = "lvl5_esc1",
+  layer = 0,
+  x = 112,
+  y = 16,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_05/ss1",
+}
+
+destination{
+  name = "ss1",
+  layer = 0,
+  x = 120,
+  y = 37,
+  direction = 1,
+}
+
+enemy{
+  layer = 0,
+  x = 184,
+  y = 125,
+  direction = 0,
+  breed = "ice_slime",
+}
+
+enemy{
+  layer = 0,
+  x = 24,
+  y = 141,
+  direction = 0,
+  breed = "ice_slime",
+}
+
+enemy{
+  layer = 0,
+  x = 120,
+  y = 93,
+  direction = 0,
+  breed = "ice_slime",
+}
+
+enemy{
+  layer = 0,
+  x = 120,
+  y = 253,
+  direction = 0,
+  breed = "ice_slime",
 }
 

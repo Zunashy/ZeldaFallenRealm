@@ -1,0 +1,257 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 160,
+  height = 128,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 128,
+  height = 96,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 16,
+  width = 128,
+  height = 96,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 56,
+  width = 32,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 0,
+  width = 128,
+  height = 16,
+  pattern = "10",
+  tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 0,
+  width = 128,
+  height = 16,
+  pattern = "10",
+  tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 96,
+  pattern = "20",
+  tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 16,
+  width = 16,
+  height = 32,
+  pattern = "19",
+  tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 16,
+  width = 16,
+  height = 32,
+  pattern = "20",
+  tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 16,
+  width = 16,
+  height = 96,
+  pattern = "19",
+  tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 80,
+  width = 16,
+  height = 32,
+  pattern = "19",
+  tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 80,
+  width = 16,
+  height = 32,
+  pattern = "20",
+  tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 112,
+  width = 128,
+  height = 16,
+  pattern = "9",
+  tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 112,
+  width = 128,
+  height = 16,
+  pattern = "9",
+  tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "14",
+  tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "13",
+  tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "14",
+  tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "13",
+  tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "17",
+  tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "15",
+  tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "18",
+  tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "12",
+  tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "12",
+  tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "dungeon/tileset_donjon_3",
+}
+

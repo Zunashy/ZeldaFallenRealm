@@ -5,9 +5,12 @@ map{ id = "donjons/level_01/transit", description = "donjons/level_01/transit" }
 map{ id = "donjons/level_02/rdc", description = "donjons/level_02/rdc" }
 map{ id = "donjons/level_02/ss1", description = "donjons/level_02/ss1" }
 map{ id = "donjons/level_02/transit" }
+map{ id = "donjons/level_03/rdc" }
 map{ id = "donjons/level_04/rdc" }
-map{ id = "donjons/level_05/entrance", description = "Entrée de la reine des neiges" }
-map{ id = "donjons/level_05/rdc", description = "Entre deux givres" }
+map{ id = "donjons/level_05/entrance", description = "ss0" }
+map{ id = "donjons/level_05/ss1", description = "ss1" }
+map{ id = "donjons/level_05/ss2", description = "ss2" }
+map{ id = "donjons/level_05/ss3", description = "ss3" }
 map{ id = "normal_version/overworld/deep_forest/indoors/cave_1" }
 map{ id = "normal_version/overworld/deep_forest/indoors/cave_2" }
 map{ id = "normal_version/overworld/deep_forest/indoors/house_1" }
@@ -121,6 +124,7 @@ sprite{ id = "enemies/bat", description = "Chauve souris" }
 sprite{ id = "enemies/blade_trap", description = "Blade Trap" }
 sprite{ id = "enemies/blue_moblin_sword" }
 sprite{ id = "enemies/blue_octorock", description = "enemies/blue_octorock" }
+sprite{ id = "enemies/blue_rope", description = "enemies/blue_rope" }
 sprite{ id = "enemies/blue_slime", description = "enemies/blue_slime" }
 sprite{ id = "enemies/boss/merman", description = "enemies/boss/merman" }
 sprite{ id = "enemies/boss/merman_trident", description = "enemies/boss/merman_trident" }
@@ -132,8 +136,10 @@ sprite{ id = "enemies/boss/rock_mosquito_hand_shield", description = "Rock Mosqu
 sprite{ id = "enemies/boss/rock_mosquito_shields", description = "Rock Mosquito Shields" }
 sprite{ id = "enemies/enemy_killed", description = "Mort enemi" }
 sprite{ id = "enemies/goomba", description = "Goomba (test)" }
+sprite{ id = "enemies/ice_slime", description = "enemies/ice_slime" }
 sprite{ id = "enemies/mini_boss/fantom", description = "Fantom (Miniboss D2)" }
 sprite{ id = "enemies/mini_boss/fantom_wind", description = "Vent Fantom" }
+sprite{ id = "enemies/mini_boss/ice_bat", description = "Ice Bat" }
 sprite{ id = "enemies/mini_boss/mr_pers", description = "Mr Pers (miniboss D1)" }
 sprite{ id = "enemies/mini_boss/mr_pers_sword", description = "Épée Mr Pers" }
 sprite{ id = "enemies/moblin", description = "Moblin Rouge" }
@@ -156,6 +162,7 @@ sprite{ id = "enemies/tektite_red", description = "Tektite Red" }
 sprite{ id = "enemies/tektite_shadow", description = "Ombre de tektite" }
 sprite{ id = "entities/block/block", description = "entities/block/block" }
 sprite{ id = "entities/block/fissured_block", description = "entities/block/fissured_block" }
+sprite{ id = "entities/block/ice_crystal", description = "entities/block/ice_crystal" }
 sprite{ id = "entities/block/key_block", description = "entities/block/key_block" }
 sprite{ id = "entities/chests/chest", description = "entities/chests/chest" }
 sprite{ id = "entities/door/boss_door", description = "entities/door/boss_door" }
@@ -202,6 +209,7 @@ sprite{ id = "entities/vegetation/grass_door_4" }
 sprite{ id = "entities/wall/fissured_wall", description = "Mur fissuré" }
 sprite{ id = "entities/wall/fissured_wall_2", description = "Mur fissuré 2" }
 sprite{ id = "entities/water/deep_water", description = "Eau Profonde" }
+sprite{ id = "hero/frozen", description = "frozen" }
 sprite{ id = "hero/ground1", description = "hero/ground1" }
 sprite{ id = "hero/ground2", description = "hero/ground2" }
 sprite{ id = "hero/sword1", description = "Epée (ancienne animation)" }
@@ -289,6 +297,7 @@ music{ id = "custom/nielint", description = "custom/nielint" }
 music{ id = "custom/nielint_war", description = "custom/nielint_war" }
 music{ id = "dungeon1", description = "dungeon1" }
 music{ id = "dungeon2", description = "Donjon 2" }
+music{ id = "dungeon5", description = "dungeon5" }
 music{ id = "eduardo/Scatman_John_-_pi_pa_pa_para_po_Original_Video_", description = "eduardo/Scatman_John_-_pi_pa_pa_para_po_Original_Video_" }
 music{ id = "eduardo/Story_1_-_Forest_of_Resurrection_-_Fire_Emblem_Gai", description = "eduardo/Story_1_-_Forest_of_Resurrection_-_Fire_Emblem_Gai" }
 music{ id = "eduardo/boss", description = "eduardo/boss" }
@@ -323,6 +332,7 @@ sound{ id = "bosshit", description = "bosshit" }
 sound{ id = "chest_appears", description = "chest_appears" }
 sound{ id = "chest_open", description = "chest_open" }
 sound{ id = "danger", description = "danger" }
+sound{ id = "destroy_rock", description = "destroy_rock" }
 sound{ id = "door_closed", description = "door_closed" }
 sound{ id = "door_open", description = "door_open" }
 sound{ id = "door_unlocked", description = "door_unlocked" }
@@ -384,13 +394,16 @@ enemy{ id = "bat", description = "Bat" }
 enemy{ id = "blade_trap", description = "Blade Trap" }
 enemy{ id = "blue_moblin_sword" }
 enemy{ id = "blue_octorock", description = "Octorock Bleu" }
+enemy{ id = "blue_rope", description = "blue_rope" }
 enemy{ id = "blue_slime", description = "Slime Bleu" }
 enemy{ id = "boss/merman", description = "Boss donjon 1" }
 enemy{ id = "boss/rock_mosquito", description = "Rock Mosquito" }
 enemy{ id = "boss/rock_mosquito_hand", description = "Rock Mosquito Hand" }
 enemy{ id = "crab", description = "crab" }
 enemy{ id = "hitbox", description = "Hitbox" }
+enemy{ id = "ice_slime", description = "ice_slime" }
 enemy{ id = "mini_boss/fantom", description = "Fantom" }
+enemy{ id = "mini_boss/ice_bat", description = "Ice Bat" }
 enemy{ id = "mini_boss/mr_pers", description = "Miniboss Donjon 1" }
 enemy{ id = "moblin_bow", description = "Moblin (arc)" }
 enemy{ id = "moblin_sword", description = "Moblin (Épée)" }
@@ -450,11 +463,14 @@ shader{ id = "visualizer", description = "visualizer" }
 file{ path = "enemies/bat.lua", author = "TwilCynder", }
 file{ path = "enemies/blade_trap.lua", author = "TwilCynder", }
 file{ path = "enemies/blue_octorock.lua", author = "a_tom;TwilCynder", }
+file{ path = "enemies/blue_rope.lua", author = "SaniTOS", }
 file{ path = "enemies/blue_slime.lua", author = "TwilCynder", }
 file{ path = "enemies/boss/merman.lua", author = "TwilCynder", }
 file{ path = "enemies/boss/rock_mosquito_hand.lua", author = "TwilCynder", }
 file{ path = "enemies/crab.lua", author = "TwilCynder", }
 file{ path = "enemies/hitbox.lua", author = "TwilCynder", }
+file{ path = "enemies/ice_slime.lua", author = "SaniTOS", }
+file{ path = "enemies/mini_boss/ice_bat.lua", author = "SaniTOS", }
 file{ path = "enemies/mini_boss/mr_pers.lua", author = "TwilCynder", }
 file{ path = "enemies/moblin_bow.lua", author = "TwilCynder", }
 file{ path = "enemies/moblin_sword.lua", author = "TwilCynder", }
@@ -511,12 +527,19 @@ file{ path = "maps/donjons/level_01/RDC_old.dat", author = "Zunashy", }
 file{ path = "maps/donjons/level_01/transit.dat", author = "Zunashy", }
 file{ path = "maps/donjons/level_02/rdc.dat", author = "Zunashy", }
 file{ path = "maps/donjons/level_02/ss1.dat", author = "Zunashy", }
-file{ path = "maps/donjons/level_05/rdc.dat", author = "moi", license = "lui" }
-file{ path = "maps/donjons/level_05/rdc.lua", author = "moi", license = "lui" }
+file{ path = "maps/donjons/level_05/entrance.dat", author = "SaniTOS", }
+file{ path = "maps/donjons/level_05/entrance.lua", author = "SaniTOS", }
+file{ path = "maps/donjons/level_05/ss1.dat", author = "SaniTOS", }
+file{ path = "maps/donjons/level_05/ss1.lua", author = "SaniTOS", }
+file{ path = "maps/donjons/level_05/ss2.dat", author = "SaniTOS", }
+file{ path = "maps/donjons/level_05/ss2.lua", author = "SaniTOS", }
+file{ path = "maps/donjons/level_05/ss3.dat", author = "SaniTOS", }
+file{ path = "maps/donjons/level_05/ss3.lua", author = "SaniTOS", }
 file{ path = "maps/normal_version", author = "Zunashy", }
 file{ path = "maps/war_version", author = "Nillan", }
 file{ path = "musics/custom/nielint.ogg", author = "SaniTOS", }
 file{ path = "musics/custom/nielint_war.ogg", author = "SaniTOS", }
+file{ path = "musics/dungeon5.ogg", author = "SaniTOS", }
 file{ path = "musics/plain.ogg", author = "Nintendo", }
 file{ path = "scripts/api/bit.lua", author = "TwilCynder", }
 file{ path = "scripts/api/controls_manager.lua", author = "TwilCynder", }
@@ -548,16 +571,20 @@ file{ path = "scripts/hud/rupees.lua", author = "TwilCynder", }
 file{ path = "shaders/poisoned_effect.dat", author = "TwilCynder", }
 file{ path = "shaders/shockwave.dat", author = "TwilCynder", }
 file{ path = "sprites/enemies/blade_trap.dat", author = "Nintendo", }
+file{ path = "sprites/enemies/blue_rope.dat", author = "SaniTOS", }
 file{ path = "sprites/enemies/boss/rock_mosquito.dat", author = "Zunashy", }
 file{ path = "sprites/enemies/boss/rock_mosquito_arm.dat", author = "Zunashy", }
 file{ path = "sprites/enemies/boss/rock_mosquito_hand.dat", author = "Zunashy", }
 file{ path = "sprites/enemies/boss/rock_mosquito_hand_shield.dat", author = "Zunashy", }
 file{ path = "sprites/enemies/boss/rock_mosquito_shields.dat", author = "Zunashy", }
+file{ path = "sprites/enemies/ice_slime.dat", author = "SaniTOS", }
 file{ path = "sprites/enemies/mini_boss/fantom.dat", author = "Nintendo", }
+file{ path = "sprites/enemies/mini_boss/ice_bat.dat", author = "SaniTOS", }
 file{ path = "sprites/enemies/slime_green.dat", author = "Nintendo", }
 file{ path = "sprites/enemies/slime_red.dat", author = "Nintendo", }
 file{ path = "sprites/entities/dungeon_elements/color_cube_destination.dat", author = "Zunashy", }
 file{ path = "sprites/entities/dungeon_elements/fragile_ground.dat", author = "TwilCynder", }
+file{ path = "sprites/hero/frozen.dat", author = "SaniTOS", }
 file{ path = "sprites/pnj/main/sorcier.dat", author = "Zunashy", }
 file{ path = "sprites/pnj/main/zuna.dat", author = "Zunashy", }
 file{ path = "sprites/pnj/main/zuna_sword.dat", author = "Zunashy", }

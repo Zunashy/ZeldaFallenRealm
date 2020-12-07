@@ -1,4 +1,4 @@
--- Lua script of map donjons/level_05/entrance.
+-- Lua script of map donjons/level_03/rdc.
 -- This script is executed every time the hero enters this map.
 
 -- Feel free to modify the code below.
@@ -15,7 +15,6 @@ function map:on_started()
 
   -- You can initialize the movement and sprites of various
   -- map entities here.
-self:init_dungeon_features()
 end
 
 -- Event called after the opening transition effect of the map,
