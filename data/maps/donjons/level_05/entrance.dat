@@ -955,11 +955,3 @@ enemy{
   breed = "ice_slime",
 }
 
-enemy{
-  layer = 0,
-  x = 120,
-  y = 253,
-  direction = 0,
-  breed = "ice_slime",
-}
-
