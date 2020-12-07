@@ -6,6 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "dungeon/tileset_donjon_5",
+  music = "dungeon5",
 }
 
 tile{
@@ -344,24 +345,6 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 592,
-  width = 16,
-  height = 160,
-  pattern = "20",
-}
-
-tile{
-  layer = 0,
-  x = 256,
-  y = 592,
-  width = 16,
-  height = 160,
-  pattern = "19",
-}
-
-tile{
-  layer = 0,
-  x = 272,
   y = 592,
   width = 16,
   height = 160,
@@ -939,15 +922,6 @@ tile{
   layer = 0,
   x = 96,
   y = 600,
-  width = 16,
-  height = 16,
-  pattern = "45",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 632,
   width = 16,
   height = 16,
   pattern = "45",
@@ -1567,24 +1541,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 152,
-  y = 352,
-  width = 16,
-  height = 16,
-  pattern = "45",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 672,
-  width = 16,
-  height = 16,
-  pattern = "49",
-}
-
-tile{
-  layer = 0,
   x = 128,
   y = 544,
   width = 16,
@@ -1970,6 +1926,177 @@ tile{
   pattern = "41",
 }
 
+tile{
+  layer = 0,
+  x = 48,
+  y = 496,
+  width = 32,
+  height = 32,
+  pattern = "71",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 432,
+  width = 32,
+  height = 32,
+  pattern = "71",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 432,
+  width = 32,
+  height = 32,
+  pattern = "71",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 496,
+  width = 32,
+  height = 32,
+  pattern = "71",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 208,
+  width = 48,
+  height = 160,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 208,
+  width = 48,
+  height = 160,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 336,
+  width = 32,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 352,
+  width = 48,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 336,
+  width = 32,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 352,
+  width = 48,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 688,
+  width = 16,
+  height = 64,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 688,
+  width = 16,
+  height = 64,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 592,
+  width = 16,
+  height = 64,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 592,
+  width = 16,
+  height = 64,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 656,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 656,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 672,
+  width = 32,
+  height = 16,
+  pattern = "71",
+}
+
 door{
   layer = 0,
   x = 128,
@@ -2041,22 +2168,16 @@ destructible{
 }
 
 teletransporter{
+  name = "lvl5_teleport1",
   layer = 0,
   x = 400,
   y = 664,
   width = 16,
   height = 16,
   destination_map = "donjons/level_05/entrance",
+  destination = "lvl5_tp1",
   sprite = "entities/dungeon_elements/teleport",
   sound = "levelteleport",
-}
-
-door{
-  layer = 0,
-  x = 128,
-  y = 608,
-  direction = 3,
-  sprite = "entities/block/key_block",
 }
 
 pickable{
@@ -2106,5 +2227,124 @@ enemy{
   y = 621,
   direction = 0,
   breed = "mini_boss/ice_bat",
+}
+
+pickable{
+  layer = 0,
+  x = 136,
+  y = 285,
+  treasure_name = "essence",
+}
+
+teletransporter{
+  name = "lvl5_esc4",
+  layer = 0,
+  x = 128,
+  y = 720,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_05/ss1",
+  destination = "to_ss2",
+}
+
+destination{
+  name = "to_ss1",
+  layer = 0,
+  x = 136,
+  y = 725,
+  direction = 1,
+}
+
+destination{
+  name = "lvl5_tp2",
+  layer = 0,
+  x = 408,
+  y = 685,
+  direction = 1,
+}
+
+door{
+  name = "lvl5_ss2_lock1",
+  layer = 0,
+  x = 128,
+  y = 672,
+  direction = 0,
+  sprite = "entities/block/key_block",
+  savegame_variable = "s_lvl5_ss2_lock1",
+  opening_method = "interaction",
+  opening_condition = "small_key",
+  opening_condition_consumed = true,
+}
+
+separator{
+  layer = 0,
+  x = 264,
+  y = -8,
+  width = 16,
+  height = 784,
+}
+
+separator{
+  layer = 0,
+  x = -8,
+  y = 184,
+  width = 832,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = -8,
+  y = 376,
+  width = 832,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = -8,
+  y = 568,
+  width = 832,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = -8,
+  y = 760,
+  width = 832,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 536,
+  y = -8,
+  width = 16,
+  height = 784,
+}
+
+separator{
+  layer = 0,
+  x = 808,
+  y = -8,
+  width = 16,
+  height = 784,
+}
+
+separator{
+  layer = 0,
+  x = -8,
+  y = -8,
+  width = 832,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = -8,
+  y = -8,
+  width = 16,
+  height = 784,
 }
 

@@ -119,24 +119,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 528,
-  y = 208,
-  width = 16,
-  height = 160,
-  pattern = "19",
-}
-
-tile{
-  layer = 0,
-  x = 544,
-  y = 208,
-  width = 16,
-  height = 160,
-  pattern = "20",
-}
-
-tile{
-  layer = 0,
   x = 800,
   y = 208,
   width = 16,
@@ -1006,15 +988,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "33",
-}
-
-tile{
-  layer = 0,
-  x = 48,
-  y = 272,
-  width = 16,
-  height = 16,
-  pattern = "79",
 }
 
 tile{
@@ -2306,15 +2279,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 752,
-  y = 240,
-  width = 16,
-  height = 16,
-  pattern = "79",
-}
-
-tile{
-  layer = 0,
   x = 720,
   y = 256,
   width = 16,
@@ -2648,15 +2612,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 400,
-  y = 192,
-  width = 16,
-  height = 16,
-  pattern = "70",
-}
-
-tile{
-  layer = 0,
   x = 304,
   y = 256,
   width = 32,
@@ -2671,6 +2626,51 @@ tile{
   width = 16,
   height = 32,
   pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 208,
+  width = 16,
+  height = 80,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 304,
+  width = 16,
+  height = 64,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 208,
+  width = 16,
+  height = 80,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 304,
+  width = 16,
+  height = 64,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 288,
+  width = 32,
+  height = 16,
+  pattern = "71",
 }
 
 destructible{
@@ -2741,7 +2741,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "spawn_lvl5_mobss",
+      value = "spawn_lvl5_mobss;lvl5_ss1_icecube1",
     },
   },
   subtype = "walkable",
@@ -2763,32 +2763,10 @@ enemy{
 }
 
 enemy{
-  name = "lvl5_mobss2",
-  layer = 0,
-  x = 312,
-  y = 653,
-  enabled_at_start = false,
-  direction = 3,
-  breed = "blue_slime",
-  treasure_name = "heart",
-}
-
-enemy{
   name = "lvl5_mobss3",
   layer = 0,
-  x = 440,
-  y = 637,
-  enabled_at_start = false,
-  direction = 0,
-  breed = "blue_rope",
-  treasure_name = "random",
-}
-
-enemy{
-  name = "lvl5_mobss4",
-  layer = 0,
-  x = 456,
-  y = 621,
+  x = 504,
+  y = 605,
   enabled_at_start = false,
   direction = 0,
   breed = "blue_rope",
@@ -2798,8 +2776,8 @@ enemy{
 enemy{
   name = "lvl5_mobss5",
   layer = 0,
-  x = 472,
-  y = 605,
+  x = 504,
+  y = 637,
   enabled_at_start = false,
   direction = 0,
   breed = "blue_rope",
@@ -2807,7 +2785,7 @@ enemy{
 }
 
 destination{
-  name = "entrance",
+  name = "to_entrance",
   layer = 0,
   x = 408,
   y = 725,
@@ -2815,6 +2793,7 @@ destination{
 }
 
 teletransporter{
+  name = "lvl5_esc2",
   layer = 0,
   x = 400,
   y = 720,
@@ -2908,51 +2887,23 @@ chest{
   layer = 0,
   x = 360,
   y = 493,
-  treasure_name = "great_key",
+  treasure_name = "small_key",
   treasure_savegame_variable = "lvl5_chest_ss1_1",
   sprite = "entities/chests/chest",
 }
 
-switch{
-  name = "lvl5_btn_4",
-  layer = 0,
-  x = 464,
-  y = 416,
-  subtype = "walkable",
-  sprite = "entities/dungeon_elements/switch",
-  sound = "chest_appears",
-  needs_block = false,
-  inactivate_when_leaving = false,
-}
-
 enemy{
   layer = 0,
-  x = 504,
-  y = 509,
+  x = 488,
+  y = 525,
   direction = 0,
   breed = "bat",
 }
 
 enemy{
   layer = 0,
-  x = 440,
-  y = 541,
-  direction = 0,
-  breed = "bat",
-}
-
-enemy{
-  layer = 0,
-  x = 448,
-  y = 493,
-  direction = 0,
-  breed = "bat",
-}
-
-enemy{
-  layer = 0,
-  x = 480,
-  y = 717,
+  x = 408,
+  y = 653,
   direction = 0,
   breed = "oursin",
 }
@@ -2987,15 +2938,6 @@ custom_entity{
   direction = 0,
   sprite = "entities/dungeon_elements/color_cube",
   model = "colored_block",
-}
-
-chest{
-  layer = 0,
-  x = 64,
-  y = 229,
-  treasure_name = "small_key",
-  treasure_savegame_variable = "lvl5_chest_ss1_2",
-  sprite = "entities/chests/chest",
 }
 
 enemy{
@@ -3038,18 +2980,10 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 376,
-  y = 437,
+  x = 456,
+  y = 461,
   direction = 0,
   breed = "ice_slime",
-}
-
-door{
-  layer = 0,
-  x = 400,
-  y = 384,
-  direction = 3,
-  sprite = "entities/door/door",
 }
 
 enemy{
@@ -3061,27 +2995,52 @@ enemy{
 }
 
 dynamic_tile{
+  name = "lvl5_ss1_floor3",
   layer = 0,
   x = 384,
   y = 64,
+  enabled_at_start = false,
   width = 48,
   height = 32,
   pattern = "71",
 }
 
 dynamic_tile{
-  layer = 0,
-  x = 384,
-  y = 24,
-  width = 48,
-  height = 32,
-  pattern = "71",
-}
-
-dynamic_tile{
+  name = "lvl5_ss1_floor2",
   layer = 0,
   x = 384,
   y = 104,
+  enabled_at_start = false,
+  width = 48,
+  height = 32,
+  pattern = "71",
+}
+
+dynamic_tile{
+  name = "lvl5_ss1_floor1",
+  layer = 0,
+  x = 384,
+  y = 144,
+  enabled_at_start = false,
+  width = 48,
+  height = 32,
+  pattern = "71",
+}
+
+enemy{
+  layer = 0,
+  x = 408,
+  y = 413,
+  direction = 0,
+  breed = "blue_rope",
+}
+
+dynamic_tile{
+  name = "lvl5_ss1_floor4",
+  layer = 0,
+  x = 384,
+  y = 24,
+  enabled_at_start = false,
   width = 48,
   height = 32,
   pattern = "71",
@@ -3089,26 +3048,101 @@ dynamic_tile{
 
 dynamic_tile{
   layer = 0,
-  x = 384,
-  y = 144,
-  width = 48,
-  height = 32,
-  pattern = "71",
-}
-
-destructible{
-  layer = 0,
-  x = 296,
-  y = 461,
-  sprite = "",
-}
-
-tile{
-  layer = 1,
   x = 400,
   y = 24,
   width = 16,
   height = 16,
   pattern = "32",
+}
+
+teletransporter{
+  name = "lvl5_esc3",
+  layer = 0,
+  x = 400,
+  y = 24,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_05/ss2",
+  destination = "to_ss1",
+}
+
+destination{
+  name = "to_ss2",
+  layer = 0,
+  x = 408,
+  y = 45,
+  direction = 1,
+}
+
+switch{
+  name = "lvl5_ss1_icecube1",
+  layer = 0,
+  x = 288,
+  y = 624,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "spawn_lvl5_ss1_floor1",
+    },
+  },
+  subtype = "walkable",
+  sprite = "entities/dungeon_elements/switch",
+  sound = "chest_appears",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+switch{
+  name = "lvl5_ss1_icecube2",
+  layer = 0,
+  x = 288,
+  y = 448,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "spawn_lvl5_ss1_floor2",
+    },
+  },
+  subtype = "walkable",
+  sprite = "entities/dungeon_elements/switch",
+  sound = "chest_appears",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+switch{
+  name = "lvl5_ss1_icecube3",
+  layer = 0,
+  x = 48,
+  y = 272,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "spawn_lvl5_ss1_floor3",
+    },
+  },
+  subtype = "walkable",
+  sprite = "entities/dungeon_elements/switch",
+  sound = "chest_appears",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+switch{
+  name = "lvl5_ss1_icecube4",
+  layer = 0,
+  x = 752,
+  y = 256,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "spawn_lvl5_ss1_floor4",
+    },
+  },
+  subtype = "walkable",
+  sprite = "entities/dungeon_elements/switch",
+  sound = "chest_appears",
+  needs_block = false,
+  inactivate_when_leaving = false,
 }
 
