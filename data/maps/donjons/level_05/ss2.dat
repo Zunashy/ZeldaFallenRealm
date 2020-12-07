@@ -2267,7 +2267,7 @@ door{
   name = "lvl5_ss2_lock1",
   layer = 0,
   x = 128,
-  y = 672,
+  y = 608,
   direction = 0,
   sprite = "entities/block/key_block",
   savegame_variable = "s_lvl5_ss2_lock1",
