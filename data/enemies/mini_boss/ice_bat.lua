@@ -32,6 +32,6 @@ end
 function enemy:on_restarted()
 
   movement = sol.movement.create("random")
-  movement:set_speed(48)
+  movement:set_speed(64)
   movement:start(enemy)
 end

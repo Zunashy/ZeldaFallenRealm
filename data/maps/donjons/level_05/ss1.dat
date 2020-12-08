@@ -5,6 +5,7 @@ properties{
   height = 768,
   min_layer = 0,
   max_layer = 2,
+  floor = -1,
   tileset = "dungeon/tileset_donjon_5",
   music = "dungeon5",
 }
@@ -2673,6 +2674,33 @@ tile{
   pattern = "71",
 }
 
+tile{
+  layer = 0,
+  x = 88,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "40",
+}
+
 destructible{
   layer = 0,
   x = 296,
@@ -2697,7 +2725,7 @@ destructible{
   layer = 0,
   x = 312,
   y = 493,
-  treasure_name = "heart",
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass_4",
   can_be_cut = true,
   damage_on_enemies = 0,
@@ -2707,7 +2735,7 @@ destructible{
   layer = 0,
   x = 312,
   y = 509,
-  treasure_name = "heart",
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass_4",
   can_be_cut = true,
   damage_on_enemies = 0,
@@ -2727,7 +2755,7 @@ destructible{
   layer = 0,
   x = 312,
   y = 477,
-  treasure_name = "heart",
+  treasure_name = "random",
   sprite = "entities/vegetation/grass/grass_4",
   can_be_cut = true,
   damage_on_enemies = 0,
@@ -2894,28 +2922,21 @@ chest{
 
 enemy{
   layer = 0,
-  x = 488,
-  y = 525,
+  x = 328,
+  y = 541,
   direction = 0,
   breed = "bat",
 }
 
-enemy{
-  layer = 0,
-  x = 408,
-  y = 653,
-  direction = 0,
-  breed = "oursin",
-}
-
 custom_entity{
+  name = "lvl5_ss1_colored_destination1",
   layer = 0,
   x = 144,
   y = 237,
   properties = {
     {
       key = "red_trigger",
-      value = "spawn_boss_key;spawn_ss_secret_stairs",
+      value = "spawn_lvl5_ss1_icecube3",
     },
     {
       key = "torchs",
@@ -2930,6 +2951,7 @@ custom_entity{
 }
 
 custom_entity{
+  name = "lvl5_ss1_cube1",
   layer = 0,
   x = 192,
   y = 333,
@@ -2962,20 +2984,6 @@ enemy{
   y = 253,
   direction = 0,
   breed = "bat",
-}
-
-enemy{
-  layer = 0,
-  x = 344,
-  y = 517,
-  properties = {
-    {
-      key = "death_trigger",
-      value = "spawn_lvl5_chest_ss1_1",
-    },
-  },
-  direction = 0,
-  breed = "blue_moblin_sword",
 }
 
 enemy{
@@ -3115,6 +3123,7 @@ switch{
   layer = 0,
   x = 48,
   y = 272,
+  enabled_at_start = false,
   properties = {
     {
       key = "activate_trigger",
@@ -3144,5 +3153,56 @@ switch{
   sound = "chest_appears",
   needs_block = false,
   inactivate_when_leaving = false,
+}
+
+custom_entity{
+  name = "lvl5_fire_1",
+  layer = 0,
+  x = 128,
+  y = 213,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/colored_flame",
+}
+
+custom_entity{
+  name = "lvl5_fire_2",
+  layer = 0,
+  x = 160,
+  y = 213,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/colored_flame",
+}
+
+enemy{
+  layer = 0,
+  x = 392,
+  y = 493,
+  direction = 2,
+  breed = "blade_trap",
+}
+
+destination{
+  name = "lvl5_ss1_trou",
+  layer = 0,
+  x = 296,
+  y = 605,
+  direction = 1,
+}
+
+teletransporter{
+  name = "lvl5_ss1_hole",
+  layer = 0,
+  x = 288,
+  y = 592,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_05/ss2",
+  destination = "lvl5_ss2_arrive_hole",
 }
 

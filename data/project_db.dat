@@ -11,6 +11,7 @@ map{ id = "donjons/level_05/entrance", description = "ss0" }
 map{ id = "donjons/level_05/ss1", description = "ss1" }
 map{ id = "donjons/level_05/ss2", description = "ss2" }
 map{ id = "donjons/level_05/ss3", description = "ss3" }
+map{ id = "donjons/level_05/ss4", description = "ss4" }
 map{ id = "normal_version/overworld/deep_forest/indoors/cave_1" }
 map{ id = "normal_version/overworld/deep_forest/indoors/cave_2" }
 map{ id = "normal_version/overworld/deep_forest/indoors/house_1" }
@@ -535,6 +536,8 @@ file{ path = "maps/donjons/level_05/ss2.dat", author = "SaniTOS", }
 file{ path = "maps/donjons/level_05/ss2.lua", author = "SaniTOS", }
 file{ path = "maps/donjons/level_05/ss3.dat", author = "SaniTOS", }
 file{ path = "maps/donjons/level_05/ss3.lua", author = "SaniTOS", }
+file{ path = "maps/donjons/level_05/ss4.dat", author = "SaniTOS", }
+file{ path = "maps/donjons/level_05/ss4.lua", author = "SaniTOS", }
 file{ path = "maps/normal_version", author = "Zunashy", }
 file{ path = "maps/war_version", author = "Nillan", }
 file{ path = "musics/custom/nielint.ogg", author = "SaniTOS", }

@@ -5,7 +5,7 @@ properties{
   height = 352,
   min_layer = 0,
   max_layer = 2,
-  floor = -1,
+  floor = 0,
   tileset = "dungeon/tileset_donjon_5",
   music = "dungeon5",
 }
@@ -588,42 +588,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 96,
-  y = 240,
-  width = 16,
-  height = 48,
-  pattern = "70",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 240,
-  width = 16,
-  height = 48,
-  pattern = "70",
-}
-
-tile{
-  layer = 0,
-  x = 112,
-  y = 240,
-  width = 16,
-  height = 16,
-  pattern = "70",
-}
-
-tile{
-  layer = 0,
-  x = 112,
-  y = 272,
-  width = 16,
-  height = 16,
-  pattern = "70",
-}
-
-tile{
-  layer = 0,
   x = 80,
   y = 256,
   width = 16,
@@ -755,6 +719,204 @@ tile{
   width = 16,
   height = 16,
   pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 320,
+  width = 48,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 320,
+  width = 48,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 304,
+  width = 64,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 304,
+  width = 48,
+  height = 8,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 304,
+  width = 64,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 288,
+  width = 64,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 288,
+  width = 64,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "35",
 }
 
 separator{
@@ -911,8 +1073,7 @@ destructible{
   x = 24,
   y = 45,
   treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_3",
-  can_be_cut = true,
+  sprite = "entities/pot",
 }
 
 destructible{
@@ -949,5 +1110,132 @@ destructible{
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass_3",
   can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 24,
+  y = 333,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_3",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 24,
+  y = 317,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_3",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 40,
+  y = 333,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_3",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 200,
+  y = 333,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_3",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 333,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_3",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 317,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_3",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 205,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_3",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 221,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_3",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 200,
+  y = 205,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_3",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 24,
+  y = 205,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_3",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 24,
+  y = 221,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_3",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 40,
+  y = 205,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_3",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 40,
+  y = 29,
+  treasure_name = "random",
+  sprite = "entities/pot",
+}
+
+teletransporter{
+  name = "lvl5_ss0_hole",
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_05/ss1",
+  destination = "lvl5_ss1_trou",
 }
 
