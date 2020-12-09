@@ -1,7 +1,7 @@
 # Guide de compilation de Solarus sur Red Hat 8.x / Cent OS 8.x / Fedora > 28
 
 
-1. Cloner le repo courant
+1. Cloner le repo courant (soyez root)
 
 ```
 sudo su -

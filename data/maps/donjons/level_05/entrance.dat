@@ -1073,7 +1073,7 @@ destructible{
   x = 24,
   y = 45,
   treasure_name = "random",
-  sprite = "entities/pot",
+  sprite = "entities/dungeon_elements/ice_cube",
 }
 
 destructible{
@@ -1225,7 +1225,7 @@ destructible{
   x = 40,
   y = 29,
   treasure_name = "random",
-  sprite = "entities/pot",
+  sprite = "entities/dungeon_elements/ice_cube",
 }
 
 teletransporter{

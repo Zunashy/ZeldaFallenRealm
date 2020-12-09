@@ -2701,6 +2701,438 @@ tile{
   pattern = "40",
 }
 
+tile{
+  layer = 0,
+  x = 16,
+  y = 320,
+  width = 16,
+  height = 48,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 352,
+  width = 32,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 336,
+  width = 64,
+  height = 32,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 352,
+  width = 64,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 240,
+  width = 16,
+  height = 32,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 264,
+  width = 32,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 272,
+  width = 8,
+  height = 72,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 272,
+  width = 32,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 304,
+  width = 32,
+  height = 16,
+  pattern = "33",
+}
+
 destructible{
   layer = 0,
   x = 296,
@@ -2856,7 +3288,7 @@ separator{
 
 separator{
   layer = 0,
-  x = -8,
+  x = 8,
   y = 376,
   width = 832,
   height = 16,
@@ -2996,7 +3428,7 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 296,
+  x = 328,
   y = 301,
   direction = 0,
   breed = "oursin",
@@ -3204,5 +3636,251 @@ teletransporter{
   height = 16,
   destination_map = "donjons/level_05/ss2",
   destination = "lvl5_ss2_arrive_hole",
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 365,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 160,
+  y = 285,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 104,
+  y = 285,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 24,
+  y = 221,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 24,
+  y = 237,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 40,
+  y = 221,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 221,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+enemy{
+  layer = 0,
+  x = 40,
+  y = 349,
+  direction = 0,
+  breed = "ice_slime",
+}
+
+pickable{
+  layer = 0,
+  x = 472,
+  y = 429,
+  treasure_name = "rupee",
+}
+
+enemy{
+  layer = 0,
+  x = 760,
+  y = 253,
+  direction = 0,
+  breed = "blue_octorock",
+}
+
+enemy{
+  layer = 0,
+  x = 664,
+  y = 301,
+  direction = 0,
+  breed = "blue_octorock",
+}
+
+destructible{
+  layer = 0,
+  x = 776,
+  y = 301,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 776,
+  y = 317,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 760,
+  y = 317,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 760,
+  y = 301,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 744,
+  y = 317,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 744,
+  y = 301,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+enemy{
+  layer = 0,
+  x = 616,
+  y = 253,
+  direction = 3,
+  breed = "blue_slime",
+}
+
+destructible{
+  layer = 0,
+  x = 392,
+  y = 285,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 424,
+  y = 285,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 424,
+  y = 317,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 392,
+  y = 317,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+enemy{
+  layer = 0,
+  x = 504,
+  y = 301,
+  direction = 2,
+  breed = "blue_slime",
+}
+
+chest{
+  layer = 0,
+  x = 296,
+  y = 221,
+  treasure_name = "heart_quarter",
+  sprite = "entities/chests/chest",
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 237,
+  sprite = "entities/dungeon_elements/ice_cube",
+}
+
+destructible{
+  layer = 0,
+  x = 312,
+  y = 221,
+  sprite = "entities/dungeon_elements/ice_cube",
+}
+
+destructible{
+  layer = 0,
+  x = 312,
+  y = 237,
+  sprite = "entities/dungeon_elements/ice_cube",
 }
 
