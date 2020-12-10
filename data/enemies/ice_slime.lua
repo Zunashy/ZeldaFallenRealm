@@ -5,7 +5,7 @@ local movement
 local sprite
 
 local distance = 16
-local speed = 32
+local speed = 20
 local delay = 400
 local jump_speed = 72
 
@@ -20,7 +20,7 @@ function enemy:on_created()
 end
 
 function enemy:movement_cycle()
-  if self:get_distance(hero) < 48 then
+  if self:get_distance(hero) < 40 then
     self.movement_count = self.movement_count + 1
   end
 

@@ -3288,7 +3288,7 @@ separator{
 
 separator{
   layer = 0,
-  x = 8,
+  x = -8,
   y = 376,
   width = 832,
   height = 16,
@@ -3348,7 +3348,7 @@ chest{
   x = 360,
   y = 493,
   treasure_name = "small_key",
-  treasure_savegame_variable = "lvl5_chest_ss1_1",
+  treasure_savegame_variable = "s_lvl5_chest_ss1_1",
   sprite = "entities/chests/chest",
 }
 

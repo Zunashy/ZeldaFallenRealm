@@ -11,34 +11,26 @@
 local item = ...
 local game = item:get_game()
 local hero = game:get_hero()
+local hammer_sprite
+local sprite
 
 function item:on_created()
   self:set_savegame_variable("possession_hammer")
   self:set_assignable(true)
 end 
 
--- Event called when all items have been created.
-function item:on_started()
-  local hero = item:get_map():get_entity("hero")
 
-  -- Initialize the properties of your item here,
-  -- like whether it can be saved, whether it has an amount
-  -- and whether it can be assigned.
-end
 
--- Event called when the hero starts using this item.
+-- UTILISATION DE L'ITEM
 function item:on_using()
+  local x, y, layer = hero:get_position()
+  x, y = gen.shift_direction4(x, y, hero:get_direction(), 16)
 
-  -- Define here what happens when using this item
-  -- and call item:set_finished() to release the hero when you have finished.
   item:set_finished()
 end
 
--- Event called when a pickable treasure representing this item
--- is created on the map.
-function item:on_pickable_created(pickable)
 
-  -- You can set a particular movement here if you don't like the default one.
+function item:on_pickable_created(pickable)
 end
 
 function item:on_obtained()

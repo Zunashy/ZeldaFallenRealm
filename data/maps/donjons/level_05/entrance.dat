@@ -687,15 +687,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 112,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "32",
-}
-
-tile{
-  layer = 0,
   x = 40,
   y = 176,
   width = 16,
@@ -1007,7 +998,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "spawn_lvl5_esc1",
+      value = "spawn_lvl5_esc1;spawn_lvl5_ss0_esc1",
     },
   },
   subtype = "walkable",
@@ -1074,6 +1065,9 @@ destructible{
   y = 45,
   treasure_name = "random",
   sprite = "entities/dungeon_elements/ice_cube",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  damage_on_enemies = 0,
 }
 
 destructible{
@@ -1220,14 +1214,6 @@ destructible{
   can_be_cut = true,
 }
 
-destructible{
-  layer = 0,
-  x = 40,
-  y = 29,
-  treasure_name = "random",
-  sprite = "entities/dungeon_elements/ice_cube",
-}
-
 teletransporter{
   name = "lvl5_ss0_hole",
   layer = 0,
@@ -1237,5 +1223,27 @@ teletransporter{
   height = 16,
   destination_map = "donjons/level_05/ss1",
   destination = "lvl5_ss1_trou",
+}
+
+dynamic_tile{
+  name = "lvl5_ss0_esc1",
+  layer = 0,
+  x = 112,
+  y = 16,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "32",
+}
+
+destructible{
+  layer = 0,
+  x = 40,
+  y = 29,
+  treasure_name = "random",
+  sprite = "entities/dungeon_elements/ice_cube",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  damage_on_enemies = 0,
 }
 

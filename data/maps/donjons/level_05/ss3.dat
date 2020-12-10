@@ -1828,11 +1828,12 @@ block{
 }
 
 chest{
-  name = "lvl5_object",
+  name = "lvl5_ss3_chest_key",
   layer = 0,
   x = 104,
   y = 413,
   treasure_name = "small_key",
+  treasure_savegame_variable = "s_lvl5_ss3_chest_key",
   sprite = "entities/chests/chest",
 }
 

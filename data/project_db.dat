@@ -215,6 +215,7 @@ sprite{ id = "entities/water/deep_water", description = "Eau Profonde" }
 sprite{ id = "hero/frozen", description = "frozen" }
 sprite{ id = "hero/ground1", description = "hero/ground1" }
 sprite{ id = "hero/ground2", description = "hero/ground2" }
+sprite{ id = "hero/hammer", description = "hammer sprite" }
 sprite{ id = "hero/sword1", description = "Epée (ancienne animation)" }
 sprite{ id = "hero/sword1_swing", description = "hero/sword1" }
 sprite{ id = "hero/sword_stars1", description = "hero/sword_stars1" }
@@ -594,6 +595,7 @@ file{ path = "sprites/entities/dungeon_elements/fragile_ground.dat", author = "T
 file{ path = "sprites/entities/dungeon_elements/ice_cube.dat", author = "SaniTOS", }
 file{ path = "sprites/entities/dungeon_elements/ice_cube_condensed.dat", author = "SaniTOS", }
 file{ path = "sprites/hero/frozen.dat", author = "SaniTOS", }
+file{ path = "sprites/hero/hammer.dat", author = "SaniTOS", }
 file{ path = "sprites/pnj/main/sorcier.dat", author = "Zunashy", }
 file{ path = "sprites/pnj/main/zuna.dat", author = "Zunashy", }
 file{ path = "sprites/pnj/main/zuna_sword.dat", author = "Zunashy", }

@@ -7,6 +7,7 @@ local inventory_menu = {
         "rock_feather",
         "ice_seed",
         "fire_seed",
+        "hammer",
         [13] = "horn",
     },
     items_sprites = {},
