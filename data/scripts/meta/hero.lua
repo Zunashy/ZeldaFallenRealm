@@ -203,7 +203,6 @@ local function initialize_hero_features(game)
       self:get_entity():get_sprite():set_animation("walking")
     end
   end
-
 end
 
 

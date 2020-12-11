@@ -216,8 +216,8 @@ sprite{ id = "hero/frozen", description = "frozen" }
 sprite{ id = "hero/ground1", description = "hero/ground1" }
 sprite{ id = "hero/ground2", description = "hero/ground2" }
 sprite{ id = "hero/hammer", description = "hammer sprite" }
-sprite{ id = "hero/sword1", description = "Epée (ancienne animation)" }
-sprite{ id = "hero/sword1_swing", description = "hero/sword1" }
+sprite{ id = "hero/sword1", description = "hero/sword1" }
+sprite{ id = "hero/sword1_old", description = "Epée (ancienne animation)" }
 sprite{ id = "hero/sword_stars1", description = "hero/sword_stars1" }
 sprite{ id = "hero/trail", description = "hero/trail" }
 sprite{ id = "hero/tunic1", description = "hero/tunic1" }

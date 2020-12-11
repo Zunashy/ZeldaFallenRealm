@@ -82,7 +82,6 @@ function npc_meta:set_dialog(dialog)
   self:set_property("dialog", dialog)
 end
 
-
 sol.main.get_metatable("hero").exclamation = npc_meta.exclamation
 
 local enemy_meta = sol.main.get_metatable("enemy")

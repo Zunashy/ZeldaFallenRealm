@@ -75,6 +75,8 @@ L'effet d'un Item quand il est utilisé est défini dans une fonction de son scr
 
 ## Les items de Fallen Realm
 
+[Passer directement à la partie API](#lapi)
+
 Pour illustrer par l'exemple toutes ces fonctionnalité (et parce qu'il est toujours utile d'avoir ce genre de liste), voici tous les items actuellement présents dans Fallen Realm : 
 
 - ### Plume de roc / rock_feather
@@ -135,13 +137,41 @@ Pour illustrer par l'exemple toutes ces fonctionnalité (et parce qu'il est touj
 
 Voilà pour la partie théorique, vous devriez a priori pouvoir comprendre le concept des items dans sa globalité, ainsi que le fonctionnement des items de Fallen Realm.
 
-### L'API
+## L'API
 On entre donc dans la partie pratique, si vous voulez programmer vous même un Item. 
+
+### Introduction
 
 A priori, vous savez déjà comment faire en théorie, c'est à dire quelles sont les fonctionnalités qu'il va falloir implémenter, nous allons donc voir commment faire tout ça en pratique, c'est à dire quelle fonctions utiliser et définir dans le script de votre Item.
 
+> Évidemment, la programmation d'un Item requiert un minimum de connaissances en Lua. Je pars donc du principe, à partir d'ici, que vous connaissez au moins [les bases du langage](lua.md) et [la manière dont on utilise Lua avec Solarus](lua_solarus.md)
+
+Premièrement, pour rappel le script d'un Item est défini par un fichier Lua portant le nom de l'item, dans le dossier `data/items` de la quête.  
+Ce script aura pour but, comme la quasi-totalité des scripts Solarus, de définir des méthodes de l'objet item (ou callbacks). Cet objet est déjà créé par solarus, et est désigné par le mot-clé `...`. De toute manière, tous les scripts d'items nouvellement créés contiennent déjà quelques ligne de code, dont un `local item = ...`, qui aura pour effet de stocker l'objet Item dans la variable éponyme.  
+
+**Toutes les fonctions de l'objet item (qu'il s'agisse des fonctions fournies par Solarus (méthodes natives) ou des fonctions à créer (callbacks)) sont listées dans [cette page de la documentation officielle](https://www.solarus-games.org/doc/latest/lua_api_item.html)**.
+
+### Tutoriel
+
+La première fonction à ajouter à notre Item sera `on_created()`. Cette fonction est appelée dès que la `game` est créée, c'est à dire dès que le fichier de sauvegarde est chargé.  
+C'est ici que vous allez appeler les méthodes qui permettent de configurer l'Item.  
+
+Exemple : 
+```lua
+function item:on_created()
+    --rappel : dans une méthode (=fonction appartenant à un objet), self désigne l'objet. Ici self = item.
+    self:set_savegame_variable("possession_item")
+    self:set_brandish_when_picked(true)
+    self:set_assignable(true)
+end 
 ```
-SUITE COMING SOON
-```
+
+Les principales fonctions utiles ici sont : 
+- `item:set_savegame_variable(variable)` : définit la variable de sauvegarde associée. Fait implicitement de l'item un [Item sauvegardé](#items-sauvegardés).
+- `item:set_amount_savegame_variable(variable)` : définit la variable de sauvegarde de quantité. Fait de l'item un [Item à quantité](#items-à-quantité).
+- `item:set_assignable(assignable)` : indique si il est possible d'assigner l'item (`assignable` doit donc être true ou false. Ne rien mettre équivaut à true).
+- `item:set_brandish_when_picked(brandish_when_picked)` : indique si Link doit [brandir](#brandir-un-item) cet Item en le ramassant (`brandish_when_picked` doit donc être true ou false. Ne rien mettre équivaut à true).
+
+L'autre fonction qui se retrouvera dans quasiment tous les Items est `item:on_obtained()`
 
 [Retour au sommaire](starting.md)
