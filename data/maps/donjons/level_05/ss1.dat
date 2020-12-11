@@ -3133,6 +3133,24 @@ tile{
   pattern = "33",
 }
 
+tile{
+  layer = 0,
+  x = 288,
+  y = 400,
+  width = 32,
+  height = 32,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 448,
+  width = 32,
+  height = 16,
+  pattern = "70",
+}
+
 destructible{
   layer = 0,
   x = 296,
