@@ -910,6 +910,33 @@ tile{
   pattern = "35",
 }
 
+tile{
+  layer = 0,
+  x = 176,
+  y = 16,
+  width = 48,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 32,
+  width = 16,
+  height = 32,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
 separator{
   layer = 0,
   x = -8,
@@ -1092,15 +1119,6 @@ destructible{
   layer = 0,
   x = 168,
   y = 77,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_3",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 216,
-  y = 29,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass_3",
   can_be_cut = true,

@@ -12,7 +12,7 @@ local item = ...
 local game = item:get_game()
 local hero = game:get_hero()
 local hammer_sprite
-local sprite
+-- local sprite
 
 function item:on_created()
   self:set_savegame_variable("possession_hammer")
@@ -23,8 +23,20 @@ end
 
 -- UTILISATION DE L'ITEM
 function item:on_using()
-  local x, y, layer = hero:get_position()
-  x, y = gen.shift_direction4(x, y, hero:get_direction(), 16)
+
+  -- local vars
+  local map = game:get_map()  --utile ??
+  local hero = game:get_hero()
+  local direction = hero:get_direction() --0:droite 1:haut 2:gauche 3:bas
+  local x,y = hero:get_position()
+  local hammer_sprite = sol.sprite.create("hero/hammer") -- comment récup un sprite dans un objet de type item ?
+  
+
+  -- créer l'animation selon la direction de link à +16
+  -- self:set_animation("hammer")
+
+  -- debug
+  print(hammer_sprite)
 
   item:set_finished()
 end
