@@ -3151,6 +3151,42 @@ tile{
   pattern = "70",
 }
 
+tile{
+  layer = 0,
+  x = 608,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 296,
+  width = 8,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 320,
+  width = 8,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 304,
+  width = 48,
+  height = 16,
+  pattern = "70",
+}
+
 destructible{
   layer = 0,
   x = 296,
@@ -3751,8 +3787,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 664,
-  y = 301,
+  x = 792,
+  y = 365,
   direction = 0,
   breed = "blue_octorock",
 }
@@ -3769,8 +3805,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 776,
-  y = 317,
+  x = 696,
+  y = 301,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass_4",
   can_be_cut = true,
@@ -3779,8 +3815,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 760,
-  y = 317,
+  x = 712,
+  y = 301,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass_4",
   can_be_cut = true,
@@ -3799,8 +3835,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 744,
-  y = 317,
+  x = 728,
+  y = 301,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass_4",
   can_be_cut = true,
@@ -3900,5 +3936,165 @@ destructible{
   x = 312,
   y = 237,
   sprite = "entities/dungeon_elements/ice_cube",
+}
+
+jumper{
+  layer = 0,
+  x = 424,
+  y = 680,
+  width = 88,
+  height = 8,
+  direction = 2,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 424,
+  y = 648,
+  width = 104,
+  height = 8,
+  direction = 2,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 456,
+  y = 416,
+  width = 8,
+  height = 16,
+  direction = 4,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 472,
+  y = 448,
+  width = 8,
+  height = 16,
+  direction = 4,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 640,
+  y = 304,
+  width = 80,
+  height = 8,
+  direction = 6,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 736,
+  y = 320,
+  width = 48,
+  height = 8,
+  direction = 6,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 672,
+  y = 272,
+  width = 96,
+  height = 8,
+  direction = 6,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 632,
+  y = 256,
+  width = 8,
+  height = 16,
+  direction = 4,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 632,
+  y = 288,
+  width = 8,
+  height = 16,
+  direction = 4,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 328,
+  y = 656,
+  width = 8,
+  height = 32,
+  direction = 4,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 360,
+  y = 688,
+  width = 8,
+  height = 48,
+  direction = 4,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 336,
+  y = 648,
+  width = 56,
+  height = 8,
+  direction = 2,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 368,
+  y = 680,
+  width = 24,
+  height = 8,
+  direction = 2,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 48,
+  y = 296,
+  width = 32,
+  height = 8,
+  direction = 2,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 48,
+  y = 256,
+  width = 32,
+  height = 8,
+  direction = 6,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 32,
+  y = 272,
+  width = 8,
+  height = 16,
+  direction = 0,
+  jump_length = 40,
 }
 

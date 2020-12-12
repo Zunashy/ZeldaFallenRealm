@@ -984,8 +984,8 @@ teletransporter{
   y = 256,
   width = 16,
   height = 16,
-  destination_map = "donjons/level_05/ss2",
-  destination = "lvl5_tp2",
+  destination_map = "donjons/level_05/ss4",
+  destination = "lvl5_to_ss3",
   sprite = "entities/dungeon_elements/teleport",
   sound = "levelteleport",
 }

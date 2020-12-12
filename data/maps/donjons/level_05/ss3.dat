@@ -480,8 +480,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 400,
-  y = 256,
+  x = 416,
+  y = 272,
   width = 16,
   height = 16,
   pattern = "30",
@@ -489,8 +489,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 400,
-  y = 240,
+  x = 440,
+  y = 248,
   width = 16,
   height = 16,
   pattern = "30",
@@ -498,8 +498,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 400,
-  y = 224,
+  x = 440,
+  y = 264,
   width = 16,
   height = 16,
   pattern = "30",
@@ -1848,15 +1848,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 576,
-  y = 400,
-  width = 16,
-  height = 16,
-  pattern = "77",
-}
-
-tile{
-  layer = 0,
   x = 560,
   y = 400,
   width = 16,
@@ -1871,24 +1862,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "50",
-}
-
-tile{
-  layer = 0,
-  x = 560,
-  y = 416,
-  width = 16,
-  height = 16,
-  pattern = "33",
-}
-
-tile{
-  layer = 0,
-  x = 592,
-  y = 416,
-  width = 16,
-  height = 16,
-  pattern = "33",
 }
 
 tile{
@@ -2143,6 +2116,33 @@ tile{
   pattern = "70",
 }
 
+tile{
+  layer = 0,
+  x = 576,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "75",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "75",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "75",
+}
+
 teletransporter{
   layer = 0,
   x = 304,
@@ -2202,7 +2202,8 @@ teletransporter{
   y = 208,
   width = 16,
   height = 16,
-  destination_map = "donjons/level_05/ss3",
+  destination_map = "donjons/level_05/ss4",
+  destination = "lvl5_to_ss3",
 }
 
 destination{
@@ -2409,7 +2410,7 @@ separator{
 
 dynamic_tile{
   layer = 0,
-  x = 400,
+  x = 384,
   y = 272,
   width = 16,
   height = 16,
@@ -2542,5 +2543,36 @@ pickable{
   x = 40,
   y = 413,
   treasure_name = "heart",
+}
+
+custom_entity{
+  layer = 0,
+  x = 584,
+  y = 429,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/color_cube_destination",
+  model = "colored_block_destination",
+}
+
+jumper{
+  layer = 0,
+  x = 392,
+  y = 336,
+  width = 8,
+  height = 16,
+  direction = 4,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 416,
+  y = 336,
+  width = 8,
+  height = 16,
+  direction = 0,
+  jump_length = 40,
 }
 
