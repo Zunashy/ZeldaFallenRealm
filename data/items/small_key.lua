@@ -10,6 +10,6 @@ function item:on_created()
   self:set_savegame_variable("small_key")
 end
 
-function item:on_obtained()
+function item:on_obtained(variant)
   self:add_amount(1)
 end

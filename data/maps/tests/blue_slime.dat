@@ -318,7 +318,7 @@ chest{
 pickable{
   layer = 1,
   x = 104,
-  y = 253,
+  y = 237,
   treasure_name = "rock_feather",
 }
 
@@ -565,8 +565,8 @@ custom_entity{
 
 custom_entity{
   layer = 1,
-  x = 120,
-  y = 253,
+  x = 88,
+  y = 237,
   properties = {
     {
       key = "item",
@@ -713,6 +713,13 @@ custom_entity{
   height = 16,
   direction = 0,
   model = "layer_changer",
+}
+
+pickable{
+  layer = 1,
+  x = 104,
+  y = 253,
+  treasure_name = "small_key",
 }
 
 tile{
