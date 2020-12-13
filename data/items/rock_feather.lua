@@ -32,7 +32,3 @@ function item:on_using()
   sol.audio.play_sound("jump")
   item:set_finished()
 end
-
-function item:on_obtained()
-  self:set_variant(1)
-end

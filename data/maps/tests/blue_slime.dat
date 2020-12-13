@@ -260,6 +260,15 @@ tile{
   pattern = "33",
 }
 
+tile{
+  layer = 1,
+  x = 224,
+  y = 160,
+  width = 16,
+  height = 32,
+  pattern = "68",
+}
+
 custom_entity{
   name = "CBD",
   layer = 1,
@@ -300,16 +309,16 @@ destination{
 chest{
   name = "chest_1",
   layer = 1,
-  x = 264,
-  y = 149,
+  x = 296,
+  y = 157,
   enabled_at_start = false,
   sprite = "entities/chests/chest",
 }
 
 pickable{
   layer = 1,
-  x = 200,
-  y = 197,
+  x = 104,
+  y = 237,
   treasure_name = "rock_feather",
 }
 
@@ -338,7 +347,7 @@ enemy{
 
 pickable{
   layer = 1,
-  x = 152,
+  x = 88,
   y = 253,
   treasure_name = "sword",
 }
@@ -458,7 +467,7 @@ npc{
   name = "snas",
   layer = 1,
   x = 232,
-  y = 205,
+  y = 61,
   properties = {
     {
       key = "horn_map",
@@ -476,8 +485,8 @@ npc{
 
 custom_entity{
   layer = 1,
-  x = 216,
-  y = 149,
+  x = 168,
+  y = 157,
   width = 32,
   height = 32,
   direction = 0,
@@ -556,8 +565,8 @@ custom_entity{
 
 custom_entity{
   layer = 1,
-  x = 248,
-  y = 205,
+  x = 88,
+  y = 237,
   properties = {
     {
       key = "item",
@@ -621,18 +630,6 @@ enemy{
   },
   direction = 0,
   breed = "oursin",
-}
-
-custom_entity{
-  name = "colored_block_2",
-  layer = 1,
-  x = 200,
-  y = 221,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/dungeon_elements/color_cube",
-  model = "colored_block",
 }
 
 custom_entity{
@@ -708,6 +705,23 @@ destructible{
   sprite = "entities/projectile/rock",
 }
 
+custom_entity{
+  layer = 1,
+  x = 232,
+  y = 173,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "layer_changer",
+}
+
+pickable{
+  layer = 1,
+  x = 104,
+  y = 253,
+  treasure_name = "small_key",
+}
+
 tile{
   layer = 2,
   x = 160,
@@ -724,5 +738,14 @@ tile{
   width = 16,
   height = 16,
   pattern = "10",
+}
+
+tile{
+  layer = 2,
+  x = 208,
+  y = 128,
+  width = 48,
+  height = 32,
+  pattern = "5",
 }
 

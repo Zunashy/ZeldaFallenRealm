@@ -1,0 +1,22 @@
+animation{
+  name = "hammer",
+  src_image = "hero/hammer.png",
+  frame_delay = 100,
+  directions = {
+    { x = 64, y = 32, frame_width = 32, frame_height = 32, origin_x = 8, origin_y = 28, num_frames = 2, num_columns = 1 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 32, num_frames = 2, num_columns = 1 },
+    { x = 32, y = 32, frame_width = 32, frame_height = 32, origin_x = 26, origin_y = 28, num_frames = 2, num_columns = 1 },
+    { x = 112, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13, num_frames = 2, num_columns = 1 },
+  },
+}
+animation{
+  name = "idle",
+  src_image = "hero/hammer.png",
+  frame_delay = 100,
+  directions = {
+    { x = 64, y = 0, frame_width = 32, frame_height = 32, origin_x = 8, origin_y = 13, num_frames = 3, num_columns = 1 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13, num_frames = 3, num_columns = 1 },
+    { x = 32, y = 0, frame_width = 32, frame_height = 32, origin_x = 8, origin_y = 13, num_frames = 3, num_columns = 1 },
+    { x = 112, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 13, num_frames = 3, num_columns = 1 },
+  },
+}

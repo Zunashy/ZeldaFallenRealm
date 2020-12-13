@@ -12,6 +12,13 @@ Vous obtenez le bracelet de force ! Cet accessoire vous permettant de déplacer 
 }
 
 dialog{
+  id = "_treasure.hammer.1",
+  text = [[
+Vous obtenez le marteau ! Vous pouvez maintenant casser les blocs de glace et écraser vos ennemis !
+]],
+}
+
+dialog{
   id = "_treasure.essence.1",
   text = [[
 Vous obtenez ... un objet mystérieux ?
