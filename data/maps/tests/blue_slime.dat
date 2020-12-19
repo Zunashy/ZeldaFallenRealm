@@ -369,6 +369,7 @@ destructible{
   x = 104,
   y = 165,
   sprite = "entities/projectile/rock",
+  weight = 2,
 }
 
 destructible{
@@ -651,6 +652,7 @@ enemy{
   y = 189,
   direction = 0,
   breed = "oursin",
+  savegame_variable = "tests_blue_slime_oursin",
 }
 
 enemy{
@@ -720,6 +722,16 @@ pickable{
   x = 104,
   y = 253,
   treasure_name = "small_key",
+}
+
+door{
+  name = "test_dooor",
+  layer = 1,
+  x = 64,
+  y = 184,
+  direction = 3,
+  sprite = "",
+  savegame_variable = "la_PORTE",
 }
 
 tile{
