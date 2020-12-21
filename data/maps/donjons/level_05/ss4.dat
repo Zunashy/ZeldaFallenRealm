@@ -84,24 +84,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 288,
-  y = 176,
-  width = 240,
-  height = 16,
-  pattern = "9",
-}
-
-tile{
-  layer = 0,
-  x = 288,
-  y = 192,
-  width = 240,
-  height = 16,
-  pattern = "10",
-}
-
-tile{
-  layer = 0,
   x = 0,
   y = 208,
   width = 16,
@@ -183,24 +165,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 256,
-  y = 176,
-  width = 16,
-  height = 16,
-  pattern = "11",
-}
-
-tile{
-  layer = 0,
-  x = 272,
-  y = 176,
-  width = 16,
-  height = 16,
-  pattern = "12",
-}
-
-tile{
-  layer = 0,
   x = 528,
   y = 176,
   width = 16,
@@ -211,24 +175,6 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 192,
-  width = 16,
-  height = 16,
-  pattern = "14",
-}
-
-tile{
-  layer = 0,
-  x = 256,
-  y = 192,
-  width = 16,
-  height = 16,
-  pattern = "13",
-}
-
-tile{
-  layer = 0,
-  x = 272,
   y = 192,
   width = 16,
   height = 16,
@@ -393,15 +339,6 @@ tile{
   x = 384,
   y = 16,
   width = 48,
-  height = 16,
-  pattern = "10",
-}
-
-tile{
-  layer = 0,
-  x = 400,
-  y = 32,
-  width = 16,
   height = 16,
   pattern = "10",
 }
@@ -822,16 +759,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 320,
-  y = 224,
-  width = 16,
-  height = 16,
-  pattern = "33",
-}
-
-tile{
-  layer = 0,
-  x = 336,
+  x = 352,
   y = 208,
   width = 16,
   height = 16,
@@ -869,15 +797,6 @@ tile{
   layer = 0,
   x = 304,
   y = 352,
-  width = 16,
-  height = 16,
-  pattern = "33",
-}
-
-tile{
-  layer = 0,
-  x = 288,
-  y = 208,
   width = 16,
   height = 16,
   pattern = "33",
@@ -1146,24 +1065,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 240,
-  y = 192,
-  width = 16,
-  height = 16,
-  pattern = "16",
-}
-
-tile{
-  layer = 0,
-  x = 240,
-  y = 176,
-  width = 16,
-  height = 16,
-  pattern = "15",
-}
-
-tile{
-  layer = 0,
   x = 208,
   y = 192,
   width = 16,
@@ -1390,33 +1291,6 @@ tile{
 tile{
   layer = 0,
   x = 272,
-  y = 200,
-  width = 16,
-  height = 64,
-  pattern = "20",
-}
-
-tile{
-  layer = 0,
-  x = 256,
-  y = 216,
-  width = 16,
-  height = 48,
-  pattern = "19",
-}
-
-tile{
-  layer = 0,
-  x = 256,
-  y = 208,
-  width = 16,
-  height = 16,
-  pattern = "19",
-}
-
-tile{
-  layer = 0,
-  x = 272,
   y = 312,
   width = 16,
   height = 64,
@@ -1439,15 +1313,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "12",
-}
-
-tile{
-  layer = 0,
-  x = 272,
-  y = 192,
-  width = 16,
-  height = 16,
-  pattern = "14",
 }
 
 tile{
@@ -1792,15 +1657,139 @@ tile{
   pattern = "70",
 }
 
+tile{
+  layer = 0,
+  x = 288,
+  y = 208,
+  width = 32,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 160,
+  width = 32,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 192,
+  width = 192,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 176,
+  width = 192,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 184,
+  width = 16,
+  height = 80,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 168,
+  width = 16,
+  height = 96,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 176,
+  width = 16,
+  height = 32,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 176,
+  width = 16,
+  height = 32,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 32,
+  width = 16,
+  height = 8,
+  pattern = "8",
+}
+
 chest{
   name = "lvl5_ss4_greatkey",
   layer = 0,
   x = 408,
-  y = 61,
+  y = 53,
   treasure_name = "great_key",
-  treasure_savegame_variable = "s_lvl5_ss4_greatkey",
   sprite = "entities/chests/chest",
-  opening_method = "interaction_if_savegame_variable",
   opening_condition = "s_lvl5_ss4_greatkey",
 }
 
@@ -1834,27 +1823,6 @@ destructible{
 destructible{
   layer = 0,
   x = 472,
-  y = 173,
-  sprite = "entities/vegetation/grass/grass_3",
-}
-
-destructible{
-  layer = 0,
-  x = 328,
-  y = 173,
-  sprite = "entities/vegetation/grass/grass_3",
-}
-
-destructible{
-  layer = 0,
-  x = 312,
-  y = 173,
-  sprite = "entities/vegetation/grass/grass_3",
-}
-
-destructible{
-  layer = 0,
-  x = 296,
   y = 173,
   sprite = "entities/vegetation/grass/grass_3",
 }
@@ -1912,13 +1880,14 @@ destination{
 }
 
 npc{
+  name = "lvl5_helpme",
   layer = 0,
   x = 392,
   y = 125,
   direction = 3,
   subtype = 1,
   sprite = "hero/frozen",
-  behavior = "dialog#Pour connaître la profondeur, il faut savoir chuter.",
+  behavior = "dialog#dungeons.lvl5.1",
 }
 
 chest{
@@ -1931,8 +1900,8 @@ chest{
 
 enemy{
   layer = 0,
-  x = 520,
-  y = 293,
+  x = 456,
+  y = 221,
   direction = 0,
   breed = "ice_slime",
 }
@@ -1972,14 +1941,14 @@ teletransporter{
 
 destructible{
   layer = 0,
-  x = 360,
-  y = 237,
+  x = 376,
+  y = 221,
   sprite = "entities/dungeon_elements/ice_cube",
 }
 
 destructible{
   layer = 0,
-  x = 376,
+  x = 392,
   y = 237,
   sprite = "entities/dungeon_elements/ice_cube",
 }
@@ -2401,15 +2370,6 @@ teletransporter{
   sound = "levelteleport",
 }
 
-destructible{
-  layer = 0,
-  x = 192,
-  y = 365,
-  treasure_name = "heart",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-}
-
 enemy{
   layer = 0,
   x = 224,
@@ -2418,124 +2378,10 @@ enemy{
   breed = "ice_slime",
 }
 
-enemy{
-  layer = 0,
-  x = 248,
-  y = 365,
-  direction = 0,
-  breed = "ice_slime",
-}
-
-enemy{
-  layer = 0,
-  x = 248,
-  y = 325,
-  direction = 0,
-  breed = "blue_rope",
-}
-
-enemy{
-  layer = 0,
-  x = 40,
-  y = 277,
-  direction = 0,
-  breed = "blue_rope",
-}
-
-destructible{
-  layer = 0,
-  x = 40,
-  y = 77,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 40,
-  y = 93,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 40,
-  y = 109,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 40,
-  y = 125,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 72,
-  y = 157,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 88,
-  y = 157,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
 destructible{
   layer = 0,
   x = 104,
   y = 157,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 232,
-  y = 125,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 232,
-  y = 109,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 232,
-  y = 93,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass_4",
   can_be_cut = true,
@@ -2546,76 +2392,6 @@ destructible{
   layer = 0,
   x = 184,
   y = 61,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 216,
-  y = 93,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 72,
-  y = 45,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 88,
-  y = 45,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 104,
-  y = 45,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 120,
-  y = 45,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 136,
-  y = 45,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 152,
-  y = 45,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass_4",
   can_be_cut = true,
@@ -2656,106 +2432,6 @@ destructible{
   layer = 0,
   x = 120,
   y = 173,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 136,
-  y = 173,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 152,
-  y = 173,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 168,
-  y = 173,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 184,
-  y = 173,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 200,
-  y = 173,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 200,
-  y = 157,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 200,
-  y = 141,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 216,
-  y = 141,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 248,
-  y = 141,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 232,
-  y = 141,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass_4",
   can_be_cut = true,
@@ -2936,6 +2612,97 @@ destructible{
   destruction_sound = "destroy_rock",
   weight = -1,
   damage_on_enemies = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 56,
+  y = 141,
+  treasure_name = "random",
+  sprite = "entities/dungeon_elements/ice_cube",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  damage_on_enemies = 0,
+}
+
+block{
+  layer = 0,
+  x = 296,
+  y = 237,
+  sprite = "entities/block/block",
+  pushable = true,
+  pullable = false,
+  max_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 312,
+  y = 237,
+  sprite = "entities/block/block",
+  pushable = true,
+  pullable = false,
+  max_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 328,
+  y = 237,
+  sprite = "entities/block/block",
+  pushable = true,
+  pullable = false,
+  max_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 328,
+  y = 221,
+  sprite = "entities/block/block",
+  pushable = true,
+  pullable = false,
+  max_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 296,
+  y = 157,
+  sprite = "entities/block/block",
+  pushable = true,
+  pullable = false,
+  max_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 312,
+  y = 157,
+  sprite = "entities/block/block",
+  pushable = true,
+  pullable = false,
+  max_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 328,
+  y = 157,
+  sprite = "entities/block/block",
+  pushable = true,
+  pullable = false,
+  max_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 328,
+  y = 173,
+  sprite = "entities/block/block",
+  pushable = true,
+  pullable = false,
+  max_moves = 1,
 }
 
 custom_entity{
