@@ -3945,7 +3945,7 @@ jumper{
   width = 88,
   height = 8,
   direction = 2,
-  jump_length = 40,
+  jump_length = 32,
 }
 
 jumper{
@@ -3955,7 +3955,7 @@ jumper{
   width = 104,
   height = 8,
   direction = 2,
-  jump_length = 40,
+  jump_length = 32,
 }
 
 jumper{
@@ -3965,7 +3965,7 @@ jumper{
   width = 8,
   height = 16,
   direction = 4,
-  jump_length = 40,
+  jump_length = 32,
 }
 
 jumper{
@@ -3975,7 +3975,7 @@ jumper{
   width = 8,
   height = 16,
   direction = 4,
-  jump_length = 40,
+  jump_length = 32,
 }
 
 jumper{
@@ -4035,7 +4035,7 @@ jumper{
   width = 8,
   height = 32,
   direction = 4,
-  jump_length = 40,
+  jump_length = 32,
 }
 
 jumper{
@@ -4045,7 +4045,7 @@ jumper{
   width = 8,
   height = 48,
   direction = 4,
-  jump_length = 40,
+  jump_length = 32,
 }
 
 jumper{
@@ -4055,7 +4055,7 @@ jumper{
   width = 56,
   height = 8,
   direction = 2,
-  jump_length = 40,
+  jump_length = 32,
 }
 
 jumper{
@@ -4065,7 +4065,7 @@ jumper{
   width = 24,
   height = 8,
   direction = 2,
-  jump_length = 40,
+  jump_length = 32,
 }
 
 jumper{
