@@ -14,7 +14,7 @@ tile{
   y = 16,
   width = 128,
   height = 96,
-  pattern = "1",
+  pattern = "3",
 }
 
 tile{
@@ -23,7 +23,7 @@ tile{
   y = 16,
   width = 128,
   height = 96,
-  pattern = "1",
+  pattern = "3",
 }
 
 tile{
@@ -32,7 +32,7 @@ tile{
   y = 56,
   width = 32,
   height = 16,
-  pattern = "1",
+  pattern = "3",
 }
 
 tile{
@@ -253,5 +253,41 @@ tile{
   height = 16,
   pattern = "11",
   tileset = "dungeon/tileset_donjon_3",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 112,
+  width = 16,
+  height = 24,
+  pattern = "22",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 112,
+  width = 16,
+  height = 24,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 112,
+  width = 16,
+  height = 24,
+  pattern = "21",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 88,
+  width = 48,
+  height = 24,
+  pattern = "24",
 }
 
