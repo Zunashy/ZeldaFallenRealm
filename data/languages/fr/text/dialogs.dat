@@ -170,6 +170,14 @@ et taillez en pièces tout ce qui vous tombe sous la main !
 }
 
 dialog{
+  id = "dungeons.lvl5.1",
+  text = [[
+Pour comprendre la profondeur il faut savoir chuter.
+]],
+}
+
+
+dialog{
   id = "item.horn",
   choice = "1",
   text = [[
