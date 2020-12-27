@@ -205,7 +205,6 @@ local function initialize_hero_features(game)
   end
 end
 
-
 function hero_meta:light_teleport(destination, map)
   map = map or hero:get_map()
   local dest = map:get_entity(destination)

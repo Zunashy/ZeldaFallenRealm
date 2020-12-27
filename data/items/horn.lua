@@ -5,21 +5,18 @@ function item:on_started()
   self:set_savegame_variable("possession_horn")
 end
 
-function item:find_npc()
+function item:find_entities()
   local hero = game:get_hero()
-  local closest_dist = math.huge
-  local chosen, dist
+  local entities = {}
+  local i = 0
 
-
-  for npc in self:get_map():get_entities_by_type("npc") do
-    if npc:get_property("horn_map") and npc:is_in_same_region(hero) then
-      dist = npc:get_distance(hero)
-      if dist < closest_dist then
-        chosen = npc
-      end
+  for entity in self:get_map():get_entities("horn_") do
+    if entity:is_in_same_region(hero) and not entity:is_enabled() then
+      i = i + 1
+      entities[i] = entity
     end
   end
-  return chosen
+  return i > 0 and entities
 end
 
 function item:on_using_from_inventory(callback)
@@ -30,17 +27,12 @@ function item:on_using_from_inventory(callback)
   end)
 end
 
-function item:on_teleporting()
-  if game:get_story_state() == 7 then
-    game:set_story_state(8)
-  end
-end
-
 local vfx = require("scripts/api/visual_effects")
+
 function item:on_using()
   local hero = game:get_hero()
-  local npc = self:find_npc()
-  if npc then
+  local found_entities = self:find_entities()
+  if found_entities then
     hero:freeze()
     hero:get_sprite():set_animation("horn")
 
@@ -49,15 +41,23 @@ function item:on_using()
     vfx.shockwave(camera:get_surface(), x, y, 1, 5, 30, 0.4)
     sol.audio.stop_music()
     sol.audio.play_sound("horn")
-
-    sol.timer.start(hero, 1000, function()
-      hero:teleport(npc:get_property("horn_map"), npc:get_property("horn_destination"), "fade")
-      item:on_teleporting()
-      item:set_finished()
+    sol.timer.start(hero, 1300, function()
+      vfx.flash(20, {255, 255, 255})
+      sol.timer.start(hero, 300, function()
+        for _, v in ipairs(found_entities) do
+          v:set_enabled(true)
+        end
+        item:set_finished()
+        hero:unfreeze()
+      end)  
     end)
   else
     game:start_dialog("item.horn.no_npc", function() item:set_finished() end)
   end
+
+
+
+
 end
 
 item.use_from_inventory = true
