@@ -317,8 +317,8 @@ chest{
 
 pickable{
   layer = 1,
-  x = 104,
-  y = 237,
+  x = 88,
+  y = 221,
   treasure_name = "rock_feather",
 }
 
@@ -347,16 +347,16 @@ enemy{
 
 pickable{
   layer = 1,
-  x = 88,
-  y = 253,
+  x = 72,
+  y = 237,
   treasure_name = "sword",
 }
 
 switch{
   name = "testswitch",
   layer = 1,
-  x = 128,
-  y = 160,
+  x = 112,
+  y = 112,
   subtype = "solid",
   sprite = "entities/dungeon_elements/switches",
   needs_block = false,
@@ -366,32 +366,31 @@ switch{
 destructible{
   name = "rochey_3",
   layer = 1,
-  x = 104,
-  y = 165,
+  x = 72,
+  y = 85,
   sprite = "entities/projectile/rock",
-  weight = 2,
 }
 
 destructible{
   name = "rochey_6",
   layer = 1,
-  x = 120,
-  y = 125,
+  x = 88,
+  y = 109,
   sprite = "entities/projectile/rock",
 }
 
 destructible{
   name = "rochey_8",
   layer = 1,
-  x = 128,
-  y = 101,
+  x = 104,
+  y = 77,
   sprite = "entities/projectile/rock",
 }
 
 custom_entity{
   layer = 1,
-  x = 136,
-  y = 173,
+  x = 120,
+  y = 125,
   properties = {
     {
       key = "target",
@@ -440,8 +439,8 @@ custom_entity{
 custom_entity{
   name = "lever_test",
   layer = 1,
-  x = 168,
-  y = 221,
+  x = 136,
+  y = 157,
   properties = {
     {
       key = "distance",
@@ -458,8 +457,8 @@ custom_entity{
 door{
   name = "test_door",
   layer = 1,
-  x = 128,
-  y = 192,
+  x = 112,
+  y = 144,
   direction = 3,
   sprite = "entities/door/door",
 }
@@ -482,16 +481,6 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "test/snas",
-}
-
-custom_entity{
-  layer = 1,
-  x = 168,
-  y = 157,
-  width = 32,
-  height = 32,
-  direction = 0,
-  model = "poisoned_water",
 }
 
 enemy{
@@ -566,8 +555,8 @@ custom_entity{
 
 custom_entity{
   layer = 1,
-  x = 88,
-  y = 237,
+  x = 72,
+  y = 221,
   properties = {
     {
       key = "item",
@@ -719,25 +708,25 @@ custom_entity{
 
 pickable{
   layer = 1,
-  x = 104,
-  y = 253,
+  x = 88,
+  y = 237,
   treasure_name = "small_key",
 }
 
-door{
-  name = "test_dooor",
+dynamic_tile{
+  name = "poisoned_water_1",
   layer = 1,
-  x = 64,
-  y = 184,
-  direction = 3,
-  sprite = "",
-  savegame_variable = "la_PORTE",
+  x = 160,
+  y = 208,
+  width = 32,
+  height = 32,
+  pattern = "47",
 }
 
 tile{
   layer = 2,
-  x = 160,
-  y = 192,
+  x = 128,
+  y = 128,
   width = 16,
   height = 8,
   pattern = "8",
@@ -745,8 +734,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 160,
-  y = 176,
+  x = 128,
+  y = 112,
   width = 16,
   height = 16,
   pattern = "10",

@@ -92,6 +92,7 @@ function map_meta:call_hero_state_callback(old, new)
 end
 
 local function generic_start_callback(map)
+    local special_tiles = require("scripts/feature/special_tiles")
     local prop
     local game = map:get_game()
     for e in map:get_entities() do
@@ -113,6 +114,13 @@ local function generic_start_callback(map)
         end 
 
     end
+
+    for k, v in pairs(special_tiles) do
+        for e in map:get_entities(k) do
+            v(e, game, map)
+        end
+    end
+
     sol.audio.set_music_volume(sol.audio.default_music_volume)
     if map.obscurity then map:update_active_lights() end
 end
