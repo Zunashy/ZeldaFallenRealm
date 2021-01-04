@@ -173,18 +173,12 @@ end
 
 local carried_meta = sol.main.get_metatable("carried_object")
 
-function carried_meta:on_created()
-  local carried = self
-  sol.timer.start(self, 3000, function()
-    carried:get_carrier():set_carry_height(30)
-  end)
-end
-
 function carried_meta:on_thrown()
   local co = self
 
   local _, y = self:get_position()
   self.throw_y = y
+
 end
 
 function carried_meta:on_breaking()

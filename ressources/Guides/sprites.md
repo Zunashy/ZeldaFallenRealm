@@ -35,4 +35,4 @@ En effet [comme mentionné dans le guide Tilesets](tilesets.md#concept), chaque 
 Étant donné que les sprites ne retiennent que la position de leurs frames sur l'image, il est important que toutes les sprite images soient organisées de la même manière (c'est à dire que par exemple si un sprite de porte utlise une sprite image de tileset, il ne fonctionnera qu'avec les tilesets pour lesquels la porte se trouve à une position spécifique de la sprite image).
 
 ## Résumé du fonctionnement des sprites
-![]()
+![Image manquante uwu](img/sprites1.png)
