@@ -51,6 +51,7 @@ map{ id = "normal_version/overworld/wind_wood/indoors/house", description = "nor
 map{ id = "normal_version/overworld/wind_wood/indoors/sword_cave", description = "normal_version/overworld/wind_wood/indoors/sword_cave" }
 map{ id = "normal_version/village/nielint/indoors/bar", description = "normal_version/village/nielint/indoors/bar" }
 map{ id = "normal_version/village/nielint/indoors/bar_etage", description = "normal_version/village/nielint/indoors/bar_etage" }
+map{ id = "normal_version/village/nielint/indoors/bar_grotte" }
 map{ id = "normal_version/village/nielint/indoors/fairy_cave", description = "normal_version/village/nielint/indoors/fairy_cave" }
 map{ id = "normal_version/village/nielint/indoors/house_01", description = "normal_version/village/nielint/indoors/house_01" }
 map{ id = "normal_version/village/nielint/indoors/house_02", description = "normal_version/village/nielint/indoors/house_02" }
@@ -66,6 +67,7 @@ map{ id = "testHub", description = "testHub" }
 map{ id = "tests/blue_slime", description = "tests/blue_slime" }
 map{ id = "tests/bridges", description = "tests/bridges" }
 map{ id = "tests/global" }
+map{ id = "tests/global_war" }
 map{ id = "tests/outside", description = "Monde extérieur" }
 map{ id = "tests/platform", description = "tests/platform" }
 map{ id = "war_version/overworld/forest/forest", description = "war_version/overworld/forest/forest" }

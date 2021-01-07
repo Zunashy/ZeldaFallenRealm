@@ -333,42 +333,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 16,
-  y = 0,
-  width = 32,
-  height = 24,
-  pattern = "42",
-}
-
-tile{
-  layer = 0,
-  x = 192,
-  y = 0,
-  width = 32,
-  height = 24,
-  pattern = "42",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 24,
-  width = 32,
-  height = 8,
-  pattern = "42_2",
-}
-
-tile{
-  layer = 0,
-  x = 192,
-  y = 24,
-  width = 32,
-  height = 8,
-  pattern = "42_2",
-}
-
-tile{
-  layer = 0,
   x = 48,
   y = 32,
   width = 16,
@@ -656,18 +620,207 @@ tile{
   pattern = "41_3",
 }
 
+tile{
+  layer = 0,
+  x = 32,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "43",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "43",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 16,
+  width = 16,
+  height = 8,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 16,
+  width = 16,
+  height = 8,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "42_2",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "42_2",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "40",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "40",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "4",
+}
+
 destination{
   name = "entrance",
   layer = 0,
-  x = 72,
-  y = 213,
+  x = 120,
+  y = 165,
   direction = 1,
 }
 
 teletransporter{
   layer = 0,
-  x = 64,
-  y = 208,
+  x = 112,
+  y = 160,
   width = 16,
   height = 16,
   destination_map = "normal_version/overworld/goron/outdoors",

@@ -7915,13 +7915,6 @@ teletransporter{
 destructible{
   layer = 1,
   x = 208,
-  y = 45,
-  sprite = "entities/vegetation/arbuste",
-}
-
-destructible{
-  layer = 1,
-  x = 208,
   y = 13,
   sprite = "entities/vegetation/grass_door",
   weight = -1,
