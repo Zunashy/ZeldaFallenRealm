@@ -1,24 +1,20 @@
--- Lua script of map tests/outside.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
+local c = 0
 
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
+-- Event called at initialization time, as soon as this map is loaded.
+function map:on_started_()
+
 end
 
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
-
+function map:on_horn_used(horn)
+  if c == 0 then
+    c = c + 1
+    return false
+  else
+    horn:start_animation(function()
+      print("oui")
+    end)
+  end
 end
