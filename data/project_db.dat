@@ -51,6 +51,7 @@ map{ id = "normal_version/overworld/wind_wood/indoors/house", description = "nor
 map{ id = "normal_version/overworld/wind_wood/indoors/sword_cave", description = "normal_version/overworld/wind_wood/indoors/sword_cave" }
 map{ id = "normal_version/village/nielint/indoors/bar", description = "normal_version/village/nielint/indoors/bar" }
 map{ id = "normal_version/village/nielint/indoors/bar_etage", description = "normal_version/village/nielint/indoors/bar_etage" }
+map{ id = "normal_version/village/nielint/indoors/bar_grotte" }
 map{ id = "normal_version/village/nielint/indoors/fairy_cave", description = "normal_version/village/nielint/indoors/fairy_cave" }
 map{ id = "normal_version/village/nielint/indoors/house_01", description = "normal_version/village/nielint/indoors/house_01" }
 map{ id = "normal_version/village/nielint/indoors/house_02", description = "normal_version/village/nielint/indoors/house_02" }
@@ -66,6 +67,7 @@ map{ id = "testHub", description = "testHub" }
 map{ id = "tests/blue_slime", description = "tests/blue_slime" }
 map{ id = "tests/bridges", description = "tests/bridges" }
 map{ id = "tests/global" }
+map{ id = "tests/global_war" }
 map{ id = "tests/outside", description = "Monde extérieur" }
 map{ id = "tests/platform", description = "tests/platform" }
 map{ id = "war_version/overworld/forest/forest", description = "war_version/overworld/forest/forest" }
@@ -195,6 +197,8 @@ sprite{ id = "entities/projectile/octorok_rock", description = "entities/project
 sprite{ id = "entities/projectile/rock", description = "entities/projectile/rock" }
 sprite{ id = "entities/shadow", description = "entities/shadow" }
 sprite{ id = "entities/vegetation/arbuste", description = "entities/vegetation/arbuste" }
+sprite{ id = "entities/vegetation/cactus/1" }
+sprite{ id = "entities/vegetation/cactus/2" }
 sprite{ id = "entities/vegetation/flowers", description = "entities/vegetation/flowers" }
 sprite{ id = "entities/vegetation/flowers/flower", description = "entities/vegetation/flowers/grass" }
 sprite{ id = "entities/vegetation/flowers/flower_2", description = "entities/vegetation/flowers/grass_2" }
@@ -209,6 +213,7 @@ sprite{ id = "entities/vegetation/grass_door", description = "entities/vegetatio
 sprite{ id = "entities/vegetation/grass_door_2" }
 sprite{ id = "entities/vegetation/grass_door_3" }
 sprite{ id = "entities/vegetation/grass_door_4" }
+sprite{ id = "entities/vegetation/thorn" }
 sprite{ id = "entities/wall/fissured_wall", description = "Mur fissuré" }
 sprite{ id = "entities/wall/fissured_wall_2", description = "Mur fissuré 2" }
 sprite{ id = "entities/water/deep_water", description = "Eau Profonde" }
