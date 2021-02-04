@@ -317,9 +317,10 @@ chest{
 
 pickable{
   layer = 1,
-  x = 88,
-  y = 221,
+  x = 216,
+  y = 253,
   treasure_name = "rock_feather",
+  treasure_variant = 2,
 }
 
 enemy{
@@ -343,6 +344,7 @@ enemy{
   y = 309,
   direction = 3,
   breed = "blue_slime",
+  savegame_variable = "test_clue_slime",
 }
 
 pickable{
@@ -660,7 +662,7 @@ enemy{
 }
 
 enemy{
-  name = "oursin_test_3",
+  name = "test_oursin",
   layer = 1,
   x = 232,
   y = 285,
@@ -672,6 +674,7 @@ enemy{
   },
   direction = 0,
   breed = "oursin",
+  savegame_variable = "test_oursin",
 }
 
 chest{
@@ -681,6 +684,9 @@ chest{
   y = 301,
   enabled_at_start = false,
   sprite = "entities/chests/chest",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "test_chest",
+  opening_condition_consumed = true,
 }
 
 destructible{

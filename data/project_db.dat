@@ -381,6 +381,7 @@ sound{ id = "walk_on_grass", description = "walk_on_grass" }
 sound{ id = "walk_on_water", description = "walk_on_water" }
 
 item{ id = "bomb", description = "Bombe" }
+item{ id = "bomb_ammo", description = "Bombes" }
 item{ id = "bracelet", description = "Bracelet de Force" }
 item{ id = "essence", description = "Essences" }
 item{ id = "fire_seed", description = "Graine de feu" }
