@@ -133,6 +133,21 @@ function dest_meta:on_destroyed()
 end
 
 function dest_meta:on_exploded()
+  if self:get_sprite():has_animation("exploded") then
+    local x, y, layer = self:get_position()
+    local entity = self:get_map():create_custom_entity({
+      direction = 0,
+      layer = layer,
+      x = x,
+      y = y,
+      sprite = self:get_sprite():get_animation_set(),
+      width = 32,
+      height = 32,
+    })
+    entity:get_sprite():set_animation("exploded", function()
+      entity:remove()
+    end)
+  end
   self:on_destroyed()
 end
 

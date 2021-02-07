@@ -14,6 +14,14 @@ animation{
   },
 }
 animation{
+  name = "exploded",
+  src_image = "entities/projectile/break_rock.png",
+  frame_delay = 80,
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 16, num_frames = 3 },
+  },
+}
+animation{
   name = "stopped",
   src_image = "entities/projectile/rock.png",
   directions = {

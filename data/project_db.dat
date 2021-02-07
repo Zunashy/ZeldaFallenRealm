@@ -190,6 +190,7 @@ sprite{ id = "entities/items_effects/flame", description = "entities/items_effec
 sprite{ id = "entities/items_effects/ice_floor", description = "entities/items_effects/ice_floor" }
 sprite{ id = "entities/pot", description = "entities/pot" }
 sprite{ id = "entities/projectile/arrow", description = "entities/projectile/arrow" }
+sprite{ id = "entities/projectile/bomb", description = "Bombe" }
 sprite{ id = "entities/projectile/bone", description = "entities/projectile/bone" }
 sprite{ id = "entities/projectile/coconut_left", description = "entities/projectile/coconut_left" }
 sprite{ id = "entities/projectile/coconut_right", description = "entities/projectile/coconut_right" }
