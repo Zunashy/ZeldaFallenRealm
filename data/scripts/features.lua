@@ -26,6 +26,7 @@ require("scripts/hud/hud")
 
 require("scripts/menus/dialog_box")
 require("scripts/menus/game_menu")
+require("scripts/menus/quick_menus/test")
 
 if DEBUG then
     require("scripts/debug/utilities")
