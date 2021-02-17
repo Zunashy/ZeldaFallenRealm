@@ -29,11 +29,9 @@ function qmg:on_draw(dest)
     obscure_surf:draw(dest)
     local y = self.y + self.inter_element
     local i = self.current_element
-    print("=====================")
     for j = 1, self.nb_elements do
         element = self.enabled_elements[i]
         element.surface:draw(dest, self.x, y)
-        print(element.item, element.surface)
         y = y + self.inter_element + 16
         if y + self.inter_element + 16 >= max_h then 
             break 
@@ -47,7 +45,6 @@ end
 
 function qmg:on_started()
     self.game:set_suspended(true)
-
     self.enabled_elements = {}
     for _, e in ipairs(self.elements) do
         if e.enabled then
