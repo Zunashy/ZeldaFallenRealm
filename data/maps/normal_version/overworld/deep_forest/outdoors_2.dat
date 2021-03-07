@@ -12,18 +12,165 @@ properties{
 tile{
   layer = 0,
   x = 352,
-  y = 544,
-  width = 112,
-  height = 64,
+  y = 528,
+  width = 160,
+  height = 16,
   pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 520,
+  width = 16,
+  height = 8,
+  pattern = "10",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 520,
+  width = 16,
+  height = 8,
+  pattern = "10",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 520,
+  width = 16,
+  height = 8,
+  pattern = "10",
+  tileset = "normal/main",
 }
 
 tile{
   layer = 0,
   x = 352,
   y = 528,
-  width = 160,
+  width = 8,
   height = 16,
+  pattern = "8",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 528,
+  width = 8,
+  height = 16,
+  pattern = "12",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 528,
+  width = 8,
+  height = 16,
+  pattern = "8",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 528,
+  width = 8,
+  height = 16,
+  pattern = "12",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 528,
+  width = 8,
+  height = 16,
+  pattern = "8",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 528,
+  width = 8,
+  height = 16,
+  pattern = "12",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 544,
+  width = 16,
+  height = 8,
+  pattern = "6",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 544,
+  width = 16,
+  height = 8,
+  pattern = "6",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 544,
+  width = 16,
+  height = 8,
+  pattern = "6",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 544,
+  width = 112,
+  height = 64,
   pattern = "1",
 }
 
@@ -65,29 +212,56 @@ tile{
 
 tile{
   layer = 0,
-  x = 496,
-  y = 528,
-  width = 16,
-  height = 16,
-  pattern = "2",
-}
-
-tile{
-  layer = 0,
-  x = 440,
-  y = 528,
-  width = 16,
-  height = 16,
-  pattern = "2",
-}
-
-tile{
-  layer = 0,
   x = 448,
   y = 592,
   width = 16,
   height = 16,
   pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 528,
+  width = 192,
+  height = 32,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 544,
+  width = 96,
+  height = 32,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 560,
+  width = 128,
+  height = 32,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 576,
+  width = 128,
+  height = 32,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 592,
+  width = 128,
+  height = 32,
+  pattern = "13",
 }
 
 tile{
@@ -8382,6 +8556,114 @@ tile{
   width = 16,
   height = 16,
   pattern = "1_2",
+}
+
+tile{
+  layer = 1,
+  x = 360,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "157",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "159",
+}
+
+tile{
+  layer = 1,
+  x = 424,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "157",
+}
+
+tile{
+  layer = 1,
+  x = 432,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "159",
+}
+
+tile{
+  layer = 1,
+  x = 488,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "157",
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "159",
+}
+
+tile{
+  layer = 1,
+  x = 360,
+  y = 520,
+  width = 16,
+  height = 8,
+  pattern = "52",
+}
+
+tile{
+  layer = 1,
+  x = 424,
+  y = 520,
+  width = 16,
+  height = 8,
+  pattern = "52",
+}
+
+tile{
+  layer = 1,
+  x = 488,
+  y = 520,
+  width = 16,
+  height = 8,
+  pattern = "52",
+}
+
+tile{
+  layer = 1,
+  x = 360,
+  y = 504,
+  width = 16,
+  height = 16,
+  pattern = "51",
+}
+
+tile{
+  layer = 1,
+  x = 424,
+  y = 504,
+  width = 16,
+  height = 16,
+  pattern = "51",
+}
+
+tile{
+  layer = 1,
+  x = 488,
+  y = 504,
+  width = 16,
+  height = 16,
+  pattern = "51",
 }
 
 destructible{

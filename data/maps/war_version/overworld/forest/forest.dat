@@ -6521,9 +6521,9 @@ tile{
 tile{
   layer = 1,
   x = 0,
-  y = 8,
+  y = 0,
   width = 8,
-  height = 56,
+  height = 64,
   pattern = "93_5",
 }
 
@@ -6741,6 +6741,15 @@ tile{
   width = 16,
   height = 16,
   pattern = "239",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 416,
+  width = 32,
+  height = 16,
+  pattern = "248",
 }
 
 separator{

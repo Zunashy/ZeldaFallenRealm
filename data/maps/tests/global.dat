@@ -16491,6 +16491,51 @@ tile{
   tileset = "normal/snow",
 }
 
+tile{
+  layer = 0,
+  x = 2576,
+  y = 1552,
+  width = 192,
+  height = 32,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 2592,
+  y = 1568,
+  width = 96,
+  height = 32,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 2576,
+  y = 1584,
+  width = 128,
+  height = 32,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 2592,
+  y = 1600,
+  width = 128,
+  height = 32,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 2576,
+  y = 1616,
+  width = 128,
+  height = 32,
+  pattern = "13",
+}
+
 custom_entity{
   layer = 0,
   x = 2280,
