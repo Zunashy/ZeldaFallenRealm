@@ -34,73 +34,68 @@ end
 --Crée une nouvelle classe, avec sa métatable, et une méthode new() pour créer une instance.
 --Si bClass est spécifié, cette classe héritera de bClass
 
+local function new_instance(self, ...)
+  local inst
+  if type(self.build) == "function" then
+    inst = self:build(...) or {}
+    assert(type(inst) == "table", "Error while creating instance of class " .. tostring(self) .. " : build method did not return a table or nil/false") 
+  else
+    inst = {}
+  end
+  inst.class = self
+  setmetatable(inst, self.mt)
+  if type(self.constructor) == "function" then
+    if inst:constructor(...) then
+      return false
+    end
+  end 
+  return inst
+end
+
 function gen.class(bClass)
+  if bClass then
+    return gen.inherit_class(bClass)
+  end
+
+  local newclass = {}
+  newclass.mt = {
+    __index = newclass,
+    __tostring = function () return "Instance of class :" .. newclass.name end
+  }
+
+  newclass.new = new_instance
+
+  setmetatable(newclass, {
+    __call = new_instance,
+    __tostring = function () return "Class : " .. newclass.name end
+  })
+
+  return newclass
+end
+
+function gen.inherit_class(bClass)
   local newclass = {}
   newclass.mt = {
     __index = newclass,
     __tostring = function () return "class : " .. newclass.name end
   }
 
-  if bClass and bClass.new then
-    newclass.super = bClass
-    function newclass:new(...)
-      local inst
-      if type(self.build) == "function" then
-        inst = self:build(...) or {}
-      else
-        inst = bClass:new(...)
-      end
-      setmetatable(inst, self.mt)
-      if type(newclass.constructor) == "function" then
-        if inst:constructor(...) then
-          return false
-        end
-      end 
-      return inst
-    end
-
-  else
-
-    function newclass:new(...)
-      local inst
-      if type(self.build) == "function" then
-        inst = self:build(...) or {}
-      else
-        inst = {}
-      end
-      setmetatable(inst, self.mt)
-      if type(newclass.constructor) == "function" then
-        if inst:constructor(...) then
-          return false
-        end
-      end 
-      return inst
-    end
-  end
+  newclass.new = new_instance
 
   local meta
-  if bClass then
-    if type(bClass) == "table" and bClass.__index then
-      meta = bClass
-    else
-      meta = {__index = bClass}
-      newclass.super = bClass
-    end
-  else 
-    meta = {}
+  if type(bClass) == "table" and bClass.__index then
+    meta = bClass
+  else
+    meta = {__index = bClass}
+    newclass.super = bClass
   end
+
   meta.__call = newclass.new
   setmetatable(newclass, meta)
 
   newclass.name = tostring(newclass)
 
   return newclass
-end
-
-function gen.new(class, ...)
-  if type(class.new) == "function" then
-    return class:new(...)
-  end
 end
 
 function table.deepcopy(orig, copies)

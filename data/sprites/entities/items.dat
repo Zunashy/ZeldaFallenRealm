@@ -1,6 +1,6 @@
 animation{
   name = "bomb",
-  src_image = "entities/items.png",
+  src_image = "items/bomb.png",
   directions = {
     { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
@@ -127,6 +127,7 @@ animation{
   name = "rock_feather",
   src_image = "items/rock_feather.png",
   directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 14, origin_x = 8, origin_y = 13 },
     { x = 0, y = 0, frame_width = 16, frame_height = 14, origin_x = 8, origin_y = 13 },
   },
 }
