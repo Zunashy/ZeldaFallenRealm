@@ -1088,17 +1088,6 @@ destination{
 
 destructible{
   layer = 0,
-  x = 24,
-  y = 45,
-  treasure_name = "random",
-  sprite = "entities/dungeon_elements/ice_cube",
-  destruction_sound = "destroy_rock",
-  weight = -1,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
   x = 88,
   y = 109,
   treasure_name = "random",
@@ -1258,10 +1247,41 @@ destructible{
   layer = 0,
   x = 40,
   y = 29,
-  treasure_name = "random",
-  sprite = "entities/dungeon_elements/ice_cube",
-  destruction_sound = "destroy_rock",
-  weight = -1,
-  damage_on_enemies = 0,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 24,
+  y = 45,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 56,
+  y = 29,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 184,
+  y = 93,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 176,
+  y = 253,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 24,
+  y = 61,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
 }
 

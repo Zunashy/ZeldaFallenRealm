@@ -2802,15 +2802,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 360,
-  y = 128,
-  width = 16,
-  height = 16,
-  pattern = "30",
-}
-
-tile{
-  layer = 0,
   x = 424,
   y = 128,
   width = 16,
@@ -2820,7 +2811,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 328,
+  x = 288,
   y = 144,
   width = 16,
   height = 16,
@@ -2933,51 +2924,6 @@ tile{
   width = 48,
   height = 16,
   pattern = "70",
-}
-
-tile{
-  layer = 0,
-  x = 352,
-  y = 248,
-  width = 16,
-  height = 16,
-  pattern = "72",
-}
-
-tile{
-  layer = 0,
-  x = 400,
-  y = 328,
-  width = 16,
-  height = 16,
-  pattern = "72",
-}
-
-tile{
-  layer = 0,
-  x = 384,
-  y = 280,
-  width = 16,
-  height = 16,
-  pattern = "72",
-}
-
-tile{
-  layer = 0,
-  x = 432,
-  y = 256,
-  width = 16,
-  height = 16,
-  pattern = "72",
-}
-
-tile{
-  layer = 0,
-  x = 336,
-  y = 312,
-  width = 16,
-  height = 16,
-  pattern = "41",
 }
 
 tile{
@@ -3448,6 +3394,1743 @@ tile{
   pattern = "41",
 }
 
+tile{
+  layer = 0,
+  x = 528,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 280,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 296,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "68_2",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "68",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 512,
+  width = 16,
+  height = 32,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 496,
+  width = 48,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 544,
+  width = 80,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 344,
+  width = 8,
+  height = 24,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 344,
+  width = 80,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 352,
+  width = 8,
+  height = 16,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 296,
+  width = 8,
+  height = 72,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 304,
+  width = 72,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 312,
+  width = 8,
+  height = 56,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 304,
+  width = 80,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 296,
+  width = 8,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 296,
+  width = 144,
+  height = 8,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "29",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 512,
+  width = 16,
+  height = 32,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 512,
+  width = 16,
+  height = 32,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 512,
+  width = 16,
+  height = 32,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 248,
+  width = 16,
+  height = 16,
+  pattern = "34",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 280,
+  width = 16,
+  height = 16,
+  pattern = "34",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "34",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "34",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 448,
+  width = 32,
+  height = 48,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 440,
+  width = 32,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 400,
+  width = 16,
+  height = 112,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 512,
+  width = 96,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 488,
+  width = 8,
+  height = 24,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 488,
+  width = 32,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 400,
+  width = 16,
+  height = 48,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 448,
+  width = 8,
+  height = 48,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 448,
+  width = 8,
+  height = 48,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 488,
+  width = 16,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 544,
+  width = 128,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 424,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 400,
+  width = 32,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 400,
+  width = 24,
+  height = 24,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 448,
+  width = 16,
+  height = 32,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 528,
+  width = 32,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 432,
+  width = 16,
+  height = 64,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 424,
+  width = 8,
+  height = 24,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 448,
+  width = 40,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 400,
+  width = 8,
+  height = 56,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 448,
+  width = 16,
+  height = 80,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 512,
+  width = 32,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 448,
+  width = 8,
+  height = 16,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 424,
+  width = 48,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 440,
+  width = 48,
+  height = 8,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 528,
+  width = 48,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 480,
+  width = 48,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 512,
+  width = 16,
+  height = 48,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 512,
+  width = 16,
+  height = 48,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 512,
+  width = 16,
+  height = 48,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 400,
+  width = 16,
+  height = 160,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 464,
+  width = 32,
+  height = 32,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 456,
+  width = 8,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 448,
+  width = 8,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 456,
+  width = 8,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 400,
+  width = 16,
+  height = 80,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 400,
+  width = 8,
+  height = 24,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 416,
+  width = 8,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 696,
+  y = 416,
+  width = 8,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = "73",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 576,
+  width = 24,
+  height = 8,
+  pattern = "52",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 584,
+  width = 24,
+  height = 8,
+  pattern = "52_2",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 592,
+  width = 24,
+  height = 24,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 616,
+  width = 40,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 592,
+  width = 16,
+  height = 24,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 720,
+  width = 32,
+  height = 32,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 648,
+  width = 16,
+  height = 32,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 632,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 680,
+  width = 32,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 632,
+  width = 64,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 680,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 632,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 680,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 664,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 664,
+  width = 16,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 664,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 648,
+  width = 16,
+  height = 16,
+  pattern = "68_2",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 648,
+  width = 32,
+  height = 32,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 632,
+  width = 16,
+  height = 72,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 704,
+  width = 16,
+  height = 48,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 616,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 608,
+  width = 16,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 680,
+  width = 16,
+  height = 48,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 728,
+  width = 16,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 720,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 760,
+  y = 696,
+  width = 16,
+  height = 16,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 608,
+  width = 16,
+  height = 16,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "49",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 696,
+  width = 8,
+  height = 40,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 696,
+  width = 8,
+  height = 40,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 736,
+  width = 32,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 688,
+  width = 16,
+  height = 64,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 720,
+  width = 16,
+  height = 32,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 592,
+  width = 16,
+  height = 40,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 632,
+  width = 16,
+  height = 48,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 640,
+  width = 8,
+  height = 48,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 680,
+  width = 32,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 664,
+  width = 16,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 672,
+  width = 8,
+  height = 16,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 720,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 136,
+  width = 16,
+  height = 40,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 136,
+  width = 24,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 120,
+  width = 16,
+  height = 56,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 120,
+  width = 40,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 424,
+  width = 8,
+  height = 24,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 32,
+  width = 16,
+  height = 112,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 32,
+  width = 80,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 144,
+  width = 16,
+  height = 8,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 128,
+  width = 32,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 48,
+  width = 16,
+  height = 64,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 32,
+  width = 48,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 48,
+  width = 16,
+  height = 32,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 16,
+  width = 8,
+  height = 16,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 48,
+  width = 8,
+  height = 16,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 56,
+  width = 24,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 32,
+  width = 48,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 16,
+  width = 16,
+  height = 80,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 16,
+  width = 8,
+  height = 80,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 96,
+  width = 8,
+  height = 48,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 48,
+  width = 8,
+  height = 64,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 40,
+  width = 64,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 48,
+  width = 48,
+  height = 64,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 112,
+  width = 32,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 16,
+  width = 32,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 112,
+  width = 48,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 64,
+  width = 16,
+  height = 48,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 64,
+  width = 16,
+  height = 48,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 48,
+  width = 32,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 72,
+  width = 16,
+  height = 32,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "36",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 104,
+  width = 8,
+  height = 32,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 128,
+  width = 32,
+  height = 8,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 112,
+  width = 8,
+  height = 24,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "8",
+}
+
 door{
   layer = 0,
   x = 128,
@@ -3874,33 +5557,6 @@ destination{
 destructible{
   layer = 0,
   x = 488,
-  y = 29,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 488,
-  y = 45,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 488,
-  y = 61,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 488,
   y = 77,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass_4",
@@ -4042,130 +5698,1114 @@ destructible{
   layer = 0,
   x = 400,
   y = 221,
-  sprite = "entities/dungeon_elements/ice_cube",
-}
-
-destructible{
-  layer = 0,
-  x = 384,
-  y = 221,
-  sprite = "entities/dungeon_elements/ice_cube",
-}
-
-destructible{
-  layer = 0,
-  x = 368,
-  y = 221,
-  sprite = "entities/dungeon_elements/ice_cube",
-}
-
-destructible{
-  layer = 0,
-  x = 416,
-  y = 221,
-  sprite = "entities/dungeon_elements/ice_cube",
-}
-
-destructible{
-  layer = 0,
-  x = 432,
-  y = 221,
-  sprite = "entities/dungeon_elements/ice_cube",
-}
-
-destructible{
-  layer = 0,
-  x = 384,
-  y = 237,
-  sprite = "entities/dungeon_elements/ice_cube",
-}
-
-destructible{
-  layer = 0,
-  x = 400,
-  y = 237,
-  sprite = "entities/dungeon_elements/ice_cube",
-}
-
-destructible{
-  layer = 0,
-  x = 416,
-  y = 237,
-  sprite = "entities/dungeon_elements/ice_cube",
-}
-
-destructible{
-  layer = 0,
-  x = 384,
-  y = 149,
-  sprite = "entities/dungeon_elements/ice_cube",
-}
-
-destructible{
-  layer = 0,
-  x = 400,
-  y = 149,
-  sprite = "entities/dungeon_elements/ice_cube",
-}
-
-destructible{
-  layer = 0,
-  x = 416,
-  y = 149,
-  sprite = "entities/dungeon_elements/ice_cube",
-}
-
-destructible{
-  layer = 0,
-  x = 432,
-  y = 157,
-  sprite = "entities/dungeon_elements/ice_cube",
-}
-
-destructible{
-  layer = 0,
-  x = 368,
-  y = 157,
-  sprite = "entities/dungeon_elements/ice_cube",
-}
-
-destructible{
-  layer = 0,
-  x = 432,
-  y = 173,
-  sprite = "entities/dungeon_elements/ice_cube",
-}
-
-destructible{
-  layer = 0,
-  x = 368,
-  y = 173,
-  sprite = "entities/dungeon_elements/ice_cube",
-}
-
-pickable{
-  layer = 0,
-  x = 136,
-  y = 293,
-  treasure_name = "heart_full",
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
 }
 
 pickable{
   layer = 0,
   x = 136,
   y = 253,
-  treasure_name = "essence",
-  treasure_variant = 2,
+  treasure_name = "heart_full",
 }
 
 switch{
   name = "lvl_5_real_boss",
   layer = 0,
   x = 128,
-  y = 304,
+  y = 272,
   subtype = "walkable",
   sound = "exclamation",
   needs_block = false,
   inactivate_when_leaving = false,
+}
+
+destructible{
+  layer = 0,
+  x = 416,
+  y = 221,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 432,
+  y = 221,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 384,
+  y = 221,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 368,
+  y = 221,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 384,
+  y = 237,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 400,
+  y = 237,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 416,
+  y = 237,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 384,
+  y = 149,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 400,
+  y = 149,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 416,
+  y = 149,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 432,
+  y = 157,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 432,
+  y = 173,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 368,
+  y = 173,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 368,
+  y = 157,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 749,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 464,
+  y = 621,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 336,
+  y = 637,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 432,
+  y = 749,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+enemy{
+  layer = 0,
+  x = 72,
+  y = 461,
+  direction = 0,
+  breed = "blue_rope",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 200,
+  y = 461,
+  direction = 0,
+  breed = "blue_rope",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 200,
+  y = 509,
+  direction = 0,
+  breed = "blue_rope",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 72,
+  y = 509,
+  direction = 0,
+  breed = "blue_rope",
+  treasure_name = "random",
+}
+
+switch{
+  name = "lvl5_ss2_rails1",
+  layer = 0,
+  x = 328,
+  y = 352,
+  subtype = "walkable",
+  sprite = "entities/dungeon_elements/switch",
+  sound = "chest_appears",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+destructible{
+  layer = 0,
+  x = 312,
+  y = 309,
+  sprite = "entities/dungeon_elements/ice_cube",
+}
+
+enemy{
+  layer = 0,
+  x = 392,
+  y = 341,
+  direction = 0,
+  breed = "blue_rope",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 344,
+  y = 261,
+  direction = 0,
+  breed = "blue_rope",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 456,
+  y = 269,
+  direction = 0,
+  breed = "blue_rope",
+  treasure_name = "random",
+}
+
+destructible{
+  layer = 0,
+  x = 496,
+  y = 365,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 496,
+  y = 349,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 496,
+  y = 333,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 336,
+  y = 301,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 352,
+  y = 301,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+enemy{
+  layer = 0,
+  x = 448,
+  y = 461,
+  direction = 0,
+  breed = "blue_octorock",
+}
+
+enemy{
+  layer = 0,
+  x = 448,
+  y = 485,
+  direction = 0,
+  breed = "blue_octorock",
+}
+
+destructible{
+  layer = 0,
+  x = 520,
+  y = 557,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 504,
+  y = 557,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 520,
+  y = 541,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 477,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 493,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 312,
+  y = 477,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 360,
+  y = 413,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 360,
+  y = 429,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 440,
+  y = 421,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 424,
+  y = 421,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+enemy{
+  layer = 0,
+  x = 312,
+  y = 533,
+  direction = 0,
+  breed = "blue_rope",
+  treasure_name = "random",
+}
+
+destructible{
+  layer = 0,
+  x = 392,
+  y = 493,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 392,
+  y = 477,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+enemy{
+  layer = 0,
+  x = 360,
+  y = 445,
+  direction = 0,
+  breed = "ice_slime",
+  treasure_name = "random",
+}
+
+teletransporter{
+  layer = 0,
+  x = 640,
+  y = 432,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_05/ss2",
+  destination = "lvl5_ss2_beforeminiboss",
+  sprite = "entities/dungeon_elements/teleport",
+  sound = "levelteleport",
+}
+
+destination{
+  name = "lvl5_ss2_beforeminiboss",
+  layer = 0,
+  x = 248,
+  y = 685,
+  direction = 2,
+}
+
+teletransporter{
+  layer = 0,
+  x = 664,
+  y = 400,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_05/ss2",
+  destination = "lvl5_ss2_multitpfak1",
+  sprite = "entities/dungeon_elements/teleport",
+  sound = "levelteleport",
+}
+
+teletransporter{
+  layer = 0,
+  x = 576,
+  y = 496,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_05/ss2",
+  sprite = "entities/dungeon_elements/teleport",
+}
+
+teletransporter{
+  layer = 0,
+  x = 568,
+  y = 536,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_05/ss2",
+  destination = "lvl5_ss2_multitp1",
+  sprite = "entities/dungeon_elements/teleport",
+  sound = "levelteleport",
+}
+
+teletransporter{
+  layer = 0,
+  x = 616,
+  y = 504,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_05/ss2",
+  destination = "lvl5_ss2_beforehammer",
+  sprite = "entities/dungeon_elements/teleport",
+  sound = "levelteleport",
+}
+
+teletransporter{
+  layer = 0,
+  x = 608,
+  y = 464,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_05/ss2",
+  destination = "lvl5_ss2_multitp2",
+  sprite = "entities/dungeon_elements/teleport",
+  sound = "levelteleport",
+}
+
+teletransporter{
+  layer = 0,
+  x = 704,
+  y = 400,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_05/ss2",
+  destination = "lvl5_ss2_multitpfak2",
+  sprite = "entities/dungeon_elements/teleport",
+  sound = "levelteleport",
+}
+
+enemy{
+  layer = 0,
+  x = 760,
+  y = 461,
+  direction = 0,
+  breed = "ice_slime",
+}
+
+enemy{
+  layer = 0,
+  x = 616,
+  y = 557,
+  direction = 0,
+  breed = "ice_slime",
+}
+
+enemy{
+  layer = 0,
+  x = 568,
+  y = 485,
+  direction = 0,
+  breed = "ice_slime",
+}
+
+destructible{
+  layer = 0,
+  x = 744,
+  y = 413,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 744,
+  y = 429,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 776,
+  y = 413,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 776,
+  y = 429,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 760,
+  y = 413,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 744,
+  y = 445,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 776,
+  y = 445,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 760,
+  y = 445,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 792,
+  y = 413,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 792,
+  y = 429,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 792,
+  y = 445,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 792,
+  y = 461,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 792,
+  y = 477,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destination{
+  name = "lvl5_ss2_beforehammer",
+  layer = 0,
+  x = 576,
+  y = 509,
+  direction = 2,
+}
+
+block{
+  layer = 0,
+  x = 664,
+  y = 509,
+  sprite = "entities/block/block",
+  pushable = true,
+  pullable = false,
+  max_moves = 1,
+}
+
+destination{
+  name = "lvl5_ss2_multitp1",
+  layer = 0,
+  x = 624,
+  y = 477,
+  direction = 0,
+}
+
+destination{
+  name = "lvl5_ss2_multitp2",
+  layer = 0,
+  x = 584,
+  y = 549,
+  direction = 0,
+}
+
+destination{
+  name = "lvl5_ss2_multitp3",
+  layer = 0,
+  x = 704,
+  y = 533,
+  direction = 1,
+}
+
+destination{
+  name = "lvl5_ss2_multitpfak2",
+  layer = 0,
+  x = 672,
+  y = 421,
+  direction = 3,
+}
+
+destination{
+  name = "lvl5_ss2_multitpfak1",
+  layer = 0,
+  x = 712,
+  y = 421,
+  direction = 3,
+}
+
+enemy{
+  layer = 0,
+  x = 672,
+  y = 445,
+  direction = 0,
+  breed = "blue_octorock",
+}
+
+destructible{
+  layer = 0,
+  x = 696,
+  y = 557,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 712,
+  y = 557,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 632,
+  y = 557,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 456,
+  y = 325,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+custom_entity{
+  layer = 0,
+  x = 352,
+  y = 317,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/colored_flame",
+}
+
+destructible{
+  layer = 0,
+  x = 704,
+  y = 677,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 688,
+  y = 677,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 688,
+  y = 661,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 704,
+  y = 661,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 792,
+  y = 749,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 656,
+  y = 605,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 672,
+  y = 605,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 656,
+  y = 621,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 688,
+  y = 605,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 600,
+  y = 749,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 616,
+  y = 749,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 656,
+  y = 693,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 640,
+  y = 693,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+jumper{
+  layer = 0,
+  x = 336,
+  y = 496,
+  width = 48,
+  height = 8,
+  direction = 6,
+  jump_length = 32,
+}
+
+jumper{
+  layer = 0,
+  x = 648,
+  y = 640,
+  width = 64,
+  height = 8,
+  direction = 2,
+  jump_length = 32,
+}
+
+destructible{
+  layer = 0,
+  x = 56,
+  y = 749,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 24,
+  y = 717,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 24,
+  y = 749,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 40,
+  y = 749,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 24,
+  y = 733,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 40,
+  y = 733,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 24,
+  y = 701,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 168,
+  y = 749,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 184,
+  y = 749,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+enemy{
+  layer = 0,
+  x = 632,
+  y = 749,
+  direction = 0,
+  breed = "ice_slime",
+}
+
+enemy{
+  layer = 0,
+  x = 768,
+  y = 645,
+  direction = 0,
+  breed = "ice_slime",
+}
+
+jumper{
+  layer = 0,
+  x = 648,
+  y = 664,
+  width = 16,
+  height = 8,
+  direction = 6,
+  jump_length = 32,
+}
+
+jumper{
+  layer = 0,
+  x = 304,
+  y = 496,
+  width = 16,
+  height = 8,
+  direction = 6,
+  jump_length = 32,
+}
+
+enemy{
+  layer = 0,
+  x = 736,
+  y = 685,
+  direction = 0,
+  breed = "blue_rope",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 0,
+  x = 432,
+  y = 141,
+  direction = 0,
+  breed = "bat",
+}
+
+enemy{
+  layer = 0,
+  x = 464,
+  y = 157,
+  direction = 0,
+  breed = "bat",
+}
+
+destructible{
+  layer = 0,
+  x = 488,
+  y = 61,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 488,
+  y = 29,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 472,
+  y = 29,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 520,
+  y = 93,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 384,
+  y = 29,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 368,
+  y = 29,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 352,
+  y = 29,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 336,
+  y = 29,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 320,
+  y = 29,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  can_be_cut = true,
+}
+
+switch{
+  name = "lvl5_ss2_icecube3",
+  layer = 0,
+  x = 288,
+  y = 80,
+  enabled_at_start = false,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "disable_lvl5_ss2_block22",
+    },
+  },
+  subtype = "walkable",
+  sprite = "entities/dungeon_elements/switch",
+  sound = "chest_appears",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+enemy{
+  layer = 0,
+  x = 336,
+  y = 61,
+  direction = 0,
+  breed = "blue_octorock",
+}
+
+enemy{
+  layer = 0,
+  x = 320,
+  y = 125,
+  direction = 0,
+  breed = "blue_octorock",
+}
+
+destructible{
+  layer = 0,
+  x = 400,
+  y = 125,
+  treasure_name = "random",
+  sprite = "entities/block/ice_crystal",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+jumper{
+  layer = 0,
+  x = 376,
+  y = 48,
+  width = 8,
+  height = 64,
+  direction = 0,
+  jump_length = 32,
 }
 

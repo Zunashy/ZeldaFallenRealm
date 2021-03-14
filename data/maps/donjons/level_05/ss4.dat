@@ -57,24 +57,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 256,
-  y = 16,
-  width = 16,
-  height = 160,
-  pattern = "19",
-}
-
-tile{
-  layer = 0,
-  x = 272,
-  y = 16,
-  width = 16,
-  height = 160,
-  pattern = "20",
-}
-
-tile{
-  layer = 0,
   x = 528,
   y = 16,
   width = 16,
@@ -1246,24 +1228,6 @@ tile{
 tile{
   layer = 0,
   x = 256,
-  y = 264,
-  width = 16,
-  height = 16,
-  pattern = "16",
-}
-
-tile{
-  layer = 0,
-  x = 272,
-  y = 264,
-  width = 16,
-  height = 16,
-  pattern = "17",
-}
-
-tile{
-  layer = 0,
-  x = 256,
   y = 296,
   width = 16,
   height = 16,
@@ -1506,15 +1470,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 112,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "49",
-}
-
-tile{
-  layer = 0,
   x = 160,
   y = 72,
   width = 16,
@@ -1731,33 +1686,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 256,
-  y = 184,
-  width = 16,
-  height = 80,
-  pattern = "19",
-}
-
-tile{
-  layer = 0,
-  x = 256,
-  y = 176,
-  width = 16,
-  height = 16,
-  pattern = "19",
-}
-
-tile{
-  layer = 0,
-  x = 272,
-  y = 168,
-  width = 16,
-  height = 96,
-  pattern = "20",
-}
-
-tile{
-  layer = 0,
   x = 240,
   y = 176,
   width = 16,
@@ -1781,6 +1709,222 @@ tile{
   width = 16,
   height = 8,
   pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 16,
+  width = 16,
+  height = 128,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 16,
+  width = 16,
+  height = 128,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 160,
+  width = 32,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 176,
+  width = 32,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 192,
+  width = 32,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 208,
+  width = 32,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 240,
+  width = 16,
+  height = 32,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 240,
+  width = 16,
+  height = 32,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 264,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 264,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 200,
+  width = 16,
+  height = 8,
+  pattern = "74",
 }
 
 chest{
@@ -1941,27 +2085,6 @@ teletransporter{
 
 destructible{
   layer = 0,
-  x = 376,
-  y = 221,
-  sprite = "entities/dungeon_elements/ice_cube",
-}
-
-destructible{
-  layer = 0,
-  x = 392,
-  y = 237,
-  sprite = "entities/dungeon_elements/ice_cube",
-}
-
-destructible{
-  layer = 0,
-  x = 376,
-  y = 365,
-  sprite = "entities/dungeon_elements/ice_cube",
-}
-
-destructible{
-  layer = 0,
   x = 392,
   y = 365,
   treasure_name = "random",
@@ -2094,9 +2217,9 @@ teletransporter{
 destination{
   name = "lvl5_to_ss3",
   layer = 0,
-  x = 48,
+  x = 80,
   y = 45,
-  direction = 1,
+  direction = 2,
 }
 
 custom_entity{
@@ -2438,193 +2561,6 @@ destructible{
   damage_on_enemies = 0,
 }
 
-destructible{
-  layer = 0,
-  x = 40,
-  y = 141,
-  treasure_name = "random",
-  sprite = "entities/dungeon_elements/ice_cube",
-  destruction_sound = "destroy_rock",
-  weight = -1,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 40,
-  y = 157,
-  treasure_name = "random",
-  sprite = "entities/dungeon_elements/ice_cube",
-  destruction_sound = "destroy_rock",
-  weight = -1,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 56,
-  y = 157,
-  treasure_name = "random",
-  sprite = "entities/dungeon_elements/ice_cube",
-  destruction_sound = "destroy_rock",
-  weight = -1,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 216,
-  y = 61,
-  treasure_name = "random",
-  sprite = "entities/dungeon_elements/ice_cube",
-  destruction_sound = "destroy_rock",
-  weight = -1,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 200,
-  y = 61,
-  treasure_name = "random",
-  sprite = "entities/dungeon_elements/ice_cube",
-  destruction_sound = "destroy_rock",
-  weight = -1,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 216,
-  y = 77,
-  treasure_name = "random",
-  sprite = "entities/dungeon_elements/ice_cube",
-  destruction_sound = "destroy_rock",
-  weight = -1,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 248,
-  y = 253,
-  treasure_name = "random",
-  sprite = "entities/dungeon_elements/ice_cube",
-  destruction_sound = "destroy_rock",
-  weight = -1,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 40,
-  y = 309,
-  treasure_name = "random",
-  sprite = "entities/dungeon_elements/ice_cube",
-  destruction_sound = "destroy_rock",
-  weight = -1,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 424,
-  y = 365,
-  treasure_name = "random",
-  sprite = "entities/dungeon_elements/ice_cube",
-  destruction_sound = "destroy_rock",
-  weight = -1,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 520,
-  y = 365,
-  treasure_name = "random",
-  sprite = "entities/dungeon_elements/ice_cube",
-  destruction_sound = "destroy_rock",
-  weight = -1,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 472,
-  y = 221,
-  treasure_name = "random",
-  sprite = "entities/dungeon_elements/ice_cube",
-  destruction_sound = "destroy_rock",
-  weight = -1,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 488,
-  y = 221,
-  treasure_name = "random",
-  sprite = "entities/dungeon_elements/ice_cube",
-  destruction_sound = "destroy_rock",
-  weight = -1,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 504,
-  y = 221,
-  treasure_name = "random",
-  sprite = "entities/dungeon_elements/ice_cube",
-  destruction_sound = "destroy_rock",
-  weight = -1,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 520,
-  y = 221,
-  treasure_name = "random",
-  sprite = "entities/dungeon_elements/ice_cube",
-  destruction_sound = "destroy_rock",
-  weight = -1,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 512,
-  y = 237,
-  treasure_name = "random",
-  sprite = "entities/dungeon_elements/ice_cube",
-  destruction_sound = "destroy_rock",
-  weight = -1,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 480,
-  y = 237,
-  treasure_name = "random",
-  sprite = "entities/dungeon_elements/ice_cube",
-  destruction_sound = "destroy_rock",
-  weight = -1,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 56,
-  y = 141,
-  treasure_name = "random",
-  sprite = "entities/dungeon_elements/ice_cube",
-  destruction_sound = "destroy_rock",
-  weight = -1,
-  damage_on_enemies = 0,
-}
-
 block{
   layer = 0,
   x = 296,
@@ -2703,6 +2639,223 @@ block{
   pushable = true,
   pullable = false,
   max_moves = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 40,
+  y = 157,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 40,
+  y = 141,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 56,
+  y = 141,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 56,
+  y = 157,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 200,
+  y = 61,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 61,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 77,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 253,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 472,
+  y = 221,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 520,
+  y = 365,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 488,
+  y = 221,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 504,
+  y = 221,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 520,
+  y = 221,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 512,
+  y = 237,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 480,
+  y = 237,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 424,
+  y = 365,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 376,
+  y = 365,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 392,
+  y = 237,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 376,
+  y = 221,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 40,
+  y = 309,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 365,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 360,
+  y = 93,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 360,
+  y = 77,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 360,
+  y = 61,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 360,
+  y = 45,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 360,
+  y = 29,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 456,
+  y = 29,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 456,
+  y = 45,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 456,
+  y = 61,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 456,
+  y = 77,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
+}
+
+destructible{
+  layer = 0,
+  x = 456,
+  y = 93,
+  sprite = "entities/dungeon_elements/ice_cube_condensed",
 }
 
 custom_entity{
