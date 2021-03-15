@@ -570,7 +570,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 96,
+  x = 80,
   y = 184,
   width = 16,
   height = 8,
@@ -579,7 +579,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 128,
+  x = 144,
   y = 184,
   width = 16,
   height = 8,
@@ -935,6 +935,42 @@ tile{
   width = 16,
   height = 16,
   pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "16",
 }
 
 separator{
