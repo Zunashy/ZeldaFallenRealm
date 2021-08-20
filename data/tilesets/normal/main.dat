@@ -2961,6 +2961,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "19",
+  ground = "traversable",
+  default_layer = 0,
+  x = 0,
+  y = 144,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "190",
   ground = "wall",
   default_layer = 0,
@@ -3339,6 +3349,16 @@ tile_pattern{
   width = 16,
   height = 16,
   frame_delay = 250,
+}
+
+tile_pattern{
+  id = "20",
+  ground = "wall",
+  default_layer = 0,
+  x = 80,
+  y = 496,
+  width = 16,
+  height = 16,
 }
 
 tile_pattern{
