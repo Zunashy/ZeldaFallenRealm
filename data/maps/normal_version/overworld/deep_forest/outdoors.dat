@@ -20,6 +20,16 @@ tile{
 
 tile{
   layer = 1,
+  x = 0,
+  y = 568,
+  width = 48,
+  height = 8,
+  pattern = "10",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 1,
   x = 96,
   y = 80,
   width = 72,
@@ -1449,16 +1459,6 @@ tile{
   width = 8,
   height = 136,
   pattern = "12",
-  tileset = "normal/main",
-}
-
-tile{
-  layer = 1,
-  x = 0,
-  y = 568,
-  width = 48,
-  height = 8,
-  pattern = "10",
   tileset = "normal/main",
 }
 

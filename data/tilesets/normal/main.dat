@@ -10714,3 +10714,15 @@ border_set{
   pattern_11 = "1_6",
 }
 
+border_set{
+  id = "rock_3",
+  pattern_0 = "65_4",
+  pattern_1 = "50_3",
+  pattern_2 = "65_3",
+  pattern_3 = "50_4",
+  pattern_8 = "1_8",
+  pattern_9 = "64_3",
+  pattern_10 = "64_4",
+  pattern_11 = "1_9",
+}
+
