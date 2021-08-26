@@ -10,9 +10,9 @@ Vous pouvez donc simplement vous dire qu'il existe un item pour chaque chose que
 
 ## Variantes
 Le concept de variante est assez difficile à expliquer pour l'instant, et sera beaucoup plus approfondi lorsque j'expliquerai plus précisément les différentes mécaniques liées aux Items : ce qu'il y a à savoir est simplement qu'une variante est un simple nombre ( > 0 ), qui va permettre d'identifier chaque version d'un item possédant plusieurs ... variantes, justement.  
-Par exemple, dans le cas du rubis, tous les rubis sont le même item, cependant le rubis rouge est la variante 1, le rubis rouge la variante 3, etc.  
-Lorsque Link obtient un Item, la méthode d'obtention indique généralement quelle variante de l'Item il obtient, et quand Link possède un Item (dans on inventaire) il en possède toujours un certaine variante.  
-La sgnification de chaque numéro de variante dépend de l'Item, et de la manière dont il est programmé.
+Par exemple, dans le cas du rubis, tous les rubis sont le même item, cependant le rubis vert est la variante 1, le rubis rouge la variante 3, etc.  
+Lorsque Link obtient un Item, la méthode d'obtention indique généralement quelle variante de l'Item il obtient, et quand Link possède un Item (dans son inventaire) il en possède toujours un certaine variante.  
+La signification de chaque numéro de variante dépend de l'Item, et de la manière dont il est programmé.
 
 ## Fonctionnalités
 
@@ -33,11 +33,11 @@ Lorsque Link obtient un item, tout d'abord une certaine fonction est lancée si 
 Un Item sauvegardé est un item associé à une variable de sauvegarde (cette association se fait via le script, voir [Sauvegarde](save.md). Dès que Link obtient un Item sauvegardé, la variable de sauvegarde correspondante prend pour valeur la variante qui a été obtenue.   
 
 
-```
-Exemples : 
-- Le rubis n'est pas un item sauvegardé. Quand Link en obtient un, une fonction du script lui ajoute un certain nombre de rubis, en fonction de la variante qui a été obtenue. Ainsi, s'il s'agissait d'un trésor ramassable qui indiquait que sa variante était 3, le script de l'Item rubis comprend qu'il s'agissait d'un rubis rouge et ajoute 20 rubis à Link (le nombre de rubis étant une valeur gérée en interne par Solarus)
-- Obtenir la plume de roc n'a pas d'effet direct. Quand link l'obtient dans un coffre, rien se ne passe, mais vu que cet item a été associé à une variable de sauvegarde, la valeur de cette variable est passée à n, n étant la variante indiquée dans les paramètres du coffre (qui sera, dans notre cas, toujours 1 vu que la plume de roc n'a pas de variations. Il est en soi possible de la faire obtenir à Link avec une autre variante, mais ça n'aura pas spécialement d'intérêt).
-```
+
+> Exemples : 
+> - Le rubis n'est pas un item sauvegardé. Quand Link en obtient un, une fonction du script lui ajoute un certain nombre de rubis, en fonction de la variante qui a été obtenue. Ainsi, s'il s'agissait d'un trésor ramassable qui indiquait que sa variante était 3, le script de l'Item rubis comprend qu'il s'agissait d'un rubis rouge et ajoute 20 rubis à Link (le nombre de rubis étant une valeur gérée en interne par Solarus)
+> - Obtenir la plume de roc n'a pas d'effet direct. Quand link l'obtient dans un coffre, rien se ne passe, mais vu que cet item a été associé à une variable de sauvegarde, la valeur de cette variable est passée à n, n étant la variante indiquée dans les paramètres du coffre (qui sera, dans notre cas, toujours 1 vu que la plume de roc n'a pas de variations. Il est en soi possible de la faire obtenir à Link avec une autre variante, mais ça n'aura pas spécialement d'intérêt).
+
 
 (note : les variantes étant toujours d'au moins 1, si la valeur d'une variable de sauvegarde liée à un item est de 0, cela signifie que Link ne possède pas l'Item. On peut donc dire que Link possèed un item *si la variable qui y correspond existe ET possède une valeur supérieure à 0*).
 
@@ -53,9 +53,9 @@ Cela arrive notament avec les [portes](mapping.md#porte) : il est possible de pa
 
 Une dernière chose : les Items peuvent être **brandis**. Lorsqu'un item est brandi, Link prend sa célèbre animation d'obtention d'item, l'Item en question est affiché au dessus de lui, un son est joué, et un dialogue est affiché (l'animation prend fin quand le dialogue est terminé). Le dialogue est récupéré automatiquement en fonction de l'item et de la variante (voir [Dialogues](dialogs.md)).  
 Il est possible de paramétrer l'item de manière à être brandi, ou non à chaque fois qu'il est obtenu ; cependant un item obtenu dans un coffre sera toujours brandi.
-```
-Exemple : les quarts de coeurs sont toujours brandis quand ils sont obtenus, peu importe le contexte, cependant rien ne se passe quand link ramsse un rubis, par contre un rubis trouvé dans un coffre sera brandi. 
-```
+
+> Exemple : les quarts de coeurs sont toujours brandis quand ils sont obtenus, peu importe le contexte, cependant rien ne se passe quand link ramsse un rubis, par contre un rubis trouvé dans un coffre sera brandi. 
+
 
 ### Trésor ramassable
 En soi, un trésor ramassable (ou pickable) n'est, tout comme le coffre, qu'[une entité](mapping.md#Trésor-ramassable) permettant à Link d'obtenir un certain Item. Il y a cependant deux subtilités : 
