@@ -3,6 +3,8 @@ map{ id = "challenge/day2" }
 map{ id = "challenge/day3" }
 map{ id = "challenge/day4" }
 map{ id = "challenge/day5" }
+map{ id = "challenge/day6" }
+map{ id = "challenge/day7" }
 map{ id = "challenge/final" }
 map{ id = "donjons/level_01/2D_Test", description = "donjons/level_01/2D_Test" }
 map{ id = "donjons/level_01/RDC", description = "donjons/level_01/RDC" }
@@ -100,6 +102,7 @@ map{ id = "war_version/village/outdoors", description = "war_version/village/out
 
 tileset{ id = "House", description = "House" }
 tileset{ id = "caves/cave_side", description = "caves/cave_side" }
+tileset{ id = "dungeon/tileset_custom", description = "dungeon/tileset_custom" }
 tileset{ id = "dungeon/tileset_donjon_1", description = "dungeon/tileset_donjon_1" }
 tileset{ id = "dungeon/tileset_donjon_2", description = "dungeon/tileset_donjon_2" }
 tileset{ id = "dungeon/tileset_donjon_3", description = "dungeon/tileset_donjon_3" }

@@ -3756,6 +3756,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "21",
+  ground = "wall",
+  default_layer = 0,
+  x = 168,
+  y = 200,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "210",
   ground = "traversable",
   default_layer = 0,
@@ -10680,14 +10690,15 @@ border_set{
 
 border_set{
   id = "plain_3",
-  pattern_0 = "12_3",
-  pattern_1 = "10_3",
-  pattern_2 = "8_3",
-  pattern_3 = "6_3",
-  pattern_8 = "11_3",
-  pattern_9 = "9_3",
-  pattern_10 = "7_3",
-  pattern_11 = "5_3",
+  inner = true,
+  pattern_0 = "8_3",
+  pattern_1 = "6_3",
+  pattern_2 = "12_3",
+  pattern_3 = "10_3",
+  pattern_4 = "7_3",
+  pattern_5 = "5_3",
+  pattern_6 = "11_3",
+  pattern_7 = "9_3",
 }
 
 border_set{
