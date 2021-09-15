@@ -20,6 +20,15 @@ tile{
 tile{
   layer = 1,
   x = 0,
+  y = 0,
+  width = 800,
+  height = 48,
+  pattern = "91",
+}
+
+tile{
+  layer = 1,
+  x = 0,
   y = 48,
   width = 800,
   height = 336,
@@ -9764,28 +9773,10 @@ tile{
 
 tile{
   layer = 1,
-  x = 320,
-  y = 0,
-  width = 16,
-  height = 48,
-  pattern = "91",
-}
-
-tile{
-  layer = 1,
   x = 464,
   y = 0,
   width = 16,
   height = 48,
-  pattern = "91",
-}
-
-tile{
-  layer = 1,
-  x = 336,
-  y = -8,
-  width = 128,
-  height = 32,
   pattern = "91",
 }
 
@@ -9926,7 +9917,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 336,
+  x = 328,
   y = 16,
   width = 16,
   height = 8,
@@ -9936,10 +9927,55 @@ tile{
 tile{
   layer = 1,
   x = 320,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "93",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 32,
+  width = 8,
+  height = 8,
+  pattern = "94",
+}
+
+tile{
+  layer = 1,
+  x = 312,
+  y = 32,
+  width = 16,
+  height = 8,
+  pattern = "93",
+}
+
+tile{
+  layer = 1,
+  x = 304,
   y = 40,
   width = 16,
   height = 8,
   pattern = "93",
+}
+
+tile{
+  layer = 1,
+  x = 312,
+  y = 40,
+  width = 24,
+  height = 8,
+  pattern = "94",
+}
+
+tile{
+  layer = 1,
+  x = 328,
+  y = 24,
+  width = 8,
+  height = 16,
+  pattern = "94",
 }
 
 separator{
