@@ -297,6 +297,7 @@ sprite{ id = "shadows/shadow_big_dynamic", description = "shadows/shadow_big_dyn
 sprite{ id = "shadows/shadow_small", description = "shadows/shadow_small" }
 sprite{ id = "test/snas", description = "test/snas" }
 sprite{ id = "things/exclamation", description = "Exclamation" }
+sprite{ id = "things/explosion", description = "explosion" }
 sprite{ id = "things/fall_on_hole_effect", description = "things/fall_on_hole_effect" }
 sprite{ id = "things/grass_effect", description = "things/grass_effect" }
 sprite{ id = "things/lava_splash_effect", description = "things/lava_splash_effect" }
@@ -443,10 +444,12 @@ enemy{ id = "tektite_blue", description = "Tektite Bleu" }
 enemy{ id = "tektite_red", description = "Tektite Rouge" }
 
 entity{ id = "arrow", description = "Flèche" }
+entity{ id = "bomb", description = "bomb" }
 entity{ id = "bone", description = "Os (projectile)" }
 entity{ id = "colored_block", description = "Bloc Coloré" }
 entity{ id = "colored_block_destination", description = "Destination bloc coloré" }
 entity{ id = "dungeon_statue_eye", description = "Oeil de statue" }
+entity{ id = "explosion", description = "Explosion" }
 entity{ id = "flame", description = "Flamme (graine)" }
 entity{ id = "ice_floor", description = "Sol de glace" }
 entity{ id = "interaction_box", description = "Interaction Box" }

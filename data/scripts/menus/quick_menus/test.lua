@@ -16,7 +16,7 @@ local function game_start(game)
         element = testmenu:add_element(true)
         element.item = item
         sprite:draw(element.surface, 8, 13)
-        print(item, element.surface)
+        --print(item, element.surface)
     end
 end
 

@@ -3,6 +3,11 @@ local start_menu = sol.menu.start
 local stop_menu = sol.menu.stop
 
 function sol.menu.start(context, menu, on_top, ...)
+    if not menu then 
+        print("WARNING : called sol.menu.start with nil menu")
+        return 
+    end
+
 	if not menu.name then menu.name = "unnamed" end
 	--print("Start : ".. menu.name)
     

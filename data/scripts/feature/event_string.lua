@@ -54,9 +54,11 @@ end
 
 local effects = {}
 
-function effects.door(map, arg)
+function effects.open(map, arg)
   map:open_door(arg)
 end
+effects.door = effects.open
+effects.open_door = effects.open
 
 function effects.close_door(map, arg)
   map:close_door(arg)
@@ -75,7 +77,7 @@ function effects.trasure(map, arg)
   end
 end
 
-function effects.function(map, arg)
+function effects.function_(map, arg)
   local fname, args = arg:xfields("$")
 
   if type(map[fname]) == "function" then 
@@ -104,7 +106,7 @@ function effects.teleport(map, arg)
   local dest, style = arg:xfields("$")
   local map_name, dest = dest:xfields(">")
 
-  if style = "light" then
+  if style == "light" then
     map:get_hero():light_teleport(dest, map)
     return
   end

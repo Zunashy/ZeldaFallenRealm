@@ -2,7 +2,7 @@ local map = ...
 local game = map:get_game()
 local camera = map:get_camera()
 
-
+local qm_test = require("scripts/menus/quick_menus/test")
 function map:on_started_()
     self:init_dungeon_features()
     --self:enable_colored_blocks()
@@ -28,6 +28,7 @@ function map:on_started_()
     octo:register_event("on_dead", function ()
         print("dead")
     end)
+    sol.timer.start(500, function() sol.menu.start(map, qm_test) end)
 end
 
 function map:on_opening_transition_finished()

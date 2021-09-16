@@ -88,29 +88,29 @@ function item.state:create_bomb(hero, direction)
 end
 
 function item.state:explode()
-  local hero = self:get_entity()
-  hero:unfreeze()
-  local bomb = self:create_bomb(hero, hero:get_direction())
+  local bomb = self:drop_bomb()
+  local x, y = bomb:get_position()
+  bomb:set_position(x, y - 1)
   bomb:BOOM()
 end
 
+--Goes from "the hero is holding the bomb" to "the bomb and the hero exist independently"
 function item.state:drop_bomb(hero)
-  self:create_bomb(hero, hero:get_direction())
+  local hero = self:get_entity()
+  hero:unfreeze()
+  return self:create_bomb(hero, hero:get_direction())
 end
 
 function item.state:throw_bomb()
-  print("throw")
   local hero = self:get_entity()
   local direction = hero:get_direction()
 
-  local bomb = self:create_bomb(hero, direction)
+  local bomb = self:drop_bomb(hero, direction)
 
   local movement = sol.movement.create("straight")
   movement:set_speed(throw_speed)
   movement:set_angle((math.pi / 2) * direction)
   movement:start(bomb)
-
-  hero:unfreeze()
 end
 
 function item:on_obtained(variant)

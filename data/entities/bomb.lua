@@ -3,6 +3,7 @@ local game = bomb:get_game()
 local map = bomb:get_map()
 
 local sprite
+local shadow_sprite
 
 local explosion_delay
 local explosion_soon
@@ -24,7 +25,10 @@ end
 
 function bomb:on_created()
     self.height = 0
+    shadow_sprite = self:create_sprite("entities/shadow")
     sprite = self:create_sprite("entities/projectile/bomb")
+    
+    shadow_sprite:set_animation("big")
     self.fall_speed = 0
 
     sol.timer.start(self, 40, function()
@@ -89,7 +93,9 @@ function bomb:BOOM()
     self:set_drawn_in_y_order(false)
     self:bring_to_front()
 
-    sprite:set_animation("explosion")
+    sprite:set_animation("explosion", function()
+        bomb:remove()
+    end)
     self:set_origin(sprite:get_origin())
     self:set_size(sprite:get_size())
 
@@ -120,6 +126,7 @@ end
 explosion_effects.custom_entity = bomb.hit_custom_entity
 
 function bomb:hit_hero(hero)
-
+    local x, y
+    hero:start_hurt(bomb, 2)
 end
 explosion_effects.hero = bomb.hit_hero

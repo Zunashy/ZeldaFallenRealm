@@ -65,7 +65,7 @@ function qmg:on_draw(dest)
         end
     end
 
-    self.surface:draw(dest, 0, 16)
+    self.surface:draw(dest, 0, 0)
 end
 
 function qmg:end_movement()
