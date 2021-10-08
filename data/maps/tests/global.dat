@@ -45660,27 +45660,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 1600,
-  y = 1296,
-  width = 16,
-  height = 16,
-  pattern = "178",
-  tileset = "normal/main",
-}
-
-tile{
-  layer = 1,
-  x = 1600,
-  y = 1280,
-  width = 16,
-  height = 16,
-  pattern = "229_5",
-  tileset = "normal/main",
-}
-
-tile{
-  layer = 1,
-  x = 1584,
+  x = 1560,
   y = 1280,
   width = 32,
   height = 32,
@@ -54612,20 +54592,11 @@ tile{
 
 tile{
   layer = 1,
-  x = 1568,
-  y = 1288,
-  width = 32,
-  height = 32,
-  pattern = "16_2",
-}
-
-tile{
-  layer = 1,
   x = 1584,
   y = 1296,
   width = 32,
   height = 32,
-  pattern = "16_3",
+  pattern = "16_2",
 }
 
 tile{
