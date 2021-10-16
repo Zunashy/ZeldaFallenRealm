@@ -1,14 +1,17 @@
 local map_menu = {
     cx = 0,
     cy = 0,
-    name = "Minimap Menu"
+    name = "Minimap Menu",
+    map_view_w = 15, --in tiles
+    map_view_h = 15
 }
 
-map_menu.bg_surface = sol.surface.create(sol.video.get_quest_size())
-map_menu.bg_surface:fill_color({0, 0, 0})
+map_menu.map_image = sol.surface.create("menus/map_menu.png")
+map_menu.bg_image = sol.surface.create("menus/map_menu_bg.png")
 map_menu.cursor_surface = sol.surface.create("menus/map_cursor.png")
-map_menu.map_surface = sol.surface.create("menus/map_menu.png")
 map_menu.mask_surface = sol.surface.create("menus/map_mask.png")
+map_menu.masked_map_surface = sol.surface.create(map_menu.map_image:get_size())
+map_menu.render_surface = sol.surface.create(sol.video.get_quest_size())
 
 local cursor_pos = {
     offset = 8,
@@ -63,22 +66,31 @@ function map_menu:start_cursor_timer(direction)
     end)
 end
 
---MENU METHODS
-function map_menu:on_started()
-    self.game:set_suspended(true)
-
+function map_menu:mask_map()
     local x, y = map_pos.x, map_pos.y
-    self.map_surface:draw(self.bg_surface, map_pos.x + 1, map_pos.y + 1)
+    self.map_image:draw(self.masked_map_surface, map_pos.x + 1, map_pos.y + 1)
     for i = 1, 15 do
         x = map_pos.x
         for j = 1, 15 do
             if not (map_manager.map[i][j] == 1) then
-                self.mask_surface:draw(self.bg_surface, x, y)
+                self.mask_surface:draw(self.masked_map_surface, x, y)
             end
             x = x + 8
         end
         y = y + 8
     end
+end
+
+function map_menu:render_map()
+    map_menu.bg_image:draw(map_menu.render_surface)
+    map_menu.masked_map_surface:draw(map_menu.render_surface)
+end
+
+--MENU METHODS
+function map_menu:on_started()
+    self.game:set_suspended(true)
+    self:mask_map()
+    self:render_map()
     self.cx, self.cy = 0, 0
 end
 
@@ -91,7 +103,7 @@ function map_menu:on_finished()
 end
 
 function map_menu:on_draw(dst_surface)
-    self.bg_surface:draw(dst_surface)
+    self.render_surface:draw(dst_surface)
     local x = cursor_pos.tl_offset.x + cursor_pos.offset * self.cx
     local y = cursor_pos.tl_offset.y + cursor_pos.offset * self.cy
     self.cursor_surface:draw(dst_surface, x, y)

@@ -8,7 +8,7 @@ local max_elements = math.floor((max_h - inter_element) / (16 + inter_element))
 
 local obscure_surf = sol.surface.create(sol.video.get_quest_size())
 local frame_surf = sol.surface.create("menus/frame.png")
-obscure_surf:fill_color({0, 0, 0}, 0, 16, sol.video.get_quest_size())
+obscure_surf:fill_color({0, 0, 0})
 obscure_surf:set_opacity(127)
 
 function qmg:constructor(x)
@@ -37,7 +37,6 @@ function qmg:add_element(enabled)
 end
 
 function qmg:on_draw(dest)
-    obscure_surf:draw(dest)
     local y = inter_element + self.movInfo.y
     local i = self.first_element_displayed
 
@@ -46,6 +45,7 @@ function qmg:on_draw(dest)
     end
     if self.need_rebuild then
         self.surface:clear()
+        obscure_surf:draw(self.surface)
         for j = 1, self.nb_displayed_elements do
             element = self.enabled_elements[i]
             element.surface:draw(self.surface, self.x, y)

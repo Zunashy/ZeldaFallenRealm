@@ -1,0 +1,8 @@
+animation{
+  name = "default",
+  src_image = "entities/projectile/explosion.png",
+  frame_delay = 400,
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+  },
+}
