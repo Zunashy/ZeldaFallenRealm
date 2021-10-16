@@ -59,6 +59,7 @@ map{ id = "normal_version/overworld/wind_wood/indoors/forest_cave", description 
 map{ id = "normal_version/overworld/wind_wood/indoors/house", description = "normal_version/overworld/wind_wood/indoors/house" }
 map{ id = "normal_version/overworld/wind_wood/indoors/sword_cave", description = "normal_version/overworld/wind_wood/indoors/sword_cave" }
 map{ id = "normal_version/village/nielint/indoors/bar", description = "normal_version/village/nielint/indoors/bar" }
+map{ id = "normal_version/village/nielint/indoors/bar_cave" }
 map{ id = "normal_version/village/nielint/indoors/bar_etage", description = "normal_version/village/nielint/indoors/bar_etage" }
 map{ id = "normal_version/village/nielint/indoors/bar_grotte" }
 map{ id = "normal_version/village/nielint/indoors/fairy_cave", description = "normal_version/village/nielint/indoors/fairy_cave" }
