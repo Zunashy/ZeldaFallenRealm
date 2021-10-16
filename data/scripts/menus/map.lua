@@ -1,12 +1,15 @@
 local map_menu = {
+    name = "Minimap Menu",
+    map_view_tw = 15, --in tiles
+    map_view_th = 15,
+
     cx = 0,
     cy = 0,
-    name = "Minimap Menu",
-    map_view_w = 15, --in tiles
-    map_view_h = 15
 }
+map_menu.map_view_w = map_menu.map_view_tw * 8
+map_menu.map_view_h = map_menu.map_view_th * 8
 
-map_menu.map_image = sol.surface.create("menus/map_menu.png")
+map_menu.map_image = sol.surface.create("menus/map_menu_old.png")
 map_menu.bg_image = sol.surface.create("menus/map_menu_bg.png")
 map_menu.cursor_surface = sol.surface.create("menus/map_cursor.png")
 map_menu.mask_surface = sol.surface.create("menus/map_mask.png")
@@ -83,7 +86,8 @@ end
 
 function map_menu:render_map()
     map_menu.bg_image:draw(map_menu.render_surface)
-    map_menu.masked_map_surface:draw(map_menu.render_surface)
+    local rx, ry = 0, 0
+    map_menu.masked_map_surface:draw_region(rx, ry, map_menu.map_view_w, map_menu.map_view_h, map_menu.render_surface)
 end
 
 --MENU METHODS
