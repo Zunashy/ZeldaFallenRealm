@@ -2,12 +2,23 @@ local map_menu = {
     name = "Minimap Menu",
     map_view_tw = 15, --in tiles
     map_view_th = 15,
+    cw = 30, 
+    ch = 30,
 
     cx = 0,
     cy = 0,
+    camera_cx = 0,
+    camera_cy = 0,
+    display_cx = 0,
+    display_cy = 0
 }
+
 map_menu.map_view_w = map_menu.map_view_tw * 8
 map_menu.map_view_h = map_menu.map_view_th * 8
+map_menu.max_camera_cx = map_menu.cw - map_menu.map_view_tw
+map_menu.max_camera_cy = map_menu.ch - map_menu.map_view_th
+
+print(map_menu.map_view_w)
 
 map_menu.map_image = sol.surface.create("menus/map_menu_old.png")
 map_menu.bg_image = sol.surface.create("menus/map_menu_bg.png")
@@ -29,30 +40,86 @@ local map_pos = {
     y = 12,
 }
 
+local current
+
 --Map manager
 local map_manager = require("scripts/api/map_manager")
 
 --Methods
 
+function map_menu:update_cursor_h()
+    local dx = self.cx - self.camera_cx
+
+    if (dx > 11 and self.camera_cx < self.max_camera_cx) then
+        self.camera_cx = self.camera_cx + 1 
+        self:render_map()
+    elseif (dx < 2 and self.camera_cx > 0) then
+        self.camera_cx = self.camera_cx - 1 
+        self:render_map()
+    end
+
+    self.display_cx = self.cx - self.camera_cx
+end
+
+function map_menu:update_cursor_v()
+    local dy = self.cy - self.camera_cy
+
+    if (dy > 11 and self.camera_cy < self.max_camera_cy) then
+        self.camera_cy = self.camera_cy + 1 
+        self:render_map()
+    elseif (dy < 2 and self.camera_cy > 0) then
+        self.camera_cy = self.camera_cy - 1 
+        self:render_map()
+    end
+
+    self.display_cy = self.cy - self.camera_cy
+end
+
 function map_menu:cursor_right()
     self.cx = self.cx + 1
-    if self.cx > 14 then self.cx = 0 end
+    if self.cx > self.cw - 1 then 
+        self.cx = 0 
+        self.camera_cx = 0
+        self:render_map()
+    else
+        self:update_cursor_h() 
+    end
 end
 
 
 function map_menu:cursor_up()
     self.cy = self.cy - 1
-    if self.cy < 0 then self.cy = 14 end  
+    if self.cy < 0 then 
+        self.cy = self.ch - 1
+        self.camera_cy = self.max_camera_cy
+        self:render_map()
+    else 
+        self:update_cursor_v()
+    end  
+
 end
 
 function map_menu:cursor_left()
     self.cx = self.cx - 1
-    if self.cx < 0 then self.cx = 14 end  
+    if self.cx < 0 then 
+        self.cx = self.cw - 1 
+        self.camera_cx = self.max_camera_cx
+        self:render_map()
+    else 
+        self:update_cursor_h()
+    end 
 end
 
 function map_menu:cursor_down()
     self.cy = self.cy + 1
-    if self.cy > 14 then self.cy = 0 end
+    if self.cy > self.ch - 1  then  
+        self.cy = 0  
+        self.camera_cy = 0
+        self:render_map()
+    else 
+        self:update_cursor_v()
+    end  
+
 end
 
 function map_menu:start_cursor_timer(direction)
@@ -70,13 +137,13 @@ function map_menu:start_cursor_timer(direction)
 end
 
 function map_menu:mask_map()
-    local x, y = map_pos.x, map_pos.y
+    local x, y = 0, 0
     self.map_image:draw(self.masked_map_surface, map_pos.x + 1, map_pos.y + 1)
     for i = 1, 15 do
         x = map_pos.x
         for j = 1, 15 do
             if not (map_manager.map[i][j] == 1) then
-                self.mask_surface:draw(self.masked_map_surface, x, y)
+                --self.mask_surface:draw(self.masked_map_surface, x, y)
             end
             x = x + 8
         end
@@ -86,8 +153,9 @@ end
 
 function map_menu:render_map()
     map_menu.bg_image:draw(map_menu.render_surface)
-    local rx, ry = 0, 0
-    map_menu.masked_map_surface:draw_region(rx, ry, map_menu.map_view_w, map_menu.map_view_h, map_menu.render_surface)
+    local rx, ry = self.camera_cx * 8, self.camera_cy * 8
+    print(map_menu.map_view_w)
+    map_menu.map_image:draw_region(rx, ry, map_menu.map_view_w, map_menu.map_view_h, map_menu.render_surface, map_pos.x, map_pos.y)
 end
 
 --MENU METHODS
@@ -108,8 +176,8 @@ end
 
 function map_menu:on_draw(dst_surface)
     self.render_surface:draw(dst_surface)
-    local x = cursor_pos.tl_offset.x + cursor_pos.offset * self.cx
-    local y = cursor_pos.tl_offset.y + cursor_pos.offset * self.cy
+    local x = cursor_pos.tl_offset.x + cursor_pos.offset * self.display_cx
+    local y = cursor_pos.tl_offset.y + cursor_pos.offset * self.display_cy
     self.cursor_surface:draw(dst_surface, x, y)
 end
 
