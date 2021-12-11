@@ -5,7 +5,7 @@ properties{
   height = 128,
   min_layer = 0,
   max_layer = 2,
-  tileset = "normal/main",
+  tileset = "war/main",
 }
 
 tile{
@@ -15,47 +15,6 @@ tile{
   width = 128,
   height = 96,
   pattern = "210",
-  tileset = "normal/main",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 0,
-  width = 128,
-  height = 16,
-  pattern = "196_6",
-  tileset = "normal/main",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 16,
-  width = 16,
-  height = 96,
-  pattern = "196_4",
-  tileset = "normal/main",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 16,
-  width = 16,
-  height = 96,
-  pattern = "196_5",
-  tileset = "normal/main",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 112,
-  width = 128,
-  height = 16,
-  pattern = "196_7",
-  tileset = "normal/main",
 }
 
 tile{
@@ -85,46 +44,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_10",
-  tileset = "normal/main",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "196_11",
-  tileset = "normal/main",
-}
-
-tile{
-  layer = 0,
-  x = 72,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "196_3",
-  tileset = "normal/main",
-}
-
-tile{
-  layer = 0,
-  x = 56,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "196",
-  tileset = "normal/main",
-}
-
-tile{
-  layer = 0,
-  x = 88,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "196_2",
   tileset = "normal/main",
 }
 
@@ -245,6 +164,78 @@ tile{
   pattern = "227",
 }
 
+tile{
+  layer = 0,
+  x = 16,
+  y = 0,
+  width = 128,
+  height = 16,
+  pattern = "196_6",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 16,
+  width = 16,
+  height = 96,
+  pattern = "196_5",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 96,
+  pattern = "196_4",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 112,
+  width = 128,
+  height = 16,
+  pattern = "196_7",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "196_2",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "196",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "196_3",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "196_11",
+}
+
 teletransporter{
   layer = 0,
   x = 72,
@@ -279,12 +270,12 @@ teletransporter{
   y = 56,
   width = 16,
   height = 16,
-  destination_map = "war_version/village/indoors/cave_bar",
-  destination = "tp_normal",
+  destination_map = "normal_version/village/nielint/indoors/bar_cave",
+  destination = "tp_war",
 }
 
 destination{
-  name = "tp_war",
+  name = "tp_normal",
   layer = 0,
   x = 80,
   y = 77,
