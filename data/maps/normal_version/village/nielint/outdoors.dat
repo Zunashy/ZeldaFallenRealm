@@ -7912,15 +7912,6 @@ teletransporter{
   destination = "entrance",
 }
 
-destructible{
-  layer = 1,
-  x = 208,
-  y = 13,
-  sprite = "entities/vegetation/grass_door",
-  weight = -1,
-  can_be_cut = true,
-}
-
 npc{
   layer = 1,
   x = 512,
@@ -8321,6 +8312,34 @@ destructible{
   can_be_cut = true,
 }
 
+destination{
+  name = "cavetovillage",
+  layer = 1,
+  x = 208,
+  y = 21,
+  direction = 1,
+}
+
+custom_entity{
+  layer = 1,
+  x = 208,
+  y = 13,
+  properties = {
+    {
+      key = "min_story_state",
+      value = "9",
+    },
+    {
+      key = "savegame_variable",
+      value = "nielint_mur_fissure",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/wall/fissured_wall",
+}
+
 tile{
   layer = 2,
   x = 336,
@@ -8382,5 +8401,14 @@ tile{
   width = 16,
   height = 8,
   pattern = "133",
+}
+
+teletransporter{
+  layer = 2,
+  x = 200,
+  y = 0,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/village/nielint/indoors/bar_cave",
 }
 

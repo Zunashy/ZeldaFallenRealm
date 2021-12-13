@@ -15,6 +15,7 @@ map{ id = "donjons/level_02/ss1", description = "donjons/level_02/ss1" }
 map{ id = "donjons/level_02/transit" }
 map{ id = "donjons/level_03/rdc" }
 map{ id = "donjons/level_04/rdc" }
+map{ id = "donjons/level_04/ss1" }
 map{ id = "donjons/level_05/entrance", description = "ss0" }
 map{ id = "donjons/level_05/ss1", description = "ss1" }
 map{ id = "donjons/level_05/ss2", description = "ss2" }
@@ -91,6 +92,7 @@ map{ id = "war_version/overworld/north_beach/jojo_tree", description = "war_vers
 map{ id = "war_version/overworld/north_beach/north beach", description = "war_version/overworld/north_beach/north beach" }
 map{ id = "war_version/overworld/plain/outdoors_1", description = "plain 1 war version" }
 map{ id = "war_version/overworld/plain/outdoors_2", description = "plain 2 war version" }
+map{ id = "war_version/village/indoors/cave_bar" }
 map{ id = "war_version/village/indoors/destroyed_house", description = "war_version/village/indoors/destroyed_house" }
 map{ id = "war_version/village/indoors/house_01", description = "maison 1 guerre" }
 map{ id = "war_version/village/indoors/house_02", description = "maison 2 guerre" }

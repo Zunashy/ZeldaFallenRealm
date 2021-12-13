@@ -20,6 +20,24 @@ tile{
 
 tile{
   layer = 1,
+  x = 160,
+  y = 0,
+  width = 160,
+  height = 16,
+  pattern = "75_3",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 0,
+  width = 16,
+  height = 8,
+  pattern = "267",
+}
+
+tile{
+  layer = 1,
   x = 0,
   y = 176,
   width = 160,
@@ -115,15 +133,6 @@ tile{
   width = 136,
   height = 8,
   pattern = "6",
-}
-
-tile{
-  layer = 1,
-  x = 160,
-  y = 0,
-  width = 160,
-  height = 144,
-  pattern = "1",
 }
 
 tile{
@@ -1867,15 +1876,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 160,
-  y = 0,
-  width = 160,
-  height = 16,
-  pattern = "75_3",
-}
-
-tile{
-  layer = 1,
   x = 216,
   y = 16,
   width = 16,
@@ -2425,7 +2425,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 176,
+  x = 168,
   y = 16,
   width = 32,
   height = 32,
@@ -2443,7 +2443,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 272,
+  x = 280,
   y = 16,
   width = 32,
   height = 32,
@@ -2470,7 +2470,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 272,
+  x = 280,
   y = 48,
   width = 32,
   height = 32,
@@ -2479,7 +2479,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 176,
+  x = 168,
   y = 48,
   width = 32,
   height = 32,
@@ -5303,7 +5303,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 272,
+  x = 280,
   y = 80,
   width = 32,
   height = 32,
@@ -5321,7 +5321,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 272,
+  x = 280,
   y = 112,
   width = 32,
   height = 32,
@@ -5339,7 +5339,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 272,
+  x = 280,
   y = 144,
   width = 32,
   height = 32,
@@ -6733,7 +6733,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 176,
+  x = 168,
   y = 80,
   width = 32,
   height = 32,
@@ -6760,7 +6760,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 176,
+  x = 168,
   y = 112,
   width = 32,
   height = 32,
@@ -6778,7 +6778,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 176,
+  x = 168,
   y = 144,
   width = 32,
   height = 32,
@@ -7018,6 +7018,24 @@ tile{
   width = 32,
   height = 16,
   pattern = "265",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 0,
+  width = 16,
+  height = 8,
+  pattern = "133",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 8,
+  width = 16,
+  height = 8,
+  pattern = "132",
 }
 
 destructible{
@@ -7894,6 +7912,38 @@ separator{
   y = 120,
   width = 176,
   height = 16,
+}
+
+destructible{
+  layer = 1,
+  x = 208,
+  y = 13,
+  properties = {
+    {
+      key = "savegame_variable",
+      value = "war_village_porte_liane",
+    },
+  },
+  sprite = "entities/vegetation/grass_door",
+  weight = -1,
+  can_be_cut = true,
+}
+
+teletransporter{
+  layer = 1,
+  x = 200,
+  y = 0,
+  width = 16,
+  height = 16,
+  destination_map = "war_version/village/indoors/cave_bar",
+}
+
+destination{
+  name = "cave_to_war_village",
+  layer = 1,
+  x = 208,
+  y = 21,
+  direction = 1,
 }
 
 tile{
