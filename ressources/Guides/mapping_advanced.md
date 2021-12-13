@@ -47,9 +47,7 @@ L'item spécifié ne sera drop que lorsque tous les enemis avec la propriété `
 *Exemple : si trois moblins possèdent la propriété `group_loot : rupee#3$map_1_rupee`, tuer le dernier moblin droppera un rubis, de variante 3 (c'est à dire le rubis rouge), et une fois récupéré une fois ce rubis ne sera plus jamais droppé. Enlever la partie `$map_1_rupee` fera que le rubis pourra être droppé à l'infini.*  
 *Cette feature s'active via la fonction `map:init_enemies_event_triggers()`*
 
-
-
-- **Séparateurs** : il existe deux map features concernant les Séparateurs : 
+- **[Séparateurs](mapping.md#Séparateurs)** : il existe deux map features concernant les Séparateurs : 
 	- `no_save` : si un séparateur possède la propriété `no_save` avec n'importe quelle valeur, il ne sauvegardera pas la position de Link quand celui-ci le traversera (voir partie Séparateurs).
 	- dungeon style scrollings :  cette Map feature ne nécessite pas de propriété, il suffit juste de l'activer la fonction `map:init_reset_separators()`. 
 	Si cette feature est activée, passer un séparateur réinitialisera complètement les enemis et blocs présents sur la map (sauf, dans le cas d'un enemi, s'il est déjà mort et que son état est sauvegardé).
@@ -62,7 +60,7 @@ L'item spécifié ne sera drop que lorsque tous les enemis avec la propriété `
   
 - **Blocs activables** : donner la propriété `activate_when_moved` à un bloc fera qu'il sera considéré comme activé quand Link le déplacera. Il restera alors toujours activé, sauf s'il est réinitialisé (par un séparateur par exemple, voir plus haut). *S'active via la fonction `map:init_activatables()`*          
 
-
+- **[destructible](mapping.md#Destructible)** : Donner à un [destructible](mapping.md#Destructible) la proprété custom `savegame_variable : <variable>` fait que le destructible est détruit définitivement : l'état (détruit ou non) du destructible sera sauvegardé dans la variable nommée. (plus précisément, détruire le destructible cahngera la valeur de cette variable, et il ne sera spawn au chargement de sa map que si la variable en question n'existe pas encore).
 
 - **Entités liées au scénario** : dans Fallen Realm, l'avancement de la quête est représenté par une valeur numérique appelée story state (qui est techniquement, une simple variable de sauvegarde. Vous trouverez une liste des significations des différents story states dans les messages pin du channel #code du discord.)  
 	- La propriété `min_story_state : n` fera qu'une entité n'apparaît que si le story state est de n au moins.  
