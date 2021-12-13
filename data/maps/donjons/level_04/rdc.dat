@@ -2897,7 +2897,7 @@ door{
   x = 352,
   y = 176,
   direction = 3,
-  sprite = "entities/door/door",
+  sprite = "entities/door/boss_door",
 }
 
 door{
@@ -2930,6 +2930,38 @@ door{
   y = 176,
   direction = 3,
   sprite = "entities/door/door",
+}
+
+separator{
+  layer = 0,
+  x = 232,
+  y = 0,
+  width = 16,
+  height = 528,
+}
+
+separator{
+  layer = 0,
+  x = 472,
+  y = 0,
+  width = 16,
+  height = 528,
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 168,
+  width = 720,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 344,
+  width = 720,
+  height = 16,
 }
 
 custom_entity{
