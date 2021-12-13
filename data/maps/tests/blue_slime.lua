@@ -28,7 +28,7 @@ function map:on_started_()
     octo:register_event("on_dead", function ()
         print("dead")
     end)
-    --sol.timer.start(500, function() sol.menu.start(map, qm_test) end)
+    sol.timer.start(500, function() sol.menu.start(map, qm_test) end)
 end
 
 function map:on_opening_transition_finished()
