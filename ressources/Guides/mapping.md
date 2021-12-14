@@ -185,7 +185,7 @@ D'autres changements sont automatiquements apportés au sprite du PNJ en fonctio
 ##### Séparateurs
 Tehniquement, les séparateurs agissent comme "un obstacle pour la caméra" (c'est à dire la zone affichée à l'écran, qui doit suivre Link). D'un point de vue plus pratique, un séparateur est une ligne que la caméra ne peut pas traverser, sauf si Link la traverse, auquel cas la caméra passera de l'autre côté avec une petite animation de scrolling.
 
-(Lorsque Link vient de traverser un séparateur, sa position est sauvegardée en tant que "safe position" : c'est ici qu'il sera ramené s'il tombe dans un trou/lave/etc. Pour que le jeu ne change pas la "safe position" quand Link traverse un séparateur, il faut appliquer la propriété `no_save` (avec nimporte quelle valeur) au séparateur ; voir partie Map Features)
+Lorsque Link vient de traverser un séparateur, sa position est sauvegardée en tant que "safe position" : c'est ici qu'il sera ramené s'il tombe dans un trou/lave/etc. Par exemple si dans un donjon des séparateurs sont placés entre chaque salle, Link reviendra à l'entrée de la salle à chaque chute. Pour que le jeu ne change pas la "safe position" quand Link traverse un séparateur, il faut appliquer la propriété `no_save` (avec nimporte quelle valeur) au séparateur ; voir partie Map Features
 
 ##### Capteurs
 Un capteur est une entité qui s'activera quand link passera dessus. L'activation n'a pas d'effet direct par défaut, mais est utilisable par le script de la map, ou par les *map features* (voir partie dédiée).  

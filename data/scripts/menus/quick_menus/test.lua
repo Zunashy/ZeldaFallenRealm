@@ -11,12 +11,14 @@ local function game_start(game)
     local sprite = sol.sprite.create("entities/items")
     local element
     for _, item in ipairs(items) do
-        sprite:set_animation(item)
-        sprite:set_direction(game:get_item(item):get_variant() - 1)
-        element = testmenu:add_element(true)
-        element.item = item
-        sprite:draw(element.surface, 8, 13)
-        --print(item, element.surface)
+        if game:get_item(item):get_variant() > 0 then
+            sprite:set_animation(item)
+            sprite:set_direction(game:get_item(item):get_variant() - 1)
+            element = testmenu:add_element(true)
+            element.item = item
+            sprite:draw(element.surface, 8, 13)
+            --print(item, element.surface)
+        end
     end
 end
 
