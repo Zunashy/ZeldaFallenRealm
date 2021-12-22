@@ -1,11 +1,13 @@
 local vfx = require("scripts/api/visual_effects")
 
+--[[
 local function trigger_event(map, event)
     if not type(event) == "string" then return end
     local name
       
     if event:starts("door_") then  --event type : opening a door
-      map:open_door(event:sub(6))   --opening all doors having the name specified after "door_"
+      map:open_doors(event:sub(6))   --opening all doors having the name specified after "door_"
+      map:open_doors(event)
     elseif event:starts("close_door") then
       map:close_door(event:sub(11))
     elseif event:starts("treasure_") then  --Event type: item spawn
@@ -51,8 +53,18 @@ local function trigger_event(map, event)
       vfx.flash(tonumber(event:sub(7) or 20), {255, 255, 255})
     end
 end
+]]------
 
 local effects = {}
+
+function effects.spawn(map, arg)
+  map:enable_entity(arg)
+end
+
+function effects.disable(map, arg)
+  map:disable_entity(arg)
+end
+effects.despawn = effects.disable
 
 function effects.open(map, arg)
   map:open_door(arg)
@@ -64,11 +76,7 @@ function effects.close_door(map, arg)
   map:close_door(arg)
 end
 
-function effects.spawn(map, arg)
-  map:enable_entity(arg)
-end
-
-function effects.trasure(map, arg)
+function effects.treasure(map, arg)
   local entity = map:get_entity(arg)
   if entity then
     entity:set_enabled(true)   --Enabling the item with this name
@@ -77,16 +85,8 @@ function effects.trasure(map, arg)
   end
 end
 
-function effects.function_(map, arg)
-  local fname, args = arg:xfields("$")
-
-  if type(map[fname]) == "function" then 
-    map[fname](args:xfields(","))
-  end
-end
-
 function effects.music(map, arg)
-  if (not arg) or arg == "none" then
+  if (arg == "") or arg == "none" then
     sol.audio.stop_music()
   else
     sol.audio.play_music(arg)
@@ -104,7 +104,7 @@ end
 
 function effects.teleport(map, arg)
   local dest, style = arg:xfields("$")
-  local map_name, dest = dest:xfields(">")
+  local map_name, dest = dest:xfields("#")
 
   if style == "light" then
     map:get_hero():light_teleport(dest, map)
@@ -117,13 +117,34 @@ function effects.teleport(map, arg)
   map:get_hero():teleport(map_name, dest, style)
 end
 
-function effects.disable(map, arg)
-  map:disable_entity(arg)
+function effects.teleport(map, arg)
+  local dest, style = arg:xfields("$")
+  local map_name, dest = dest:xfields("#")
+
+  if style == "light" then
+    map:get_hero():light_teleport(dest)
+  end
+
+  if map_name == "here" or map_name == "" then
+    map_name = map:get_id()
+  end
+  map:get_hero():teleport(map_name, dest, style) if 
+
 end
 
 function effects.flash(map, arg)
   vfx.flash(tonumber(arg or 20), {255, 255, 255})
 end
+
+function effects.function_(map, arg)
+  local fname, args = arg:xfields("$")
+
+  if type(map[fname]) == "function" then 
+    map[fname](map, args:xfields(","))
+  end
+end
+effects.call = effects.function_
+effects["function"] = effects.function_
 
 local function trigger_event(map, event)
   if not type(event) == "string" then return end
