@@ -1,0 +1,2040 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 320,
+  height = 288,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 1,
+  x = 464,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 1,
+  x = 464,
+  y = 128,
+  width = 16,
+  height = 144,
+  pattern = "19",
+}
+
+tile{
+  layer = 1,
+  x = 464,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 272,
+  width = 208,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 128,
+  width = 16,
+  height = 144,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 112,
+  width = 80,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 400,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 128,
+  width = 208,
+  height = 144,
+  pattern = "2",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 352,
+  y = 264,
+  width = 16,
+  height = 24,
+  pattern = "23",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 264,
+  width = 16,
+  height = 24,
+  pattern = "21",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 264,
+  width = 16,
+  height = 24,
+  pattern = "22",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 240,
+  width = 48,
+  height = 24,
+  pattern = "24",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "30",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "30",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 352,
+  y = 144,
+  width = 16,
+  height = 96,
+  pattern = "4",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 144,
+  width = 16,
+  height = 48,
+  pattern = "4",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 144,
+  width = 16,
+  height = 48,
+  pattern = "4",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "4",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "4",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "30",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "30",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 112,
+  width = 80,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "37",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 400,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 416,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 416,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 400,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 416,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 416,
+  y = 192,
+  width = 16,
+  height = 32,
+  pattern = "25",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 240,
+  width = 32,
+  height = 16,
+  pattern = "25",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 160,
+  width = 16,
+  height = 80,
+  pattern = "25",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 256,
+  width = 48,
+  height = 16,
+  pattern = "42",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 416,
+  y = 256,
+  width = 48,
+  height = 16,
+  pattern = "42",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 416,
+  y = 128,
+  width = 48,
+  height = 16,
+  pattern = "42",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 128,
+  width = 48,
+  height = 16,
+  pattern = "42",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 144,
+  width = 16,
+  height = 112,
+  pattern = "42",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 448,
+  y = 144,
+  width = 16,
+  height = 112,
+  pattern = "42",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 272,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 272,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 432,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 432,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 400,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 416,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 400,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 416,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 432,
+  y = 160,
+  width = 16,
+  height = 80,
+  pattern = "41",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 272,
+  y = 160,
+  width = 16,
+  height = 80,
+  pattern = "41",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 400,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 400,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = -64,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 32,
+  width = 16,
+  height = 64,
+  pattern = "19",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = -48,
+  width = 16,
+  height = 64,
+  pattern = "19",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = -64,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = -64,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = -64,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = -64,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 96,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 96,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = -64,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 464,
+  y = -48,
+  width = 16,
+  height = 144,
+  pattern = "19",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 32,
+  width = 16,
+  height = 64,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = -48,
+  width = 16,
+  height = 64,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = -64,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 464,
+  y = -64,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = -64,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 96,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 1,
+  x = 464,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = -48,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 448,
+  y = -48,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 448,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "40",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = -16,
+  width = 16,
+  height = 16,
+  pattern = "40",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = -64,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 464,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "38",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 464,
+  y = -16,
+  width = 16,
+  height = 16,
+  pattern = "38",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = -48,
+  width = 16,
+  height = 144,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 112,
+  width = 240,
+  height = 176,
+  pattern = "1",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 128,
+  width = 16,
+  height = 144,
+  pattern = "19",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 128,
+  width = 16,
+  height = 144,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 112,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 272,
+  width = 208,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 96,
+  width = 96,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 112,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = -16,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = -16,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "39",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 400,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "39",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 208,
+  width = 48,
+  height = 48,
+  pattern = "5",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 256,
+  width = 48,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 192,
+  width = 48,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 208,
+  width = 16,
+  height = 48,
+  pattern = "20",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 208,
+  width = 16,
+  height = 48,
+  pattern = "19",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = -64,
+  width = 96,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 1,
+  x = 400,
+  y = -64,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 0,
+  width = 48,
+  height = 48,
+  pattern = "3",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "47_15",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "47_15",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 112,
+  width = 32,
+  height = 24,
+  pattern = "52",
+}
+
+tile{
+  layer = 1,
+  x = 432,
+  y = 112,
+  width = 32,
+  height = 24,
+  pattern = "52",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 136,
+  width = 32,
+  height = 8,
+  pattern = "52_2",
+}
+
+tile{
+  layer = 1,
+  x = 432,
+  y = 136,
+  width = 32,
+  height = 8,
+  pattern = "52_2",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = -64,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = -64,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = -64,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = -64,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "16",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "17",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "18",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "15",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 352,
+  y = 120,
+  width = 16,
+  height = 8,
+  pattern = "65_3",
+}
+
+tile{
+  layer = 1,
+  x = 352,
+  y = 112,
+  width = 16,
+  height = 8,
+  pattern = "67",
+}
+
+block{
+  layer = 1,
+  x = 312,
+  y = 13,
+  properties = {
+    {
+      key = "activate_when_moved",
+      value = "1",
+    },
+    {
+      key = "activate_trigger",
+      value = "door_1",
+    },
+  },
+  direction = 0,
+  sprite = "entities/block/block",
+  pushable = true,
+  pullable = false,
+}
+
+teletransporter{
+  layer = 1,
+  x = 352,
+  y = 272,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_01/transit",
+  destination = "transit_out",
+}
+
+switch{
+  layer = 1,
+  x = 112,
+  y = 224,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "open:door_3",
+    },
+  },
+  subtype = "walkable",
+  sprite = "entities/dungeon_elements/switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+enemy{
+  layer = 1,
+  x = 152,
+  y = 189,
+  direction = 0,
+  breed = "bat",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 48,
+  y = 189,
+  direction = 0,
+  breed = "slime_green",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 88,
+  y = 141,
+  direction = 0,
+  breed = "octorok",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 88,
+  y = 45,
+  direction = 0,
+  breed = "skeleton_1",
+  treasure_name = "random",
+}
+
+enemy{
+  layer = 1,
+  x = 88,
+  y = -3,
+  direction = 0,
+  breed = "skeleton_1",
+  treasure_name = "random",
+}
+
+door{
+  name = "door_1",
+  layer = 1,
+  x = 352,
+  y = -64,
+  direction = 3,
+  sprite = "entities/door/door",
+}
+
+separator{
+  layer = 1,
+  x = -8,
+  y = 104,
+  width = 496,
+  height = 16,
+}
+
+door{
+  name = "door_3",
+  layer = 1,
+  x = 112,
+  y = -64,
+  properties = {
+    {
+      key = "activate_when_moved",
+      value = "",
+    },
+  },
+  direction = 3,
+  sprite = "entities/door/door",
+  savegame_variable = "dungeon_1_door_2",
+  opening_method = "interaction_if_item",
+  opening_condition = "bomb",
+}
+
+door{
+  name = "door_key_1",
+  layer = 1,
+  x = 240,
+  y = 16,
+  direction = 0,
+  sprite = "entities/door/door_key",
+  savegame_variable = "dungeon_1_door_key_1",
+  opening_method = "interaction_if_item",
+  opening_condition = "small_key",
+  opening_condition_consumed = true,
+}
+
+jumper{
+  layer = 1,
+  x = 88,
+  y = 224,
+  width = 8,
+  height = 16,
+  direction = 4,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 1,
+  x = 144,
+  y = 224,
+  width = 8,
+  height = 16,
+  direction = 0,
+  jump_length = 40,
+}
+
+enemy{
+  layer = 1,
+  x = 160,
+  y = 141,
+  direction = 2,
+  breed = "octorok",
+  treasure_name = "random",
+}
+
+destructible{
+  layer = 1,
+  x = 280,
+  y = -35,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 264,
+  y = -19,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 264,
+  y = 77,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 280,
+  y = 93,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 440,
+  y = 93,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 456,
+  y = 77,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 456,
+  y = -19,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 440,
+  y = -35,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 216,
+  y = 93,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 216,
+  y = 77,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 200,
+  y = 93,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 200,
+  y = 141,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 216,
+  y = 157,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 216,
+  y = 253,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 200,
+  y = 269,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 40,
+  y = 269,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 24,
+  y = 253,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 24,
+  y = 157,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 40,
+  y = 141,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 40,
+  y = 93,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 24,
+  y = 93,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 24,
+  y = 77,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 24,
+  y = -19,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 24,
+  y = -35,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 40,
+  y = -35,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 200,
+  y = -35,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 216,
+  y = -35,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 216,
+  y = -19,
+  sprite = "entities/pot",
+  weight = 1,
+}
+
+teletransporter{
+  name = "teleporte_2",
+  layer = 1,
+  x = 352,
+  y = 176,
+  enabled_at_start = false,
+  properties = {
+    {
+      key = "spawn_savegame_variable",
+      value = "dungeon_1_tp",
+    },
+  },
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_01/RDC",
+  destination = "tp2",
+  sprite = "entities/dungeon_elements/teleport",
+  sound = "levelteleport",
+}
+
+destination{
+  name = "tp1",
+  layer = 1,
+  x = 360,
+  y = 197,
+  direction = 3,
+}
+
+custom_entity{
+  layer = 1,
+  x = 360,
+  y = 93,
+  properties = {
+    {
+      key = "separator_reset",
+      value = "1",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/dungeon_elements/fragile_ground",
+  model = "unstable_ground",
+}
+
+custom_entity{
+  layer = 1,
+  x = 312,
+  y = 173,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+
+custom_entity{
+  layer = 1,
+  x = 312,
+  y = 205,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+
+custom_entity{
+  layer = 1,
+  x = 328,
+  y = 237,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+
+custom_entity{
+  layer = 1,
+  x = 392,
+  y = 237,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+
+custom_entity{
+  layer = 1,
+  x = 408,
+  y = 205,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+
+custom_entity{
+  layer = 1,
+  x = 408,
+  y = 173,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+
+destination{
+  name = "entrance",
+  layer = 1,
+  x = 360,
+  y = 277,
+  direction = 1,
+  default = true,
+}
+
+tile{
+  layer = 2,
+  x = 352,
+  y = 112,
+  width = 16,
+  height = 8,
+  pattern = "66_3",
+}
+

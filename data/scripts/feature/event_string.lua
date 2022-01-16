@@ -106,8 +106,13 @@ function effects.teleport(map, arg)
   local dest, style = arg:xfields("$")
   local map_name, dest = dest:xfields("#")
 
+  if dest == "" then 
+    dest = map_name
+    map_name = map:get_id()
+  end
+
   if style == "light" then
-    map:get_hero():light_teleport(dest, map)
+    map:get_hero():light_teleport(dest)
     return
   end
 
@@ -115,20 +120,6 @@ function effects.teleport(map, arg)
     map_name = map:get_id()
   end
   map:get_hero():teleport(map_name, dest, style)
-end
-
-function effects.teleport(map, arg)
-  local dest, style = arg:xfields("$")
-  local map_name, dest = dest:xfields("#")
-
-  if style == "light" then
-    map:get_hero():light_teleport(dest)
-  end
-
-  if map_name == "here" or map_name == "" then
-    map_name = map:get_id()
-  end
-  map:get_hero():teleport(map_name, dest, style) if 
 
 end
 

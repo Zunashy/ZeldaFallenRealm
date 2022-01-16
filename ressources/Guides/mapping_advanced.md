@@ -107,19 +107,8 @@ Les types d'events disponibles sont :
 - `call:<nom_fonction>,<argument>,...` ou `function:<nom_fonction>,<argument>,...` pour les programmeurs : appelle une méthode de la map, nommée `<nom_fonction>`. Les arguments sont optionnels.
 
 
-Les actions possibles sont : 
-- `door_<nom>` : ouvre toute porte donc le nom commence par "*nom*" ou "door_*nom*" (remplacer nom par le nom de la porte (sans blague) mais pas le door)
-- `close_door_<nom>` : ouvre toute porte donc le nom commence par "*nom*" ou "door_*nom*" (remplacer nom par le nom de la porte (sans blague) mais pas le door)
-- `spawn_<nom>` : fait apparaître l'entité nommée "*nom*". L'entité doit être déjà présente sur la map mais désactivée (pour cela, quand vous la placez sur la map, décochez la case "actif au démarrage" : quand une entité est désactivée c'est comme si elle n'existait pas).
-- `disable_<nom>` : désactive (= fait disparaitre) l'entité nommée *nom*.
-- `treasure_<nom>` : comme pour `spawn_`, fait apparaître le trésor ramassable nommé "*nom*" ou "treasure_*nom*". (cela dit vous pouvez toujours utiliser `spawn_` pour les trésors, comme vous voulez)
-- `music_<nom>` : joue la musique nommée "*nom*"
-- `setrespawn_<nom>` : fait de la Destination nommée "*nom*" le poitn de réapparition actuel (ce qui signifie que link y réapparaitra s'il meurt, le point de réapparition de par défaut étant l'entrée du donjon)
-- `function_<nom>` : éxécute une fonction du script de la map, nommée "*nom*". 
-- `teleport_<nom_map>:<nom_destination>$<style>` : téléporte la héros à la map et la destination spécifiée, avec le style spécifié (le style est optionnel). Voir la section [Téléporteurs](#Téléporteurs) plus haut pour plus d'informations.
-
 Quelques exemples : 
-- si 3 enemis possèdent la propriété `death_trigger : treasure_key_1`, et qu'il existe sur la map une clé (c'est à dire un trésor ramassable de l'item clé, désactivé par défaut) nommée "key_1", elle apparaîtra quand les 3 enemis auront été tués.
+- si 3 enemis possèdent la propriété `death_trigger : spawn:key_1`, et qu'il existe sur la map une clé (c'est à dire un trésor ramassable de l'item clé, désactivé par défaut) nommée "key_1", elle apparaîtra quand les 3 enemis auront été tués.
 - si un interrupteur s'activant avec un bloc et 3 capteurs persistants (voir map features liées aux capteurs) possèdent la propriété `activate_trigger : door_1`, et qu'il existe deux portes nommés "door\_1-1" et "door\_1-2",  si Link passe sur les 3 capteurs et qu'un bloc se trouve actuellement sur l'interrupteur, les portes s'ouvriront.
 
 

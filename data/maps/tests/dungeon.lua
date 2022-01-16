@@ -1,4 +1,4 @@
--- Lua script of map Donjon1/RDC.
+-- Lua script of map tests/dungeon.
 -- This script is executed every time the hero enters this map.
 
 -- Feel free to modify the code below.
@@ -10,13 +10,15 @@
 local map = ...
 local game = map:get_game()
 
-function map:on_started_()
-  self:init_dungeon_features()
-  self.dungeon_info = {
-    dungeon = require("scripts/dungeon_maps/1"),
-    floor = 0
-  }
+-- Event called at initialization time, as soon as this map is loaded.
+function map:on_started()
+
+  -- You can initialize the movement and sprites of various
+  -- map entities here.
 end
+
+-- Event called after the opening transition effect of the map,
+-- that is, when the player takes control of the hero.
 function map:on_opening_transition_finished()
 
 end

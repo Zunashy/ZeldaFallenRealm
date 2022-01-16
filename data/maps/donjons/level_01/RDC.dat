@@ -10474,7 +10474,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "door_3",
+      value = "open:door_3",
     },
   },
   subtype = "walkable",
