@@ -2,7 +2,7 @@
 
 local function map_callback(game, map)
   local camera = map:get_camera()
-  camera:set_size(160,128)
+  camera:set_size(CAMERA_W,CAMERA_H)
   camera:set_position_on_screen(0, game.HUD_height)
   
   if map.obscurity then

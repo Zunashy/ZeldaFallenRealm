@@ -3742,24 +3742,11 @@ destructible{
   y = 237,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "chest_appears",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  name = "Herbe_161",
-  layer = 1,
-  x = 72,
-  y = 189,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
   destruction_sound = "walk_on_grass",
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
+  ground = "grass",
 }
 
 destructible{
@@ -3769,37 +3756,11 @@ destructible{
   y = 237,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass_2",
-  destruction_sound = "chest_appears",
+  destruction_sound = "walk_on_grass",
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
   ground = "grass",
-}
-
-destructible{
-  name = "Herbe_164",
-  layer = 1,
-  x = 56,
-  y = 189,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_2",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  name = "Herbe_167",
-  layer = 1,
-  x = 72,
-  y = 173,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_3",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
 }
 
 destructible{
@@ -3809,37 +3770,11 @@ destructible{
   y = 77,
   treasure_name = "random",
   sprite = "entities/vegetation/grass/grass_3",
-  destruction_sound = "chest_appears",
+  destruction_sound = "walk_on_grass",
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
   ground = "grass",
-}
-
-destructible{
-  name = "Herbe_170",
-  layer = 1,
-  x = 40,
-  y = 205,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  name = "Herbe_171",
-  layer = 1,
-  x = 56,
-  y = 221,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_4",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
 }
 
 teletransporter{
@@ -3868,8 +3803,18 @@ enemy{
   breed = "tektite_blue",
 }
 
+teletransporter{
+  layer = 1,
+  x = 0,
+  y = 64,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/village/nielint/outdoors",
+  destination = "plain_to_nielint",
+}
+
 destructible{
-  name = "Herbe_172",
+  name = "Herbe_175",
   layer = 1,
   x = 56,
   y = 173,
@@ -3882,25 +3827,12 @@ destructible{
 }
 
 destructible{
-  name = "Herbe_173",
+  name = "Herbe_176",
   layer = 1,
-  x = 40,
-  y = 237,
-  treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass",
-  destruction_sound = "walk_on_grass",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-}
-
-destructible{
-  name = "Herbe_165",
-  layer = 1,
-  x = 40,
+  x = 72,
   y = 173,
   treasure_name = "random",
-  sprite = "entities/vegetation/grass/grass_2",
+  sprite = "entities/vegetation/grass/grass_3",
   destruction_sound = "walk_on_grass",
   weight = -1,
   can_be_cut = true,
@@ -3908,7 +3840,20 @@ destructible{
 }
 
 destructible{
-  name = "Herbe_174",
+  name = "Herbe_180",
+  layer = 1,
+  x = 56,
+  y = 221,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  name = "Herbe_181",
   layer = 1,
   x = 40,
   y = 221,
@@ -3921,7 +3866,33 @@ destructible{
 }
 
 destructible{
-  name = "Herbe_168",
+  name = "Herbe_182",
+  layer = 1,
+  x = 40,
+  y = 205,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_4",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  name = "Herbe_183",
+  layer = 1,
+  x = 40,
+  y = 237,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  name = "Herbe_178",
   layer = 1,
   x = 40,
   y = 189,
@@ -3934,7 +3905,7 @@ destructible{
 }
 
 destructible{
-  name = "Herbe_175",
+  name = "Herbe_179",
   layer = 1,
   x = 56,
   y = 205,
@@ -3946,13 +3917,29 @@ destructible{
   damage_on_enemies = 0,
 }
 
-teletransporter{
+destructible{
+  name = "Herbe_184",
   layer = 1,
-  x = 0,
-  y = 64,
-  width = 16,
-  height = 16,
-  destination_map = "normal_version/village/nielint/outdoors",
-  destination = "plain_to_nielint",
+  x = 40,
+  y = 173,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_2",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+}
+
+destructible{
+  name = "Herbe_185",
+  layer = 1,
+  x = 56,
+  y = 189,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass_2",
+  destruction_sound = "walk_on_grass",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
 }
 

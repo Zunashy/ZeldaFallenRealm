@@ -4583,15 +4583,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 112,
-  y = 464,
-  width = 16,
-  height = 16,
-  pattern = "10",
-}
-
-tile{
-  layer = 0,
   x = 144,
   y = 464,
   width = 16,
@@ -5344,6 +5335,24 @@ tile{
   width = 16,
   height = 8,
   pattern = "67",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 480,
+  width = 16,
+  height = 32,
+  pattern = "20",
 }
 
 dynamic_tile{

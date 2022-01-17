@@ -54,6 +54,7 @@ local function npc_interaction(npc)
   local dialog = npc:get_property("dialog")
   if dialog then
     npc:get_game():start_dialog(dialog)
+    return true
   end
 end
 
@@ -199,12 +200,12 @@ end
 function carried_meta:on_breaking()
   local x, y = self:get_position()
   local direction = self:get_movement():get_direction4()
-  --[[if direction % 2 == 1 then
+  if direction % 2 == 1 then
     local _, sprite_y = self:get_sprite():get_xy()
     self:set_position(x, y - sprite_y)
   elseif direction % 2 == 0 then
     self:set_position(x, self.throw_y)
-  end--]]
+  end
 
   if self.destructible_on_thrown then
     self:destructible_on_thrown()

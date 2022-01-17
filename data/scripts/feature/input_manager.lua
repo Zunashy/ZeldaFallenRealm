@@ -104,13 +104,18 @@ meta:register_event("on_key_pressed", custom_command_keyboard)
 
 --MAIN COMMAND MANAGER
 local start_map_menu = require("scripts/menus/map")
+local start_dungeon_map_menu = require("scripts/menus/dungeon_map")
 function meta:on_command_pressed(command) --manages commands that aren't directly managed by solarus
   if type(self.command_effect[command]) == "function" then
     return self.command_effect[command](game)
   end
 
   if command == "select" and not self:is_suspended() then
-    start_map_menu(self)
+    if self:get_map().dungeon_info then
+      start_dungeon_map_menu(self)
+    else
+      start_map_menu(self)
+    end
     return true
   end
 end

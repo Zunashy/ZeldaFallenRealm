@@ -70,7 +70,7 @@ function map:disable_entity(name)
   end
 end
 
---Callback for the trigger 'death' : added tothe on_dead event callback of enemies linked to a death_trigger. (checks if other enemies linked with this trigger are still alive, if not launches the linked event)
+--Callback for the trigger 'death' : added to the on_dead event callback of enemies linked to a death_trigger. (checks if other enemies linked with this trigger are still alive, if not launches the linked event)
 local function death_trigger_callback(enemy)
   local map = enemy:get_map()
   local event = enemy:get_property("death_trigger")  --the event is the value of the 'death_trigger' custom prop
@@ -78,12 +78,14 @@ local function death_trigger_callback(enemy)
 
   if not event then return end
 
+
   for e in map:get_entities_by_type("enemy") do
     local o_event = e:get_property("death_trigger")
     if o_event and o_event == event and not (e == enemy) and not e.dead  then  --testing if there is any other enemy, alive, with this trigger
       last_to_die = false  
     end
   end
+  print(last_to_die)
   if last_to_die then  --if no such enemy was found, launches the event
     parse_event_string(map, event)
   end
