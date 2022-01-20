@@ -10180,7 +10180,7 @@ block{
     },
     {
       key = "activate_trigger",
-      value = "door_1",
+      value = "open:door_1",
     },
   },
   direction = 0,

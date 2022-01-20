@@ -11,11 +11,12 @@ local map = ...
 local game = map:get_game()
 
 function map:on_started_()
-  self:init_dungeon_features()
   self.dungeon_info = {
-    dungeon = require("scripts/dungeon_maps/1"),
+    dungeon = require("scripts/menus/dungeon_maps")[1],
     floor = 0
   }
+  self:init_dungeon_features()
+  print("MAP CALLBACK")
 end
 function map:on_opening_transition_finished()
 

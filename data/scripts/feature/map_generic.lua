@@ -233,7 +233,6 @@ function map:init_reset_separators(default)
 end
 
 function map:init_dungeon_features()
-
   self:init_enemies_event_triggers()
   self:init_activate_triggers()
   self:init_activatables()

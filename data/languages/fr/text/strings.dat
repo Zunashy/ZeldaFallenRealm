@@ -2,16 +2,17 @@ text{ key = "items.bracelet.description", value = "Permet de soulever les rocher
 text{ key = "items.bracelet.name", value = "Bracelet de Force" }
 text{ key = "items.fire_seed.description", value = "BRULE PUTAIN BRULE" }
 text{ key = "items.fire_seed.name", value = "Graine de feu" }
+text{ key = "items.hammer.description", value = "Ecrase les ennemis et casse les blocs solides" }
+text{ key = "items.hammer.name", value = "Marteau" }
+text{ key = "items.hammer_fire.description", value = "Detruit les blocs de glace compacte. Degats ++ sur ennemis geles !" }
+text{ key = "items.hammer_fire.name", value = "Marteau de feu" }
 text{ key = "items.horn.description", value = "? ? ?" }
 text{ key = "items.horn.name", value = "Corne de Guerre" }
 text{ key = "items.ring_octorock.description", value = "Augmente vos dégats sur les Octoroks" }
 text{ key = "items.ring_octorock.name", value = "Anneau Octorok" }
 text{ key = "items.rock_feather.description", value = "Permet de sauter" }
 text{ key = "items.rock_feather.name", value = "Plume de Roc" }
-text{ key = "items.hammer.description", value = "Ecrase les ennemis et casse les blocs solides" }
-text{ key = "items.hammer.name", value = "Marteau" }
-text{ key = "items.hammer_fire.description", value = "Detruit les blocs de glace compacte. Degats ++ sur ennemis geles !" }
-text{ key = "items.hammer_fire.name", value = "Marteau de feu" }
+text{ key = "menus.dungeon_names.1", value = "Donjon Trident" }
 text{ key = "menus.quest.qheart.description", value = "Collectez-en 4 pour obtenir un coeur supplémentaire !" }
 text{ key = "menus.quest.qheart.name", value = "Quart de coeur" }
 text{ key = "menus.quest.save.description", value = "Sauvegarder la partie" }
