@@ -42,6 +42,12 @@ function game_meta:get_essence()
   return self:get_value("essence") or 0
 end
 
+require("scripts/menus/dungeon_map")
+function game_meta:oow_save()
+  self:save_current_dungeon_discovery()
+  self:save()
+end
+
 local obs_uniform_names = {"light1", "light2", "light3", "light4"}
 
 function game_meta:manage_obscurity_shader(camera, shader)

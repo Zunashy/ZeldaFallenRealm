@@ -12309,6 +12309,14 @@ pickable{
   treasure_name = "rupee",
 }
 
+enemy{
+  layer = 1,
+  x = 824,
+  y = 1293,
+  direction = 0,
+  breed = "ice_slime",
+}
+
 tile{
   layer = 2,
   x = 832,

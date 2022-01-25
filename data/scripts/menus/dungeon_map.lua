@@ -22,23 +22,6 @@ local function get_room(floor_map, x, y)
     return floor_map.rooms[room_position(x, y, floor_map.cw)]
 end
 
-local function check_dungeon_region(map, floor_map)
-    local x, y = map:get_hero():get_position()
-
-    x = math.floor(x / room_w)
-    y = math.floor((y - 5) / room_h)
-
-    local room = get_room(floor_map, x, y)
-    room.discovered = true
-
-    x = room.x or x * 8
-    y = room.y or y * 8
-
-    print(current_map, current_floor)
-
-    room.type:draw(current_map[current_floor], x, y)
-end
-
 local function full_rebuild_map()
     local floor, x, y
     for i, floor_map in pairs(current_map) do
@@ -53,7 +36,7 @@ local function full_rebuild_map()
     end
 end
 
-local function change_dungeon(new_dungeon)
+local function init_dungeon(new_dungeon)
     --OPTIMISATION : garder les surfaces au lieu de tout supprimer et refaire
     current_map = {} 
     for i, floor in pairs(new_dungeon.floors) do
@@ -62,15 +45,23 @@ local function change_dungeon(new_dungeon)
     full_rebuild_map()
 end
 
-local function check_dungeon(dungeon)
+local function check_dungeon_region(map, floor_map, dungeon_id)
+    local x, y = map:get_hero():get_position()
 
-    if current_dungeon == dungeon then
-        --même donjon
-    else
-        current_dungeon = dungeon
-        change_dungeon(dungeon)
+    x = math.floor(x / room_w)
+    y = math.floor((y - 5) / room_h)
+
+    local room = get_room(floor_map, x, y)
+
+    if not room.discovered then
+        x = room.x or x * 8
+        y = room.y or y * 8
+        room.type:draw(current_map[current_floor], x, y)
+        room.discovered = true
+
+        local game 
+
     end
-
 end
 
 local function enable_map_discovery(map, floor_map)
@@ -81,9 +72,31 @@ local function enable_map_discovery(map, floor_map)
     end
 end
 
---====== METATABLE EVENTS =======--
+local function build_savegame_value(floors)
+    local res = ""
+    for floor_id, floor_map in pairs(floors) do
+        res = res .. tostring(floor_id) .. ":"
+        for room_id, room in pairs(floor_map.rooms) do
+            if room.discovered then
+                res = res .. tostring(room_id) .. ";"
+            end
+        end
+        res = res .. "|"
+    end
+    return res
+end
+
+--====== METATABLE METHODS =======--
 
 local game_meta = sol.main.get_metatable("game")
+function game_meta:save_dungeon_discovery(dungeon) 
+    self:set_value("map_discovery_dungeon_" .. dungeon.id, build_savegame_value(dungeon.floors))
+end
+
+function game_meta:save_current_dungeon_discovery()
+    self:save_dungeon_discovery(current_dungeon)
+end
+
 game_meta:register_event("on_map_changed", function(game, map)
     local dungeon_info = map.dungeon_info
     if dungeon_info then
@@ -91,7 +104,8 @@ game_meta:register_event("on_map_changed", function(game, map)
             print("WARNING : Map \" "..map:get_id().."\"'s dungeon info is incomplete.")
             return nil
         end  
-        local floor_map = dungeon_info.dungeon.floors[dungeon_info.floor]
+        local dungeon = dungeon_info.dungeon
+        local floor_map = dungeon.floors[dungeon_info.floor]
         if not floor_map then 
             error("Map \" "..map:get_id().."\"'s dungeon info refers to a floor that does not exist.") 
             return nil
@@ -99,7 +113,15 @@ game_meta:register_event("on_map_changed", function(game, map)
         if not floor_map then return end
 
         current_floor = dungeon_info.floor
-        check_dungeon(dungeon_info.dungeon)
+
+        if current_dungeon ~= dungeon then
+            if current_dungeon then
+                game:save_dungeon_discovery(current_dungeon)
+            end
+            current_dungeon = dungeon
+            init_dungeon(dungeon)
+        end
+        
         enable_map_discovery(map, floor_map)
         check_dungeon_region(map, floor_map)
     else

@@ -5,6 +5,7 @@ local position = require("scripts/feature/positionConverter").pos_to_id(cw)
 
 return {
     {
+        id = "1",
         name = "menus.dungeon_names.1",
         floors = {
             [0] = {
@@ -42,6 +43,7 @@ return {
         }
     },
     {
+        id = "2",
         name = "menus.dungeon_names.2",
         floors = {
             [0] = {
