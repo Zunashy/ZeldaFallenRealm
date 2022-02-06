@@ -10399,7 +10399,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_4",
+      value = "open:door_4",
     },
   },
   direction = 3,
@@ -11049,7 +11049,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_chest_feather;door_miniboss;music_dungeon1;spawn_teleport;spawn_teleport_2",
+      value = "spawn:chest_feather;open:door_miniboss;music:dungeon1;spawn:teleport;spawn:teleport_2",
     },
     {
       key = "no_reset",
@@ -11138,7 +11138,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_5",
+      value = "open:door_5",
     },
   },
   direction = 0,
@@ -11153,7 +11153,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_5",
+      value = "open:door_5",
     },
   },
   direction = 0,
@@ -11168,7 +11168,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_5",
+      value = "open:door_5",
     },
   },
   direction = 0,
@@ -11223,7 +11223,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_5",
+      value = "open:door_5",
     },
   },
   direction = 0,

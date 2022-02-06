@@ -87,7 +87,7 @@ function game_meta:on_draw(dst_surf)
 
 end
 
-function game_meta:on_started()
+game_meta:register_event("on_started", function (self)
   sol.main.game = self
 
   if self.on_init and not self.started then
@@ -98,7 +98,7 @@ function game_meta:on_started()
   self:get_hero().test = 10
 
   self.shaders = require("scripts/api/shader")
-end
+end)
 
 function game_meta:on_finished()
   sol.main.game = nil

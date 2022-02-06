@@ -98,6 +98,10 @@ function gen.inherit_class(bClass)
   return newclass
 end
 
+function gen.new(class, ...)
+  return class:new(...)
+end
+
 function table.deepcopy(orig, copies)
   copies = copies or {}
   local orig_type = type(orig)

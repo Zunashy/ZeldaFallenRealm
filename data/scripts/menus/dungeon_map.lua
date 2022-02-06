@@ -14,9 +14,13 @@ local menu = {
 local current_dungeon = nil
 local current_map = {}
 local current_floor = 0
+local current_hero_position = {x = 0, y = 0, frozen = false}
 
 local room_w = 240
 local room_h = 176
+
+local hero_position_indicator = sol.surface.create("menus/hero_position.png")
+local hero_position_indicator_frozen = sol.surface.create("menus/hero_position_frozen.png")
 
 local function get_room(floor_map, x, y)
     return floor_map.rooms[room_position(x, y, floor_map.cw)]
@@ -50,6 +54,9 @@ local function check_dungeon_region(map, floor_map, dungeon_id)
 
     x = math.floor(x / room_w)
     y = math.floor((y - 5) / room_h)
+
+    current_hero_position.x = x
+    current_hero_position.y = y
 
     local room = get_room(floor_map, x, y)
 
@@ -93,6 +100,10 @@ function game_meta:save_dungeon_discovery(dungeon)
     self:set_value("map_discovery_dungeon_" .. dungeon.id, build_savegame_value(dungeon.floors))
 end
 
+function game_meta:get_dungeon_discovery_string(dungeon)
+    return self:get_value("map_discovery_dungeon_" .. dungeon.id)
+end
+
 function game_meta:save_current_dungeon_discovery()
     self:save_dungeon_discovery(current_dungeon)
 end
@@ -100,10 +111,19 @@ end
 game_meta:register_event("on_map_changed", function(game, map)
     local dungeon_info = map.dungeon_info
     if dungeon_info then
+
         if not (dungeon_info.dungeon and dungeon_info.floor) then 
             print("WARNING : Map \" "..map:get_id().."\"'s dungeon info is incomplete.")
             return nil
         end  
+
+        if dungeon_info.floor == true then --this is a "hidden" dungeon map, not represented on the map of a dungeon but still part of this dungeon
+            current_hero_position.frozen = true 
+            return
+        else
+            current_hero_position.frozen = false
+        end
+
         local dungeon = dungeon_info.dungeon
         local floor_map = dungeon.floors[dungeon_info.floor]
         if not floor_map then 
@@ -129,6 +149,35 @@ game_meta:register_event("on_map_changed", function(game, map)
     end
 end)
 
+local dmap = require("scripts/menus/dungeon_maps")
+local function load_dungeon_discovery(game)
+  local discovery_string
+  for _, dungeon in ipairs(dmap) do
+    discovery_string = game:get_dungeon_discovery_string(dungeon)
+
+    if discovery_string then
+      for floor_string in discovery_string:fields("|") do
+        local floor_i, rooms_string = floor_string:xfields(":")
+        local floor = dungeon.floors[tonumber(floor_i)]  
+        if  floor then
+            for room_i in rooms_string:fields(";") do
+                local room = floor.rooms[tonumber(room_i)]
+                if room then
+                    room.discovered = true
+                else
+                    print("WARNING : saved map discovery for floor " .. floor_i .. "of dungeon " .. dungeon.id " contains room ID that doesn't match any room ("..room_id..")") 
+                end
+            end            
+        else
+            print("WARNING : saved map discovery for dungeon " .. dungeon.id " contains floor ID that doesn't match any floor ("..floor_i..")")
+        end
+      end
+    end
+  end
+end
+
+game_meta:register_event("on_started", load_dungeon_discovery)
+
 --====== CALLBACKS =========--
 
 function menu:on_started()
@@ -147,6 +196,11 @@ end
 function menu:on_draw(dst_surf)
     dst_surf:clear()
     current_map[current_floor]:draw(dst_surf)
+    if current_hero_position.frozen then
+        hero_position_indicator_frozen:draw(dst_surf, current_hero_position.x * 8 + 1, current_hero_position.y * 8 + 1)
+    else
+        hero_position_indicator:draw(dst_surf, current_hero_position.x * 8 + 1, current_hero_position.y * 8 + 1)
+    end
 end
 
 function menu:on_command_pressed(command)
@@ -154,6 +208,7 @@ function menu:on_command_pressed(command)
         sol.menu.stop(self) 
     end
 end
+
 --====== BINDING THE MENU TO THE GAME ======
 
 local function start_menu(game)
