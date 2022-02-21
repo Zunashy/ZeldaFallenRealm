@@ -3787,7 +3787,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_first_chest",
+      value = "spawn:first_chest",
     },
   },
   direction = 0,
@@ -3802,7 +3802,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_first_chest",
+      value = "spawn:first_chest",
     },
   },
   direction = 0,
@@ -3817,7 +3817,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_first_chest",
+      value = "spawn:first_chest",
     },
   },
   direction = 0,
@@ -3842,7 +3842,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_1",
+      value = "open:door_1",
     },
   },
   direction = 0,
@@ -3857,7 +3857,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_1",
+      value = "open:door_1",
     },
   },
   direction = 0,
@@ -3903,7 +3903,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_3",
+      value = "open:door_3",
     },
   },
   direction = 3,
@@ -3954,7 +3954,7 @@ block{
     },
     {
       key = "activate_trigger",
-      value = "door_2",
+      value = "open:door_2",
     },
   },
   sprite = "entities/block/block",
@@ -3993,7 +3993,7 @@ enemy{
     },
     {
       key = "death_trigger",
-      value = "spawn_key",
+      value = "spawn:key",
     },
   },
   direction = 3,
@@ -4137,7 +4137,7 @@ enemy{
     },
     {
       key = "death_trigger",
-      value = "spawn_key",
+      value = "spawn:key",
     },
   },
   direction = 3,
@@ -4157,7 +4157,7 @@ enemy{
     },
     {
       key = "death_trigger",
-      value = "spawn_key",
+      value = "spawn:key",
     },
   },
   direction = 3,

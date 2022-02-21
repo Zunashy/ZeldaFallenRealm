@@ -1,8 +1,9 @@
  local game_meta = sol.main.get_metatable("game")
 
 local function map_callback(game, map)
+  print("GAME CALLBACK")
   local camera = map:get_camera()
-  camera:set_size(160,128)
+  camera:set_size(CAMERA_W,CAMERA_H)
   camera:set_position_on_screen(0, game.HUD_height)
   
   if map.obscurity then
@@ -17,7 +18,7 @@ local function map_callback(game, map)
   if (hero:get_sprite():get_shader() and not hero:get_sprite():get_shader().persistent) then
     hero:get_sprite():set_shader(nil)
   end
-end  
+end
 
 game_meta:register_event("on_map_changed", map_callback)
 
@@ -39,6 +40,12 @@ end
 
 function game_meta:get_essence()
   return self:get_value("essence") or 0
+end
+
+require("scripts/menus/dungeon_map")
+function game_meta:oow_save()
+  self:save_current_dungeon_discovery()
+  self:save()
 end
 
 local obs_uniform_names = {"light1", "light2", "light3", "light4"}
@@ -80,7 +87,7 @@ function game_meta:on_draw(dst_surf)
 
 end
 
-function game_meta:on_started()
+game_meta:register_event("on_started", function (self)
   sol.main.game = self
 
   if self.on_init and not self.started then
@@ -91,7 +98,7 @@ function game_meta:on_started()
   self:get_hero().test = 10
 
   self.shaders = require("scripts/api/shader")
-end
+end)
 
 function game_meta:on_finished()
   sol.main.game = nil

@@ -1,4 +1,4 @@
--- Lua script of map donjons/level_01/2D_Test.
+-- Lua script of map tests/dungeon.
 -- This script is executed every time the hero enters this map.
 
 -- Feel free to modify the code below.
@@ -12,11 +12,9 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started()
-  self:init_side_view()
-  self.dungeon_info = {
-    dungeon = require("scripts/menus/dungeon_maps")[1],
-    floor = true
-  }
+
+  -- You can initialize the movement and sprites of various
+  -- map entities here.
 end
 
 -- Event called after the opening transition effect of the map,

@@ -77,6 +77,7 @@ map{ id = "normal_version/village/nielint/outdoors", description = "normal_versi
 map{ id = "testHub", description = "testHub" }
 map{ id = "tests/blue_slime", description = "tests/blue_slime" }
 map{ id = "tests/bridges", description = "tests/bridges" }
+map{ id = "tests/dungeon", description = "Dungeon-like test map" }
 map{ id = "tests/global" }
 map{ id = "tests/global_war" }
 map{ id = "tests/outside", description = "Monde extérieur" }

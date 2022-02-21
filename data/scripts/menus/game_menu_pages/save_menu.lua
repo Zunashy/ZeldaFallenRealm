@@ -49,17 +49,16 @@ function save_menu:button_continue()
 end
 
 function save_menu:button_save()
-    self.game_menu.game:save()
+    self.game_menu.game:oow_save()
     self.game_menu.game:set_paused(false)
 end
 
 function save_menu:button_save_quit()
-    self.game_menu.game:save()
+    self.game_menu.game:oow_save()
     sol.main.exit()
 end
 
 --SUBMENU METHODS
-
 function save_menu:on_started()
     self.view_cursor = true
 end

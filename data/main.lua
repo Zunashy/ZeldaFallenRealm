@@ -5,6 +5,11 @@
 
 DEBUG = true
 
+GAME_W = 160
+GAME_H = 144
+CAMERA_W = 160
+CAMERA_H = 128
+
 local loading_surface = sol.surface.create("menus/loading.png")
 local loading_menu = {
   on_draw = function(self, dst_surface)
@@ -15,7 +20,6 @@ local loading_menu = {
 sol.menu.start(sol.main, loading_menu)
 
 require("scripts/features")
-
 
 local game_manager = require("scripts/game_manager")
 local start_initial_menus = require("scripts/menus/initial_menus_manager")

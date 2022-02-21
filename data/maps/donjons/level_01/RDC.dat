@@ -10180,7 +10180,7 @@ block{
     },
     {
       key = "activate_trigger",
-      value = "door_1",
+      value = "open:door_1",
     },
   },
   direction = 0,
@@ -10399,7 +10399,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_4",
+      value = "open:door_4",
     },
   },
   direction = 3,
@@ -10474,7 +10474,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "door_3",
+      value = "open:door_3",
     },
   },
   subtype = "walkable",
@@ -11049,7 +11049,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_chest_feather;door_miniboss;music_dungeon1;spawn_teleport;spawn_teleport_2",
+      value = "spawn:chest_feather;open:door_miniboss;music:dungeon1;spawn:teleport;spawn:teleport_2",
     },
     {
       key = "no_reset",
@@ -11138,7 +11138,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_5",
+      value = "open:door_5",
     },
   },
   direction = 0,
@@ -11153,7 +11153,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_5",
+      value = "open:door_5",
     },
   },
   direction = 0,
@@ -11168,7 +11168,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_5",
+      value = "open:door_5",
     },
   },
   direction = 0,
@@ -11223,7 +11223,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_5",
+      value = "open:door_5",
     },
   },
   direction = 0,
@@ -12307,6 +12307,14 @@ pickable{
   x = 80,
   y = 645,
   treasure_name = "rupee",
+}
+
+enemy{
+  layer = 1,
+  x = 824,
+  y = 1293,
+  direction = 0,
+  breed = "ice_slime",
 }
 
 tile{
