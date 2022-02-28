@@ -119,6 +119,7 @@ tileset{ id = "grotte", description = "grotte" }
 tileset{ id = "house", description = "house" }
 tileset{ id = "model", description = "model" }
 tileset{ id = "normal/annexe", description = "normal/annexe" }
+tileset{ id = "normal/general" }
 tileset{ id = "normal/jungle", description = "normal/jungle" }
 tileset{ id = "normal/lava", description = "normal/lava" }
 tileset{ id = "normal/main", description = "normal/main" }
