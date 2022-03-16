@@ -25,6 +25,7 @@ local game_menu = {
     transition_movement_pos = {x = 0, y = 0},
     name = "Game Menu",
     running = false,
+    move_sound = "text"
 }
 
 game_menu.surface = sol.surface.create(sol.video.get_quest_size())
@@ -62,6 +63,10 @@ end
 game_menu.lang = require("scripts/api/language_manager")
 
 --MENU METHODS AND UTILITY FUNCTIONS
+function game_menu:play_move_sound()
+    sol.audio.play_sound(self.move_sound)
+end
+
 function game_menu:init_info_surface(name, desc)
     self.info_pre_surface = nil
 

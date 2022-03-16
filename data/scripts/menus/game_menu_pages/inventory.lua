@@ -61,6 +61,7 @@ function inventory_menu:on_selection_changed(game_menu)
         local item_name = item:get_name()
         self.game_menu:init_info_surface("items."..item_name..".name", "items."..item_name..".description")
     end
+    self.game_menu:play_move_sound()
 end
 
 --SUBMENU METHODS : will be called by the game_menu methods

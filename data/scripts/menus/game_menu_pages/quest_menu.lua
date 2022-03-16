@@ -111,6 +111,7 @@ function quest_menu:on_selection_changed(game_menu)
         end
     end
     quest_menu:set_current_cursor(self.cursor)
+    self.game_menu:play_move_sound()
 end
 
 --slot effects
