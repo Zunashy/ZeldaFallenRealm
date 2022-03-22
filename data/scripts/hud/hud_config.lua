@@ -47,6 +47,11 @@ local hud_config = {
     slot = 2
   },
     
+  {
+    menu_script = "scripts/hud/key_counter",
+    x = 0,
+    y = 33
+  }
 
   -- You can add more HUD elements here.
 }
