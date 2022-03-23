@@ -118,6 +118,24 @@ tile{
 }
 
 tile{
+  layer = 0,
+  x = 192,
+  y = 240,
+  width = 32,
+  height = 32,
+  pattern = "16_2",
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 536,
+  width = 16,
+  height = 8,
+  pattern = "10",
+}
+
+tile{
   layer = 1,
   x = 536,
   y = 472,
@@ -10468,15 +10486,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 192,
-  y = 240,
-  width = 32,
-  height = 32,
-  pattern = "16_8",
-}
-
-tile{
-  layer = 1,
   x = 224,
   y = 240,
   width = 32,
@@ -13652,15 +13661,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 496,
-  y = 536,
-  width = 16,
-  height = 8,
-  pattern = "10",
-}
-
-tile{
-  layer = 1,
   x = 488,
   y = 544,
   width = 8,
@@ -16011,6 +16011,14 @@ enemy{
   direction = 3,
   breed = "moblin_sword",
   treasure_name = "random",
+}
+
+destructible{
+  layer = 1,
+  x = 568,
+  y = 493,
+  sprite = "entities/projectile/rock",
+  weight = 1,
 }
 
 tile{
