@@ -161,7 +161,6 @@ function hearts_builder:new(game, config)
   end
 
   function hearts:on_started()
-
     -- This function is called when the HUD starts or
     -- was disabled and gets enabled again.
     -- Unlike other HUD elements, the timers were canceled because they
