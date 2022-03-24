@@ -423,168 +423,6 @@ tile{
   pattern = "196_11",
 }
 
-tile{
-  layer = 0,
-  x = 16,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 48,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 112,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 112,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 96,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 176,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 192,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 208,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 224,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 224,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 224,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 256,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 272,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 288,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
 chest{
   layer = 0,
   x = 280,
@@ -593,14 +431,6 @@ chest{
   treasure_variant = 3,
   treasure_savegame_variable = "wind_wood_chest_rupee_1",
   sprite = "entities/chests/chest",
-}
-
-destructible{
-  layer = 0,
-  x = 24,
-  y = 77,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
 }
 
 teletransporter{
@@ -621,139 +451,35 @@ destination{
   direction = 1,
 }
 
-destructible{
+enemy{
   layer = 0,
-  x = 56,
+  x = 112,
   y = 45,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
+  direction = 0,
+  breed = "octorok",
 }
 
-destructible{
+enemy{
   layer = 0,
-  x = 120,
-  y = 29,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 120,
-  y = 45,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 168,
-  y = 29,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 280,
-  y = 45,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 264,
-  y = 29,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 232,
-  y = 45,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 296,
-  y = 109,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 232,
+  x = 208,
   y = 77,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
+  direction = 0,
+  breed = "moblin_sword",
 }
 
-destructible{
+enemy{
   layer = 0,
-  x = 232,
-  y = 93,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
+  x = 40,
+  y = 77,
+  direction = 0,
+  breed = "moblin_sword",
 }
 
-destructible{
+enemy{
   layer = 0,
   x = 216,
-  y = 109,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 136,
-  y = 109,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 152,
-  y = 93,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 184,
-  y = 93,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 200,
-  y = 77,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 168,
-  y = 77,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 104,
-  y = 109,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
+  y = 37,
+  direction = 0,
+  breed = "octorok",
 }
 
