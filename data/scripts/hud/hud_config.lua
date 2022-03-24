@@ -50,7 +50,7 @@ local hud_config = {
   {
     menu_script = "scripts/hud/key_counter",
     x = 0,
-    y = 33
+    y = 17
   }
 
   -- You can add more HUD elements here.

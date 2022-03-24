@@ -9,24 +9,22 @@ local keys_builder = {}
 
 function keys_builder:new(game, config)
     local menu = {
-        current_count = 0
+        current_count = 9
     }
+
+    local counter_surface = sol.surface.create(font:get_char_size())
+    counter_surface:fill_color({255, 255, 255})
 
     function menu:on_draw(dst_surface)
         if self.current_count > 0 then
-            sprite:draw(dst_surface, config.x, config.y)
+            sprite:draw(dst_surface, config.x + 4, config.y + 13)
+            counter_surface:draw(dst_surface, config.x + 10, config.y + 4)
         end
     end
 
     function menu:redraw()
-        surface:clear()
-        sprite:draw(surface, 8, 13)
         local code = self.current_count + 48
-        font:draw_char(code, surface, 10, 2)
-    end
-
-    function menu:on_started()
-        self:redraw()
+        font:draw_char(code, counter_surface)
     end
 
     function menu:change_count(count)
@@ -34,10 +32,9 @@ function keys_builder:new(game, config)
         self:redraw()
     end
 
+    menu:redraw()
+
     return menu
 end
 
-local game_meta = sol.main.get_metatable("game")
-game_meta:register_event("on_started", initialize_hud_features)
-
-return menu
+return keys_builder
