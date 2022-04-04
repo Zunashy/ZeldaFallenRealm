@@ -6479,15 +6479,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 384,
-  y = 512,
-  width = 16,
-  height = 8,
-  pattern = "164",
-}
-
-tile{
-  layer = 1,
   x = 360,
   y = 88,
   width = 16,
@@ -7371,20 +7362,20 @@ tile{
 
 tile{
   layer = 1,
-  x = 232,
-  y = 280,
-  width = 16,
-  height = 8,
-  pattern = "312",
-}
-
-tile{
-  layer = 1,
   x = 224,
   y = 280,
   width = 8,
   height = 24,
   pattern = "310",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 512,
+  width = 16,
+  height = 8,
+  pattern = "164",
 }
 
 separator{
@@ -7990,6 +7981,20 @@ door{
   opening_condition_consumed = true,
 }
 
+pickable{
+  name = "great_key",
+  layer = 1,
+  x = 232,
+  y = 365,
+  properties = {
+    {
+      key = "max_story_state",
+      value = "3",
+    },
+  },
+  treasure_name = "great_key",
+}
+
 tile{
   layer = 2,
   x = 384,
@@ -8162,20 +8167,6 @@ tile{
   pattern = "91_3",
 }
 
-pickable{
-  name = "great_key",
-  layer = 1,
-  x = 232,
-  y = 365,
-  properties = {
-    {
-      key = "max_story_state",
-      value = "3",
-    },
-  },
-  treasure_name = "great_key",
-}
-
 tile{
   layer = 2,
   x = 600,
@@ -8229,3 +8220,13 @@ tile{
   height = 16,
   pattern = "308_2",
 }
+
+tile{
+  layer = 2,
+  x = 232,
+  y = 280,
+  width = 16,
+  height = 8,
+  pattern = "312",
+}
+
