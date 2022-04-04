@@ -3724,6 +3724,7 @@ door{
   savegame_variable = "key_cave_door_key_1",
   opening_method = "interaction_if_item",
   opening_condition = "small_key",
+  opening_condition_consumed = true,
 }
 
 chest{

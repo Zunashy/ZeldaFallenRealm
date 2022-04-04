@@ -10196,7 +10196,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "door_7",
+      value = "open:door_7",
     },
   },
   subtype = "walkable",
@@ -10414,7 +10414,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_chest_key_1",
+      value = "spawn:chest_key_1",
     },
   },
   direction = 0,
@@ -10429,7 +10429,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_chest_key_2",
+      value = "spawn:chest_key_2",
     },
   },
   direction = 0,
@@ -10444,7 +10444,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_chest_key_2",
+      value = "spawn:chest_key_2",
     },
   },
   direction = 0,
@@ -10459,7 +10459,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_chest_key_2",
+      value = "spawn:chest_key_2",
     },
   },
   direction = 0,
@@ -10663,7 +10663,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "door_8",
+      value = "open:door_8",
     },
   },
   subtype = "walkable",
@@ -11465,7 +11465,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_chest_key_1",
+      value = "spawn:chest_key_1",
     },
   },
   direction = 0,
@@ -11480,7 +11480,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_chest_key_1",
+      value = "spawn:chest_key_1",
     },
   },
   direction = 0,
@@ -12033,7 +12033,7 @@ custom_entity{
     },
     {
       key = "on_obtained",
-      value = "teleport_normal_version/overworld/north_beach/outdoors:trident_dungeon$fade;music_none",
+      value = "teleport:normal_version/overworld/north_beach/outdoors#trident_dungeon$fade;music_none",
     },
   },
   width = 16,
@@ -12178,7 +12178,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "spawn_lvl1_btn3",
+      value = "spawn:lvl1_btn3",
     },
   },
   subtype = "walkable",
@@ -12196,7 +12196,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "spawn_lvl1_btn2",
+      value = "spawn:lvl1_btn2",
     },
   },
   subtype = "walkable",
@@ -12215,7 +12215,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "door_6",
+      value = "open:door_6",
     },
   },
   subtype = "walkable",
@@ -12285,7 +12285,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "spawn_lvl1_btn4",
+      value = "spawn:lvl1_btn4",
     },
   },
   subtype = "walkable",

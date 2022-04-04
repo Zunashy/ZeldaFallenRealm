@@ -6,7 +6,7 @@ local sv = {}
 
 sv.pObject = gen.class()
 
-sv.gravity = 0.16
+sv.gravity = 0.10
 
 function sv.pObject:constructor(entity)
   self.entity = entity
