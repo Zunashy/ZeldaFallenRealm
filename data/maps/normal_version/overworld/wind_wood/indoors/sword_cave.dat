@@ -425,24 +425,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 16,
-  y = 72,
-  width = 16,
-  height = 16,
-  pattern = "22",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 40,
-  width = 16,
-  height = 16,
-  pattern = "22",
-}
-
-tile{
-  layer = 0,
   x = 32,
   y = 72,
   width = 16,
@@ -889,6 +871,24 @@ tile{
   width = 16,
   height = 96,
   pattern = "314",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "304",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "304",
 }
 
 pickable{
