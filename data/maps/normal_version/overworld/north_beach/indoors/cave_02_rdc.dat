@@ -443,186 +443,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 176,
-  y = 48,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 240,
-  y = 48,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 240,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 200,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 48,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 48,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 48,
-  y = 48,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 64,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 64,
-  y = 48,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 176,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 288,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 288,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 272,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 288,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 176,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 96,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 96,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
   x = 128,
   y = 48,
   width = 16,
@@ -664,24 +484,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "197",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 48,
-  width = 16,
-  height = 16,
-  pattern = "242",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = "242",
 }
 
 tile{
@@ -854,92 +656,13 @@ enemy{
   breed = "bat",
 }
 
-custom_entity{
+destructible{
   layer = 0,
   x = 56,
-  y = 29,
-  width = 16,
-  height = 16,
-  direction = 0,
-}
-
-destructible{
-  layer = 0,
-  x = 72,
-  y = 29,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 72,
-  y = 61,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 152,
-  y = 61,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 248,
-  y = 77,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 296,
-  y = 45,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 88,
-  y = 93,
-  sprite = "entities/vegetation/grass/grass",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 88,
-  y = 45,
-  sprite = "entities/vegetation/grass/grass_2",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 136,
-  y = 77,
-  sprite = "entities/vegetation/grass/grass_2",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 296,
-  y = 77,
-  sprite = "entities/vegetation/grass/grass_2",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 248,
-  y = 61,
-  sprite = "entities/vegetation/grass/grass_2",
+  y = 109,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
   can_be_cut = true,
 }
 
@@ -947,15 +670,19 @@ destructible{
   layer = 0,
   x = 40,
   y = 93,
-  sprite = "entities/vegetation/grass/grass_2",
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
   can_be_cut = true,
 }
 
 destructible{
   layer = 0,
-  x = 24,
-  y = 61,
-  sprite = "entities/vegetation/grass/grass_2",
+  x = 88,
+  y = 93,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
   can_be_cut = true,
 }
 
@@ -963,15 +690,29 @@ destructible{
   layer = 0,
   x = 104,
   y = 93,
-  sprite = "entities/vegetation/grass/grass_2",
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
   can_be_cut = true,
 }
 
 destructible{
   layer = 0,
-  x = 184,
-  y = 109,
-  sprite = "entities/vegetation/grass/grass_3",
+  x = 136,
+  y = 77,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 152,
+  y = 61,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
   can_be_cut = true,
 }
 
@@ -979,7 +720,9 @@ destructible{
   layer = 0,
   x = 184,
   y = 61,
-  sprite = "entities/vegetation/grass/grass_3",
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
   can_be_cut = true,
 }
 
@@ -987,47 +730,59 @@ destructible{
   layer = 0,
   x = 184,
   y = 29,
-  sprite = "entities/vegetation/grass/grass_3",
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
   can_be_cut = true,
 }
 
 destructible{
   layer = 0,
-  x = 56,
-  y = 109,
-  sprite = "entities/vegetation/grass/grass_3",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 56,
-  y = 61,
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 104,
-  y = 29,
-  sprite = "entities/vegetation/grass/grass_4",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 208,
+  x = 216,
   y = 45,
-  sprite = "entities/vegetation/grass/grass_4",
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 61,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 77,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
   can_be_cut = true,
 }
 
 destructible{
   layer = 0,
   x = 296,
-  y = 29,
-  sprite = "entities/vegetation/grass/grass_3",
+  y = 77,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 45,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
   can_be_cut = true,
 }
 
@@ -1035,7 +790,79 @@ destructible{
   layer = 0,
   x = 280,
   y = 45,
-  sprite = "entities/vegetation/grass/grass_3",
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 29,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 56,
+  y = 61,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 72,
+  y = 61,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 72,
+  y = 29,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 88,
+  y = 45,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 104,
+  y = 29,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 24,
+  y = 61,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
   can_be_cut = true,
 }
 
