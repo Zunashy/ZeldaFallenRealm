@@ -161,6 +161,7 @@ sprite{ id = "enemies/moblin_sword", description = "Moblin Rouge (épée)" }
 sprite{ id = "enemies/moblin_sword_sword", description = "Épée moblins" }
 sprite{ id = "enemies/octorok", description = "Octorok Rouge" }
 sprite{ id = "enemies/oursin", description = "Oursin" }
+sprite{ id = "enemies/plunging_water", description = "Enemies falling in water" }
 sprite{ id = "enemies/pool", description = "Pool" }
 sprite{ id = "enemies/pool_dasher", description = "Pool dasher" }
 sprite{ id = "enemies/rope", description = "Serpent/Rope" }

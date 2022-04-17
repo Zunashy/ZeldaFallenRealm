@@ -729,6 +729,16 @@ dynamic_tile{
   pattern = "47",
 }
 
+block{
+  layer = 1,
+  x = 72,
+  y = 269,
+  direction = 2,
+  sprite = "entities/block/block",
+  pushable = true,
+  pullable = false,
+}
+
 tile{
   layer = 2,
   x = 128,

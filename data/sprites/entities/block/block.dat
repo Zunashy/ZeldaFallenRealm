@@ -5,3 +5,11 @@ animation{
     { x = 48, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
+animation{
+  name = "falling",
+  src_image = "entities/block/block_fall.png",
+  frame_delay = 400,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3, num_columns = 1 },
+  },
+}
