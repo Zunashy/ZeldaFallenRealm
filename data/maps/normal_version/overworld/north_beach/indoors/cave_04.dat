@@ -3724,6 +3724,7 @@ door{
   savegame_variable = "key_cave_door_key_1",
   opening_method = "interaction_if_item",
   opening_condition = "small_key",
+  opening_condition_consumed = true,
 }
 
 chest{
@@ -4171,6 +4172,126 @@ destination{
   x = 120,
   y = 517,
   direction = 1,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 64,
+  y = 472,
+  properties = {
+    {
+      key = "y_order",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  pattern = "178",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 160,
+  y = 472,
+  properties = {
+    {
+      key = "y_order",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  pattern = "178",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 64,
+  y = 408,
+  properties = {
+    {
+      key = "y_order",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  pattern = "178",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 312,
+  y = 296,
+  properties = {
+    {
+      key = "y_order",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  pattern = "178",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 560,
+  y = 64,
+  properties = {
+    {
+      key = "y_order",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  pattern = "178",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 576,
+  y = 32,
+  properties = {
+    {
+      key = "y_order",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  pattern = "178",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 608,
+  y = 32,
+  properties = {
+    {
+      key = "y_order",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  pattern = "178",
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 624,
+  y = 64,
+  properties = {
+    {
+      key = "y_order",
+      value = "true",
+    },
+  },
+  width = 16,
+  height = 16,
+  pattern = "178",
 }
 
 tile{

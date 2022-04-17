@@ -13,3 +13,7 @@ end
 function item:on_obtained(variant)
   self:add_amount(1)
 end
+
+function item:on_amount_changed(amount)
+
+end

@@ -1,3 +1,24 @@
+local block_meta = sol.main.get_metatable("block")
+function block_meta:on_removed()
+  local ground = self:get_ground_below()
+  if ground == "hole" then
+    local map = self:get_map()
+    local x, y, layer = self:get_position()
+    local entity = self:get_map():create_custom_entity({
+      direction = 0,
+      layer = layer,
+      x = x,
+      y = y,
+      sprite = self:get_sprite():get_animation_set(),
+      width = 16,
+      height = 16,
+    })
+    entity:get_sprite():set_animation("falling", function()
+      entity:remove()
+    end)
+  end
+end
+
 local sensor_meta = sol.main.get_metatable("sensor")
 
 function sensor_meta:on_created()
@@ -117,6 +138,27 @@ function enemy_meta:on_dead()
   local prop = self:get_property("savegame_variable") 
   if prop then
     self:get_game():set_value(prop, true)
+  end
+end
+
+function enemy_meta:on_removed()
+  local ground = self:get_ground_below()
+  print(ground)
+  if ground == "deep_water" then
+    local map = self:get_map()
+    local x, y, layer = self:get_position()
+    local entity = self:get_map():create_custom_entity({
+      direction = 0,
+      layer = layer,
+      x = x,
+      y = y,
+      sprite = "enemies/plunging_water",
+      width = 16,
+      height = 16,
+    })
+    entity:get_sprite():set_animation("plunging", function()
+      entity:remove()
+    end)
   end
 end
 

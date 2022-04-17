@@ -1,3 +1,4 @@
+--Called on each dynamic tile with a nime like poisoned_water_* on map load. 
 local function poisoned_water(entity, game, map)
     local count = 0
     local hero = map:get_hero()

@@ -83,4 +83,3 @@ function rupees_builder:new(game, config)
 end
 
 return rupees_builder
-

@@ -112,6 +112,10 @@ local function generic_start_callback(map)
         if prop and game:get_value(prop) then
             e:set_enabled(true)
         end 
+        prop = e:get_property("y_order")
+        if prop then
+            e:set_drawn_in_y_order(true)
+        end
 
     end
 

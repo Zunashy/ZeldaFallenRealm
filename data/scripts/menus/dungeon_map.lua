@@ -105,7 +105,9 @@ function game_meta:get_dungeon_discovery_string(dungeon)
 end
 
 function game_meta:save_current_dungeon_discovery()
-    self:save_dungeon_discovery(current_dungeon)
+    if current_dungeon then
+        self:save_dungeon_discovery(current_dungeon)
+    end
 end
 
 game_meta:register_event("on_map_changed", function(game, map)

@@ -46,5 +46,4 @@ function font:draw_char(code, dst_surface, x, y)
     self.surface:draw_region(origin_x, origin_y, char_w, char_h, dst_surface, x, y)
 end
 
-
 return font
