@@ -466,7 +466,6 @@ entity{ id = "octorok_rock", description = "Projecitle Octorick" }
 entity{ id = "pickable", description = "Trésor Ramassable" }
 entity{ id = "platform", description = "Plateforme mouvante" }
 entity{ id = "platform_controller", description = "Contrôleur de plateforme" }
-entity{ id = "poisoned_water", description = "Eau empoisonée" }
 entity{ id = "pull_lever", description = "Levier à tirer" }
 entity{ id = "shop_item", description = "Item du Shop" }
 entity{ id = "unstable_ground", description = "Sol Fragile" }
