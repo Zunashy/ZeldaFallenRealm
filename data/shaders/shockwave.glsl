@@ -22,7 +22,7 @@ uniform float refraction;
 
 void main(){
 
-    float dist = distance(gl_FragCoord.xy, center);
+    float dist = distance(gl_FragCoord.xy, center) + width / 2;
 
     if ((dist <= rad + width) && (dist >= rad - width)){
         float diff = (rad - dist) / width; //to stay between -1.0 and 1.0

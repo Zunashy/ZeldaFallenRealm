@@ -260,6 +260,12 @@ function sv:init(map)
 
   hero:update_ladder()
 
+  hero:register_event("on_state_changing", function(self, ps)
+    if (ps == "back to solid ground") then
+      self:set_direction(1)
+    end
+  end)
+
 end
 
 return sv

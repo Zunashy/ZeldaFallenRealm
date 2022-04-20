@@ -7387,6 +7387,15 @@ tile{
   pattern = "132",
 }
 
+tile{
+  layer = 1,
+  x = 384,
+  y = 512,
+  width = 16,
+  height = 8,
+  pattern = "164",
+}
+
 separator{
   name = "sep_cinematic2_3",
   layer = 1,

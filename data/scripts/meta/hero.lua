@@ -99,7 +99,8 @@ local function initialize_hero_features(game)
 
   function hero:start_jumping_oow(dir, dist)
     dir = (dir or 0) % 8
-    if not hero:get_map().is_side_view then
+    if not self.pObject then
+      sol.audio.play_sound("jump")
       hero:start_jumping(dir, dist)
       return true
     end
@@ -110,6 +111,7 @@ local function initialize_hero_features(game)
 
     if not self.pObject or not (self.pObject.on_ground) then return false end
 
+    sol.audio.play_sound("jump")
     self.pObject.speed = -2.5
   end
 

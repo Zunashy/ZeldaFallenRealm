@@ -11031,7 +11031,7 @@ sensor{
   properties = {
     {
       key = "activate_trigger",
-      value = "spawn_door_miniboss;music_miniboss",
+      value = "spawn:door_miniboss;music:miniboss",
     },
     {
       key = "savegame_variable",
