@@ -143,7 +143,6 @@ end
 
 function enemy_meta:on_removed()
   local ground = self:get_ground_below()
-  print(ground)
   if ground == "deep_water" then
     local map = self:get_map()
     local x, y, layer = self:get_position()

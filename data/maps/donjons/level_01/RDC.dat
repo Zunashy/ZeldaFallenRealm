@@ -11333,7 +11333,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_boss;music_dungeon1",
+      value = "open:door_boss;music:dungeon1",
     },
     {
       key = "no_reset",
@@ -11362,7 +11362,6 @@ enemy{
   },
   direction = 0,
   breed = "blue_slime",
-  savegame_variable = "test",
 }
 
 sensor{
@@ -11372,7 +11371,7 @@ sensor{
   properties = {
     {
       key = "activate_trigger",
-      value = "spawn_door_boss",
+      value = "spawn_door_boss;music:boss",
     },
   },
   width = 16,
@@ -12307,14 +12306,6 @@ pickable{
   x = 80,
   y = 645,
   treasure_name = "rupee",
-}
-
-enemy{
-  layer = 1,
-  x = 824,
-  y = 1293,
-  direction = 0,
-  breed = "ice_slime",
 }
 
 tile{
