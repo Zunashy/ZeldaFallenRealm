@@ -180,6 +180,7 @@ sprite{ id = "entities/block/fissured_block", description = "entities/block/fiss
 sprite{ id = "entities/block/ice_crystal", description = "entities/block/ice_crystal" }
 sprite{ id = "entities/block/key_block", description = "entities/block/key_block" }
 sprite{ id = "entities/chests/chest", description = "entities/chests/chest" }
+sprite{ id = "entities/destructible/cristal_pierre", description = "entities/destructible/cristal_pierre" }
 sprite{ id = "entities/door/boss_door", description = "entities/door/boss_door" }
 sprite{ id = "entities/door/door", description = "entities/door/door" }
 sprite{ id = "entities/door/door_key", description = "entities/door/door_key" }
