@@ -22,5 +22,5 @@ local function poisoned_water(entity, game, map)
 end
 
 return {
-    poisoned_water_ = poisoned_water
+    poisoned_water = poisoned_water
 }
