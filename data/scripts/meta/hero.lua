@@ -1,6 +1,6 @@
 -- Initialize hero behavior specific to this quest.
 
-local hero_speed = 128
+local hero_speed = 64
 
 local hero_meta = sol.main.get_metatable("hero")
 
@@ -95,11 +95,13 @@ local function initialize_hero_features(game)
     self:update_ladder()
 
     self.is_on_nonsolid_ground = false
+
   end
 
   function hero:start_jumping_oow(dir, dist)
     dir = (dir or 0) % 8
-    if not hero:get_map().is_side_view then
+    if not self.pObject then
+      sol.audio.play_sound("jump")
       hero:start_jumping(dir, dist)
       return true
     end
@@ -110,6 +112,7 @@ local function initialize_hero_features(game)
 
     if not self.pObject or not (self.pObject.on_ground) then return false end
 
+    sol.audio.play_sound("jump")
     self.pObject.speed = -2.5
   end
 
@@ -141,7 +144,7 @@ local function initialize_hero_features(game)
      local m = sol.movement.create("straight")
      m:set_speed(100)
      m:set_angle(hero_sprite:get_direction() * (math.pi / 2) + math.pi)
-     m:set_max_distance(3)
+     m:set_max_distance(4)
      m:start(self)
      --sol.audio.play_sound("sword_tapping")
     elseif s == "treasure" then

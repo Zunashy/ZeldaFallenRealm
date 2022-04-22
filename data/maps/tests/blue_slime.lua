@@ -37,5 +37,5 @@ function map:on_opening_transition_finished()
     --game.shaders.obscurity:set_uniform("obs_level", 1.3)
     --game.shaders.obscurity:set_uniform("n_lights", 1)
     --game.shaders.obscurity:set_uniform("light1", {72, 80, 40, 10})
-    print(require("scripts/feature/item_mixer").get_result("rock_feather", "bomb"))
+    --print(require("scripts/feature/item_mixer").get_result("rock_feather", "bomb"))
 end

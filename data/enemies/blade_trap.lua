@@ -35,6 +35,7 @@ function enemy:on_created()
   self.distance = self:get_property("distance") or 160
   self:set_invincible()
   self:set_damage(2)
+  self.explosion_immune = true
 end
 
 function enemy:check_hero()

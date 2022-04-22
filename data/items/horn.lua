@@ -39,7 +39,7 @@ function item:start_animation(effect)
   if not animation_started then
     local camera = game:get_map():get_camera()
     local x, y = camera:get_position_on_camera(hero:get_position())
-    vfx.shockwave(camera:get_surface(), x, y, 1, 5, 30, 0.4)
+    vfx.shockwave(camera:get_surface(), x, y, 1, 15, 90, 0.7) --speed, width, amplitude, refraction
     sol.audio.stop_music()
     sol.audio.play_sound("horn")
   end

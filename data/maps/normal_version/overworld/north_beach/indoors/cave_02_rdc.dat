@@ -712,52 +712,14 @@ enemy{
 
 destructible{
   layer = 0,
-  x = 56,
-  y = 109,
-  treasure_name = "random",
-  sprite = "entities/destructible/cristal_pierre",
-  destruction_sound = "destroy_rock",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 40,
-  y = 93,
-  treasure_name = "random",
-  sprite = "entities/destructible/cristal_pierre",
-  destruction_sound = "destroy_rock",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 88,
-  y = 93,
-  treasure_name = "random",
-  sprite = "entities/destructible/cristal_pierre",
-  destruction_sound = "destroy_rock",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 104,
-  y = 93,
-  treasure_name = "random",
-  sprite = "entities/destructible/cristal_pierre",
-  destruction_sound = "destroy_rock",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
   x = 136,
   y = 77,
   treasure_name = "random",
   sprite = "entities/destructible/cristal_pierre",
   destruction_sound = "destroy_rock",
+  weight = -1,
   can_be_cut = true,
+  ground = "low_wall",
 }
 
 destructible{
@@ -767,147 +729,9 @@ destructible{
   treasure_name = "random",
   sprite = "entities/destructible/cristal_pierre",
   destruction_sound = "destroy_rock",
+  weight = -1,
   can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 184,
-  y = 61,
-  treasure_name = "random",
-  sprite = "entities/destructible/cristal_pierre",
-  destruction_sound = "destroy_rock",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 184,
-  y = 29,
-  treasure_name = "random",
-  sprite = "entities/destructible/cristal_pierre",
-  destruction_sound = "destroy_rock",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 216,
-  y = 45,
-  treasure_name = "random",
-  sprite = "entities/destructible/cristal_pierre",
-  destruction_sound = "destroy_rock",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 248,
-  y = 61,
-  treasure_name = "random",
-  sprite = "entities/destructible/cristal_pierre",
-  destruction_sound = "destroy_rock",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 248,
-  y = 77,
-  treasure_name = "random",
-  sprite = "entities/destructible/cristal_pierre",
-  destruction_sound = "destroy_rock",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 296,
-  y = 77,
-  treasure_name = "random",
-  sprite = "entities/destructible/cristal_pierre",
-  destruction_sound = "destroy_rock",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 296,
-  y = 45,
-  treasure_name = "random",
-  sprite = "entities/destructible/cristal_pierre",
-  destruction_sound = "destroy_rock",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 280,
-  y = 45,
-  treasure_name = "random",
-  sprite = "entities/destructible/cristal_pierre",
-  destruction_sound = "destroy_rock",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 296,
-  y = 29,
-  treasure_name = "random",
-  sprite = "entities/destructible/cristal_pierre",
-  destruction_sound = "destroy_rock",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 56,
-  y = 61,
-  treasure_name = "random",
-  sprite = "entities/destructible/cristal_pierre",
-  destruction_sound = "destroy_rock",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 72,
-  y = 61,
-  treasure_name = "random",
-  sprite = "entities/destructible/cristal_pierre",
-  destruction_sound = "destroy_rock",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 72,
-  y = 29,
-  treasure_name = "random",
-  sprite = "entities/destructible/cristal_pierre",
-  destruction_sound = "destroy_rock",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 88,
-  y = 45,
-  treasure_name = "random",
-  sprite = "entities/destructible/cristal_pierre",
-  destruction_sound = "destroy_rock",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 104,
-  y = 29,
-  treasure_name = "random",
-  sprite = "entities/destructible/cristal_pierre",
-  destruction_sound = "destroy_rock",
-  can_be_cut = true,
+  ground = "low_wall",
 }
 
 destructible{
@@ -917,6 +741,224 @@ destructible{
   treasure_name = "random",
   sprite = "entities/destructible/cristal_pierre",
   destruction_sound = "destroy_rock",
+  weight = -1,
   can_be_cut = true,
+  ground = "low_wall",
+}
+
+destructible{
+  layer = 0,
+  x = 56,
+  y = 61,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  ground = "low_wall",
+}
+
+destructible{
+  layer = 0,
+  x = 72,
+  y = 61,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  ground = "low_wall",
+}
+
+destructible{
+  layer = 0,
+  x = 88,
+  y = 45,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  ground = "low_wall",
+}
+
+destructible{
+  layer = 0,
+  x = 72,
+  y = 29,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  ground = "low_wall",
+}
+
+destructible{
+  layer = 0,
+  x = 104,
+  y = 29,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  ground = "low_wall",
+}
+
+destructible{
+  layer = 0,
+  x = 40,
+  y = 93,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  ground = "low_wall",
+}
+
+destructible{
+  layer = 0,
+  x = 56,
+  y = 109,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  ground = "low_wall",
+}
+
+destructible{
+  layer = 0,
+  x = 88,
+  y = 93,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  ground = "low_wall",
+}
+
+destructible{
+  layer = 0,
+  x = 104,
+  y = 93,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  ground = "low_wall",
+}
+
+destructible{
+  layer = 0,
+  x = 184,
+  y = 29,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  ground = "low_wall",
+}
+
+destructible{
+  layer = 0,
+  x = 184,
+  y = 61,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  ground = "low_wall",
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 45,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  ground = "low_wall",
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 77,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  ground = "low_wall",
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 61,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  ground = "low_wall",
+}
+
+destructible{
+  layer = 0,
+  x = 280,
+  y = 45,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  ground = "low_wall",
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 45,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  ground = "low_wall",
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 29,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  ground = "low_wall",
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 77,
+  treasure_name = "random",
+  sprite = "entities/destructible/cristal_pierre",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  ground = "low_wall",
 }
 
