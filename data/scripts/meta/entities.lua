@@ -162,9 +162,21 @@ function enemy_meta:on_removed()
 end
 
 local dest_meta = sol.main.get_metatable("destructible")
+function dest_meta:on_created()
+  local prop = self:get_property("savegame_variable")
+  if prop and self:get_game():get_value(prop) then
+    self:remove()
+  end
+end
+
+dest_meta.flammable_sprites = {
+  tree = true,
+  grass = true
+}
+
 function dest_meta:is_flammable()
   local sprite_name = self:get_sprite():get_animation_set()
-  return name == "tree" or name == "grass"
+  return flammable_sprites[sprite_name]
 end
 
 function dest_meta:on_destroyed()
@@ -172,6 +184,11 @@ function dest_meta:on_destroyed()
   if prop then
     self:get_game():set_value(prop, true)
   end
+end
+
+function dest_meta:hit_with_explosion()
+  self:on_exploded()
+  self:remove()
 end
 
 function dest_meta:on_exploded()
@@ -191,13 +208,6 @@ function dest_meta:on_exploded()
     end)
   end
   self:on_destroyed()
-end
-
-function dest_meta:on_created()
-  local prop = self:get_property("savegame_variable")
-  if prop and self:get_game():get_value(prop) then
-    self:remove()
-  end
 end
 
 function dest_meta:on_cut()

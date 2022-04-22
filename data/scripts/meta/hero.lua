@@ -95,6 +95,7 @@ local function initialize_hero_features(game)
     self:update_ladder()
 
     self.is_on_nonsolid_ground = false
+
   end
 
   function hero:start_jumping_oow(dir, dist)
@@ -143,7 +144,7 @@ local function initialize_hero_features(game)
      local m = sol.movement.create("straight")
      m:set_speed(100)
      m:set_angle(hero_sprite:get_direction() * (math.pi / 2) + math.pi)
-     m:set_max_distance(3)
+     m:set_max_distance(4)
      m:start(self)
      --sol.audio.play_sound("sword_tapping")
     elseif s == "treasure" then

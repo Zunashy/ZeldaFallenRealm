@@ -44,7 +44,6 @@ function entity:on_created()
     self:set_modified_ground("low_wall")
     self:set_can_traverse_ground("hole", false)
 
-
     self.is_colored_block = true
     self:set_colors_state({top = "red", right = "yellow", up = "blue"})
     self:add_collision_test("overlapping", collision_callback)

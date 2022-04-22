@@ -10,11 +10,13 @@ local explosion_soon
 
 local damage = 2
 
+local function noeffect() end
+
 local explosion_effects = {
-    enemy = true,
-    destructible = true,
-    hero = true,
-    custom_entity = true
+    enemy = noeffect,
+    destructible = noeffect,
+    hero = noeffect,
+    custom_entity = noeffect
 }
 
 do 
@@ -103,18 +105,19 @@ function bomb:BOOM()
 end
 
 function bomb:hit_enemy(enemy)
-    enemy:hurt(damage)
-    local kb = sol.movement.create("straight")
-    kb:set_speed(160)
-    kb:set_max_distance(16)
-    kb:set_angle(self:get_angle(enemy))
-    kb:start(enemy)
+    if not enemy.explosion_immune then
+        enemy:hurt(damage)
+        local kb = sol.movement.create("straight")
+        kb:set_speed(160)
+        kb:set_max_distance(16)
+        kb:set_angle(self:get_angle(enemy))
+        kb:start(enemy)
+    end
 end
 explosion_effects.enemy = bomb.hit_enemy
 
 function bomb:hit_destructible(destructible)
-    destructible:on_exploded()
-    destructible:remove()
+    destructible:hit_with_explosion()
 end
 explosion_effects.destructible = bomb.hit_destructible
 

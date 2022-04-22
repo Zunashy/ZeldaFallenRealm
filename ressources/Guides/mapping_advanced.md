@@ -60,7 +60,9 @@ L'item spécifié ne sera drop que lorsque tous les enemis avec la propriété `
   
 - **Blocs activables** : donner la propriété `activate_when_moved` à un bloc fera qu'il sera considéré comme activé quand Link le déplacera. Il restera alors toujours activé, sauf s'il est réinitialisé (par un séparateur par exemple, voir plus haut). *S'active via la fonction `map:init_activatables()`*          
 
-- **[destructible](mapping.md#Destructible)** : Donner à un [destructible](mapping.md#Destructible) la proprété custom `savegame_variable : <variable>` fait que le destructible est détruit définitivement : l'état (détruit ou non) du destructible sera sauvegardé dans la variable nommée. (plus précisément, détruire le destructible cahngera la valeur de cette variable, et il ne sera spawn au chargement de sa map que si la variable en question n'existe pas encore).
+- **[Destructible](mapping.md#Destructible)** : 
+  - Donner à un [destructible](mapping.md#Destructible) la proprété custom `savegame_variable : <variable>` fait que le destructible est détruit définitivement : l'état (détruit ou non) du destructible sera sauvegardé dans la variable nommée. (plus précisément, détruire le destructible cahngera la valeur de cette variable, et il ne sera spawn au chargement de sa map que si la variable en question n'existe pas encore).
+  - Donner à un destructible le sprite `grass` ou `tree`
 
 - **Entités liées au scénario** : dans Fallen Realm, l'avancement de la quête est représenté par une valeur numérique appelée story state (qui est techniquement, une simple variable de sauvegarde. Vous trouverez une liste des significations des différents story states dans les messages pin du channel #code du discord.)  
 	- La propriété `min_story_state : n` fera qu'une entité n'apparaît que si le story state est de n au moins.  
