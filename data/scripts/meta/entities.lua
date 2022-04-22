@@ -179,6 +179,11 @@ function dest_meta:is_flammable()
   return flammable_sprites[sprite_name]
 end
 
+local function is_flammable(entity)
+  local sprite = entity:get_sprite():get_animation_set()
+  return (sprite:starts("entities/vegetation/grass/grass")) or (sprite == "entities/vegetation/arbuste") or (sprite == "entities/vegetation/grass_door")
+end
+
 function dest_meta:on_destroyed()
   local prop = self:get_property("savegame_variable")
   if prop then
