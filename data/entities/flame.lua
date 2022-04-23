@@ -48,7 +48,7 @@ function entity:on_created()
   self.x, self.y = self:get_position()
   
   for e in map:get_entities_by_type("destructible") do
-    if e:overlaps(self) and is_flammable(e) then
+    if e:overlaps(self) and e:is_flammable() then
       e:get_sprite():set_animation("burning")
       sol.timer.start(e, 2000, function()
         e:on_destroyed()

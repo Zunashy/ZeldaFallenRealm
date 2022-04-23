@@ -5,7 +5,7 @@ local visualizer = {
 }
 
 function visualizer:set_position(x, y, w, h)
-    self.box = {x, y, w, h}
+    self.box = {x, y, w or 1, h or 1}
 end
 
 local function on_draw(shader, game)

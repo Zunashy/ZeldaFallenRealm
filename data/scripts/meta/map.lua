@@ -91,6 +91,11 @@ function map_meta:call_hero_state_callback(old, new)
     end
 end
 
+function map_meta:get_entities_at_pos(x, y)
+    print("Sword tapping")
+    return self:get_entities_in_rectangle(x, y, 1, 1)
+end
+
 local function generic_start_callback(map)
     local special_tiles = require("scripts/feature/special_tiles")
     local prop

@@ -169,18 +169,8 @@ function dest_meta:on_created()
   end
 end
 
-dest_meta.flammable_sprites = {
-  tree = true,
-  grass = true
-}
-
 function dest_meta:is_flammable()
-  local sprite_name = self:get_sprite():get_animation_set()
-  return flammable_sprites[sprite_name]
-end
-
-local function is_flammable(entity)
-  local sprite = entity:get_sprite():get_animation_set()
+  local sprite = self:get_sprite():get_animation_set()
   return (sprite:starts("entities/vegetation/grass/grass")) or (sprite == "entities/vegetation/arbuste") or (sprite == "entities/vegetation/grass_door")
 end
 
@@ -188,6 +178,17 @@ function dest_meta:on_destroyed()
   local prop = self:get_property("savegame_variable")
   if prop then
     self:get_game():set_value(prop, true)
+  end
+end
+
+function dest_meta:cut()
+  self:on_cut()
+  self:remove()
+end
+
+function dest_meta:attempt_cut()
+  if self:get_can_be_cut() then
+    self:cut()
   end
 end
 
