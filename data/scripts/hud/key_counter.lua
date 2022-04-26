@@ -1,5 +1,7 @@
 local key_icon = sol.surface.create("hud/small_key_icon.png")
 local boss_key_icon = sol.surface.create("hud/boss_key_icon.png")
+local key_icon_grey = sol.surface.create("hud/small_key_icon_grey.png")
+local boss_key_icon_grey = sol.surface.create("hud/boss_key_icon_grey.png")
 
 local keys_builder = {}
 
@@ -18,12 +20,16 @@ function keys_builder:new(game, config)
     })
 
     function menu:on_draw(dst_surface)
-        if current_count > -1 then
+        if current_count > 0 then
             key_icon:draw(dst_surface, config.x, config.y)
             counter_surface:draw(dst_surface, config.x + 10, config.y)
+        else
+            key_icon_grey:draw(dst_surface, config.x, config.y)
         end
         if has_boss_key then
             boss_key_icon:draw(dst_surface, config.x, config.y + 8)
+        else 
+            boss_key_icon_grey:draw(dst_surface, config.x, config.y + 8)
         end
     end
 
