@@ -319,8 +319,7 @@ pickable{
   layer = 1,
   x = 216,
   y = 253,
-  treasure_name = "rock_feather",
-  treasure_variant = 2,
+  treasure_name = "fire_seed",
 }
 
 enemy{
@@ -748,6 +747,13 @@ door{
   opening_method = "interaction_if_item",
   opening_condition = "great_key",
   opening_condition_consumed = true,
+}
+
+pickable{
+  layer = 1,
+  x = 248,
+  y = 269,
+  treasure_name = "small_key",
 }
 
 tile{
