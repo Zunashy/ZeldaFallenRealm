@@ -199,6 +199,13 @@ Pour des raisons scénaristiques, il serait préférable que Link utilise la cor
 }
 
 dialog{
+  id = "other.poor",
+  text = [[
+Malheureusement tu es pauvre. 
+]],
+}
+
+dialog{
   id = "pnj.end",
   text = [[
 Merci à toi d'avoir joué jusqu'ici ! C'est ici que s'achève la partie terminée, ce qui suit est encore en développement.

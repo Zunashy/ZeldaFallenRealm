@@ -63,6 +63,7 @@ function sep_meta:on_activated()
    and ground ~= "empty"
    and not hero.is_on_nonsolid_ground)
   then 
+    print("save_solid")
     hero:save_solid_ground()
   else
     hero.need_solid_ground = true

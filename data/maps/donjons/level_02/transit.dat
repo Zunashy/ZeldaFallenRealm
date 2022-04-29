@@ -836,14 +836,57 @@ tile{
   pattern = "67",
 }
 
+destination{
+  name = "from_donjon",
+  layer = 0,
+  x = 80,
+  y = 53,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 72,
+  y = 32,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_02/rdc",
+  destination = "entrance",
+}
+
 destructible{
   layer = 0,
   x = 80,
   y = 45,
+  properties = {
+    {
+      key = "savegame_variable",
+      value = "dungeon_2_transit_porte_liane",
+    },
+  },
   sprite = "entities/vegetation/grass_door",
+  destruction_sound = "bossexplode",
   weight = -1,
   can_be_cut = true,
   damage_on_enemies = 0,
+}
+
+destination{
+  name = "from_village",
+  layer = 0,
+  x = 80,
+  y = 245,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 72,
+  y = 240,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/overworld/deep_forest/outdoors_2",
+  destination = "level2_to_village",
 }
 
 tile{
@@ -853,5 +896,25 @@ tile{
   width = 16,
   height = 8,
   pattern = "69",
+}
+
+custom_entity{
+  layer = 1,
+  x = 64,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+
+custom_entity{
+  layer = 1,
+  x = 96,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "dungeon_statue_eye",
 }
 

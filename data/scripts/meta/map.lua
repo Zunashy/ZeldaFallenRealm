@@ -119,6 +119,7 @@ local function generic_start_callback(map)
         end 
         prop = e:get_property("y_order")
         if prop then
+            print("y order")
             e:set_drawn_in_y_order(true)
         end
 

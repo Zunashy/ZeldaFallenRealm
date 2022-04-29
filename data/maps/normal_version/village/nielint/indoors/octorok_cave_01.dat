@@ -2340,6 +2340,10 @@ sensor{
       key = "savegame_variable",
       value = "octo_cave_ring",
     },
+    {
+      key = "persistent",
+      value = "1",
+    },
   },
   width = 16,
   height = 16,
@@ -2502,7 +2506,7 @@ custom_entity{
     },
     {
       key = "on_obtained",
-      value = "teleport:normal_version/village/nielint/outdoors:octorock$fade",
+      value = "teleport:normal_version/village/nielint/outdoors#octorock$fade",
     },
     {
       key = "savegame_variable",

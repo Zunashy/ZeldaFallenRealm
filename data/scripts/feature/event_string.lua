@@ -54,7 +54,6 @@ local function trigger_event(map, event)
     end
 end
 ]]------
-
 local effects = {}
 
 function effects.spawn(map, arg)
