@@ -28,7 +28,7 @@ function map:on_started()
   local zuna = self:get_entity("zuna")
   if game:get_story_state() == 9 then
     map:get_entity("sensor_1").on_activated = function()
-      if  game:get_item("fire_seed"):get_variant() == 0 then
+      if game:get_item("fire_seed"):get_variant() == 0 then
         map:get_hero():freeze()
         game:set_story_state(10)
         mg.move_straight(zuna, 3, nil, 64, function()

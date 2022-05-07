@@ -46,7 +46,10 @@ function entity:on_post_draw()
 end
 
 function entity:on_interaction()
-  if game:get_money() < self.price or self.disrupted then return end
+  if game:get_money() < self.price or self.disrupted then 
+    game:start_dialog("other.poor")
+    return 
+  end
   game:get_hero():start_treasure(self.item_name, self.variant)
   game:remove_money(self.price)
   if self.save_var then

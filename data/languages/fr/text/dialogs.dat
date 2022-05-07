@@ -12,13 +12,6 @@ Vous obtenez le bracelet de force ! Cet accessoire vous permettant de déplacer 
 }
 
 dialog{
-  id = "_treasure.hammer.1",
-  text = [[
-Vous obtenez le marteau ! Vous pouvez maintenant casser les blocs de glace et écraser vos ennemis !
-]],
-}
-
-dialog{
   id = "_treasure.essence.1",
   text = [[
 Vous obtenez ... un objet mystérieux ?
@@ -35,7 +28,7 @@ Vous obtenez ... un autre objet mystérieux ?
 dialog{
   id = "_treasure.fire_seed.1",
   text = [[
-Vous obtenez les graines de feu ! Assignez-les à "k" ou "o" pour les utiliser, et déchaînez vos passions de pyromane !
+Vous obtenez les $rgraines de feu$o ! Assignez-les à "k" ou "o" pour les utiliser, et déchaînez vos passions de pyromane !
 ]],
 }
 
@@ -50,6 +43,13 @@ dialog{
   id = "_treasure.great_key.2",
   text = [[
 Vous avez trouvé la Clé du Donjon ! Elle permet d'ouvrir la porte du donjon.
+]],
+}
+
+dialog{
+  id = "_treasure.hammer.1",
+  text = [[
+Vous obtenez le marteau ! Vous pouvez maintenant casser les blocs de glace et écraser vos ennemis !
 ]],
 }
 
@@ -176,7 +176,6 @@ Pour comprendre la profondeur il faut savoir chuter.
 ]],
 }
 
-
 dialog{
   id = "item.horn",
   choice = "1",
@@ -196,6 +195,13 @@ dialog{
   id = "item.horn.svp",
   text = [[
 Pour des raisons scénaristiques, il serait préférable que Link utilise la corne 
+]],
+}
+
+dialog{
+  id = "other.poor",
+  text = [[
+Malheureusement tu es pauvre. 
 ]],
 }
 

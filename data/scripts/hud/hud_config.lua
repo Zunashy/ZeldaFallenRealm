@@ -27,7 +27,7 @@ local hud_config = {
   -- Rupee counter.
   {
     menu_script = "scripts/hud/rupees",
-    x = 70,
+    x = 78,
     y = 1,
   },
 
@@ -49,8 +49,8 @@ local hud_config = {
     
   {
     menu_script = "scripts/hud/key_counter",
-    x = 0,
-    y = 17
+    x = 56,
+    y = 1
   }
 
   -- You can add more HUD elements here.

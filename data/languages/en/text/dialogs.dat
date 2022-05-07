@@ -1,4 +1,11 @@
 dialog{
+  id = "_treasure.bracelet.1",
+  text = [[
+You got the Power Bracelet ! With this on your wrist, you can lift heavy objects ! And you don't even need to equip it !
+]],
+}
+
+dialog{
   id = "_treasure.rock_feather.1",
   text = [[
 Vous avez trouvé la plume de roc.

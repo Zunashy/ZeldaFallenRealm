@@ -103,8 +103,8 @@ function enemy:start_attack()
 end
 
 local function destroy_rock(rock)
+  rock:set_can_traverse_ground("wall", true)
   rock:get_sprite():set_animation("destroy", function()
-    rock:set_modified_ground("traversable")
     rock:remove()
   end)
 end
@@ -127,8 +127,11 @@ local function init_rock(rock, movement_angle, distance)
   m:set_speed(rock_speed)
   m:set_angle(movement_angle)
   m:set_max_distance(distance)
+  m:set_smooth(false)
 
   function m:on_obstacle_reached()
+    print("obstacle")
+    m:stop()
     rock:destroy()
   end
 
