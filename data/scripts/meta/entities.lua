@@ -13,9 +13,11 @@ function block_meta:on_removed()
       width = 16,
       height = 16,
     })
-    entity:get_sprite():set_animation("falling", function()
+    local sprite = entity:get_sprite()
+    sprite:set_animation("falling", function()
       entity:remove()
     end)
+    sprite:set_direction((2 + self:get_direction4_to(self:get_map():get_hero())) % 4)
   end
 end
 

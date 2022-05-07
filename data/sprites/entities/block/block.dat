@@ -7,9 +7,12 @@ animation{
 }
 animation{
   name = "falling",
-  src_image = "entities/block/block_fall.png",
+  src_image = "tileset",
   frame_delay = 400,
   directions = {
-    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3, num_columns = 1 },
+    { x = 240, y = 128, frame_width = 24, frame_height = 24, origin_x = 16, origin_y = 16, num_frames = 3, num_columns = 1 },
+    { x = 216, y = 208, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 16, num_frames = 3 },
+    { x = 216, y = 128, frame_width = 24, frame_height = 24, origin_x = 16, origin_y = 16, num_frames = 3, num_columns = 1 },
+    { x = 216, y = 232, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 16, num_frames = 3 },
   },
 }
