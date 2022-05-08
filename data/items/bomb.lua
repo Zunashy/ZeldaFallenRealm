@@ -97,7 +97,6 @@ end
 --Goes from "the hero is holding the bomb" to "the bomb and the hero exist independently"
 function item.state:drop_bomb(hero)
   local hero = self:get_entity()
-  hero:unfreeze()
   return self:create_bomb(hero, hero:get_direction())
 end
 

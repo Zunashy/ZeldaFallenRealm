@@ -11,8 +11,16 @@ animation{
   frame_delay = 400,
   directions = {
     { x = 240, y = 128, frame_width = 24, frame_height = 24, origin_x = 16, origin_y = 16, num_frames = 3, num_columns = 1 },
-    { x = 216, y = 208, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 16, num_frames = 3 },
+    { x = 216, y = 200, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 20, num_frames = 2 },
     { x = 216, y = 128, frame_width = 24, frame_height = 24, origin_x = 16, origin_y = 16, num_frames = 3, num_columns = 1 },
-    { x = 216, y = 232, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 16, num_frames = 3 },
+    { x = 248, y = 200, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 14, num_frames = 2 },
+  },
+}
+animation{
+  name = "falling_vertical",
+  src_image = "tileset",
+  frame_delay = 400,
+  directions = {
+    { x = 264, y = 128, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3, num_columns = 1 },
   },
 }

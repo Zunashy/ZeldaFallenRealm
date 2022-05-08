@@ -38,7 +38,7 @@ tile{
 tile{
   layer = 0,
   x = 96,
-  y = 112,
+  y = 120,
   width = 16,
   height = 16,
   pattern = "238_4",
@@ -65,7 +65,7 @@ tile{
 tile{
   layer = 0,
   x = 96,
-  y = 96,
+  y = 104,
   width = 32,
   height = 16,
   pattern = "238_4",
@@ -132,7 +132,16 @@ teletransporter{
 block{
   layer = 0,
   x = 120,
-  y = 125,
+  y = 133,
+  sprite = "entities/block/block",
+  pushable = true,
+  pullable = false,
+}
+
+block{
+  layer = 0,
+  x = 120,
+  y = 101,
   sprite = "entities/block/block",
   pushable = true,
   pullable = false,

@@ -318,7 +318,7 @@ chest{
 pickable{
   layer = 1,
   x = 264,
-  y = 213,
+  y = 205,
   treasure_name = "fire_seed",
 }
 
@@ -751,8 +751,8 @@ door{
 
 pickable{
   layer = 1,
-  x = 280,
-  y = 189,
+  x = 136,
+  y = 197,
   treasure_name = "small_key",
 }
 

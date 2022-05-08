@@ -15,9 +15,25 @@ function block_meta:on_removed()
     })
     local sprite = entity:get_sprite()
     sprite:set_animation("falling", function()
-      entity:remove()
+      local x, y, layer = entity:get_position()
+      local direction = sprite:get_direction()
+      if direction == 0 then
+        x = x + 8
+      elseif direction == 1 then
+        y = y - 4
+      elseif direction == 2 then
+        x = x - 8
+      elseif direction == 3 then
+        y = y + 12
+      end
+      entity:set_position(x, y, layer)
+      entity:set_modified_ground("empty")
+      sprite:set_animation("falling_vertical", function()
+        entity:remove()
+      end)
     end)
     sprite:set_direction((2 + self:get_direction4_to(self:get_map():get_hero())) % 4)
+    entity:set_modified_ground("wall")
   end
 end
 
