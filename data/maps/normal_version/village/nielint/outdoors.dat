@@ -7972,6 +7972,7 @@ destructible{
     },
   },
   sprite = "entities/vegetation/arbuste",
+  weight = -1,
 }
 
 npc{
