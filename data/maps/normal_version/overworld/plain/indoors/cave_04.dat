@@ -1143,15 +1143,6 @@ tile{
   pattern = "240",
 }
 
-tile{
-  layer = 0,
-  x = 16,
-  y = -16,
-  width = 128,
-  height = 16,
-  pattern = "297_4",
-}
-
 enemy{
   layer = 0,
   x = 248,
