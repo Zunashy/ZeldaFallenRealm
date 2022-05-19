@@ -11049,7 +11049,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn:chest_feather;open:door_miniboss;music:dungeon1;spawn:teleport;spawn:teleport_2",
+      value = "spawn:chest_feather;open:door_miniboss;music:reset;spawn:teleport;spawn:teleport_2",
     },
     {
       key = "no_reset",
