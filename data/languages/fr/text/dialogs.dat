@@ -834,26 +834,24 @@ nous sommes en guerre.
 }
 
 dialog{
-  id = "test.sans",
+  id = "test.snas",
   choice = "1",
   next_dialog = "test.sans2",
   next_dialog_2 = "test.sans3",
   text = [[
-test
-lol
-il me fallait une 3ème ligne
+ÏïÎîËëÊêÈèÉéÂâÀàÔôÇçÙùÛûÜü
 ]],
 }
 
 dialog{
-  id = "test.sans2",
+  id = "test.snas2",
   text = [[
 woah ça marche incroyab
 ]],
 }
 
 dialog{
-  id = "test.sans3",
+  id = "test.snas3",
   choice = "1",
   text = [[
 darude sandstorm
@@ -861,7 +859,7 @@ darude sandstorm
 }
 
 dialog{
-  id = "test.sans4",
+  id = "test.snas4",
   next_dialog = "test.sans5",
   text = [[
 test lol
@@ -869,7 +867,7 @@ test lol
 }
 
 dialog{
-  id = "test.sans5",
+  id = "test.snas5",
   illustrate_item = "essence",
   text = [[
 ça marche wouhouuuu

@@ -100,7 +100,7 @@ function dash:dEnd()
     enemy:shake(sprite:get_direction())
     sol.timer.start(enemy, 500, function()
       
-      enemy:set_attacks_state("ignored")
+      --enemy:set_attacks_state("ignored")
       enemy.on_attacking_hero = back_movement_hit_callback
 
       back_movement:set_target(dash.xs, dash.ys)
@@ -131,24 +131,35 @@ function enemy:on_created()
 
   enemy.step_len = enemy:get_property("step_length") or 16
 
+  enemy:set_attack_consequence("sword", function(...)
+    local angle_to_hero = enemy:get_angle(hero)
+    local angle_face = sprite:get_direction() * (math.pi / 2)
+    if math.abs(angle_to_hero - angle_face) > (math.pi * 0.4) then
+      enemy:hurt(1)
+    else 
+      sol.audio.play_sound("sword_tapping")
+    end 
+  end)
+
+end
+
+function enemy:on_update()
+  local angle_to_hero = enemy:get_angle(hero)
+  local angle_face = sprite:get_direction() * (math.pi / 2)
+  if math.abs(angle_to_hero - angle_face) > (math.pi * 0.4) then
+    print("YEA")
+  else 
+    print("NAY")
+  end 
 end
 
 -- Event called when the enemy should start or restart its movements.
 -- This is called for example after the enemy is created or after
 -- it was hurt or immobilized.
 function enemy:on_restarted()
-  enemy:set_attacks_state(1) 
+  --enemy:set_attacks_state(1) 
   enemy.on_attacking_hero = basic_hit_callback
-  sol.timer.start(enemy, 100, function()
-    local back = (enemy:get_sprite():get_direction() + 2) % 4
-    for i = 0,3 do
-      if enemy:cone_detect(hero, detect_distance, i, detect_angle) and not (i == back) then
-        enemy:dash(i)
-        return false
-      end   
-    end
-    return true
-  end)
+  
 end
 
 function enemy:shake(dir)
@@ -193,7 +204,7 @@ function enemy:dash(d)
   enemy.dash_state = 0
   sol.timer.start(self, 400, 
     function()    
-      enemy:set_attacks_state("protected")
+      --enemy:set_attacks_state("protected")
       dash.xs, dash.ys = enemy:get_position()
       dash.enemy = enemy      
       dash:set_speed(dash_speed)
@@ -204,4 +215,8 @@ function enemy:dash(d)
       dash:start(enemy)
     end
   )
+end
+
+function enemy:on_hurt()
+
 end

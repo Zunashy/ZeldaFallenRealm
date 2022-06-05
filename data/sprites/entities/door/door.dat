@@ -11,11 +11,11 @@ animation{
 animation{
   name = "opening",
   src_image = "tileset",
-  frame_delay = 150,
+  frame_delay = 80,
   directions = {
-    { x = 32, y = 16, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 2 },
-    { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 2 },
-    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 2 },
-    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 2 },
+    { x = 304, y = 16, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 4 },
+    { x = 304, y = 32, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 4 },
+    { x = 304, y = 48, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 4 },
+    { x = 304, y = 0, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 4 },
   },
 }
