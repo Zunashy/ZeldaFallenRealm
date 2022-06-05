@@ -1,6 +1,6 @@
 -- Initialize hero behavior specific to this quest.
 
-local hero_speed = 128
+local hero_speed = 64
 
 local hero_meta = sol.main.get_metatable("hero")
 

@@ -208,6 +208,13 @@ assez d'argent...
 }
 
 dialog{
+  id = "other.tip_blue_slime",
+  text = [[
+Nous n'avons pas eu le temps de rendre cet ennemi intuitif visuellement du coup : vous ne pouvez pas le taper par devant
+]],
+}
+
+dialog{
   id = "pnj.end",
   text = [[
 Merci à toi d'avoir joué jusqu'ici ! C'est ici que s'achève la partie terminée, ce qui suit est encore en développement.

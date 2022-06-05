@@ -132,7 +132,7 @@ function effects.function_(map, arg)
   local fname, args = arg:xfields("$")
 
   if type(map[fname]) == "function" then 
-    map[fname](map, args:xfields(","))
+    map[fname](map, args and args:xfields(","))
   end
 end
 effects.call = effects.function_

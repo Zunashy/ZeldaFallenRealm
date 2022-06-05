@@ -12308,6 +12308,24 @@ pickable{
   treasure_name = "rupee",
 }
 
+sensor{
+  layer = 1,
+  x = 1216,
+  y = 621,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "function:tip_blue_slime",
+    },
+    {
+      key = "savegame_variable",
+      value = "blue_slime_tip",
+    },
+  },
+  width = 16,
+  height = 16,
+}
+
 tile{
   layer = 2,
   x = 832,

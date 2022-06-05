@@ -21,3 +21,7 @@ end
 function map:on_opening_transition_finished()
 
 end
+
+function map:tip_blue_slime()
+  game:start_dialog("other.tip_blue_slime")
+end
