@@ -47,7 +47,7 @@ end
 
 function entity:on_interaction()
   if game:get_money() < self.price or self.disrupted then 
-    game:start_dialog("other.poor")
+    game:start_dialog("pnj.village.nielint.indoors.shop_clerk_error")
     return 
   end
   game:get_hero():start_treasure(self.item_name, self.variant)

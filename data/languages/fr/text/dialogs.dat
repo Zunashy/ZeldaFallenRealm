@@ -201,7 +201,9 @@ Pour des raisons scénaristiques, il serait préférable que Link utilise la cor
 dialog{
   id = "other.poor",
   text = [[
-Malheureusement tu es pauvre. 
+Hum... Il semblerait
+que tu n'aies pas
+assez d'argent...
 ]],
 }
 
@@ -754,6 +756,13 @@ dialog{
   id = "pnj.village.nielint.indoors.shop_clerk",
   text = [[
 Bonjour, voyageur ! Malheureusement nous n'avons rien à vendre pour le moment. Peut être dans une prochaine version !
+]],
+}
+
+dialog{
+  id = "pnj.village.nielint.indoors.shop_clerk_error",
+  text = [[
+Hum... Il semblerait que tu n'aies pas assez d'argent...
 ]],
 }
 
