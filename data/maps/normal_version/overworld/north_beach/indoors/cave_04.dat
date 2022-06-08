@@ -3994,7 +3994,7 @@ enemy{
     },
     {
       key = "death_trigger",
-      value = "spawn:key",
+      value = "spawn:key;spawn:tp_entree",
     },
   },
   direction = 3,
@@ -4138,7 +4138,7 @@ enemy{
     },
     {
       key = "death_trigger",
-      value = "spawn:key",
+      value = "spawn:key;spawn:tp_entree",
     },
   },
   direction = 3,
@@ -4158,7 +4158,7 @@ enemy{
     },
     {
       key = "death_trigger",
-      value = "spawn:key",
+      value = "spawn:key;spawn:tp_entree",
     },
   },
   direction = 3,
@@ -4292,6 +4292,27 @@ dynamic_tile{
   width = 16,
   height = 16,
   pattern = "178",
+}
+
+teletransporter{
+  name = "tp_entree",
+  layer = 0,
+  x = 576,
+  y = 144,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/overworld/north_beach/indoors/cave_04",
+  destination = "destinatio_tp",
+  sprite = "entities/dungeon_elements/teleport",
+}
+
+destination{
+  name = "destinatio_tp",
+  layer = 0,
+  x = 120,
+  y = 477,
+  direction = 1,
 }
 
 tile{

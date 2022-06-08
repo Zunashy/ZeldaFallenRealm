@@ -10,7 +10,7 @@ animation{
   src_image = "tileset",
   frame_delay = 400,
   directions = {
-    { x = 240, y = 128, frame_width = 24, frame_height = 24, origin_x = 16, origin_y = 16, num_frames = 3, num_columns = 1 },
+    { x = 240, y = 128, frame_width = 24, frame_height = 24, origin_x = 8, origin_y = 16, num_frames = 3, num_columns = 1 },
     { x = 216, y = 200, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 20, num_frames = 2 },
     { x = 216, y = 128, frame_width = 24, frame_height = 24, origin_x = 16, origin_y = 16, num_frames = 3, num_columns = 1 },
     { x = 248, y = 200, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 14, num_frames = 2 },

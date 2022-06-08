@@ -159,7 +159,16 @@ end
 function enemy:on_restarted()
   --enemy:set_attacks_state(1) 
   enemy.on_attacking_hero = basic_hit_callback
-  
+  sol.timer.start(enemy, 100, function()
+    local back = (enemy:get_sprite():get_direction() + 2) % 4
+    for i = 0,3 do
+      if enemy:cone_detect(hero, detect_distance, i, detect_angle) and not (i == back) then
+        enemy:dash(i)
+        return false
+      end   
+    end
+    return true
+  end)
 end
 
 function enemy:shake(dir)
@@ -215,8 +224,4 @@ function enemy:dash(d)
       dash:start(enemy)
     end
   )
-end
-
-function enemy:on_hurt()
-
 end
