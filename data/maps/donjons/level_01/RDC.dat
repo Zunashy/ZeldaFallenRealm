@@ -11400,7 +11400,7 @@ sensor{
   properties = {
     {
       key = "activate_trigger",
-      value = "spawn_door_boss;music:boss",
+      value = "spawn:door_boss;music:boss",
     },
     {
       key = "savegame_variable",
