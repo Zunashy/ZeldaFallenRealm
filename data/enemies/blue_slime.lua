@@ -143,16 +143,6 @@ function enemy:on_created()
 
 end
 
-function enemy:on_update()
-  local angle_to_hero = enemy:get_angle(hero)
-  local angle_face = sprite:get_direction() * (math.pi / 2)
-  if math.abs(angle_to_hero - angle_face) > (math.pi * 0.4) then
-    print("YEA")
-  else 
-    print("NAY")
-  end 
-end
-
 -- Event called when the enemy should start or restart its movements.
 -- This is called for example after the enemy is created or after
 -- it was hurt or immobilized.

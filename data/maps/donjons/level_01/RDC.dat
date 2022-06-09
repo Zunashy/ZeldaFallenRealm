@@ -10169,6 +10169,35 @@ tile{
   pattern = "30",
 }
 
+tile{
+  layer = 1,
+  x = 592,
+  y = 1136,
+  width = 128,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 1056,
+  width = 16,
+  height = 176,
+  pattern = "2",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 1136,
+  width = 16,
+  height = 16,
+  pattern = "4",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
 block{
   layer = 1,
   x = 792,
@@ -11333,7 +11362,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "open:door_boss;music:dungeon1",
+      value = "open:door_boss;music:dungeon1_",
     },
     {
       key = "no_reset",
@@ -11373,17 +11402,20 @@ sensor{
       key = "activate_trigger",
       value = "spawn_door_boss;music:boss",
     },
+    {
+      key = "savegame_variable",
+      value = "dungeon_1_boss",
+    },
   },
   width = 16,
   height = 16,
 }
 
 door{
-  name = "door_boss_1",
+  name = "door_boss",
   layer = 1,
   x = 832,
   y = 176,
-  enabled_at_start = false,
   direction = 3,
   sprite = "entities/door/door",
   savegame_variable = "dungeon_1_door_boss",
@@ -11422,7 +11454,7 @@ sensor{
   properties = {
     {
       key = "activate_trigger",
-      value = "setrespawn_checkpoint",
+      value = "setrespawn:checkpoint",
     },
   },
   width = 16,
