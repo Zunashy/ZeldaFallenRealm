@@ -750,6 +750,14 @@ enemy{
   breed = "moblin_sword",
 }
 
+enemy{
+  layer = 1,
+  x = 336,
+  y = 365,
+  direction = 0,
+  breed = "mini_boss/mr_pers",
+}
+
 tile{
   layer = 2,
   x = 128,
