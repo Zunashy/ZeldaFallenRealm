@@ -22,7 +22,7 @@ local credits_menu = {
         "    Phoenix",
         "    Nillan",
         "Special Thanks",
-        "    Sani      "
+        "    Sani      ",
         "    Anarith",
         "    Pure Zelda-",
         "    Classic",

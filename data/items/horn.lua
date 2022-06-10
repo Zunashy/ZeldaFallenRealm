@@ -37,9 +37,7 @@ function item:start_animation(effect)
   hero:get_sprite():set_animation("horn")
 
   if not animation_started then
-    local camera = game:get_map():get_camera()
-    local x, y = camera:get_position_on_camera(hero:get_position())
-    vfx.shockwave(camera:get_surface(), x, y, 1, 15, 90, 0.7) --speed, width, amplitude, refraction
+    self:start_shockwave(hero)
     sol.audio.stop_music()
     sol.audio.play_sound("horn")
   end
@@ -53,8 +51,13 @@ function item:start_animation(effect)
   animation_started = true
 end
 
-function item:enable_entities()
-  local found_entities = self:find_entities()
+function item:start_shockwave(hero)
+  local camera = game:get_map():get_camera()
+  local x, y = camera:get_position_on_camera(hero:get_position())
+  vfx.shockwave(camera:get_surface(), x, y, 1, 15, 90, 0.7) --speed, width, amplitude, refraction
+end
+
+function item:enable_entities(found_entities)
   if not found_entities then return false end
   for _, v in ipairs(found_entities) do
     v:set_enabled(true)
@@ -66,17 +69,20 @@ function item:on_using()
   animation_started = false
   local map = game:get_map()
   local res
-  --false = il s'est rien passé mais on fait quand même pas spawn les entités
-  --nil = il s'est rien passé
-  --true = il s'est passé un truc
 
-  if map.on_horn_used then
-    res = map:on_horn_used(item)
+  if map.on_horn_used then --first we see if the current map has something to do with the horn
+    res = map:on_horn_used(item) --and store the result if that's the case (see below)
+    --false = il s'est rien passé mais on fait quand même pas spawn les entités
+    --nil = il s'est rien passé
+    --true = il s'est passé un truc
   end
 
-  if res == nil then
-    self:start_animation(self.enable_entities)
-    res = true
+  if res == nil then --si rien ne s'est passé au niveau de la map
+    local found_entities = self:find_entities()
+    if found_entities then
+      self:start_animation(function(self) self.enable_entities(found_entities) end) --closures yeaaaah
+      res = true
+    end
   end
 
   if not res and not animation_started then
