@@ -69,7 +69,7 @@ end
 function item:on_using()
   animation_started = false
   local map = game:get_map()
-  local res
+  local res = false
   --false = il s'est rien passé mais on fait quand même pas spawn les entités
   --nil = il s'est rien passé
   --true = il s'est passé un truc
