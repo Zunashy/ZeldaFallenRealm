@@ -45,7 +45,7 @@ function map:on_horn_used(horn)
   if zuna and zuna:is_in_same_region(hero) then
     horn:start_animation(function(horn) 
       local hero = map:get_hero()
-      hero:teleport("war_version/village/outdoors.lua", "horn_zuna")
+      hero:teleport("war_version/village/outdoors", "horn_zuna")
     end)
   end
   return false
