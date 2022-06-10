@@ -37,9 +37,7 @@ function item:start_animation(effect)
   hero:get_sprite():set_animation("horn")
 
   if not animation_started then
-    local camera = game:get_map():get_camera()
-    local x, y = camera:get_position_on_camera(hero:get_position())
-    vfx.shockwave(camera:get_surface(), x, y, 1, 15, 90, 0.7) --speed, width, amplitude, refraction
+    self:start_shockwave(hero)
     sol.audio.stop_music()
     sol.audio.play_sound("horn")
   end
@@ -51,6 +49,12 @@ function item:start_animation(effect)
     end)  
   end)
   animation_started = true
+end
+
+function item:start_shockwave(hero)
+  local camera = game:get_map():get_camera()
+  local x, y = camera:get_position_on_camera(hero:get_position())
+  vfx.shockwave(camera:get_surface(), x, y, 1, 15, 90, 0.7) --speed, width, amplitude, refraction
 end
 
 function item:enable_entities()

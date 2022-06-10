@@ -99,8 +99,7 @@ function enemy:swing()
     sprite:set_animation("swing")
     self:set_attacks_consequence(hurt_cb)
     hit_count = hit_count + 1
-    if hit_count > 2 then
-      print("cb")
+    if hit_count > 1 then
       sol.timer.start(enemy, wave_delay, launch_wave)
       hit_count = 0
     else
@@ -145,7 +144,7 @@ function enemy:on_created()
   trident_sprite = enemy:create_sprite("enemies/boss/merman_trident", "trident")
   enemy:set_invincible_sprite(trident_sprite)
   enemy:set_life(6)
-  enemy:set_damage(1)
+  enemy:set_damage(2)
   enemy:set_pushed_back_when_hurt(false)
   enemy:set_attacks_consequence(hurt_cb)
   wave_period = wave_period / math.pi

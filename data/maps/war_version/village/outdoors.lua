@@ -10,6 +10,10 @@
 local map = ...
 local game = map:get_game()
 
+if game:get_story_state() < 7 then
+  sol.audio.stop_music()
+end
+
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started_()
   zuna:create_sprite("pnj/main/zuna_sword", "sword")

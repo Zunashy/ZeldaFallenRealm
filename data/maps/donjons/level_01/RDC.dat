@@ -12340,6 +12340,26 @@ pickable{
   treasure_name = "rupee",
 }
 
+custom_entity{
+  layer = 1,
+  x = 856,
+  y = 381,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+
+custom_entity{
+  layer = 1,
+  x = 824,
+  y = 381,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+
 tile{
   layer = 2,
   x = 832,

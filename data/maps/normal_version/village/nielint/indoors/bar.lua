@@ -40,3 +40,13 @@ function map:on_opening_transition_finished()
     game:set_story_state(1)
   end
 end
+
+function map:on_horn_used(horn)
+  if zuna and zuna:is_in_same_region(hero) then
+    horn:start_animation(function(horn) 
+      local hero = map:get_hero()
+      hero:teleport("war_version/village/outdoors.lua", "horn_zuna")
+    end)
+  end
+  return false
+end
