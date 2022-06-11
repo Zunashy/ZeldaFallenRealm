@@ -5644,7 +5644,7 @@ enemy{
   layer = 0,
   x = 88,
   y = 381,
-  direction = 0,
+  direction = 3,
   breed = "blade_trap",
 }
 
