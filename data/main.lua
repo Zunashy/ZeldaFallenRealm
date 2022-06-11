@@ -38,9 +38,9 @@ function sol.main:on_started()
   settings_manager:load()
   controls_manager:load()
   sol.audio.preload_sounds()
-  sol.audio.set_sound_volume(50)
-  sol.audio.set_music_volume(50)
-  sol.audio.default_music_volume = 50
+  sol.audio.set_sound_volume(45)
+  sol.audio.set_music_volume(15)
+  sol.audio.default_music_volume = 15
   gen.randomseed(os.time())
 
   sol.menu.stop(loading_menu)

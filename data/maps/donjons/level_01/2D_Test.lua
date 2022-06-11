@@ -11,12 +11,14 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
+function map:on_started_()
   self:init_side_view()
   self.dungeon_info = {
     dungeon = require("scripts/menus/dungeon_maps")[1],
     floor = true
   }
+
+sol.audio.set_music_volume(25)
 end
 
 -- Event called after the opening transition effect of the map,
