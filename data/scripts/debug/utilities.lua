@@ -8,7 +8,7 @@ function tprint (tbl, max_recursion, recursion_level, indent)
   recursion_level = recursion_level or 0
   if not indent then indent = 0 end
   for k, v in pairs(tbl) do
-    formatting = string.rep("--", indent) .. k .. ": "
+    formatting = string.rep("--", indent) .. " " .. k .. ": "
     if type(v) == "table" then
       print(formatting)
       if recursion_level == max_recursion then
