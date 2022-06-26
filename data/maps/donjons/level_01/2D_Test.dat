@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "grotte",
-  music = "dungeon1",
+  music = "dungeon1_",
 }
 
 tile{
@@ -1568,5 +1568,22 @@ pickable{
   y = 269,
   treasure_name = "great_key",
   treasure_savegame_variable = "dungeon_1_great_key",
+}
+
+pickable{
+  layer = 0,
+  x = 696,
+  y = 77,
+  treasure_name = "rupee",
+  treasure_variant = 3,
+  treasure_savegame_variable = "dungeon_1_2D_pickable_rupee",
+}
+
+pickable{
+  layer = 0,
+  x = 664,
+  y = 93,
+  treasure_name = "heart",
+  treasure_savegame_variable = "dungeon_1_2D_pickable_heart",
 }
 

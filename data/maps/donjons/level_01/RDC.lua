@@ -17,6 +17,7 @@ function map:on_started_()
   }
   self:init_dungeon_features()
   print("MAP CALLBACK")
+sol.audio.set_music_volume(25)
 end
 function map:on_opening_transition_finished()
 

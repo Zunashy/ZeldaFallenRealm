@@ -1,7 +1,7 @@
 local background_builder = {}
 
 local background_img = sol.surface.create(200,16)
-background_img:fill_color{252,230,198}
+background_img:fill_color{242,224,209}
 
 function background_builder:new(game,config)
   local background = {name = "HUD Background"}

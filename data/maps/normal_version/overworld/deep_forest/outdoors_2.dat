@@ -15229,15 +15229,15 @@ teletransporter{
   y = 16,
   width = 16,
   height = 16,
-  destination_map = "donjons/level_02/rdc",
-  destination = "entrance",
+  destination_map = "donjons/level_02/transit",
+  destination = "from_village",
 }
 
 destination{
   name = "level2_to_village",
   layer = 1,
-  x = 88,
-  y = -11,
+  x = 80,
+  y = 37,
   direction = 1,
 }
 
@@ -15464,6 +15464,134 @@ destructible{
   sprite = "entities/vegetation/grass/grass_2",
   weight = 1,
   can_be_cut = true,
+}
+
+dynamic_tile{
+  layer = 1,
+  x = 40,
+  y = 72,
+  properties = {
+    {
+      key = "y_order",
+      value = "1",
+    },
+  },
+  width = 16,
+  height = 16,
+  pattern = "307",
+  tileset = "normal/main",
+}
+
+dynamic_tile{
+  layer = 1,
+  x = 200,
+  y = 224,
+  properties = {
+    {
+      key = "y_order",
+      value = "1",
+    },
+  },
+  width = 16,
+  height = 16,
+  pattern = "307",
+  tileset = "normal/main",
+}
+
+dynamic_tile{
+  layer = 1,
+  x = 256,
+  y = 416,
+  properties = {
+    {
+      key = "y_order",
+      value = "1",
+    },
+  },
+  width = 16,
+  height = 16,
+  pattern = "307",
+  tileset = "normal/main",
+}
+
+dynamic_tile{
+  layer = 1,
+  x = 360,
+  y = 464,
+  properties = {
+    {
+      key = "y_order",
+      value = "1",
+    },
+  },
+  width = 16,
+  height = 16,
+  pattern = "307",
+  tileset = "normal/main",
+}
+
+dynamic_tile{
+  layer = 1,
+  x = 416,
+  y = 416,
+  properties = {
+    {
+      key = "y_order",
+      value = "1",
+    },
+  },
+  width = 16,
+  height = 16,
+  pattern = "307",
+  tileset = "normal/main",
+}
+
+dynamic_tile{
+  layer = 1,
+  x = 592,
+  y = 432,
+  properties = {
+    {
+      key = "y_order",
+      value = "1",
+    },
+  },
+  width = 16,
+  height = 16,
+  pattern = "307",
+  tileset = "normal/main",
+}
+
+dynamic_tile{
+  layer = 1,
+  x = 416,
+  y = 416,
+  properties = {
+    {
+      key = "y_order",
+      value = "1",
+    },
+  },
+  width = 16,
+  height = 16,
+  pattern = "307",
+  tileset = "normal/main",
+}
+
+dynamic_tile{
+  layer = 1,
+  x = 224,
+  y = 80,
+  properties = {
+    {
+      key = "y_order",
+      value = "1",
+    },
+  },
+  width = 16,
+  height = 16,
+  pattern = "307",
+  tileset = "normal/main",
 }
 
 tile{

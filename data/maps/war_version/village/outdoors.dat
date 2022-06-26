@@ -7205,6 +7205,7 @@ destructible{
 }
 
 destructible{
+  name = "11",
   layer = 1,
   x = 216,
   y = 421,
@@ -7217,6 +7218,7 @@ destructible{
 }
 
 destructible{
+  name = "12",
   layer = 1,
   x = 216,
   y = 437,
@@ -7229,6 +7231,7 @@ destructible{
 }
 
 destructible{
+  name = "13",
   layer = 1,
   x = 216,
   y = 453,
@@ -7241,6 +7244,7 @@ destructible{
 }
 
 destructible{
+  name = "14",
   layer = 1,
   x = 216,
   y = 469,
@@ -7253,6 +7257,7 @@ destructible{
 }
 
 destructible{
+  name = "15",
   layer = 1,
   x = 216,
   y = 485,
@@ -7265,6 +7270,7 @@ destructible{
 }
 
 destructible{
+  name = "25",
   layer = 1,
   x = 232,
   y = 485,
@@ -7277,6 +7283,7 @@ destructible{
 }
 
 destructible{
+  name = "24",
   layer = 1,
   x = 232,
   y = 469,
@@ -7289,6 +7296,7 @@ destructible{
 }
 
 destructible{
+  name = "21",
   layer = 1,
   x = 232,
   y = 421,
@@ -7301,6 +7309,7 @@ destructible{
 }
 
 destructible{
+  name = "22",
   layer = 1,
   x = 232,
   y = 437,
@@ -7313,6 +7322,7 @@ destructible{
 }
 
 destructible{
+  name = "23",
   layer = 1,
   x = 232,
   y = 453,
@@ -7325,6 +7335,7 @@ destructible{
 }
 
 destructible{
+  name = "33",
   layer = 1,
   x = 248,
   y = 453,
@@ -7337,6 +7348,7 @@ destructible{
 }
 
 destructible{
+  name = "34",
   layer = 1,
   x = 248,
   y = 469,
@@ -7349,6 +7361,7 @@ destructible{
 }
 
 destructible{
+  name = "35",
   layer = 1,
   x = 248,
   y = 485,
@@ -7361,6 +7374,7 @@ destructible{
 }
 
 destructible{
+  name = "45",
   layer = 1,
   x = 264,
   y = 485,
@@ -7373,6 +7387,7 @@ destructible{
 }
 
 destructible{
+  name = "44",
   layer = 1,
   x = 264,
   y = 469,
@@ -7385,6 +7400,7 @@ destructible{
 }
 
 destructible{
+  name = "43",
   layer = 1,
   x = 264,
   y = 453,
@@ -7397,6 +7413,7 @@ destructible{
 }
 
 destructible{
+  name = "32",
   layer = 1,
   x = 248,
   y = 437,
@@ -7409,6 +7426,7 @@ destructible{
 }
 
 destructible{
+  name = "31",
   layer = 1,
   x = 248,
   y = 421,
@@ -7421,6 +7439,7 @@ destructible{
 }
 
 destructible{
+  name = "41",
   layer = 1,
   x = 264,
   y = 421,
@@ -7433,6 +7452,7 @@ destructible{
 }
 
 destructible{
+  name = "42",
   layer = 1,
   x = 264,
   y = 437,
@@ -7445,6 +7465,7 @@ destructible{
 }
 
 destructible{
+  name = "51",
   layer = 1,
   x = 280,
   y = 421,
@@ -7853,32 +7874,6 @@ custom_entity{
   direction = 1,
   sprite = "pnj/main/zuna",
   model = "npc",
-}
-
-npc{
-  layer = 1,
-  x = 240,
-  y = 29,
-  properties = {
-    {
-      key = "horn_map",
-      value = "normal_version/village/nielint/indoors/bar",
-    },
-    {
-      key = "horn_destination",
-      value = "horn",
-    },
-    {
-      key = "min_story_state",
-      value = "5",
-    },
-    {
-      key = "max_story_state",
-      value = "6",
-    },
-  },
-  direction = 3,
-  subtype = 1,
 }
 
 destination{

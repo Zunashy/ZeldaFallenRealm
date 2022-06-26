@@ -4095,7 +4095,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "door_4;disable_obstacle",
+      value = "open:door_4;disable:obstacle",
     },
   },
   subtype = "walkable",
@@ -4208,7 +4208,7 @@ custom_entity{
   properties = {
     {
       key = "yellow_trigger",
-      value = "spawn_colored_block_2",
+      value = "spawn:colored_block_2",
     },
     {
       key = "torchs",
@@ -4253,7 +4253,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "spawn_yolo_2;spawn_yolo_3;spawn_yolo_4;spawn_yolo_1",
+      value = "spawn:yolo_2;spawn:yolo_3;spawn:yolo_4;spawn:yolo_1",
     },
   },
   subtype = "walkable",
@@ -4268,6 +4268,12 @@ chest{
   x = 360,
   y = 29,
   enabled_at_start = false,
+  properties = {
+    {
+      key = "spawn_savegame_variable",
+      value = "dungeon_2_boss_key_state",
+    },
+  },
   treasure_name = "great_key",
   treasure_savegame_variable = "dungeon_2_great_key",
   sprite = "entities/chests/chest",
@@ -4280,7 +4286,7 @@ custom_entity{
   properties = {
     {
       key = "yellow_trigger",
-      value = "spawn_boss_key;spawn_ss_secret_stairs",
+      value = "spawn:boss_key;spawn:ss_secret_stairs",
     },
     {
       key = "torchs",
@@ -4363,7 +4369,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "spawn_ambush",
+      value = "spawn:ambush",
     },
   },
   subtype = "walkable",
@@ -4381,7 +4387,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door5",
+      value = "open:door5",
     },
   },
   direction = 0,
@@ -4398,7 +4404,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_5",
+      value = "open:door_5",
     },
   },
   direction = 0,
@@ -4427,7 +4433,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_chest_bracelet",
+      value = "spawn:chest_bracelet",
     },
   },
   direction = 0,
@@ -4444,7 +4450,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_chest_bracelet",
+      value = "spawn:chest_bracelet",
     },
   },
   direction = 0,
@@ -4461,7 +4467,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_chest_bracelet",
+      value = "spawn:chest_bracelet",
     },
   },
   direction = 0,
@@ -4478,7 +4484,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_chest_bracelet",
+      value = "spawn:chest_bracelet",
     },
   },
   direction = 0,
@@ -4581,7 +4587,7 @@ custom_entity{
   properties = {
     {
       key = "blue_trigger",
-      value = "door_6",
+      value = "open:door_6",
     },
     {
       key = "torchs",
@@ -4644,7 +4650,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "spawn_square_1;spawn_square_2;spawn_emb;spawn_door_7;spawn_colored_block_3;",
+      value = "spawn:square_1;spawn:square_2;spawn:emb;spawn:door_7;spawn:colored_block_3;",
     },
   },
   subtype = "solid",
@@ -4717,7 +4723,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_7",
+      value = "open:door_7",
     },
   },
   direction = 0,
@@ -4734,7 +4740,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_7",
+      value = "open:door_7",
     },
   },
   direction = 0,
@@ -4751,7 +4757,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_7",
+      value = "open:door_7",
     },
   },
   direction = 0,
@@ -4817,7 +4823,7 @@ teletransporter{
   properties = {
     {
       key = "spawn_savegame_variable",
-      value = "dungeon_2_ss_secret_stairs_tp",
+      value = "dungeon_2_ss_secret_stairs",
     },
   },
   width = 16,
@@ -4891,17 +4897,8 @@ custom_entity{
   model = "colored_block",
 }
 
-tile{
-  layer = 1,
-  x = 352,
-  y = 176,
-  width = 16,
-  height = 8,
-  pattern = "69",
-}
-
 custom_entity{
-  layer = 1,
+  layer = 0,
   x = 488,
   y = 269,
   properties = {
@@ -4914,5 +4911,14 @@ custom_entity{
   height = 16,
   direction = 0,
   model = "nonsolid_ground",
+}
+
+tile{
+  layer = 1,
+  x = 352,
+  y = 176,
+  width = 16,
+  height = 8,
+  pattern = "69",
 }
 

@@ -37,6 +37,8 @@ function enemy:on_created()
 
   m.on_finished = self.movement_cycle
   dash.on_finished = self.sword
+
+  self:set_attack_consequence_sprite(sword_sprite, "sword", "protected")
 end
 
 function enemy:check_hero()

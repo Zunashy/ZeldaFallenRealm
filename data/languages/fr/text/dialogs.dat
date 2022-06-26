@@ -12,13 +12,6 @@ Vous obtenez le bracelet de force ! Cet accessoire vous permettant de déplacer 
 }
 
 dialog{
-  id = "_treasure.hammer.1",
-  text = [[
-Vous obtenez le marteau ! Vous pouvez maintenant casser les blocs de glace et écraser vos ennemis !
-]],
-}
-
-dialog{
   id = "_treasure.essence.1",
   text = [[
 Vous obtenez ... un objet mystérieux ?
@@ -35,7 +28,7 @@ Vous obtenez ... un autre objet mystérieux ?
 dialog{
   id = "_treasure.fire_seed.1",
   text = [[
-Vous obtenez les graines de feu ! Assignez-les à "k" ou "o" pour les utiliser, et déchaînez vos passions de pyromane !
+Vous obtenez les $rgraines de feu$o ! Assignez-les à "k" ou "o" pour les utiliser, et déchaînez vos passions de pyromane !
 ]],
 }
 
@@ -50,6 +43,13 @@ dialog{
   id = "_treasure.great_key.2",
   text = [[
 Vous avez trouvé la Clé du Donjon ! Elle permet d'ouvrir la porte du donjon.
+]],
+}
+
+dialog{
+  id = "_treasure.hammer.1",
+  text = [[
+Vous obtenez le marteau ! Vous pouvez maintenant casser les blocs de glace et écraser vos ennemis !
 ]],
 }
 
@@ -176,7 +176,6 @@ Pour comprendre la profondeur il faut savoir chuter.
 ]],
 }
 
-
 dialog{
   id = "item.horn",
   choice = "1",
@@ -196,6 +195,15 @@ dialog{
   id = "item.horn.svp",
   text = [[
 Pour des raisons scénaristiques, il serait préférable que Link utilise la corne 
+]],
+}
+
+dialog{
+  id = "other.poor",
+  text = [[
+Hum... Il semblerait
+que tu n'aies pas
+assez d'argent...
 ]],
 }
 
@@ -440,7 +448,7 @@ dialog{
   text = [[
 Viens t'assoir près du feu, mon jeune ami. 
 Cette plaine est infestée de monstres et nous avons déjà perdu trop des nôtres. 
-Si seulement j'étais encore capable de me battre comme avant, je leur montrerai de quel bois je me chauffe !
+Si seulement j'étais encore capable de me battre comme avant, je leur montrerais de quel bois je me chauffe !
 ]],
 }
 
@@ -752,6 +760,13 @@ Bonjour, voyageur ! Malheureusement nous n'avons rien à vendre pour le moment. 
 }
 
 dialog{
+  id = "pnj.village.nielint.indoors.shop_clerk_error",
+  text = [[
+Hum... Il semblerait que tu n'aies pas assez d'argent...
+]],
+}
+
+dialog{
   id = "pnj.village.nielint.indoors.tenko",
   text = [[
 Aaaaah, la vie c'est nul. Et les hommes, c'est encore plus nul. 
@@ -812,26 +827,24 @@ nous sommes en guerre.
 }
 
 dialog{
-  id = "test.sans",
+  id = "test.snas",
   choice = "1",
   next_dialog = "test.sans2",
   next_dialog_2 = "test.sans3",
   text = [[
-test
-lol
-il me fallait une 3ème ligne
+ÏïÎîËëÊêÈèÉéÂâÀàÔôÇçÙùÛûÜü
 ]],
 }
 
 dialog{
-  id = "test.sans2",
+  id = "test.snas2",
   text = [[
 woah ça marche incroyab
 ]],
 }
 
 dialog{
-  id = "test.sans3",
+  id = "test.snas3",
   choice = "1",
   text = [[
 darude sandstorm
@@ -839,7 +852,7 @@ darude sandstorm
 }
 
 dialog{
-  id = "test.sans4",
+  id = "test.snas4",
   next_dialog = "test.sans5",
   text = [[
 test lol
@@ -847,7 +860,7 @@ test lol
 }
 
 dialog{
-  id = "test.sans5",
+  id = "test.snas5",
   illustrate_item = "essence",
   text = [[
 ça marche wouhouuuu

@@ -96,18 +96,19 @@ function enemy:swing()
   self:set_attacks_consequence("protected")
   trident_sprite:set_animation("swing_load")
   sprite:set_animation("swing_load", function()
-    trident_sprite:set_animation("swing")
+    sprite:set_animation("swing")
     self:set_attacks_consequence(hurt_cb)
     hit_count = hit_count + 1
-    if hit_count > 2 then
-      print("cb")
+    if hit_count > 1 then
       sol.timer.start(enemy, wave_delay, launch_wave)
       hit_count = 0
     else
       trident_sprite.on_frame_changed = nil
     end
-    sprite:set_animation("swing", function()
-      sprite:set_animation("walking")
+    trident_sprite:set_animation("swing", function()
+      if sprite:get_animation() == "swing" then --only change animation if the boss didn't switch to "hurt" in the meantime
+        sprite:set_animation("walking")
+      end
       trident_sprite:set_animation("walking")
       enemy:start_movement(m_direction, true)
       sol.timer.start(enemy, swing_cooldown, function () enemy:start_swing_detect() end)
@@ -120,7 +121,8 @@ function enemy:check_hero()
 end
 
 function enemy:start_swing_detect()
-  self.swing_detect_timer = sol.timer.start(self,4,function()
+  print("START SWING")
+  self.swing_detect_timer = sol.timer.start(self,10,function()
     if enemy:check_hero() then
       enemy:swing()
       self.swing_detect_timer = nil
@@ -142,11 +144,10 @@ function enemy:on_created()
   trident_sprite = enemy:create_sprite("enemies/boss/merman_trident", "trident")
   enemy:set_invincible_sprite(trident_sprite)
   enemy:set_life(6)
-  enemy:set_damage(1)
+  enemy:set_damage(2)
   enemy:set_pushed_back_when_hurt(false)
   enemy:set_attacks_consequence(hurt_cb)
   wave_period = wave_period / math.pi
-
 end
 
 function enemy:on_restarted()

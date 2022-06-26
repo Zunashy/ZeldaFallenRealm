@@ -5483,7 +5483,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "spawn_secret_stairs",
+      value = "spawn:secret_stairs",
     },
   },
   subtype = "walkable",
@@ -5511,7 +5511,7 @@ custom_entity{
   properties = {
     {
       key = "red_trigger",
-      value = "door_2",
+      value = "open:door_2",
     },
     {
       key = "torchs",
@@ -5655,7 +5655,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_1",
+      value = "open:door_1",
     },
   },
   direction = 0,
@@ -5670,7 +5670,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_1",
+      value = "open:door_1",
     },
   },
   direction = 0,
@@ -5685,7 +5685,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "door_1",
+      value = "open:door_1",
     },
   },
   direction = 0,
@@ -5741,7 +5741,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_teleport;spawn_teleport_2;door_miniboss;music_dungeon2;spawn_mini_boss_stair;spawn_tp_ss1;music_dungeon1",
+      value = "spawn:teleport;spawn:teleport_2;spawn:tp_ss1;open:door_miniboss;music:reset;spawn:mini_boss_stair",
     },
     {
       key = "savegame_variable",
@@ -5792,16 +5792,6 @@ custom_entity{
   height = 16,
   direction = 0,
   sprite = "entities/dungeon_elements/colored_flame",
-}
-
-teletransporter{
-  layer = 0,
-  x = 352,
-  y = 688,
-  width = 16,
-  height = 16,
-  destination_map = "normal_version/overworld/deep_forest/outdoors_2",
-  destination = "level2_to_village",
 }
 
 destination{
@@ -5951,7 +5941,7 @@ switch{
   properties = {
     {
       key = "activate_trigger",
-      value = "door_3",
+      value = "open:door_3",
     },
   },
   subtype = "solid",
@@ -6033,7 +6023,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_stairs_boss;door_boss;music_dungeon2",
+      value = "spawn:stairs_boss;open:door_boss;music:reset",
     },
     {
       key = "no_reset",
@@ -6054,7 +6044,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn_teleport;spawn_teleport_2;door_miniboss;music_dungeon2;spawn_mini_boss_stair;spawn_tp_ss1;music_dungeon1",
+      value = "spawn:teleport;spawn:teleport_2;spawn:tp_ss1;open:door_miniboss;music:reset;spawn:mini_boss_stair",
     },
     {
       key = "savegame_variable",
@@ -6073,7 +6063,7 @@ sensor{
   properties = {
     {
       key = "activate_trigger",
-      value = "spawn_door_miniboss;music_miniboss",
+      value = "spawn:door_miniboss;music:miniboss",
     },
     {
       key = "savegame_variable",
@@ -6101,7 +6091,7 @@ sensor{
   properties = {
     {
       key = "activate_trigger",
-      value = "spawn_door_boss;music_none",
+      value = "spawn:door_boss;music:none",
     },
     {
       key = "savegame_variable",
@@ -6135,6 +6125,7 @@ destination{
 }
 
 dynamic_tile{
+  name = "mini_boss_secret_stair",
   layer = 0,
   x = 648,
   y = 216,
@@ -6248,10 +6239,26 @@ custom_entity{
   layer = 0,
   x = 600,
   y = 173,
+  properties = {
+    {
+      key = "find_solid_ground",
+      value = "1",
+    },
+  },
   width = 16,
   height = 16,
   direction = 0,
   model = "nonsolid_ground",
+}
+
+teletransporter{
+  layer = 0,
+  x = 352,
+  y = 688,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_02/transit",
+  destination = "from_donjon",
 }
 
 tile{
@@ -6261,5 +6268,55 @@ tile{
   width = 16,
   height = 8,
   pattern = "69",
+}
+
+custom_entity{
+  layer = 1,
+  x = 344,
+  y = 637,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+
+custom_entity{
+  layer = 1,
+  x = 344,
+  y = 605,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+
+custom_entity{
+  layer = 1,
+  x = 360,
+  y = 589,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+
+custom_entity{
+  layer = 1,
+  x = 376,
+  y = 605,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+
+custom_entity{
+  layer = 1,
+  x = 376,
+  y = 637,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "dungeon_statue_eye",
 }
 

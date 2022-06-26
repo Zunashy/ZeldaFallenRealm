@@ -10,12 +10,15 @@
 local map = ...
 local game = map:get_game()
 
+if game:get_story_state() < 7 then
+  sol.audio.stop_music()
+end
+
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started_()
   zuna:create_sprite("pnj/main/zuna_sword", "sword")
   local story = game:get_story_state()
   local hero = self:get_hero()
-  local zuna = self:get_entity("zuna")
   if story < 7 then 
 
     self:get_entity("sep_1").on_activated = function()
@@ -69,4 +72,13 @@ function map:on_started_()
   end
 end
 
-
+function map:on_horn_used(horn)
+  if zuna and zuna:is_in_same_region(hero) then
+    horn:start_animation(function(horn) 
+      local hero = map:get_hero()
+      game:set_story_state(8)
+      hero:teleport("normal_version/village/nielint/indoors/bar", "horn")
+    end)
+  end
+  return false
+end
