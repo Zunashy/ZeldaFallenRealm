@@ -108,6 +108,20 @@ animation{
   },
 }
 animation{
+  name = "mixer_molotov",
+  src_image = "items/mixer_items.png",
+  directions = {
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "mixer_rocket_jump",
+  src_image = "items/mixer_items.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "random",
   src_image = "entities/items.png",
   directions = {

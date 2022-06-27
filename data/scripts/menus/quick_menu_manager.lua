@@ -17,7 +17,7 @@ function qmg:constructor(x)
     self.x = x or 0
     self.y = 16
     self.current_element = 1 --haha 1-starting arrays go brr
-    self.state = 0 --0 = normal ; 1 = moving
+    self.moving = false --0 = normal ; 1 = moving
     self.surface = sol.surface.create(sol.video.get_quest_size())
     self.movInfo = {x = 0, y = 0}
     self.movDir = 0
@@ -40,7 +40,7 @@ function qmg:on_draw(dest)
     local y = inter_element + self.movInfo.y
     local i = self.first_element_displayed
 
-    if self.state == 1 then
+    if self.moving then
         self.need_rebuild = true
     end
     if self.need_rebuild then
@@ -56,11 +56,11 @@ function qmg:on_draw(dest)
             end
         end
 
-        if self.state == 1 and self.cyclic then
+        if self.moving and self.cyclic then
             self.cycling_element_surface:draw(self.surface, self.x, y)
         end
 
-        if self.state == 0 then
+        if not self.moving then
             self.need_rebuild = false
         end
     end
@@ -69,7 +69,7 @@ function qmg:on_draw(dest)
 end
 
 function qmg:end_movement()
-    self.state = 0
+    self.moving = false
     self.movInfo.y = 0
 
     self.elements[self.first_element_displayed].surface:set_opacity(255)
@@ -104,12 +104,12 @@ function qmg:move(direction) -- 1 = down ; -1 = up
     --si direction = -1, on veut MONTER dans la liste, donc visuellement elle DESCEND
     --si direction = 1, on veut DESCENDRE dans la liste, donc visuellement elle MONTE
 
-    if self.state == 1 then
+    if self.moving then
         self.buffered = direction
         return
     end
 
-    self.state = 1
+    self.moving = true
     self.current_element = ((self.current_element + direction - 1) % self.nb_elements ) + 1
 
     if direction == -1 then
