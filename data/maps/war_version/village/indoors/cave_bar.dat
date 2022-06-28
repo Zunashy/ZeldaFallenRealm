@@ -19,36 +19,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 0,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "196_8",
-  tileset = "normal/main",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "196_9",
-  tileset = "normal/main",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "196_10",
-  tileset = "normal/main",
-}
-
-tile{
-  layer = 0,
   x = 16,
   y = 96,
   width = 16,
@@ -234,6 +204,33 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_11",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "196_10",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "196_8",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "196_9",
 }
 
 teletransporter{
