@@ -1,3 +1,6 @@
+# Guide de compilation sur MSYS2
+https://gitlab.com/hhromic/solarus/-/blob/docs/doc/building-msys2.md
+
 # Guide de compilation de Solarus sur Red Hat 8.x / Cent OS 8.x / Fedora > 28
 
 

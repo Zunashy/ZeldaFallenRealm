@@ -22,6 +22,7 @@ local credits_menu = {
         "    Phoenix",
         "    Nillan",
         "Special Thanks",
+        "    Sani      ",
         "    Anarith",
         "    Pure Zelda-",
         "    Classic",
@@ -55,14 +56,14 @@ function credits_menu:on_started()
     sol.main.get_game().disable_pause_menu = true
     sol.main.get_game():set_paused()
 
-    sol.timer.start(self, 2000, function()
+    sol.timer.start(self, 4000, function()
         local m = sol.movement.create("straight")
-        m:set_speed(32)
+        m:set_speed(16)
         m:set_angle(math.pi * 0.5)
         m:start(credits_menu)
         m:set_max_distance(#credits_menu.text * line_h - 144)
         function m:on_finished()
-            sol.timer.start(2000, function()
+            sol.timer.start(20000, function()
                 sol.main.exit()
             end)
         end

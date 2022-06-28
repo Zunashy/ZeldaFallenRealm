@@ -54,7 +54,6 @@ local function trigger_event(map, event)
     end
 end
 ]]------
-
 local effects = {}
 
 function effects.spawn(map, arg)
@@ -88,6 +87,8 @@ end
 function effects.music(map, arg)
   if (arg == "") or arg == "none" then
     sol.audio.stop_music()
+  elseif (arg == "default") or (arg == "reset") then
+    sol.audio.play_music( map:get_music())
   else
     sol.audio.play_music(arg)
   end

@@ -13,9 +13,27 @@ function block_meta:on_removed()
       width = 16,
       height = 16,
     })
-    entity:get_sprite():set_animation("falling", function()
-      entity:remove()
+    local sprite = entity:get_sprite()
+    sprite:set_animation("falling", function()
+      local x, y, layer = entity:get_position()
+      local direction = sprite:get_direction()
+      if direction == 0 then
+        x = x + 8
+      elseif direction == 1 then
+        y = y - 4
+      elseif direction == 2 then
+        x = x - 8
+      elseif direction == 3 then
+        y = y + 12
+      end
+      entity:set_position(x, y, layer)
+      entity:set_modified_ground("empty")
+      sprite:set_animation("falling_vertical", function()
+        entity:remove()
+      end)
     end)
+    sprite:set_direction((2 + self:get_direction4_to(self:get_map():get_hero())) % 4)
+    entity:set_modified_ground("wall")
   end
 end
 
@@ -63,6 +81,7 @@ function sep_meta:on_activated()
    and ground ~= "empty"
    and not hero.is_on_nonsolid_ground)
   then 
+    print("save_solid")
     hero:save_solid_ground()
   else
     hero.need_solid_ground = true
@@ -169,20 +188,26 @@ function dest_meta:on_created()
   end
 end
 
-dest_meta.flammable_sprites = {
-  tree = true,
-  grass = true
-}
-
 function dest_meta:is_flammable()
-  local sprite_name = self:get_sprite():get_animation_set()
-  return flammable_sprites[sprite_name]
+  local sprite = self:get_sprite():get_animation_set()
+  return (sprite:starts("entities/vegetation/grass/grass")) or (sprite == "entities/vegetation/arbuste") or (sprite == "entities/vegetation/grass_door")
 end
 
 function dest_meta:on_destroyed()
   local prop = self:get_property("savegame_variable")
   if prop then
     self:get_game():set_value(prop, true)
+  end
+end
+
+function dest_meta:cut()
+  self:on_cut()
+  self:remove()
+end
+
+function dest_meta:attempt_cut()
+  if self:get_can_be_cut() then
+    self:cut()
   end
 end
 

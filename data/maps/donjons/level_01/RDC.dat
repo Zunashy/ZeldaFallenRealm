@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "dungeon/tileset_donjon_1",
-  music = "dungeon1",
+  music = "dungeon1_",
 }
 
 tile{
@@ -10169,6 +10169,35 @@ tile{
   pattern = "30",
 }
 
+tile{
+  layer = 1,
+  x = 592,
+  y = 1136,
+  width = 128,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 1056,
+  width = 16,
+  height = 176,
+  pattern = "2",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 1136,
+  width = 16,
+  height = 16,
+  pattern = "4",
+  tileset = "dungeon/tileset_donjon_1",
+}
+
 block{
   layer = 1,
   x = 792,
@@ -11049,7 +11078,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "spawn:chest_feather;open:door_miniboss;music:dungeon1;spawn:teleport;spawn:teleport_2",
+      value = "spawn:chest_feather;open:door_miniboss;music:reset;spawn:teleport;spawn:teleport_2",
     },
     {
       key = "no_reset",
@@ -11333,7 +11362,7 @@ enemy{
   properties = {
     {
       key = "death_trigger",
-      value = "open:door_boss;music:dungeon1",
+      value = "open:door_boss;music:dungeon1_",
     },
     {
       key = "no_reset",
@@ -11371,7 +11400,11 @@ sensor{
   properties = {
     {
       key = "activate_trigger",
-      value = "spawn_door_boss;music:boss",
+      value = "spawn:door_boss;music:boss",
+    },
+    {
+      key = "savegame_variable",
+      value = "dungeon_1_boss",
     },
   },
   width = 16,
@@ -11379,11 +11412,10 @@ sensor{
 }
 
 door{
-  name = "door_boss_1",
+  name = "door_boss",
   layer = 1,
   x = 832,
   y = 176,
-  enabled_at_start = false,
   direction = 3,
   sprite = "entities/door/door",
   savegame_variable = "dungeon_1_door_boss",
@@ -11422,7 +11454,7 @@ sensor{
   properties = {
     {
       key = "activate_trigger",
-      value = "setrespawn_checkpoint",
+      value = "setrespawn:checkpoint",
     },
   },
   width = 16,
@@ -12306,6 +12338,26 @@ pickable{
   x = 80,
   y = 645,
   treasure_name = "rupee",
+}
+
+custom_entity{
+  layer = 1,
+  x = 856,
+  y = 381,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+
+custom_entity{
+  layer = 1,
+  x = 824,
+  y = 381,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "dungeon_statue_eye",
 }
 
 tile{

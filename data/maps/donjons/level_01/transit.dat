@@ -1024,3 +1024,23 @@ tile{
   pattern = "66_4",
 }
 
+custom_entity{
+  layer = 1,
+  x = 40,
+  y = 109,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+
+custom_entity{
+  layer = 1,
+  x = 120,
+  y = 109,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "dungeon_statue_eye",
+}
+

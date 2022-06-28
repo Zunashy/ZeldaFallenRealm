@@ -6,8 +6,9 @@ local item = ...
 -- Probability of each item between 0 and 1000.
 local probabilities = {
   [{ "heart", 1 }]   =200,
-  [{ "rupee", 1 }]   =300
- 
+  [{ "rupee", 1 }]   =300,
+  [{ "rupee", 2}]    =75
+  
 }
 
 function item:on_pickable_created(pickable)

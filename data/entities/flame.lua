@@ -13,11 +13,6 @@ local game = entity:get_game()
 local map = entity:get_map()
 local random = gen.random
 
-local function is_flammable(entity)
-  local sprite = entity:get_sprite():get_animation_set()
-  return (sprite:starts("entities/vegetation/grass/grass")) or (sprite == "entities/vegetation/arbuste") or (sprite == "entities/vegetation/grass_door")
-end
-
 local function collision_callback(e, other)
   if other:get_type() == "enemy" then
     local cons = other:get_attack_consequence("fire")
@@ -53,7 +48,7 @@ function entity:on_created()
   self.x, self.y = self:get_position()
   
   for e in map:get_entities_by_type("destructible") do
-    if e:overlaps(self) and is_flammable(e) then
+    if e:overlaps(self) and e:is_flammable() then
       e:get_sprite():set_animation("burning")
       sol.timer.start(e, 2000, function()
         e:on_destroyed()

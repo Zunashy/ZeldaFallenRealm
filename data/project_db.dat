@@ -55,20 +55,20 @@ map{ id = "normal_version/overworld/wind_wood/forest_outdoor", description = "no
 map{ id = "normal_version/overworld/wind_wood/indoors/forest_cave", description = "normal_version/overworld/wind_wood/indoors/forest_cave" }
 map{ id = "normal_version/overworld/wind_wood/indoors/house", description = "normal_version/overworld/wind_wood/indoors/house" }
 map{ id = "normal_version/overworld/wind_wood/indoors/sword_cave", description = "normal_version/overworld/wind_wood/indoors/sword_cave" }
-map{ id = "normal_version/village/nielint/indoors/bar", description = "normal_version/village/nielint/indoors/bar" }
-map{ id = "normal_version/village/nielint/indoors/bar_cave" }
-map{ id = "normal_version/village/nielint/indoors/bar_etage", description = "normal_version/village/nielint/indoors/bar_etage" }
-map{ id = "normal_version/village/nielint/indoors/bar_grotte" }
-map{ id = "normal_version/village/nielint/indoors/fairy_cave", description = "normal_version/village/nielint/indoors/fairy_cave" }
-map{ id = "normal_version/village/nielint/indoors/house_01", description = "normal_version/village/nielint/indoors/house_01" }
-map{ id = "normal_version/village/nielint/indoors/house_02", description = "normal_version/village/nielint/indoors/house_02" }
-map{ id = "normal_version/village/nielint/indoors/house_03", description = "normal_version/village/nielint/indoors/house_03" }
-map{ id = "normal_version/village/nielint/indoors/house_04", description = "normal_version/village/nielint/indoors/house_04" }
-map{ id = "normal_version/village/nielint/indoors/mairie_etage", description = "normal_version/village/nielint/indoors/mairie_etage" }
-map{ id = "normal_version/village/nielint/indoors/mairie_rdc", description = "normal_version/village/nielint/indoors/mairie_rdc" }
-map{ id = "normal_version/village/nielint/indoors/octorok_cave_01", description = "normal_version/village/nielint/indoors/octorok_cave_01" }
-map{ id = "normal_version/village/nielint/indoors/shop", description = "normal_version/village/nielint/indoors/shop" }
-map{ id = "normal_version/village/nielint/indoors/tree_house", description = "normal_version/village/nielint/indoors/tree_house" }
+map{ id = "normal_version/village/nielint/indoors/bar", description = "Bar" }
+map{ id = "normal_version/village/nielint/indoors/bar_cave", description = "Bar Cave" }
+map{ id = "normal_version/village/nielint/indoors/bar_etage", description = "Bar Etage" }
+map{ id = "normal_version/village/nielint/indoors/bar_grotte", description = "Grotte Bar" }
+map{ id = "normal_version/village/nielint/indoors/fairy_cave", description = "Cave Fée" }
+map{ id = "normal_version/village/nielint/indoors/house_01", description = "M1" }
+map{ id = "normal_version/village/nielint/indoors/house_02", description = "M2" }
+map{ id = "normal_version/village/nielint/indoors/house_03", description = "M3" }
+map{ id = "normal_version/village/nielint/indoors/house_04", description = "M4" }
+map{ id = "normal_version/village/nielint/indoors/mairie_etage", description = "Mairie Etage" }
+map{ id = "normal_version/village/nielint/indoors/mairie_rdc", description = "Mairie Rdc" }
+map{ id = "normal_version/village/nielint/indoors/octorok_cave_01", description = "Grotte octo" }
+map{ id = "normal_version/village/nielint/indoors/shop", description = "SHop" }
+map{ id = "normal_version/village/nielint/indoors/tree_house", description = "Tree house" }
 map{ id = "normal_version/village/nielint/outdoors", description = "normal_version/village/nielint/outdoors" }
 map{ id = "testHub", description = "testHub" }
 map{ id = "tests/blue_slime", description = "tests/blue_slime" }
@@ -322,6 +322,7 @@ music{ id = "caves", description = "caves" }
 music{ id = "custom/nielint", description = "custom/nielint" }
 music{ id = "custom/nielint_war", description = "custom/nielint_war" }
 music{ id = "dungeon1", description = "dungeon1" }
+music{ id = "dungeon1_", description = "Donjon 1 (original)" }
 music{ id = "dungeon2", description = "Donjon 2" }
 music{ id = "dungeon5", description = "dungeon5" }
 music{ id = "eduardo/Scatman_John_-_pi_pa_pa_para_po_Original_Video_", description = "eduardo/Scatman_John_-_pi_pa_pa_para_po_Original_Video_" }

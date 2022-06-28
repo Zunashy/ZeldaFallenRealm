@@ -45,7 +45,7 @@ function enemy:on_created()
   self:set_attacks_consequence_sprite(head_sprite, "protected")
   self:set_attack_consequence_sprite(head_sprite, "thrown_item", 1)
 
-  self:set_life(4)
+  self:set_life(5)
   self:set_damage(0)
   self:set_pushed_back_when_hurt(false)
 

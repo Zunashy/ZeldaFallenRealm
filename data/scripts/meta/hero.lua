@@ -1,6 +1,6 @@
 -- Initialize hero behavior specific to this quest.
 
-local hero_speed = 64
+local hero_speed = 128
 
 local hero_meta = sol.main.get_metatable("hero")
 
@@ -123,6 +123,7 @@ local function initialize_hero_features(game)
     self:get_map():call_hero_state_callback(current, next)
   end
 
+  local visu = require("scripts/debug/visualizer")
   function hero:on_state_changed(s)
     local map = game:get_map()
     if not map then return false end
@@ -141,11 +142,18 @@ local function initialize_hero_features(game)
         if hero.pObject then hero.pObject:unfreeze() end
       end)
     elseif s == "sword_tapping" then
-     local m = sol.movement.create("straight")
-     m:set_speed(100)
-     m:set_angle(hero_sprite:get_direction() * (math.pi / 2) + math.pi)
-     m:set_max_distance(4)
-     m:start(self)
+      local m = sol.movement.create("straight")
+      m:set_speed(100)
+      m:set_angle(hero_sprite:get_direction() * (math.pi / 2) + math.pi)
+      m:set_max_distance(4)
+      m:start(self)
+
+      local facing_entity = hero:get_facing_entity()
+      if facing_entity and facing_entity:get_type() == "destructible" then
+        facing_entity:attempt_cut()
+      end
+
+
      --sol.audio.play_sound("sword_tapping")
     elseif s == "treasure" then
       sol.audio.disable_music()

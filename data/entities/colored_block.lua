@@ -98,7 +98,7 @@ end
 
 local function create_movement(dir)
     local m = sol.movement.create("straight")
-    m:set_speed(40)
+    m:set_speed(50)
     m:set_angle((math.pi / 2) * dir)
     m:set_max_distance(16)
     return m

@@ -7816,8 +7816,8 @@ enemy{
 enemy{
   layer = 1,
   x = 384,
-  y = 597,
-  direction = 1,
+  y = 589,
+  direction = 0,
   breed = "moblin_sword",
   treasure_name = "random",
 }
