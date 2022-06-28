@@ -116,6 +116,8 @@ function item:on_obtained(variant)
   if variant ~= self:get_variant() then
     self:set_variant(variant)
     self:set_max_amount(max_values[variant])
+    self:set_amount(self:get_max_amount())
+    print(self:get_amount(), self:get_max_amount())
   end
 end
 

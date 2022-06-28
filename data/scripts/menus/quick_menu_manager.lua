@@ -13,41 +13,70 @@ obscure_surf:set_opacity(127)
 
 function qmg:constructor(x)
     self.elements = {}
-    self.enabled_elements = {}
     self.x = x or 0
     self.y = 16
     self.current_element = 1 --haha 1-starting arrays go brr
-    self.state = 0 --0 = normal ; 1 = moving
+    self.moving = false
     self.surface = sol.surface.create(sol.video.get_quest_size())
     self.movInfo = {x = 0, y = 0}
-    self.movDir = 0
+    self.movDir = 0 --1 = going down on the list, which visually goes up
     self.need_rebuild = true
     self.buffered = nil
-    self.cycling_element_surface = sol.surface.create(16, 16)
+    self.cycling_element_surface = sol.surface.create(16, 16) --used if an element needs to appear twice (top and bottom during cyclic movement)
 end
 
-function qmg:add_element(enabled)
+local function create_element(create_surf)
     local elt = {
-        enabled = enabled,
-        surface = sol.surface.create(16, 16)
+        surface = create_surf and sol.surface.create(16, 16) or false,
+        _qm_element = true
     }
     frame_surf:draw(elt.surface)
+    return elt
+end
+qmg.create_element = create_element
+
+local function init_element(elt)
+    local surface = sol.surface.create(16, 16)
+    frame_surf:draw(surface)
+    if elt.surface then   
+        elt.surface:draw(surface)
+    end
+    elt.surface = surface
+end
+qmg.init_element = init_element
+
+function qmg:add_element(arg)
+    local elt
+    if type(arg) == "table" then
+        elt = arg
+        if not elt._qm_element then
+            init_element(elt)
+        end
+    else
+        elt = qmg.create_element(arg)
+    end
+
     self.elements[#self.elements + 1] = elt
     return elt
+end
+
+function qmg:reset_elements()
+    self.elements = {}
+    self.current_element = 1
 end
 
 function qmg:on_draw(dest)
     local y = inter_element + self.movInfo.y
     local i = self.first_element_displayed
 
-    if self.state == 1 then
+    if self.moving then
         self.need_rebuild = true
     end
     if self.need_rebuild then
         self.surface:clear()
         obscure_surf:draw(self.surface)
         for j = 1, self.nb_displayed_elements do
-            element = self.enabled_elements[i]
+            element = self.elements[i]
             element.surface:draw(self.surface, self.x, y)
             y = y + inter_element + 16
             i = i + 1
@@ -56,11 +85,11 @@ function qmg:on_draw(dest)
             end
         end
 
-        if self.state == 1 and self.cyclic then
+        if self.moving and self.cyclic then
             self.cycling_element_surface:draw(self.surface, self.x, y)
         end
 
-        if self.state == 0 then
+        if not self.moving then
             self.need_rebuild = false
         end
     end
@@ -69,7 +98,7 @@ function qmg:on_draw(dest)
 end
 
 function qmg:end_movement()
-    self.state = 0
+    self.moving = false
     self.movInfo.y = 0
 
     self.elements[self.first_element_displayed].surface:set_opacity(255)
@@ -104,12 +133,12 @@ function qmg:move(direction) -- 1 = down ; -1 = up
     --si direction = -1, on veut MONTER dans la liste, donc visuellement elle DESCEND
     --si direction = 1, on veut DESCENDRE dans la liste, donc visuellement elle MONTE
 
-    if self.state == 1 then
+    if self.moving then
         self.buffered = direction
         return
     end
 
-    self.state = 1
+    self.moving = true
     self.current_element = ((self.current_element + direction - 1) % self.nb_elements ) + 1
 
     if direction == -1 then
@@ -163,14 +192,10 @@ function qmg:on_command_pressed(command)
 end
 
 function qmg:on_started()
+    assert(#self.elements > 0, "Cannot start quick menu with 0 elements")
+
     self.game:set_suspended(true)
-    self.enabled_elements = {}
-    for _, e in ipairs(self.elements) do
-        if e.enabled then
-            self.enabled_elements[#self.enabled_elements + 1] = e
-        end
-    end
-    self.nb_elements = #self.enabled_elements
+    self.nb_elements = #self.elements
 
     if self.nb_elements < 1 then
         sol.menu.stop(self)

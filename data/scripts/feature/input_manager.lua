@@ -42,9 +42,19 @@ local meta = sol.main.get_metatable("game") --what comes after this line is abou
 
 --DEBUG COMMANDS FUNCTION
 local vfx = require("scripts/api/visual_effects")
+local settings = require("scripts/api/settings")
+local mixer_menu = require("scripts/menus/quick_menus/test_item_mixer")
 function meta:on_key_pressed(key, modifiers) --manages inputs upstream of the commands management
   local handled = false
-  if key == "f5" then
+
+  if key == "f1" then
+    local volume = settings:get("music_volume")
+    volume = 15 - volume
+    settings:set("music_volume", volume)
+    handled = true
+  elseif key == "f2" then
+    sol.menu.start(mixer_menu)
+  elseif key == "f5" then
    -- F5: change the video mode.
    sol.video.switch_mode()
    handled = true

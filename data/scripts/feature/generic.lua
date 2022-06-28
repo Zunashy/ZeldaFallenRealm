@@ -83,7 +83,7 @@ function gen.inherit_class(bClass)
   newclass.new = new_instance
 
   local meta
-  if type(bClass) == "table" and bClass.__index then
+  if type(bClass) == "table" and bClass.__index then --the bclass is a metatable
     meta = bClass
   else
     meta = {__index = bClass}
