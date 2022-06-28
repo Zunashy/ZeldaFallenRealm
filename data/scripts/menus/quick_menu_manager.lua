@@ -57,12 +57,16 @@ function qmg:add_element(arg)
     end
 
     self.elements[#self.elements + 1] = elt
+
+    self.need_rebuild = true
+
     return elt
 end
 
 function qmg:reset_elements()
     self.elements = {}
     self.current_element = 1
+    self.need_rebuild = true
 end
 
 function qmg:on_draw(dest)
@@ -188,18 +192,24 @@ function qmg:on_command_pressed(command)
         self:move(-1)
     elseif command == "down" then
         self:move(1)
+    elseif command == "action" then
+        sol.menu.stop(self)
     end
+    return true
 end
 
 function qmg:on_started()
-    assert(#self.elements > 0, "Cannot start quick menu with 0 elements")
+    if not (#self.elements > 0) then
+        sol.menu.stop(self)
+        error("Cannot start quick menu with 0 elements")
+        return
+    end
+        
 
     self.game:set_suspended(true)
     self.nb_elements = #self.elements
 
-    if self.nb_elements < 1 then
-        sol.menu.stop(self)
-    end
+    print(self.nb_elements)
 
     self.first_element_displayed = self.current_element
     if self.nb_elements <= max_elements then
@@ -209,6 +219,12 @@ function qmg:on_started()
         self.nb_displayed_elements = max_elements
         self.cyclic = false
     end
+
+    print(self.nb_displayed_elements)
+end
+
+function qmg:on_finished()
+    self.game:set_suspended(false)
 end
 
 local function game_start(game)

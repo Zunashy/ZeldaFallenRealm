@@ -53,7 +53,7 @@ function meta:on_key_pressed(key, modifiers) --manages inputs upstream of the co
     settings:set("music_volume", volume)
     handled = true
   elseif key == "f2" then
-    sol.menu.start(mixer_menu)
+    mixer_menu:start_from_slot(self:get_map(), 1)
   elseif key == "f5" then
    -- F5: change the video mode.
    sol.video.switch_mode()
