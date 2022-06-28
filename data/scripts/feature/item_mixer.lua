@@ -36,7 +36,6 @@ do
         add_recipe(recipes, ingr_2, ingr_1, res)
     end
 end
-tprint(recipes)
 
 function mixer.get_result(item1, item2)
     if not (recipes[item1]) then
@@ -47,7 +46,11 @@ function mixer.get_result(item1, item2)
 end
 
 local function get_recipes(item1)
-    return recipes[item1] or {}
+    if item1 then
+        return recipes[item1] or {}
+    else
+        return recipes_list
+    end
 end
 mixer.get_recipes = get_recipes
 
