@@ -910,6 +910,86 @@ tile{
   tileset = "house",
 }
 
+tile{
+  layer = 0,
+  x = 144,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "13",
+  tileset = "house",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "14",
+  tileset = "house",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "13",
+  tileset = "house",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "14",
+  tileset = "house",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "15",
+  tileset = "house",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "house",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "15",
+  tileset = "house",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "house",
+}
+
 separator{
   name = "separator_1",
   layer = 0,
