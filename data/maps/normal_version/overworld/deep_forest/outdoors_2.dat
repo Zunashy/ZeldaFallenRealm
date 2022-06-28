@@ -311,6 +311,15 @@ tile{
 
 tile{
   layer = 1,
+  x = 160,
+  y = 128,
+  width = 640,
+  height = 368,
+  pattern = "1",
+}
+
+tile{
+  layer = 1,
   x = 72,
   y = 24,
   width = 16,
@@ -334,15 +343,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "10",
-}
-
-tile{
-  layer = 1,
-  x = 160,
-  y = 128,
-  width = 640,
-  height = 368,
-  pattern = "1",
 }
 
 tile{
@@ -15500,72 +15500,8 @@ dynamic_tile{
 
 dynamic_tile{
   layer = 1,
-  x = 256,
-  y = 416,
-  properties = {
-    {
-      key = "y_order",
-      value = "1",
-    },
-  },
-  width = 16,
-  height = 16,
-  pattern = "307",
-  tileset = "normal/main",
-}
-
-dynamic_tile{
-  layer = 1,
-  x = 360,
-  y = 464,
-  properties = {
-    {
-      key = "y_order",
-      value = "1",
-    },
-  },
-  width = 16,
-  height = 16,
-  pattern = "307",
-  tileset = "normal/main",
-}
-
-dynamic_tile{
-  layer = 1,
-  x = 416,
-  y = 416,
-  properties = {
-    {
-      key = "y_order",
-      value = "1",
-    },
-  },
-  width = 16,
-  height = 16,
-  pattern = "307",
-  tileset = "normal/main",
-}
-
-dynamic_tile{
-  layer = 1,
   x = 592,
   y = 432,
-  properties = {
-    {
-      key = "y_order",
-      value = "1",
-    },
-  },
-  width = 16,
-  height = 16,
-  pattern = "307",
-  tileset = "normal/main",
-}
-
-dynamic_tile{
-  layer = 1,
-  x = 416,
-  y = 416,
   properties = {
     {
       key = "y_order",
@@ -15710,15 +15646,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "309",
-}
-
-tile{
-  layer = 2,
-  x = 248,
-  y = 400,
-  width = 24,
-  height = 16,
-  pattern = "308_2",
 }
 
 tile{
@@ -15908,5 +15835,14 @@ tile{
   width = 24,
   height = 16,
   pattern = "308",
+}
+
+tile{
+  layer = 2,
+  x = 248,
+  y = 400,
+  width = 24,
+  height = 16,
+  pattern = "308_2",
 }
 

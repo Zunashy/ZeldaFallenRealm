@@ -822,6 +822,86 @@ tile{
   pattern = "63",
 }
 
+tile{
+  layer = 0,
+  x = 144,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "13",
+  tileset = "house",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "14",
+  tileset = "house",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "15",
+  tileset = "house",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "house",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "13",
+  tileset = "house",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "14",
+  tileset = "house",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "15",
+  tileset = "house",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "house",
+}
+
 destination{
   name = "etage",
   layer = 0,
