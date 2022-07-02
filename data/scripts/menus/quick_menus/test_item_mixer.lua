@@ -13,9 +13,11 @@ function mixer_menu:set_list_from_recipes(recipes)
     for _, item in pairs(recipes) do
         self:add_element(all_elements[item])
     end
+    tprint(recipes)
 end
 
 function mixer_menu:set_list_from_item(item1)
+    print(item1)
     self:set_list_from_recipes(item_mixer.get_recipes(item1))
 end
 
@@ -34,11 +36,19 @@ local function game_start(game_)
     game = game_
 end
 
-function mixer_menu:start(item1)
-    self.x = 16
-    mixer_menu:set_list_from_item("bomb")
-    print(self)
-    sol.menu.start(game, self)
+function mixer_menu:start(map, item1, x)
+    self.x = x or 8
+    mixer_menu:set_list_from_item(item1)
+    sol.menu.start(map, self)
+end
+
+function mixer_menu:start_from_slot(map, slot)
+    local item = game:get_item_assigned(slot)
+    if not item then return end
+
+    print(item, item:get_name())
+
+    self:start(map, item:get_name(), 8 + (slot - 1) * 26)
 end
 
 local game_meta = sol.main.get_metatable("game")
