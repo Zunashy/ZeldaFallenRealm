@@ -5,25 +5,17 @@ properties{
   height = 128,
   min_layer = 0,
   max_layer = 2,
-  tileset = "house",
+  tileset = "war/main",
 }
 
 tile{
   layer = 0,
-  x = 0,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "2",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "4",
+  x = 16,
+  y = 16,
+  width = 128,
+  height = 112,
+  pattern = "271",
+  tileset = "war/main",
 }
 
 tile{
@@ -32,34 +24,18 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "7",
+  pattern = "268_4",
+  tileset = "war/main",
 }
 
 tile{
   layer = 0,
-  x = 144,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "9",
-}
-
-tile{
-  layer = 0,
-  x = 16,
+  x = 0,
   y = 0,
-  width = 128,
-  height = 16,
-  pattern = "3",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 16,
   width = 16,
-  height = 96,
-  pattern = "6",
+  height = 16,
+  pattern = "268",
+  tileset = "war/main",
 }
 
 tile{
@@ -68,34 +44,58 @@ tile{
   y = 16,
   width = 16,
   height = 96,
-  pattern = "5",
+  pattern = "270",
+  tileset = "war/main",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 0,
+  width = 128,
+  height = 16,
+  pattern = "269",
+  tileset = "war/main",
 }
 
 tile{
   layer = 0,
   x = 16,
   y = 112,
-  width = 128,
+  width = 48,
   height = 16,
-  pattern = "8",
+  pattern = "269_2",
+  tileset = "war/main",
 }
 
 tile{
   layer = 0,
-  x = 16,
-  y = 16,
-  width = 128,
-  height = 96,
-  pattern = "1",
-}
-
-tile{
-  layer = 0,
-  x = 72,
+  x = 144,
   y = 112,
   width = 16,
   height = 16,
-  pattern = "36",
+  pattern = "268_3",
+  tileset = "war/main",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "268_2",
+  tileset = "war/main",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 16,
+  width = 16,
+  height = 96,
+  pattern = "270_2",
+  tileset = "war/main",
 }
 
 tile{
@@ -104,7 +104,8 @@ tile{
   y = 112,
   width = 8,
   height = 16,
-  pattern = "35",
+  pattern = "290",
+  tileset = "war/main",
 }
 
 tile{
@@ -113,214 +114,58 @@ tile{
   y = 112,
   width = 8,
   height = 16,
-  pattern = "34",
+  pattern = "289",
+  tileset = "war/main",
 }
 
 tile{
   layer = 0,
-  x = 16,
-  y = 24,
-  width = 16,
-  height = 8,
-  pattern = "20",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 88,
-  width = 16,
-  height = 8,
-  pattern = "20",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 104,
-  width = 16,
-  height = 8,
-  pattern = "20",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "78_3",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "78_3",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 48,
-  width = 16,
-  height = 16,
-  pattern = "78_3",
-}
-
-tile{
-  layer = 0,
-  x = 48,
+  x = 72,
   y = 112,
   width = 16,
   height = 16,
-  pattern = "78_4",
-}
-
-tile{
-  layer = 0,
-  x = 112,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "78_4",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "78_4",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "78",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "78",
+  pattern = "293",
+  tileset = "war/main",
 }
 
 tile{
   layer = 0,
   x = 96,
-  y = 0,
-  width = 16,
+  y = 112,
+  width = 48,
   height = 16,
-  pattern = "78",
+  pattern = "269_2",
+  tileset = "war/main",
 }
 
 tile{
   layer = 0,
   x = 112,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "78",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "78",
-}
-
-tile{
-  layer = 0,
-  x = 0,
   y = 96,
   width = 16,
   height = 16,
-  pattern = "78_2",
+  pattern = "282",
+  tileset = "war/main",
 }
 
 tile{
   layer = 0,
-  x = 0,
-  y = 48,
+  x = 128,
+  y = 96,
   width = 16,
   height = 16,
-  pattern = "78_2",
+  pattern = "282",
+  tileset = "war/main",
 }
 
 tile{
   layer = 0,
-  x = 0,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = "78_2",
-}
-
-tile{
-  layer = 0,
-  x = 16,
+  x = 128,
   y = 80,
-  width = 32,
-  height = 32,
-  pattern = "73",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 8,
   width = 16,
-  height = 8,
-  pattern = "17",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 16,
-  width = 16,
-  height = 8,
-  pattern = "18",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 56,
-  width = 16,
-  height = 8,
-  pattern = "20",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 72,
-  width = 16,
-  height = 8,
-  pattern = "20",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 24,
-  width = 16,
-  height = 8,
-  pattern = "19",
+  height = 16,
+  pattern = "282",
+  tileset = "war/main",
 }
 
 tile{
@@ -329,7 +174,18 @@ tile{
   y = 80,
   width = 16,
   height = 16,
-  pattern = "46",
+  pattern = "282",
+  tileset = "war/main",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "282",
+  tileset = "war/main",
 }
 
 tile{
@@ -338,25 +194,8 @@ tile{
   y = 48,
   width = 16,
   height = 16,
-  pattern = "46",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "46",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = "46",
+  pattern = "282",
+  tileset = "war/main",
 }
 
 tile{
@@ -365,79 +204,8 @@ tile{
   y = 16,
   width = 16,
   height = 32,
-  pattern = "53",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 48,
-  width = 16,
-  height = 16,
-  pattern = "46",
-}
-
-tile{
-  layer = 0,
-  x = 112,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "46",
-}
-
-tile{
-  layer = 0,
-  x = 56,
-  y = 0,
-  width = 16,
-  height = 8,
-  pattern = "33",
-}
-
-tile{
-  layer = 0,
-  x = 88,
-  y = 0,
-  width = 16,
-  height = 8,
-  pattern = "33",
-}
-
-tile{
-  layer = 0,
-  x = 56,
-  y = 8,
-  width = 16,
-  height = 8,
-  pattern = "32",
-}
-
-tile{
-  layer = 0,
-  x = 88,
-  y = 8,
-  width = 16,
-  height = 8,
-  pattern = "32",
-}
-
-tile{
-  layer = 0,
-  x = 56,
-  y = 16,
-  width = 16,
-  height = 8,
-  pattern = "31",
-}
-
-tile{
-  layer = 0,
-  x = 88,
-  y = 16,
-  width = 16,
-  height = 8,
-  pattern = "31",
+  pattern = "272_2",
+  tileset = "war/main",
 }
 
 tile{
@@ -446,16 +214,68 @@ tile{
   y = 0,
   width = 16,
   height = 16,
-  pattern = "49",
+  pattern = "277",
+  tileset = "war/main",
 }
 
 tile{
   layer = 0,
-  x = 0,
+  x = 56,
+  y = 0,
+  width = 16,
+  height = 24,
+  pattern = "276",
+  tileset = "war/main",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 0,
+  width = 16,
+  height = 24,
+  pattern = "276",
+  tileset = "war/main",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "285_3",
+  tileset = "war/main",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 32,
+  width = 16,
+  height = 8,
+  pattern = "286",
+  tileset = "war/main",
+}
+
+tile{
+  layer = 0,
+  x = 128,
   y = 16,
   width = 16,
-  height = 16,
-  pattern = "78_2",
+  height = 8,
+  pattern = "285_2",
+  tileset = "war/main",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 8,
+  width = 16,
+  height = 8,
+  pattern = "285",
+  tileset = "war/main",
 }
 
 teletransporter{
@@ -474,5 +294,37 @@ destination{
   x = 80,
   y = 117,
   direction = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 24,
+  y = 109,
+  sprite = "entities/projectile/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 24,
+  y = 93,
+  sprite = "entities/projectile/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 40,
+  y = 93,
+  sprite = "entities/projectile/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 40,
+  y = 109,
+  sprite = "entities/projectile/pot",
+  weight = 1,
 }
 

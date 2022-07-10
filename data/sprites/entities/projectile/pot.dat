@@ -2,13 +2,12 @@ animation{
   name = "on_ground",
   src_image = "tileset",
   directions = {
-    { x = 16, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 96, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
   name = "destroy",
   src_image = "tileset",
-  frame_delay = 80,
   directions = {
     { x = 0, y = 256, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 16, num_frames = 3 },
   },
@@ -16,7 +15,6 @@ animation{
 animation{
   name = "exploded",
   src_image = "tileset",
-  frame_delay = 80,
   directions = {
     { x = 0, y = 256, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 16, num_frames = 3 },
   },
@@ -25,13 +23,13 @@ animation{
   name = "stopped",
   src_image = "tileset",
   directions = {
-    { x = 16, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 96, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
   },
 }
 animation{
   name = "walking",
   src_image = "tileset",
   directions = {
-    { x = 160, y = 128, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 8, num_frames = 3 },
+    { x = 160, y = 256, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 8, num_frames = 3 },
   },
 }

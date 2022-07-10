@@ -5,17 +5,18 @@ properties{
   height = 128,
   min_layer = 0,
   max_layer = 2,
-  tileset = "house",
+  tileset = "normal/main",
   music = "houses",
 }
 
 tile{
   layer = 0,
-  x = 0,
-  y = 0,
-  width = 160,
-  height = 128,
-  pattern = "1",
+  x = 16,
+  y = 16,
+  width = 128,
+  height = 96,
+  pattern = "319",
+  tileset = "normal/main",
 }
 
 tile{
@@ -24,79 +25,8 @@ tile{
   y = 16,
   width = 64,
   height = 48,
-  pattern = "21",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "2",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "4",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 0,
-  width = 128,
-  height = 16,
-  pattern = "3",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 16,
-  width = 16,
-  height = 96,
-  pattern = "5",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 16,
-  width = 16,
-  height = 96,
-  pattern = "6",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "7",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "9",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 112,
-  width = 128,
-  height = 16,
-  pattern = "8",
+  pattern = "330",
+  tileset = "normal/main",
 }
 
 tile{
@@ -105,16 +35,88 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "36",
+  pattern = "319",
+  tileset = "normal/main",
 }
 
 tile{
   layer = 0,
-  x = 64,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 96,
+  pattern = "317",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 16,
   y = 112,
-  width = 8,
+  width = 48,
   height = 16,
-  pattern = "34",
+  pattern = "318_2",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "316_2",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "316_4",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "316",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 16,
+  width = 16,
+  height = 96,
+  pattern = "317_2",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 0,
+  width = 128,
+  height = 16,
+  pattern = "318",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "316_3",
+  tileset = "normal/main",
 }
 
 tile{
@@ -123,43 +125,28 @@ tile{
   y = 112,
   width = 8,
   height = 16,
-  pattern = "35",
+  pattern = "332_2",
+  tileset = "normal/main",
 }
 
 tile{
   layer = 0,
-  x = 120,
-  y = 80,
+  x = 72,
+  y = 112,
   width = 16,
   height = 16,
-  pattern = "40",
+  pattern = "333",
+  tileset = "normal/main",
 }
 
 tile{
   layer = 0,
-  x = 136,
-  y = 80,
+  x = 64,
+  y = 112,
   width = 8,
   height = 16,
-  pattern = "39",
-}
-
-tile{
-  layer = 0,
-  x = 112,
-  y = 80,
-  width = 8,
-  height = 16,
-  pattern = "38",
-}
-
-tile{
-  layer = 0,
-  x = 120,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = "47",
+  pattern = "332",
+  tileset = "normal/main",
 }
 
 tile{
@@ -168,61 +155,38 @@ tile{
   y = 96,
   width = 16,
   height = 16,
-  pattern = "47",
+  pattern = "316_24",
+  tileset = "normal/main",
 }
 
 tile{
   layer = 0,
-  x = 128,
-  y = 8,
+  x = 96,
+  y = 112,
+  width = 48,
+  height = 16,
+  pattern = "318_2",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 64,
   width = 16,
-  height = 8,
-  pattern = "59",
+  height = 16,
+  pattern = "316_24",
+  tileset = "normal/main",
 }
 
 tile{
   layer = 0,
-  x = 128,
+  x = 16,
   y = 16,
   width = 16,
-  height = 8,
-  pattern = "55",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 24,
-  width = 16,
-  height = 8,
-  pattern = "54",
-}
-
-tile{
-  layer = 0,
-  x = 96,
-  y = 8,
-  width = 16,
-  height = 8,
-  pattern = "26",
-}
-
-tile{
-  layer = 0,
-  x = 96,
-  y = 16,
-  width = 16,
-  height = 8,
-  pattern = "25",
-}
-
-tile{
-  layer = 0,
-  x = 96,
-  y = 24,
-  width = 16,
-  height = 8,
-  pattern = "24",
+  height = 32,
+  pattern = "323_2",
+  tileset = "normal/main",
 }
 
 tile{
@@ -231,25 +195,108 @@ tile{
   y = 0,
   width = 16,
   height = 16,
-  pattern = "48",
+  pattern = "316_23",
+  tileset = "normal/main",
 }
 
 tile{
   layer = 0,
-  x = 16,
-  y = 16,
-  width = 16,
-  height = 32,
-  pattern = "53",
+  x = 136,
+  y = 80,
+  width = 8,
+  height = 16,
+  pattern = "324_5",
+  tileset = "normal/main",
 }
 
 tile{
   layer = 0,
-  x = 16,
+  x = 112,
+  y = 80,
+  width = 8,
+  height = 16,
+  pattern = "324_6",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 120,
   y = 80,
   width = 16,
-  height = 32,
-  pattern = "73",
+  height = 16,
+  pattern = "325_3",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "328_9",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 8,
+  width = 16,
+  height = 8,
+  pattern = "328_7",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 32,
+  width = 16,
+  height = 8,
+  pattern = "329",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "328",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 16,
+  width = 16,
+  height = 8,
+  pattern = "328_8",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 8,
+  width = 16,
+  height = 8,
+  pattern = "328_3",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 16,
+  width = 16,
+  height = 8,
+  pattern = "328_2",
+  tileset = "normal/main",
 }
 
 destination{
@@ -278,5 +325,21 @@ npc{
   subtype = 1,
   sprite = "pnj/nielint/2",
   behavior = "dialog#pnj.village.nielint.indoors.tenko",
+}
+
+destructible{
+  layer = 1,
+  x = 24,
+  y = 93,
+  sprite = "entities/projectile/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 24,
+  y = 109,
+  sprite = "entities/projectile/pot",
+  weight = 1,
 }
 

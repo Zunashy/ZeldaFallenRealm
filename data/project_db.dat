@@ -113,6 +113,7 @@ tileset{ id = "dungeon/tileset_donjon_6", description = "dungeon/tileset_donjon_
 tileset{ id = "dungeon/tileset_donjon_7", description = "dungeon/tileset_donjon_7" }
 tileset{ id = "grotte", description = "grotte" }
 tileset{ id = "house", description = "house" }
+tileset{ id = "house2", description = "house2" }
 tileset{ id = "model", description = "model" }
 tileset{ id = "normal/annexe", description = "normal/annexe" }
 tileset{ id = "normal/general" }
@@ -209,6 +210,7 @@ sprite{ id = "entities/projectile/bone", description = "entities/projectile/bone
 sprite{ id = "entities/projectile/coconut_left", description = "entities/projectile/coconut_left" }
 sprite{ id = "entities/projectile/coconut_right", description = "entities/projectile/coconut_right" }
 sprite{ id = "entities/projectile/octorok_rock", description = "entities/projectile/octorok_rock" }
+sprite{ id = "entities/projectile/pot" }
 sprite{ id = "entities/projectile/rock", description = "entities/projectile/rock" }
 sprite{ id = "entities/shadow", description = "entities/shadow" }
 sprite{ id = "entities/vegetation/arbuste", description = "entities/vegetation/arbuste" }

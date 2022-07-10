@@ -6418,6 +6418,15 @@ tile{
   pattern = "94_5",
 }
 
+tile{
+  layer = 1,
+  x = 240,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "68",
+}
+
 separator{
   layer = 1,
   x = 0,
@@ -7519,15 +7528,6 @@ destructible{
   ground = "grass",
 }
 
-destructible{
-  layer = 1,
-  x = 248,
-  y = 157,
-  sprite = "entities/vegetation/grass_door",
-  weight = -1,
-  can_be_cut = true,
-}
-
 dynamic_tile{
   name = "poisoned_water",
   layer = 1,
@@ -7587,15 +7587,6 @@ tile{
   width = 32,
   height = 16,
   pattern = "266",
-}
-
-tile{
-  layer = 2,
-  x = 240,
-  y = 144,
-  width = 16,
-  height = 8,
-  pattern = "133",
 }
 
 tile{
