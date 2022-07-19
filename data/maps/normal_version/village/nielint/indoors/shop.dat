@@ -12,19 +12,21 @@ properties{
 tile{
   layer = 0,
   x = 16,
-  y = 0,
+  y = 16,
   width = 128,
-  height = 112,
-  pattern = "1",
+  height = 96,
+  pattern = "319",
+  tileset = "normal/main",
 }
 
 tile{
   layer = 0,
   x = 144,
-  y = 0,
+  y = 16,
   width = 16,
-  height = 16,
-  pattern = "4",
+  height = 96,
+  pattern = "317_2",
+  tileset = "normal/main",
 }
 
 tile{
@@ -33,7 +35,58 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "9",
+  pattern = "316_3",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 0,
+  width = 128,
+  height = 16,
+  pattern = "318",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 96,
+  pattern = "317",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "316",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 112,
+  width = 48,
+  height = 16,
+  pattern = "318_2",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "316_4",
+  tileset = "normal/main",
 }
 
 tile{
@@ -42,34 +95,8 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "7",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 0,
-  width = 128,
-  height = 16,
-  pattern = "3",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 112,
-  width = 128,
-  height = 16,
-  pattern = "8",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = "27",
+  pattern = "316_2",
+  tileset = "normal/main",
 }
 
 tile{
@@ -78,25 +105,38 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "36",
+  pattern = "319",
+  tileset = "normal/main",
 }
 
 tile{
   layer = 0,
-  x = 64,
+  x = 96,
   y = 112,
-  width = 8,
+  width = 48,
   height = 16,
-  pattern = "34",
+  pattern = "318_2",
+  tileset = "normal/main",
 }
 
 tile{
   layer = 0,
-  x = 88,
-  y = 112,
-  width = 8,
+  x = 32,
+  y = 80,
+  width = 16,
   height = 16,
-  pattern = "35",
+  pattern = "316_18",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "333",
+  tileset = "normal/main",
 }
 
 tile{
@@ -105,16 +145,28 @@ tile{
   y = 16,
   width = 96,
   height = 32,
-  pattern = "45",
+  pattern = "319_2",
+  tileset = "normal/main",
 }
 
 tile{
   layer = 0,
-  x = 112,
-  y = 80,
-  width = 32,
-  height = 32,
-  pattern = "73",
+  x = 64,
+  y = 112,
+  width = 8,
+  height = 16,
+  pattern = "332",
+  tileset = "normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 112,
+  width = 8,
+  height = 16,
+  pattern = "332_2",
+  tileset = "normal/main",
 }
 
 tile{
@@ -123,34 +175,8 @@ tile{
   y = 96,
   width = 16,
   height = 16,
-  pattern = "50",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "2",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 16,
-  width = 16,
-  height = 96,
-  pattern = "5",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 16,
-  width = 16,
-  height = 96,
-  pattern = "6",
+  pattern = "316_22",
+  tileset = "normal/main",
 }
 
 destination{
@@ -203,5 +229,37 @@ custom_entity{
   height = 32,
   direction = 0,
   model = "shop_item",
+}
+
+destructible{
+  layer = 1,
+  x = 120,
+  y = 109,
+  sprite = "entities/projectile/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 136,
+  y = 109,
+  sprite = "entities/projectile/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 136,
+  y = 93,
+  sprite = "entities/projectile/pot",
+  weight = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 120,
+  y = 93,
+  sprite = "entities/projectile/pot",
+  weight = 1,
 }
 
