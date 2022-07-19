@@ -9,6 +9,12 @@ local hero_sprite, sword_sprite
 local pull_lever_state
 local push_block_state
 
+
+function hero_meta:on_created()
+  hero_sprite = hero:get_sprite("tunic")
+  sword_sprite = hero:get_sprite("sword")
+end
+
 local function initialize_hero_features(game)
 
   local hero = game:get_hero()

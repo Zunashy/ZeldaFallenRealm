@@ -962,3 +962,15 @@ destructible{
   ground = "low_wall",
 }
 
+destructible{
+  layer = 0,
+  x = 176,
+  y = 101,
+  treasure_name = "random",
+  sprite = "entities/vegetation/grass/grass",
+  destruction_sound = "destroy_rock",
+  weight = -1,
+  can_be_cut = true,
+  ground = "low_wall",
+}
+
