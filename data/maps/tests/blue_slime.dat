@@ -368,6 +368,7 @@ destructible{
   x = 88,
   y = 109,
   sprite = "entities/projectile/rock",
+  weight = -1,
 }
 
 destructible{
@@ -763,6 +764,28 @@ pickable{
   x = 280,
   y = 205,
   treasure_name = "bomb",
+}
+
+pickable{
+  layer = 1,
+  x = 248,
+  y = 205,
+  treasure_name = "griffe",
+}
+
+destructible{
+  layer = 1,
+  x = 200,
+  y = 237,
+  properties = {
+    {
+      key = "dig",
+      value = "1",
+    },
+  },
+  sprite = "entities/ground/dig_ground",
+  weight = -1,
+  damage_on_enemies = 0,
 }
 
 tile{

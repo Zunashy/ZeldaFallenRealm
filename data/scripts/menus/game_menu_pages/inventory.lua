@@ -9,6 +9,7 @@ local inventory_menu = {
         "fire_seed",
         "hammer",
         "bomb",
+        "griffe"
         [13] = "horn",
     },
     items_sprites = {},
