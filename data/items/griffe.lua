@@ -19,7 +19,8 @@ function detect_ground()
   local hero = game:get_hero()
   local x, y = hero:get_position()
   for entity in map:get_entities_in_rectangle(x, y, 1, 1) do
-    if (entity:get_type() == "destructible" and entity:get_property("dig")) then
+    local type = entity:get_type()
+    if ((type == "destructible" or type == "dynamic_tile") and entity:get_property("dig")) then
       process_entity(entity)
     end
   end

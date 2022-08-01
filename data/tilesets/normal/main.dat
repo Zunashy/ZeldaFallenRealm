@@ -5652,7 +5652,7 @@ tile_pattern{
   width = 8,
   height = 8,
   frame_delay = 250,
-  repeat_mode = "horizontal",
+  repeat_mode = "vertical",
 }
 
 tile_pattern{

@@ -672,10 +672,11 @@ destructible{
   properties = {
     {
       key = "savegame_variable",
-      value = "test_rock_savevar",
+      value = "test_rock_savevar_",
     },
   },
   sprite = "entities/projectile/rock",
+  ground = "prickles",
 }
 
 custom_entity{
@@ -776,13 +777,14 @@ pickable{
 destructible{
   layer = 1,
   x = 200,
-  y = 237,
+  y = 253,
   properties = {
     {
       key = "dig",
       value = "1",
     },
   },
+  treasure_name = "random",
   sprite = "entities/ground/dig_ground",
   weight = -1,
   damage_on_enemies = 0,
