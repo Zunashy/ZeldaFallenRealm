@@ -790,6 +790,19 @@ destructible{
   damage_on_enemies = 0,
 }
 
+destructible{
+  layer = 1,
+  x = 216,
+  y = 253,
+  properties = {
+    {
+      key = "dig",
+      value = "1",
+    },
+  },
+  sprite = "entities/ground/dig_ground",
+}
+
 tile{
   layer = 2,
   x = 128,
