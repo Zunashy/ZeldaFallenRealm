@@ -60,6 +60,8 @@ function item.state:on_finished(s) --todo
   local hero = self:get_entity()
   hero:remove_sprite(self.bomb_sprite)
 
+  print(s)
+
   if s ~= "free" then
     self:drop_bomb(hero)
   end
@@ -110,6 +112,8 @@ function item.state:throw_bomb()
   movement:set_speed(throw_speed)
   movement:set_angle((math.pi / 2) * direction)
   movement:start(bomb)
+
+  hero:unfreeze()
 end
 
 function item:on_obtained(variant)

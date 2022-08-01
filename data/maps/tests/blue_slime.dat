@@ -503,8 +503,8 @@ destination{
 
 teletransporter{
   layer = 1,
-  x = 240,
-  y = 208,
+  x = 248,
+  y = 224,
   width = 16,
   height = 16,
   transition = "immediate",
@@ -769,15 +769,15 @@ pickable{
 
 pickable{
   layer = 1,
-  x = 248,
-  y = 205,
+  x = 280,
+  y = 189,
   treasure_name = "griffe",
 }
 
 destructible{
   layer = 1,
   x = 200,
-  y = 253,
+  y = 237,
   properties = {
     {
       key = "dig",
@@ -788,19 +788,7 @@ destructible{
   sprite = "entities/ground/dig_ground",
   weight = -1,
   damage_on_enemies = 0,
-}
-
-destructible{
-  layer = 1,
-  x = 216,
-  y = 253,
-  properties = {
-    {
-      key = "dig",
-      value = "1",
-    },
-  },
-  sprite = "entities/ground/dig_ground",
+  ground = "traversable",
 }
 
 tile{
