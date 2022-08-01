@@ -19,6 +19,24 @@ tile{
 
 tile{
   layer = 0,
+  x = 64,
+  y = 64,
+  width = 32,
+  height = 32,
+  pattern = "166",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 64,
+  width = 32,
+  height = 32,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
   x = 16,
   y = 144,
   width = 128,
@@ -132,132 +150,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "71",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 200,
-  width = 16,
-  height = 32,
-  pattern = "5_4",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 224,
-  width = 16,
-  height = 8,
-  pattern = "8_4",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 192,
-  width = 16,
-  height = 8,
-  pattern = "2_4",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 192,
-  width = 8,
-  height = 8,
-  pattern = "3_4",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 200,
-  width = 8,
-  height = 32,
-  pattern = "6_4",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 200,
-  width = 16,
-  height = 16,
-  pattern = "91",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 224,
-  width = 8,
-  height = 8,
-  pattern = "9_4",
-}
-
-tile{
-  layer = 0,
-  x = 120,
-  y = 168,
-  width = 8,
-  height = 8,
-  pattern = "1_4",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 176,
-  width = 16,
-  height = 32,
-  pattern = "5_4",
-}
-
-tile{
-  layer = 0,
-  x = 120,
-  y = 176,
-  width = 8,
-  height = 32,
-  pattern = "4_4",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 200,
-  width = 16,
-  height = 8,
-  pattern = "8_4",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 168,
-  width = 16,
-  height = 8,
-  pattern = "2_4",
-}
-
-tile{
-  layer = 0,
-  x = 120,
-  y = 200,
-  width = 8,
-  height = 8,
-  pattern = "7_4",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 176,
-  width = 16,
-  height = 16,
-  pattern = "18",
 }
 
 tile{
@@ -508,6 +400,186 @@ tile{
   pattern = "196_2",
 }
 
+tile{
+  layer = 0,
+  x = 56,
+  y = 0,
+  width = 48,
+  height = 48,
+  pattern = "286",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 88,
+  width = 16,
+  height = 8,
+  pattern = "246_9",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 64,
+  width = 8,
+  height = 8,
+  pattern = "246_3",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 64,
+  width = 8,
+  height = 8,
+  pattern = "246",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 88,
+  width = 8,
+  height = 8,
+  pattern = "246_8",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 88,
+  width = 8,
+  height = 8,
+  pattern = "246_7",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 64,
+  width = 16,
+  height = 8,
+  pattern = "246_2",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 72,
+  width = 8,
+  height = 16,
+  pattern = "246_5",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 72,
+  width = 8,
+  height = 16,
+  pattern = "246_4",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "227",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "227",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 200,
+  width = 16,
+  height = 16,
+  pattern = "197",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 152,
+  width = 16,
+  height = 16,
+  pattern = "197",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 184,
+  width = 16,
+  height = 16,
+  pattern = "227",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "227",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 200,
+  width = 16,
+  height = 16,
+  pattern = "197",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "227",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "197",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "197",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "227",
+}
+
 custom_entity{
   layer = 0,
   x = 80,
@@ -515,7 +587,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 1,
-  sprite = "entities/wall/fissured_wall_2",
+  sprite = "entities/wall/fissured_wall",
 }
 
 teletransporter{
@@ -526,5 +598,41 @@ teletransporter{
   height = 16,
   destination_map = "normal_version/village/nielint/indoors/bar_grotte",
   sprite = "entities/dungeon_elements/teleport",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 80,
+  y = 245,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 72,
+  y = 240,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/village/nielint/outdoors",
+  destination = "cavetovillage",
+}
+
+teletransporter{
+  layer = 0,
+  x = 72,
+  y = 184,
+  width = 16,
+  height = 16,
+  destination_map = "war_version/village/indoors/cave_bar",
+  destination = "tp_normal",
+}
+
+destination{
+  name = "tp_war",
+  layer = 0,
+  x = 80,
+  y = 205,
+  direction = 1,
 }
 

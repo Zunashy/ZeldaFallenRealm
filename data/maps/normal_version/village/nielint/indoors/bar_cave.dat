@@ -255,39 +255,3 @@ teletransporter{
   sprite = "entities/dungeon_elements/teleport",
 }
 
-destination{
-  name = "destination",
-  layer = 0,
-  x = 80,
-  y = 117,
-  direction = 1,
-}
-
-teletransporter{
-  layer = 0,
-  x = 72,
-  y = 112,
-  width = 16,
-  height = 16,
-  destination_map = "normal_version/village/nielint/outdoors",
-  destination = "cavetovillage",
-}
-
-teletransporter{
-  layer = 0,
-  x = 72,
-  y = 56,
-  width = 16,
-  height = 16,
-  destination_map = "war_version/village/indoors/cave_bar",
-  destination = "tp_normal",
-}
-
-destination{
-  name = "tp_war",
-  layer = 0,
-  x = 80,
-  y = 77,
-  direction = 1,
-}
-
