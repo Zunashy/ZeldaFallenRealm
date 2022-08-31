@@ -31,6 +31,17 @@ function gen.import(dest, src, ...)
   end
 end
 
+-- Récupère une des propriétés custom données (la première qui a une valeur)
+function gen.get_any_property(entity, ...)
+  for _, key in ipairs({...}) do
+    local property = entity:get_property(key)
+    if property then
+      return property
+    end
+  end
+  return nil
+end
+
 --Crée une nouvelle classe, avec sa métatable, et une méthode new() pour créer une instance.
 --Si bClass est spécifié, cette classe héritera de bClass
 

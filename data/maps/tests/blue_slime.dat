@@ -783,6 +783,10 @@ destructible{
       key = "dig",
       value = "1",
     },
+    {
+      key = "dig_map",
+      value = "tests/outside",
+    },
   },
   treasure_name = "random",
   sprite = "entities/ground/dig_ground",
