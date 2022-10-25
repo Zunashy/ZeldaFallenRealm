@@ -72,6 +72,14 @@ animation{
   },
 }
 animation{
+  name = "digging",
+  src_image = "hero/digging.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 24, frame_height = 24, origin_x = 8, origin_y = 21 },
+    { x = 24, y = 0, frame_width = 24, frame_height = 24, origin_x = 13, origin_y = 21 },
+  },
+}
+animation{
   name = "down",
   src_image = "hero/Link_dead.png",
   directions = {
