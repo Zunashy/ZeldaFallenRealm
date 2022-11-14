@@ -10,26 +10,21 @@
 
 local item = ...
 local game = item:get_game()
+local hero = game:get_hero()
 
 function item:on_started()
   self:set_savegame_variable("griffe_possession")
   self:set_assignable(true)
 end
 
-local function process_entity(entity, hero)
-  local map = entity:get_property("dig_map")
-  if map and destination then
-    local destination = entity:get_property("dig_destination")
-    hero:teleport(map, destination, "fade")
-    return
-  end
-
-  local treasure = entity:get_property("dig_treasure")
-  if treasure then
-    local variant = entity:get_property("dig_variant") or 0
-    local variable = entity:get_property("dig_variable")
-    spawn_treasure(entity, treasure, variant, variable)
-  end
+local function play_animation(hero, effect)
+  hero:freeze()
+  local sprite = hero:get_sprite()
+  sprite:set_animation("dig")
+  sol.timer.start(200, function()
+    effect()
+    item:set_finished() 
+  end)
 end
 
 local function spawn_treasure(entity, treasure, variant, variable)
@@ -41,11 +36,22 @@ local function spawn_treasure(entity, treasure, variant, variable)
     layer = layer,
     treasure_name = treasure,
     treasure_variant = variant,
-    treasure_savegame_variable 
+    treasure_savegame_variable = variable 
   })
 end
 
-local function process_destructible(entity, hero)
+local function teleport(hero,  map, entity)
+  local destination = entity:get_property("dig_destination")
+  hero:teleport(map, destination, "fade")
+end
+
+local function process_dynamic_tile_treasure(treasure, entity)
+  local variant = entity:get_property("dig_variant") or 0
+  local variable = entity:get_property("dig_variable")
+  spawn_treasure(entity, treasure, variant, variable)
+end
+
+local function process_destructible(entity)
   spawn_treasure(entity, entity:get_treasure())
 end
 
@@ -54,12 +60,24 @@ local function detect_ground()
   local x, y = hero:get_position()
   local map = game:get_map()
   for entity in map:get_entities_in_rectangle(x, y, 1, 1) do
-    local type = entity:get_type()
-
-    --if we have a dig property : if its a dynatile we call process_entity, but on a destructible we first call process_destructible then process entity if the former returned false
-    if (entity:get_property("dig") and (type == "destructible" and (not process_destructible(entity, hero)) or type == "dynamic_tile")) then
-      process_entity(entity, hero)
+    local prop = entity:get_property("dig_map")
+    if prop then
+      play_animation(hero, function() teleport(hero, prop, entity) end)
+      return
     end
+
+    prop = entity:get_property("dig_treasure")
+    if prop then
+      play_animation(hero, function() process_dynamic_tile_treasure(prop, entity) end)
+      return
+    end
+
+    local type = entity:get_type()
+    if type == "destructible" and entity:get_property("dig") then
+      play_animation(hero, function() process_destructible(entity) end)
+      return 
+    end
+    
   end
 end
 
