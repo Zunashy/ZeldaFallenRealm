@@ -676,7 +676,6 @@ destructible{
     },
   },
   sprite = "entities/projectile/rock",
-  ground = "prickles",
 }
 
 custom_entity{
@@ -776,8 +775,8 @@ pickable{
 
 destructible{
   layer = 1,
-  x = 200,
-  y = 237,
+  x = 232,
+  y = 253,
   properties = {
     {
       key = "dig",
