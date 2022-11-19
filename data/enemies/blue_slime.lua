@@ -134,7 +134,7 @@ function enemy:on_created()
   enemy:set_attack_consequence("sword", function(...)
     local angle_to_hero = enemy:get_angle(hero)
     local angle_face = sprite:get_direction() * (math.pi / 2)
-    if math.abs(angle_to_hero - angle_face) > (math.pi * 0.4) then
+    if math.abs(angle_to_hero - angle_face) > (math.pi * 0.6) then
       enemy:hurt(1)
     else 
       sol.audio.play_sound("sword_tapping")
