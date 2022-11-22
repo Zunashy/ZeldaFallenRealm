@@ -21,10 +21,22 @@ local function play_animation(hero, effect)
   hero:freeze()
   local sprite = hero:get_sprite()
   sprite:set_animation("dig")
-  sol.timer.start(200, function()
+  sol.timer.start(200 , function()
     effect()
     item:set_finished() 
   end)
+
+  local map = hero:get_map()
+  local x, y, layer = hero:get_position()
+  map:create_custom_entity({
+    x = x,
+    y = y,
+    layer = layer,
+    width = 32,
+    height = 32,
+    direction = 0,
+    sprite = "entities/ground/dig_effect"
+  })
 end
 
 local function spawn_treasure(entity, treasure, variant, variable)
