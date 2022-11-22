@@ -17,18 +17,21 @@ function item:on_started()
   self:set_assignable(true)
 end
 
-local function play_animation(hero, effect)
+local function play_animation(hero, effect, delay)
+  delay = delay or 200
   hero:freeze()
   local sprite = hero:get_sprite()
-  sprite:set_animation("dig")
-  sol.timer.start(200 , function()
+  sprite:set_animation("dig", function()
+    item:set_finished()
+    hero:unfreeze()
+  end)
+  sol.timer.start(delay , function()
     effect()
-    item:set_finished() 
   end)
 
   local map = hero:get_map()
   local x, y, layer = hero:get_position()
-  map:create_custom_entity({
+  local e = map:create_custom_entity({
     x = x,
     y = y,
     layer = layer,
@@ -37,12 +40,16 @@ local function play_animation(hero, effect)
     direction = 0,
     sprite = "entities/ground/dig_effect"
   })
+  e:get_sprite():register_event("on_animation_finished", function()
+    print("anim finished")
+  end)
+
+  return true
 end
 
-local function spawn_treasure(entity, treasure, variant, variable)
-  local map = entity:get_map()
+local function spawn_treasure(map, entity, treasure, variant, variable)
   local x, y, layer = entity:get_position()
-  map:create_pickable({
+  local p = map:create_pickable({
     x = x,
     y = y,
     layer = layer,
@@ -61,14 +68,18 @@ local function teleport(hero,  map, entity)
   hero:teleport(map, destination, "fade")
 end
 
-local function process_dynamic_tile_treasure(treasure, entity)
+local function process_dynamic_tile_treasure(map, treasure, entity)
   local variant = entity:get_property("dig_variant") or 0
   local variable = entity:get_property("dig_variable")
-  spawn_treasure(entity, treasure, variant, variable)
+  spawn_treasure(map, entity, treasure, variant, variable)
+  map:create_hole(entity)
+  entity:remove()
 end
 
-local function process_destructible(entity)
-  spawn_treasure(entity, entity:get_treasure())
+local function process_destructible(map, entity)
+  spawn_treasure(map, entity, entity:get_treasure())
+  map:create_hole(entity)
+  entity:remove()
 end
 
 local function detect_ground()
@@ -78,29 +89,25 @@ local function detect_ground()
   for entity in map:get_entities_in_rectangle(x, y, 1, 1) do
     local prop = entity:get_property("dig_map")
     if prop then
-      play_animation(hero, function() teleport(hero, prop, entity) end)
-      return
+      return play_animation(hero, function() teleport(hero, prop, entity) end)
     end
 
     prop = entity:get_property("dig_treasure")
     if prop then
-      play_animation(hero, function() process_dynamic_tile_treasure(prop, entity) end)
-      return
+      return play_animation(hero, function() process_dynamic_tile_treasure(map, prop, entity) end, 400)
     end
 
     local type = entity:get_type()
     if type == "destructible" and entity:get_property("dig") then
-      play_animation(hero, function() process_destructible(entity) end)
-      return 
+      return play_animation(hero, function() process_destructible(map, entity) end, 400)
     end
-    
   end
+  return false
 end
 
 function item:on_using()
-
-  detect_ground()
-
-  item:set_finished()
+  if not detect_ground() then
+    item:set_finished()
+  end
 end
 

@@ -788,10 +788,29 @@ destructible{
     },
     {
       key = "dig_variable",
-      value = "testvar1",
+      value = "testvar2",
     },
   },
   treasure_name = "random",
+  sprite = "entities/ground/dig_ground",
+  weight = -1,
+  damage_on_enemies = 0,
+  ground = "traversable",
+}
+
+destructible{
+  layer = 1,
+  x = 232,
+  y = 269,
+  properties = {
+    {
+      key = "dig",
+      value = "",
+    },
+  },
+  treasure_name = "rupee",
+  treasure_variant = 2,
+  treasure_savegame_variable = "testvar3",
   sprite = "entities/ground/dig_ground",
   weight = -1,
   damage_on_enemies = 0,

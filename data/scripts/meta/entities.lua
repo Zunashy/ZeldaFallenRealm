@@ -194,8 +194,7 @@ local function check_dig_tp(entity)
     local destination = entity:get_property("dig_destination")
     local x, y, layer = entity:get_position()
     local w, h = entity:get_size()
-    print(x, y, w, h)
-    local tp = entity:get_map():create_teletransporter({
+    entity:get_map():create_teletransporter({
       x = x - 8,
       y = y - 13,
       layer = layer,
@@ -206,7 +205,6 @@ local function check_dig_tp(entity)
       destination_map = prop,
       destination = destination
     })
-    print(tp:get_sprite():get_origin())
   end
 end
 
@@ -223,6 +221,12 @@ function dest_meta:on_created()
   local prop = self:get_property("savegame_variable")
   if prop and self:get_game():get_value(prop) or is_dug_ground(self) then
     check_dig_tp(self)
+    self:remove()
+  end
+
+  local t, v, variable = self:get_treasure()
+  if variable and self:get_game():get_value(variable) then
+    self:get_map():create_hole(self)
     self:remove()
   end
 end
