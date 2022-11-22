@@ -96,6 +96,12 @@ function map_meta:get_entities_at_pos(x, y)
     return self:get_entities_in_rectangle(x, y, 1, 1)
 end
 
+local function call_on_canceled(entity)
+    if entity.on_cancelled then
+        entity:on_cancelled()
+    end
+end
+
 local function generic_start_callback(map)
     local special_tiles = require("scripts/feature/special_tiles")
     local prop

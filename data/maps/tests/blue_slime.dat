@@ -503,7 +503,7 @@ destination{
 
 teletransporter{
   layer = 1,
-  x = 248,
+  x = 256,
   y = 224,
   width = 16,
   height = 16,
@@ -775,7 +775,7 @@ pickable{
 
 destructible{
   layer = 1,
-  x = 232,
+  x = 248,
   y = 253,
   properties = {
     {
@@ -785,6 +785,10 @@ destructible{
     {
       key = "dig_map",
       value = "tests/outside",
+    },
+    {
+      key = "dig_variable",
+      value = "testvar1",
     },
   },
   treasure_name = "random",

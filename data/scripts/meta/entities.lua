@@ -180,26 +180,48 @@ function enemy_meta:on_removed()
   end
 end
 
+
+local function is_dug_ground(entity)
+  local prop = entity:get_property("dig_variable")
+  return prop and entity:get_game():get_value(prop)
+end
+
+
 --called only when removing a dig tp because variable set
 local function check_dig_tp(entity)
-  prop = self:get_property("dig_map")
+  prop = entity:get_property("dig_map")
   if prop then
-    
+    local destination = entity:get_property("dig_destination")
+    local x, y, layer = entity:get_position()
+    local w, h = entity:get_size()
+    print(x, y, w, h)
+    local tp = entity:get_map():create_teletransporter({
+      x = x - 8,
+      y = y - 13,
+      layer = layer,
+      width = w,
+      height = h,
+      sprite = "entities/ground/dug_stairs",
+      transition = "fade",
+      destination_map = prop,
+      destination = destination
+    })
+    print(tp:get_sprite():get_origin())
   end
 end
 
 local dynatile_meta = sol.main.get_metatable("dynamic_tile")
 function dynatile_meta:on_created()
-  local prop = self:get_property("dig_variable")
-  if prop and self:get_game():get_value(prop) then --this dynatile had saved dig info
+  if is_dug_ground(self) then --this dynatile had saved dig info
     check_dig_tp(self)  --we check if it was a TP and act accordingly
   end
 end
 
 local dest_meta = sol.main.get_metatable("destructible")
+
 function dest_meta:on_created()
   local prop = self:get_property("savegame_variable")
-  if prop and self:get_game():get_value(prop) then
+  if prop and self:get_game():get_value(prop) or is_dug_ground(self) then
     check_dig_tp(self)
     self:remove()
   end
