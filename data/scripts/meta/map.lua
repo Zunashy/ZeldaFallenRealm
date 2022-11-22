@@ -122,7 +122,6 @@ local function generic_start_callback(map)
             print("y order")
             e:set_drawn_in_y_order(true)
         end
-
     end
 
     for k, v in pairs(special_tiles) do

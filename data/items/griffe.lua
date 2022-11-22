@@ -54,6 +54,10 @@ end
 
 local function teleport(hero,  map, entity)
   local destination = entity:get_property("dig_destination")
+  local variable = entity:get_property("dig_variable")
+  if variable then
+    game:set_value(variable, true)
+  end
   hero:teleport(map, destination, "fade")
 end
 

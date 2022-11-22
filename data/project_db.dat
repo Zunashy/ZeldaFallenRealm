@@ -202,7 +202,8 @@ sprite{ id = "entities/dungeon_elements/teleport", description = "entities/dunge
 sprite{ id = "entities/dungeon_statue_eye", description = "entities/dungeon_statue_eye" }
 sprite{ id = "entities/ground/dig_effect", description = "Effect visuel griffe" }
 sprite{ id = "entities/ground/dig_ground", description = "Sol creusable" }
-sprite{ id = "entities/ground/dug", description = "Sol creusé" }
+sprite{ id = "entities/ground/dug_ground", description = "Sol creusé" }
+sprite{ id = "entities/ground/dug_stairs", description = "Trou creusé qui TP" }
 sprite{ id = "entities/items", description = "entities/items" }
 sprite{ id = "entities/items_effects/flame", description = "entities/items_effects/flame" }
 sprite{ id = "entities/items_effects/ice_floor", description = "entities/items_effects/ice_floor" }

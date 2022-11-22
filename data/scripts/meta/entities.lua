@@ -180,10 +180,27 @@ function enemy_meta:on_removed()
   end
 end
 
+--called only when removing a dig tp because variable set
+local function check_dig_tp(entity)
+  prop = self:get_property("dig_map")
+  if prop then
+    
+  end
+end
+
+local dynatile_meta = sol.main.get_metatable("dynamic_tile")
+function dynatile_meta:on_created()
+  local prop = self:get_property("dig_variable")
+  if prop and self:get_game():get_value(prop) then --this dynatile had saved dig info
+    check_dig_tp(self)  --we check if it was a TP and act accordingly
+  end
+end
+
 local dest_meta = sol.main.get_metatable("destructible")
 function dest_meta:on_created()
   local prop = self:get_property("savegame_variable")
   if prop and self:get_game():get_value(prop) then
+    check_dig_tp(self)
     self:remove()
   end
 end
