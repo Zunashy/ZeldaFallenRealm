@@ -96,6 +96,27 @@ function map_meta:get_entities_at_pos(x, y)
     return self:get_entities_in_rectangle(x, y, 1, 1)
 end
 
+function map_meta:create_hole(entity)
+    local x, y, layer = entity:get_position()
+    local w, h = entity:get_size()
+    local ce = entity:get_map():create_custom_entity({
+        x = x,
+        y = y,
+        layer = layer,
+        width = w,
+        height = h,
+        sprite = "entities/ground/dug_ground",
+        direction = 0
+    })
+    ce:bring_to_back()
+end
+
+local function call_on_canceled(entity)
+    if entity.on_cancelled then
+        entity:on_cancelled()
+    end
+end
+
 local function generic_start_callback(map)
     local special_tiles = require("scripts/feature/special_tiles")
     local prop
@@ -122,7 +143,6 @@ local function generic_start_callback(map)
             print("y order")
             e:set_drawn_in_y_order(true)
         end
-
     end
 
     for k, v in pairs(special_tiles) do
