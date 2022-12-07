@@ -137,19 +137,28 @@ tile{
 
 tile{
   layer = 1,
-  x = 0,
-  y = 304,
-  width = 640,
-  height = 208,
+  x = 160,
+  y = 0,
+  width = 480,
+  height = 112,
   pattern = "1",
 }
 
 tile{
   layer = 1,
-  x = 160,
-  y = 0,
-  width = 480,
-  height = 112,
+  x = 320,
+  y = -16,
+  width = 32,
+  height = 32,
+  pattern = "15_3",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 304,
+  width = 640,
+  height = 208,
   pattern = "1",
 }
 
@@ -1069,15 +1078,6 @@ tile{
   width = 32,
   height = 32,
   pattern = "13",
-}
-
-tile{
-  layer = 1,
-  x = 320,
-  y = -16,
-  width = 32,
-  height = 32,
-  pattern = "15_3",
 }
 
 tile{
