@@ -457,3 +457,38 @@ tile{
   pattern = "70",
 }
 
+teletransporter{
+  layer = 0,
+  x = 112,
+  y = 160,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_03/rdc_2",
+}
+
+destination{
+  name = "entrance",
+  layer = 0,
+  x = 120,
+  y = 165,
+  direction = 1,
+}
+
+teletransporter{
+  name = "main_entrance_to_ss1",
+  layer = 0,
+  x = 112,
+  y = 40,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_03/rdc_2",
+}
+
+destination{
+  name = "ss1_to_main_entrance",
+  layer = 0,
+  x = 120,
+  y = 61,
+  direction = 1,
+}
+

@@ -7450,6 +7450,15 @@ tile{
   pattern = "2",
 }
 
+tile{
+  layer = 1,
+  x = 256,
+  y = 592,
+  width = 32,
+  height = 16,
+  pattern = "31",
+}
+
 separator{
   name = "sep_cinematic2_3",
   layer = 1,
@@ -8075,6 +8084,15 @@ custom_entity{
   height = 16,
   direction = 0,
   sprite = "entities/ground/dig_ground",
+}
+
+teletransporter{
+  layer = 1,
+  x = 256,
+  y = 584,
+  width = 32,
+  height = 16,
+  destination_map = "normal_version/overworld/north_beach/outdoors",
 }
 
 tile{

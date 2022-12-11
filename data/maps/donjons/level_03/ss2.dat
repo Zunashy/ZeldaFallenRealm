@@ -1502,3 +1502,20 @@ tile{
   pattern = "11",
 }
 
+tile{
+  layer = 0,
+  x = 592,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "31",
+}
+
+enemy{
+  layer = 0,
+  x = 600,
+  y = 261,
+  direction = 0,
+  breed = "boss/merman",
+}
+

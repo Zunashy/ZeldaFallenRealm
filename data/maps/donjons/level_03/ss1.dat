@@ -2618,6 +2618,323 @@ tile{
   pattern = "31",
 }
 
+tile{
+  layer = 0,
+  x = 592,
+  y = 416,
+  width = 16,
+  height = 112,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 400,
+  width = 16,
+  height = 32,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 400,
+  width = 16,
+  height = 32,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 384,
+  width = 48,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 704,
+  width = 80,
+  height = 16,
+  pattern = "196_6",
+  tileset = "war/main",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 704,
+  width = 80,
+  height = 16,
+  pattern = "196_6",
+  tileset = "war/main",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 720,
+  width = 16,
+  height = 144,
+  pattern = "196_5",
+  tileset = "war/main",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 720,
+  width = 16,
+  height = 144,
+  pattern = "196_4",
+  tileset = "war/main",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 864,
+  width = 208,
+  height = 16,
+  pattern = "196_7",
+  tileset = "war/main",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "196_9",
+  tileset = "war/main",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 864,
+  width = 16,
+  height = 16,
+  pattern = "196_10",
+  tileset = "war/main",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "196_8",
+  tileset = "war/main",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 864,
+  width = 16,
+  height = 16,
+  pattern = "196_11",
+  tileset = "war/main",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "196_12",
+  tileset = "war/main",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "196_13",
+  tileset = "war/main",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 752,
+  width = 16,
+  height = 16,
+  pattern = "69_2",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 824,
+  width = 16,
+  height = 16,
+  pattern = "69_4",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 744,
+  width = 16,
+  height = 16,
+  pattern = "69",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "69_2",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 744,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 824,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 784,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 720,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 824,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 840,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 784,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 760,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 720,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 824,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 720,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 808,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 744,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
 separator{
   layer = 0,
   x = 472,
@@ -2696,5 +3013,35 @@ separator{
   y = 1048,
   width = 1200,
   height = 16,
+}
+
+door{
+  layer = 0,
+  x = 592,
+  y = 528,
+  direction = 0,
+  sprite = "entities/door/boss_door",
+  savegame_variable = "dungeon_2_boss_door",
+  opening_method = "interaction_if_item",
+  opening_condition = "great_key",
+  opening_condition_consumed = true,
+}
+
+teletransporter{
+  name = "ss1_to_main_entrance",
+  layer = 0,
+  x = 592,
+  y = 784,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_03/ss1",
+}
+
+destination{
+  name = "main_entrance_to_ss1",
+  layer = 0,
+  x = 600,
+  y = 789,
+  direction = 1,
 }
 
