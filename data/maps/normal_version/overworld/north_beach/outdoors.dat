@@ -7456,7 +7456,7 @@ tile{
   y = 592,
   width = 32,
   height = 16,
-  pattern = "31",
+  pattern = "30",
 }
 
 separator{
@@ -8087,12 +8087,22 @@ custom_entity{
 }
 
 teletransporter{
+  name = "Pirate_cave",
   layer = 1,
   x = 256,
   y = 584,
   width = 32,
   height = 16,
-  destination_map = "normal_version/overworld/north_beach/outdoors",
+  destination_map = "normal_version/overworld/north_beach/indoors/pirate_cave",
+  destination = "destination",
+}
+
+destination{
+  name = "pirate_cave",
+  layer = 1,
+  x = 272,
+  y = 605,
+  direction = 1,
 }
 
 tile{
