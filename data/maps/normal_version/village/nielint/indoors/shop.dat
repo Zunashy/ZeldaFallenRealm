@@ -5,7 +5,7 @@ properties{
   height = 128,
   min_layer = 0,
   max_layer = 2,
-  tileset = "normal/main",
+  tileset = "01 - normal/main",
   music = "houses",
 }
 
@@ -16,7 +16,7 @@ tile{
   width = 128,
   height = 96,
   pattern = "319",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -26,7 +26,7 @@ tile{
   width = 16,
   height = 96,
   pattern = "317_2",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -36,7 +36,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_3",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -46,7 +46,7 @@ tile{
   width = 128,
   height = 16,
   pattern = "318",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -56,7 +56,7 @@ tile{
   width = 16,
   height = 96,
   pattern = "317",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -66,7 +66,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "316",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -76,7 +76,7 @@ tile{
   width = 48,
   height = 16,
   pattern = "318_2",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -86,7 +86,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_4",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -96,7 +96,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_2",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -106,7 +106,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "319",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -116,7 +116,7 @@ tile{
   width = 48,
   height = 16,
   pattern = "318_2",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -126,7 +126,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_18",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -136,7 +136,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "333",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -146,7 +146,7 @@ tile{
   width = 96,
   height = 32,
   pattern = "319_2",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -156,7 +156,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "332",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -166,7 +166,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "332_2",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -176,7 +176,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_22",
-  tileset = "normal/main",
+
 }
 
 destination{

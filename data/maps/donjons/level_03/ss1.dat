@@ -5,7 +5,7 @@ properties{
   height = 880,
   min_layer = 0,
   max_layer = 2,
-  tileset = "dungeon/tileset_donjon_3",
+  tileset = "03 - dungeon/tileset_donjon_3",
 }
 
 tile{
@@ -2661,7 +2661,7 @@ tile{
   width = 80,
   height = 16,
   pattern = "196_6",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -2671,7 +2671,7 @@ tile{
   width = 80,
   height = 16,
   pattern = "196_6",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -2681,7 +2681,7 @@ tile{
   width = 16,
   height = 144,
   pattern = "196_5",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -2691,7 +2691,7 @@ tile{
   width = 16,
   height = 144,
   pattern = "196_4",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -2701,7 +2701,7 @@ tile{
   width = 208,
   height = 16,
   pattern = "196_7",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -2711,7 +2711,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_9",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -2721,7 +2721,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_10",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -2731,7 +2731,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_8",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -2741,7 +2741,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_11",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -2751,7 +2751,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_12",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -2761,7 +2761,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_13",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{

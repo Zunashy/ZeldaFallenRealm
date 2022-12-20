@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   world = "dungeon_2",
-  tileset = "dungeon/tileset_donjon_2",
+  tileset = "03 - dungeon/tileset_donjon_2",
   music = "dungeon2",
 }
 
@@ -638,7 +638,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_13",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -648,7 +648,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_13",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -658,7 +658,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -668,7 +668,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -678,7 +678,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -688,7 +688,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -698,7 +698,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -708,7 +708,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -718,7 +718,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -728,7 +728,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -738,7 +738,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -748,7 +748,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -776,7 +776,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -786,7 +786,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -796,7 +796,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -806,7 +806,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -816,7 +816,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -826,7 +826,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -836,7 +836,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -846,7 +846,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1261,7 +1261,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_13",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1271,7 +1271,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_13",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1281,7 +1281,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1291,7 +1291,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1301,7 +1301,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1311,7 +1311,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1321,7 +1321,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1331,7 +1331,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1341,7 +1341,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1351,7 +1351,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1361,7 +1361,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1371,7 +1371,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1381,7 +1381,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1391,7 +1391,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1401,7 +1401,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1411,7 +1411,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1421,7 +1421,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1431,7 +1431,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1477,7 +1477,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_13",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1487,7 +1487,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_13",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1497,7 +1497,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_13",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1507,7 +1507,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_13",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1517,7 +1517,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_13",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1527,7 +1527,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_13",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1537,7 +1537,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1547,7 +1547,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -1557,7 +1557,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2539,7 +2539,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_13",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2549,7 +2549,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_13",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2559,7 +2559,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2569,7 +2569,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2597,7 +2597,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2607,7 +2607,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2635,7 +2635,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2645,7 +2645,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2673,7 +2673,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2683,7 +2683,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2702,7 +2702,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2712,7 +2712,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2722,7 +2722,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2732,7 +2732,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2751,7 +2751,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2761,7 +2761,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2771,7 +2771,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2781,7 +2781,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2809,7 +2809,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2819,7 +2819,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2829,7 +2829,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_13",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2839,7 +2839,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_13",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2867,7 +2867,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_13",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2877,7 +2877,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_13",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2887,7 +2887,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_13",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2897,7 +2897,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_13",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2907,7 +2907,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2917,7 +2917,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2927,7 +2927,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2937,7 +2937,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2947,7 +2947,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2957,7 +2957,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2967,7 +2967,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2977,7 +2977,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2987,7 +2987,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -2997,7 +2997,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -3007,7 +3007,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -3017,7 +3017,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -3027,7 +3027,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -3037,7 +3037,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -3047,7 +3047,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -3057,7 +3057,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -3067,7 +3067,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -3077,7 +3077,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -3087,7 +3087,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -3097,7 +3097,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -3107,7 +3107,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -3117,7 +3117,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -3127,7 +3127,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -3137,7 +3137,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -3147,7 +3147,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -3157,7 +3157,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -3167,7 +3167,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -3177,7 +3177,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -3187,7 +3187,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -3197,7 +3197,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -3207,7 +3207,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4126,7 +4126,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "34",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4136,7 +4136,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "34",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4146,7 +4146,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "34",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4156,7 +4156,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "34",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4166,7 +4166,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "34",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4176,7 +4176,7 @@ tile{
   width = 208,
   height = 16,
   pattern = "10",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4186,7 +4186,7 @@ tile{
   width = 16,
   height = 144,
   pattern = "20",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4196,7 +4196,7 @@ tile{
   width = 16,
   height = 144,
   pattern = "19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4206,7 +4206,7 @@ tile{
   width = 96,
   height = 16,
   pattern = "9",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4216,7 +4216,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "14",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4226,7 +4226,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "13",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4236,7 +4236,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "12",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4246,7 +4246,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "11",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4256,7 +4256,7 @@ tile{
   width = 96,
   height = 16,
   pattern = "9",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4428,7 +4428,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4438,7 +4438,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4448,7 +4448,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4458,7 +4458,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4468,7 +4468,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4478,7 +4478,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4488,7 +4488,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4498,7 +4498,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_17",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4508,7 +4508,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4518,7 +4518,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4528,7 +4528,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4538,7 +4538,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_18",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4548,7 +4548,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4558,7 +4558,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4568,7 +4568,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{
@@ -4578,7 +4578,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "47_19",
-  tileset = "dungeon/tileset_donjon_2",
+
 }
 
 tile{

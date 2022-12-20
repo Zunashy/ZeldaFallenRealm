@@ -5,7 +5,7 @@ properties{
   height = 128,
   min_layer = 0,
   max_layer = 2,
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -42,7 +42,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "268",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -52,7 +52,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "268_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -62,7 +62,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "285",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -171,7 +171,7 @@ tile{
   width = 16,
   height = 32,
   pattern = "323",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -217,7 +217,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_25",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -227,7 +227,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_25",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -237,7 +237,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_25",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -247,7 +247,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_25",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -257,7 +257,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_25",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 teletransporter{

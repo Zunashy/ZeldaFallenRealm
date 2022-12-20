@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   world = "Test_Building",
-  tileset = "normal/main",
+  tileset = "01 - normal/main",
 }
 
 tile{
@@ -70,7 +70,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "75",
-  tileset = "normal/main",
+  tileset = "01 - normal/main",
 }
 
 tile{
@@ -251,7 +251,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "4",
-  tileset = "dungeon/tileset_donjon_3",
+  tileset = "03 - dungeon/tileset_donjon_3",
 }
 
 tile{
@@ -261,7 +261,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "1",
-  tileset = "dungeon/tileset_donjon_4",
+  tileset = "03 - dungeon/tileset_donjon_4",
 }
 
 destination{

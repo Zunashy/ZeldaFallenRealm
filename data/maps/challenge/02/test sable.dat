@@ -756,7 +756,7 @@ tile{
 tile{
   layer = 1,
   x = 40,
-  y = 608,
+  y = 616,
   width = 80,
   height = 8,
   pattern = "105",
@@ -7544,6 +7544,15 @@ tile{
   height = 16,
   pattern = "272_5",
   tileset = "normal/main",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 608,
+  width = 80,
+  height = 8,
+  pattern = "105",
 }
 
 tile{

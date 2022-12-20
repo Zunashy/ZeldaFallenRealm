@@ -5,7 +5,7 @@ properties{
   height = 128,
   min_layer = 0,
   max_layer = 2,
-  tileset = "normal/main",
+  tileset = "01 - normal/main",
 }
 
 tile{
@@ -240,7 +240,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_20",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -250,7 +250,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_20",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -260,7 +260,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "325",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -270,7 +270,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "324_2",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -280,7 +280,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "324",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -290,7 +290,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_24",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -300,7 +300,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_24",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -310,7 +310,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "326",
-  tileset = "normal/main",
+
 }
 
 destination{
