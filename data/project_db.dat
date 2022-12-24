@@ -231,6 +231,10 @@ sprite{ id = "entities/vegetation/grass/grass_2" }
 sprite{ id = "entities/vegetation/grass/grass_3" }
 sprite{ id = "entities/vegetation/grass/grass_4" }
 sprite{ id = "entities/vegetation/grass/grass_dark", description = "entities/vegetation/grass/grass_dark" }
+sprite{ id = "entities/vegetation/grass/leaf" }
+sprite{ id = "entities/vegetation/grass/leaf_2" }
+sprite{ id = "entities/vegetation/grass/leaf_3" }
+sprite{ id = "entities/vegetation/grass/leaf_4" }
 sprite{ id = "entities/vegetation/grass_door", description = "entities/vegetation/grass_door" }
 sprite{ id = "entities/vegetation/grass_door_2" }
 sprite{ id = "entities/vegetation/grass_door_3" }

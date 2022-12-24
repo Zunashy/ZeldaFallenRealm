@@ -2015,7 +2015,7 @@ tile_pattern{
 tile_pattern{
   id = "168_2",
   ground = "wall",
-  default_layer = 0,
+  default_layer = 1,
   x = 32,
   y = 256,
   width = 16,
@@ -2025,7 +2025,7 @@ tile_pattern{
 tile_pattern{
   id = "168_3",
   ground = "wall",
-  default_layer = 0,
+  default_layer = 1,
   x = 48,
   y = 256,
   width = 16,

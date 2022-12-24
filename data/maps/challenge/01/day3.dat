@@ -5,7 +5,7 @@ properties{
   height = 512,
   min_layer = 0,
   max_layer = 2,
-  tileset = "normal/main",
+  tileset = "01 - normal/main",
 }
 
 tile{
@@ -699,7 +699,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "69_3",
-  tileset = "normal/main",
+  tileset = "01 - normal/main",
 }
 
 tile{
@@ -718,7 +718,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "77_6",
-  tileset = "normal/main",
+  tileset = "01 - normal/main",
 }
 
 tile{
@@ -3518,7 +3518,7 @@ tile{
   width = 48,
   height = 16,
   pattern = "43_3",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -3528,7 +3528,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "42_3",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -3538,7 +3538,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "40_3",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -3548,7 +3548,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "41_3",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -3783,7 +3783,7 @@ tile{
   width = 8,
   height = 96,
   pattern = "25",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -3793,7 +3793,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "18",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -3803,7 +3803,7 @@ tile{
   width = 64,
   height = 16,
   pattern = "8_2",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -3813,7 +3813,7 @@ tile{
   width = 8,
   height = 96,
   pattern = "25_2",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -3823,7 +3823,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "23",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -3833,7 +3833,7 @@ tile{
   width = 48,
   height = 8,
   pattern = "9_2",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -3843,7 +3843,7 @@ tile{
   width = 8,
   height = 32,
   pattern = "22",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -3853,7 +3853,7 @@ tile{
   width = 80,
   height = 16,
   pattern = "14",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -3863,7 +3863,7 @@ tile{
   width = 64,
   height = 48,
   pattern = "27",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -3873,7 +3873,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "20",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -3883,7 +3883,7 @@ tile{
   width = 32,
   height = 16,
   pattern = "19",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -3893,7 +3893,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "17",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -3903,7 +3903,7 @@ tile{
   width = 8,
   height = 32,
   pattern = "22_2",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -3913,7 +3913,7 @@ tile{
   width = 16,
   height = 24,
   pattern = "11_2",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -3923,7 +3923,7 @@ tile{
   width = 64,
   height = 96,
   pattern = "26",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -3933,7 +3933,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "24",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -3943,7 +3943,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "10_2",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -4268,7 +4268,7 @@ tile{
   width = 16,
   height = 24,
   pattern = "3",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -4278,7 +4278,7 @@ tile{
   width = 16,
   height = 24,
   pattern = "3",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -4288,7 +4288,7 @@ tile{
   width = 16,
   height = 24,
   pattern = "3_2",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
