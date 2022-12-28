@@ -54,9 +54,8 @@ local function new_instance(self, ...)
     inst = {}
   end
   inst.class = self
-  print("Instanciating", self)
   setmetatable(inst, self.mt)
-  if type(inst.constructor) == "function" then
+  if type(self.constructor) == "function" then
     if inst:constructor(...) then
       return false
     end
@@ -69,11 +68,11 @@ function gen.class(bClass)
     return gen.inherit_class(bClass)
   end
 
-  local newclass = {    
+  local newclass = {}
+  newclass.mt = {
     __index = newclass,
     __tostring = function () return "Instance of class :" .. newclass.name end
   }
-  newclass.mt = newclass
 
   newclass.new = new_instance
 

@@ -125,7 +125,6 @@ tileset{ id = "03 - dungeon/tileset_donjon_5", description = "dungeon/tileset_do
 tileset{ id = "03 - dungeon/tileset_donjon_6", description = "dungeon/tileset_donjon_6" }
 tileset{ id = "03 - dungeon/tileset_donjon_7", description = "dungeon/tileset_donjon_7" }
 tileset{ id = "04 - caves/cave_side", description = "caves/cave_side" }
-tileset{ id = "House", description = "House" }
 tileset{ id = "model", description = "model" }
 
 sprite{ id = "citizens/old_man", description = "citizens/old_man" }

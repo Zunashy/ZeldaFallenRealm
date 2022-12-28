@@ -27,6 +27,9 @@ function item_icon_builder:new(game, config)
       -- Item.
       item_icon.item_sprite:draw(item_icon.surface, 8, 13)
     end
+
+    print(item_icon.item_displayed)
+
   end
 
   function item_icon:on_draw(dst_surface)
@@ -43,12 +46,8 @@ function item_icon_builder:new(game, config)
     item_icon.surface:draw(dst_surface, x, y)
   end
 
-  local function check()
-
-    local need_rebuild = false
-
-    -- Item assigned.
-    local item = game:get_item_assigned(item_icon.slot)
+  local function check_item(item)
+    local need_rebuild
     if item_icon.item_displayed ~= item then
       need_rebuild = true
       item_icon.item_displayed = item
@@ -72,14 +71,29 @@ function item_icon_builder:new(game, config)
     if need_rebuild then
       item_icon:rebuild_surface()
     end
+  end
+
+  local function check()
+    -- Item assigned.
+    local item = game:get_item_assigned(item_icon.slot)
+    check_item(item)
 
     return true  -- Repeat the timer.
   end
 
+  local old = game.set_item_assigned
+  function game:set_item_assigned(slot, item)
+    if (slot == item_icon.slot) then
+      check_item(item)
+    end
+    old(game, slot, item)
+  end
+
   -- Periodically check.
-  check()
-  sol.timer.start(game, 50, check)
-  item_icon:rebuild_surface()
+  --check()
+  --sol.timer.start(game, 50, check)
+  
+  check_item(game:get_item_assigned(item_icon.slot))
 
   return item_icon
 end
