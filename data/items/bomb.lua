@@ -125,6 +125,8 @@ function item:on_obtained(variant)
   end
 end
 
+
+
 -- Called when the player uses the bombs of his inventory by pressing
 -- the corresponding item key.
 function item:on_using()
