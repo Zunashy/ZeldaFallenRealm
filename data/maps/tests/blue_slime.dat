@@ -810,11 +810,18 @@ destructible{
   },
   treasure_name = "rupee",
   treasure_variant = 2,
-  treasure_savegame_variable = "testvar3",
+  treasure_savegame_variable = "testvar41",
   sprite = "entities/ground/dig_ground",
   weight = -1,
   damage_on_enemies = 0,
   ground = "traversable",
+}
+
+destructible{
+  layer = 1,
+  x = 216,
+  y = 237,
+  sprite = "test/snas",
 }
 
 tile{

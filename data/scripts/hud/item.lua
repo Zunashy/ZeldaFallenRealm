@@ -13,8 +13,17 @@ function item_icon_builder:new(game, config)
   item_icon.item_sprite = sol.sprite.create("entities/items")
   item_icon.item_displayed = nil
   item_icon.item_variant_displayed = 0
+  item_icon.current_amount = 0
+
+  local display_amount = false
 
   local dst_x, dst_y = config.x, config.y
+
+  local digits_text = sol.text_surface.create({
+    font = "8_bit OOS",
+    horizontal_alignment = "left",
+    vertical_alignment = "top",
+  })
 
   function item_icon:rebuild_surface()
 
@@ -27,6 +36,11 @@ function item_icon_builder:new(game, config)
       -- Item.
       item_icon.item_sprite:draw(item_icon.surface, 8, 13)
     end
+
+    if display_amount then
+      digits_text:draw(item_icon.surface, 13, 8)
+    end
+
   end
 
   function item_icon:on_draw(dst_surface)
@@ -43,18 +57,20 @@ function item_icon_builder:new(game, config)
     item_icon.surface:draw(dst_surface, x, y)
   end
 
-  local function check()
+  local function set_amount(amount)
+    digits_text:set_text(tostring(amount))
+  end
 
-    local need_rebuild = false
-
-    -- Item assigned.
-    local item = game:get_item_assigned(item_icon.slot)
+  local function check_item(item)
+    local need_rebuild
     if item_icon.item_displayed ~= item then
       need_rebuild = true
       item_icon.item_displayed = item
       item_icon.item_variant_displayed = nil
       if item ~= nil then
         item_icon.item_sprite:set_animation(item:get_name())
+        display_amount = item:has_amount()
+        set_amount(item:get_amount())
       end
     end
 
@@ -72,14 +88,37 @@ function item_icon_builder:new(game, config)
     if need_rebuild then
       item_icon:rebuild_surface()
     end
+  end
+
+  local function check()
+    -- Item assigned.
+    local item = game:get_item_assigned(item_icon.slot)
+    check_item(item)
 
     return true  -- Repeat the timer.
   end
 
+  local old = game.set_item_assigned
+  function game:set_item_assigned(slot, item)
+    if (slot == item_icon.slot) then
+      check_item(item)
+    end
+    old(game, slot, item)
+  end
+
+  local meta = sol.main.get_metatable("item")
+  meta:register_event("on_amount_changed", function(item, amount)
+    if (item == item_icon.item_displayed) and (display_amount) then
+      set_amount(amount)
+      item_icon:rebuild_surface()
+    end
+  end)
+
   -- Periodically check.
-  check()
-  sol.timer.start(game, 50, check)
-  item_icon:rebuild_surface()
+  --check()
+  --sol.timer.start(game, 50, check)
+  
+  check_item(game:get_item_assigned(item_icon.slot))
 
   return item_icon
 end
