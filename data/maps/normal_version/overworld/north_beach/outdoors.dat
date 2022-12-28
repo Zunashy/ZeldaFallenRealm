@@ -5,7 +5,7 @@ properties{
   height = 640,
   min_layer = 0,
   max_layer = 2,
-  tileset = "normal/main",
+  tileset = "01 - normal/main",
   music = "overworld",
 }
 
@@ -947,6 +947,24 @@ tile{
 
 tile{
   layer = 1,
+  x = 320,
+  y = 0,
+  width = 320,
+  height = 240,
+  pattern = "1",
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 1,
   x = 96,
   y = 288,
   width = 368,
@@ -970,7 +988,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -989,7 +1007,7 @@ tile{
   width = 32,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1233,15 +1251,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "163",
-}
-
-tile{
-  layer = 1,
-  x = 320,
-  y = 0,
-  width = 320,
-  height = 240,
-  pattern = "1",
 }
 
 tile{
@@ -1773,7 +1782,7 @@ tile{
   width = 32,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1783,7 +1792,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1793,7 +1802,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1803,7 +1812,7 @@ tile{
   width = 8,
   height = 24,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1813,7 +1822,7 @@ tile{
   width = 8,
   height = 48,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1823,7 +1832,7 @@ tile{
   width = 8,
   height = 48,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1833,7 +1842,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1843,7 +1852,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1853,7 +1862,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1863,7 +1872,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1873,7 +1882,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1883,7 +1892,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1893,7 +1902,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1903,7 +1912,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1913,7 +1922,7 @@ tile{
   width = 8,
   height = 32,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1923,7 +1932,7 @@ tile{
   width = 32,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1933,7 +1942,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1943,7 +1952,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1953,7 +1962,7 @@ tile{
   width = 8,
   height = 32,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1963,7 +1972,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1973,7 +1982,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1983,7 +1992,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1993,7 +2002,7 @@ tile{
   width = 8,
   height = 32,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2003,7 +2012,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2013,7 +2022,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2023,7 +2032,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2033,7 +2042,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2043,7 +2052,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2053,7 +2062,7 @@ tile{
   width = 64,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2063,7 +2072,7 @@ tile{
   width = 32,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2073,7 +2082,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2083,7 +2092,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2093,7 +2102,7 @@ tile{
   width = 8,
   height = 32,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2103,7 +2112,7 @@ tile{
   width = 8,
   height = 32,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2113,7 +2122,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2123,7 +2132,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2133,7 +2142,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2143,7 +2152,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2153,7 +2162,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2163,7 +2172,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2173,7 +2182,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2183,7 +2192,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2193,7 +2202,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2203,7 +2212,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2213,7 +2222,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2223,7 +2232,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2233,7 +2242,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2243,7 +2252,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2253,7 +2262,7 @@ tile{
   width = 24,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2263,7 +2272,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2273,7 +2282,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2283,7 +2292,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2293,7 +2302,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2303,7 +2312,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2313,7 +2322,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2323,7 +2332,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2333,7 +2342,7 @@ tile{
   width = 32,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2343,7 +2352,7 @@ tile{
   width = 48,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2353,7 +2362,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2363,7 +2372,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2373,7 +2382,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2383,7 +2392,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2393,7 +2402,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2403,7 +2412,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2413,7 +2422,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2423,7 +2432,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2433,7 +2442,7 @@ tile{
   width = 8,
   height = 32,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2443,7 +2452,7 @@ tile{
   width = 24,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2453,7 +2462,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2463,7 +2472,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2473,7 +2482,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2483,7 +2492,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2493,7 +2502,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2503,7 +2512,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2513,7 +2522,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2523,7 +2532,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2533,7 +2542,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2543,7 +2552,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2553,7 +2562,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2563,7 +2572,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2573,7 +2582,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2583,7 +2592,7 @@ tile{
   width = 24,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2593,7 +2602,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2603,7 +2612,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2613,7 +2622,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2623,7 +2632,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2633,7 +2642,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2643,7 +2652,7 @@ tile{
   width = 32,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2653,7 +2662,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2663,7 +2672,7 @@ tile{
   width = 32,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2673,7 +2682,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2683,7 +2692,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2693,7 +2702,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2703,7 +2712,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2713,7 +2722,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2723,7 +2732,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2733,7 +2742,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2743,7 +2752,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2753,7 +2762,7 @@ tile{
   width = 8,
   height = 32,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2763,7 +2772,7 @@ tile{
   width = 24,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2773,7 +2782,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2783,7 +2792,7 @@ tile{
   width = 8,
   height = 24,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2793,7 +2802,7 @@ tile{
   width = 32,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2803,7 +2812,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2813,7 +2822,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2823,7 +2832,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2833,7 +2842,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2843,7 +2852,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2853,7 +2862,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2863,7 +2872,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2873,7 +2882,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2883,7 +2892,7 @@ tile{
   width = 8,
   height = 32,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2893,7 +2902,7 @@ tile{
   width = 8,
   height = 24,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2903,7 +2912,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2913,7 +2922,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2923,7 +2932,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2933,7 +2942,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2943,7 +2952,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2953,7 +2962,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2963,7 +2972,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2973,7 +2982,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2983,7 +2992,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -2993,7 +3002,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3003,7 +3012,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3013,7 +3022,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3023,7 +3032,7 @@ tile{
   width = 24,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3033,7 +3042,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3043,7 +3052,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3053,7 +3062,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3063,7 +3072,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3073,7 +3082,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3083,7 +3092,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3093,7 +3102,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3103,7 +3112,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3113,7 +3122,7 @@ tile{
   width = 32,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3123,7 +3132,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3133,7 +3142,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3143,7 +3152,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "7",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3153,7 +3162,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "11",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3163,7 +3172,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "7",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3173,7 +3182,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "11",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3183,7 +3192,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "9",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3193,7 +3202,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "9",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3203,7 +3212,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "5",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3213,7 +3222,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "9",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3223,7 +3232,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "9",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3233,7 +3242,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "5",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3243,7 +3252,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "5",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3253,7 +3262,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "11",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3263,7 +3272,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "9",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3273,7 +3282,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "7",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3283,7 +3292,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "5",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3293,7 +3302,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "9",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3303,7 +3312,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "7",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3313,7 +3322,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "5",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3323,7 +3332,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "9",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3333,7 +3342,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "5",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3343,7 +3352,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "11",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3353,7 +3362,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "7",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3363,7 +3372,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "9",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3373,7 +3382,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "11",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3383,7 +3392,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "5",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3393,7 +3402,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "7",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3403,7 +3412,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "11",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3413,7 +3422,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "7",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3423,7 +3432,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "11",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3433,7 +3442,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "7",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3443,7 +3452,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "11",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3453,7 +3462,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "7",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3463,7 +3472,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "11",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3473,7 +3482,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "7",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3492,7 +3501,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "52",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3502,7 +3511,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "51",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3512,7 +3521,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "50",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3522,7 +3531,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "53",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3532,7 +3541,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "55",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3542,7 +3551,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "54",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3552,7 +3561,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "56",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3562,7 +3571,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "57",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3572,7 +3581,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "40",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3582,7 +3591,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "2",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3592,7 +3601,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "40",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3602,7 +3611,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "48",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3612,7 +3621,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "49",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3622,7 +3631,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "46",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3632,7 +3641,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "47",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3642,7 +3651,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "38",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -3652,7 +3661,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "18",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -4602,15 +4611,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 512,
-  y = 136,
-  width = 16,
-  height = 8,
-  pattern = "134",
-}
-
-tile{
-  layer = 1,
   x = 576,
   y = 112,
   width = 32,
@@ -4913,7 +4913,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "30",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -4923,7 +4923,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "29",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -4933,7 +4933,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "16",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -5226,15 +5226,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 496,
-  y = 144,
-  width = 16,
-  height = 16,
-  pattern = "2",
-}
-
-tile{
-  layer = 1,
   x = 480,
   y = 208,
   width = 16,
@@ -5519,7 +5510,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -5529,7 +5520,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -5539,7 +5530,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -5549,7 +5540,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -5559,7 +5550,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -5569,7 +5560,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -5579,7 +5570,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -5589,7 +5580,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -5617,7 +5608,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -5627,7 +5618,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -5637,7 +5628,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -5647,7 +5638,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -5657,7 +5648,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -5667,7 +5658,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -5677,7 +5668,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -5687,7 +5678,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -5697,7 +5688,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -5707,7 +5698,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -5717,7 +5708,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "11",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -5727,7 +5718,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "7",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6529,7 +6520,7 @@ tile{
   width = 32,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6539,7 +6530,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6549,7 +6540,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6559,7 +6550,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6569,7 +6560,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6579,7 +6570,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6589,7 +6580,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6599,7 +6590,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6609,7 +6600,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "12",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6619,7 +6610,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6629,7 +6620,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "6",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6639,7 +6630,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "9",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6649,7 +6640,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "11",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6659,7 +6650,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "5",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6669,7 +6660,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "7",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6733,7 +6724,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "9",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6743,7 +6734,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "5",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6843,7 +6834,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "246_2",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6853,7 +6844,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "246_5",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6863,7 +6854,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "246_4",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6873,7 +6864,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "246_9",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6883,7 +6874,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "246",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6893,7 +6884,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "246_3",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6903,7 +6894,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "246_8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6913,7 +6904,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "246_7",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6923,7 +6914,7 @@ tile{
   width = 32,
   height = 8,
   pattern = "10_2",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6933,7 +6924,7 @@ tile{
   width = 8,
   height = 32,
   pattern = "8_2",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6943,7 +6934,7 @@ tile{
   width = 8,
   height = 32,
   pattern = "12_2",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6953,7 +6944,7 @@ tile{
   width = 32,
   height = 8,
   pattern = "6_2",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6972,7 +6963,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "246_2",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6982,7 +6973,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "246_5",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -6992,7 +6983,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "246_4",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -7002,7 +6993,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "246_9",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -7012,7 +7003,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "246",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -7022,7 +7013,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "246_3",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -7032,7 +7023,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "246_8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -7042,7 +7033,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "246_7",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -7394,6 +7385,78 @@ tile{
   width = 16,
   height = 8,
   pattern = "164",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "22",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "22",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "22",
+}
+
+tile{
+  layer = 1,
+  x = 448,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "22",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "22",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 136,
+  width = 16,
+  height = 8,
+  pattern = "134",
+}
+
+tile{
+  layer = 1,
+  x = 576,
+  y = 8,
+  width = 16,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 592,
+  width = 32,
+  height = 16,
+  pattern = "30",
 }
 
 separator{
@@ -8013,6 +8076,35 @@ pickable{
   treasure_name = "great_key",
 }
 
+custom_entity{
+  layer = 1,
+  x = 120,
+  y = 445,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ground/dig_ground",
+}
+
+teletransporter{
+  name = "Pirate_cave",
+  layer = 1,
+  x = 256,
+  y = 584,
+  width = 32,
+  height = 16,
+  destination_map = "normal_version/overworld/north_beach/indoors/pirate_cave",
+  destination = "destination",
+}
+
+destination{
+  name = "pirate_cave",
+  layer = 1,
+  x = 272,
+  y = 605,
+  direction = 1,
+}
+
 tile{
   layer = 2,
   x = 384,
@@ -8056,7 +8148,7 @@ tile{
   width = 48,
   height = 32,
   pattern = "21",
-  tileset = "normal/annexe",
+  tileset = "01 - normal/annexe",
 }
 
 tile{
@@ -8255,5 +8347,68 @@ tile{
   width = 16,
   height = 8,
   pattern = "312",
+}
+
+tile{
+  layer = 2,
+  x = 368,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "304",
+}
+
+tile{
+  layer = 2,
+  x = 520,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "304",
+}
+
+tile{
+  layer = 2,
+  x = 448,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "304",
+}
+
+tile{
+  layer = 2,
+  x = 400,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "304",
+}
+
+tile{
+  layer = 2,
+  x = 592,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "304",
+}
+
+tile{
+  layer = 2,
+  x = 560,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "304",
+}
+
+tile{
+  layer = 2,
+  x = 608,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "304",
 }
 

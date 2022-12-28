@@ -5,7 +5,7 @@ properties{
   height = 128,
   min_layer = 0,
   max_layer = 2,
-  tileset = "normal/main",
+  tileset = "01 - normal/main",
 }
 
 tile{
@@ -217,86 +217,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 112,
-  y = 80,
-  width = 8,
-  height = 16,
-  pattern = "62",
-  tileset = "House",
-}
-
-tile{
-  layer = 0,
-  x = 120,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = "63",
-  tileset = "House",
-}
-
-tile{
-  layer = 0,
-  x = 136,
-  y = 80,
-  width = 8,
-  height = 16,
-  pattern = "64",
-  tileset = "House",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 48,
-  width = 16,
-  height = 16,
-  pattern = "74",
-  tileset = "House",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "74",
-  tileset = "House",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "47",
-  tileset = "House",
-}
-
-tile{
-  layer = 0,
-  x = 112,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "47",
-  tileset = "House",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 16,
-  width = 32,
-  height = 16,
-  pattern = "1_2",
-  tileset = "normal_world_v2",
-}
-
-tile{
-  layer = 0,
   x = 96,
   y = 56,
   width = 16,
@@ -311,6 +231,86 @@ tile{
   width = 16,
   height = 16,
   pattern = "227",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "316_20",
+
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "316_20",
+
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "325",
+
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 80,
+  width = 8,
+  height = 16,
+  pattern = "324_2",
+
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 80,
+  width = 8,
+  height = 16,
+  pattern = "324",
+
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "316_24",
+
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "316_24",
+
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "326",
+
 }
 
 destination{

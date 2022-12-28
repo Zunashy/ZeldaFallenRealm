@@ -1,11 +1,12 @@
-map{ id = "challenge/day1" }
-map{ id = "challenge/day2" }
-map{ id = "challenge/day3" }
-map{ id = "challenge/day4" }
-map{ id = "challenge/day5" }
-map{ id = "challenge/day6" }
-map{ id = "challenge/day7" }
-map{ id = "challenge/final" }
+map{ id = "challenge/01/day1", description = "challenge/01/day1" }
+map{ id = "challenge/01/day2", description = "challenge/01/day2" }
+map{ id = "challenge/01/day3", description = "challenge/01/day3" }
+map{ id = "challenge/01/day4", description = "challenge/01/day4" }
+map{ id = "challenge/01/day5", description = "challenge/01/day5" }
+map{ id = "challenge/01/day6", description = "challenge/01/day6" }
+map{ id = "challenge/01/day7", description = "challenge/01/day7" }
+map{ id = "challenge/01/final", description = "challenge/01/final" }
+map{ id = "challenge/02/test sable", description = "challenge/02/test sable" }
 map{ id = "donjons/level_01/2D_Test", description = "donjons/level_01/2D_Test" }
 map{ id = "donjons/level_01/RDC", description = "donjons/level_01/RDC" }
 map{ id = "donjons/level_01/RDC_old", description = "donjons/level_01/RDC_old" }
@@ -14,14 +15,18 @@ map{ id = "donjons/level_02/rdc", description = "donjons/level_02/rdc" }
 map{ id = "donjons/level_02/ss1", description = "donjons/level_02/ss1" }
 map{ id = "donjons/level_02/transit" }
 map{ id = "donjons/level_03/rdc" }
+map{ id = "donjons/level_03/rdc_2" }
 map{ id = "donjons/level_03/ss1" }
+map{ id = "donjons/level_03/ss2" }
 map{ id = "donjons/level_04/rdc" }
 map{ id = "donjons/level_04/ss1" }
+map{ id = "donjons/level_04/ss2" }
 map{ id = "donjons/level_05/entrance", description = "ss0" }
 map{ id = "donjons/level_05/ss1", description = "ss1" }
 map{ id = "donjons/level_05/ss2", description = "ss2" }
 map{ id = "donjons/level_05/ss3", description = "ss3" }
 map{ id = "donjons/level_05/ss4", description = "ss4" }
+map{ id = "normal_version/global", description = "normal_version/global" }
 map{ id = "normal_version/overworld/deep_forest/indoors/to_mountain" }
 map{ id = "normal_version/overworld/deep_forest/outdoors", description = "normal_version/overworld/deep_forest/outdoors" }
 map{ id = "normal_version/overworld/deep_forest/outdoors_2", description = "normal_version/overworld/deep_forest/outdoors_2" }
@@ -43,6 +48,7 @@ map{ id = "normal_version/overworld/north_beach/indoors/cave_04", description = 
 map{ id = "normal_version/overworld/north_beach/indoors/house", description = "normal_version/overworld/north_beach/indoors/house" }
 map{ id = "normal_version/overworld/north_beach/indoors/hut_01", description = "normal_version/overworld/north_beach/indoors/hut_01" }
 map{ id = "normal_version/overworld/north_beach/indoors/hut_02", description = "normal_version/overworld/north_beach/indoors/hut_02" }
+map{ id = "normal_version/overworld/north_beach/indoors/pirate_cave" }
 map{ id = "normal_version/overworld/north_beach/indoors/tree_house", description = "normal_version/overworld/north_beach/indoors/tree_house" }
 map{ id = "normal_version/overworld/north_beach/outdoors", description = "normal_version/overworld/north_beach/outdoors" }
 map{ id = "normal_version/overworld/plain/indoors/cave_01", description = "normal_version/overworld/plain/indoors/cave_01" }
@@ -74,14 +80,13 @@ map{ id = "testHub", description = "testHub" }
 map{ id = "tests/blue_slime", description = "tests/blue_slime" }
 map{ id = "tests/bridges", description = "tests/bridges" }
 map{ id = "tests/dungeon", description = "Dungeon-like test map" }
-map{ id = "tests/global" }
-map{ id = "tests/global_war" }
 map{ id = "tests/outside", description = "Monde extérieur" }
 map{ id = "tests/platform", description = "tests/platform" }
-map{ id = "tests/test sable" }
+map{ id = "war_version/global_war", description = "war_version/global_war" }
 map{ id = "war_version/overworld/forest/forest", description = "war_version/overworld/forest/forest" }
 map{ id = "war_version/overworld/forest/sword_cave", description = "war_version/overworld/forest/sword_cave" }
 map{ id = "war_version/overworld/goron/outdoor" }
+map{ id = "war_version/overworld/goron/village_out" }
 map{ id = "war_version/overworld/north_beach/cave", description = "grotte north beach" }
 map{ id = "war_version/overworld/north_beach/indoors/beach_house", description = "maison sur la plage" }
 map{ id = "war_version/overworld/north_beach/indoors/jojo_house", description = "war_version/overworld/north_beach/indoors/jojo_house" }
@@ -101,30 +106,27 @@ map{ id = "war_version/village/indoors/tree_house", description = "tree_house wa
 map{ id = "war_version/village/octorock_cave", description = "octorock cave war" }
 map{ id = "war_version/village/outdoors", description = "war_version/village/outdoors" }
 
+tileset{ id = "01 - normal/annexe", description = "normal/annexe" }
+tileset{ id = "01 - normal/general" }
+tileset{ id = "01 - normal/jungle", description = "normal/jungle" }
+tileset{ id = "01 - normal/lava", description = "normal/lava" }
+tileset{ id = "01 - normal/main", description = "normal/main" }
+tileset{ id = "01 - normal/marais", description = "normal/marais" }
+tileset{ id = "01 - normal/snow", description = "normal/snow" }
+tileset{ id = "02 - war/annexe", description = "war/war_world_annexe" }
+tileset{ id = "02 - war/general", description = "war/general" }
+tileset{ id = "02 - war/main", description = "war/war_world" }
+tileset{ id = "03 - dungeon/tileset_custom", description = "dungeon/tileset_custom" }
+tileset{ id = "03 - dungeon/tileset_donjon_1", description = "dungeon/tileset_donjon_1" }
+tileset{ id = "03 - dungeon/tileset_donjon_2", description = "dungeon/tileset_donjon_2" }
+tileset{ id = "03 - dungeon/tileset_donjon_3", description = "dungeon/tileset_donjon_3" }
+tileset{ id = "03 - dungeon/tileset_donjon_4", description = "dungeon/tileset_donjon_4" }
+tileset{ id = "03 - dungeon/tileset_donjon_5", description = "dungeon/tileset_donjon_5" }
+tileset{ id = "03 - dungeon/tileset_donjon_6", description = "dungeon/tileset_donjon_6" }
+tileset{ id = "03 - dungeon/tileset_donjon_7", description = "dungeon/tileset_donjon_7" }
+tileset{ id = "04 - caves/cave_side", description = "caves/cave_side" }
 tileset{ id = "House", description = "House" }
-tileset{ id = "caves/cave_side", description = "caves/cave_side" }
-tileset{ id = "dungeon/tileset_custom", description = "dungeon/tileset_custom" }
-tileset{ id = "dungeon/tileset_donjon_1", description = "dungeon/tileset_donjon_1" }
-tileset{ id = "dungeon/tileset_donjon_2", description = "dungeon/tileset_donjon_2" }
-tileset{ id = "dungeon/tileset_donjon_3", description = "dungeon/tileset_donjon_3" }
-tileset{ id = "dungeon/tileset_donjon_4", description = "dungeon/tileset_donjon_4" }
-tileset{ id = "dungeon/tileset_donjon_5", description = "dungeon/tileset_donjon_5" }
-tileset{ id = "dungeon/tileset_donjon_6", description = "dungeon/tileset_donjon_6" }
-tileset{ id = "dungeon/tileset_donjon_7", description = "dungeon/tileset_donjon_7" }
-tileset{ id = "grotte", description = "grotte" }
-tileset{ id = "house", description = "house" }
-tileset{ id = "house2", description = "house2" }
 tileset{ id = "model", description = "model" }
-tileset{ id = "normal/annexe", description = "normal/annexe" }
-tileset{ id = "normal/general" }
-tileset{ id = "normal/jungle", description = "normal/jungle" }
-tileset{ id = "normal/lava", description = "normal/lava" }
-tileset{ id = "normal/main", description = "normal/main" }
-tileset{ id = "normal/marais", description = "normal/marais" }
-tileset{ id = "normal/snow", description = "normal/snow" }
-tileset{ id = "test", description = "Test" }
-tileset{ id = "war/annexe", description = "war/war_world_annexe" }
-tileset{ id = "war/main", description = "war/war_world" }
 
 sprite{ id = "citizens/old_man", description = "citizens/old_man" }
 sprite{ id = "citizens/old_woman", description = "citizens/old_woman" }
@@ -200,10 +202,7 @@ sprite{ id = "entities/dungeon_elements/switch", description = "entities/dungeon
 sprite{ id = "entities/dungeon_elements/switches" }
 sprite{ id = "entities/dungeon_elements/teleport", description = "entities/dungeon_elements/teleport" }
 sprite{ id = "entities/dungeon_statue_eye", description = "entities/dungeon_statue_eye" }
-sprite{ id = "entities/ground/dig_effect", description = "Effect visuel griffe" }
 sprite{ id = "entities/ground/dig_ground", description = "Sol creusable" }
-sprite{ id = "entities/ground/dug_ground", description = "Sol creusé" }
-sprite{ id = "entities/ground/dug_stairs", description = "Trou creusé qui TP" }
 sprite{ id = "entities/items", description = "entities/items" }
 sprite{ id = "entities/items_effects/flame", description = "entities/items_effects/flame" }
 sprite{ id = "entities/items_effects/ice_floor", description = "entities/items_effects/ice_floor" }
@@ -232,6 +231,10 @@ sprite{ id = "entities/vegetation/grass/grass_2" }
 sprite{ id = "entities/vegetation/grass/grass_3" }
 sprite{ id = "entities/vegetation/grass/grass_4" }
 sprite{ id = "entities/vegetation/grass/grass_dark", description = "entities/vegetation/grass/grass_dark" }
+sprite{ id = "entities/vegetation/grass/leaf" }
+sprite{ id = "entities/vegetation/grass/leaf_2" }
+sprite{ id = "entities/vegetation/grass/leaf_3" }
+sprite{ id = "entities/vegetation/grass/leaf_4" }
 sprite{ id = "entities/vegetation/grass_door", description = "entities/vegetation/grass_door" }
 sprite{ id = "entities/vegetation/grass_door_2" }
 sprite{ id = "entities/vegetation/grass_door_3" }
@@ -642,5 +645,3 @@ file{ path = "sprites/pnj/main/zuna.dat", author = "Zunashy", }
 file{ path = "sprites/pnj/main/zuna_sword.dat", author = "Zunashy", }
 file{ path = "sprites/pnj/nielint/barman_sleeping.dat", author = "Zunashy", }
 file{ path = "sprites/things/exclamation.dat", author = "Nintendo", }
-file{ path = "tilesets/test.dat", author = "Tuile Cintre", }
-file{ path = "tilesets/test.tiles.png", author = "Tuile Cintre", }

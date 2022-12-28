@@ -5,7 +5,7 @@ properties{
   height = 768,
   min_layer = 0,
   max_layer = 2,
-  tileset = "normal/main",
+  tileset = "01 - normal/main",
   music = "caves",
 }
 
@@ -214,7 +214,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_11",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -224,7 +224,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -351,7 +351,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_11",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -361,7 +361,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -479,7 +479,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -498,7 +498,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_11",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -634,7 +634,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_11",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -644,7 +644,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1104,7 +1104,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_11",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1114,7 +1114,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1421,7 +1421,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_11",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1431,7 +1431,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1549,7 +1549,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_11",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1559,7 +1559,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_10",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1893,7 +1893,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "246_2",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1903,7 +1903,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "246_5",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1913,7 +1913,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "246_4",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1923,7 +1923,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "246_9",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1933,7 +1933,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "246",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1943,7 +1943,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "246_3",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1953,7 +1953,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "246_8",
-  tileset = "normal/main",
+
 }
 
 tile{
@@ -1963,7 +1963,7 @@ tile{
   width = 8,
   height = 8,
   pattern = "246_7",
-  tileset = "normal/main",
+
 }
 
 door{

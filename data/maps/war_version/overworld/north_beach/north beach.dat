@@ -5,7 +5,7 @@ properties{
   height = 640,
   min_layer = 0,
   max_layer = 2,
-  tileset = "war/main",
+  tileset = "02 - war/main",
   music = "overworld",
 }
 
@@ -123,7 +123,7 @@ tile{
   y = 384,
   width = 16,
   height = 16,
-  pattern = "167_8",
+  pattern = "66",
 }
 
 tile{
@@ -132,7 +132,7 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "167_8",
+  pattern = "66",
 }
 
 tile{
@@ -141,7 +141,7 @@ tile{
   y = 96,
   width = 16,
   height = 16,
-  pattern = "167_8",
+  pattern = "66",
 }
 
 tile{
@@ -267,7 +267,7 @@ tile{
   y = 624,
   width = 16,
   height = 16,
-  pattern = "167_8",
+  pattern = "66",
 }
 
 tile{
@@ -276,7 +276,7 @@ tile{
   y = 624,
   width = 16,
   height = 16,
-  pattern = "167_8",
+  pattern = "66",
 }
 
 tile{
@@ -285,7 +285,7 @@ tile{
   y = 256,
   width = 16,
   height = 16,
-  pattern = "167_8",
+  pattern = "66",
 }
 
 tile{
@@ -294,7 +294,7 @@ tile{
   y = 240,
   width = 16,
   height = 16,
-  pattern = "167_8",
+  pattern = "66",
 }
 
 tile{
@@ -303,7 +303,7 @@ tile{
   y = 288,
   width = 16,
   height = 16,
-  pattern = "167_8",
+  pattern = "66",
 }
 
 tile{
@@ -313,7 +313,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "10",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -323,7 +323,7 @@ tile{
   width = 48,
   height = 8,
   pattern = "9",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -333,7 +333,7 @@ tile{
   width = 16,
   height = 24,
   pattern = "11",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -343,7 +343,7 @@ tile{
   width = 80,
   height = 40,
   pattern = "7",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -353,7 +353,34 @@ tile{
   width = 64,
   height = 16,
   pattern = "8",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
+}
+
+tile{
+  layer = 1,
+  x = 480,
+  y = 240,
+  width = 160,
+  height = 144,
+  pattern = "1",
+}
+
+tile{
+  layer = 1,
+  x = 528,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "237",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 272,
+  width = 160,
+  height = 112,
+  pattern = "166",
 }
 
 tile{
@@ -421,15 +448,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 480,
-  y = 240,
-  width = 160,
-  height = 144,
-  pattern = "1",
-}
-
-tile{
-  layer = 1,
   x = 320,
   y = 384,
   width = 320,
@@ -444,7 +462,7 @@ tile{
   width = 64,
   height = 8,
   pattern = "10_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -454,7 +472,7 @@ tile{
   width = 64,
   height = 8,
   pattern = "6_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -941,15 +959,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "79_6",
-}
-
-tile{
-  layer = 1,
-  x = 304,
-  y = 288,
-  width = 160,
-  height = 80,
-  pattern = "166",
 }
 
 tile{
@@ -1458,35 +1467,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 512,
-  y = 448,
-  width = 16,
-  height = 16,
-  pattern = "17_4",
-}
-
-tile{
-  layer = 1,
-  x = 448,
-  y = 432,
-  width = 16,
-  height = 16,
-  pattern = "17_4",
-}
-
-tile{
-  layer = 1,
   x = 480,
   y = 464,
-  width = 16,
-  height = 16,
-  pattern = "17_4",
-}
-
-tile{
-  layer = 1,
-  x = 584,
-  y = 440,
   width = 16,
   height = 16,
   pattern = "17_4",
@@ -3047,7 +3029,7 @@ tile{
   width = 16,
   height = 24,
   pattern = "48",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -3057,7 +3039,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "45",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -3135,16 +3117,7 @@ tile{
 tile{
   layer = 1,
   x = 528,
-  y = 496,
-  width = 16,
-  height = 16,
-  pattern = "17_4",
-}
-
-tile{
-  layer = 1,
-  x = 560,
-  y = 528,
+  y = 480,
   width = 16,
   height = 16,
   pattern = "17_4",
@@ -3355,7 +3328,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "12",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -3365,7 +3338,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "12",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -3375,7 +3348,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -3385,7 +3358,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -3395,7 +3368,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "12_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -3405,7 +3378,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -3415,7 +3388,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -3425,7 +3398,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -3435,7 +3408,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "12_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -3445,7 +3418,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -3481,7 +3454,7 @@ tile{
   y = 80,
   width = 16,
   height = 16,
-  pattern = "1_3",
+  pattern = "1_2",
 }
 
 tile{
@@ -3490,7 +3463,7 @@ tile{
   y = 96,
   width = 16,
   height = 16,
-  pattern = "1_3",
+  pattern = "1_2",
 }
 
 tile{
@@ -3499,7 +3472,7 @@ tile{
   y = 128,
   width = 16,
   height = 16,
-  pattern = "1_3",
+  pattern = "1_2",
 }
 
 tile{
@@ -3545,7 +3518,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -3555,7 +3528,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -3565,7 +3538,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "12_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -3575,7 +3548,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -3593,7 +3566,7 @@ tile{
   y = 320,
   width = 8,
   height = 8,
-  pattern = "85_73",
+  pattern = "85_20",
 }
 
 tile{
@@ -3602,7 +3575,7 @@ tile{
   y = 136,
   width = 8,
   height = 184,
-  pattern = "93_6",
+  pattern = "93_5",
 }
 
 tile{
@@ -3611,7 +3584,7 @@ tile{
   y = 384,
   width = 8,
   height = 48,
-  pattern = "93_6",
+  pattern = "93_5",
 }
 
 tile{
@@ -3620,7 +3593,7 @@ tile{
   y = 376,
   width = 8,
   height = 8,
-  pattern = "85_83",
+  pattern = "85_27",
 }
 
 tile{
@@ -3629,7 +3602,7 @@ tile{
   y = 432,
   width = 8,
   height = 8,
-  pattern = "85_79",
+  pattern = "85_17",
 }
 
 tile{
@@ -3684,7 +3657,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -3694,7 +3667,7 @@ tile{
   width = 8,
   height = 80,
   pattern = "8_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -3704,7 +3677,7 @@ tile{
   width = 8,
   height = 80,
   pattern = "12_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -3714,13 +3687,13 @@ tile{
   width = 16,
   height = 8,
   pattern = "6_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
   layer = 1,
   x = 512,
-  y = 416,
+  y = 448,
   width = 16,
   height = 16,
   pattern = "17_4",
@@ -3751,7 +3724,7 @@ tile{
   width = 8,
   height = 32,
   pattern = "8_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -3760,7 +3733,7 @@ tile{
   y = 288,
   width = 16,
   height = 16,
-  pattern = "1_3",
+  pattern = "1_2",
 }
 
 tile{
@@ -3769,7 +3742,7 @@ tile{
   y = 304,
   width = 16,
   height = 16,
-  pattern = "1_3",
+  pattern = "1_2",
 }
 
 tile{
@@ -3778,7 +3751,7 @@ tile{
   y = 32,
   width = 16,
   height = 16,
-  pattern = "1_3",
+  pattern = "1_2",
 }
 
 tile{
@@ -3832,7 +3805,7 @@ tile{
   y = 512,
   width = 16,
   height = 16,
-  pattern = "1_3",
+  pattern = "1_2",
 }
 
 tile{
@@ -3860,7 +3833,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -3870,7 +3843,7 @@ tile{
   width = 8,
   height = 48,
   pattern = "12_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -3880,7 +3853,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -3890,7 +3863,7 @@ tile{
   width = 8,
   height = 48,
   pattern = "8_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -3899,7 +3872,7 @@ tile{
   y = 384,
   width = 16,
   height = 16,
-  pattern = "167_8",
+  pattern = "66",
 }
 
 tile{
@@ -3908,7 +3881,7 @@ tile{
   y = 360,
   width = 16,
   height = 16,
-  pattern = "167_8",
+  pattern = "66",
 }
 
 tile{
@@ -4017,7 +3990,7 @@ tile{
   width = 16,
   height = 40,
   pattern = "46",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -4027,7 +4000,7 @@ tile{
   width = 16,
   height = 48,
   pattern = "47_2",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -4037,7 +4010,7 @@ tile{
   width = 16,
   height = 48,
   pattern = "47",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -4047,7 +4020,7 @@ tile{
   width = 16,
   height = 40,
   pattern = "46_2",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -4119,7 +4092,7 @@ tile{
   y = 56,
   width = 16,
   height = 16,
-  pattern = "167_8",
+  pattern = "66",
 }
 
 tile{
@@ -4164,7 +4137,7 @@ tile{
   y = 528,
   width = 16,
   height = 16,
-  pattern = "167_8",
+  pattern = "66",
 }
 
 tile{
@@ -4200,7 +4173,7 @@ tile{
   y = 416,
   width = 16,
   height = 16,
-  pattern = "1_3",
+  pattern = "1_2",
 }
 
 tile{
@@ -4209,7 +4182,7 @@ tile{
   y = 400,
   width = 16,
   height = 16,
-  pattern = "1_3",
+  pattern = "1_2",
 }
 
 tile{
@@ -4218,7 +4191,7 @@ tile{
   y = 432,
   width = 16,
   height = 16,
-  pattern = "1_3",
+  pattern = "1_2",
 }
 
 tile{
@@ -4299,7 +4272,7 @@ tile{
   y = 80,
   width = 16,
   height = 16,
-  pattern = "1_3",
+  pattern = "1_2",
 }
 
 tile{
@@ -4308,7 +4281,7 @@ tile{
   y = 64,
   width = 16,
   height = 16,
-  pattern = "1_3",
+  pattern = "1_2",
 }
 
 tile{
@@ -4732,7 +4705,7 @@ tile{
   width = 16,
   height = 24,
   pattern = "3_2",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -4742,7 +4715,7 @@ tile{
   width = 16,
   height = 24,
   pattern = "3_2",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -4751,7 +4724,7 @@ tile{
   y = 136,
   width = 8,
   height = 8,
-  pattern = "85_83",
+  pattern = "85_27",
 }
 
 tile{
@@ -4833,7 +4806,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "10_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -4843,7 +4816,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "8_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -4853,7 +4826,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "12_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -4863,7 +4836,7 @@ tile{
   width = 16,
   height = 8,
   pattern = "6_2",
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -5044,7 +5017,7 @@ tile{
   width = 64,
   height = 96,
   pattern = "26",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -5054,7 +5027,7 @@ tile{
   width = 64,
   height = 48,
   pattern = "27",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -5064,7 +5037,7 @@ tile{
   width = 8,
   height = 96,
   pattern = "25",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -5074,7 +5047,7 @@ tile{
   width = 8,
   height = 96,
   pattern = "25_2",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -5084,7 +5057,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "24",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -5094,7 +5067,7 @@ tile{
   width = 8,
   height = 32,
   pattern = "22",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -5104,7 +5077,7 @@ tile{
   width = 8,
   height = 32,
   pattern = "22_2",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -5114,7 +5087,7 @@ tile{
   width = 8,
   height = 16,
   pattern = "23",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -5124,7 +5097,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "20",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -5134,7 +5107,7 @@ tile{
   width = 32,
   height = 16,
   pattern = "19",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -5144,7 +5117,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "18",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -5154,7 +5127,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "17",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -5164,7 +5137,7 @@ tile{
   width = 64,
   height = 16,
   pattern = "8_2",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -5174,7 +5147,7 @@ tile{
   width = 80,
   height = 16,
   pattern = "14",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -5184,7 +5157,7 @@ tile{
   width = 48,
   height = 8,
   pattern = "9_2",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -5194,7 +5167,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "10_2",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -5204,7 +5177,7 @@ tile{
   width = 16,
   height = 24,
   pattern = "11_2",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -5214,7 +5187,7 @@ tile{
   width = 16,
   height = 16,
   pattern = "18",
-  tileset = "war/annexe",
+  tileset = "02 - war/annexe",
 }
 
 tile{
@@ -5386,15 +5359,6 @@ tile{
   width = 8,
   height = 48,
   pattern = "12_3",
-}
-
-tile{
-  layer = 1,
-  x = 320,
-  y = 128,
-  width = 32,
-  height = 16,
-  pattern = "265",
 }
 
 tile{
@@ -5575,6 +5539,51 @@ tile{
   width = 16,
   height = 64,
   pattern = "155",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "337",
+}
+
+tile{
+  layer = 1,
+  x = 448,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "337",
+}
+
+tile{
+  layer = 1,
+  x = 544,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "337",
+}
+
+tile{
+  layer = 1,
+  x = 400,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "337",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 128,
+  width = 32,
+  height = 16,
+  pattern = "275",
 }
 
 teletransporter{
@@ -6051,6 +6060,6 @@ tile{
   y = 112,
   width = 32,
   height = 16,
-  pattern = "266",
+  pattern = "276",
 }
 

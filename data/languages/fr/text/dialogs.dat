@@ -217,7 +217,7 @@ Merci à toi d'avoir joué jusqu'ici ! C'est ici que s'achève la partie termin�
 dialog{
   id = "pnj.main.sorcier.first_encounter.1",
   text = [[
-Bonjour $n, je t'attendais. On m'appelle Eradus le sage. J'ai vu comment tu t'étais débarrassé de ce monstre dans le Temple Trident. Tes capacités au combat son réellement impressionnantes... Jeune homme, ce monde a besoin d'un héros tel que toi pour le libérer du mal qui le ronge. As-tu déjà entendu parler du prince Zunashy ? C'est à cause de lui, et de la guerre qu'il a autrefois initié, que le chaos s'est répandu sur ces terres et que les monstres ont envahi les Temples comme celui que tu viens de traverser. Quelqu'un doit le retrouver et le neutraliser avant qu'il ne soit trop tard.
+Bonjour $n, je t'attendais. On m'appelle Eradus le sage. J'ai vu comment tu t'étais débarrassé de ce monstre dans le Temple Trident. Tes capacités au combat son réellement impressionnantes... Jeune homme, ce monde a besoin d'un héros tel que toi pour le libérer du mal qui le ronge. As-tu déjà entendu parler du prince Yrick ? C'est à cause de lui, et de la guerre qu'il a autrefois initié, que le chaos s'est répandu sur ces terres et que les monstres ont envahi les Temples comme celui que tu viens de traverser. Quelqu'un doit le retrouver et le neutraliser avant qu'il ne soit trop tard.
 ]],
 }
 
@@ -324,7 +324,7 @@ Halte ! La plage est infestée de monstres depuis tout à l'heure, même avec to
 dialog{
   id = "pnj.overworld.north_beach.indoors.moblin_blue",
   text = [[
-Attendez, pourquoi est-ce que vous avez peur de ce minus ? Ce n'est pas le prince Zunashy. C'est juste son épée !
+Attendez, pourquoi est-ce que vous avez peur de ce minus ? Ce n'est pas le prince Yrick. C'est juste son épée !
 ]],
 }
 
@@ -409,7 +409,7 @@ dialog{
   id = "pnj.overworld.plain.camp.cinematic",
   text = [[
 Quelle belle nuit... Les étoiles restent toujours les mêmes, peut importe ce qui peut arriver. 
-Tu sais, avant de nous retrouver ici, nous faisions partie de l'armée du prince Zunashy. C'était un commandant exceptionnel. Il nous avait confiés la protection du village de la forêt profonde. Un jour, des centaines de monstres ont envahis le village et nous n'avons pas eu d'autre choix que de nous enfuir. Contrairement à ce qu'on raconte, le prince n'a jamais voulu conquérir le monde avec ses armées. Il souhaitait unifier tous les peuples afin de lutter contre cette menace, mais cela n'a fait qu'empirer les choses. Les peuples se sont mis à se méfier les uns des autres et cela à déclenché la guerre. Triste histoire, pas vrai ? 
+Tu sais, avant de nous retrouver ici, nous faisions partie de l'armée du prince Yrick. C'était un commandant exceptionnel. Il nous avait confiés la protection du village de la forêt profonde. Un jour, des centaines de monstres ont envahis le village et nous n'avons pas eu d'autre choix que de nous enfuir. Contrairement à ce qu'on raconte, le prince n'a jamais voulu conquérir le monde avec ses armées. Il souhaitait unifier tous les peuples afin de lutter contre cette menace, mais cela n'a fait qu'empirer les choses. Les peuples se sont mis à se méfier les uns des autres et cela à déclenché la guerre. Triste histoire, pas vrai ? 
 ]],
 }
 

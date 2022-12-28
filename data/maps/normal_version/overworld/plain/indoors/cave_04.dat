@@ -5,7 +5,7 @@ properties{
   height = 256,
   min_layer = 0,
   max_layer = 2,
-  tileset = "normal/main",
+  tileset = "01 - normal/main",
   music = "caves",
 }
 
@@ -1141,15 +1141,6 @@ tile{
   width = 32,
   height = 16,
   pattern = "240",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = -16,
-  width = 128,
-  height = 16,
-  pattern = "297_4",
 }
 
 enemy{

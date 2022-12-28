@@ -5,7 +5,7 @@ properties{
   height = 256,
   min_layer = 0,
   max_layer = 2,
-  tileset = "war/main",
+  tileset = "02 - war/main",
 }
 
 tile{
@@ -617,70 +617,16 @@ tile{
   y = 16,
   width = 16,
   height = 32,
-  pattern = "272_2",
-}
-
-tile{
-  layer = 0,
-  x = 56,
-  y = 224,
-  width = 16,
-  height = 16,
-  pattern = "283",
-}
-
-tile{
-  layer = 0,
-  x = 88,
-  y = 224,
-  width = 16,
-  height = 16,
-  pattern = "283",
-}
-
-tile{
-  layer = 0,
-  x = 56,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "283",
-}
-
-tile{
-  layer = 0,
-  x = 88,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "283",
+  pattern = "323_2",
 }
 
 tile{
   layer = 0,
   x = 112,
-  y = 16,
-  width = 16,
+  y = 96,
+  width = 8,
   height = 16,
-  pattern = "282",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "282",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "282",
+  pattern = "324_6",
 }
 
 tile{
@@ -689,16 +635,7 @@ tile{
   y = 96,
   width = 8,
   height = 16,
-  pattern = "274_3",
-}
-
-tile{
-  layer = 0,
-  x = 112,
-  y = 96,
-  width = 8,
-  height = 16,
-  pattern = "273_3",
+  pattern = "324_5",
 }
 
 tile{
@@ -707,7 +644,70 @@ tile{
   y = 96,
   width = 16,
   height = 16,
-  pattern = "275_3",
+  pattern = "325_3",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "326",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "316_25",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "316_25",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "316_25",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "326",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "326",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "326",
 }
 
 teletransporter{

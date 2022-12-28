@@ -5,7 +5,7 @@ properties{
   height = 128,
   min_layer = 0,
   max_layer = 2,
-  tileset = "normal/main",
+  tileset = "01 - normal/main",
 }
 
 tile{
@@ -217,82 +217,83 @@ tile{
 
 tile{
   layer = 0,
-  x = 112,
+  x = 72,
   y = 16,
   width = 8,
   height = 16,
-  pattern = "62",
-  tileset = "House",
+  pattern = "324_5",
 }
 
 tile{
   layer = 0,
-  x = 120,
+  x = 56,
   y = 16,
   width = 16,
   height = 16,
-  pattern = "63",
-  tileset = "House",
+  pattern = "325_3",
 }
 
 tile{
   layer = 0,
-  x = 136,
+  x = 48,
   y = 16,
   width = 8,
   height = 16,
-  pattern = "64",
-  tileset = "House",
+  pattern = "324_6",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "316_24",
 }
 
 tile{
   layer = 0,
   x = 16,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "74",
-  tileset = "House",
-}
-
-tile{
-  layer = 0,
-  x = 64,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "74",
-  tileset = "House",
-}
-
-tile{
-  layer = 0,
-  x = 128,
   y = 32,
   width = 16,
   height = 16,
-  pattern = "47",
-  tileset = "House",
+  pattern = "316_20",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "316_19",
 }
 
 tile{
   layer = 0,
   x = 112,
-  y = 32,
+  y = 48,
   width = 16,
   height = 16,
-  pattern = "47",
-  tileset = "House",
+  pattern = "316_19",
 }
 
 tile{
   layer = 0,
-  x = 80,
+  x = 128,
   y = 16,
-  width = 32,
+  width = 16,
   height = 16,
-  pattern = "1_2",
-  tileset = "normal_world_v2",
+  pattern = "316_25",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "316_25",
 }
 
 destination{
