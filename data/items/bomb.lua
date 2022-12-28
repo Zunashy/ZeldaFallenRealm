@@ -56,7 +56,8 @@ function item.state:on_started()
   end)
 end
 
-function item.state:on_finished(s) --todo
+function item.state:on_finished(s) 
+  print("finished")
   local hero = self:get_entity()
   hero:remove_sprite(self.bomb_sprite)
 
@@ -90,6 +91,7 @@ function item.state:create_bomb(hero, direction)
 end
 
 function item.state:explode()
+  self:get_entity():unfreeze()
   local bomb = self:drop_bomb()
   local x, y = bomb:get_position()
   bomb:set_position(x, y - 1)

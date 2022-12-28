@@ -41,7 +41,6 @@ function item_icon_builder:new(game, config)
       digits_text:draw(item_icon.surface, 13, 8)
     end
 
-
   end
 
   function item_icon:on_draw(dst_surface)
