@@ -817,6 +817,13 @@ destructible{
   ground = "traversable",
 }
 
+destructible{
+  layer = 1,
+  x = 216,
+  y = 237,
+  sprite = "test/snas",
+}
+
 tile{
   layer = 2,
   x = 128,

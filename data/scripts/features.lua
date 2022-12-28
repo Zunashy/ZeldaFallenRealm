@@ -10,6 +10,7 @@ end
 
 require("scripts/multi_events")
 
+require("scripts/feature/import")
 require("scripts/feature/generic")
 require("scripts/feature/movement_generic")
 require("scripts/feature/entity_generic")

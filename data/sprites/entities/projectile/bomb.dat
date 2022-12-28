@@ -7,10 +7,10 @@ animation{
 }
 animation{
   name = "explosion",
-  src_image = "entities/projectile/explosion.png",
-  frame_delay = 400,
+  src_image = "entities/projectile/bomb_exploding.png",
+  frame_delay = 100,
   directions = {
-    { x = 0, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21, num_frames = 4 },
   },
 }
 animation{
