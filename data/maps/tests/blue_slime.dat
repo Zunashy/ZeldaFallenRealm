@@ -763,7 +763,8 @@ pickable{
   layer = 1,
   x = 280,
   y = 205,
-  treasure_name = "bomb",
+  treasure_name = "bomb_ammo",
+  treasure_variant = 2,
 }
 
 pickable{
