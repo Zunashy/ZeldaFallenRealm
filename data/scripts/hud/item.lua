@@ -24,6 +24,7 @@ function item_icon_builder:new(game, config)
     horizontal_alignment = "left",
     vertical_alignment = "top",
   })
+  digits_text:set_horizontal_alignment("right")
 
   function item_icon:rebuild_surface()
 
@@ -38,7 +39,7 @@ function item_icon_builder:new(game, config)
     end
 
     if display_amount then
-      digits_text:draw(item_icon.surface, 13, 8)
+      digits_text:draw(item_icon.surface, 21, 8)
     end
 
   end

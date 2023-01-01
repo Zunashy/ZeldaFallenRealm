@@ -57,12 +57,9 @@ function item.state:on_started()
 end
 
 function item.state:on_finished(s) 
-  print("finished")
   local hero = self:get_entity()
   hero:remove_sprite(self.bomb_sprite)
-
-  print(s)
-
+  
   if s ~= "free" then
     self:drop_bomb(hero)
   end
@@ -123,7 +120,6 @@ function item:on_obtained(variant)
     self:set_variant(variant)
     self:set_max_amount(max_values[variant])
     self:set_amount(self:get_max_amount())
-    print(self:get_amount(), self:get_max_amount())
   end
 end
 

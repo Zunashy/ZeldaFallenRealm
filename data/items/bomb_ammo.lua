@@ -6,6 +6,7 @@ local amounts = {
 
 function item:on_created()
     self.bomb_item = self:get_game():get_item("bomb")
+    self:set_brandish_when_picked(false)
 end
 
 function item:on_obtained(variant)
