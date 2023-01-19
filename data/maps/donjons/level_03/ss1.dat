@@ -2656,56 +2656,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 496,
-  y = 704,
-  width = 80,
-  height = 16,
-  pattern = "196_6",
-  tileset = "02 - war/main",
-}
-
-tile{
-  layer = 0,
-  x = 624,
-  y = 704,
-  width = 80,
-  height = 16,
-  pattern = "196_6",
-  tileset = "02 - war/main",
-}
-
-tile{
-  layer = 0,
-  x = 704,
-  y = 720,
-  width = 16,
-  height = 144,
-  pattern = "196_5",
-  tileset = "02 - war/main",
-}
-
-tile{
-  layer = 0,
-  x = 480,
-  y = 720,
-  width = 16,
-  height = 144,
-  pattern = "196_4",
-  tileset = "02 - war/main",
-}
-
-tile{
-  layer = 0,
-  x = 496,
-  y = 864,
-  width = 208,
-  height = 16,
-  pattern = "196_7",
-  tileset = "02 - war/main",
-}
-
-tile{
-  layer = 0,
   x = 704,
   y = 704,
   width = 16,
@@ -2741,26 +2691,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "196_11",
-  tileset = "02 - war/main",
-}
-
-tile{
-  layer = 0,
-  x = 608,
-  y = 704,
-  width = 16,
-  height = 16,
-  pattern = "196_12",
-  tileset = "02 - war/main",
-}
-
-tile{
-  layer = 0,
-  x = 576,
-  y = 704,
-  width = 16,
-  height = 16,
-  pattern = "196_13",
   tileset = "02 - war/main",
 }
 
@@ -2935,6 +2865,15 @@ tile{
   pattern = "1",
 }
 
+tile{
+  layer = 0,
+  x = 592,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "71",
+}
+
 separator{
   layer = 0,
   x = 472,
@@ -3043,5 +2982,18 @@ destination{
   x = 600,
   y = 789,
   direction = 1,
+}
+
+door{
+  name = "door_2",
+  layer = 0,
+  x = 592,
+  y = 704,
+  enabled_at_start = false,
+  direction = 0,
+  sprite = "entities/door/door_2",
+  savegame_variable = "dungeon_2_door_2",
+  opening_condition = "small_key",
+  opening_condition_consumed = true,
 }
 
