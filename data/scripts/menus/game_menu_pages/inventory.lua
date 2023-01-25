@@ -10,6 +10,7 @@ local inventory_menu = {
         "hammer",
         "bomb",
         "griffe",
+        "boomerang",
         [13] = "horn",
     },
     items_sprites = {},

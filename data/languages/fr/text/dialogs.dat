@@ -5,6 +5,13 @@ dialog{
 }
 
 dialog{
+  id = "_treasure.boomerang.1",
+  text = [[
+Vous obtenez le boomerang ! Yay !
+]],
+}
+
+dialog{
   id = "_treasure.bracelet.1",
   text = [[
 Vous obtenez le bracelet de force ! Cet accessoire vous permettant de déplacer de lourdes charges devrait bien vous faciliter la vie ! Et vous n'avez même pas besoin de l'équiper !

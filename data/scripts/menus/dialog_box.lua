@@ -354,6 +354,7 @@ function dialog_box:pre_next_line()
 end
 
 function dialog_box:start_next_line()
+    print("SLN")
   text_pos:reset()
 
   self.current_line = self.next_line

@@ -87,8 +87,10 @@ function item_icon_builder:new(game, config)
 
     -- Redraw the surface only if something has changed.
     if need_rebuild then
-      item_icon:rebuild_surface()
+        item_icon:rebuild_surface()
+        return true
     end
+    
   end
 
   local function check()
@@ -119,8 +121,10 @@ function item_icon_builder:new(game, config)
   --check()
   --sol.timer.start(game, 50, check)
   
-  check_item(game:get_item_assigned(item_icon.slot))
-
+    if not check_item(game:get_item_assigned(item_icon.slot)) then
+        item_icon:rebuild_surface()
+    end
+    
   return item_icon
 end
 

@@ -212,6 +212,7 @@ sprite{ id = "entities/projectile/arrow_fire", description = "entities/projectil
 sprite{ id = "entities/projectile/arrow_ice", description = "entities/projectile/arrow_ice" }
 sprite{ id = "entities/projectile/bomb", description = "Bombe" }
 sprite{ id = "entities/projectile/bone", description = "entities/projectile/bone" }
+sprite{ id = "entities/projectile/boomerang", description = "Boomerang" }
 sprite{ id = "entities/projectile/coconut_left", description = "entities/projectile/coconut_left" }
 sprite{ id = "entities/projectile/coconut_right", description = "entities/projectile/coconut_right" }
 sprite{ id = "entities/projectile/octorok_rock", description = "entities/projectile/octorok_rock" }
@@ -412,6 +413,7 @@ sound{ id = "walk_on_water", description = "walk_on_water" }
 
 item{ id = "bomb", description = "Bombe" }
 item{ id = "bomb_ammo", description = "Bombes" }
+item{ id = "boomerang", description = "Boomerang" }
 item{ id = "bracelet", description = "Bracelet de Force" }
 item{ id = "essence", description = "Essences" }
 item{ id = "fire_seed", description = "Graine de feu" }
@@ -467,6 +469,7 @@ enemy{ id = "tektite_red", description = "Tektite Rouge" }
 entity{ id = "arrow", description = "Flèche" }
 entity{ id = "bomb", description = "bomb" }
 entity{ id = "bone", description = "Os (projectile)" }
+entity{ id = "boomerang" }
 entity{ id = "colored_block", description = "Bloc Coloré" }
 entity{ id = "colored_block_destination", description = "Destination bloc coloré" }
 entity{ id = "dungeon_statue_eye", description = "Oeil de statue" }
@@ -549,6 +552,7 @@ file{ path = "entities/pickable.lua", author = "TwilCynder", }
 file{ path = "entities/platform.lua", author = "TwilCynder", }
 file{ path = "entities/platform_controller.lua", author = "TwilCynder", }
 file{ path = "entities/shop_item.lua", author = "TwilCynder", }
+file{ path = "items/boomerang.lua", author = "TwilCynder", }
 file{ path = "items/bracelet.lua", author = "TwilCynder", }
 file{ path = "items/essence.lua", author = "TwilCynder", }
 file{ path = "items/fire_seed.lua", author = "TwilCynder", }
