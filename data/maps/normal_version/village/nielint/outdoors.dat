@@ -155,6 +155,96 @@ tile{
 
 tile{
   layer = 1,
+  x = 576,
+  y = 0,
+  width = 32,
+  height = 32,
+  pattern = "13_3",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 0,
+  width = 32,
+  height = 32,
+  pattern = "13",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 8,
+  width = 32,
+  height = 32,
+  pattern = "13_2",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 16,
+  width = 32,
+  height = 32,
+  pattern = "13",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "135_4",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "135_3",
+}
+
+tile{
+  layer = 1,
+  x = 544,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "135",
+}
+
+tile{
+  layer = 1,
+  x = 544,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "135_2",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 8,
+  width = 32,
+  height = 32,
+  pattern = "13",
+}
+
+tile{
+  layer = 1,
+  x = 576,
+  y = 16,
+  width = 32,
+  height = 32,
+  pattern = "13_2",
+}
+
+tile{
+  layer = 1,
   x = 584,
   y = 448,
   width = 16,
@@ -1757,10 +1847,10 @@ tile{
 
 tile{
   layer = 1,
-  x = 208,
-  y = 400,
-  width = 96,
-  height = 96,
+  x = 224,
+  y = 416,
+  width = 64,
+  height = 64,
   pattern = "5_4",
 }
 
@@ -2783,9 +2873,9 @@ tile{
 
 tile{
   layer = 1,
-  x = 208,
-  y = 392,
-  width = 96,
+  x = 224,
+  y = 408,
+  width = 64,
   height = 8,
   pattern = "10",
 }
@@ -2810,19 +2900,19 @@ tile{
 
 tile{
   layer = 1,
-  x = 200,
-  y = 400,
+  x = 216,
+  y = 416,
   width = 8,
-  height = 96,
+  height = 64,
   pattern = "8",
 }
 
 tile{
   layer = 1,
-  x = 304,
-  y = 400,
+  x = 288,
+  y = 416,
   width = 8,
-  height = 96,
+  height = 64,
   pattern = "12",
 }
 
@@ -3148,15 +3238,6 @@ tile{
   width = 32,
   height = 8,
   pattern = "85_2",
-}
-
-tile{
-  layer = 1,
-  x = 576,
-  y = 0,
-  width = 32,
-  height = 32,
-  pattern = "13_3",
 }
 
 tile{
@@ -4286,33 +4367,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 608,
-  y = 0,
-  width = 32,
-  height = 32,
-  pattern = "13",
-}
-
-tile{
-  layer = 1,
-  x = 592,
-  y = 8,
-  width = 32,
-  height = 32,
-  pattern = "13_2",
-}
-
-tile{
-  layer = 1,
-  x = 608,
-  y = 16,
-  width = 32,
-  height = 32,
-  pattern = "13",
-}
-
-tile{
-  layer = 1,
   x = 592,
   y = 24,
   width = 32,
@@ -4610,42 +4664,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 560,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "135_4",
-}
-
-tile{
-  layer = 1,
-  x = 560,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "135_3",
-}
-
-tile{
-  layer = 1,
-  x = 544,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "135",
-}
-
-tile{
-  layer = 1,
-  x = 544,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "135_2",
-}
-
-tile{
-  layer = 1,
   x = 528,
   y = -8,
   width = 16,
@@ -4696,24 +4714,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "135_2",
-}
-
-tile{
-  layer = 1,
-  x = 544,
-  y = 8,
-  width = 16,
-  height = 32,
-  pattern = "178",
-}
-
-tile{
-  layer = 1,
-  x = 512,
-  y = 8,
-  width = 16,
-  height = 32,
-  pattern = "178",
 }
 
 tile{
@@ -7313,6 +7313,51 @@ tile{
   tileset = "01 - normal/annexe",
 }
 
+tile{
+  layer = 1,
+  x = 512,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "178",
+}
+
+tile{
+  layer = 1,
+  x = 512,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "245",
+}
+
+tile{
+  layer = 1,
+  x = 544,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "178",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 480,
+  width = 64,
+  height = 8,
+  pattern = "6",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 320,
+  width = 16,
+  height = 24,
+  pattern = "80",
+}
+
 teletransporter{
   layer = 1,
   x = 64,
@@ -8100,6 +8145,16 @@ custom_entity{
   sprite = "entities/wall/fissured_wall",
 }
 
+teletransporter{
+  layer = 1,
+  x = 504,
+  y = 464,
+  width = 16,
+  height = 16,
+  destination_map = "testHub",
+  sprite = "entities/items_effects/ice_floor",
+}
+
 tile{
   layer = 2,
   x = 336,
@@ -8161,6 +8216,15 @@ tile{
   width = 16,
   height = 8,
   pattern = "133",
+}
+
+tile{
+  layer = 2,
+  x = 544,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "245",
 }
 
 teletransporter{

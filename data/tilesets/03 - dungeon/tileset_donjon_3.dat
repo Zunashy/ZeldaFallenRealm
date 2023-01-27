@@ -2071,6 +2071,37 @@ tile_pattern{
   repeat_mode = "none",
 }
 
+tile_pattern{
+  id = "93",
+  ground = "traversable",
+  default_layer = 0,
+  x = 8,
+  y = 160,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "94",
+  ground = "traversable",
+  default_layer = 0,
+  x = 0,
+  y = 160,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "95",
+  ground = "traversable",
+  default_layer = 0,
+  x = 80,
+  y = 272,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
 border_set{
   id = "classic",
   pattern_0 = "19",
