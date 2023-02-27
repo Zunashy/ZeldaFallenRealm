@@ -125,5 +125,3 @@ function item_icon_builder:new(game, config)
 end
 
 return item_icon_builder
-
-
