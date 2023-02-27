@@ -19,7 +19,13 @@ function item:on_started()
 end
 
 function item:on_obtaining()
-  game:get_dialog_box().info = 4 - self:get_amount() - 1
+  local dialog_box = game:get_dialog_box()
+  local n = 3 - self:get_amount()
+  if n < 1 then 
+    dialog_box:set_dialog_override("_treasure.heart_quarter.full")
+  else 
+    dialog_box.info = n
+  end
 end
 
 function item:on_obtained()
