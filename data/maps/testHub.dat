@@ -290,8 +290,8 @@ teletransporter{
   y = 16,
   width = 16,
   height = 16,
-  destination_map = "donjons/level_03/rdc_2",
-  destination = "entrance",
+  destination_map = "donjons/level_03/ss1",
+  destination = "tphub",
 }
 
 teletransporter{
@@ -317,8 +317,8 @@ teletransporter{
 
 teletransporter{
   layer = 0,
-  x = 72,
-  y = 144,
+  x = 160,
+  y = 136,
   width = 16,
   height = 16,
   transition = "scrolling",

@@ -1,0 +1,21 @@
+animation{
+  name = "closed",
+  src_image = "tileset",
+  directions = {
+    { x = 368, y = 16, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0 },
+    { x = 368, y = 32, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0 },
+    { x = 368, y = 48, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0 },
+    { x = 368, y = 0, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "opening",
+  src_image = "tileset",
+  frame_delay = 80,
+  directions = {
+    { x = 368, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 0, num_frames = 4 },
+    { x = 368, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 0, num_frames = 4 },
+    { x = 368, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 0, num_frames = 4 },
+    { x = 368, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 0, num_frames = 4 },
+  },
+}

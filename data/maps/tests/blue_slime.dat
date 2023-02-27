@@ -690,8 +690,8 @@ custom_entity{
 
 pickable{
   layer = 1,
-  x = 280,
-  y = 253,
+  x = 296,
+  y = 197,
   treasure_name = "great_key",
 }
 
@@ -823,6 +823,14 @@ destructible{
   x = 216,
   y = 237,
   sprite = "test/snas",
+}
+
+pickable{
+  name = "boomerang",
+  layer = 1,
+  x = 296,
+  y = 189,
+  treasure_name = "boomerang",
 }
 
 tile{
