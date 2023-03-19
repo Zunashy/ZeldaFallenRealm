@@ -204,7 +204,11 @@ sprite{ id = "entities/dungeon_elements/switch", description = "entities/dungeon
 sprite{ id = "entities/dungeon_elements/switches" }
 sprite{ id = "entities/dungeon_elements/teleport", description = "entities/dungeon_elements/teleport" }
 sprite{ id = "entities/dungeon_statue_eye", description = "entities/dungeon_statue_eye" }
+sprite{ id = "entities/explosive/fissured_rock" }
+sprite{ id = "entities/ground/dig_effect", description = "entities/ground/dig_effect" }
 sprite{ id = "entities/ground/dig_ground", description = "Sol creusable" }
+sprite{ id = "entities/ground/dug_ground", description = "entities/ground/dug_ground" }
+sprite{ id = "entities/ground/dug_stairs", description = "entities/ground/dug_stairs" }
 sprite{ id = "entities/items", description = "entities/items" }
 sprite{ id = "entities/items_effects/flame", description = "entities/items_effects/flame" }
 sprite{ id = "entities/items_effects/ice_floor", description = "entities/items_effects/ice_floor" }

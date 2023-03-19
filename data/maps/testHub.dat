@@ -337,3 +337,13 @@ teletransporter{
   destination = "bar_to_village",
 }
 
+teletransporter{
+  layer = 0,
+  x = 128,
+  y = 112,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_04/ss2",
+  destination = "ss2",
+}
+
