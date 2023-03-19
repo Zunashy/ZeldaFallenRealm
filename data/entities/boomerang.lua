@@ -2,7 +2,7 @@ local entity = ...
 local game = entity:get_game()
 local map = entity:get_map()
 
-local travel_distance = 80
+local travel_distance = 120
 local travel_speed = 150
 
 function init_traversable()
