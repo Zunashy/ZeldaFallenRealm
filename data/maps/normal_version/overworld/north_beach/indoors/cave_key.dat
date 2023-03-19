@@ -3909,6 +3909,7 @@ enemy{
   },
   direction = 3,
   breed = "moblin_sword",
+  savegame_variable = "north_beach_key_cave_moblin",
   treasure_name = "random",
 }
 
@@ -4302,7 +4303,7 @@ teletransporter{
   enabled_at_start = false,
   width = 16,
   height = 16,
-  destination_map = "normal_version/overworld/north_beach/indoors/cave_04",
+  destination_map = "normal_version/overworld/north_beach/indoors/cave_key",
   destination = "destinatio_tp",
   sprite = "entities/dungeon_elements/teleport",
 }
@@ -4385,5 +4386,27 @@ tile{
   width = 16,
   height = 16,
   pattern = "245",
+}
+
+sensor{
+  layer = 1,
+  x = 600,
+  y = 205,
+  properties = {
+    {
+      key = "activate_trigger",
+      value = "setrespawn:checkpoint",
+    },
+  },
+  width = 16,
+  height = 16,
+}
+
+destination{
+  name = "checkpoint",
+  layer = 1,
+  x = 600,
+  y = 253,
+  direction = 1,
 }
 

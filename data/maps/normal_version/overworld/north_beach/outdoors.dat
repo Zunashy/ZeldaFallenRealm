@@ -7776,7 +7776,7 @@ teletransporter{
   y = 512,
   width = 16,
   height = 16,
-  destination_map = "normal_version/overworld/north_beach/indoors/cave_04",
+  destination_map = "normal_version/overworld/north_beach/indoors/cave_key",
   destination = "destination",
 }
 

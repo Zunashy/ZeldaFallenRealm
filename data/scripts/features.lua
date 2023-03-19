@@ -26,6 +26,7 @@ require("scripts/meta/string")
 require("scripts/meta/hero")
 require("scripts/meta/entities")
 require("scripts/meta/map")
+require("scripts/meta/item")
 
 require("scripts/feature/input_manager")
 

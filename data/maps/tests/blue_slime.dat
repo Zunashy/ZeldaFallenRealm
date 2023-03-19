@@ -818,19 +818,26 @@ destructible{
   ground = "traversable",
 }
 
-destructible{
-  layer = 1,
-  x = 216,
-  y = 237,
-  sprite = "test/snas",
-}
-
 pickable{
   name = "boomerang",
   layer = 1,
   x = 296,
   y = 189,
   treasure_name = "boomerang",
+}
+
+pickable{
+  layer = 1,
+  x = 216,
+  y = 237,
+  treasure_name = "heart_quarter",
+}
+
+pickable{
+  layer = 1,
+  x = 216,
+  y = 253,
+  treasure_name = "heart_quarter",
 }
 
 tile{

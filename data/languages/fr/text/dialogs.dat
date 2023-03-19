@@ -82,6 +82,7 @@ Vous obtenez un réceptacle de coeur ! Cet objet très précieux ajoute un coeur
 
 dialog{
   id = "_treasure.heart_quarter.1",
+  allow_override = "1",
   use_preset_info = "1",
   text = [[
 Vous obtenez un quart de coeur ! Trouvez en 4 pour ajouter un coeur à votre barre de vie. Encore $v !

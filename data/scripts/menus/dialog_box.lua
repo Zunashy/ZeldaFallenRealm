@@ -45,9 +45,9 @@ local dialog_box = {
   df_font = "oracle",
   current_font = "", 
   font_size = 9,
-  choice_cursor_positions = {24, 100, y = 24}
+  choice_cursor_positions = {24, 100, y = 24},
+  dialog_override = nil
 }
-
 
 -- Constants.
 local nb_visible_lines = 2     -- Maximum number of lines in the dialog box.
@@ -354,7 +354,6 @@ function dialog_box:pre_next_line()
 end
 
 function dialog_box:start_next_line()
-    print("SLN")
   text_pos:reset()
 
   self.current_line = self.next_line
@@ -509,9 +508,32 @@ function dialog_box:set_text_speed(speed)
   self.text_speed = speed
 end
 
+function dialog_box:set_dialog_override(dialog_id)
+  self.dialog_override = dialog_id
+end
+
 --====== BINDING THE DIALOG TO THE GAME ======
 
 local function dialog_start_callback(game, dialog, info)
+  print("DIALSTARTtrtpppo")
+
+  local override = dialog_box.dialog_override
+  if override and dialog.allow_override then
+    local override_type = type(override)
+    if type(override) == "string" then
+      dialog = sol.language.get_dialog(override)
+      dialog_box.dialog_override = nil
+    elseif type(override) == "function" then
+      local res, rep = override()
+      if res then
+        sol.language.get_dialog(res)
+      end
+      if not rep then
+        dialog_box.dialog_override = nil
+      end
+    end
+  end
+
   dialog_box.dialog = dialog
   dialog_box.info = (dialog.use_preset_info) and dialog_box.info or info
 
