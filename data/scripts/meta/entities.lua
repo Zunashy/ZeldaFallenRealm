@@ -245,6 +245,18 @@ end
 
 function dest_meta:cut()
   self:on_cut()
+  local treasure, variant, variable = self:get_treasure()
+  if treasure then
+    local x, y, layer = self:get_position()
+    self:get_map():create_pickable({
+      layer = layer,
+      x = x, 
+      y = y,
+      treasure_name = treasure,
+      treasure_variant = variant,
+      treasure_savegame_variable = variable
+    })
+  end
   self:remove()
 end
 

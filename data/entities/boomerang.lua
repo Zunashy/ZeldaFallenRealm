@@ -6,7 +6,6 @@ local travel_distance = 120
 local travel_speed = 150
 
 function init_traversable()
-    -- Comme le caillou vole, il passe au dessus des murets et sols spéciaux
     entity:set_can_traverse_ground("low_wall", true)
     entity:set_can_traverse_ground("deep_water", true)
     entity:set_can_traverse_ground("shallow_water", true)
@@ -17,7 +16,13 @@ function init_traversable()
 end
 
 local function coll_test(boom, other)
-    if (other:get_type() == "enemy") then other:hurt(1) ; entity:come_back() end
+    local type = other:get_type()
+    if (type == "enemy") then 
+        other:immobilize() 
+        entity:come_back() 
+    elseif (type == "destructible") then 
+        other:attempt_cut()
+    end 
 end
 
 function entity:destroy()
@@ -58,6 +63,17 @@ function entity:start_movement(direction)
 
     function movement:on_finished()
         entity:come_back()
+    end
+
+    function movement:on_obstacle_reached()
+        local x, y = entity:get_position()
+        x, y = gen.shift_direction4(x, y, entity:get_direction(), 16)
+        
+        for e in entity:get_map():get_entities_in_rectangle(x, y, 1, 1) do
+            if e.attempt_cut then
+                e:attempt_cut()
+            end
+        end
     end
 end
 

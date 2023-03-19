@@ -295,7 +295,7 @@ destination{
   name = "spawn",
   layer = 1,
   x = 232,
-  y = 237,
+  y = 221,
   properties = {
     {
       key = "on_obtained",
@@ -458,7 +458,7 @@ door{
 npc{
   name = "snas",
   layer = 1,
-  x = 232,
+  x = 168,
   y = 189,
   properties = {
     {
@@ -667,8 +667,8 @@ chest{
 
 destructible{
   layer = 1,
-  x = 208,
-  y = 205,
+  x = 200,
+  y = 213,
   properties = {
     {
       key = "savegame_variable",
@@ -829,15 +829,30 @@ pickable{
 pickable{
   layer = 1,
   x = 216,
-  y = 237,
+  y = 253,
   treasure_name = "heart_quarter",
 }
 
-pickable{
+destructible{
+  name = "herbe",
   layer = 1,
   x = 216,
-  y = 253,
-  treasure_name = "heart_quarter",
+  y = 173,
+  treasure_name = "rupee",
+  treasure_variant = 2,
+  sprite = "entities/vegetation/grass/grass",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 232,
+  y = 173,
+  treasure_name = "rupee",
+  treasure_variant = 2,
+  sprite = "entities/vegetation/grass/grass_dark",
+  can_be_cut = true,
+  ground = "traversable",
 }
 
 tile{
