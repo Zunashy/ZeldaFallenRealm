@@ -1,0 +1,7 @@
+animation{
+  name = "on_ground",
+  src_image = "tileset",
+  directions = {
+    { x = 191, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
