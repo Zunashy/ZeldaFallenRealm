@@ -18,14 +18,19 @@ end
 
 local function coll_test(boom, other)
     local type = other:get_type()
-    if (type == "enemy") then 
-        other:immobilize() 
-        sol.timer.start(game, 1000, function()
-            if other:exists() then
-                other:unimmobilize()
-            end
-        end)
-        entity:come_back() 
+    if (type == "enemy") then
+        local conseq = other:get_attack_consequence("boomerang")
+        if conseq == "immobilized" or type(conseq) == "number" then
+            other:immobilize() 
+            sol.timer.start(game, 1000, function()
+                if other:exists() then
+                    other:unimmobilize()
+                end
+            end)
+            entity:come_back() 
+        else if type(conseq) == "function" then
+            conseq(other)
+        end
     elseif (type == "destructible") then 
         other:attempt_cut()
     end 
