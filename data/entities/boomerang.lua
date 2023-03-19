@@ -4,6 +4,7 @@ local map = entity:get_map()
 
 local travel_distance = 120
 local travel_speed = 150
+local stun_duration = 1000
 
 function init_traversable()
     entity:set_can_traverse_ground("low_wall", true)
@@ -19,6 +20,11 @@ local function coll_test(boom, other)
     local type = other:get_type()
     if (type == "enemy") then 
         other:immobilize() 
+        sol.timer.start(game, 1000, function()
+            if other:exists() then
+                other:unimmobilize()
+            end
+        end)
         entity:come_back() 
     elseif (type == "destructible") then 
         other:attempt_cut()

@@ -126,6 +126,10 @@ end
 sol.main.get_metatable("hero").exclamation = npc_meta.exclamation
 
 local enemy_meta = sol.main.get_metatable("enemy")
+function enemy_meta:on_restarted()
+  print("RESTART")
+end
+
 function enemy_meta:set_attacks_consequence(consequence)
   self:set_attack_consequence("sword", consequence)
   self:set_attack_consequence("thrown_item", consequence)
@@ -146,10 +150,18 @@ function enemy_meta:set_attacks_consequence_sprite(sprite, consequence)
   self:set_attack_consequence_sprite(sprite, "fire", consequence)
 end
 
+function enemy_meta:unimmobilize()
+  if self:is_immobilized() and not self.keep_immobilized then
+    self:restart()
+  end
+end
+
 function enemy_meta:on_hurt()
   local x, y = self:get_position()
   self.hurt_x = x
   self.hurt_y = y
+
+  self:unimmobilize()  
 end
 
 function enemy_meta:on_dead()
