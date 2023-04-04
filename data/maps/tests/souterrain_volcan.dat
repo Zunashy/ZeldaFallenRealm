@@ -1,0 +1,19 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 640,
+  height = 576,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "01 - normal/lava",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 640,
+  height = 576,
+  pattern = "1",
+}
+

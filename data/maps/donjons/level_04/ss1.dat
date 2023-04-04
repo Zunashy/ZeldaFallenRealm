@@ -23633,6 +23633,15 @@ tile{
   pattern = "60",
 }
 
+tile{
+  layer = 0,
+  x = 352,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
 custom_entity{
   layer = 0,
   x = 808,
