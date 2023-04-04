@@ -15364,9 +15364,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 224,
-  y = 256,
-  width = 32,
+  x = 352,
+  y = 320,
+  width = 16,
   height = 16,
   pattern = "44",
 }
@@ -20910,6 +20910,15 @@ tile{
   layer = 0,
   x = 736,
   y = 960,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 368,
   width = 16,
   height = 16,
   pattern = "44",
