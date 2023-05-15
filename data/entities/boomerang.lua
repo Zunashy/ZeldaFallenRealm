@@ -28,7 +28,7 @@ local function coll_test(boom, other)
                 end
             end)
             entity:come_back() 
-        else if type(conseq) == "function" then
+        elseif type(conseq) == "function" then
             conseq(other)
         end
     elseif (type == "destructible") then 
