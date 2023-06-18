@@ -264,6 +264,15 @@ tile{
   tileset = "03 - dungeon/tileset_donjon_4",
 }
 
+tile{
+  layer = 0,
+  x = 16,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "131",
+}
+
 destination{
   name = "spawn",
   layer = 0,
@@ -317,13 +326,13 @@ teletransporter{
 
 teletransporter{
   layer = 0,
-  x = 160,
-  y = 136,
+  x = 16,
+  y = 112,
   width = 16,
   height = 16,
   transition = "scrolling",
-  destination_map = "tests/dungeon",
-  destination = "_side",
+  destination_map = "normal_version/overworld/old_island/outdoors",
+  destination = "old_island_test",
 }
 
 teletransporter{
