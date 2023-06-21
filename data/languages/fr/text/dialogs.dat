@@ -828,6 +828,13 @@ Raaah, je suis nul comme chanteur !
 }
 
 dialog{
+  id = "test.gamin",
+  text = [[
+Ci-gît le développement d'Hollow Knight Silk Song
+]],
+}
+
+dialog{
   id = "test.mac",
   text = [[
 nous sommes en guerre.
