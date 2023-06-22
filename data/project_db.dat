@@ -77,6 +77,7 @@ map{ id = "normal_version/village/nielint/indoors/mairie_rdc", description = "Ma
 map{ id = "normal_version/village/nielint/indoors/octorok_cave_01", description = "Grotte octo" }
 map{ id = "normal_version/village/nielint/indoors/shop", description = "SHop" }
 map{ id = "normal_version/village/nielint/indoors/tree_house", description = "Tree house" }
+map{ id = "normal_version/village/nielint/indoors/underground" }
 map{ id = "normal_version/village/nielint/outdoors", description = "normal_version/village/nielint/outdoors" }
 map{ id = "testHub", description = "testHub" }
 map{ id = "tests/blue_slime", description = "tests/blue_slime" }

@@ -379,6 +379,13 @@ Cette épée... C'est celle du prince ! Gaaaah, sauve-qui-peut !
 }
 
 dialog{
+  id = "pnj.overworld.old_island.grave",
+  text = [[
+A la mémoire du capitaine Canon.
+]],
+}
+
+dialog{
   id = "pnj.overworld.pirates.1",
   text = [[
 Hé gamin ! La bourse ou la vie ! Euh... J'te fais pas peur ? Ben... Passe alors. J'suis d'humeur généreuse aujourd'hui.
