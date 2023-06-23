@@ -4,7 +4,7 @@ properties{
   width = 160,
   height = 144,
   min_layer = 0,
-  max_layer = 2,
+  max_layer = 5,
   world = "Test_Building",
   tileset = "01 - normal/main",
 }
@@ -270,7 +270,7 @@ tile{
   y = 112,
   width = 16,
   height = 16,
-  pattern = "131",
+  pattern = "129",
 }
 
 destination{
@@ -332,7 +332,7 @@ teletransporter{
   height = 16,
   transition = "scrolling",
   destination_map = "normal_version/overworld/old_island/outdoors",
-  destination = "old_island_test",
+  destination = "old_island_sud",
 }
 
 teletransporter{
