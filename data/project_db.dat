@@ -54,6 +54,7 @@ map{ id = "normal_version/overworld/north_beach/indoors/tree_house", description
 map{ id = "normal_version/overworld/north_beach/outdoors", description = "normal_version/overworld/north_beach/outdoors" }
 map{ id = "normal_version/overworld/old_island/indoors/house_captain" }
 map{ id = "normal_version/overworld/old_island/outdoors" }
+map{ id = "normal_version/overworld/old_island/underground/underground", description = "normal_version/overworld/old_island/underground/underground" }
 map{ id = "normal_version/overworld/old_island/underground/underground_main" }
 map{ id = "normal_version/overworld/plain/indoors/cave_01", description = "normal_version/overworld/plain/indoors/cave_01" }
 map{ id = "normal_version/overworld/plain/indoors/cave_02", description = "normal_version/overworld/plain/indoors/cave_02" }

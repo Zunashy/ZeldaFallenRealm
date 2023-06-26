@@ -571,7 +571,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 256,
+  x = 240,
   y = 96,
   width = 16,
   height = 16,
@@ -607,16 +607,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 240,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "179",
-}
-
-tile{
-  layer = 2,
-  x = 288,
+  x = 272,
   y = 96,
   width = 16,
   height = 16,
@@ -2359,6 +2350,13 @@ destructible{
 destructible{
   layer = 2,
   x = 536,
+  y = 109,
+  sprite = "entities/projectile/rock",
+}
+
+destructible{
+  layer = 2,
+  x = 248,
   y = 109,
   sprite = "entities/projectile/rock",
 }
@@ -9028,7 +9026,7 @@ destructible{
   properties = {
     {
       key = "dig_map",
-      value = "normal_version/overworld/old_island/outdoors",
+      value = "normal_version/overworld/old_island/underground/underground",
     },
     {
       key = "dig_destination",

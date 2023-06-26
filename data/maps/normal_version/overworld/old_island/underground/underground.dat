@@ -1,0 +1,245 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 640,
+  height = 512,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "01 - normal/main",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 8,
+  width = 128,
+  height = 488,
+  pattern = "43",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 400,
+  width = 128,
+  height = 96,
+  pattern = "210",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 272,
+  width = 128,
+  height = 96,
+  pattern = "210",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 144,
+  width = 128,
+  height = 96,
+  pattern = "210",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 16,
+  width = 128,
+  height = 96,
+  pattern = "210",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 400,
+  width = 128,
+  height = 96,
+  pattern = "210",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 8,
+  width = 480,
+  height = 104,
+  pattern = "43",
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 112,
+  width = 128,
+  height = 160,
+  pattern = "43",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 272,
+  width = 288,
+  height = 96,
+  pattern = "43",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 272,
+  width = 128,
+  height = 96,
+  pattern = "210",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 144,
+  width = 128,
+  height = 96,
+  pattern = "210",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 16,
+  width = 128,
+  height = 96,
+  pattern = "210",
+}
+
+tile{
+  layer = 2,
+  x = 224,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "129",
+}
+
+tile{
+  layer = 2,
+  x = 224,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "257",
+}
+
+tile{
+  layer = 2,
+  x = 232,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "210_6",
+}
+
+destination{
+  name = "dig_destination",
+  layer = 2,
+  x = 240,
+  y = 205,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 2,
+  x = 224,
+  y = 192,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/overworld/old_island/outdoors",
+  destination = "dig_destination",
+}
+
+destination{
+  name = "dig_destination_2",
+  layer = 2,
+  x = 248,
+  y = 285,
+  direction = 1,
+}
+
+separator{
+  layer = 2,
+  x = 152,
+  y = -8,
+  width = 16,
+  height = 528,
+}
+
+separator{
+  layer = 2,
+  x = 312,
+  y = -8,
+  width = 16,
+  height = 528,
+}
+
+separator{
+  layer = 2,
+  x = 472,
+  y = -8,
+  width = 16,
+  height = 528,
+}
+
+separator{
+  layer = 2,
+  x = 0,
+  y = -8,
+  width = 624,
+  height = 16,
+}
+
+separator{
+  layer = 2,
+  x = 0,
+  y = 120,
+  width = 624,
+  height = 16,
+}
+
+separator{
+  layer = 2,
+  x = 0,
+  y = 248,
+  width = 624,
+  height = 16,
+}
+
+separator{
+  layer = 2,
+  x = 0,
+  y = 376,
+  width = 624,
+  height = 16,
+}
+
+separator{
+  layer = 2,
+  x = 0,
+  y = 504,
+  width = 624,
+  height = 16,
+}
+
+teletransporter{
+  layer = 2,
+  x = 232,
+  y = 272,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/overworld/old_island/outdoors",
+  destination = "old_island_2",
+}
+
