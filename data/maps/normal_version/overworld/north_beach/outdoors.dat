@@ -7892,16 +7892,6 @@ pickable{
   treasure_name = "great_key",
 }
 
-custom_entity{
-  layer = 1,
-  x = 120,
-  y = 445,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/ground/dig_ground",
-}
-
 teletransporter{
   name = "Pirate_cave",
   layer = 1,
@@ -7919,6 +7909,26 @@ destination{
   x = 272,
   y = 605,
   direction = 1,
+}
+
+destructible{
+  layer = 1,
+  x = 120,
+  y = 445,
+  properties = {
+    {
+      key = "dig_map",
+      value = "normal_version/overworld/north_beach/indoors/pirate_cave",
+    },
+    {
+      key = "dig_destination",
+      value = "dig_destination",
+    },
+  },
+  sprite = "entities/ground/dig_ground",
+  weight = -1,
+  damage_on_enemies = 0,
+  ground = "traversable",
 }
 
 tile{

@@ -324,7 +324,7 @@ npc{
   y = 45,
   direction = 3,
   subtype = 1,
-  sprite = "pnj/nielint/14",
+  sprite = "pnj/pirates/1",
   behavior = "dialog#pnj.overworld.north_beach.indoors.old_man_map",
 }
 

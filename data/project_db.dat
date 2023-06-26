@@ -54,13 +54,14 @@ map{ id = "normal_version/overworld/north_beach/indoors/tree_house", description
 map{ id = "normal_version/overworld/north_beach/outdoors", description = "normal_version/overworld/north_beach/outdoors" }
 map{ id = "normal_version/overworld/old_island/indoors/house_captain" }
 map{ id = "normal_version/overworld/old_island/outdoors" }
-map{ id = "normal_version/overworld/old_island/underground/underground" }
+map{ id = "normal_version/overworld/old_island/underground/underground_main" }
 map{ id = "normal_version/overworld/plain/indoors/cave_01", description = "normal_version/overworld/plain/indoors/cave_01" }
 map{ id = "normal_version/overworld/plain/indoors/cave_02", description = "normal_version/overworld/plain/indoors/cave_02" }
 map{ id = "normal_version/overworld/plain/indoors/cave_03", description = "normal_version/overworld/plain/indoors/cave_03" }
 map{ id = "normal_version/overworld/plain/indoors/cave_04", description = "normal_version/overworld/plain/indoors/cave_04" }
 map{ id = "normal_version/overworld/plain/outdoors_1", description = "normal_version/overworld/plain/outdoors_1" }
 map{ id = "normal_version/overworld/plain/outdoors_2", description = "normal_version/overworld/plain/outdoors_2" }
+map{ id = "normal_version/overworld/plain/underground/under_1" }
 map{ id = "normal_version/overworld/wind_wood/forest_outdoor", description = "normal_version/overworld/wind_wood/forest_outdoor" }
 map{ id = "normal_version/overworld/wind_wood/indoors/forest_cave", description = "normal_version/overworld/wind_wood/indoors/forest_cave" }
 map{ id = "normal_version/overworld/wind_wood/indoors/house", description = "normal_version/overworld/wind_wood/indoors/house" }

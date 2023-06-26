@@ -379,6 +379,17 @@ Cette épée... C'est celle du prince ! Gaaaah, sauve-qui-peut !
 }
 
 dialog{
+  id = "pnj.overworld.old_island.barman",
+  text = [[
+Oh, c'est toi, je me souviens de cet endroit à l'époque où je naviguais beaucoup.
+C'est comme ça que j'ai appris à faire des boissons, et mieux me battre.
+Mais tout cela appartient à un passé auquel j'ai tiré un trait.
+Si tu souhaites aller plus loin, le propriétaire de cette maison a caché la clé dans un trou, mais je ne sais plus lequel.
+Qui est le propriétaire ? Le capitaine Canon, nous aurons l'occasion d'en re discuter, allez, va.
+]],
+}
+
+dialog{
   id = "pnj.overworld.old_island.grave",
   text = [[
 A la mémoire du capitaine Canon.

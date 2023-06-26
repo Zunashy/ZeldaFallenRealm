@@ -3153,3 +3153,35 @@ teletransporter{
   destination = "pirate_cave",
 }
 
+separator{
+  layer = 0,
+  x = 232,
+  y = 0,
+  width = 16,
+  height = 528,
+}
+
+separator{
+  layer = 0,
+  x = 472,
+  y = 0,
+  width = 16,
+  height = 528,
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 168,
+  width = 720,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 344,
+  width = 720,
+  height = 16,
+}
+
