@@ -4,7 +4,7 @@ properties{
   width = 720,
   height = 352,
   min_layer = 0,
-  max_layer = 0,
+  max_layer = 2,
   tileset = "01 - normal/main",
 }
 
@@ -3433,5 +3433,29 @@ enemy{
   direction = 0,
   breed = "moblin_bow",
   treasure_name = "random",
+}
+
+separator{
+  layer = 0,
+  x = 0,
+  y = 168,
+  width = 720,
+  height = 16,
+}
+
+separator{
+  layer = 0,
+  x = 232,
+  y = 0,
+  width = 16,
+  height = 352,
+}
+
+separator{
+  layer = 0,
+  x = 472,
+  y = 0,
+  width = 16,
+  height = 352,
 }
 
