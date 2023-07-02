@@ -1,0 +1,288 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 1120,
+  height = 896,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "17",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "17_2",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 0,
+  width = 1072,
+  height = 32,
+  pattern = "18",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 48,
+  width = 1088,
+  height = 848,
+  pattern = "27",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 32,
+  width = 1072,
+  height = 16,
+  pattern = "18_2",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "16_2",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 16,
+  height = 896,
+  pattern = "2",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 48,
+  width = 16,
+  height = 80,
+  pattern = "2",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 112,
+  width = 504,
+  height = 8,
+  pattern = "11",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "10",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 120,
+  width = 8,
+  height = 776,
+  pattern = "12",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 128,
+  width = 8,
+  height = 760,
+  pattern = "5",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "6",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "3",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 120,
+  width = 496,
+  height = 16,
+  pattern = "4",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 128,
+  width = 480,
+  height = 752,
+  pattern = "2_3",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 128,
+  width = 8,
+  height = 760,
+  pattern = "5",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "3",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 136,
+  width = 8,
+  height = 800,
+  pattern = "5",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 888,
+  width = 496,
+  height = 8,
+  pattern = "5",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 880,
+  width = 480,
+  height = 8,
+  pattern = "4",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 248,
+  width = 80,
+  height = 8,
+  pattern = "105",
+  tileset = "01 - normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 240,
+  width = 80,
+  height = 8,
+  pattern = "105",
+  tileset = "01 - normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 256,
+  width = 80,
+  height = 16,
+  pattern = "2_2",
+  tileset = "01 - normal/undersea",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 32,
+  width = 8,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 32,
+  width = 8,
+  height = 16,
+  pattern = "8",
+}
+

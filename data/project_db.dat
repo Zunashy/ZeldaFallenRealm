@@ -63,6 +63,8 @@ map{ id = "normal_version/overworld/plain/indoors/cave_04", description = "norma
 map{ id = "normal_version/overworld/plain/outdoors_1", description = "normal_version/overworld/plain/outdoors_1" }
 map{ id = "normal_version/overworld/plain/outdoors_2", description = "normal_version/overworld/plain/outdoors_2" }
 map{ id = "normal_version/overworld/plain/underground/under_1" }
+map{ id = "normal_version/overworld/storm_sea/outdoors" }
+map{ id = "normal_version/overworld/storm_sea/undersea/undersea" }
 map{ id = "normal_version/overworld/wind_wood/forest_outdoor", description = "normal_version/overworld/wind_wood/forest_outdoor" }
 map{ id = "normal_version/overworld/wind_wood/indoors/forest_cave", description = "normal_version/overworld/wind_wood/indoors/forest_cave" }
 map{ id = "normal_version/overworld/wind_wood/indoors/house", description = "normal_version/overworld/wind_wood/indoors/house" }
@@ -121,6 +123,7 @@ tileset{ id = "01 - normal/lava", description = "normal/lava" }
 tileset{ id = "01 - normal/main", description = "normal/main" }
 tileset{ id = "01 - normal/marais", description = "normal/marais" }
 tileset{ id = "01 - normal/snow", description = "normal/snow" }
+tileset{ id = "01 - normal/undersea" }
 tileset{ id = "02 - war/annexe", description = "war/war_world_annexe" }
 tileset{ id = "02 - war/general", description = "war/general" }
 tileset{ id = "02 - war/main", description = "war/war_world" }
