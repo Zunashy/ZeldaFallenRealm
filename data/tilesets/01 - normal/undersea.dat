@@ -676,3 +676,20 @@ tile_pattern{
   height = 16,
 }
 
+border_set{
+  id = "route exterieure",
+  inner = true,
+  pattern_0 = "26",
+  pattern_1 = "24",
+  pattern_2 = "25",
+  pattern_3 = "24_2",
+  pattern_4 = "23_2",
+  pattern_5 = "23",
+  pattern_6 = "23_3",
+  pattern_7 = "23_4",
+  pattern_8 = "23_3",
+  pattern_9 = "23_4",
+  pattern_10 = "23_2",
+  pattern_11 = "23",
+}
+

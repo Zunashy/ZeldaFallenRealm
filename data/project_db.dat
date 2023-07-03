@@ -123,7 +123,7 @@ tileset{ id = "01 - normal/lava", description = "normal/lava" }
 tileset{ id = "01 - normal/main", description = "normal/main" }
 tileset{ id = "01 - normal/marais", description = "normal/marais" }
 tileset{ id = "01 - normal/snow", description = "normal/snow" }
-tileset{ id = "01 - normal/undersea" }
+tileset{ id = "01 - normal/undersea", description = "route exterieure" }
 tileset{ id = "02 - war/annexe", description = "war/war_world_annexe" }
 tileset{ id = "02 - war/general", description = "war/general" }
 tileset{ id = "02 - war/main", description = "war/war_world" }
