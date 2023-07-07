@@ -5648,8 +5648,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 40,
-  y = 104,
+  x = 16,
+  y = 96,
   width = 16,
   height = 16,
   pattern = "339",
@@ -6099,6 +6099,26 @@ separator{
   y = 0,
   width = 16,
   height = 896,
+}
+
+destructible{
+  layer = 1,
+  x = 80,
+  y = 61,
+  properties = {
+    {
+      key = "dig_map",
+      value = "normal_version/overworld/north_beach/indoors/pirate_cave",
+    },
+    {
+      key = "dig_destination",
+      value = "dig_destination",
+    },
+  },
+  sprite = "entities/ground/dig_ground",
+  weight = -1,
+  damage_on_enemies = 0,
+  ground = "traversable",
 }
 
 tile{
