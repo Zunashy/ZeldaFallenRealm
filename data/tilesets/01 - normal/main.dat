@@ -8369,10 +8369,24 @@ tile_pattern{
   id = "339",
   ground = "wall",
   default_layer = 0,
-  x = 576,
-  y = 272,
+  x = { 576, 576, 576 },
+  y = { 240, 256, 272 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "339_2",
+  ground = "wall",
+  default_layer = 0,
+  x = { 624, 624, 624 },
+  y = { 288, 304, 320 },
+  width = 16,
+  height = 16,
+  frame_delay = 160,
   repeat_mode = "none",
 }
 

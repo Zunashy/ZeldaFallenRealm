@@ -6132,6 +6132,114 @@ tile{
 
 tile{
   layer = 2,
+  x = 1000,
+  y = 184,
+  width = 16,
+  height = 16,
+  pattern = "5_4",
+}
+
+tile{
+  layer = 2,
+  x = 1064,
+  y = 184,
+  width = 16,
+  height = 16,
+  pattern = "5_4",
+}
+
+tile{
+  layer = 2,
+  x = 1000,
+  y = 184,
+  width = 16,
+  height = 16,
+  pattern = "342",
+}
+
+tile{
+  layer = 2,
+  x = 1064,
+  y = 184,
+  width = 16,
+  height = 16,
+  pattern = "342",
+}
+
+tile{
+  layer = 2,
+  x = 1000,
+  y = 176,
+  width = 16,
+  height = 8,
+  pattern = "10",
+}
+
+tile{
+  layer = 2,
+  x = 1064,
+  y = 176,
+  width = 16,
+  height = 8,
+  pattern = "10",
+}
+
+tile{
+  layer = 2,
+  x = 992,
+  y = 184,
+  width = 8,
+  height = 16,
+  pattern = "8",
+}
+
+tile{
+  layer = 2,
+  x = 1016,
+  y = 184,
+  width = 8,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 2,
+  x = 1056,
+  y = 184,
+  width = 8,
+  height = 16,
+  pattern = "8",
+}
+
+tile{
+  layer = 2,
+  x = 1080,
+  y = 184,
+  width = 8,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 2,
+  x = 1000,
+  y = 200,
+  width = 16,
+  height = 8,
+  pattern = "6",
+}
+
+tile{
+  layer = 2,
+  x = 1064,
+  y = 200,
+  width = 16,
+  height = 8,
+  pattern = "6",
+}
+
+tile{
+  layer = 2,
   x = 1016,
   y = 128,
   width = 48,
@@ -9876,15 +9984,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 1016,
-  y = 192,
-  width = 16,
-  height = 16,
-  pattern = "131",
-}
-
-tile{
-  layer = 2,
   x = 1024,
   y = 256,
   width = 16,
@@ -11835,15 +11934,6 @@ tile{
 tile{
   layer = 2,
   x = 1064,
-  y = 192,
-  width = 16,
-  height = 16,
-  pattern = "2",
-}
-
-tile{
-  layer = 2,
-  x = 1064,
   y = 216,
   width = 16,
   height = 16,
@@ -11884,6 +11974,42 @@ tile{
   width = 32,
   height = 16,
   pattern = "273_5",
+}
+
+tile{
+  layer = 2,
+  x = 880,
+  y = 776,
+  width = 16,
+  height = 16,
+  pattern = "339_2",
+}
+
+tile{
+  layer = 2,
+  x = 928,
+  y = 776,
+  width = 16,
+  height = 16,
+  pattern = "339_2",
+}
+
+tile{
+  layer = 2,
+  x = 1000,
+  y = 168,
+  width = 16,
+  height = 16,
+  pattern = "343",
+}
+
+tile{
+  layer = 2,
+  x = 1064,
+  y = 168,
+  width = 16,
+  height = 16,
+  pattern = "343",
 }
 
 destination{
