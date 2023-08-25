@@ -197,6 +197,8 @@ sprite{ id = "entities/block/ice_crystal", description = "entities/block/ice_cry
 sprite{ id = "entities/block/key_block", description = "entities/block/key_block" }
 sprite{ id = "entities/chests/chest", description = "entities/chests/chest" }
 sprite{ id = "entities/destructible/cristal_pierre", description = "entities/destructible/cristal_pierre" }
+sprite{ id = "entities/destructible/pillar", description = "Destructible pillar" }
+sprite{ id = "entities/destructible/pillar_fragment", description = "Pilllar Fragment (carryable)" }
 sprite{ id = "entities/door/boss_door", description = "entities/door/boss_door" }
 sprite{ id = "entities/door/door", description = "entities/door/door" }
 sprite{ id = "entities/door/door_2" }

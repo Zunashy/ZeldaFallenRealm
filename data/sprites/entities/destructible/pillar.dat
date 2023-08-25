@@ -1,0 +1,22 @@
+animation{
+  name = "idle",
+  src_image = "entities/destructible/pillar.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 48, origin_x = 8, origin_y = 45 },
+  },
+}
+animation{
+  name = "fallen",
+  src_image = "entities/destructible/pillar.png",
+  directions = {
+    { x = 112, y = 32, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13 },
+  },
+}
+animation{
+  name = "falling",
+  src_image = "entities/destructible/pillar.png",
+  frame_delay = 500,
+  directions = {
+    { x = 16, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 2 },
+  },
+}
