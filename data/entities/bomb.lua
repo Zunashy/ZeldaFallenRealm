@@ -12,11 +12,43 @@ local damage = 2
 
 local function noeffect() end
 
+local function hit_enemy(enemy, b)
+    if not enemy.explosion_immune then
+        local cons = enemy:get_attack_consequence("explosion")
+        if type(cons) == "function" then
+          cons(enemy)
+        elseif type(cons) == "number" then
+            enemy:hurt(cons)
+          local kb = sol.movement.create("straight")
+          kb:set_speed(160)
+          kb:set_max_distance(16)
+          kb:set_angle(b:get_angle(enemy))
+          kb:start(enemy)
+        end
+    end
+
+
+end
+
+local function hit_destructible(destructible)
+    destructible:hit_with_explosion()
+end
+
+local function hit_custom_entity(entity, b)
+    if entity.on_explosion then
+        entity:on_explosion(b)
+    end
+end
+
+local function hit_hero(hero)
+    hero:start_hurt(bomb, 2)
+end
+
 local explosion_effects = {
-    enemy = noeffect,
-    destructible = noeffect,
-    hero = noeffect,
-    custom_entity = noeffect
+    enemy = hit_enemy,
+    destructible = hit_destructible,
+    hero = hit_hero,
+    custom_entity = hit_custom_entity
 }
 
 do 
@@ -81,7 +113,7 @@ function bomb:detect_collision()
         if entity:overlaps(self) then
             effect = explosion_effects[entity:get_type()]
             if effect then
-                effect(self, entity)
+                effect(entity, self)
             end
         end
     end
@@ -104,32 +136,3 @@ function bomb:BOOM()
     self:detect_collision()
 end
 
-function bomb:hit_enemy(enemy)
-    if not enemy.explosion_immune then
-        enemy:hurt(damage)
-        local kb = sol.movement.create("straight")
-        kb:set_speed(160)
-        kb:set_max_distance(16)
-        kb:set_angle(self:get_angle(enemy))
-        kb:start(enemy)
-    end
-end
-explosion_effects.enemy = bomb.hit_enemy
-
-function bomb:hit_destructible(destructible)
-    destructible:hit_with_explosion()
-end
-explosion_effects.destructible = bomb.hit_destructible
-
-function bomb:hit_custom_entity(entity)
-    if entity.on_explosion then
-        entity:on_explosion(self)
-    end
-end
-explosion_effects.custom_entity = bomb.hit_custom_entity
-
-function bomb:hit_hero(hero)
-    local x, y
-    hero:start_hurt(bomb, 2)
-end
-explosion_effects.hero = bomb.hit_hero
