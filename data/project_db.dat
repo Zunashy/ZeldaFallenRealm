@@ -605,7 +605,6 @@ file{ path = "musics/plain.ogg", author = "Nintendo", }
 file{ path = "scripts/api/bit.lua", author = "TwilCynder", }
 file{ path = "scripts/api/controls_manager.lua", author = "TwilCynder", }
 file{ path = "scripts/api/image_fonts.lua", author = "TwilCynder", }
-file{ path = "scripts/api/item_mixer.lua", author = "TwilCynder", }
 file{ path = "scripts/api/language_manager.lua", author = "TwilCynder", }
 file{ path = "scripts/api/map_manager.lua", author = "TwilCynder", }
 file{ path = "scripts/api/map_side_view.lua", author = "TwilCynder", }
