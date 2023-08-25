@@ -2736,6 +2736,114 @@ tile{
   pattern = "7",
 }
 
+tile{
+  layer = 0,
+  x = 80,
+  y = 16,
+  width = 16,
+  height = 64,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 16,
+  width = 16,
+  height = 64,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 64,
+  width = 48,
+  height = 16,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 448,
+  width = 16,
+  height = 64,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 448,
+  width = 16,
+  height = 64,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 448,
+  width = 48,
+  height = 16,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 16,
+  width = 16,
+  height = 64,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 16,
+  width = 16,
+  height = 64,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 64,
+  width = 48,
+  height = 16,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 448,
+  width = 16,
+  height = 64,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 448,
+  width = 16,
+  height = 64,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 448,
+  width = 48,
+  height = 16,
+  pattern = "5",
+}
+
 destination{
   name = "entrance",
   layer = 0,
@@ -2834,7 +2942,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "donjons/level_04/ss1",
-  destination = "SS1_part_3",
+  destination = "SS1_part_3_1",
 }
 
 teletransporter{
@@ -2845,7 +2953,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "donjons/level_04/ss1",
-  destination = "SS1_part_4",
+  destination = "SS1_part_4_1",
 }
 
 teletransporter{
@@ -2867,7 +2975,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "donjons/level_04/ss1",
-  destination = "SS1_part_2",
+  destination = "SS1_part_2_1",
 }
 
 destination{

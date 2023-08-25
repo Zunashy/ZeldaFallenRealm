@@ -27,6 +27,7 @@ map{ id = "donjons/level_05/ss1", description = "ss1" }
 map{ id = "donjons/level_05/ss2", description = "ss2" }
 map{ id = "donjons/level_05/ss3", description = "ss3" }
 map{ id = "donjons/level_05/ss4", description = "ss4" }
+map{ id = "donjons/level_06/rdc" }
 map{ id = "normal_version/global", description = "normal_version/global" }
 map{ id = "normal_version/overworld/deep_forest/indoors/to_mountain" }
 map{ id = "normal_version/overworld/deep_forest/outdoors", description = "normal_version/overworld/deep_forest/outdoors" }
@@ -52,12 +53,19 @@ map{ id = "normal_version/overworld/north_beach/indoors/hut_02", description = "
 map{ id = "normal_version/overworld/north_beach/indoors/pirate_cave" }
 map{ id = "normal_version/overworld/north_beach/indoors/tree_house", description = "normal_version/overworld/north_beach/indoors/tree_house" }
 map{ id = "normal_version/overworld/north_beach/outdoors", description = "normal_version/overworld/north_beach/outdoors" }
+map{ id = "normal_version/overworld/old_island/indoors/house_captain" }
+map{ id = "normal_version/overworld/old_island/outdoors" }
+map{ id = "normal_version/overworld/old_island/underground/underground", description = "normal_version/overworld/old_island/underground/underground" }
+map{ id = "normal_version/overworld/old_island/underground/underground_main" }
 map{ id = "normal_version/overworld/plain/indoors/cave_01", description = "normal_version/overworld/plain/indoors/cave_01" }
 map{ id = "normal_version/overworld/plain/indoors/cave_02", description = "normal_version/overworld/plain/indoors/cave_02" }
 map{ id = "normal_version/overworld/plain/indoors/cave_03", description = "normal_version/overworld/plain/indoors/cave_03" }
 map{ id = "normal_version/overworld/plain/indoors/cave_04", description = "normal_version/overworld/plain/indoors/cave_04" }
 map{ id = "normal_version/overworld/plain/outdoors_1", description = "normal_version/overworld/plain/outdoors_1" }
 map{ id = "normal_version/overworld/plain/outdoors_2", description = "normal_version/overworld/plain/outdoors_2" }
+map{ id = "normal_version/overworld/plain/underground/under_1" }
+map{ id = "normal_version/overworld/storm_sea/outdoors" }
+map{ id = "normal_version/overworld/storm_sea/undersea/undersea" }
 map{ id = "normal_version/overworld/wind_wood/forest_outdoor", description = "normal_version/overworld/wind_wood/forest_outdoor" }
 map{ id = "normal_version/overworld/wind_wood/indoors/forest_cave", description = "normal_version/overworld/wind_wood/indoors/forest_cave" }
 map{ id = "normal_version/overworld/wind_wood/indoors/house", description = "normal_version/overworld/wind_wood/indoors/house" }
@@ -76,6 +84,7 @@ map{ id = "normal_version/village/nielint/indoors/mairie_rdc", description = "Ma
 map{ id = "normal_version/village/nielint/indoors/octorok_cave_01", description = "Grotte octo" }
 map{ id = "normal_version/village/nielint/indoors/shop", description = "SHop" }
 map{ id = "normal_version/village/nielint/indoors/tree_house", description = "Tree house" }
+map{ id = "normal_version/village/nielint/indoors/underground" }
 map{ id = "normal_version/village/nielint/outdoors", description = "normal_version/village/nielint/outdoors" }
 map{ id = "testHub", description = "testHub" }
 map{ id = "tests/blue_slime", description = "tests/blue_slime" }
@@ -115,6 +124,7 @@ tileset{ id = "01 - normal/lava", description = "normal/lava" }
 tileset{ id = "01 - normal/main", description = "normal/main" }
 tileset{ id = "01 - normal/marais", description = "normal/marais" }
 tileset{ id = "01 - normal/snow", description = "normal/snow" }
+tileset{ id = "01 - normal/undersea", description = "route exterieure" }
 tileset{ id = "02 - war/annexe", description = "war/war_world_annexe" }
 tileset{ id = "02 - war/general", description = "war/general" }
 tileset{ id = "02 - war/main", description = "war/war_world" }

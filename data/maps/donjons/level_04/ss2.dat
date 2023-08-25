@@ -10,6 +10,24 @@ properties{
 
 tile{
   layer = 0,
+  x = 496,
+  y = 544,
+  width = 448,
+  height = 320,
+  pattern = "11_5",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 696,
+  width = 80,
+  height = 32,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
   x = 736,
   y = 896,
   width = 208,
@@ -7003,15 +7021,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 496,
-  y = 544,
-  width = 448,
-  height = 320,
-  pattern = "11_5",
-}
-
-tile{
-  layer = 0,
   x = 584,
   y = 592,
   width = 16,
@@ -8560,15 +8569,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 560,
-  y = 712,
-  width = 16,
-  height = 16,
-  pattern = "41_4",
-}
-
-tile{
-  layer = 0,
   x = 496,
   y = 776,
   width = 16,
@@ -8722,15 +8722,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 496,
-  y = 696,
-  width = 16,
-  height = 16,
-  pattern = "41_3",
-}
-
-tile{
-  layer = 0,
   x = 560,
   y = 680,
   width = 16,
@@ -8742,15 +8733,6 @@ tile{
   layer = 0,
   x = 496,
   y = 680,
-  width = 16,
-  height = 16,
-  pattern = "41",
-}
-
-tile{
-  layer = 0,
-  x = 560,
-  y = 696,
   width = 16,
   height = 16,
   pattern = "41",
@@ -9541,7 +9523,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1128,
+  x = 1136,
   y = 944,
   width = 16,
   height = 16,
@@ -9865,8 +9847,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1096,
-  y = 944,
+  x = 1088,
+  y = 936,
   width = 16,
   height = 16,
   pattern = "13_5",
@@ -9910,7 +9892,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1016,
+  x = 1008,
   y = 848,
   width = 16,
   height = 16,
@@ -9920,7 +9902,7 @@ tile{
 tile{
   layer = 0,
   x = 984,
-  y = 832,
+  y = 824,
   width = 16,
   height = 16,
   pattern = "13_5",
@@ -9956,7 +9938,7 @@ tile{
 tile{
   layer = 0,
   x = 1096,
-  y = 744,
+  y = 752,
   width = 16,
   height = 16,
   pattern = "13_5",
@@ -9974,7 +9956,7 @@ tile{
 tile{
   layer = 0,
   x = 1144,
-  y = 744,
+  y = 736,
   width = 16,
   height = 16,
   pattern = "13_5",
@@ -10036,8 +10018,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1048,
-  y = 848,
+  x = 1056,
+  y = 840,
   width = 16,
   height = 16,
   pattern = "13_5",
@@ -10595,9 +10577,9 @@ tile{
 tile{
   layer = 0,
   x = 480,
-  y = 704,
+  y = 736,
   width = 16,
-  height = 160,
+  height = 128,
   pattern = "14_2",
 }
 
@@ -13047,24 +13029,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 560,
-  y = 696,
-  width = 16,
-  height = 16,
-  pattern = "11_6",
-}
-
-tile{
-  layer = 0,
-  x = 496,
-  y = 696,
-  width = 64,
-  height = 16,
-  pattern = "13_2",
-}
-
-tile{
-  layer = 0,
   x = 496,
   y = 680,
   width = 64,
@@ -13700,33 +13664,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "41_2",
-}
-
-tile{
-  layer = 0,
-  x = 496,
-  y = 712,
-  width = 16,
-  height = 16,
-  pattern = "41_2",
-}
-
-tile{
-  layer = 0,
-  x = 544,
-  y = 712,
-  width = 16,
-  height = 16,
-  pattern = "41_5",
-}
-
-tile{
-  layer = 0,
-  x = 512,
-  y = 712,
-  width = 16,
-  height = 16,
-  pattern = "41_4",
 }
 
 tile{
@@ -15208,42 +15145,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 536,
-  y = 720,
-  width = 8,
-  height = 8,
-  pattern = "52_4",
-}
-
-tile{
-  layer = 0,
-  x = 536,
-  y = 712,
-  width = 8,
-  height = 8,
-  pattern = "54_2",
-}
-
-tile{
-  layer = 0,
-  x = 528,
-  y = 720,
-  width = 8,
-  height = 8,
-  pattern = "52_2",
-}
-
-tile{
-  layer = 0,
-  x = 528,
-  y = 712,
-  width = 8,
-  height = 8,
-  pattern = "54",
-}
-
-tile{
-  layer = 0,
   x = 496,
   y = 656,
   width = 64,
@@ -15748,8 +15649,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 560,
-  y = 712,
+  x = 576,
+  y = 744,
   width = 16,
   height = 16,
   pattern = "56",
@@ -31639,7 +31540,7 @@ tile{
 tile{
   layer = 0,
   x = 480,
-  y = 696,
+  y = 728,
   width = 16,
   height = 16,
   pattern = "14_3",
@@ -32012,6 +31913,357 @@ tile{
   width = 16,
   height = 16,
   pattern = "13_5",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 728,
+  width = 16,
+  height = 16,
+  pattern = "11_6",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 728,
+  width = 64,
+  height = 16,
+  pattern = "13_2",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 752,
+  width = 8,
+  height = 8,
+  pattern = "52_4",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 744,
+  width = 8,
+  height = 8,
+  pattern = "54_2",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 752,
+  width = 8,
+  height = 8,
+  pattern = "52_2",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 744,
+  width = 8,
+  height = 8,
+  pattern = "54",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 696,
+  width = 16,
+  height = 32,
+  pattern = "14_2",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 696,
+  width = 16,
+  height = 16,
+  pattern = "13_6",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 712,
+  width = 16,
+  height = 16,
+  pattern = "11_6",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 696,
+  width = 16,
+  height = 16,
+  pattern = "14_5",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 712,
+  width = 16,
+  height = 16,
+  pattern = "12_5",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 696,
+  width = 48,
+  height = 16,
+  pattern = "12_2",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 712,
+  width = 48,
+  height = 16,
+  pattern = "13_2",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 1144,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 1128,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 1072,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 1112,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1112,
+  y = 1112,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 984,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 960,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 912,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 976,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 920,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 936,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 952,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 848,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 832,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1136,
+  y = 784,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1112,
+  y = 752,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 760,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 792,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1136,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 824,
+  width = 16,
+  height = 16,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 808,
+  width = 16,
+  height = 16,
+  pattern = "47",
 }
 
 destructible{
@@ -32451,10 +32703,10 @@ destructible{
 }
 
 destination{
-  name = "ss2",
+  name = "ss2_part_2_1",
   layer = 0,
   x = 56,
-  y = 925,
+  y = 933,
   direction = 1,
 }
 
@@ -32485,24 +32737,24 @@ separator{
 separator{
   layer = 0,
   x = 1192,
-  y = 0,
+  y = 352,
   width = 16,
-  height = 1232,
+  height = 880,
 }
 
 separator{
   layer = 0,
   x = 1432,
-  y = 0,
+  y = 352,
   width = 16,
-  height = 1232,
+  height = 880,
 }
 
 separator{
   layer = 0,
   x = 0,
   y = 168,
-  width = 1680,
+  width = 960,
   height = 16,
 }
 
@@ -32525,7 +32777,7 @@ separator{
 separator{
   layer = 0,
   x = 0,
-  y = 864,
+  y = 872,
   width = 1680,
   height = 16,
 }
@@ -32533,14 +32785,14 @@ separator{
 separator{
   layer = 0,
   x = 712,
-  y = 864,
+  y = 880,
   width = 16,
-  height = 368,
+  height = 352,
 }
 
 separator{
   layer = 0,
-  x = 8,
+  x = 0,
   y = 1048,
   width = 1680,
   height = 16,
@@ -32627,5 +32879,193 @@ destructible{
   weight = -1,
   can_explode = true,
   damage_on_enemies = 0,
+}
+
+teletransporter{
+  layer = 0,
+  x = 1072,
+  y = 1184,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_04/ss1",
+  destination = "SS1_part_1_3",
+}
+
+destination{
+  name = "SS2_1",
+  layer = 0,
+  x = 1080,
+  y = 1189,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 976,
+  y = 720,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_04/ss1",
+  destination = "SS1_part_1_2",
+}
+
+destination{
+  name = "SS2_2",
+  layer = 0,
+  x = 984,
+  y = 741,
+  direction = 1,
+}
+
+destination{
+  name = "SS2_part_4_1",
+  layer = 0,
+  x = 1584,
+  y = 213,
+  direction = 1,
+}
+
+destination{
+  name = "SS2_part_4_2",
+  layer = 0,
+  x = 1584,
+  y = 149,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 1576,
+  y = 144,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_04/ss1",
+  destination = "SS1_part_4_4",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1576,
+  y = 192,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_04/ss1",
+  destination = "SS1_part_4_3",
+}
+
+destination{
+  name = "ss2_part_2_2",
+  layer = 0,
+  x = 808,
+  y = 1029,
+  direction = 1,
+}
+
+destination{
+  name = "ss2_part_2_3",
+  layer = 0,
+  x = 360,
+  y = 1141,
+  direction = 1,
+}
+
+destination{
+  name = "ss2_part_3_1",
+  layer = 0,
+  x = 760,
+  y = 501,
+  direction = 1,
+}
+
+destination{
+  name = "ss2_part_3_2",
+  layer = 0,
+  x = 776,
+  y = 37,
+  direction = 1,
+}
+
+destination{
+  name = "ss2_part_3_3",
+  layer = 0,
+  x = 680,
+  y = 149,
+  direction = 1,
+}
+
+destination{
+  name = "ss2_part_3_4",
+  layer = 0,
+  x = 40,
+  y = 37,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 800,
+  y = 1024,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_04/ss2",
+}
+
+teletransporter{
+  layer = 0,
+  x = 352,
+  y = 1136,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_04/ss1",
+  destination = "SS1_part_2_4",
+}
+
+teletransporter{
+  layer = 0,
+  x = 48,
+  y = 912,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_04/ss2",
+}
+
+teletransporter{
+  layer = 0,
+  x = 752,
+  y = 496,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_04/ss1",
+  destination = "SS1_part_3_2",
+}
+
+teletransporter{
+  layer = 0,
+  x = 768,
+  y = 16,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_04/ss1",
+  destination = "SS1_part_3_3",
+}
+
+teletransporter{
+  layer = 0,
+  x = 672,
+  y = 144,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_04/ss1",
+  destination = "SS1_part_3_4",
+}
+
+teletransporter{
+  layer = 0,
+  x = 32,
+  y = 16,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_04/ss1",
+  destination = "SS1_part_3_5",
 }
 
