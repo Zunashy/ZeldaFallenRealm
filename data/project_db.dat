@@ -197,8 +197,9 @@ sprite{ id = "entities/block/ice_crystal", description = "entities/block/ice_cry
 sprite{ id = "entities/block/key_block", description = "entities/block/key_block" }
 sprite{ id = "entities/chests/chest", description = "entities/chests/chest" }
 sprite{ id = "entities/destructible/cristal_pierre", description = "entities/destructible/cristal_pierre" }
-sprite{ id = "entities/destructible/pillar", description = "Destructible pillar" }
+sprite{ id = "entities/destructible/pillar_base", description = "Piller destructible (Base)" }
 sprite{ id = "entities/destructible/pillar_fragment", description = "Pilllar Fragment (carryable)" }
+sprite{ id = "entities/destructible/pillar_top", description = "Pillier destructible (Haut)" }
 sprite{ id = "entities/door/boss_door", description = "entities/door/boss_door" }
 sprite{ id = "entities/door/door", description = "entities/door/door" }
 sprite{ id = "entities/door/door_2" }
@@ -489,6 +490,7 @@ entity{ id = "arrow", description = "Flèche" }
 entity{ id = "bomb", description = "bomb" }
 entity{ id = "bone", description = "Os (projectile)" }
 entity{ id = "boomerang" }
+entity{ id = "breakable_pillar", description = "Pillier destructible" }
 entity{ id = "colored_block", description = "Bloc Coloré" }
 entity{ id = "colored_block_destination", description = "Destination bloc coloré" }
 entity{ id = "dungeon_statue_eye", description = "Oeil de statue" }
@@ -554,6 +556,7 @@ file{ path = "enemies/tektite_blue.lua", author = "TwilCynder", }
 file{ path = "enemies/tektite_red.lua", author = "TwilCynder", }
 file{ path = "entities/arrow.lua", author = "TwilCynder", }
 file{ path = "entities/bone.lua", author = "TwilCynder", }
+file{ path = "entities/breakable_pillar.lua", author = "TwilCynder", }
 file{ path = "entities/colored_block.lua", author = "TwilCynder", }
 file{ path = "entities/colored_block_destination.lua", author = "TwilCynder", }
 file{ path = "entities/colored_block_old.lua", author = "TwilCynder", }
