@@ -30,6 +30,8 @@ map{ id = "donjons/level_05/ss4", description = "ss4" }
 map{ id = "donjons/level_06/rdc" }
 map{ id = "normal_version/global", description = "normal_version/global" }
 map{ id = "normal_version/overworld/deep_forest/indoors/to_mountain" }
+map{ id = "normal_version/overworld/deep_forest/indoors/tree1" }
+map{ id = "normal_version/overworld/deep_forest/indoors/tree2" }
 map{ id = "normal_version/overworld/deep_forest/outdoors", description = "normal_version/overworld/deep_forest/outdoors" }
 map{ id = "normal_version/overworld/deep_forest/outdoors_2", description = "normal_version/overworld/deep_forest/outdoors_2" }
 map{ id = "normal_version/overworld/goron/indoors/cave_1" }
