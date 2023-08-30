@@ -82,7 +82,7 @@ local function set_colors_state(block, state)
     block.colorState = state
 end
 
-local function manager.init(block)
+local function init(block)
     block.is_colored_block = true
     block.on_moving = on_moving
     block.on_moved = on_moved
