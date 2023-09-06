@@ -19,17 +19,18 @@ local recipes_list = {
     [{"fire_seed", "bomb"}] = "mixer_molotov"
 }
 
+local recipes = {}
+
 do
     local function add_recipe(recipes, ingr_1, ingr_2, res)
         local ingr_1_map = recipes[ingr_1]
         if ingr_1_map then
             ingr_1_map[ingr_2] = res
-        else 
+        else
             recipes[ingr_1] = {[ingr_2] = res}
         end
     end
 
-    recipes = {}
     for ingrs, res in pairs(recipes_list) do
         local ingr_1, ingr_2 = unpack(ingrs)
         add_recipe(recipes, ingr_1, ingr_2, res)

@@ -2,17 +2,20 @@
 gen = {}
 
 --coeficients linked to all 4 dirs = coordinates of an unitary vector pointing in that direction.
-gen.dirCoef = {
+
+local dirCoef = {
   {x = 1, y = 0},
   {x = 0, y = -1},
   {x = -1, y = 0},
   {x = 0, y = 1}
 }
+gen.dirCoef = dirCoef
+
 
 --Transpose a point following a specified direction, with a specified direction.
 function gen.shift_direction4(x, y, dir, dist)
-  return x + dist * gen.dirCoef[dir + 1].x, 
-         y + dist * gen.dirCoef[dir + 1].y
+  return x + dist * dirCoef[dir + 1].x, 
+         y + dist * dirCoef[dir + 1].y
 end
 
 --Adds properties of the src object to the dest object. Useful to import functions from feature objects (gen, eg, mg, mpg) to game objects.

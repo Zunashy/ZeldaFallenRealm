@@ -18,6 +18,7 @@ map{ id = "donjons/level_03/rdc" }
 map{ id = "donjons/level_03/rdc_2" }
 map{ id = "donjons/level_03/ss1" }
 map{ id = "donjons/level_03/ss2" }
+map{ id = "donjons/level_03/ss3" }
 map{ id = "donjons/level_04/rdc" }
 map{ id = "donjons/level_04/ss1" }
 map{ id = "donjons/level_04/ss2" }
@@ -26,8 +27,11 @@ map{ id = "donjons/level_05/ss1", description = "ss1" }
 map{ id = "donjons/level_05/ss2", description = "ss2" }
 map{ id = "donjons/level_05/ss3", description = "ss3" }
 map{ id = "donjons/level_05/ss4", description = "ss4" }
+map{ id = "donjons/level_06/rdc" }
 map{ id = "normal_version/global", description = "normal_version/global" }
 map{ id = "normal_version/overworld/deep_forest/indoors/to_mountain" }
+map{ id = "normal_version/overworld/deep_forest/indoors/tree1" }
+map{ id = "normal_version/overworld/deep_forest/indoors/tree2" }
 map{ id = "normal_version/overworld/deep_forest/outdoors", description = "normal_version/overworld/deep_forest/outdoors" }
 map{ id = "normal_version/overworld/deep_forest/outdoors_2", description = "normal_version/overworld/deep_forest/outdoors_2" }
 map{ id = "normal_version/overworld/goron/indoors/cave_1" }
@@ -44,19 +48,26 @@ map{ id = "normal_version/overworld/north_beach/deku_tree", description = "norma
 map{ id = "normal_version/overworld/north_beach/indoors/cave_01", description = "normal_version/overworld/north_beach/indoors/cave_01" }
 map{ id = "normal_version/overworld/north_beach/indoors/cave_02_rdc", description = "normal_version/overworld/north_beach/indoors/cave_02_rdc" }
 map{ id = "normal_version/overworld/north_beach/indoors/cave_02_ss1", description = "normal_version/overworld/north_beach/indoors/cave_02_ss1" }
-map{ id = "normal_version/overworld/north_beach/indoors/cave_04", description = "Grotte clé" }
+map{ id = "normal_version/overworld/north_beach/indoors/cave_key", description = "Grotte clé" }
 map{ id = "normal_version/overworld/north_beach/indoors/house", description = "normal_version/overworld/north_beach/indoors/house" }
 map{ id = "normal_version/overworld/north_beach/indoors/hut_01", description = "normal_version/overworld/north_beach/indoors/hut_01" }
 map{ id = "normal_version/overworld/north_beach/indoors/hut_02", description = "normal_version/overworld/north_beach/indoors/hut_02" }
 map{ id = "normal_version/overworld/north_beach/indoors/pirate_cave" }
 map{ id = "normal_version/overworld/north_beach/indoors/tree_house", description = "normal_version/overworld/north_beach/indoors/tree_house" }
 map{ id = "normal_version/overworld/north_beach/outdoors", description = "normal_version/overworld/north_beach/outdoors" }
+map{ id = "normal_version/overworld/old_island/indoors/house_captain" }
+map{ id = "normal_version/overworld/old_island/outdoors" }
+map{ id = "normal_version/overworld/old_island/underground/underground", description = "normal_version/overworld/old_island/underground/underground" }
+map{ id = "normal_version/overworld/old_island/underground/underground_main" }
 map{ id = "normal_version/overworld/plain/indoors/cave_01", description = "normal_version/overworld/plain/indoors/cave_01" }
 map{ id = "normal_version/overworld/plain/indoors/cave_02", description = "normal_version/overworld/plain/indoors/cave_02" }
 map{ id = "normal_version/overworld/plain/indoors/cave_03", description = "normal_version/overworld/plain/indoors/cave_03" }
 map{ id = "normal_version/overworld/plain/indoors/cave_04", description = "normal_version/overworld/plain/indoors/cave_04" }
 map{ id = "normal_version/overworld/plain/outdoors_1", description = "normal_version/overworld/plain/outdoors_1" }
 map{ id = "normal_version/overworld/plain/outdoors_2", description = "normal_version/overworld/plain/outdoors_2" }
+map{ id = "normal_version/overworld/plain/underground/under_1" }
+map{ id = "normal_version/overworld/storm_sea/outdoors" }
+map{ id = "normal_version/overworld/storm_sea/undersea/undersea" }
 map{ id = "normal_version/overworld/wind_wood/forest_outdoor", description = "normal_version/overworld/wind_wood/forest_outdoor" }
 map{ id = "normal_version/overworld/wind_wood/indoors/forest_cave", description = "normal_version/overworld/wind_wood/indoors/forest_cave" }
 map{ id = "normal_version/overworld/wind_wood/indoors/house", description = "normal_version/overworld/wind_wood/indoors/house" }
@@ -75,6 +86,7 @@ map{ id = "normal_version/village/nielint/indoors/mairie_rdc", description = "Ma
 map{ id = "normal_version/village/nielint/indoors/octorok_cave_01", description = "Grotte octo" }
 map{ id = "normal_version/village/nielint/indoors/shop", description = "SHop" }
 map{ id = "normal_version/village/nielint/indoors/tree_house", description = "Tree house" }
+map{ id = "normal_version/village/nielint/indoors/underground" }
 map{ id = "normal_version/village/nielint/outdoors", description = "normal_version/village/nielint/outdoors" }
 map{ id = "testHub", description = "testHub" }
 map{ id = "tests/blue_slime", description = "tests/blue_slime" }
@@ -82,6 +94,7 @@ map{ id = "tests/bridges", description = "tests/bridges" }
 map{ id = "tests/dungeon", description = "Dungeon-like test map" }
 map{ id = "tests/outside", description = "Monde extérieur" }
 map{ id = "tests/platform", description = "tests/platform" }
+map{ id = "tests/souterrain_volcan", description = "Aperçu Sous sol volcan" }
 map{ id = "war_version/global_war", description = "war_version/global_war" }
 map{ id = "war_version/overworld/forest/forest", description = "war_version/overworld/forest/forest" }
 map{ id = "war_version/overworld/forest/sword_cave", description = "war_version/overworld/forest/sword_cave" }
@@ -113,6 +126,7 @@ tileset{ id = "01 - normal/lava", description = "normal/lava" }
 tileset{ id = "01 - normal/main", description = "normal/main" }
 tileset{ id = "01 - normal/marais", description = "normal/marais" }
 tileset{ id = "01 - normal/snow", description = "normal/snow" }
+tileset{ id = "01 - normal/undersea", description = "route exterieure" }
 tileset{ id = "02 - war/annexe", description = "war/war_world_annexe" }
 tileset{ id = "02 - war/general", description = "war/general" }
 tileset{ id = "02 - war/main", description = "war/war_world" }
@@ -120,6 +134,7 @@ tileset{ id = "03 - dungeon/tileset_custom", description = "dungeon/tileset_cust
 tileset{ id = "03 - dungeon/tileset_donjon_1", description = "dungeon/tileset_donjon_1" }
 tileset{ id = "03 - dungeon/tileset_donjon_2", description = "dungeon/tileset_donjon_2" }
 tileset{ id = "03 - dungeon/tileset_donjon_3", description = "dungeon/tileset_donjon_3" }
+tileset{ id = "03 - dungeon/tileset_donjon_3bis", description = "03 - dungeon/tileset_donjon_3bis" }
 tileset{ id = "03 - dungeon/tileset_donjon_4", description = "dungeon/tileset_donjon_4" }
 tileset{ id = "03 - dungeon/tileset_donjon_5", description = "dungeon/tileset_donjon_5" }
 tileset{ id = "03 - dungeon/tileset_donjon_6", description = "dungeon/tileset_donjon_6" }
@@ -184,6 +199,9 @@ sprite{ id = "entities/block/ice_crystal", description = "entities/block/ice_cry
 sprite{ id = "entities/block/key_block", description = "entities/block/key_block" }
 sprite{ id = "entities/chests/chest", description = "entities/chests/chest" }
 sprite{ id = "entities/destructible/cristal_pierre", description = "entities/destructible/cristal_pierre" }
+sprite{ id = "entities/destructible/pillar_base", description = "Piller destructible (Base)" }
+sprite{ id = "entities/destructible/pillar_fragment", description = "Pilllar Fragment (carryable)" }
+sprite{ id = "entities/destructible/pillar_top", description = "Pillier destructible (Haut)" }
 sprite{ id = "entities/door/boss_door", description = "entities/door/boss_door" }
 sprite{ id = "entities/door/door", description = "entities/door/door" }
 sprite{ id = "entities/door/door_2" }
@@ -202,7 +220,11 @@ sprite{ id = "entities/dungeon_elements/switch", description = "entities/dungeon
 sprite{ id = "entities/dungeon_elements/switches" }
 sprite{ id = "entities/dungeon_elements/teleport", description = "entities/dungeon_elements/teleport" }
 sprite{ id = "entities/dungeon_statue_eye", description = "entities/dungeon_statue_eye" }
+sprite{ id = "entities/explosive/fissured_rock" }
+sprite{ id = "entities/ground/dig_effect", description = "entities/ground/dig_effect" }
 sprite{ id = "entities/ground/dig_ground", description = "Sol creusable" }
+sprite{ id = "entities/ground/dug_ground", description = "entities/ground/dug_ground" }
+sprite{ id = "entities/ground/dug_stairs", description = "entities/ground/dug_stairs" }
 sprite{ id = "entities/items", description = "entities/items" }
 sprite{ id = "entities/items_effects/flame", description = "entities/items_effects/flame" }
 sprite{ id = "entities/items_effects/ice_floor", description = "entities/items_effects/ice_floor" }
@@ -470,6 +492,7 @@ entity{ id = "arrow", description = "Flèche" }
 entity{ id = "bomb", description = "bomb" }
 entity{ id = "bone", description = "Os (projectile)" }
 entity{ id = "boomerang" }
+entity{ id = "breakable_pillar", description = "Pillier destructible" }
 entity{ id = "colored_block", description = "Bloc Coloré" }
 entity{ id = "colored_block_destination", description = "Destination bloc coloré" }
 entity{ id = "dungeon_statue_eye", description = "Oeil de statue" }
@@ -535,6 +558,7 @@ file{ path = "enemies/tektite_blue.lua", author = "TwilCynder", }
 file{ path = "enemies/tektite_red.lua", author = "TwilCynder", }
 file{ path = "entities/arrow.lua", author = "TwilCynder", }
 file{ path = "entities/bone.lua", author = "TwilCynder", }
+file{ path = "entities/breakable_pillar.lua", author = "TwilCynder", }
 file{ path = "entities/colored_block.lua", author = "TwilCynder", }
 file{ path = "entities/colored_block_destination.lua", author = "TwilCynder", }
 file{ path = "entities/colored_block_old.lua", author = "TwilCynder", }
@@ -588,6 +612,8 @@ file{ path = "maps/donjons/level_05/ss3.lua", author = "SaniTOS", }
 file{ path = "maps/donjons/level_05/ss4.dat", author = "SaniTOS", }
 file{ path = "maps/donjons/level_05/ss4.lua", author = "SaniTOS", }
 file{ path = "maps/normal_version", author = "Zunashy", }
+file{ path = "maps/tests/souterrain_volcan.dat", author = "SaniTOS", }
+file{ path = "maps/tests/souterrain_volcan.lua", author = "SaniTOS", }
 file{ path = "maps/war_version", author = "Nillan", }
 file{ path = "musics/custom/nielint.ogg", author = "SaniTOS", }
 file{ path = "musics/custom/nielint_war.ogg", author = "SaniTOS", }
@@ -596,7 +622,6 @@ file{ path = "musics/plain.ogg", author = "Nintendo", }
 file{ path = "scripts/api/bit.lua", author = "TwilCynder", }
 file{ path = "scripts/api/controls_manager.lua", author = "TwilCynder", }
 file{ path = "scripts/api/image_fonts.lua", author = "TwilCynder", }
-file{ path = "scripts/api/item_mixer.lua", author = "TwilCynder", }
 file{ path = "scripts/api/language_manager.lua", author = "TwilCynder", }
 file{ path = "scripts/api/map_manager.lua", author = "TwilCynder", }
 file{ path = "scripts/api/map_side_view.lua", author = "TwilCynder", }

@@ -2,11 +2,11 @@ local entity = ...
 local game = entity:get_game()
 local map = entity:get_map()
 
-local travel_distance = 80
+local travel_distance = 120
 local travel_speed = 150
+local stun_duration = 1000
 
 function init_traversable()
-    -- Comme le caillou vole, il passe au dessus des murets et sols spéciaux
     entity:set_can_traverse_ground("low_wall", true)
     entity:set_can_traverse_ground("deep_water", true)
     entity:set_can_traverse_ground("shallow_water", true)
@@ -17,12 +17,32 @@ function init_traversable()
 end
 
 local function coll_test(boom, other)
+<<<<<<< HEAD
     if (other:get_type() == "enemy") then
         if not other:is_immobilized() then
             other:immobilize() 
         end
         entity:come_back() 
     end
+=======
+    local type = other:get_type()
+    if (type == "enemy") then
+        local conseq = other:get_attack_consequence("boomerang")
+        if conseq == "immobilized" or type(conseq) == "number" then
+            other:immobilize() 
+            sol.timer.start(game, 1000, function()
+                if other:exists() then
+                    other:unimmobilize()
+                end
+            end)
+            entity:come_back() 
+        elseif type(conseq) == "function" then
+            conseq(other)
+        end
+    elseif (type == "destructible") then 
+        other:attempt_cut()
+    end 
+>>>>>>> 8b9f71218c606a58a63ac97afcf6cfc7d3ef386a
 end
 
 function entity:destroy()
@@ -63,6 +83,17 @@ function entity:start_movement(direction)
 
     function movement:on_finished()
         entity:come_back()
+    end
+
+    function movement:on_obstacle_reached()
+        local x, y = entity:get_position()
+        x, y = gen.shift_direction4(x, y, entity:get_direction(), 16)
+        
+        for e in entity:get_map():get_entities_in_rectangle(x, y, 1, 1) do
+            if e.attempt_cut then
+                e:attempt_cut()
+            end
+        end
     end
 end
 

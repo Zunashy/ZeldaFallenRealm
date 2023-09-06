@@ -1,0 +1,605 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 640,
+  height = 512,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "01 - normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 400,
+  width = 128,
+  height = 32,
+  pattern = "210",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 432,
+  width = 128,
+  height = 64,
+  pattern = "210",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 272,
+  width = 128,
+  height = 96,
+  pattern = "210",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 144,
+  width = 128,
+  height = 96,
+  pattern = "210",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 16,
+  width = 128,
+  height = 96,
+  pattern = "210",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 400,
+  width = 128,
+  height = 96,
+  pattern = "210",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 8,
+  width = 480,
+  height = 104,
+  pattern = "43",
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 112,
+  width = 128,
+  height = 160,
+  pattern = "43",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 272,
+  width = 288,
+  height = 96,
+  pattern = "43",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 272,
+  width = 128,
+  height = 96,
+  pattern = "210",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 144,
+  width = 128,
+  height = 96,
+  pattern = "210",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 16,
+  width = 128,
+  height = 96,
+  pattern = "210",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 400,
+  width = 128,
+  height = 32,
+  pattern = "43",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 256,
+  width = 128,
+  height = 16,
+  pattern = "196_6",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 272,
+  width = 16,
+  height = 96,
+  pattern = "196_4",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 272,
+  width = 16,
+  height = 96,
+  pattern = "196_5",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 368,
+  width = 48,
+  height = 16,
+  pattern = "196_7",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 368,
+  width = 48,
+  height = 16,
+  pattern = "196_7",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 384,
+  width = 128,
+  height = 16,
+  pattern = "196_6",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 384,
+  width = 48,
+  height = 16,
+  pattern = "196_6",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 384,
+  width = 48,
+  height = 16,
+  pattern = "196_6",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 400,
+  width = 16,
+  height = 96,
+  pattern = "196_4",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 400,
+  width = 16,
+  height = 32,
+  pattern = "196_5",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 400,
+  width = 16,
+  height = 32,
+  pattern = "196_4",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 400,
+  width = 16,
+  height = 96,
+  pattern = "196_5",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 464,
+  width = 16,
+  height = 32,
+  pattern = "196_5",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 464,
+  width = 16,
+  height = 32,
+  pattern = "196_4",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 496,
+  width = 128,
+  height = 16,
+  pattern = "196_7",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 496,
+  width = 128,
+  height = 16,
+  pattern = "196_7",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "196_8",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "196_9",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "196_10",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "196_15",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "196_14",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "196_11",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "196_8",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "196_9",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "196_8",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "196_13",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "196_12",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "196_9",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 424,
+  width = 16,
+  height = 16,
+  pattern = "196_12",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 424,
+  width = 16,
+  height = 16,
+  pattern = "196_13",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 456,
+  width = 16,
+  height = 16,
+  pattern = "196_14",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 456,
+  width = 16,
+  height = 16,
+  pattern = "196_15",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "196_10",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "196_11",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "196_10",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "196_11",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 432,
+  width = 128,
+  height = 8,
+  pattern = "6_3",
+}
+
+tile{
+  layer = 2,
+  x = 224,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "129",
+}
+
+tile{
+  layer = 2,
+  x = 224,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "257",
+}
+
+tile{
+  layer = 2,
+  x = 232,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "210_6",
+}
+
+tile{
+  layer = 2,
+  x = 232,
+  y = 368,
+  width = 16,
+  height = 32,
+  pattern = "210",
+}
+
+tile{
+  layer = 2,
+  x = 144,
+  y = 440,
+  width = 32,
+  height = 16,
+  pattern = "210",
+}
+
+destination{
+  name = "dig_destination",
+  layer = 2,
+  x = 240,
+  y = 205,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 2,
+  x = 224,
+  y = 192,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/overworld/old_island/outdoors",
+  destination = "dig_destination",
+}
+
+destination{
+  name = "dig_destination_2",
+  layer = 2,
+  x = 248,
+  y = 285,
+  direction = 1,
+}
+
+separator{
+  layer = 2,
+  x = 152,
+  y = -8,
+  width = 16,
+  height = 528,
+}
+
+separator{
+  layer = 2,
+  x = 312,
+  y = -8,
+  width = 16,
+  height = 528,
+}
+
+separator{
+  layer = 2,
+  x = 472,
+  y = -8,
+  width = 16,
+  height = 528,
+}
+
+separator{
+  layer = 2,
+  x = 0,
+  y = -8,
+  width = 624,
+  height = 16,
+}
+
+separator{
+  layer = 2,
+  x = 0,
+  y = 120,
+  width = 624,
+  height = 16,
+}
+
+separator{
+  layer = 2,
+  x = 0,
+  y = 248,
+  width = 624,
+  height = 16,
+}
+
+separator{
+  layer = 2,
+  x = 0,
+  y = 376,
+  width = 624,
+  height = 16,
+}
+
+separator{
+  layer = 2,
+  x = 0,
+  y = 504,
+  width = 624,
+  height = 16,
+}
+
+teletransporter{
+  layer = 2,
+  x = 232,
+  y = 272,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/overworld/old_island/outdoors",
+  destination = "old_island_2",
+}
+

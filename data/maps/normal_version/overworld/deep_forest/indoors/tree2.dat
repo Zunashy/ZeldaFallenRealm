@@ -1,0 +1,28 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 160,
+  height = 144,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "01 - normal/annexe",
+}
+
+destination{
+  name = "entrance",
+  layer = 0,
+  x = 56,
+  y = 117,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 48,
+  y = 120,
+  width = 16,
+  height = 16,
+  destination_map = "normal_version/overworld/deep_forest/outdoors_2",
+  destination = "tree_to_village_2",
+}
+

@@ -4,7 +4,7 @@ properties{
   width = 160,
   height = 144,
   min_layer = 0,
-  max_layer = 2,
+  max_layer = 5,
   world = "Test_Building",
   tileset = "01 - normal/main",
 }
@@ -264,6 +264,15 @@ tile{
   tileset = "03 - dungeon/tileset_donjon_4",
 }
 
+tile{
+  layer = 0,
+  x = 16,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "129",
+}
+
 destination{
   name = "spawn",
   layer = 0,
@@ -290,8 +299,8 @@ teletransporter{
   y = 16,
   width = 16,
   height = 16,
-  destination_map = "donjons/level_03/rdc_2",
-  destination = "entrance",
+  destination_map = "donjons/level_03/ss1",
+  destination = "tphub",
 }
 
 teletransporter{
@@ -317,13 +326,13 @@ teletransporter{
 
 teletransporter{
   layer = 0,
-  x = 72,
-  y = 144,
+  x = 16,
+  y = 112,
   width = 16,
   height = 16,
   transition = "scrolling",
-  destination_map = "tests/dungeon",
-  destination = "_side",
+  destination_map = "normal_version/overworld/old_island/outdoors",
+  destination = "old_island_sud",
 }
 
 teletransporter{
@@ -335,5 +344,15 @@ teletransporter{
   height = 16,
   destination_map = "normal_version/village/nielint/outdoors",
   destination = "bar_to_village",
+}
+
+teletransporter{
+  layer = 0,
+  x = 128,
+  y = 112,
+  width = 16,
+  height = 16,
+  destination_map = "donjons/level_04/ss2",
+  destination = "ss2_part_2_1",
 }
 

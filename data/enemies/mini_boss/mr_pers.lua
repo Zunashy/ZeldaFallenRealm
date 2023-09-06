@@ -48,10 +48,11 @@ end
 function enemy:start_checking()
   sol.timer.start(self, 10, function ()
     if enemy:check_hero() then
-	  enemy:start_movement_cycle()
-	else
-	  return true
-	end
+      self.is_fighting = true
+      enemy:start_movement_cycle()
+    else
+      return true
+    end
   end)
 end
 
@@ -105,7 +106,12 @@ function enemy:sword()
 end
 
 function enemy:on_restarted()
-  self:start_checking()
+  
+  if self.is_fighting then
+    self:start_movement_cycle()
+  else
+    self:start_checking()
+  end
 end
 
 function enemy:on_started()

@@ -295,7 +295,7 @@ destination{
   name = "spawn",
   layer = 1,
   x = 232,
-  y = 237,
+  y = 221,
   properties = {
     {
       key = "on_obtained",
@@ -317,8 +317,8 @@ chest{
 
 pickable{
   layer = 1,
-  x = 280,
-  y = 189,
+  x = 304,
+  y = 133,
   treasure_name = "fire_seed",
 }
 
@@ -458,7 +458,7 @@ door{
 npc{
   name = "snas",
   layer = 1,
-  x = 232,
+  x = 168,
   y = 189,
   properties = {
     {
@@ -667,8 +667,8 @@ chest{
 
 destructible{
   layer = 1,
-  x = 208,
-  y = 205,
+  x = 200,
+  y = 213,
   properties = {
     {
       key = "savegame_variable",
@@ -690,8 +690,8 @@ custom_entity{
 
 pickable{
   layer = 1,
-  x = 296,
-  y = 197,
+  x = 320,
+  y = 133,
   treasure_name = "great_key",
 }
 
@@ -761,16 +761,16 @@ enemy{
 
 pickable{
   layer = 1,
-  x = 280,
-  y = 205,
+  x = 312,
+  y = 93,
   treasure_name = "bomb_ammo",
   treasure_variant = 2,
 }
 
 pickable{
   layer = 1,
-  x = 280,
-  y = 189,
+  x = 304,
+  y = 109,
   treasure_name = "griffe",
 }
 
@@ -818,19 +818,51 @@ destructible{
   ground = "traversable",
 }
 
-destructible{
-  layer = 1,
-  x = 216,
-  y = 237,
-  sprite = "test/snas",
-}
-
 pickable{
   name = "boomerang",
   layer = 1,
-  x = 296,
-  y = 189,
+  x = 336,
+  y = 109,
   treasure_name = "boomerang",
+}
+
+pickable{
+  layer = 1,
+  x = 216,
+  y = 253,
+  treasure_name = "heart_quarter",
+}
+
+destructible{
+  name = "herbe",
+  layer = 1,
+  x = 136,
+  y = 45,
+  treasure_name = "rupee",
+  treasure_variant = 2,
+  sprite = "entities/vegetation/grass/grass",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 1,
+  x = 152,
+  y = 45,
+  treasure_name = "rupee",
+  treasure_variant = 2,
+  sprite = "entities/vegetation/grass/grass_dark",
+  can_be_cut = true,
+  ground = "traversable",
+}
+
+custom_entity{
+  layer = 1,
+  x = 232,
+  y = 157,
+  width = 16,
+  height = 16,
+  direction = 0,
+  model = "breakable_pillar",
 }
 
 tile{

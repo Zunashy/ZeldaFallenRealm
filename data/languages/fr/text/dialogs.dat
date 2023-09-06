@@ -82,6 +82,7 @@ Vous obtenez un réceptacle de coeur ! Cet objet très précieux ajoute un coeur
 
 dialog{
   id = "_treasure.heart_quarter.1",
+  allow_override = "1",
   use_preset_info = "1",
   text = [[
 Vous obtenez un quart de coeur ! Trouvez en 4 pour ajouter un coeur à votre barre de vie. Encore $v !
@@ -374,6 +375,24 @@ dialog{
   position = "top",
   text = [[
 Cette épée... C'est celle du prince ! Gaaaah, sauve-qui-peut !
+]],
+}
+
+dialog{
+  id = "pnj.overworld.old_island.barman",
+  text = [[
+Oh, c'est toi, je me souviens de cet endroit à l'époque où je naviguais beaucoup.
+C'est comme ça que j'ai appris à faire des boissons, et mieux me battre.
+Mais tout cela appartient à un passé auquel j'ai tiré un trait.
+Si tu souhaites aller plus loin, le propriétaire de cette maison a caché la clé dans un trou, mais je ne sais plus lequel.
+Qui est le propriétaire ? Le capitaine Canon, nous aurons l'occasion d'en re discuter, allez, va.
+]],
+}
+
+dialog{
+  id = "pnj.overworld.old_island.grave",
+  text = [[
+A la mémoire du capitaine Canon.
 ]],
 }
 
@@ -823,6 +842,13 @@ dialog{
 Lalalaaa... et les oiseaux qui... euh... 
 Toi là ! Aide-moi à trouver un truc qui rime avec oiseaux ! Panneaux ? Cageots ? Poireaux ? 
 Raaah, je suis nul comme chanteur !
+]],
+}
+
+dialog{
+  id = "test.gamin",
+  text = [[
+Ci-gît le développement d'Hollow Knight Silk Song
 ]],
 }
 
