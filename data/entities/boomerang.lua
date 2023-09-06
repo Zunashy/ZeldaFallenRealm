@@ -17,7 +17,12 @@ function init_traversable()
 end
 
 local function coll_test(boom, other)
-    if (other:get_type() == "enemy") then other:hurt(1) ; entity:come_back() end
+    if (other:get_type() == "enemy") then
+        if not other:is_immobilized() then
+            other:immobilize() 
+        end
+        entity:come_back() 
+    end
 end
 
 function entity:destroy()
