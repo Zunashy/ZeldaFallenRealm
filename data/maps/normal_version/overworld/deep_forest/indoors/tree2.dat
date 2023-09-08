@@ -1,11 +1,20 @@
 properties{
   x = 0,
   y = 0,
-  width = 160,
-  height = 144,
+  width = 240,
+  height = 176,
   min_layer = 0,
   max_layer = 2,
-  tileset = "01 - normal/annexe",
+  tileset = "01 - normal/main",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 208,
+  height = 144,
+  pattern = "319",
 }
 
 destination{
