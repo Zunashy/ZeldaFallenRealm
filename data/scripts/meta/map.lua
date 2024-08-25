@@ -119,8 +119,15 @@ end
 
 local function generic_start_callback(map)
     local special_tiles = require("scripts/feature/special_tiles")
-    local prop
     local game = map:get_game()
+
+    for k, v in pairs(special_tiles) do
+        for e in map:get_entities(k) do
+            v(e, game, map)
+        end
+    end
+
+    local prop
     for e in map:get_entities() do
         prop = e:get_property("min_story_state") 
         if prop and tonumber(prop) > game:get_story_state() then
@@ -142,12 +149,6 @@ local function generic_start_callback(map)
         if prop then
             print("y order")
             e:set_drawn_in_y_order(true)
-        end
-    end
-
-    for k, v in pairs(special_tiles) do
-        for e in map:get_entities(k) do
-            v(e, game, map)
         end
     end
 
