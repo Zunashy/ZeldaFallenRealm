@@ -228,8 +228,8 @@ end
 
 local separator_manager = require("scripts/api/separator_manager")
 
-function map:init_reset_separators(default)
-  separator_manager:manage_map(self, default)
+function map:init_reset_separators()
+  separator_manager:manage_map(self)
 end
 
 function map:init_dungeon_features()

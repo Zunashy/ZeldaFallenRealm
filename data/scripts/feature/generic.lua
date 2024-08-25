@@ -202,6 +202,11 @@ function gen.random(bound, upper)
   return res 
 end
 
+local function is_in_rect(x, y, rx, ry, rw, rh) 
+  return x >= rx and x < rx + rw and y >= ry and y < ry + rh 
+end
+gen.is_in_rectangle = is_in_rect
+
 gen.vector_class = gen.class()
 
 function gen.vector_class:set(x, y)
@@ -217,7 +222,6 @@ gen.vector_class.name = "Vector"
 
 gen.rect_class = gen.class(gen.vector_class)
 
-
 function gen.rect_class:set(x, y, w, h)
   self.super.set(self, x, y)
   self.w = w
@@ -227,6 +231,10 @@ end
 function gen.rect_class:get()
   local x, y = self.super.get(self)
   return x, y, self.w, self.h
+end
+
+function gen.rect_class:is_inside(x, y)
+  return is_in_rect(x, y, self.x, self.y, self.w, self.h)
 end
 
 gen.rect_class.name = "Rectangle"

@@ -1,5 +1,5 @@
 function import(module, ...)
-    functions = {...}
+    local functions = {...}
     for i, v in ipairs(functions) do
         functions[i] = module[v]
     end

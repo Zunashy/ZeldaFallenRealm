@@ -357,7 +357,7 @@ switch{
 destructible{
   name = "rochey_3",
   layer = 1,
-  x = 72,
+  x = 88,
   y = 85,
   sprite = "entities/projectile/rock",
 }
@@ -365,8 +365,8 @@ destructible{
 destructible{
   name = "rochey_6",
   layer = 1,
-  x = 88,
-  y = 109,
+  x = 72,
+  y = 61,
   sprite = "entities/projectile/rock",
   weight = -1,
 }
@@ -374,7 +374,7 @@ destructible{
 destructible{
   name = "rochey_8",
   layer = 1,
-  x = 104,
+  x = 56,
   y = 77,
   sprite = "entities/projectile/rock",
 }
