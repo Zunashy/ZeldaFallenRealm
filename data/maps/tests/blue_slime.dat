@@ -874,12 +874,11 @@ custom_entity{
 }
 
 custom_entity{
-  name = "layer_changer_test",
   layer = 1,
   x = 232,
   y = 85,
   width = 16,
-  height = 32,
+  height = 24,
   direction = 1,
   model = "layer_changer",
 }

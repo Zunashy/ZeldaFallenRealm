@@ -2,6 +2,21 @@ local entity = ...
 local game = entity:get_game()
 local map = entity:get_map()
 
+local direction_shift = {
+  function(x, y, corner_x, corner_y, w, h, sensor_w, sensor_h)
+    return corner_x + w - sensor_w / 2, y
+  end,
+  function(x, y, corner_x, corner_y, w, h, sensor_w, sensor_h)
+    return x, corner_y + sensor_h - 3
+  end,
+  function(x, y, corner_x, corner_y, w, h, sensor_w, sensor_h)
+    return corner_x + sensor_w / 2, y
+  end,
+  function(x, y, corner_x, corner_y, w, h, sensor_w, sensor_h)
+    return x, y
+  end,
+}
+
 function entity:on_created()
   local _, _, layer = self:get_position()
   local cx, cy, w, h = self:get_bounding_box()
@@ -21,10 +36,13 @@ function entity:on_created()
   invisible_platform:set_origin(w / 2, h - 2)
   invisible_platform:set_position(x, y)
 
-  --top sensor is "after" bottom sensor, according to the direction of the entity
+  local hero = game:get_hero()
+  --bottom sensor is "after" top sensor, according to the direction of the entity
 
-  local sensor_w, sensor_h, bottom_sensor_x, bottom_sensor_y, top_sensor_x, top_sensor_y =
-    gen.divideSurface2(x, y, w, h, direction)
+  local sensor_w, sensor_h = hero:get_size()
+
+  local bottom_sensor_x, bottom_sensor_y = direction_shift[direction + 1](x, y, cx, cy, w, h, sensor_w, sensor_h)
+  local top_sensor_x, top_sensor_y = direction_shift[((direction + 2) % 4) + 1](x, y, cx, cy, w, h, sensor_w, sensor_h)
 
   local name = self:get_name()
   local bottom_sensor = map:create_sensor{
@@ -38,8 +56,6 @@ function entity:on_created()
     name = name and name .. "_top_sensor" or nil
   }
 
-  local hero = game:get_hero()
-
   function bottom_sensor:on_activated()
     hero:set_layer(layer + 1)
   end
@@ -47,7 +63,7 @@ function entity:on_created()
     hero:set_layer(layer)
   end
 
-  --print(sensor_w, sensor_h, top_sensor_x, top_sensor_y, bottom_sensor_x, bottom_sensor_y)
+  print(sensor_w, sensor_h, top_sensor_x, top_sensor_y, bottom_sensor_x, bottom_sensor_y)
 
 
 end
