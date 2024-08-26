@@ -2,7 +2,7 @@ properties{
   x = 0,
   y = 0,
   width = 480,
-  height = 128,
+  height = 256,
   min_layer = 0,
   max_layer = 2,
   tileset = "01 - normal/main",
@@ -16,7 +16,6 @@ tile{
   width = 48,
   height = 16,
   pattern = "318",
-
 }
 
 tile{
@@ -26,7 +25,6 @@ tile{
   width = 64,
   height = 16,
   pattern = "318_2",
-
 }
 
 tile{
@@ -36,7 +34,6 @@ tile{
   width = 64,
   height = 16,
   pattern = "318_2",
-
 }
 
 tile{
@@ -46,7 +43,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316",
-
 }
 
 tile{
@@ -56,7 +52,6 @@ tile{
   width = 16,
   height = 96,
   pattern = "317",
-
 }
 
 tile{
@@ -66,7 +61,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_2",
-
 }
 
 tile{
@@ -76,7 +70,6 @@ tile{
   width = 128,
   height = 16,
   pattern = "318_2",
-
 }
 
 tile{
@@ -86,7 +79,6 @@ tile{
   width = 128,
   height = 16,
   pattern = "318_2",
-
 }
 
 tile{
@@ -96,7 +88,6 @@ tile{
   width = 128,
   height = 16,
   pattern = "318_2",
-
 }
 
 tile{
@@ -106,7 +97,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_3",
-
 }
 
 tile{
@@ -116,7 +106,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_4",
-
 }
 
 tile{
@@ -126,7 +115,6 @@ tile{
   width = 16,
   height = 96,
   pattern = "317_2",
-
 }
 
 tile{
@@ -136,7 +124,6 @@ tile{
   width = 48,
   height = 16,
   pattern = "318",
-
 }
 
 tile{
@@ -146,7 +133,6 @@ tile{
   width = 128,
   height = 16,
   pattern = "318",
-
 }
 
 tile{
@@ -156,7 +142,6 @@ tile{
   width = 128,
   height = 16,
   pattern = "318",
-
 }
 
 tile{
@@ -166,7 +151,6 @@ tile{
   width = 128,
   height = 96,
   pattern = "319_2",
-
 }
 
 tile{
@@ -176,7 +160,6 @@ tile{
   width = 16,
   height = 48,
   pattern = "331",
-
 }
 
 tile{
@@ -186,7 +169,6 @@ tile{
   width = 64,
   height = 16,
   pattern = "331",
-
 }
 
 tile{
@@ -196,7 +178,6 @@ tile{
   width = 16,
   height = 48,
   pattern = "331",
-
 }
 
 tile{
@@ -206,7 +187,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_23",
-
 }
 
 tile{
@@ -216,7 +196,6 @@ tile{
   width = 128,
   height = 96,
   pattern = "319_2",
-
 }
 
 tile{
@@ -226,7 +205,6 @@ tile{
   width = 16,
   height = 80,
   pattern = "331",
-
 }
 
 tile{
@@ -236,7 +214,6 @@ tile{
   width = 64,
   height = 16,
   pattern = "331",
-
 }
 
 tile{
@@ -246,7 +223,6 @@ tile{
   width = 16,
   height = 80,
   pattern = "331",
-
 }
 
 tile{
@@ -256,7 +232,6 @@ tile{
   width = 48,
   height = 16,
   pattern = "319_2",
-
 }
 
 tile{
@@ -266,7 +241,6 @@ tile{
   width = 128,
   height = 96,
   pattern = "319_2",
-
 }
 
 tile{
@@ -276,7 +250,6 @@ tile{
   width = 48,
   height = 16,
   pattern = "319_2",
-
 }
 
 tile{
@@ -286,7 +259,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "323_2",
-
 }
 
 tile{
@@ -296,7 +268,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "323",
-
 }
 
 tile{
@@ -306,7 +277,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "323",
-
 }
 
 tile{
@@ -316,7 +286,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "323",
-
 }
 
 tile{
@@ -326,7 +295,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "323",
-
 }
 
 tile{
@@ -336,7 +304,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "323",
-
 }
 
 tile{
@@ -346,7 +313,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "323",
-
 }
 
 tile{
@@ -356,7 +322,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "323",
-
 }
 
 tile{
@@ -366,7 +331,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "323",
-
 }
 
 tile{
@@ -376,7 +340,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "328",
-
 }
 
 tile{
@@ -386,7 +349,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "328_8",
-
 }
 
 tile{
@@ -396,7 +358,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "324",
-
 }
 
 tile{
@@ -406,7 +367,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "328_2",
-
 }
 
 tile{
@@ -416,7 +376,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "328_9",
-
 }
 
 tile{
@@ -426,7 +385,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "326",
-
 }
 
 tile{
@@ -436,7 +394,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "325_3",
-
 }
 
 tile{
@@ -446,7 +403,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "325",
-
 }
 
 tile{
@@ -456,7 +412,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "324_2",
-
 }
 
 tile{
@@ -466,7 +421,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "328_3",
-
 }
 
 tile{
@@ -476,7 +430,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_21",
-
 }
 
 tile{
@@ -486,7 +439,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "324_6",
-
 }
 
 tile{
@@ -496,7 +448,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "324_5",
-
 }
 
 tile{
@@ -506,7 +457,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "328_7",
-
 }
 
 tile{
@@ -516,7 +466,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "324",
-
 }
 
 tile{
@@ -526,7 +475,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "325",
-
 }
 
 tile{
@@ -536,7 +484,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "324_2",
-
 }
 
 tile{
@@ -546,7 +493,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "324",
-
 }
 
 tile{
@@ -556,7 +502,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "325",
-
 }
 
 tile{
@@ -566,7 +511,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "324_2",
-
 }
 
 tile{
@@ -576,7 +520,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "326",
-
 }
 
 tile{
@@ -586,7 +529,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "326",
-
 }
 
 tile{
@@ -596,7 +538,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "326",
-
 }
 
 tile{
@@ -606,7 +547,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "328",
-
 }
 
 tile{
@@ -616,7 +556,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "328_2",
-
 }
 
 tile{
@@ -626,7 +565,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "328_3",
-
 }
 
 tile{
@@ -636,7 +574,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "328",
-
 }
 
 tile{
@@ -646,7 +583,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "328_2",
-
 }
 
 tile{
@@ -656,7 +592,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "328_3",
-
 }
 
 tile{
@@ -666,7 +601,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "328",
-
 }
 
 tile{
@@ -676,7 +610,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "328_2",
-
 }
 
 tile{
@@ -686,7 +619,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "328_3",
-
 }
 
 tile{
@@ -696,7 +628,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_21",
-
 }
 
 tile{
@@ -706,7 +637,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_21",
-
 }
 
 tile{
@@ -716,7 +646,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_21",
-
 }
 
 tile{
@@ -726,7 +655,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_23",
-
 }
 
 tile{
@@ -736,7 +664,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_2",
-
 }
 
 tile{
@@ -746,7 +673,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_2",
-
 }
 
 tile{
@@ -756,7 +682,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_3",
-
 }
 
 tile{
@@ -766,7 +691,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_3",
-
 }
 
 tile{
@@ -776,7 +700,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316",
-
 }
 
 tile{
@@ -786,7 +709,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316",
-
 }
 
 tile{
@@ -796,7 +718,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_4",
-
 }
 
 tile{
@@ -806,7 +727,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_4",
-
 }
 
 tile{
@@ -816,7 +736,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "317_2",
-
 }
 
 tile{
@@ -826,7 +745,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "317_2",
-
 }
 
 tile{
@@ -836,7 +754,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "317_2",
-
 }
 
 tile{
@@ -846,7 +763,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "317_2",
-
 }
 
 tile{
@@ -856,7 +772,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "317",
-
 }
 
 tile{
@@ -866,7 +781,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "317",
-
 }
 
 tile{
@@ -876,7 +790,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "317",
-
 }
 
 tile{
@@ -886,7 +799,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "317",
-
 }
 
 tile{
@@ -896,7 +808,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "335",
-
 }
 
 tile{
@@ -906,7 +817,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_12",
-
 }
 
 tile{
@@ -916,7 +826,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_11",
-
 }
 
 tile{
@@ -926,7 +835,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_10",
-
 }
 
 tile{
@@ -936,7 +844,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_9",
-
 }
 
 tile{
@@ -946,7 +853,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_12",
-
 }
 
 tile{
@@ -956,7 +862,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_11",
-
 }
 
 tile{
@@ -966,7 +871,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_10",
-
 }
 
 tile{
@@ -976,7 +880,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_9",
-
 }
 
 tile{
@@ -986,7 +889,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "321",
-
 }
 
 tile{
@@ -996,7 +898,6 @@ tile{
   width = 16,
   height = 24,
   pattern = "320",
-
 }
 
 tile{
@@ -1006,7 +907,6 @@ tile{
   width = 16,
   height = 24,
   pattern = "320",
-
 }
 
 tile{
@@ -1016,7 +916,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_22",
-
 }
 
 tile{
@@ -1026,7 +925,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_3",
-
 }
 
 tile{
@@ -1036,7 +934,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_2",
-
 }
 
 tile{
@@ -1046,7 +943,6 @@ tile{
   width = 16,
   height = 96,
   pattern = "317_2",
-
 }
 
 tile{
@@ -1056,7 +952,6 @@ tile{
   width = 16,
   height = 96,
   pattern = "317",
-
 }
 
 tile{
@@ -1066,7 +961,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316",
-
 }
 
 tile{
@@ -1076,7 +970,6 @@ tile{
   width = 128,
   height = 16,
   pattern = "318",
-
 }
 
 tile{
@@ -1086,7 +979,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_4",
-
 }
 
 tile{
@@ -1096,7 +988,6 @@ tile{
   width = 128,
   height = 96,
   pattern = "319",
-
 }
 
 tile{
@@ -1106,7 +997,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "319",
-
 }
 
 tile{
@@ -1116,7 +1006,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_10",
-
 }
 
 tile{
@@ -1126,7 +1015,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_9",
-
 }
 
 tile{
@@ -1136,7 +1024,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_12",
-
 }
 
 tile{
@@ -1146,7 +1033,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "316_11",
-
 }
 
 destination{

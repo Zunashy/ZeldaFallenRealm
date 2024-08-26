@@ -17,6 +17,14 @@ function init_traversable()
 end
 
 local function coll_test(boom, other)
+<<<<<<< HEAD
+    if (other:get_type() == "enemy") then
+        if not other:is_immobilized() then
+            other:immobilize() 
+        end
+        entity:come_back() 
+    end
+=======
     local type = other:get_type()
     if (type == "enemy") then
         local conseq = other:get_attack_consequence("boomerang")
@@ -34,6 +42,7 @@ local function coll_test(boom, other)
     elseif (type == "destructible") then 
         other:attempt_cut()
     end 
+>>>>>>> 8b9f71218c606a58a63ac97afcf6cfc7d3ef386a
 end
 
 function entity:destroy()

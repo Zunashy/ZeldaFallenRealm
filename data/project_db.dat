@@ -7,6 +7,7 @@ map{ id = "challenge/01/day6", description = "challenge/01/day6" }
 map{ id = "challenge/01/day7", description = "challenge/01/day7" }
 map{ id = "challenge/01/final", description = "challenge/01/final" }
 map{ id = "challenge/02/test sable", description = "challenge/02/test sable" }
+map{ id = "challenge/03 - inktober/week1" }
 map{ id = "donjons/level_01/2D_Test", description = "donjons/level_01/2D_Test" }
 map{ id = "donjons/level_01/RDC", description = "donjons/level_01/RDC" }
 map{ id = "donjons/level_01/RDC_old", description = "donjons/level_01/RDC_old" }
@@ -30,6 +31,8 @@ map{ id = "donjons/level_05/ss4", description = "ss4" }
 map{ id = "donjons/level_06/rdc" }
 map{ id = "normal_version/global", description = "normal_version/global" }
 map{ id = "normal_version/overworld/deep_forest/indoors/to_mountain" }
+map{ id = "normal_version/overworld/deep_forest/indoors/tree1" }
+map{ id = "normal_version/overworld/deep_forest/indoors/tree2" }
 map{ id = "normal_version/overworld/deep_forest/outdoors", description = "normal_version/overworld/deep_forest/outdoors" }
 map{ id = "normal_version/overworld/deep_forest/outdoors_2", description = "normal_version/overworld/deep_forest/outdoors_2" }
 map{ id = "normal_version/overworld/goron/indoors/cave_1" }
