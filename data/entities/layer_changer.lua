@@ -39,7 +39,15 @@ function entity:on_created()
   local hero = game:get_hero()
   --bottom sensor is "after" top sensor, according to the direction of the entity
 
-  local sensor_w, sensor_h = hero:get_size()
+  local hero_w, hero_h = hero:get_size()
+  local sensor_w, sensor_h
+  if direction % 2 == 0 then
+    sensor_w = hero_w
+    sensor_h = h
+  else
+    sensor_w = w
+    sensor_h = hero_h
+  end
 
   local bottom_sensor_x, bottom_sensor_y = direction_shift[direction + 1](x, y, cx, cy, w, h, sensor_w, sensor_h)
   local top_sensor_x, top_sensor_y = direction_shift[((direction + 2) % 4) + 1](x, y, cx, cy, w, h, sensor_w, sensor_h)
@@ -57,9 +65,11 @@ function entity:on_created()
   }
 
   function bottom_sensor:on_activated()
+    print("BOTTOM")
     hero:set_layer(layer + 1)
   end
   function top_sensor:on_activated()
+    print("TOP")
     hero:set_layer(layer)
   end
 
