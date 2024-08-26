@@ -11,11 +11,43 @@ local dirCoef = {
 }
 gen.dirCoef = dirCoef
 
+local dirCoefDivide = {
+  {x = 0.25, y = 0, w = 0.5, h = 1},
+  {x = 0, y = -0.5, w = 1, h = 0.5},
+  {x = -0.25, y = 0, w = 0.5, h = 1},
+  {x = 0, y = 0, w = 1, h = 0.5},
+}
+gen.dirCoefDivide = dirCoefDivide
 
 --Transpose a point following a specified direction, with a specified direction.
 function gen.shift_direction4(x, y, dir, dist)
-  return x + dist * dirCoef[dir + 1].x, 
-         y + dist * dirCoef[dir + 1].y
+  local coefs = dirCoef[dir + 1]
+  return
+    x + dist * coefs.x,
+    y + dist * coefs.y
+end
+
+--Returns the position and size of an entity covering a half of a given entity's surface
+function gen.divideSurface(x, y, w, h, dir)
+  local coefs = dirCoefDivide[dir + 1]
+  return
+    x + w * coefs.x,
+    y + h * coefs.y,
+    w * coefs.w,
+    h * coefs.h
+end
+
+--Returns the size of an entity covering a half of a given entity's surface, then the position that two entities would take to cover the surface
+function gen.divideSurface2(x, y, w, h, dir)
+  local coefs = dirCoefDivide[dir + 1]
+  local coefs2 = dirCoefDivide[((dir + 2) % 4) + 1]
+  return
+    w * coefs.w,
+    h * coefs.h,
+    x + w * coefs.x,
+    y + h * coefs.y,
+    x + w * coefs2.x,
+    y + h * coefs2.y
 end
 
 --Adds properties of the src object to the dest object. Useful to import functions from feature objects (gen, eg, mg, mpg) to game objects.

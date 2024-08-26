@@ -269,6 +269,24 @@ tile{
   pattern = "68",
 }
 
+tile{
+  layer = 1,
+  x = 216,
+  y = 72,
+  width = 8,
+  height = 32,
+  pattern = "8",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 72,
+  width = 8,
+  height = 32,
+  pattern = "8",
+}
+
 custom_entity{
   name = "CBD",
   layer = 1,
@@ -357,8 +375,8 @@ switch{
 destructible{
   name = "rochey_3",
   layer = 1,
-  x = 88,
-  y = 85,
+  x = 72,
+  y = 93,
   sprite = "entities/projectile/rock",
 }
 
@@ -678,16 +696,6 @@ destructible{
   sprite = "entities/projectile/rock",
 }
 
-custom_entity{
-  layer = 1,
-  x = 232,
-  y = 85,
-  width = 16,
-  height = 16,
-  direction = 0,
-  model = "layer_changer",
-}
-
 pickable{
   layer = 1,
   x = 320,
@@ -863,6 +871,17 @@ custom_entity{
   height = 16,
   direction = 0,
   model = "breakable_pillar",
+}
+
+custom_entity{
+  name = "layer_changer_test",
+  layer = 1,
+  x = 232,
+  y = 85,
+  width = 16,
+  height = 32,
+  direction = 1,
+  model = "layer_changer",
 }
 
 tile{
