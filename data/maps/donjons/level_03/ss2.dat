@@ -1952,6 +1952,33 @@ tile{
   pattern = "32",
 }
 
+tile{
+  layer = 0,
+  x = 432,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 128,
+  width = 16,
+  height = 32,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
 enemy{
   layer = 0,
   x = 600,
@@ -2031,5 +2058,51 @@ separator{
   y = 696,
   width = 1200,
   height = 16,
+}
+
+tile{
+  layer = 1,
+  x = 424,
+  y = 144,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 1,
+  x = 440,
+  y = 128,
+  width = 8,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 1,
+  x = 424,
+  y = 136,
+  width = 16,
+  height = 8,
+  pattern = "82",
+}
+
+tile{
+  layer = 1,
+  x = 440,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "82",
+}
+
+custom_entity{
+  layer = 1,
+  x = 456,
+  y = 157,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ground/dig_ground",
 }
 
