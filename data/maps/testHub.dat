@@ -273,6 +273,16 @@ tile{
   pattern = "129",
 }
 
+tile{
+  layer = 0,
+  x = 16,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "5_4",
+  tileset = "02 - war/main",
+}
+
 destination{
   name = "spawn",
   layer = 0,
@@ -336,17 +346,6 @@ teletransporter{
 }
 
 teletransporter{
-  name = "warplain",
-  layer = 0,
-  x = 16,
-  y = 64,
-  width = 16,
-  height = 16,
-  destination_map = "normal_version/village/nielint/outdoors",
-  destination = "bar_to_village",
-}
-
-teletransporter{
   layer = 0,
   x = 128,
   y = 112,
@@ -354,5 +353,15 @@ teletransporter{
   height = 16,
   destination_map = "donjons/level_04/ss2",
   destination = "ss2_part_2_1",
+}
+
+teletransporter{
+  layer = 0,
+  x = 16,
+  y = 64,
+  width = 16,
+  height = 16,
+  destination_map = "war_version/village/outdoors",
+  destination = "destination_10",
 }
 

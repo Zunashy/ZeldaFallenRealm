@@ -3777,8 +3777,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 600,
-  y = 304,
+  x = 592,
+  y = 288,
   width = 16,
   height = 16,
   pattern = "74",
@@ -7802,7 +7802,8 @@ teletransporter{
   y = 304,
   width = 16,
   height = 16,
-  destination_map = "war_version/overworld/plain/outdoors_1",
+  destination_map = "war_version/overworld/plain/outdoors_2",
+  destination = "destination",
 }
 
 destination{
